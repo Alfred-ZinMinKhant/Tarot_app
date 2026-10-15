@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "en": "Nat Tarot",
+    "my": "နတ်တရော့"
+  },
+  "slug": "nat-tarot",
+  "scheme": "nattarot",
+  "iosBundleIdentifier": "com.nattarot.app",
+  "androidPackage": "com.nattarot.app"
+}

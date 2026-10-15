@@ -1,0 +1,84 @@
+{
+  "common": {
+    "continue": "Continue",
+    "back": "Back",
+    "skip": "Skip",
+    "done": "Done",
+    "cancel": "Cancel",
+    "getStarted": "Get started",
+    "selected": "Selected"
+  },
+  "tabs": {
+    "home": "Home",
+    "library": "Cards",
+    "journal": "Journal",
+    "learn": "Learn",
+    "settings": "Settings"
+  },
+  "language": {
+    "label": "Language",
+    "en": "English",
+    "my": "မြန်မာ",
+    "followDevice": "Use device language",
+    "switchA11y": "Switch language to {{language}}"
+  },
+  "greeting": {
+    "morning": "Good morning",
+    "afternoon": "Good afternoon",
+    "evening": "Good evening",
+    "night": "A calm night to you",
+    "withName": "{{greeting}}, {{name}}"
+  },
+  "home": {
+    "subtitle": "Take a quiet moment for yourself today.",
+    "todayIs": "Today is {{date}}",
+    "introTitle": "How $t(appName) works",
+    "introBody": "Ask a question, draw cards, and use their meanings as gentle prompts for reflection. Your readings stay on this phone."
+  },
+  "library": {
+    "title": "Card Library",
+    "emptyTitle": "The deck is being prepared",
+    "emptyBody": "All 78 cards, with meanings in English and Burmese, will appear here."
+  },
+  "journal": {
+    "title": "Journal",
+    "emptyTitle": "No readings yet",
+    "emptyBody": "Readings you save will appear here, so you can look back and reflect."
+  },
+  "learn": {
+    "title": "Learn",
+    "emptyTitle": "Lessons are on their way",
+    "emptyBody": "Short beginner lessons about tarot will appear here."
+  },
+  "onboarding": {
+    "welcomeTitle": "Welcome to $t(appName)",
+    "welcomeBody": "Draw a card, pause, and listen to your own inner voice. $t(appName) works offline, and everything you write stays on your phone.",
+    "languageTitle": "Choose your language",
+    "languageBody": "You can change this anytime in Settings.",
+    "stepA11y": "Step {{current}} of {{total}}"
+  },
+  "settings": {
+    "title": "Settings",
+    "appearance": "Appearance",
+    "theme": "Theme",
+    "themeSystem": "System",
+    "themeLight": "Light",
+    "themeDark": "Dark",
+    "fontSize": "Text size",
+    "fontSizeS": "Small",
+    "fontSizeM": "Medium",
+    "fontSizeL": "Large",
+    "myanmarFont": "Burmese font",
+    "fontNoto": "Noto Sans Myanmar",
+    "fontPadauk": "Padauk",
+    "burmeseNumerals": "Use Burmese numerals (၀၁၂၃၄၅၆၇၈၉)",
+    "preview": "Preview",
+    "previewText": "Today is a good day to listen to your heart.",
+    "about": "About",
+    "version": "Version {{version}}"
+  },
+  "disclaimer": {
+    "short": "For entertainment and self-reflection only. Tarot cannot predict the future.",
+    "long": "$t(appName) is made for entertainment and personal reflection. The cards do not predict the future and are not a substitute for professional advice about health, money, legal or personal matters. You are always the one who decides what is right for your life."
+  }
+}
