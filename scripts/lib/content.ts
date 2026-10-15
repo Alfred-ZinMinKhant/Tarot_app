@@ -126,6 +126,44 @@ export function validateSigns(signs: unknown): string[] {
   return errors;
 }
 
+const ZODIAC_IDS = ['aries', 'taurus', 'gemini', 'cancer', 'leo', 'virgo', 'libra', 'scorpio', 'sagittarius', 'capricorn', 'aquarius', 'pisces'];
+const CHART_PLANETS = ['sun', 'moon', 'mercury', 'venus', 'mars', 'jupiter', 'saturn', 'uranus', 'neptune', 'pluto', 'node'];
+
+export function validateChartReadings(data: unknown): string[] {
+  const errors: string[] = [];
+  if (!isObj(data)) return ['chart-readings.json: expected an object'];
+  const frames = isObj(data.frames) ? data.frames : {};
+  for (const k of ['sun', 'moon', 'rising']) {
+    const f = frames[k];
+    if (!isObj(f)) errors.push(`chart-readings frame ${k}: missing`);
+    else
+      for (const lang of LANGUAGES) {
+        checkString(errors, `chart-readings frame ${k}.${lang}`, f[lang], lang);
+        if (typeof f[lang] === 'string' && !(f[lang] as string).includes('{sign}'))
+          errors.push(`chart-readings frame ${k}.${lang}: missing {sign}`);
+        if (typeof f[lang] === 'string' && !(f[lang] as string).includes('{x}'))
+          errors.push(`chart-readings frame ${k}.${lang}: missing {x}`);
+      }
+  }
+  const signs = isObj(data.signs) ? data.signs : {};
+  for (const z of ZODIAC_IDS) {
+    const entry = signs[z];
+    for (const part of ['core', 'feel', 'first']) {
+      const v = isObj(entry) ? entry[part] : undefined;
+      if (!isObj(v)) errors.push(`chart-readings ${z}.${part}: missing`);
+      else for (const lang of LANGUAGES) checkString(errors, `chart-readings ${z}.${part}.${lang}`, v[lang], lang);
+    }
+  }
+  const planets = isObj(data.planets) ? data.planets : {};
+  for (const p of CHART_PLANETS) {
+    const v = planets[p];
+    if (!isObj(v)) errors.push(`chart-readings planet ${p}: missing`);
+    else for (const lang of LANGUAGES) checkString(errors, `chart-readings planet ${p}.${lang}`, v[lang], lang);
+  }
+  for (const p of SIGN_FORBIDDEN) if (p.test(JSON.stringify(data))) errors.push(`chart-readings: health/finance wording (${p.source})`);
+  return errors;
+}
+
 export const LEGAL_DOCS = ['privacy', 'terms'];
 
 export function validateLegal(legal: unknown): string[] {
@@ -167,6 +205,7 @@ export function validateContentReview(
     ...known.signs.map((id) => `weekday-signs/${id}`),
     ...LEGAL_DOCS.map((d) => `legal/${d}`),
     'spreads/all',
+    'chart-readings',
   ]);
   const errors: string[] = [];
   const all = [...review.pending, ...review.reviewed];

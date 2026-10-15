@@ -7,6 +7,7 @@ import { join } from 'node:path';
 
 import {
   type ContentReviewFile,
+  validateChartReadings,
   validateContentReview,
   validateLegal,
   validateLessons,
@@ -22,6 +23,7 @@ const errors = [
   ...validateSpreads(read('spreads.json')),
   ...validateLessons(read('lessons.json')),
   ...validateSigns(read('weekday-signs.json')),
+  ...validateChartReadings(read('chart-readings.json')),
   ...validateLegal(read('legal.json')),
   ...validateContentReview(review, { lessons: ids('lessons.json'), signs: ids('weekday-signs.json') }),
 ];

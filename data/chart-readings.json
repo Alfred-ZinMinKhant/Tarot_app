@@ -1,0 +1,232 @@
+{
+ "frames": {
+  "sun": {
+   "en": "With the Sun in {sign}, you tend to be {x}. This is the part of you that wants to shine.",
+   "my": "နေသည် {sign}တွင် ရှိနေသဖြင့် သင်သည် {x} ဖြစ်တတ်သည်။ ဤသည်မှာ သင်ထွန်းလင်းလိုသော အပိုင်းဖြစ်သည်။"
+  },
+  "moon": {
+   "en": "With the Moon in {sign}, you tend to feel {x}. This is how you take care of yourself inside.",
+   "my": "လသည် {sign}တွင် ရှိနေသဖြင့် သင်သည် {x} ဖြစ်တတ်သည်။ ဤသည်မှာ သင်၏ အတွင်းစိတ်ကို ပြုစုပုံဖြစ်သည်။"
+  },
+  "rising": {
+   "en": "With {sign} rising, people often first see you as {x}. This is the doorway into who you are.",
+   "my": "{sign}သည် အမြင့်တက်နေသဖြင့် လူတို့သည် သင့်ကို အစပိုင်းတွင် {x} အဖြစ် မြင်တတ်သည်။ ဤသည်မှာ သင့်အတွင်းသို့ ဝင်ပေါက်ဖြစ်သည်။"
+  }
+ },
+ "signs": {
+  "aries": {
+   "core": {
+    "en": "bold, direct and quick to start things",
+    "my": "ရဲရင့်ပြီး ရိုးရိုးဖြောင့်ဖြောင့်နှင့် စတင်ရန် မြန်ဆန်သူ"
+   },
+   "feel": {
+    "en": "quickly and strongly, then move on",
+    "my": "လျင်မြန်ပြင်းထန်စွာ ခံစားပြီး နောက်ဆက်လျှောက်သွားတတ်သူ"
+   },
+   "first": {
+    "en": "energetic and confident",
+    "my": "တက်ကြွပြီး ယုံကြည်မှုရှိသူ"
+   }
+  },
+  "taurus": {
+   "core": {
+    "en": "steady, loyal and fond of simple pleasures",
+    "my": "တည်ငြိမ်၊ သစ္စာရှိပြီး ရိုးရှင်းသော ပျော်ရွှင်မှုများကို နှစ်သက်သူ"
+   },
+   "feel": {
+    "en": "calm and comfort-seeking, needing time to settle",
+    "my": "ငြိမ်သက်ပြီး သက်သောင့်သက်သာကို ရှာဖွေကာ အေးအေးဆေးဆေး အချိန်ယူလိုသူ"
+   },
+   "first": {
+    "en": "grounded and reliable",
+    "my": "တည်ငြိမ်ပြီး အားထားရသူ"
+   }
+  },
+  "gemini": {
+   "core": {
+    "en": "curious, chatty and quick to adapt",
+    "my": "စပ်စုလိုပြီး စကားပြောကောင်း၍ လိုက်လျောညီထွေ မြန်သူ"
+   },
+   "feel": {
+    "en": "lightly and through talking things over",
+    "my": "ပေါ့ပေါ့ပါးပါး ခံစားပြီး စကားပြောခြင်းဖြင့် ဖြေလျော့တတ်သူ"
+   },
+   "first": {
+    "en": "lively and easy to talk to",
+    "my": "စကားပြောရလွယ်ပြီး သွက်လက်သူ"
+   }
+  },
+  "cancer": {
+   "core": {
+    "en": "caring, protective and tuned in to others",
+    "my": "ဂရုစိုက်၊ ကာကွယ်တတ်ပြီး သူတစ်ပါး၏ စိတ်ကို သိမြင်တတ်သူ"
+   },
+   "feel": {
+    "en": "deeply, with a strong need for a safe home base",
+    "my": "နက်နက်ရှိုင်းရှိုင်း ခံစားပြီး လုံခြုံသော နေရာတစ်ခု လိုအပ်သူ"
+   },
+   "first": {
+    "en": "gentle and a little reserved at first",
+    "my": "ပျော့ပျောင်းပြီး အစပိုင်းတွင် အနည်းငယ် ကြိုတင်ကာကွယ်သူ"
+   }
+  },
+  "leo": {
+   "core": {
+    "en": "warm, generous and happy to take the stage",
+    "my": "နွေးထွေး၊ ရက်ရောပြီး ဇာတ်ခုံပေါ်တက်ရန် ဝမ်းသာသူ"
+   },
+   "feel": {
+    "en": "proudly and warmly, and you like to be appreciated",
+    "my": "ဂုဏ်ယူစွာနှင့် နွေးထွေးစွာ ခံစားပြီး အသိအမှတ်ပြုခံရလိုသူ"
+   },
+   "first": {
+    "en": "confident and hard to miss",
+    "my": "ယုံကြည်မှုရှိပြီး အာရုံစိုက်မိစေသူ"
+   }
+  },
+  "virgo": {
+   "core": {
+    "en": "thoughtful, practical and good with detail",
+    "my": "ဆင်ခြင်တုံတရားရှိ၊ လက်တွေ့ကျပြီး အသေးစိတ်ကို ကောင်းစွာ ကိုင်တွယ်တတ်သူ"
+   },
+   "feel": {
+    "en": "carefully, often working things out by being useful",
+    "my": "သတိထားစွာ ခံစားပြီး အသုံးဝင်အောင် လုပ်ကာ ဖြေရှင်းတတ်သူ"
+   },
+   "first": {
+    "en": "tidy, modest and observant",
+    "my": "သပ်ရပ်၊ နှိမ့်ချပြီး လေ့လာကြည့်ရှုတတ်သူ"
+   }
+  },
+  "libra": {
+   "core": {
+    "en": "fair-minded, graceful and a natural peacemaker",
+    "my": "တရားမျှတ၊ ယဉ်ကျေးပြီး ငြိမ်းချမ်းရေးဆောင်သူ"
+   },
+   "feel": {
+    "en": "best when things are balanced, and uneasy in conflict",
+    "my": "မျှတသောအခါ အကောင်းဆုံးဖြစ်ပြီး ပဋိပက္ခတွင် မသက်မသာဖြစ်သူ"
+   },
+   "first": {
+    "en": "charming and easy-going",
+    "my": "ဆွဲဆောင်မှုရှိပြီး ဖော်ရွေသူ"
+   }
+  },
+  "scorpio": {
+   "core": {
+    "en": "intense, private and fiercely loyal",
+    "my": "စိတ်အားထက်သန်၊ ကိုယ်ရေးကိုယ်တာ လျှို့ဝှက်ပြီး ပြင်းပြင်းထန်ထန် သစ္စာရှိသူ"
+   },
+   "feel": {
+    "en": "very deeply, though you may not show it",
+    "my": "အလွန်နက်ရှိုင်းစွာ ခံစားသော်လည်း မပြသူ"
+   },
+   "first": {
+    "en": "magnetic and a little mysterious",
+    "my": "ဆွဲဆောင်မှုပြင်းပြီး လျှို့ဝှက်ဆန်းကြယ်သူ"
+   }
+  },
+  "sagittarius": {
+   "core": {
+    "en": "optimistic, adventurous and honest",
+    "my": "မျှော်လင့်ချက်ရှိ၊ စွန့်စားလိုပြီး ရိုးသားသူ"
+   },
+   "feel": {
+    "en": "openly and cheerfully, and you need room to roam",
+    "my": "ပွင့်လင်းပြီး ရွှင်လန်းစွာ ခံစားကာ လွတ်လပ်စွာ သွားလာခွင့် လိုအပ်သူ"
+   },
+   "first": {
+    "en": "friendly, upbeat and outspoken",
+    "my": "ဖော်ရွေ၊ အားရှိပြီး ပွင့်ပွင့်လင်းလင်းပြောသူ"
+   }
+  },
+  "capricorn": {
+   "core": {
+    "en": "disciplined, patient and quietly ambitious",
+    "my": "စည်းကမ်းရှိ၊ စိတ်ရှည်ပြီး တိတ်တိတ်ကလေး ရည်မှန်းချက်ကြီးသူ"
+   },
+   "feel": {
+    "en": "steadily, keeping feelings under control",
+    "my": "တည်ငြိမ်စွာ ခံစားပြီး စိတ်ခံစားမှုကို ထိန်းထားတတ်သူ"
+   },
+   "first": {
+    "en": "serious, capable and composed",
+    "my": "တည်ကြည်၊ စွမ်းရည်ရှိပြီး ထိန်းချုပ်နိုင်သူ"
+   }
+  },
+  "aquarius": {
+   "core": {
+    "en": "independent, inventive and a little unconventional",
+    "my": "လွတ်လပ်၊ တီထွင်ဖန်တီးတတ်ပြီး ထူးထူးခြားခြားဆန်သူ"
+   },
+   "feel": {
+    "en": "from a bit of a distance, and you value your freedom",
+    "my": "အနည်းငယ် အကွာအဝေးမှ ခံစားပြီး လွတ်လပ်မှုကို တန်ဖိုးထားသူ"
+   },
+   "first": {
+    "en": "friendly yet individual",
+    "my": "ဖော်ရွေသော်လည်း ကိုယ်ပိုင်ဆန်သူ"
+   }
+  },
+  "pisces": {
+   "core": {
+    "en": "imaginative, compassionate and dreamy",
+    "my": "စိတ်ကူးဉာဏ်ကောင်း၊ ကရုဏာရှိပြီး အိပ်မက်မက်တတ်သူ"
+   },
+   "feel": {
+    "en": "tenderly, soaking up the moods around you",
+    "my": "နူးညံ့စွာ ခံစားပြီး ပတ်ဝန်းကျင်၏ စိတ်အခြေအနေကို စုပ်ယူတတ်သူ"
+   },
+   "first": {
+    "en": "soft, dreamy and kind",
+    "my": "ပျော့ပျောင်း၊ အိပ်မက်ဆန်ပြီး ကြင်နာသူ"
+   }
+  }
+ },
+ "planets": {
+  "sun": {
+   "en": "your core self and what makes you feel alive",
+   "my": "သင်၏ အဓိကကိုယ်ရည်ကိုယ်သွေးနှင့် သင့်ကို အသက်ဝင်စေသောအရာ"
+  },
+  "moon": {
+   "en": "your feelings and what makes you feel safe",
+   "my": "သင်၏ ခံစားချက်နှင့် သင့်ကို လုံခြုံစေသောအရာ"
+  },
+  "mercury": {
+   "en": "how you think and talk",
+   "my": "သင်စဉ်းစားပုံနှင့် ပြောဆိုပုံ"
+  },
+  "venus": {
+   "en": "what and how you love",
+   "my": "သင်ချစ်ခင်သောအရာနှင့် ချစ်ပုံ"
+  },
+  "mars": {
+   "en": "how you act and go after what you want",
+   "my": "သင်လုပ်ဆောင်ပုံနှင့် လိုချင်သည့်အရာကို လိုက်စားပုံ"
+  },
+  "jupiter": {
+   "en": "where you grow and feel lucky",
+   "my": "သင်ကြီးထွားပြီး ကံကောင်းသည်ဟု ခံစားရာနေရာ"
+  },
+  "saturn": {
+   "en": "where you learn patience and build slowly",
+   "my": "သင် စိတ်ရှည်ခြင်းကို သင်ယူပြီး ဖြည်းဖြည်းချင်း တည်ဆောက်ရာနေရာ"
+  },
+  "uranus": {
+   "en": "where you break the mould",
+   "my": "သင် ပုံစံဟောင်းကို ချိုးဖျက်ရာနေရာ"
+  },
+  "neptune": {
+   "en": "where you dream and sense more than you can say",
+   "my": "သင် အိပ်မက်မက်ပြီး ပြောနိုင်သည်ထက် ပိုမိုခံစားရာနေရာ"
+  },
+  "pluto": {
+   "en": "where you change deeply over time",
+   "my": "သင် အချိန်ကြာလာသည်နှင့်အမျှ နက်နက်ရှိုင်းရှိုင်း ပြောင်းလဲရာနေရာ"
+  },
+  "node": {
+   "en": "a direction of growth to lean towards",
+   "my": "ကြီးထွားရန် ဦးတည်ရာလမ်းကြောင်းတစ်ခု"
+  }
+ }
+}

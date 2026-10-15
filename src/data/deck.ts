@@ -33,7 +33,7 @@ export const ELEMENT_LABELS: Record<Element, L10n> = {
   earth: { en: 'Earth', my: 'မြေ' },
 };
 
-const SIGNS = {
+export const ZODIAC_LABELS = {
   aries: { en: 'Aries', my: 'မိဿရာသီ' },
   taurus: { en: 'Taurus', my: 'ပြိဿရာသီ' },
   gemini: { en: 'Gemini', my: 'မေထုန်ရာသီ' },
@@ -48,7 +48,7 @@ const SIGNS = {
   pisces: { en: 'Pisces', my: 'မိန်ရာသီ' },
 } satisfies Record<string, L10n>;
 
-const PLANETS = {
+export const PLANET_LABELS = {
   sun: { en: 'the Sun', my: 'နေ' },
   moon: { en: 'the Moon', my: 'လ' },
   mercury: { en: 'Mercury', my: 'ဗုဒ္ဓဟူးဂြိုဟ်' },
@@ -61,16 +61,16 @@ const PLANETS = {
   pluto: { en: 'Pluto', my: 'ပလူတိုဂြိုဟ်' },
 } satisfies Record<string, L10n>;
 
-type Sign = keyof typeof SIGNS;
-type Planet = keyof typeof PLANETS;
+type Sign = keyof typeof ZODIAC_LABELS;
+type Planet = keyof typeof PLANET_LABELS;
 
 const capitalise = (s: string) => s.charAt(0).toUpperCase() + s.slice(1);
 
-const planet = (p: Planet): L10n => ({ en: capitalise(PLANETS[p].en), my: PLANETS[p].my });
-const sign = (s: Sign): L10n => SIGNS[s];
+const planet = (p: Planet): L10n => ({ en: capitalise(PLANET_LABELS[p].en), my: PLANET_LABELS[p].my });
+const sign = (s: Sign): L10n => ZODIAC_LABELS[s];
 const planetInSign = (p: Planet, s: Sign): L10n => ({
-  en: `${capitalise(PLANETS[p].en)} in ${SIGNS[s].en}`,
-  my: `${SIGNS[s].my}ရှိ ${PLANETS[p].my}`,
+  en: `${capitalise(PLANET_LABELS[p].en)} in ${ZODIAC_LABELS[s].en}`,
+  my: `${ZODIAC_LABELS[s].my}ရှိ ${PLANET_LABELS[p].my}`,
 });
 const elementOf = (inner: Element, outer: Element): L10n => ({
   en: `${ELEMENT_LABELS[inner].en} of ${ELEMENT_LABELS[outer].en}`,
