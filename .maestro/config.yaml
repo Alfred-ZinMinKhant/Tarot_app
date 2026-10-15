@@ -1,4 +1,4 @@
-# Maestro end-to-end flows for Nat Tarot. Run against a development or preview build:
+# Maestro end-to-end flows for Mingalar Tarot. Run against a development or preview build:
 #   maestro test .maestro
 # The appId matches src/config/brand.json (override with -e APP_ID=... if you changed it in .env).
 flows:

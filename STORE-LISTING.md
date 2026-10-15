@@ -1,4 +1,4 @@
-# Store listing — Nat Tarot
+# Store listing — Mingalar Tarot
 
 Copy-ready text for App Store Connect and Google Play Console, in English and Burmese.
 Character limits are noted; every field below fits. Graphics are in `store/` (see the end).
@@ -13,7 +13,7 @@ Character limits are noted; every field below fits. Graphics are in `store/` (se
 ## English (en-US)
 
 **App name** (App Store 30 / Play 30)
-Nat Tarot
+Mingalar Tarot
 
 **Subtitle** (App Store, 30)
 Tarot in English & Burmese
@@ -29,7 +29,7 @@ tarot,card of the day,tarot reading,journal,reflection,myanmar,burmese,spread,da
 
 **Description** (4000)
 
-Nat Tarot is a calm, beautiful tarot companion in English and Burmese (Myanmar Unicode).
+Mingalar Tarot is a calm, beautiful tarot companion in English and Burmese (Myanmar Unicode).
 
 Draw a card, pause, and listen to your own inner voice. Each card's meaning is written as a gentle prompt for reflection — never as a prediction.
 
@@ -69,12 +69,12 @@ GENTLE BY DESIGN
 • No ads, no tracking, works offline
 • Text size, light and dark themes, screen-reader labels in both languages
 
-Nat Tarot is for entertainment and self-reflection. Tarot cannot predict the future and is not a substitute for professional advice about health, money, legal or personal matters.
+Mingalar Tarot is for entertainment and self-reflection. Tarot cannot predict the future and is not a substitute for professional advice about health, money, legal or personal matters.
 
 Premium (optional): Celtic Cross, Love spread and unlimited image sharing. The Card of the Day, one- and three-card readings, the journal, library, lessons and weekday signs are free.
 
 **What's new** (first release)
-Welcome to Nat Tarot! Card of the Day, five spreads, all 78 cards, a private journal, lessons and Burmese weekday signs — in English and Burmese.
+Welcome to Mingalar Tarot! Card of the Day, five spreads, all 78 cards, a private journal, lessons and Burmese weekday signs — in English and Burmese.
 
 **Screenshot captions** (if you add a caption band)
 1. Your Card of the Day, every morning
@@ -90,14 +90,14 @@ Welcome to Nat Tarot! Card of the Day, five spreads, all 78 cards, a private jou
 ## မြန်မာ (my-MM) — Google Play
 
 **App အမည်** (30)
-Nat Tarot
+Mingalar Tarot
 
 **အတိုချုပ် ဖော်ပြချက်** (80)
 Tarot ဟောစာ၊ နေ့စဉ်ကတ်နဲ့ ကိုယ်ပိုင်ဂျာနယ် — မြန်မာ၊ အင်္ဂလိပ် နှစ်ဘာသာ။
 
 **အပြည့်အစုံ ဖော်ပြချက်** (4000)
 
-Nat Tarot ဟာ အင်္ဂလိပ်နဲ့ မြန်မာ (Myanmar Unicode) နှစ်ဘာသာနဲ့ သုံးနိုင်တဲ့ တည်ငြိမ်လှပတဲ့ Tarot အဖော် ဖြစ်ပါတယ်။
+Mingalar Tarot ဟာ အင်္ဂလိပ်နဲ့ မြန်မာ (Myanmar Unicode) နှစ်ဘာသာနဲ့ သုံးနိုင်တဲ့ တည်ငြိမ်လှပတဲ့ Tarot အဖော် ဖြစ်ပါတယ်။
 
 ကတ်တစ်ချပ် နှိုက်၊ ခဏရပ်ပြီး ကိုယ့်စိတ်အတွင်းက အသံကို နားထောင်ကြည့်ပါ။ ကတ်တိုင်းရဲ့ အဓိပ္ပာယ်ကို ဟောကိန်းအဖြစ် မဟုတ်ဘဲ ဆင်ခြင်ဖို့ ညင်သာတဲ့ အစပျိုးချက်အဖြစ် ရေးထားပါတယ်။
 
@@ -137,12 +137,12 @@ Nat Tarot ဟာ အင်္ဂလိပ်နဲ့ မြန်မာ (Myanma
 • ကြော်ငြာ မရှိ၊ ခြေရာခံခြင်း မရှိ၊ အင်တာနက်မလိုဘဲ သုံးနိုင်
 • စာလုံးအရွယ်၊ အလင်း/အမှောင် အပြင်အဆင်၊ နှစ်ဘာသာလုံးနဲ့ Screen reader အညွှန်းများ
 
-Nat Tarot ဟာ ဖျော်ဖြေရေးနဲ့ ကိုယ့်ကိုယ်ကို ဆင်ခြင်ဖို့အတွက်သာ ဖြစ်ပါတယ်။ Tarot က အနာဂတ်ကို ကြိုဟောနိုင်တာ မဟုတ်သလို ကျန်းမာရေး၊ ငွေကြေး၊ ဥပဒေ ဒါမှမဟုတ် ကိုယ်ရေးကိစ္စတွေအတွက် ကျွမ်းကျင်သူ အကြံဉာဏ်ကို အစားထိုးတာလည်း မဟုတ်ပါ။
+Mingalar Tarot ဟာ ဖျော်ဖြေရေးနဲ့ ကိုယ့်ကိုယ်ကို ဆင်ခြင်ဖို့အတွက်သာ ဖြစ်ပါတယ်။ Tarot က အနာဂတ်ကို ကြိုဟောနိုင်တာ မဟုတ်သလို ကျန်းမာရေး၊ ငွေကြေး၊ ဥပဒေ ဒါမှမဟုတ် ကိုယ်ရေးကိစ္စတွေအတွက် ကျွမ်းကျင်သူ အကြံဉာဏ်ကို အစားထိုးတာလည်း မဟုတ်ပါ။
 
 Premium (ရွေးချယ်နိုင်) - Celtic Cross၊ အချစ်ရေး ဖြန့်ပုံနဲ့ အကန့်အသတ်မဲ့ ပုံမျှဝေခွင့်။ နေ့စဉ်ကတ်၊ ကတ်တစ်ချပ်နဲ့ သုံးချပ် ဟောစာ၊ ဂျာနယ်၊ ကတ်စာကြည့်တိုက်၊ သင်ခန်းစာနဲ့ မွေးနေ့ နိမိတ်တွေက အခမဲ့ ဖြစ်ပါတယ်။
 
 **အသစ်ပါဝင်မှု** (ပထမ ထုတ်ဝေမှု)
-Nat Tarot မှ ကြိုဆိုပါတယ်။ နေ့စဉ်ကတ်၊ ကတ်ဖြန့်ပုံ ငါးမျိုး၊ ကတ် ၇၈ ချပ်လုံး၊ ကိုယ်ပိုင်ဂျာနယ်၊ သင်ခန်းစာနဲ့ မွေးနေ့ နိမိတ် — မြန်မာ၊ အင်္ဂလိပ် နှစ်ဘာသာ။
+Mingalar Tarot မှ ကြိုဆိုပါတယ်။ နေ့စဉ်ကတ်၊ ကတ်ဖြန့်ပုံ ငါးမျိုး၊ ကတ် ၇၈ ချပ်လုံး၊ ကိုယ်ပိုင်ဂျာနယ်၊ သင်ခန်းစာနဲ့ မွေးနေ့ နိမိတ် — မြန်မာ၊ အင်္ဂလိပ် နှစ်ဘာသာ။
 
 > ⚠️ Burmese listing text was written by AI — have a native speaker review it before publishing.
 
@@ -180,7 +180,7 @@ Policy (`data/legal.json`) in sync with what you enable.
 
 ## App Review notes (App Store)
 
-> Nat Tarot is a bilingual (English/Burmese) tarot reflection app. It is clearly labelled as
+> Mingalar Tarot is a bilingual (English/Burmese) tarot reflection app. It is clearly labelled as
 > entertainment and self-reflection in onboarding, on every reading and in About. All card
 > meanings, lessons and texts are original; card images are the public-domain 1909
 > Rider–Waite–Smith illustrations. Questions that mention self-harm show a supportive message
@@ -188,7 +188,7 @@ Policy (`data/legal.json`) in sync with what you enable.
 > and unlimited image sharing are Premium; use the sandbox account provided to test.
 
 ⚠️ **Guideline 4.3 (spam):** Apple treats fortune-telling as a saturated category and may
-reject apps that look like many others. Emphasise in the review notes what makes Nat Tarot
+reject apps that look like many others. Emphasise in the review notes what makes Mingalar Tarot
 distinct: full Burmese localisation and typography, Burmese weekday signs, original written
 content, the journal and lessons, and the responsible-use design.
 

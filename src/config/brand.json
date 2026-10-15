@@ -1,10 +1,10 @@
 {
   "appName": {
-    "en": "Nat Tarot",
-    "my": "Nat Tarot"
+    "en": "Mingalar Tarot",
+    "my": "Mingalar Tarot"
   },
-  "slug": "nat-tarot",
-  "scheme": "nattarot",
-  "iosBundleIdentifier": "com.nattarot.app",
-  "androidPackage": "com.nattarot.app"
+  "slug": "mingalar-tarot",
+  "scheme": "mingalartarot",
+  "iosBundleIdentifier": "com.mingalartarot.app",
+  "androidPackage": "com.mingalartarot.app"
 }

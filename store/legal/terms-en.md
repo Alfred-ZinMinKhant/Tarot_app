@@ -1,8 +1,8 @@
 # Terms of Use
 
-## What Nat Tarot is
+## What Mingalar Tarot is
 
-Nat Tarot is a tarot app for entertainment and self-reflection. Card meanings, daily cards and weekday signs are prompts for thinking, not predictions or facts about your future.
+Mingalar Tarot is a tarot app for entertainment and self-reflection. Card meanings, daily cards and weekday signs are prompts for thinking, not predictions or facts about your future.
 
 ## Not professional advice
 
@@ -14,7 +14,7 @@ Your questions and notes belong to you. You are responsible for what you choose 
 
 ## Card images
 
-The card illustrations are the 1909 Rider–Waite–Smith artwork by Pamela Colman Smith, which is in the public domain. All written meanings and other text in the app are original to Nat Tarot.
+The card illustrations are the 1909 Rider–Waite–Smith artwork by Pamela Colman Smith, which is in the public domain. All written meanings and other text in the app are original to Mingalar Tarot.
 
 ## Premium
 

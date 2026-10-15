@@ -88,10 +88,10 @@ describe('lessons', () => {
 
 describe('legal texts', () => {
   it('fills variables and hides sections whose values are not configured', () => {
-    const bare = renderLegal('privacy', 'en', { appName: 'Nat Tarot' });
+    const bare = renderLegal('privacy', 'en', { appName: 'Mingalar Tarot' });
     expect(bare.sections.some((s) => s.heading === 'Contact')).toBe(false);
     expect(JSON.stringify(bare)).not.toMatch(/\{\w+\}/);
-    const full = renderLegal('privacy', 'my', { appName: 'Nat Tarot', publisher: 'Example Co', contactEmail: 'hi@example.com' });
+    const full = renderLegal('privacy', 'my', { appName: 'Mingalar Tarot', publisher: 'Example Co', contactEmail: 'hi@example.com' });
     expect(JSON.stringify(full)).toContain('hi@example.com');
     expect(JSON.stringify(full)).toContain('Example Co');
     expect(full.sections.length).toBe(bare.sections.length + 2);

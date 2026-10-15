@@ -2,7 +2,7 @@
 
 ## The short version
 
-Nat Tarot is designed to work offline. Your readings, notes, name and settings are stored on your phone. We don't run ads, we don't sell data, and we don't track you across other apps or websites.
+Mingalar Tarot is designed to work offline. Your readings, notes, name and settings are stored on your phone. We don't run ads, we don't sell data, and we don't track you across other apps or websites.
 
 ## What stays on your phone
 
@@ -26,7 +26,7 @@ Settings → Export my data saves everything the app stores about you to a file 
 
 ## Children
 
-Nat Tarot is intended for adults and is not directed at children.
+Mingalar Tarot is intended for adults and is not directed at children.
 
 ## Changes
 

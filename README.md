@@ -1,4 +1,4 @@
-# Nat Tarot
+# Mingalar Tarot
 
 A bilingual (English + Burmese) offline-first tarot app for Android and iOS, built with Expo.
 

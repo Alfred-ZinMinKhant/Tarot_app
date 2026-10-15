@@ -22,7 +22,7 @@ const THUMB = join(ROOT, 'assets', 'cards', 'thumb');
 const FULL = join(ROOT, 'assets', 'cards', 'full');
 const MAP_FILE = join(ROOT, 'src', 'data', 'cardImages.ts');
 
-const USER_AGENT = 'NatTarotAssetPipeline/1.0 (offline tarot app; build-time download of public-domain scans)';
+const USER_AGENT = 'MingalarTarotAssetPipeline/1.0 (offline tarot app; build-time download of public-domain scans)';
 
 export const commonsPage = (file: string) => `https://commons.wikimedia.org/wiki/File:${file}`;
 const commonsDownload = (file: string) =>

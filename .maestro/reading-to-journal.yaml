@@ -1,4 +1,4 @@
-appId: ${APP_ID || 'com.nattarot.app'}
+appId: ${APP_ID || 'com.mingalartarot.app'}
 name: Three-card reading is saved to the journal with notes
 ---
 - launchApp:

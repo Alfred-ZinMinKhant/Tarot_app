@@ -68,7 +68,7 @@ describe('premium', () => {
     fireEvent.press(screen.getByTestId('paywall-package-$rc_monthly'));
     expect(screen.getByTestId('paywall-buy')).toHaveTextContent('Continue: 4,900 Ks');
     fireEvent.press(screen.getByTestId('paywall-buy'));
-    expect(await screen.findByText(en.premium.thanks.replace('$t(appName)', 'Nat Tarot'))).toBeTruthy();
+    expect(await screen.findByText(en.premium.thanks.replace('$t(appName)', 'Mingalar Tarot'))).toBeTruthy();
     await waitFor(() => expect(r.getPathname()).toBe('/home'));
     expect(usePremium.getState().isPremium).toBe(true);
     expect(screen.queryByTestId('home-spread-lock-love')).toBeNull();
