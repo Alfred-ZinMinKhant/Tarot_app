@@ -1,0 +1,1586 @@
+[
+  {
+    "id": "major-00-fool",
+    "arcana": "major",
+    "suit": "major",
+    "number": 0,
+    "element": "air",
+    "commonsFile": "RWS_Tarot_00_Fool.jpg",
+    "en": {
+      "name": "The Fool",
+      "keywords": [
+        "new beginnings",
+        "curiosity",
+        "trust",
+        "spontaneity",
+        "open heart"
+      ],
+      "upright": "The Fool steps toward the edge of something new with a light bag and an open heart. This card invites you to begin before you feel completely ready and to let curiosity lead the way. Fresh starts rarely arrive with a full map, and that can be part of their gift. Notice where life is asking you to be playful, flexible and a little brave. Trust is welcome here, and so is simple care for where you place your feet.",
+      "reversed": "Reversed, The Fool can point to a leap taken without looking, or to a fear that keeps you from stepping out at all. Perhaps excitement is running ahead of good sense, or perhaps worry has quietly replaced wonder. Neither is a failure; both are invitations to pause. Ask what you truly want to begin and what small preparation would help you feel steady. A grounded first step is still a beginning, and it may carry you further.",
+      "love": {
+        "upright": "In love, a fresh and playful energy is close. You may feel drawn to meet someone new or to rediscover lightness with a partner. Stay open, and let things unfold without rushing labels.",
+        "reversed": "Reversed, it may help to notice whether you are rushing in or holding back out of fear. Slow down enough to see the other person clearly, and let honesty guide your next move."
+      },
+      "career": {
+        "upright": "At work, this card favours new projects, a change of direction or a bold idea. It can be a good moment to learn something unfamiliar and to treat early mistakes as part of training.",
+        "reversed": "Reversed, a plan might need more groundwork before you commit. Check details, ask questions and gather support. Enthusiasm is valuable, and it works best alongside a simple, realistic plan."
+      },
+      "money": {
+        "upright": "With money, curiosity can lead to useful new habits, such as trying a budget or learning about saving. Explore with small, careful steps rather than large, impulsive moves.",
+        "reversed": "Reversed, it may be wise to pause before spending on a whim or saying yes to a deal that sounds too easy. A little patience now can protect your peace of mind later."
+      },
+      "health": {
+        "upright": "For wellbeing and spirit, this card suggests freshness: a walk somewhere new, a playful hobby or a lighter daily rhythm. Let joy and curiosity refresh your energy.",
+        "reversed": "Reversed, notice whether you are skipping rest or ignoring small signals from your body and mood. Gentle routines and kind attention to yourself can help you feel steady again."
+      },
+      "advice": "Take one small, curious step toward something new today.",
+      "suit": "Major Arcana",
+      "element": "Air",
+      "astrology": "Uranus"
+    },
+    "my": {
+      "name": "လူအ",
+      "keywords": [
+        "အစသစ်",
+        "စူးစမ်းချင်စိတ်",
+        "ယုံကြည်မှု",
+        "ပေါ့ပါးမှု",
+        "ပွင့်လင်းသောနှလုံးသား"
+      ],
+      "upright": "လူအကတ်က အသစ်တစ်ခုရဲ့ အစွန်းမှာ အထုပ်ပေါ့ပေါ့နဲ့ ရင်ဖွင့်ပြီး ရပ်နေပါတယ်။ အပြည့်အဝ အသင့်မဖြစ်သေးခင်မှာပဲ စတင်ကြည့်ဖို့နဲ့ စူးစမ်းချင်စိတ်ကို လမ်းပြခွင့်ပေးဖို့ ဖိတ်ခေါ်နေပါတယ်။ အစသစ်တွေဟာ မြေပုံအပြည့်အစုံနဲ့ ရောက်လာလေ့ မရှိပါဘူး၊ ဒါကလည်း သူတို့ရဲ့ လက်ဆောင်တစ်ခုပါ။ ဘဝက သင့်ကို ပျော်ပျော်ရွှင်ရွှင်၊ ပြောင်းလွယ်ပြင်လွယ်နဲ့ နည်းနည်း ရဲရင့်ဖို့ ဘယ်နေရာမှာ တောင်းဆိုနေလဲ သတိထားကြည့်ပါ။ ယုံကြည်မှုက ကောင်းပါတယ်၊ ခြေလှမ်းတိုင်းကို ဂရုစိုက်ဖို့လည်း မမေ့ပါနဲ့။",
+      "reversed": "ပြောင်းပြန်ကျရင် လူအကတ်က မကြည့်ဘဲ ခုန်ချလိုက်တာ ဒါမှမဟုတ် ကြောက်စိတ်ကြောင့် လုံးဝ မထွက်ရဲတာကို ညွှန်ပြနိုင်ပါတယ်။ စိတ်လှုပ်ရှားမှုက အသိဉာဏ်ထက် ရှေ့ရောက်နေတာ ဖြစ်နိုင်သလို စိုးရိမ်စိတ်က အံ့ဩတတ်တဲ့စိတ်ကို တိတ်တဆိတ် နေရာယူထားတာလည်း ဖြစ်နိုင်ပါတယ်။ ဘယ်ဟာမှ ရှုံးနိမ့်မှု မဟုတ်ပါဘူး၊ ခဏရပ်ဖို့ ဖိတ်ခေါ်ချက်တွေပါ။ ကိုယ်တကယ် ဘာစချင်လဲ၊ ဘယ်လို ပြင်ဆင်မှုလေးက စိတ်တည်ငြိမ်စေမလဲ မေးကြည့်ပါ။ ခိုင်ခိုင်မာမာ ခြေလှမ်းလေးတစ်လှမ်းကလည်း အစတစ်ခုပါပဲ။",
+      "love": {
+        "upright": "အချစ်ရေးမှာ လတ်ဆတ်ပြီး ပျော်ရွှင်စရာ စွမ်းအင်တစ်ခု နီးကပ်နေပါတယ်။ လူသစ်တစ်ယောက်နဲ့ တွေ့ချင်စိတ် ဖြစ်လာတာ ဒါမှမဟုတ် ချစ်သူနဲ့ ပေါ့ပေါ့ပါးပါး ပြန်ပျော်ရွှင်လာတာ ဖြစ်နိုင်ပါတယ်။ အမည်တပ်ဖို့ မလောဘဲ သဘာဝအတိုင်း ဖြစ်ပါစေ။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် ကိုယ်က အလျင်စလို ဝင်ရောက်နေလား၊ ကြောက်လို့ နောက်ဆုတ်နေလား သတိထားကြည့်ပါ။ တစ်ဖက်လူကို ရှင်းရှင်းလင်းလင်း မြင်နိုင်လောက်အောင် နှေးကြည့်ပြီး ရိုးသားမှုနဲ့ ရှေ့ဆက်ပါ။"
+      },
+      "career": {
+        "upright": "အလုပ်မှာ ပရောဂျက်အသစ်၊ လမ်းကြောင်းပြောင်းလဲမှု ဒါမှမဟုတ် ရဲရင့်တဲ့ အကြံတစ်ခုအတွက် အခွင့်သာနေပါတယ်။ မရင်းနှီးသေးတဲ့ အရာကို လေ့လာပြီး အစောပိုင်း အမှားတွေကို သင်ခန်းစာအဖြစ် မြင်ကြည့်ပါ။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် အစီအစဉ်တစ်ခုကို မဆုံးဖြတ်ခင် အခြေခံ ပြင်ဆင်မှု ပိုလိုနိုင်ပါတယ်။ အသေးစိတ်ကို စစ်ပါ၊ မေးခွန်းမေးပါ၊ အကူအညီ ရှာပါ။ စိတ်အားထက်သန်မှုက လက်တွေ့ကျတဲ့ အစီအစဉ်နဲ့ တွဲမှ ပိုကောင်းပါတယ်။"
+      },
+      "money": {
+        "upright": "ငွေကြေးမှာ စူးစမ်းချင်စိတ်က ဘတ်ဂျက်ချကြည့်တာ၊ စုဆောင်းနည်း လေ့လာတာလို အကျင့်ကောင်းအသစ်တွေဆီ ပို့ဆောင်နိုင်ပါတယ်။ ကြီးကြီးမားမား ရုတ်တရက် မလုပ်ဘဲ သေးသေးလေး ဂရုတစိုက် စမ်းကြည့်ပါ။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် စိတ်ကူးပေါက်တိုင်း သုံးတာ၊ လွယ်လွန်းတယ်လို့ ထင်ရတဲ့ အပေးအယူကို လက်ခံတာမျိုး မလုပ်ခင် ခဏရပ်ကြည့်တာ ကောင်းပါတယ်။ အခု နည်းနည်း စိတ်ရှည်တာက နောင် စိတ်အေးချမ်းမှုကို ကာကွယ်ပေးနိုင်ပါတယ်။"
+      },
+      "health": {
+        "upright": "ကျန်းမာရေးနဲ့ စိတ်ဓာတ်အတွက် လတ်ဆတ်မှုကို အကြံပြုပါတယ်။ နေရာသစ်မှာ လမ်းလျှောက်တာ၊ ပျော်စရာ ဝါသနာတစ်ခု လုပ်တာ ဒါမှမဟုတ် နေ့စဉ်ဘဝကို ပေါ့ပါးအောင် ထားတာမျိုးပါ။ ပျော်ရွှင်မှုက စွမ်းအင်ကို ပြန်ဖြည့်ပေးပါစေ။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် အနားယူတာကို ကျော်နေလား၊ ခန္ဓာကိုယ်နဲ့ စိတ်ခံစားမှုရဲ့ အချက်ပြလေးတွေကို လျစ်လျူရှုနေလား သတိထားကြည့်ပါ။ နူးညံ့တဲ့ နေ့စဉ်အလေ့အကျင့်တွေက ပြန်လည် တည်ငြိမ်စေနိုင်ပါတယ်။"
+      },
+      "advice": "ဒီနေ့ အသစ်တစ်ခုဆီ စူးစမ်းတဲ့ ခြေလှမ်းလေးတစ်လှမ်း လှမ်းကြည့်ပါ။",
+      "suit": "အဓိကအာကာနာ",
+      "element": "လေ",
+      "astrology": "ယူရေးနပ်စ်ဂြိုဟ်"
+    }
+  },
+  {
+    "id": "major-01-magician",
+    "arcana": "major",
+    "suit": "major",
+    "number": 1,
+    "element": "air",
+    "commonsFile": "RWS_Tarot_01_Magician.jpg",
+    "en": {
+      "name": "The Magician",
+      "keywords": [
+        "willpower",
+        "skill",
+        "focus",
+        "resourcefulness",
+        "action"
+      ],
+      "upright": "The Magician stands with every tool laid out on the table, ready to turn an idea into something real. This card reminds you that you may already have more resources than you think: your skills, your voice, your time and the people around you. Focus is the key. When thought, word and action point in the same direction, things can begin to move. Choose one clear intention and give it your full, steady attention today.",
+      "reversed": "Reversed, The Magician may show scattered energy, or talents left unused because of doubt. It can also be a gentle warning about tricks and half-truths, whether from others or in the stories we tell ourselves. Ask whether your plans match your values and whether your words match your actions. Gathering your focus again, even around one small task, can restore a sense of power that feels honest and clean.",
+      "love": {
+        "upright": "In love, clear and sincere communication can work wonders. Say what you feel and show it through small, thoughtful actions. Confidence is attractive when it is warm and honest.",
+        "reversed": "Reversed, watch for mixed signals or charm without substance, in yourself or in someone else. Look for consistency between words and deeds before giving your trust completely."
+      },
+      "career": {
+        "upright": "At work, your skills are ready to be used. This is a good time to pitch an idea, start a project or present your abilities with confidence. Prepare well, then act.",
+        "reversed": "Reversed, energy may be spread across too many tasks. Narrow your focus and finish one thing well. Be cautious with offers or promises that seem polished but vague."
+      },
+      "money": {
+        "upright": "With money, resourcefulness helps. Look at what you already have and how it could be used more wisely. A practical idea or skill may open a modest new opportunity.",
+        "reversed": "Reversed, be careful with schemes that promise easy gains. Read the details and trust your common sense. Clear records and simple plans can keep you on solid ground."
+      },
+      "health": {
+        "upright": "For wellbeing and spirit, intention matters. Choose one healthy habit and commit to it with focus. Your mind and body respond well when you give them clear, kind direction.",
+        "reversed": "Reversed, scattered routines may be draining you. Bring your attention back to basics such as sleep, water, movement and quiet moments. Small consistent steps restore your energy."
+      },
+      "advice": "Pick one clear intention and use the tools you already have to act on it.",
+      "suit": "Major Arcana",
+      "element": "Air",
+      "astrology": "Mercury"
+    },
+    "my": {
+      "name": "မှော်ဆရာ",
+      "keywords": [
+        "စိတ်ဆန္ဒအား",
+        "ကျွမ်းကျင်မှု",
+        "အာရုံစူးစိုက်မှု",
+        "အရင်းအမြစ်",
+        "လက်တွေ့လုပ်ဆောင်မှု"
+      ],
+      "upright": "မှော်ဆရာက စားပွဲပေါ်မှာ ကိရိယာအားလုံးကို ခင်းကျင်းထားပြီး စိတ်ကူးတစ်ခုကို အမှန်တကယ် ဖြစ်လာအောင် လုပ်ဖို့ အသင့်ရှိနေပါတယ်။ သင့်မှာ ထင်ထားတာထက် အရင်းအမြစ် ပိုရှိနိုင်တယ်ဆိုတာ သတိပေးနေပါတယ်။ ကျွမ်းကျင်မှု၊ အသံ၊ အချိန်နဲ့ ဘေးနားက လူတွေပါ။ အဓိကသော့ချက်က အာရုံစူးစိုက်မှုပါ။ အတွေး၊ စကားနဲ့ လုပ်ရပ် တစ်ဖက်တည်း ညီသွားတဲ့အခါ အရာတွေ ရွေ့လာနိုင်ပါတယ်။ ရှင်းလင်းတဲ့ ရည်ရွယ်ချက်တစ်ခုကို ရွေးပြီး ဒီနေ့ တည်တည်ငြိမ်ငြိမ် အာရုံစိုက်ပေးပါ။",
+      "reversed": "ပြောင်းပြန်ကျရင် မှော်ဆရာက စွမ်းအင် ပြန့်ကျဲနေတာ ဒါမှမဟုတ် သံသယကြောင့် အရည်အချင်းတွေကို အသုံးမချဖြစ်တာကို ပြနိုင်ပါတယ်။ တခြားသူဆီကဖြစ်ဖြစ်၊ ကိုယ့်ကိုယ်ကို ပြောနေတဲ့ ပုံပြင်ထဲကဖြစ်ဖြစ် လှည့်ကွက်နဲ့ အမှန်တစ်ဝက် စကားတွေကိုလည်း ညင်ညင်သာသာ သတိပေးနေပါတယ်။ အစီအစဉ်တွေက ကိုယ့်တန်ဖိုးတွေနဲ့ ကိုက်ညီလား၊ စကားနဲ့ လုပ်ရပ် တူညီလား မေးကြည့်ပါ။ အလုပ်သေးသေးလေး တစ်ခုပေါ်မှာ အာရုံပြန်စုရင်တောင် ရိုးသားတဲ့ ခွန်အားကို ပြန်ရနိုင်ပါတယ်။",
+      "love": {
+        "upright": "အချစ်ရေးမှာ ရှင်းလင်းပြီး စိတ်ရင်းမှန်တဲ့ ပြောဆိုဆက်ဆံမှုက အံ့ဩစရာ ကောင်းကျိုးပေးနိုင်ပါတယ်။ ခံစားရတာကို ပြောပြပြီး ဂရုစိုက်တဲ့ လုပ်ရပ်လေးတွေနဲ့ ပြသပါ။ နွေးထွေးရိုးသားတဲ့ ယုံကြည်မှုက ဆွဲဆောင်မှု ရှိပါတယ်။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် ကိုယ့်မှာဖြစ်ဖြစ်၊ တစ်ဖက်လူမှာဖြစ်ဖြစ် ရောထွေးတဲ့ အချက်ပြမှုတွေ၊ အနှစ်သာရမရှိတဲ့ ချိုသာမှုတွေကို သတိထားပါ။ ယုံကြည်မှု အပြည့်မပေးခင် စကားနဲ့ လုပ်ရပ် ညီမညီ ကြည့်ပါ။"
+      },
+      "career": {
+        "upright": "အလုပ်မှာ သင့်ကျွမ်းကျင်မှုတွေ အသုံးချဖို့ အသင့်ဖြစ်နေပါပြီ။ အကြံဉာဏ် တင်ပြဖို့၊ ပရောဂျက်စဖို့ ဒါမှမဟုတ် ကိုယ့်စွမ်းရည်ကို ယုံယုံကြည်ကြည် ပြသဖို့ အချိန်ကောင်းပါ။ ကောင်းကောင်း ပြင်ဆင်ပြီးမှ လုပ်ဆောင်ပါ။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် အလုပ်တွေ အများကြီးပေါ် စွမ်းအင် ပြန့်ကျဲနေနိုင်ပါတယ်။ အာရုံကို ကျဉ်းပြီး တစ်ခုကို ကောင်းကောင်း ပြီးအောင်လုပ်ပါ။ ချောမွေ့ပေမဲ့ မရှင်းလင်းတဲ့ ကမ်းလှမ်းချက်တွေကို သတိထားပါ။"
+      },
+      "money": {
+        "upright": "ငွေကြေးမှာ အရင်းအမြစ်ကို ကောင်းကောင်း အသုံးချတတ်တာက အထောက်အကူ ဖြစ်ပါတယ်။ ရှိပြီးသားအရာတွေကို ပိုပြီး ပညာသားပါပါ ဘယ်လိုသုံးနိုင်မလဲ ကြည့်ပါ။ လက်တွေ့ကျတဲ့ အကြံတစ်ခုက အခွင့်အလမ်းလေးတစ်ခု ဖွင့်ပေးနိုင်ပါတယ်။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် လွယ်လွယ်ကူကူ အမြတ်ရမယ်လို့ ကတိပေးတဲ့ အစီအစဉ်တွေကို သတိထားပါ။ အသေးစိတ်ကို ဖတ်ပြီး ကိုယ့်အသိဉာဏ်ကို ယုံပါ။ ရှင်းလင်းတဲ့ မှတ်တမ်းနဲ့ ရိုးရှင်းတဲ့ အစီအစဉ်က ခိုင်မာစေပါတယ်။"
+      },
+      "health": {
+        "upright": "ကျန်းမာရေးနဲ့ စိတ်ဓာတ်အတွက် ရည်ရွယ်ချက်က အရေးကြီးပါတယ်။ ကျန်းမာစေတဲ့ အလေ့အကျင့်တစ်ခုကို ရွေးပြီး အာရုံစိုက် လုပ်ဆောင်ပါ။ ရှင်းလင်းနူးညံ့တဲ့ လမ်းညွှန်မှုပေးတဲ့အခါ စိတ်နဲ့ ခန္ဓာကိုယ်က ကောင်းကောင်း တုံ့ပြန်ပါတယ်။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် ပြန့်ကျဲနေတဲ့ နေ့စဉ်လုပ်ငန်းတွေက အားကုန်စေနိုင်ပါတယ်။ အိပ်စက်ခြင်း၊ ရေသောက်ခြင်း၊ လှုပ်ရှားခြင်းနဲ့ တိတ်ဆိတ်တဲ့ အချိန်လေးတွေလို အခြေခံတွေဆီ အာရုံပြန်ပို့ပါ။"
+      },
+      "advice": "ရှင်းလင်းတဲ့ ရည်ရွယ်ချက်တစ်ခု ရွေးပြီး ရှိပြီးသား ကိရိယာတွေနဲ့ လုပ်ဆောင်ကြည့်ပါ။",
+      "suit": "အဓိကအာကာနာ",
+      "element": "လေ",
+      "astrology": "ဗုဒ္ဓဟူးဂြိုဟ်"
+    }
+  },
+  {
+    "id": "major-02-high-priestess",
+    "arcana": "major",
+    "suit": "major",
+    "number": 2,
+    "element": "water",
+    "commonsFile": "RWS_Tarot_02_High_Priestess.jpg",
+    "en": {
+      "name": "The High Priestess",
+      "keywords": [
+        "intuition",
+        "inner wisdom",
+        "stillness",
+        "mystery",
+        "listening"
+      ],
+      "upright": "The High Priestess sits quietly between two pillars, guarding knowledge that is felt more than spoken. This card asks you to slow down and listen inward. Not every answer comes from searching harder; some arrive in silence, in dreams or in a calm moment of noticing. Trust the subtle feelings you have been brushing aside. You do not need to act immediately. Sometimes the wisest step is simply to observe, reflect and let clarity rise on its own.",
+      "reversed": "Reversed, The High Priestess may suggest that inner guidance is being drowned out by noise, busyness or other people's opinions. You might be ignoring a gut feeling, or keeping something hidden that wants gentle air. Create some quiet space, even for a few minutes, and check in with yourself honestly. Journaling, a slow walk or deep breaths can help you hear what your intuition has been trying to say.",
+      "love": {
+        "upright": "In love, feelings may be deeper than words show right now. Pay attention to unspoken signals and your own intuition. A patient, quiet approach can reveal what is truly there.",
+        "reversed": "Reversed, something may be unsaid between you and another person. Instead of guessing, create a calm moment to ask gently. Also check whether you are ignoring your own feelings."
+      },
+      "career": {
+        "upright": "At work, observe before you speak. Quiet research, careful listening and trusting your instincts about people can guide you well. Keep confidential matters private and act when you feel clear.",
+        "reversed": "Reversed, you may be missing information or second-guessing yourself. Ask for clarity, check sources and give your instincts some weight alongside the facts before deciding."
+      },
+      "money": {
+        "upright": "With money, take time to understand before acting. Study your patterns quietly and trust any uneasy feeling about an offer. Discreet, patient choices tend to serve you well here.",
+        "reversed": "Reversed, avoid making financial choices while confused or rushed. Look for missing details and ask questions. If something feels unclear, it is fine to wait until it is clearer."
+      },
+      "health": {
+        "upright": "For wellbeing and spirit, rest and reflection are nourishing. Meditation-like stillness, journaling or time near water may calm you. Listen to the gentle messages of your body and heart.",
+        "reversed": "Reversed, constant noise may be tiring you. Reduce distractions where you can, and notice what your body has been asking for. Quiet time is not wasted; it restores balance."
+      },
+      "advice": "Give yourself a few quiet minutes today and listen to your inner voice.",
+      "suit": "Major Arcana",
+      "element": "Water",
+      "astrology": "The Moon"
+    },
+    "my": {
+      "name": "ပုရောဟိတ်မကြီး",
+      "keywords": [
+        "အလိုလိုသိစိတ်",
+        "အတွင်းဉာဏ်",
+        "တည်ငြိမ်မှု",
+        "လျှို့ဝှက်ချက်",
+        "နားထောင်ခြင်း"
+      ],
+      "upright": "ပုရောဟိတ်မကြီးက တိုင်နှစ်တိုင်ကြားမှာ တိတ်တိတ်လေး ထိုင်ပြီး စကားနဲ့ထက် ခံစားမှုနဲ့ သိရတဲ့ ပညာကို စောင့်ရှောက်ထားပါတယ်။ နှေးနှေးလေးနေပြီး ကိုယ့်အတွင်းကို နားထောင်ဖို့ ဒီကတ်က တောင်းဆိုနေပါတယ်။ အဖြေတိုင်းက ပိုကြိုးစားရှာမှ ရတာ မဟုတ်ပါဘူး၊ တချို့က တိတ်ဆိတ်မှု၊ အိပ်မက် ဒါမှမဟုတ် အေးအေးဆေးဆေး သတိထားမိတဲ့ အခိုက်အတန့်ထဲ ရောက်လာတတ်ပါတယ်။ ဘေးချိတ်ထားခဲ့တဲ့ နူးညံ့တဲ့ ခံစားချက်တွေကို ယုံကြည့်ပါ။ ချက်ချင်း လုပ်ဖို့ မလိုပါဘူး၊ ကြည့်ရှု ဆင်ခြင်ပြီး ရှင်းလင်းမှု ပေါ်လာအောင် စောင့်ပါ။",
+      "reversed": "ပြောင်းပြန်ကျရင် ဆူညံသံ၊ အလုပ်ရှုပ်မှု ဒါမှမဟုတ် တခြားသူတွေရဲ့ အမြင်တွေကြောင့် ကိုယ့်အတွင်းက လမ်းညွှန်မှု ပျောက်နေတာကို ညွှန်ပြနိုင်ပါတယ်။ ရင်ထဲက ခံစားချက်ကို လျစ်လျူရှုနေတာ ဒါမှမဟုတ် လေညင်းလေး ရချင်နေတဲ့ အရာတစ်ခုကို ဖုံးထားတာ ဖြစ်နိုင်ပါတယ်။ မိနစ်အနည်းငယ်ဖြစ်ဖြစ် တိတ်ဆိတ်တဲ့ နေရာလေး ဖန်တီးပြီး ကိုယ့်ကိုယ်ကို ရိုးရိုးသားသား မေးကြည့်ပါ။ မှတ်စုရေးတာ၊ ဖြည်းဖြည်း လမ်းလျှောက်တာ၊ အသက်ကို ဖြည်းဖြည်း ရှူတာတွေက ကူညီနိုင်ပါတယ်။",
+      "love": {
+        "upright": "အချစ်ရေးမှာ ခံစားချက်တွေက စကားထက် ပိုနက်ရှိုင်းနေနိုင်ပါတယ်။ မပြောဘဲ ပြတဲ့ အချက်ပြမှုတွေနဲ့ ကိုယ့်အလိုလိုသိစိတ်ကို အာရုံစိုက်ပါ။ စိတ်ရှည်ပြီး တိတ်တိတ်ဆိတ်ဆိတ် ချဉ်းကပ်ရင် တကယ်ရှိတာကို မြင်လာနိုင်ပါတယ်။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် သင်နဲ့ တစ်ဖက်လူကြားမှာ မပြောရသေးတာ ရှိနေနိုင်ပါတယ်။ ခန့်မှန်းနေမယ့်အစား အေးအေးဆေးဆေး အချိန်လေးမှာ ညင်ညင်သာသာ မေးကြည့်ပါ။ ကိုယ့်ခံစားချက်ကို လျစ်လျူရှုနေလားလည်း စစ်ကြည့်ပါ။"
+      },
+      "career": {
+        "upright": "အလုပ်မှာ မပြောခင် အရင်ကြည့်ရှုပါ။ တိတ်တိတ်လေး လေ့လာတာ၊ ဂရုတစိုက် နားထောင်တာနဲ့ လူတွေအပေါ် ကိုယ့်ခံစားချက်ကို ယုံကြည်တာက ကောင်းကောင်း လမ်းပြနိုင်ပါတယ်။ လျှို့ဝှက်ရမယ့် ကိစ္စတွေကို လျှို့ဝှက်ထားပါ။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် အချက်အလက် တချို့ လွတ်နေတာ ဒါမှမဟုတ် ကိုယ့်ကိုယ်ကို သံသယဝင်နေတာ ဖြစ်နိုင်ပါတယ်။ ရှင်းလင်းချက် တောင်းပါ၊ အရင်းအမြစ်တွေ စစ်ပါ၊ ဆုံးဖြတ်ခင် ကိုယ့်ခံစားချက်ကိုလည်း အလေးထားပါ။"
+      },
+      "money": {
+        "upright": "ငွေကြေးမှာ မလုပ်ခင် နားလည်အောင် အချိန်ယူပါ။ ကိုယ့်သုံးစွဲပုံကို တိတ်တိတ်လေး လေ့လာပြီး ကမ်းလှမ်းချက်တစ်ခုအပေါ် စိတ်မသက်မသာ ဖြစ်ရင် အဲဒီခံစားချက်ကို ယုံပါ။ စိတ်ရှည်တဲ့ ရွေးချယ်မှုက အကျိုးရှိပါတယ်။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် စိတ်ရှုပ်နေချိန် ဒါမှမဟုတ် အလောတကြီး ဖြစ်နေချိန်မှာ ငွေကြေး ဆုံးဖြတ်ချက် မချပါနဲ့။ လွတ်နေတဲ့ အသေးစိတ်ကို ရှာပြီး မေးခွန်းမေးပါ။ မရှင်းရင် ရှင်းတဲ့အထိ စောင့်တာ ပြဿနာမရှိပါဘူး။"
+      },
+      "health": {
+        "upright": "ကျန်းမာရေးနဲ့ စိတ်ဓာတ်အတွက် အနားယူခြင်းနဲ့ ဆင်ခြင်ခြင်းက အားဖြည့်ပေးပါတယ်။ တိတ်ဆိတ်စွာ ထိုင်တာ၊ မှတ်စုရေးတာ ဒါမှမဟုတ် ရေနားမှာ အချိန်ဖြုန်းတာက စိတ်ကို အေးစေနိုင်ပါတယ်။ ခန္ဓာကိုယ်နဲ့ နှလုံးသားရဲ့ အသံကို နားထောင်ပါ။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် မပြတ်တဲ့ ဆူညံမှုက ပင်ပန်းစေနိုင်ပါတယ်။ အာရုံပြောင်းစရာတွေကို တတ်နိုင်သလောက် လျှော့ပြီး ခန္ဓာကိုယ်က ဘာတောင်းဆိုနေလဲ သတိထားပါ။ တိတ်ဆိတ်တဲ့ အချိန်က အလဟဿ မဟုတ်ပါဘူး။"
+      },
+      "advice": "ဒီနေ့ ကိုယ့်ကိုယ်ကို တိတ်ဆိတ်တဲ့ မိနစ်အနည်းငယ် ပေးပြီး အတွင်းစိတ်ကို နားထောင်ပါ။",
+      "suit": "အဓိကအာကာနာ",
+      "element": "ရေ",
+      "astrology": "လ"
+    }
+  },
+  {
+    "id": "major-03-empress",
+    "arcana": "major",
+    "suit": "major",
+    "number": 3,
+    "element": "earth",
+    "commonsFile": "RWS_Tarot_03_Empress.jpg",
+    "en": {
+      "name": "The Empress",
+      "keywords": [
+        "nurturing",
+        "abundance",
+        "creativity",
+        "comfort",
+        "growth"
+      ],
+      "upright": "The Empress rests in a lush garden, surrounded by growth that has been tended with patience and love. This card speaks of nurturing: caring for others, caring for yourself and caring for whatever you are creating. Beauty, comfort and the senses are welcome guides now. Something may be ready to flourish if it receives steady warmth. Notice where you can soften, enjoy simple pleasures and give your ideas, relationships and body the kindness that helps them grow.",
+      "reversed": "Reversed, The Empress may point to giving so much that your own cup runs dry, or to creative energy that feels stuck. Perhaps you are neglecting comfort, or holding on too tightly to something that needs space. Gentle self-care is not selfish; it keeps your care for others sustainable. Ask what would nourish you today. Even a small act, like a good meal or time outdoors, can help growth begin again.",
+      "love": {
+        "upright": "In love, warmth and affection are highlighted. This is a lovely time to show care, enjoy shared comforts and let a relationship deepen naturally. Tenderness offered freely tends to be returned.",
+        "reversed": "Reversed, check whether care is flowing both ways. You may be over-giving or feeling unappreciated. Gently express your needs, and remember that a healthy bond nourishes both people."
+      },
+      "career": {
+        "upright": "At work, creative and supportive efforts can bear fruit. Projects you have tended patiently may grow. Collaboration, design, teaching and caring roles are especially favoured under this card.",
+        "reversed": "Reversed, creativity may feel blocked, or you may be carrying others' workload. Set kind boundaries and make room for rest. Inspiration often returns when pressure eases a little."
+      },
+      "money": {
+        "upright": "With money, steady care can lead to comfortable growth. Enjoy what you have while planning thoughtfully. Investing in things that truly nourish your life tends to feel rewarding.",
+        "reversed": "Reversed, notice whether spending on comfort has turned into overspending, or whether worry is keeping you from enjoying anything. Seek a gentle, balanced middle path with your resources."
+      },
+      "health": {
+        "upright": "For wellbeing and spirit, nurture your body and senses. Nourishing food, fresh air, rest and time in nature can restore you. Treat yourself with the same patience you give others.",
+        "reversed": "Reversed, you may be neglecting your own needs while caring for everyone else. Make space for rest and simple comforts. Ask for support if you need it; you deserve care too."
+      },
+      "advice": "Nurture something you love today, including yourself.",
+      "suit": "Major Arcana",
+      "element": "Earth",
+      "astrology": "Venus"
+    },
+    "my": {
+      "name": "ဧကရီ",
+      "keywords": [
+        "ပြုစုစောင့်ရှောက်မှု",
+        "ကြွယ်ဝမှု",
+        "ဖန်တီးနိုင်စွမ်း",
+        "သက်သောင့်သက်သာ",
+        "ကြီးထွားမှု"
+      ],
+      "upright": "ဧကရီက စိတ်ရှည်ရှည်နဲ့ ချစ်ခင်စွာ ပြုစုထားတဲ့ စိမ်းစိုတဲ့ ဥယျာဉ်ထဲမှာ အေးအေးဆေးဆေး နားနေပါတယ်။ ဒီကတ်က ပြုစုစောင့်ရှောက်မှုအကြောင်း ပြောနေပါတယ်။ တခြားသူကို ဂရုစိုက်တာ၊ ကိုယ့်ကိုယ်ကို ဂရုစိုက်တာ၊ ကိုယ်ဖန်တီးနေတဲ့ အရာကို ဂရုစိုက်တာပါ။ လှပမှု၊ သက်သောင့်သက်သာရှိမှုနဲ့ အာရုံခံစားမှုတွေက အခု လမ်းပြကောင်းတွေပါ။ တည်ငြိမ်တဲ့ နွေးထွေးမှုရရင် တစ်ခုခု ပွင့်လန်းဖို့ အသင့်ဖြစ်နေနိုင်ပါတယ်။ ကိုယ့်အကြံ၊ ဆက်ဆံရေးနဲ့ ခန္ဓာကိုယ်ကို ကြီးထွားစေမယ့် ကြင်နာမှု ပေးပါ။",
+      "reversed": "ပြောင်းပြန်ကျရင် ဧကရီက အရမ်းပေးလွန်းလို့ ကိုယ့်ခွက်ထဲ ခန်းခြောက်လာတာ ဒါမှမဟုတ် ဖန်တီးမှုစွမ်းအင် တစ်နေရာမှာ ပိတ်မိနေတာကို ပြနိုင်ပါတယ်။ ကိုယ့်သက်သာမှုကို လျစ်လျူရှုနေတာ ဒါမှမဟုတ် နေရာလိုနေတဲ့ အရာကို တင်းတင်းကျပ်ကျပ် ဆုပ်ကိုင်ထားတာ ဖြစ်နိုင်ပါတယ်။ ကိုယ့်ကိုယ်ကို ညင်ညင်သာသာ ဂရုစိုက်တာ တစ်ကိုယ်ကောင်းဆန်တာ မဟုတ်ပါဘူး၊ တခြားသူကို ရေရှည်ဂရုစိုက်နိုင်အောင် ကူညီပါတယ်။ ဒီနေ့ ဘာက ကိုယ့်ကို အားဖြည့်ပေးမလဲ မေးကြည့်ပါ။ အစားကောင်းကောင်း စားတာ၊ အပြင်ထွက်တာလို လုပ်ရပ်လေးတွေကလည်း ကူညီနိုင်ပါတယ်။",
+      "love": {
+        "upright": "အချစ်ရေးမှာ နွေးထွေးမှုနဲ့ ချစ်ခင်မှုတွေ ထင်ရှားနေပါတယ်။ ဂရုစိုက်မှုကို ပြသဖို့၊ အတူတကွ သက်သောင့်သက်သာ ရှိဖို့နဲ့ ဆက်ဆံရေးကို သဘာဝအတိုင်း နက်ရှိုင်းလာစေဖို့ အချိန်ကောင်းပါ။ စိတ်ရင်းနဲ့ပေးတဲ့ ကြင်နာမှုက ပြန်ရောက်လာတတ်ပါတယ်။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် ဂရုစိုက်မှုက နှစ်ဖက်လုံး စီးဆင်းနေလား စစ်ကြည့်ပါ။ ပေးလွန်းနေတာ ဒါမှမဟုတ် တန်ဖိုးမထားခံရသလို ခံစားရတာ ဖြစ်နိုင်ပါတယ်။ ကိုယ့်လိုအပ်ချက်ကို ညင်ညင်သာသာ ပြောပြပါ။"
+      },
+      "career": {
+        "upright": "အလုပ်မှာ ဖန်တီးမှုနဲ့ အားပေးကူညီမှုဆိုင်ရာ ကြိုးစားမှုတွေ အသီးအပွင့် ဖြစ်လာနိုင်ပါတယ်။ စိတ်ရှည်ရှည် ပြုစုထားတဲ့ ပရောဂျက်တွေ ကြီးထွားလာနိုင်ပါတယ်။ ပူးပေါင်းလုပ်ဆောင်မှု၊ ဒီဇိုင်း၊ သင်ကြားရေးနဲ့ ပြုစုရေး အလုပ်တွေ အထူးအခွင့်သာပါတယ်။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် ဖန်တီးနိုင်စွမ်း ပိတ်မိနေသလို ခံစားရတာ ဒါမှမဟုတ် တခြားသူရဲ့ အလုပ်ဝန်ကို ထမ်းနေရတာ ဖြစ်နိုင်ပါတယ်။ ကြင်နာတဲ့ နယ်နိမိတ်တွေ သတ်မှတ်ပြီး အနားယူဖို့ နေရာပေးပါ။"
+      },
+      "money": {
+        "upright": "ငွေကြေးမှာ တည်ငြိမ်တဲ့ ဂရုစိုက်မှုက သက်သောင့်သက်သာ ကြီးထွားမှုဆီ ပို့ဆောင်နိုင်ပါတယ်။ ရှိတာကို ခံစားရင်း ဆင်ဆင်ခြင်ခြင် စီစဉ်ပါ။ ဘဝကို တကယ် အားဖြည့်ပေးတဲ့ အရာတွေမှာ ရင်းနှီးတာက ကျေနပ်စရာ ဖြစ်တတ်ပါတယ်။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် သက်သာမှုအတွက် သုံးစွဲတာက သုံးလွန်းတာ ဖြစ်လာလား၊ စိုးရိမ်စိတ်ကြောင့် ဘာမှ မခံစားရဲ ဖြစ်နေလား သတိထားကြည့်ပါ။ ကိုယ့်အရင်းအမြစ်နဲ့ ညင်သာမျှတတဲ့ လမ်းကို ရှာပါ။"
+      },
+      "health": {
+        "upright": "ကျန်းမာရေးနဲ့ စိတ်ဓာတ်အတွက် ခန္ဓာကိုယ်နဲ့ အာရုံတွေကို ပြုစုပါ။ အာဟာရရှိတဲ့ အစားအစာ၊ လေကောင်းလေသန့်၊ အနားယူမှုနဲ့ သဘာဝထဲမှာ အချိန်ဖြုန်းတာက ပြန်လည်လန်းဆန်းစေနိုင်ပါတယ်။ တခြားသူကို ပေးတဲ့ စိတ်ရှည်မှုကို ကိုယ့်ကိုယ်ကိုလည်း ပေးပါ။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် အားလုံးကို ဂရုစိုက်ရင်း ကိုယ့်လိုအပ်ချက်ကို လျစ်လျူရှုနေတာ ဖြစ်နိုင်ပါတယ်။ အနားယူဖို့နဲ့ ရိုးရိုးလေး သက်သာဖို့ နေရာပေးပါ။ လိုအပ်ရင် အကူအညီ တောင်းပါ၊ သင်လည်း ဂရုစိုက်ခံထိုက်ပါတယ်။"
+      },
+      "advice": "ဒီနေ့ ကိုယ်ချစ်တဲ့ အရာတစ်ခုကို ပြုစုပါ၊ ကိုယ့်ကိုယ်ကိုလည်း ထည့်တွက်ပါ။",
+      "suit": "အဓိကအာကာနာ",
+      "element": "မြေ",
+      "astrology": "သောကြာဂြိုဟ်"
+    }
+  },
+  {
+    "id": "major-04-emperor",
+    "arcana": "major",
+    "suit": "major",
+    "number": 4,
+    "element": "fire",
+    "commonsFile": "RWS_Tarot_04_Emperor.jpg",
+    "en": {
+      "name": "The Emperor",
+      "keywords": [
+        "structure",
+        "stability",
+        "leadership",
+        "responsibility",
+        "boundaries"
+      ],
+      "upright": "The Emperor sits on a stone throne, steady and clear about what he is responsible for. This card speaks of structure, order and the strength that comes from good boundaries. It may be time to organise your plans, make a decision or step into a leadership role with fairness. Stability is something you can build, one reliable habit at a time. Lead yourself first: keep your promises, protect your time and act from calm authority.",
+      "reversed": "Reversed, The Emperor can suggest that structure has become rigid, or that it is missing altogether. You might be feeling controlled by someone, or trying too hard to control everything yourself. Alternatively, plans may lack the discipline to take shape. Look for the middle ground between chaos and stiffness. Flexible rules, honest conversations about power and a few dependable routines can help you feel secure without feeling trapped.",
+      "love": {
+        "upright": "In love, reliability and commitment are highlighted. Showing up consistently, keeping promises and building a stable foundation together can make a relationship feel safe and strong.",
+        "reversed": "Reversed, notice if one person is making all the decisions or if rules feel too strict. Love grows best when both people feel heard. Gentle talks about balance can help."
+      },
+      "career": {
+        "upright": "At work, organisation and leadership are favoured. Set clear goals, create a plan and take responsibility. People may look to you for steadiness; lead with fairness and calm.",
+        "reversed": "Reversed, you may be dealing with a rigid system or an overly controlling manager, or your own plans may lack structure. Look for practical ways to bring order without losing heart."
+      },
+      "money": {
+        "upright": "With money, structure is your friend. A clear budget, regular saving and long-term planning can create a sense of security. Make practical, disciplined choices and review them regularly.",
+        "reversed": "Reversed, finances may feel disorganised or overly restricted. Find a balanced system you can actually follow. If others control shared money, an open, respectful conversation may be needed."
+      },
+      "health": {
+        "upright": "For wellbeing and spirit, routine supports you. Regular sleep, movement and meals create a strong base. Healthy boundaries around work and screens can protect your energy.",
+        "reversed": "Reversed, you may be pushing too hard or ignoring routine entirely. Ease strict rules that feel punishing, and gently add structure where life feels chaotic. Balance brings steadiness."
+      },
+      "advice": "Create one simple structure today that makes your life feel steadier.",
+      "suit": "Major Arcana",
+      "element": "Fire",
+      "astrology": "Aries"
+    },
+    "my": {
+      "name": "ဧကရာဇ်",
+      "keywords": [
+        "စနစ်တကျ",
+        "တည်ငြိမ်မှု",
+        "ခေါင်းဆောင်မှု",
+        "တာဝန်ယူမှု",
+        "နယ်နိမိတ်"
+      ],
+      "upright": "ဧကရာဇ်က ကျောက်ပလ္လင်ပေါ်မှာ တည်တည်ငြိမ်ငြိမ် ထိုင်ပြီး ကိုယ်တာဝန်ယူရမယ့် အရာကို ရှင်းရှင်းလင်းလင်း သိထားပါတယ်။ ဒီကတ်က စနစ်၊ စည်းကမ်းနဲ့ နယ်နိမိတ်ကောင်းတွေကနေ လာတဲ့ ခွန်အားအကြောင်း ပြောနေပါတယ်။ အစီအစဉ်တွေကို စနစ်တကျ စီစဉ်ဖို့၊ ဆုံးဖြတ်ချက်ချဖို့ ဒါမှမဟုတ် တရားမျှတစွာ ခေါင်းဆောင်ဖို့ အချိန်ရောက်နေနိုင်ပါတယ်။ တည်ငြိမ်မှုဆိုတာ ယုံကြည်ရတဲ့ အလေ့အကျင့်တစ်ခုချင်းစီနဲ့ တည်ဆောက်လို့ရပါတယ်။ ကိုယ့်ကိုယ်ကို အရင်ဦးဆောင်ပါ၊ ကတိတည်ပါ၊ အချိန်ကို ကာကွယ်ပါ။",
+      "reversed": "ပြောင်းပြန်ကျရင် ဧကရာဇ်က စနစ်တွေ တင်းကျပ်လွန်းလာတာ ဒါမှမဟုတ် လုံးဝ မရှိတော့တာကို ညွှန်ပြနိုင်ပါတယ်။ တစ်ယောက်ယောက်က ထိန်းချုပ်နေသလို ခံစားရတာ ဒါမှမဟုတ် ကိုယ်ကိုယ်တိုင် အရာအားလုံးကို ထိန်းချုပ်ဖို့ ကြိုးစားလွန်းနေတာ ဖြစ်နိုင်ပါတယ်။ ဒါမှမဟုတ် အစီအစဉ်တွေမှာ ပုံဖော်ဖို့ စည်းကမ်း မလုံလောက်တာ ဖြစ်နိုင်ပါတယ်။ ရှုပ်ထွေးမှုနဲ့ တောင့်တင်းမှုကြားက အလယ်လမ်းကို ရှာပါ။ ပြောင်းလွယ်တဲ့ စည်းမျဉ်း၊ ရိုးသားတဲ့ ဆွေးနွေးမှုနဲ့ ယုံကြည်ရတဲ့ နေ့စဉ်လုပ်ငန်းအနည်းငယ်က ချုပ်နှောင်ခံရသလို မခံစားရဘဲ လုံခြုံစေနိုင်ပါတယ်။",
+      "love": {
+        "upright": "အချစ်ရေးမှာ ယုံကြည်စိတ်ချရမှုနဲ့ ကတိကဝတ်တွေ ထင်ရှားနေပါတယ်။ အမြဲတမ်း ရှိပေးတာ၊ ကတိတည်တာ၊ အတူတကွ ခိုင်မာတဲ့ အခြေခံ တည်ဆောက်တာက ဆက်ဆံရေးကို လုံခြုံပြီး ခိုင်မာစေနိုင်ပါတယ်။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် တစ်ယောက်တည်းက ဆုံးဖြတ်ချက်အားလုံး ချနေလား၊ စည်းမျဉ်းတွေ တင်းကျပ်လွန်းနေလား သတိထားပါ။ နှစ်ယောက်လုံး နားထောင်ခံရတယ်လို့ ခံစားရမှ အချစ်က ကောင်းကောင်း ကြီးထွားပါတယ်။"
+      },
+      "career": {
+        "upright": "အလုပ်မှာ စနစ်တကျ စီမံမှုနဲ့ ခေါင်းဆောင်မှုအတွက် အခွင့်သာပါတယ်။ ရှင်းလင်းတဲ့ ပန်းတိုင်ချပါ၊ အစီအစဉ်ဆွဲပါ၊ တာဝန်ယူပါ။ လူတွေက သင့်ဆီက တည်ငြိမ်မှုကို မျှော်လင့်နိုင်ပါတယ်၊ တရားမျှတစွာ ဦးဆောင်ပါ။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် တင်းကျပ်တဲ့ စနစ် ဒါမှမဟုတ် ထိန်းချုပ်လွန်းတဲ့ မန်နေဂျာနဲ့ ကြုံနေရတာ၊ ကိုယ့်အစီအစဉ်မှာ စနစ်မရှိတာ ဖြစ်နိုင်ပါတယ်။ စိတ်အားမကျဘဲ စည်းစနစ် ယူဆောင်လာနိုင်မယ့် လက်တွေ့နည်းလမ်း ရှာပါ။"
+      },
+      "money": {
+        "upright": "ငွေကြေးမှာ စနစ်တကျ ရှိတာက သင့်မိတ်ဆွေပါ။ ရှင်းလင်းတဲ့ ဘတ်ဂျက်၊ ပုံမှန်စုဆောင်းမှုနဲ့ ရေရှည်စီမံကိန်းက လုံခြုံမှုကို ပေးနိုင်ပါတယ်။ လက်တွေ့ကျပြီး စည်းကမ်းရှိတဲ့ ရွေးချယ်မှုတွေ လုပ်ပြီး ပုံမှန် ပြန်စစ်ပါ။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် ငွေကြေး ရှုပ်ထွေးနေတာ ဒါမှမဟုတ် ကန့်သတ်လွန်းနေတာ ဖြစ်နိုင်ပါတယ်။ တကယ်လိုက်နာနိုင်မယ့် မျှတတဲ့ စနစ်တစ်ခု ရှာပါ။ မျှဝေငွေကို တခြားသူက ထိန်းထားရင် လေးစားစွာ ပွင့်ပွင့်လင်းလင်း ဆွေးနွေးဖို့ လိုနိုင်ပါတယ်။"
+      },
+      "health": {
+        "upright": "ကျန်းမာရေးနဲ့ စိတ်ဓာတ်အတွက် နေ့စဉ်ပုံမှန်လုပ်ငန်းက ထောက်ကူပေးပါတယ်။ ပုံမှန်အိပ်တာ၊ လှုပ်ရှားတာ၊ စားတာက ခိုင်မာတဲ့ အခြေခံကို ဖန်တီးပါတယ်။ အလုပ်နဲ့ ဖုန်းမျက်နှာပြင်အပေါ် နယ်နိမိတ်ကောင်းတွေက စွမ်းအင်ကို ကာကွယ်ပေးပါတယ်။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် ကိုယ့်ကိုယ်ကို တွန်းအားပေးလွန်းနေတာ ဒါမှမဟုတ် ပုံမှန်လုပ်ငန်းကို လုံးဝ လျစ်လျူရှုနေတာ ဖြစ်နိုင်ပါတယ်။ အပြစ်ပေးသလို ခံစားရတဲ့ စည်းမျဉ်းတွေကို လျှော့ပြီး ရှုပ်ထွေးနေတဲ့ နေရာမှာ စနစ်လေး ထည့်ပါ။"
+      },
+      "advice": "ဒီနေ့ ဘဝကို ပိုတည်ငြိမ်စေမယ့် ရိုးရှင်းတဲ့ စနစ်လေးတစ်ခု ဖန်တီးပါ။",
+      "suit": "အဓိကအာကာနာ",
+      "element": "မီး",
+      "astrology": "မိဿရာသီ"
+    }
+  },
+  {
+    "id": "major-05-hierophant",
+    "arcana": "major",
+    "suit": "major",
+    "number": 5,
+    "element": "earth",
+    "commonsFile": "RWS_Tarot_05_Hierophant.jpg",
+    "en": {
+      "name": "The Hierophant",
+      "keywords": [
+        "tradition",
+        "learning",
+        "guidance",
+        "community",
+        "shared values"
+      ],
+      "upright": "The Hierophant represents tradition, teaching and the wisdom passed between generations. This card may invite you to learn from a mentor, follow a proven method or reconnect with the values of your family and community. There is comfort in belonging and in practices that have stood the test of time. Ask which traditions truly support you. Learning respectfully from others can give you a strong foundation from which your own understanding can grow.",
+      "reversed": "Reversed, The Hierophant may suggest questioning rules that no longer fit, or feeling pressure to conform. It is healthy to examine inherited beliefs and keep what feels true while gently releasing what does not. You might also be seeking guidance in the wrong places. Trust that you can honour your roots and still choose your own path. Respectful independence is different from rebellion for its own sake.",
+      "love": {
+        "upright": "In love, shared values and commitment are highlighted. Family approval, traditional steps or meaningful rituals may matter now. Talking about what you both believe in can strengthen your bond.",
+        "reversed": "Reversed, you or your partner may feel boxed in by expectations from family or society. Honest conversations about what you each want can help you build a relationship that fits you both."
+      },
+      "career": {
+        "upright": "At work, learning from experienced people and following established processes can help. Training, mentoring and joining professional groups are favoured. Respect for structure may open doors.",
+        "reversed": "Reversed, old methods may be holding you back, or you may feel unsure about workplace rules. Suggest improvements respectfully and look for mentors who support fresh ideas."
+      },
+      "money": {
+        "upright": "With money, traditional wisdom serves you well. Proven saving methods, careful advice from trusted people and steady, conventional choices tend to be reliable under this card.",
+        "reversed": "Reversed, it may be time to question financial habits you inherited. Something that worked for others may not suit your life. Learn widely and choose what genuinely fits you."
+      },
+      "health": {
+        "upright": "For wellbeing and spirit, meaningful routines and community can be grounding. Learning from wise people, joining a group activity or returning to a calming practice may help.",
+        "reversed": "Reversed, you might need to adapt general advice to your own needs. Listen to qualified professionals for health matters, and also notice what genuinely helps you feel well."
+      },
+      "advice": "Learn something today from someone whose experience you respect.",
+      "suit": "Major Arcana",
+      "element": "Earth",
+      "astrology": "Taurus"
+    },
+    "my": {
+      "name": "ပုရောဟိတ်ကြီး",
+      "keywords": [
+        "ဓလေ့ထုံးတမ်း",
+        "သင်ယူခြင်း",
+        "လမ်းညွှန်မှု",
+        "အသိုင်းအဝိုင်း",
+        "မျှဝေထားသောတန်ဖိုး"
+      ],
+      "upright": "ပုရောဟိတ်ကြီးက ဓလေ့ထုံးတမ်း၊ သင်ကြားမှုနဲ့ မျိုးဆက်တစ်ခုကနေ တစ်ခုကို လက်ဆင့်ကမ်းလာတဲ့ ပညာကို ကိုယ်စားပြုပါတယ်။ လမ်းပြဆရာဆီက သင်ယူဖို့၊ စမ်းသပ်ပြီးသား နည်းလမ်းကို လိုက်ဖို့ ဒါမှမဟုတ် မိသားစုနဲ့ အသိုင်းအဝိုင်းရဲ့ တန်ဖိုးတွေနဲ့ ပြန်ဆက်သွယ်ဖို့ ဒီကတ်က ဖိတ်ခေါ်နိုင်ပါတယ်။ အုပ်စုထဲ ပါဝင်ရတာနဲ့ ကာလကြာရှည် ခံခဲ့တဲ့ အလေ့အထတွေမှာ နှစ်သိမ့်မှု ရှိပါတယ်။ ဘယ်ဓလေ့တွေက သင့်ကို တကယ် ထောက်ကူလဲ မေးကြည့်ပါ။ လေးစားစွာ သင်ယူတာက ခိုင်မာတဲ့ အခြေခံကို ပေးနိုင်ပါတယ်။",
+      "reversed": "ပြောင်းပြန်ကျရင် ပုရောဟိတ်ကြီးက မကိုက်ညီတော့တဲ့ စည်းမျဉ်းတွေကို မေးခွန်းထုတ်တာ ဒါမှမဟုတ် လိုက်လျောညီထွေ နေရဖို့ ဖိအားခံစားရတာကို ညွှန်ပြနိုင်ပါတယ်။ အမွေရလာတဲ့ ယုံကြည်ချက်တွေကို စိစစ်ပြီး မှန်တယ်လို့ ခံစားရတာကို ထိန်းထား၊ မမှန်တာကို ညင်ညင်သာသာ လွှတ်ချတာ ကျန်းမာပါတယ်။ လမ်းညွှန်မှုကို မှားတဲ့နေရာမှာ ရှာနေတာလည်း ဖြစ်နိုင်ပါတယ်။ ကိုယ့်အမြစ်ကို လေးစားရင်းနဲ့ ကိုယ့်လမ်းကို ရွေးနိုင်တယ်ဆိုတာ ယုံကြည်ပါ။ လေးစားမှုရှိတဲ့ လွတ်လပ်မှုဟာ ပုန်ကန်ချင်လို့ ပုန်ကန်တာနဲ့ မတူပါဘူး။",
+      "love": {
+        "upright": "အချစ်ရေးမှာ မျှဝေထားတဲ့ တန်ဖိုးတွေနဲ့ ကတိကဝတ်တွေ ထင်ရှားပါတယ်။ မိသားစုရဲ့ သဘောတူညီမှု၊ ရိုးရာအဆင့်တွေ ဒါမှမဟုတ် အဓိပ္ပာယ်ရှိတဲ့ အလေ့အထတွေ အရေးပါလာနိုင်ပါတယ်။ နှစ်ယောက်လုံး ယုံကြည်တာကို ဆွေးနွေးတာက ချည်နှောင်မှုကို ခိုင်မာစေပါတယ်။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် သင် ဒါမှမဟုတ် ချစ်သူက မိသားစု ဒါမှမဟုတ် လူ့အဖွဲ့အစည်းရဲ့ မျှော်လင့်ချက်တွေကြောင့် ကျဉ်းကျပ်နေသလို ခံစားရနိုင်ပါတယ်။ တစ်ယောက်ချင်းစီ ဘာလိုချင်လဲ ရိုးရိုးသားသား ပြောဆိုတာက ကူညီနိုင်ပါတယ်။"
+      },
+      "career": {
+        "upright": "အလုပ်မှာ အတွေ့အကြုံရှိသူတွေဆီက သင်ယူတာနဲ့ အခိုင်အမာ ရှိပြီးသား လုပ်ငန်းစဉ်တွေကို လိုက်နာတာက ကူညီနိုင်ပါတယ်။ သင်တန်း၊ လမ်းပြဆရာနဲ့ ပညာရှင်အဖွဲ့တွေမှာ ပါဝင်တာ အခွင့်သာပါတယ်။ စနစ်ကို လေးစားတာက တံခါးတွေ ဖွင့်ပေးနိုင်ပါတယ်။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် နည်းဟောင်းတွေက နောက်ပြန်ဆွဲထားတာ ဒါမှမဟုတ် အလုပ်ခွင် စည်းမျဉ်းတွေအပေါ် မသေချာဖြစ်နေတာ ဖြစ်နိုင်ပါတယ်။ တိုးတက်မှုကို လေးစားစွာ အကြံပြုပြီး အကြံသစ်တွေကို ထောက်ခံတဲ့ လမ်းပြဆရာ ရှာပါ။"
+      },
+      "money": {
+        "upright": "ငွေကြေးမှာ ရိုးရာပညာက အကျိုးပြုပါတယ်။ စမ်းသပ်ပြီးသား စုဆောင်းနည်း၊ ယုံကြည်ရသူတွေရဲ့ ဂရုတစိုက် အကြံဉာဏ်နဲ့ တည်ငြိမ်တဲ့ ပုံမှန်ရွေးချယ်မှုတွေက ဒီကတ်အောက်မှာ ယုံကြည်စိတ်ချရတတ်ပါတယ်။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် အမွေရလာတဲ့ ငွေကြေးအကျင့်တွေကို မေးခွန်းထုတ်ဖို့ အချိန်ရောက်နိုင်ပါတယ်။ တခြားသူအတွက် အဆင်ပြေခဲ့တာက ကိုယ့်ဘဝနဲ့ မကိုက်နိုင်ပါဘူး။ ကျယ်ကျယ်ပြန့်ပြန့် လေ့လာပြီး ကိုယ်နဲ့ တကယ်ကိုက်တာကို ရွေးပါ။"
+      },
+      "health": {
+        "upright": "ကျန်းမာရေးနဲ့ စိတ်ဓာတ်အတွက် အဓိပ္ပာယ်ရှိတဲ့ နေ့စဉ်အလေ့အထတွေနဲ့ အသိုင်းအဝိုင်းက စိတ်ကို တည်ငြိမ်စေနိုင်ပါတယ်။ ပညာရှိတွေဆီက သင်ယူတာ၊ အုပ်စုလိုက် လှုပ်ရှားမှုမှာ ပါဝင်တာ ဒါမှမဟုတ် စိတ်အေးစေတဲ့ အလေ့အကျင့်ဆီ ပြန်သွားတာက ကူညီနိုင်ပါတယ်။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် ယေဘုယျ အကြံဉာဏ်တွေကို ကိုယ့်လိုအပ်ချက်နဲ့ ကိုက်အောင် ပြင်ဖို့ လိုနိုင်ပါတယ်။ ကျန်းမာရေးကိစ္စမှာ အရည်အချင်းရှိ ကျွမ်းကျင်သူတွေကို နားထောင်ပြီး ကိုယ့်ကို တကယ် ကောင်းစေတာကိုလည်း သတိထားပါ။"
+      },
+      "advice": "ဒီနေ့ ကိုယ်လေးစားတဲ့ အတွေ့အကြုံရှိသူတစ်ယောက်ဆီက တစ်ခုခု သင်ယူပါ။",
+      "suit": "အဓိကအာကာနာ",
+      "element": "မြေ",
+      "astrology": "ပြိဿရာသီ"
+    }
+  },
+  {
+    "id": "major-06-lovers",
+    "arcana": "major",
+    "suit": "major",
+    "number": 6,
+    "element": "air",
+    "commonsFile": "RWS_Tarot_06_Lovers.jpg",
+    "en": {
+      "name": "The Lovers",
+      "keywords": [
+        "connection",
+        "choice",
+        "harmony",
+        "values",
+        "partnership"
+      ],
+      "upright": "The Lovers speaks of deep connection and of choices made from the heart. It can describe a meaningful relationship, but just as often it points to a decision that asks you to align with your true values. Harmony grows when you are honest about what you want and who you are. Consider which path feels most like you. Choosing with integrity, even when it is not the easiest option, tends to bring a lasting sense of peace.",
+      "reversed": "Reversed, The Lovers may suggest inner conflict, a relationship out of balance or a choice you have been avoiding. Perhaps your head and heart are pulling in different directions, or your actions have drifted from your values. This is not a judgement, only an invitation to realign. Gentle honesty with yourself and others can clear the air. Ask what you truly value, and let that answer guide your next small step.",
+      "love": {
+        "upright": "In love, mutual respect, attraction and emotional honesty are highlighted. A bond may deepen, or a meaningful choice about commitment may appear. Let openness and shared values lead.",
+        "reversed": "Reversed, communication or balance may need attention. Notice whether both people's needs are being met. A calm, honest talk about expectations can help you reconnect or see more clearly."
+      },
+      "career": {
+        "upright": "At work, partnerships and collaborations can flourish. You may face a choice between options; pick the one that matches your values. Good teamwork grows from trust and shared purpose.",
+        "reversed": "Reversed, a work partnership may feel strained, or a decision may conflict with your principles. Clarify expectations and consider what you could live with comfortably over the long term."
+      },
+      "money": {
+        "upright": "With money, decisions go best when they match your values. Shared finances may need open discussion. Choose options that support both your needs and the people you care about.",
+        "reversed": "Reversed, money may be a source of tension in a partnership, or spending may not match your priorities. Talk openly and agree on simple, fair arrangements that feel right."
+      },
+      "health": {
+        "upright": "For wellbeing and spirit, harmony between your needs and your choices is nourishing. Supportive relationships and activities you love can lift your mood and steady your heart.",
+        "reversed": "Reversed, inner conflict may be tiring you. Make space to reflect on what matters most. When your daily choices reflect your values, a sense of ease can return."
+      },
+      "advice": "Make today's choice from your values, not only from convenience.",
+      "suit": "Major Arcana",
+      "element": "Air",
+      "astrology": "Gemini"
+    },
+    "my": {
+      "name": "ချစ်သူများ",
+      "keywords": [
+        "ဆက်နွယ်မှု",
+        "ရွေးချယ်မှု",
+        "သဟဇာတဖြစ်မှု",
+        "တန်ဖိုးထားမှု",
+        "အဖော်အဖက်"
+      ],
+      "upright": "ချစ်သူများကတ်က နက်ရှိုင်းတဲ့ ဆက်နွယ်မှုနဲ့ နှလုံးသားကနေ လုပ်တဲ့ ရွေးချယ်မှုတွေအကြောင်း ပြောပါတယ်။ အဓိပ္ပာယ်ရှိတဲ့ ဆက်ဆံရေးတစ်ခုကို ဖော်ပြနိုင်သလို ကိုယ့်တန်ဖိုးအစစ်တွေနဲ့ ကိုက်ညီဖို့ တောင်းဆိုတဲ့ ဆုံးဖြတ်ချက်တစ်ခုကိုလည်း မကြာခဏ ညွှန်ပြပါတယ်။ ကိုယ်ဘာလိုချင်လဲ၊ ကိုယ်ဘယ်သူလဲဆိုတာကို ရိုးသားတဲ့အခါ သဟဇာတဖြစ်မှု ကြီးထွားလာပါတယ်။ ဘယ်လမ်းက ကိုယ်နဲ့ အတူဆုံးလဲ စဉ်းစားကြည့်ပါ။ အလွယ်ဆုံး မဟုတ်ရင်တောင် သမာဓိရှိရှိ ရွေးချယ်တာက ရေရှည် ငြိမ်းချမ်းမှုကို ယူဆောင်လာတတ်ပါတယ်။",
+      "reversed": "ပြောင်းပြန်ကျရင် ချစ်သူများကတ်က အတွင်းစိတ် ပဋိပက္ခ၊ မျှတမှုမရှိတဲ့ ဆက်ဆံရေး ဒါမှမဟုတ် ရှောင်နေခဲ့တဲ့ ရွေးချယ်မှုတစ်ခုကို ညွှန်ပြနိုင်ပါတယ်။ ဦးနှောက်နဲ့ နှလုံးသား မတူတဲ့ဘက်ကို ဆွဲနေတာ ဒါမှမဟုတ် လုပ်ရပ်တွေက တန်ဖိုးတွေနဲ့ ဝေးလာတာ ဖြစ်နိုင်ပါတယ်။ ဒါဟာ အပြစ်တင်တာ မဟုတ်ပါဘူး၊ ပြန်ညှိဖို့ ဖိတ်ခေါ်ချက်ပါ။ ကိုယ့်ကိုယ်ကိုရော တခြားသူကိုပါ ညင်သာစွာ ရိုးသားတာက လေထုကို ကြည်လင်စေနိုင်ပါတယ်။ ကိုယ်တကယ် ဘာကို တန်ဖိုးထားလဲ မေးပြီး အဲဒီအဖြေက နောက်ခြေလှမ်းကို လမ်းပြပါစေ။",
+      "love": {
+        "upright": "အချစ်ရေးမှာ အပြန်အလှန် လေးစားမှု၊ ဆွဲဆောင်မှုနဲ့ စိတ်ခံစားမှုဆိုင်ရာ ရိုးသားမှုတွေ ထင်ရှားပါတယ်။ ချည်နှောင်မှု နက်ရှိုင်းလာတာ ဒါမှမဟုတ် ကတိကဝတ်နဲ့ ပတ်သက်တဲ့ အရေးကြီးတဲ့ ရွေးချယ်မှု ပေါ်လာတာ ဖြစ်နိုင်ပါတယ်။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် ပြောဆိုဆက်ဆံမှု ဒါမှမဟုတ် မျှတမှုကို အာရုံစိုက်ဖို့ လိုနိုင်ပါတယ်။ နှစ်ယောက်လုံးရဲ့ လိုအပ်ချက် ပြည့်မီနေလား သတိထားပါ။ မျှော်လင့်ချက်တွေအကြောင်း အေးအေးဆေးဆေး ရိုးသားစွာ ပြောတာက ကူညီနိုင်ပါတယ်။"
+      },
+      "career": {
+        "upright": "အလုပ်မှာ မိတ်ဖက်ဆောင်ရွက်မှုနဲ့ ပူးပေါင်းဆောင်ရွက်မှုတွေ ဖွံ့ဖြိုးနိုင်ပါတယ်။ ရွေးချယ်စရာတွေကြား ဆုံးဖြတ်ရနိုင်ပါတယ်၊ ကိုယ့်တန်ဖိုးနဲ့ ကိုက်တာကို ရွေးပါ။ ကောင်းတဲ့ အဖွဲ့လိုက်လုပ်ဆောင်မှုက ယုံကြည်မှုကနေ ကြီးထွားပါတယ်။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် အလုပ်က မိတ်ဖက်ဆက်ဆံရေး တင်းမာနေတာ ဒါမှမဟုတ် ဆုံးဖြတ်ချက်တစ်ခုက ကိုယ့်မူနဲ့ ဆန့်ကျင်နေတာ ဖြစ်နိုင်ပါတယ်။ မျှော်လင့်ချက်တွေကို ရှင်းလင်းပြီး ရေရှည်မှာ စိတ်သက်သာမယ့်ဟာကို စဉ်းစားပါ။"
+      },
+      "money": {
+        "upright": "ငွေကြေးမှာ ကိုယ့်တန်ဖိုးတွေနဲ့ ကိုက်ညီတဲ့ ဆုံးဖြတ်ချက်တွေက အကောင်းဆုံး ဖြစ်တတ်ပါတယ်။ မျှဝေသုံးစွဲတဲ့ ငွေကြေးကို ပွင့်ပွင့်လင်းလင်း ဆွေးနွေးဖို့ လိုနိုင်ပါတယ်။ ကိုယ်ရော ကိုယ်ချစ်တဲ့သူတွေရော အဆင်ပြေမယ့်ဟာကို ရွေးပါ။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် ငွေကြေးက ဆက်ဆံရေးထဲမှာ တင်းမာမှု ဖြစ်စေတာ ဒါမှမဟုတ် သုံးစွဲမှုက ဦးစားပေးတွေနဲ့ မကိုက်တာ ဖြစ်နိုင်ပါတယ်။ ပွင့်ပွင့်လင်းလင်း ပြောပြီး မျှတတဲ့ သဘောတူညီချက် ရိုးရိုးလေး ချမှတ်ပါ။"
+      },
+      "health": {
+        "upright": "ကျန်းမာရေးနဲ့ စိတ်ဓာတ်အတွက် ကိုယ့်လိုအပ်ချက်နဲ့ ရွေးချယ်မှုတွေကြား သဟဇာတဖြစ်တာက အားဖြည့်ပေးပါတယ်။ ထောက်ကူပေးတဲ့ ဆက်ဆံရေးတွေနဲ့ ကိုယ်နှစ်သက်တဲ့ လှုပ်ရှားမှုတွေက စိတ်ကို မြှင့်တင်ပေးနိုင်ပါတယ်။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် အတွင်းစိတ် ပဋိပက္ခက ပင်ပန်းစေနိုင်ပါတယ်။ ဘာက အရေးအကြီးဆုံးလဲ ဆင်ခြင်ဖို့ နေရာပေးပါ။ နေ့စဉ်ရွေးချယ်မှုတွေက ကိုယ့်တန်ဖိုးကို ထင်ဟပ်လာတဲ့အခါ စိတ်သက်သာမှု ပြန်ရောက်လာနိုင်ပါတယ်။"
+      },
+      "advice": "ဒီနေ့ ရွေးချယ်မှုကို အဆင်ပြေမှုတစ်ခုတည်းနဲ့ မဟုတ်ဘဲ ကိုယ့်တန်ဖိုးတွေကနေ လုပ်ပါ။",
+      "suit": "အဓိကအာကာနာ",
+      "element": "လေ",
+      "astrology": "မေထုန်ရာသီ"
+    }
+  },
+  {
+    "id": "major-07-chariot",
+    "arcana": "major",
+    "suit": "major",
+    "number": 7,
+    "element": "water",
+    "commonsFile": "RWS_Tarot_07_Chariot.jpg",
+    "en": {
+      "name": "The Chariot",
+      "keywords": [
+        "determination",
+        "direction",
+        "self-control",
+        "momentum",
+        "progress"
+      ],
+      "upright": "The Chariot shows a figure moving forward with purpose, holding two very different forces in balance. This card speaks of determination and focused effort. You may need to steer competing feelings, demands or priorities toward a single goal. Progress comes from steady direction rather than force. Decide where you are going, commit to it and keep your hands gently but firmly on the reins. Small, consistent movement can carry you surprisingly far.",
+      "reversed": "Reversed, The Chariot can point to scattered direction, frustration or feeling pulled in two ways at once. You might be pushing hard without a clear destination, or losing heart after a setback. Pause and check your route. Is the goal still meaningful to you? Simplifying your plan and regaining self-control, one choice at a time, can help you move again with more ease and less strain.",
+      "love": {
+        "upright": "In love, taking initiative and working through differences together can move things forward. If you want something in a relationship, say so clearly and take steady, caring steps toward it.",
+        "reversed": "Reversed, a relationship may feel stuck or pulled in different directions. Avoid trying to control the outcome. Talk about shared goals, and be patient while you both find your rhythm."
+      },
+      "career": {
+        "upright": "At work, focus and discipline can lead to real progress. Set clear targets and push through obstacles calmly. This is a good card for promotions, deadlines and ambitious projects.",
+        "reversed": "Reversed, too many priorities may be slowing you down. Choose what matters most and drop or delegate the rest. A clearer plan can turn frustration into renewed momentum."
+      },
+      "money": {
+        "upright": "With money, determined effort toward a clear goal can pay off. Track your progress and stay disciplined. Steady saving toward something meaningful can feel motivating now.",
+        "reversed": "Reversed, impulsive moves or unclear goals may be draining your resources. Slow down and steer carefully. Re-establishing a simple, focused plan can help you regain control."
+      },
+      "health": {
+        "upright": "For wellbeing and spirit, steady commitment to healthy habits can build strength and confidence. Balance effort with rest so that your progress stays sustainable over time.",
+        "reversed": "Reversed, you may be pushing too hard or feeling scattered. Listen to your limits. Gentle consistency often works better than intense bursts followed by exhaustion."
+      },
+      "advice": "Choose one direction today and move toward it with calm determination.",
+      "suit": "Major Arcana",
+      "element": "Water",
+      "astrology": "Cancer"
+    },
+    "my": {
+      "name": "စစ်ရထား",
+      "keywords": [
+        "ဆုံးဖြတ်ချက်ခိုင်မာမှု",
+        "ဦးတည်ချက်",
+        "ကိုယ့်ကိုယ်ကိုထိန်းချုပ်မှု",
+        "အရှိန်",
+        "တိုးတက်မှု"
+      ],
+      "upright": "စစ်ရထားကတ်မှာ မတူညီတဲ့ အင်အားနှစ်ခုကို မျှမျှတတ ထိန်းပြီး ရည်ရွယ်ချက်ရှိရှိ ရှေ့ကို ချီတက်နေတဲ့ ပုံကို ပြပါတယ်။ ဒီကတ်က ဆုံးဖြတ်ချက်ခိုင်မာမှုနဲ့ အာရုံစူးစိုက်တဲ့ ကြိုးစားမှုအကြောင်း ပြောပါတယ်။ ပြိုင်ဆိုင်နေတဲ့ ခံစားချက်၊ တောင်းဆိုမှု ဒါမှမဟုတ် ဦးစားပေးတွေကို ပန်းတိုင်တစ်ခုဆီ ဦးတည်ဖို့ လိုနိုင်ပါတယ်။ တိုးတက်မှုက အတင်းအကျပ်ထက် တည်ငြိမ်တဲ့ ဦးတည်ချက်ကနေ လာပါတယ်။ ဘယ်ကို သွားမလဲ ဆုံးဖြတ်ပြီး ကြိုးတွေကို ညင်သာပေမဲ့ ခိုင်ခိုင်မာမာ ကိုင်ထားပါ။",
+      "reversed": "ပြောင်းပြန်ကျရင် စစ်ရထားက ဦးတည်ချက် ပြန့်ကျဲနေတာ၊ စိတ်ပျက်နေတာ ဒါမှမဟုတ် တစ်ပြိုင်နက် နှစ်ဖက် ဆွဲခံနေရသလို ခံစားရတာကို ညွှန်ပြနိုင်ပါတယ်။ ရှင်းလင်းတဲ့ ပန်းတိုင်မရှိဘဲ အားကုန်တွန်းနေတာ ဒါမှမဟုတ် အခက်အခဲတစ်ခုနောက်မှာ စိတ်ဓာတ်ကျနေတာ ဖြစ်နိုင်ပါတယ်။ ခဏရပ်ပြီး လမ်းကြောင်းကို စစ်ပါ။ ပန်းတိုင်က ကိုယ့်အတွက် အဓိပ္ပာယ် ရှိနေသေးလား။ အစီအစဉ်ကို ရိုးရှင်းအောင်လုပ်ပြီး ရွေးချယ်မှုတစ်ခုချင်းစီနဲ့ ကိုယ့်ကိုယ်ကို ပြန်ထိန်းတာက ပိုလွယ်ကူစွာ ပြန်ရွေ့စေနိုင်ပါတယ်။",
+      "love": {
+        "upright": "အချစ်ရေးမှာ ဦးဆောင်ပြီး ကွဲပြားမှုတွေကို အတူတကွ ဖြေရှင်းတာက ရှေ့ကို တိုးစေနိုင်ပါတယ်။ ဆက်ဆံရေးမှာ တစ်ခုခု လိုချင်ရင် ရှင်းရှင်းလင်းလင်း ပြောပြီး ဂရုစိုက်တဲ့ ခြေလှမ်းတွေ တည်တည်ငြိမ်ငြိမ် လှမ်းပါ။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် ဆက်ဆံရေးက ရပ်တန့်နေသလို ဒါမှမဟုတ် မတူတဲ့ ဦးတည်ချက်တွေဆီ ဆွဲခံနေရသလို ခံစားရနိုင်ပါတယ်။ ရလဒ်ကို ထိန်းချုပ်ဖို့ မကြိုးစားပါနဲ့။ မျှဝေထားတဲ့ ပန်းတိုင်တွေအကြောင်း ပြောပြီး စိတ်ရှည်ပါ။"
+      },
+      "career": {
+        "upright": "အလုပ်မှာ အာရုံစူးစိုက်မှုနဲ့ စည်းကမ်းက အမှန်တကယ် တိုးတက်မှုကို ယူဆောင်လာနိုင်ပါတယ်။ ရှင်းလင်းတဲ့ ပစ်မှတ်ချပြီး အတားအဆီးတွေကို အေးအေးဆေးဆေး ကျော်ဖြတ်ပါ။ ရာထူးတိုး၊ သတ်မှတ်ရက်နဲ့ ရည်မှန်းချက်ကြီးတဲ့ ပရောဂျက်တွေအတွက် ကောင်းပါတယ်။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် ဦးစားပေးတွေ များလွန်းလို့ နှေးကွေးနေတာ ဖြစ်နိုင်ပါတယ်။ အရေးအကြီးဆုံးကို ရွေးပြီး ကျန်တာကို လျှော့ပါ ဒါမှမဟုတ် လွှဲပေးပါ။ ပိုရှင်းလင်းတဲ့ အစီအစဉ်က စိတ်ပျက်မှုကို အရှိန်သစ်အဖြစ် ပြောင်းပေးနိုင်ပါတယ်။"
+      },
+      "money": {
+        "upright": "ငွေကြေးမှာ ရှင်းလင်းတဲ့ ပန်းတိုင်ဆီ ဆုံးဖြတ်ချက်ခိုင်ခိုင် ကြိုးစားတာက အကျိုးရှိနိုင်ပါတယ်။ တိုးတက်မှုကို မှတ်တမ်းတင်ပြီး စည်းကမ်းရှိရှိ နေပါ။ အဓိပ္ပာယ်ရှိတဲ့ အရာအတွက် ပုံမှန်စုဆောင်းတာက အားတက်စရာ ဖြစ်နိုင်ပါတယ်။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် စိတ်လိုက်မာန်ပါ လုပ်ရပ်တွေ ဒါမှမဟုတ် မရှင်းလင်းတဲ့ ပန်းတိုင်တွေက အရင်းအမြစ်ကို ကုန်စေနိုင်ပါတယ်။ နှေးနှေးလေး ဂရုတစိုက် ထိန်းကျောင်းပါ။ ရိုးရှင်းတဲ့ အစီအစဉ်တစ်ခု ပြန်ချမှတ်ပါ။"
+      },
+      "health": {
+        "upright": "ကျန်းမာရေးနဲ့ စိတ်ဓာတ်အတွက် ကျန်းမာတဲ့ အလေ့အကျင့်တွေကို တည်တည်ငြိမ်ငြိမ် လိုက်နာတာက ခွန်အားနဲ့ ယုံကြည်မှုကို တည်ဆောက်ပေးနိုင်ပါတယ်။ တိုးတက်မှု ရေရှည်တည်တံ့အောင် ကြိုးစားမှုနဲ့ အနားယူမှုကို မျှတပါ။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် ကိုယ့်ကိုယ်ကို တွန်းအားပေးလွန်းနေတာ ဒါမှမဟုတ် ပြန့်ကျဲနေတာ ဖြစ်နိုင်ပါတယ်။ ကိုယ့်အကန့်အသတ်ကို နားထောင်ပါ။ အားကုန်အောင် လုပ်ပြီး ပင်ပန်းတာထက် ညင်သာပုံမှန် လုပ်တာက ပိုအဆင်ပြေတတ်ပါတယ်။"
+      },
+      "advice": "ဒီနေ့ ဦးတည်ချက်တစ်ခု ရွေးပြီး အေးဆေးခိုင်မာတဲ့ စိတ်နဲ့ ရှေ့ဆက်ပါ။",
+      "suit": "အဓိကအာကာနာ",
+      "element": "ရေ",
+      "astrology": "ကရကဋ်ရာသီ"
+    }
+  },
+  {
+    "id": "major-08-strength",
+    "arcana": "major",
+    "suit": "major",
+    "number": 8,
+    "element": "fire",
+    "commonsFile": "RWS_Tarot_08_Strength.jpg",
+    "en": {
+      "name": "Strength",
+      "keywords": [
+        "inner strength",
+        "patience",
+        "compassion",
+        "courage",
+        "gentleness"
+      ],
+      "upright": "Strength shows a calm figure gently soothing a lion, not with force but with patience and warmth. This card reminds you that real power is often quiet. Courage can look like staying kind under pressure, holding steady through fear or treating your own difficult feelings with compassion. You may be stronger than you feel today. Approach challenges softly but firmly, and trust that steady gentleness can tame what force alone cannot.",
+      "reversed": "Reversed, Strength may point to self-doubt, impatience or feelings that seem hard to manage. Perhaps you are being too harsh with yourself, or letting frustration take the lead. Remember that strength can be rebuilt. Rest, gentle self-talk and small acts of courage can restore your confidence. Be patient with the parts of you that feel wild or tired; they respond better to kindness than to criticism.",
+      "love": {
+        "upright": "In love, patience and gentle understanding can deepen trust. Respond to difficult moments with calm warmth rather than reaction. Quiet loyalty and kindness are especially powerful now.",
+        "reversed": "Reversed, insecurity or frustration may be affecting a relationship. Take a breath before reacting. Speak to yourself and your partner kindly, and give feelings time to settle."
+      },
+      "career": {
+        "upright": "At work, calm persistence and emotional intelligence help you handle challenges. You can lead others by staying steady and fair. Difficult people may respond well to your patience.",
+        "reversed": "Reversed, self-doubt may be holding you back, or stress may be making you short-tempered. Recognise your abilities, take short breaks and approach problems one step at a time."
+      },
+      "money": {
+        "upright": "With money, patience and self-discipline pay off. Resisting impulse spending and sticking gently to a plan can build security over time. Trust your ability to manage well.",
+        "reversed": "Reversed, emotional spending or money worries may be affecting you. Pause before big decisions. A kind, realistic plan can help you feel more in control again."
+      },
+      "health": {
+        "upright": "For wellbeing and spirit, inner resilience is highlighted. Gentle routines, kind self-talk and steady habits help you feel strong. Your calm presence can be very healing for others too.",
+        "reversed": "Reversed, you may feel drained or harsh toward yourself. Rest and gentle care are needed. Reach out for support if you feel overwhelmed; asking for help is also a kind of strength."
+      },
+      "advice": "Meet today's challenge with patience and a gentle, steady heart.",
+      "suit": "Major Arcana",
+      "element": "Fire",
+      "astrology": "Leo"
+    },
+    "my": {
+      "name": "ခွန်အား",
+      "keywords": [
+        "အတွင်းခွန်အား",
+        "စိတ်ရှည်မှု",
+        "ကရုဏာ",
+        "သတ္တိ",
+        "နူးညံ့မှု"
+      ],
+      "upright": "ခွန်အားကတ်မှာ ခြင်္သေ့တစ်ကောင်ကို အင်အားနဲ့ မဟုတ်ဘဲ စိတ်ရှည်မှုနဲ့ နွေးထွေးမှုနဲ့ ညင်ညင်သာသာ နှစ်သိမ့်နေတဲ့ ပုံကို ပြပါတယ်။ တကယ့်ခွန်အားက များသောအားဖြင့် တိတ်ဆိတ်တယ်ဆိုတာ ဒီကတ်က သတိပေးနေပါတယ်။ သတ္တိဆိုတာ ဖိအားအောက်မှာ ကြင်နာနေနိုင်တာ၊ ကြောက်ရွံ့မှုကြားမှာ တည်ငြိမ်နေတာ ဒါမှမဟုတ် ကိုယ့်ရဲ့ ခက်ခဲတဲ့ ခံစားချက်တွေကို ကရုဏာနဲ့ ဆက်ဆံတာမျိုး ဖြစ်နိုင်ပါတယ်။ ဒီနေ့ ခံစားရတာထက် သင် ပိုသန်မာနိုင်ပါတယ်။ စိန်ခေါ်မှုတွေကို ညင်သာပေမဲ့ ခိုင်ခိုင်မာမာ ချဉ်းကပ်ပါ။",
+      "reversed": "ပြောင်းပြန်ကျရင် ခွန်အားကတ်က ကိုယ့်ကိုယ်ကို သံသယဝင်တာ၊ စိတ်မရှည်တာ ဒါမှမဟုတ် ထိန်းရခက်တဲ့ ခံစားချက်တွေကို ညွှန်ပြနိုင်ပါတယ်။ ကိုယ့်ကိုယ်ကို ကြမ်းတမ်းလွန်းနေတာ ဒါမှမဟုတ် စိတ်ပျက်မှုကို ဦးဆောင်ခွင့် ပေးထားတာ ဖြစ်နိုင်ပါတယ်။ ခွန်အားဆိုတာ ပြန်တည်ဆောက်လို့ရတယ်ဆိုတာ သတိရပါ။ အနားယူခြင်း၊ ကိုယ့်ကိုယ်ကို ညင်သာစွာ ပြောဆိုခြင်းနဲ့ သတ္တိလုပ်ရပ်လေးတွေက ယုံကြည်မှုကို ပြန်ပေးနိုင်ပါတယ်။ ရိုင်းစိုင်းနေသလို ဒါမှမဟုတ် ပင်ပန်းနေသလို ခံစားရတဲ့ ကိုယ့်အစိတ်အပိုင်းတွေကို ဝေဖန်မယ့်အစား ကြင်နာမှုနဲ့ ဆက်ဆံပါ။",
+      "love": {
+        "upright": "အချစ်ရေးမှာ စိတ်ရှည်မှုနဲ့ ညင်သာတဲ့ နားလည်မှုက ယုံကြည်မှုကို နက်ရှိုင်းစေနိုင်ပါတယ်။ ခက်ခဲတဲ့ အခိုက်အတန့်တွေကို ချက်ချင်း တုံ့ပြန်မယ့်အစား အေးဆေးနွေးထွေးစွာ ဆက်ဆံပါ။ တိတ်ဆိတ်တဲ့ သစ္စာနဲ့ ကြင်နာမှုက အခု အထူး အစွမ်းထက်ပါတယ်။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် မလုံခြုံစိတ် ဒါမှမဟုတ် စိတ်ပျက်မှုက ဆက်ဆံရေးကို ထိခိုက်နေနိုင်ပါတယ်။ မတုံ့ပြန်ခင် အသက်ကို ဖြည်းဖြည်း ရှူပါ။ ကိုယ့်ကိုယ်ကိုရော ချစ်သူကိုပါ ကြင်ကြင်နာနာ ပြောပြီး ခံစားချက်တွေ ငြိမ်သွားဖို့ အချိန်ပေးပါ။"
+      },
+      "career": {
+        "upright": "အလုပ်မှာ အေးဆေးတဲ့ ဇွဲနဲ့ စိတ်ခံစားမှုဆိုင်ရာ ဉာဏ်ရည်က စိန်ခေါ်မှုတွေကို ကိုင်တွယ်ဖို့ ကူညီပါတယ်။ တည်ငြိမ်ပြီး တရားမျှတစွာ နေခြင်းဖြင့် တခြားသူတွေကို ဦးဆောင်နိုင်ပါတယ်။ ခက်ခဲတဲ့ လူတွေက သင့်စိတ်ရှည်မှုကို ကောင်းကောင်း တုံ့ပြန်နိုင်ပါတယ်။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် ကိုယ့်ကိုယ်ကို သံသယဝင်တာက နောက်ပြန်ဆွဲနေတာ ဒါမှမဟုတ် စိတ်ဖိစီးမှုကြောင့် စိတ်တိုလွယ်နေတာ ဖြစ်နိုင်ပါတယ်။ ကိုယ့်စွမ်းရည်ကို အသိအမှတ်ပြုပြီး ခဏနားကာ ပြဿနာတွေကို တစ်ဆင့်ချင်း ဖြေရှင်းပါ။"
+      },
+      "money": {
+        "upright": "ငွေကြေးမှာ စိတ်ရှည်မှုနဲ့ ကိုယ့်ကိုယ်ကို ထိန်းချုပ်မှုက အကျိုးရှိပါတယ်။ စိတ်လိုက်သုံးချင်တာကို ထိန်းပြီး အစီအစဉ်ကို ညင်သာစွာ လိုက်နာတာက အချိန်ကြာလာတာနဲ့ လုံခြုံမှုကို တည်ဆောက်ပေးနိုင်ပါတယ်။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် စိတ်ခံစားမှုကြောင့် သုံးစွဲတာ ဒါမှမဟုတ် ငွေကြေးစိုးရိမ်မှုတွေက ထိခိုက်နေနိုင်ပါတယ်။ ဆုံးဖြတ်ချက်ကြီးတွေ မချခင် ခဏရပ်ပါ။ ကြင်နာပြီး လက်တွေ့ကျတဲ့ အစီအစဉ်က ပြန်ထိန်းနိုင်သလို ခံစားစေပါတယ်။"
+      },
+      "health": {
+        "upright": "ကျန်းမာရေးနဲ့ စိတ်ဓာတ်အတွက် အတွင်းစိတ် ကြံ့ခိုင်မှု ထင်ရှားပါတယ်။ ညင်သာတဲ့ နေ့စဉ်လုပ်ငန်း၊ ကိုယ့်ကိုယ်ကို ကြင်နာစွာ ပြောဆိုမှုနဲ့ တည်ငြိမ်တဲ့ အလေ့အကျင့်တွေက သန်မာသလို ခံစားစေပါတယ်။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် အားကုန်နေသလို ဒါမှမဟုတ် ကိုယ့်ကိုယ်ကို ကြမ်းတမ်းနေသလို ခံစားရနိုင်ပါတယ်။ အနားယူမှုနဲ့ ညင်သာတဲ့ ဂရုစိုက်မှု လိုပါတယ်။ လွန်ကဲနေရင် အကူအညီ တောင်းပါ၊ ဒါလည်း ခွန်အားတစ်မျိုးပါ။"
+      },
+      "advice": "ဒီနေ့ စိန်ခေါ်မှုကို စိတ်ရှည်မှုနဲ့ ညင်သာတည်ငြိမ်တဲ့ နှလုံးသားနဲ့ ရင်ဆိုင်ပါ။",
+      "suit": "အဓိကအာကာနာ",
+      "element": "မီး",
+      "astrology": "သိဟ်ရာသီ"
+    }
+  },
+  {
+    "id": "major-09-hermit",
+    "arcana": "major",
+    "suit": "major",
+    "number": 9,
+    "element": "earth",
+    "commonsFile": "RWS_Tarot_09_Hermit.jpg",
+    "en": {
+      "name": "The Hermit",
+      "keywords": [
+        "solitude",
+        "reflection",
+        "inner guidance",
+        "wisdom",
+        "retreat"
+      ],
+      "upright": "The Hermit walks alone on a quiet mountain path, holding up a lantern that lights just enough of the way ahead. This card invites a period of reflection, rest from noise and honest conversation with yourself. You do not need to have every answer; one small light is enough for the next step. Time alone can be deeply restorative and clarifying. What you discover in quiet moments may later become wisdom you share with others.",
+      "reversed": "Reversed, The Hermit may suggest too much isolation, or the opposite: avoiding solitude because quiet feels uncomfortable. You might feel lonely, disconnected or unsure where to look for guidance. Balance is the gentle lesson here. Seek a little quiet if you have been overwhelmed, or reach out to someone you trust if you have withdrawn for too long. Inner work and connection can support each other beautifully.",
+      "love": {
+        "upright": "In love, you may need time to understand your own heart before sharing it. Healthy space can strengthen a bond. If single, reflection may clarify what you truly want in a partner.",
+        "reversed": "Reversed, withdrawal may be creating distance. If you feel lonely, gently reach out. If you need space, explain that kindly so the other person does not feel shut out."
+      },
+      "career": {
+        "upright": "At work, focused independent study or a quiet project may be rewarding. Step back to think strategically. Advice from a wise mentor, or your own reflection, can guide your next move.",
+        "reversed": "Reversed, working in isolation may be limiting you. Share your ideas and ask for input. Alternatively, you may need to protect quiet time for deep work amid constant distraction."
+      },
+      "money": {
+        "upright": "With money, careful reflection before spending is wise. Review your values and long-term needs. A simpler lifestyle may feel surprisingly freeing and steady right now.",
+        "reversed": "Reversed, avoiding financial matters may let small issues grow. Face your numbers calmly, or ask a trusted person for guidance. You do not need to handle everything alone."
+      },
+      "health": {
+        "upright": "For wellbeing and spirit, solitude, rest and gentle reflection are nourishing. Quiet walks, early nights or time away from screens may help you reconnect with yourself.",
+        "reversed": "Reversed, too much isolation may be lowering your mood. Balance alone time with supportive company. If heavy feelings linger, talking with someone you trust can really help."
+      },
+      "advice": "Spend some quiet time today with your own thoughts and feelings.",
+      "suit": "Major Arcana",
+      "element": "Earth",
+      "astrology": "Virgo"
+    },
+    "my": {
+      "name": "ရသေ့",
+      "keywords": [
+        "တစ်ကိုယ်တည်းနေခြင်း",
+        "ဆင်ခြင်ခြင်း",
+        "အတွင်းလမ်းညွှန်",
+        "ပညာ",
+        "အနားယူခြင်း"
+      ],
+      "upright": "ရသေ့က တိတ်ဆိတ်တဲ့ တောင်လမ်းပေါ်မှာ တစ်ယောက်တည်း လျှောက်ရင်း ရှေ့လမ်းကို လုံလောက်ရုံ လင်းစေတဲ့ မီးအိမ်လေးကို မြှောက်ကိုင်ထားပါတယ်။ ဒီကတ်က ဆင်ခြင်တဲ့ကာလ၊ ဆူညံမှုကနေ အနားယူခြင်းနဲ့ ကိုယ့်ကိုယ်ကို ရိုးရိုးသားသား စကားပြောခြင်းကို ဖိတ်ခေါ်ပါတယ်။ အဖြေအားလုံး ရှိဖို့ မလိုပါဘူး၊ နောက်ခြေလှမ်းအတွက် အလင်းလေးတစ်ခုနဲ့ လုံလောက်ပါတယ်။ တစ်ယောက်တည်းနေတဲ့ အချိန်က နက်နက်ရှိုင်းရှိုင်း ပြန်လည်လန်းဆန်းစေပြီး ရှင်းလင်းစေနိုင်ပါတယ်။ တိတ်ဆိတ်တဲ့ အခိုက်အတန့်မှာ တွေ့ရှိတာက နောင်မှာ မျှဝေနိုင်တဲ့ ပညာ ဖြစ်လာနိုင်ပါတယ်။",
+      "reversed": "ပြောင်းပြန်ကျရင် ရသေ့က အထီးကျန်လွန်းတာ ဒါမှမဟုတ် ပြောင်းပြန်အနေနဲ့ တိတ်ဆိတ်မှုက မသက်မသာ ဖြစ်စေလို့ တစ်ယောက်တည်းနေတာကို ရှောင်နေတာကို ညွှန်ပြနိုင်ပါတယ်။ အထီးကျန်သလို၊ ဆက်သွယ်မှု ပြတ်နေသလို ဒါမှမဟုတ် လမ်းညွှန်မှုကို ဘယ်မှာ ရှာရမလဲ မသိသလို ခံစားရနိုင်ပါတယ်။ မျှတမှုက ဒီနေရာက ညင်သာတဲ့ သင်ခန်းစာပါ။ လွန်ကဲနေခဲ့ရင် တိတ်ဆိတ်မှုလေး ရှာပါ၊ အကြာကြီး ပုန်းနေခဲ့ရင် ယုံကြည်ရသူတစ်ယောက်ကို ဆက်သွယ်ပါ။ အတွင်းစိတ်လုပ်ငန်းနဲ့ ဆက်နွယ်မှုက တစ်ခုနဲ့တစ်ခု လှလှပပ ထောက်ကူနိုင်ပါတယ်။",
+      "love": {
+        "upright": "အချစ်ရေးမှာ ကိုယ့်နှလုံးသားကို မမျှဝေခင် နားလည်ဖို့ အချိန်လိုနိုင်ပါတယ်။ ကျန်းမာတဲ့ ကိုယ်ပိုင်နေရာက ချည်နှောင်မှုကို ခိုင်မာစေနိုင်ပါတယ်။ လူလွတ်ဆိုရင် ဆင်ခြင်ခြင်းက အဖော်မှာ တကယ် ဘာလိုချင်လဲ ရှင်းလင်းစေနိုင်ပါတယ်။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် နောက်ဆုတ်နေတာက အကွာအဝေး ဖန်တီးနေနိုင်ပါတယ်။ အထီးကျန်ရင် ညင်ညင်သာသာ ဆက်သွယ်ပါ။ ကိုယ်ပိုင်အချိန်လိုရင် တစ်ဖက်လူ ပိတ်ပယ်ခံရသလို မခံစားရအောင် ကြင်ကြင်နာနာ ရှင်းပြပါ။"
+      },
+      "career": {
+        "upright": "အလုပ်မှာ အာရုံစိုက်တဲ့ ကိုယ်ပိုင်လေ့လာမှု ဒါမှမဟုတ် တိတ်ဆိတ်တဲ့ ပရောဂျက်က အကျိုးရှိနိုင်ပါတယ်။ ဗျူဟာကျကျ စဉ်းစားဖို့ နောက်တစ်လှမ်း ဆုတ်ကြည့်ပါ။ ပညာရှိ လမ်းပြဆရာရဲ့ အကြံ ဒါမှမဟုတ် ကိုယ့်ဆင်ခြင်မှုက လမ်းပြနိုင်ပါတယ်။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် တစ်ယောက်တည်း အလုပ်လုပ်နေတာက ကန့်သတ်နေနိုင်ပါတယ်။ အကြံတွေကို မျှဝေပြီး ထင်မြင်ချက် တောင်းပါ။ ဒါမှမဟုတ် အာရုံပျံ့စရာ များတဲ့ကြား နက်နက်နဲနဲ အလုပ်လုပ်ဖို့ တိတ်ဆိတ်တဲ့ အချိန်ကို ကာကွယ်ဖို့ လိုနိုင်ပါတယ်။"
+      },
+      "money": {
+        "upright": "ငွေကြေးမှာ မသုံးခင် ဂရုတစိုက် ဆင်ခြင်တာ ပညာရှိပါတယ်။ ကိုယ့်တန်ဖိုးနဲ့ ရေရှည်လိုအပ်ချက်တွေကို ပြန်သုံးသပ်ပါ။ ပိုရိုးရှင်းတဲ့ နေထိုင်မှုက အံ့ဩစရာ လွတ်လပ်ပြီး တည်ငြိမ်သလို ခံစားရနိုင်ပါတယ်။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် ငွေကြေးကိစ္စတွေကို ရှောင်နေတာက ပြဿနာလေးတွေကို ကြီးထွားစေနိုင်ပါတယ်။ ကိုယ့်ကိန်းဂဏန်းတွေကို အေးအေးဆေးဆေး ရင်ဆိုင်ပါ၊ ဒါမှမဟုတ် ယုံကြည်ရသူဆီ အကြံတောင်းပါ။ အားလုံးကို တစ်ယောက်တည်း ကိုင်တွယ်ဖို့ မလိုပါဘူး။"
+      },
+      "health": {
+        "upright": "ကျန်းမာရေးနဲ့ စိတ်ဓာတ်အတွက် တစ်ယောက်တည်းနေခြင်း၊ အနားယူခြင်းနဲ့ ညင်သာစွာ ဆင်ခြင်ခြင်းက အားဖြည့်ပေးပါတယ်။ တိတ်ဆိတ်စွာ လမ်းလျှောက်တာ၊ စောစော အိပ်တာ ဒါမှမဟုတ် ဖုန်းနဲ့ ဝေးဝေးနေတာက ကိုယ့်ကိုယ်ကို ပြန်ဆက်သွယ်စေနိုင်ပါတယ်။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် အထီးကျန်လွန်းတာက စိတ်ဓာတ်ကို ကျစေနိုင်ပါတယ်။ တစ်ယောက်တည်းနေချိန်ကို ထောက်ကူပေးတဲ့ အဖော်တွေနဲ့ မျှတပါ။ လေးလံတဲ့ ခံစားချက်တွေ ကြာနေရင် ယုံကြည်ရသူနဲ့ စကားပြောတာ တကယ် ကူညီနိုင်ပါတယ်။"
+      },
+      "advice": "ဒီနေ့ ကိုယ့်အတွေးနဲ့ ခံစားချက်တွေနဲ့အတူ တိတ်ဆိတ်တဲ့ အချိန်လေး ဖြုန်းပါ။",
+      "suit": "အဓိကအာကာနာ",
+      "element": "မြေ",
+      "astrology": "ကန်ရာသီ"
+    }
+  },
+  {
+    "id": "major-10-wheel-of-fortune",
+    "arcana": "major",
+    "suit": "major",
+    "number": 10,
+    "element": "fire",
+    "commonsFile": "RWS_Tarot_10_Wheel_of_Fortune.jpg",
+    "en": {
+      "name": "Wheel of Fortune",
+      "keywords": [
+        "cycles",
+        "change",
+        "turning point",
+        "timing",
+        "flow"
+      ],
+      "upright": "The Wheel of Fortune turns, reminding you that life moves in cycles. Seasons change, circumstances shift and new chances appear. This card often marks a turning point where things begin to move after a still period. You cannot control every turn of the wheel, but you can choose how you respond. Stay flexible, notice the opportunities that arrive with change and trust that both good and difficult times eventually give way to something new.",
+      "reversed": "Reversed, the Wheel may suggest resisting change or feeling caught in a pattern that keeps repeating. Delays or unexpected shifts may feel frustrating. Instead of fighting the current, look for what this cycle is teaching you. Which habits or reactions keep coming back? Small adjustments in how you respond can gradually change the pattern. Even when things feel stuck, the wheel is still turning, slowly and quietly.",
+      "love": {
+        "upright": "In love, a new chapter or a pleasant surprise may be near. Relationships can move to a new stage. Stay open to how things unfold, and enjoy the natural rhythm of connection.",
+        "reversed": "Reversed, you may notice repeating patterns in relationships. Reflect on what keeps happening and why. Changing one small habit in how you relate can open a healthier cycle."
+      },
+      "career": {
+        "upright": "At work, change is in motion. New opportunities, shifting roles or lucky timing may appear. Be ready to adapt and take advantage of openings as they come along.",
+        "reversed": "Reversed, delays or setbacks may feel frustrating. Focus on what you can influence and prepare for the next opening. Patterns you learn from now can make future turns smoother."
+      },
+      "money": {
+        "upright": "With money, circumstances may shift. Stay adaptable and keep a cushion for changing times. A good opportunity may appear, so stay alert while keeping decisions sensible.",
+        "reversed": "Reversed, financial ups and downs may feel unsettling. Focus on stability: an emergency fund, steady habits and realistic expectations. Cycles turn, and steady preparation helps."
+      },
+      "health": {
+        "upright": "For wellbeing and spirit, honour your natural rhythms. Energy rises and falls; that is normal. Adjust routines to match the season you are in, and be gentle with change.",
+        "reversed": "Reversed, you may be repeating habits that leave you tired. Notice the pattern kindly and try one small change. Gentle shifts can gradually lead to a better cycle."
+      },
+      "advice": "Flow with today's changes and look for the opportunity inside them.",
+      "suit": "Major Arcana",
+      "element": "Fire",
+      "astrology": "Jupiter"
+    },
+    "my": {
+      "name": "ကံကြမ္မာစက်ဝိုင်း",
+      "keywords": [
+        "စက်ဝန်းလည်ပတ်မှု",
+        "ပြောင်းလဲမှု",
+        "အလှည့်အပြောင်း",
+        "အချိန်ကိုက်",
+        "စီးဆင်းမှု"
+      ],
+      "upright": "ကံကြမ္မာစက်ဝိုင်းက လည်ပတ်နေပြီး ဘဝဟာ အဝိုင်းလိုက် ရွေ့လျားတယ်ဆိုတာ သတိပေးနေပါတယ်။ ရာသီတွေ ပြောင်းတယ်၊ အခြေအနေတွေ ရွေ့တယ်၊ အခွင့်အလမ်းသစ်တွေ ပေါ်လာတယ်။ ဒီကတ်က ငြိမ်သက်နေခဲ့တဲ့ ကာလနောက်မှာ အရာတွေ ပြန်ရွေ့လာမယ့် အလှည့်အပြောင်းကို မကြာခဏ ပြပါတယ်။ စက်ဝိုင်းရဲ့ အလှည့်တိုင်းကို ထိန်းချုပ်လို့ မရပေမဲ့ ဘယ်လို တုံ့ပြန်မလဲဆိုတာ ရွေးနိုင်ပါတယ်။ ပြောင်းလွယ်ပြင်လွယ် နေပြီး ပြောင်းလဲမှုနဲ့အတူ ရောက်လာတဲ့ အခွင့်အလမ်းတွေကို သတိထားပါ။",
+      "reversed": "ပြောင်းပြန်ကျရင် စက်ဝိုင်းက ပြောင်းလဲမှုကို ခုခံနေတာ ဒါမှမဟုတ် ထပ်ခါထပ်ခါ ဖြစ်နေတဲ့ ပုံစံထဲ ပိတ်မိနေသလို ခံစားရတာကို ညွှန်ပြနိုင်ပါတယ်။ နှောင့်နှေးမှုတွေ ဒါမှမဟုတ် မမျှော်လင့်တဲ့ ပြောင်းလဲမှုတွေက စိတ်ပျက်စရာ ဖြစ်နိုင်ပါတယ်။ ရေစီးကြောင်းကို ဆန့်ကျင်မယ့်အစား ဒီစက်ဝန်းက ဘာသင်ပေးနေလဲ ကြည့်ပါ။ ဘယ်အကျင့်တွေ၊ ဘယ်တုံ့ပြန်မှုတွေ ပြန်ပြန်လာနေလဲ။ တုံ့ပြန်ပုံကို နည်းနည်းချင်း ပြင်တာက ပုံစံကို တဖြည်းဖြည်း ပြောင်းနိုင်ပါတယ်။ ရပ်တန့်နေသလို ခံစားရရင်တောင် စက်ဝိုင်းက တိတ်တိတ်လေး လည်နေဆဲပါ။",
+      "love": {
+        "upright": "အချစ်ရေးမှာ အခန်းသစ်တစ်ခု ဒါမှမဟုတ် သာယာတဲ့ အံ့ဩစရာတစ်ခု နီးကပ်နေနိုင်ပါတယ်။ ဆက်ဆံရေးတွေ အဆင့်သစ်ကို ရောက်နိုင်ပါတယ်။ ဖြစ်ပေါ်လာပုံကို ပွင့်လင်းစွာ လက်ခံပြီး ဆက်နွယ်မှုရဲ့ သဘာဝ စည်းချက်ကို ခံစားပါ။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် ဆက်ဆံရေးတွေမှာ ထပ်ခါထပ်ခါ ဖြစ်နေတဲ့ ပုံစံတွေကို သတိထားမိနိုင်ပါတယ်။ ဘာက ဆက်ဖြစ်နေလဲ၊ ဘာကြောင့်လဲ ဆင်ခြင်ပါ။ ဆက်ဆံပုံမှာ အကျင့်လေးတစ်ခု ပြောင်းတာက ပိုကျန်းမာတဲ့ စက်ဝန်းကို ဖွင့်ပေးနိုင်ပါတယ်။"
+      },
+      "career": {
+        "upright": "အလုပ်မှာ ပြောင်းလဲမှုတွေ စတင်လှုပ်ရှားနေပါပြီ။ အခွင့်အလမ်းသစ်၊ ပြောင်းလဲနေတဲ့ တာဝန် ဒါမှမဟုတ် ကံကောင်းတဲ့ အချိန်ကိုက်မှုတွေ ပေါ်လာနိုင်ပါတယ်။ လိုက်လျောညီထွေ ဖြစ်ဖို့ အသင့်ရှိပြီး အခွင့်အလမ်းတွေ ရောက်လာတဲ့အခါ အသုံးချပါ။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် နှောင့်နှေးမှု ဒါမှမဟုတ် အခက်အခဲတွေက စိတ်ပျက်စရာ ဖြစ်နိုင်ပါတယ်။ ကိုယ်လွှမ်းမိုးနိုင်တဲ့ အရာကို အာရုံစိုက်ပြီး နောက်အခွင့်အလမ်းအတွက် ပြင်ဆင်ပါ။ အခု သင်ယူတဲ့ ပုံစံတွေက နောင်အလှည့်တွေကို ချောမွေ့စေနိုင်ပါတယ်။"
+      },
+      "money": {
+        "upright": "ငွေကြေးမှာ အခြေအနေတွေ ပြောင်းလဲနိုင်ပါတယ်။ လိုက်လျောညီထွေ နေပြီး ပြောင်းလဲတဲ့ကာလအတွက် အရန်ငွေ ထားပါ။ အခွင့်အလမ်းကောင်း ပေါ်လာနိုင်လို့ သတိထားနေရင်း ဆုံးဖြတ်ချက်တွေကို ဆင်ခြင်တုံတရားနဲ့ ချပါ။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် ငွေကြေး အတက်အကျတွေက စိတ်မငြိမ်စေနိုင်ပါတယ်။ အရေးပေါ်ငွေ၊ တည်ငြိမ်တဲ့ အလေ့အကျင့်နဲ့ လက်တွေ့ကျတဲ့ မျှော်လင့်ချက်လို တည်ငြိမ်မှုကို အာရုံစိုက်ပါ။ စက်ဝန်းက လည်တယ်၊ ပြင်ဆင်ထားတာက ကူညီပါတယ်။"
+      },
+      "health": {
+        "upright": "ကျန်းမာရေးနဲ့ စိတ်ဓာတ်အတွက် ကိုယ့်သဘာဝ စည်းချက်ကို လေးစားပါ။ စွမ်းအင်က တက်လိုက်ကျလိုက် ဖြစ်တတ်တာ ပုံမှန်ပါပဲ။ ကိုယ်ရောက်နေတဲ့ ရာသီနဲ့ ကိုက်အောင် နေ့စဉ်လုပ်ငန်းကို ညှိပြီး ပြောင်းလဲမှုအပေါ် ညင်သာပါ။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် ပင်ပန်းစေတဲ့ အကျင့်တွေကို ထပ်ခါထပ်ခါ လုပ်နေတာ ဖြစ်နိုင်ပါတယ်။ အဲဒီပုံစံကို ကြင်ကြင်နာနာ သတိထားပြီး အပြောင်းအလဲလေးတစ်ခု စမ်းကြည့်ပါ။ ညင်သာတဲ့ ပြောင်းလဲမှုတွေက ပိုကောင်းတဲ့ စက်ဝန်းဆီ ပို့ဆောင်နိုင်ပါတယ်။"
+      },
+      "advice": "ဒီနေ့ ပြောင်းလဲမှုတွေနဲ့အတူ စီးဆင်းပြီး အထဲက အခွင့်အလမ်းကို ရှာပါ။",
+      "suit": "အဓိကအာကာနာ",
+      "element": "မီး",
+      "astrology": "ကြာသပတေးဂြိုဟ်"
+    }
+  },
+  {
+    "id": "major-11-justice",
+    "arcana": "major",
+    "suit": "major",
+    "number": 11,
+    "element": "air",
+    "commonsFile": "RWS_Tarot_11_Justice.jpg",
+    "en": {
+      "name": "Justice",
+      "keywords": [
+        "fairness",
+        "truth",
+        "balance",
+        "accountability",
+        "clarity"
+      ],
+      "upright": "Justice holds a sword of clear thinking and a set of balanced scales. This card asks you to look at a situation honestly and fairly, weighing facts as well as feelings. Choices made with integrity tend to bring steady, long-lasting results. You may be invited to take responsibility for your part in something, to tell the truth kindly or to seek balance where things feel uneven. Clarity often brings a quiet sense of relief.",
+      "reversed": "Reversed, Justice may suggest that something feels unfair, or that you are avoiding an honest look at your own role. Perhaps a decision is being made without all the facts, or you are being too hard on yourself or others. Take time to gather information and listen to different sides. Accountability does not have to mean blame. Gentle honesty and a willingness to make amends can restore balance over time.",
+      "love": {
+        "upright": "In love, honesty and fairness strengthen trust. A relationship may benefit from balanced give and take, clear agreements and truthful conversations. Treat each other as equals.",
+        "reversed": "Reversed, one person may feel the relationship is unbalanced. Listen without defending right away. Honest, respectful dialogue can help you find a fairer and kinder way forward."
+      },
+      "career": {
+        "upright": "At work, fair decisions, careful contracts and ethical choices are favoured. Paperwork and agreements may be resolved. Your integrity is noticed, so keep your actions transparent.",
+        "reversed": "Reversed, you may feel treated unfairly, or a decision may be unclear. Document facts calmly and seek proper channels for concerns. Avoid shortcuts that could compromise your integrity."
+      },
+      "money": {
+        "upright": "With money, balance and honesty matter. Review accounts, pay what is owed and make fair agreements. Clear records and thoughtful choices bring a steady sense of order.",
+        "reversed": "Reversed, check for errors, unclear terms or unfair arrangements. Read agreements carefully and ask questions where anything is unclear. Seek qualified advice for complex matters before you commit."
+      },
+      "health": {
+        "upright": "For wellbeing and spirit, balance is the theme. Weigh work and rest, giving and receiving. Honest reflection on your habits can guide sensible, caring adjustments.",
+        "reversed": "Reversed, life may feel out of balance. Notice where you are overextending, and make small corrections. Be fair to yourself, too; self-criticism is not the same as accountability."
+      },
+      "advice": "Look at today's situation honestly, and choose what feels fair to everyone.",
+      "suit": "Major Arcana",
+      "element": "Air",
+      "astrology": "Libra"
+    },
+    "my": {
+      "name": "တရားမျှတမှု",
+      "keywords": [
+        "မျှတမှု",
+        "အမှန်တရား",
+        "ချိန်ခွင်လျှာ",
+        "တာဝန်ခံမှု",
+        "ရှင်းလင်းမှု"
+      ],
+      "upright": "တရားမျှတမှုကတ်က ရှင်းလင်းတဲ့ အတွေးအခေါ်ကို ကိုယ်စားပြုတဲ့ ဓားတစ်လက်နဲ့ မျှနေတဲ့ ချိန်ခွင်တစ်စုံကို ကိုင်ထားပါတယ်။ အခြေအနေတစ်ခုကို ရိုးရိုးသားသား၊ မျှမျှတတ ကြည့်ပြီး ခံစားချက်တွေအပြင် အချက်အလက်တွေကိုပါ ချိန်ဆဖို့ ဒီကတ်က တောင်းဆိုပါတယ်။ သမာဓိရှိရှိ ရွေးချယ်တာက တည်ငြိမ်ပြီး ရေရှည် ရလဒ်တွေကို ယူဆောင်လာတတ်ပါတယ်။ ကိုယ့်အပိုင်းအတွက် တာဝန်ယူဖို့၊ အမှန်ကို ကြင်ကြင်နာနာ ပြောဖို့ ဒါမှမဟုတ် မညီမျှတဲ့ နေရာမှာ မျှတမှုကို ရှာဖို့ ဖိတ်ခေါ်ခံရနိုင်ပါတယ်။ ရှင်းလင်းမှုက တိတ်ဆိတ်တဲ့ စိတ်သက်သာမှုကို ယူဆောင်လာတတ်ပါတယ်။",
+      "reversed": "ပြောင်းပြန်ကျရင် တရားမျှတမှုကတ်က တစ်ခုခု မမျှတဘူးလို့ ခံစားရတာ ဒါမှမဟုတ် ကိုယ့်အခန်းကဏ္ဍကို ရိုးရိုးသားသား မကြည့်ဘဲ ရှောင်နေတာကို ညွှန်ပြနိုင်ပါတယ်။ အချက်အလက် အပြည့်အစုံမရှိဘဲ ဆုံးဖြတ်ချက်ချနေတာ ဒါမှမဟုတ် ကိုယ့်ကိုယ်ကို ဒါမှမဟုတ် တခြားသူကို တင်းကျပ်လွန်းနေတာ ဖြစ်နိုင်ပါတယ်။ အချက်အလက် စုဆောင်းပြီး ဘက်အသီးသီးကို နားထောင်ဖို့ အချိန်ယူပါ။ တာဝန်ခံတယ်ဆိုတာ အပြစ်တင်တာ မဟုတ်ပါဘူး။ ညင်သာတဲ့ ရိုးသားမှုနဲ့ ပြန်လည်ပြုပြင်လိုစိတ်က အချိန်ကြာလာတာနဲ့ မျှတမှုကို ပြန်ယူဆောင်လာနိုင်ပါတယ်။",
+      "love": {
+        "upright": "အချစ်ရေးမှာ ရိုးသားမှုနဲ့ မျှတမှုက ယုံကြည်မှုကို ခိုင်မာစေပါတယ်။ မျှတတဲ့ အပေးအယူ၊ ရှင်းလင်းတဲ့ သဘောတူညီချက်နဲ့ မှန်ကန်တဲ့ စကားပြောဆိုမှုတွေက ဆက်ဆံရေးကို အကျိုးပြုနိုင်ပါတယ်။ တစ်ယောက်ကိုတစ်ယောက် တန်းတူ ဆက်ဆံပါ။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် တစ်ယောက်ယောက်က ဆက်ဆံရေး မမျှတဘူးလို့ ခံစားရနိုင်ပါတယ်။ ချက်ချင်း ကာကွယ်မပြောဘဲ နားထောင်ပါ။ ရိုးသားပြီး လေးစားတဲ့ ဆွေးနွေးမှုက ပိုမျှတပြီး ကြင်နာတဲ့ လမ်းကို ရှာတွေ့စေနိုင်ပါတယ်။"
+      },
+      "career": {
+        "upright": "အလုပ်မှာ မျှတတဲ့ ဆုံးဖြတ်ချက်၊ ဂရုတစိုက် ချုပ်ဆိုတဲ့ စာချုပ်နဲ့ ကျင့်ဝတ်ရှိတဲ့ ရွေးချယ်မှုတွေ အခွင့်သာပါတယ်။ စာရွက်စာတမ်းနဲ့ သဘောတူညီချက်တွေ ပြေလည်နိုင်ပါတယ်။ သင့်သမာဓိကို လူတွေ သတိထားမိပါတယ်၊ ပွင့်လင်းမြင်သာစွာ လုပ်ဆောင်ပါ။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် မတရားဆက်ဆံခံရသလို ခံစားရတာ ဒါမှမဟုတ် ဆုံးဖြတ်ချက်တစ်ခု မရှင်းလင်းတာ ဖြစ်နိုင်ပါတယ်။ အချက်အလက်တွေကို အေးအေးဆေးဆေး မှတ်တမ်းတင်ပြီး သင့်တော်တဲ့ လမ်းကြောင်းကနေ တင်ပြပါ။ သမာဓိ ထိခိုက်စေမယ့် ဖြတ်လမ်းတွေကို ရှောင်ပါ။"
+      },
+      "money": {
+        "upright": "ငွေကြေးမှာ မျှတမှုနဲ့ ရိုးသားမှုက အရေးကြီးပါတယ်။ စာရင်းတွေကို ပြန်စစ်ပါ၊ ပေးရမယ့်ဟာကို ပေးပါ၊ မျှတတဲ့ သဘောတူညီချက် လုပ်ပါ။ ရှင်းလင်းတဲ့ မှတ်တမ်းနဲ့ ဆင်ခြင်တဲ့ ရွေးချယ်မှုက တည်ငြိမ်တဲ့ စနစ်ကျမှုကို ပေးပါတယ်။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် အမှားတွေ၊ မရှင်းလင်းတဲ့ စည်းကမ်းချက်တွေ ဒါမှမဟုတ် မမျှတတဲ့ အစီအစဉ်တွေကို စစ်ပါ။ သဘောတူညီချက်တွေကို ဂရုတစိုက် ဖတ်ပြီး မေးခွန်းမေးပါ။ ရှုပ်ထွေးတဲ့ ကိစ္စတွေအတွက် အရည်အချင်းရှိသူရဲ့ အကြံကို ရယူပါ။"
+      },
+      "health": {
+        "upright": "ကျန်းမာရေးနဲ့ စိတ်ဓာတ်အတွက် မျှတမှုက အဓိကအကြောင်းအရာပါ။ အလုပ်နဲ့ အနားယူမှု၊ ပေးခြင်းနဲ့ ရယူခြင်းကို ချိန်ဆပါ။ ကိုယ့်အလေ့အကျင့်တွေကို ရိုးသားစွာ ဆင်ခြင်တာက သင့်တော်ပြီး ဂရုစိုက်တဲ့ ပြင်ဆင်မှုတွေကို လမ်းပြနိုင်ပါတယ်။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် ဘဝက မျှတမှု ပျက်နေသလို ခံစားရနိုင်ပါတယ်။ ဘယ်နေရာမှာ အလွန်အကျွံ လုပ်နေလဲ သတိထားပြီး နည်းနည်းချင်း ပြင်ပါ။ ကိုယ့်ကိုယ်ကိုလည်း မျှတပါ၊ ကိုယ့်ကိုယ်ကို ဝေဖန်တာနဲ့ တာဝန်ခံတာ မတူပါဘူး။"
+      },
+      "advice": "ဒီနေ့ အခြေအနေကို ရိုးရိုးသားသား ကြည့်ပြီး အားလုံးအတွက် မျှတတဲ့ဟာကို ရွေးပါ။",
+      "suit": "အဓိကအာကာနာ",
+      "element": "လေ",
+      "astrology": "တူရာသီ"
+    }
+  },
+  {
+    "id": "major-12-hanged-man",
+    "arcana": "major",
+    "suit": "major",
+    "number": 12,
+    "element": "water",
+    "commonsFile": "RWS_Tarot_12_Hanged_Man.jpg",
+    "en": {
+      "name": "The Hanged Man",
+      "keywords": [
+        "pause",
+        "surrender",
+        "new perspective",
+        "patience",
+        "letting go"
+      ],
+      "upright": "The Hanged Man rests upside down, calm rather than distressed, seeing the world from an unusual angle. This card invites a pause. Instead of pushing for an answer, you may gain more by waiting, observing and letting go of how you think things should go. A new perspective can change everything. Sometimes progress begins with stillness. Allow yourself to rest in uncertainty for a while; insight often arrives when you stop forcing it.",
+      "reversed": "Reversed, The Hanged Man may suggest feeling stuck, impatient or unwilling to let go of a familiar view. Perhaps you are waiting for something that may not change, or delaying a decision because it feels uncomfortable. Ask whether this pause is still helping you. If it is, rest gently. If it is not, a small decision can release the tension. Either way, try looking at the situation from someone else's point of view.",
+      "love": {
+        "upright": "In love, patience and a fresh perspective may be needed. Avoid forcing a decision. Try seeing things through your partner's eyes; understanding may grow during this quiet pause.",
+        "reversed": "Reversed, waiting may have turned into stagnation. If a relationship feels stuck, gently ask what each of you truly needs. Sometimes a small, honest step moves things forward."
+      },
+      "career": {
+        "upright": "At work, a pause or delay may actually help. Use the time to rethink your approach, learn something new or see a problem from a different angle. Insight may come unexpectedly.",
+        "reversed": "Reversed, indecision may be costing you energy. Gather what you need and make a choice, even a small one. Look for creative alternatives if your usual method is not working."
+      },
+      "money": {
+        "upright": "With money, it may be wise to wait before making big moves. Reassess priorities and consider unconventional but sensible options. Patience can protect you from hasty choices.",
+        "reversed": "Reversed, avoiding money decisions may keep you stuck. Gently face what needs attention. A different perspective, perhaps from a trusted friend, can show a practical way forward."
+      },
+      "health": {
+        "upright": "For wellbeing and spirit, rest and surrender are nourishing. Gentle stretching, slow breathing or simply pausing can ease tension. Let your body and mind rest without guilt.",
+        "reversed": "Reversed, restlessness may be draining you. Notice what you are resisting. A gentle change of routine or a new way of looking at your situation can bring relief."
+      },
+      "advice": "Pause today and look at your situation from a completely different angle.",
+      "suit": "Major Arcana",
+      "element": "Water",
+      "astrology": "Neptune"
+    },
+    "my": {
+      "name": "ဇောက်ထိုးဆွဲထားသူ",
+      "keywords": [
+        "ခဏရပ်ခြင်း",
+        "လက်လွှတ်ခြင်း",
+        "အမြင်သစ်",
+        "စိတ်ရှည်မှု",
+        "လျှော့ချခြင်း"
+      ],
+      "upright": "ဇောက်ထိုးဆွဲထားသူက ဒုက္ခရောက်နေတာ မဟုတ်ဘဲ အေးအေးဆေးဆေး ဇောက်ထိုး နားနေရင်း ကမ္ဘာကြီးကို ထူးခြားတဲ့ ထောင့်ကနေ ကြည့်နေပါတယ်။ ဒီကတ်က ခဏရပ်ဖို့ ဖိတ်ခေါ်ပါတယ်။ အဖြေကို အတင်းတွန်းမယ့်အစား စောင့်ဆိုင်း၊ ကြည့်ရှုပြီး အရာတွေ ဘယ်လို ဖြစ်သင့်တယ်ဆိုတဲ့ အတွေးကို လက်လွှတ်တာက ပိုအကျိုးရှိနိုင်ပါတယ်။ အမြင်သစ်တစ်ခုက အရာအားလုံးကို ပြောင်းလဲနိုင်ပါတယ်။ တခါတလေ တိုးတက်မှုက ငြိမ်သက်မှုကနေ စတင်ပါတယ်။ မသေချာမှုထဲမှာ ခဏ နားခွင့်ပေးပါ၊ အတင်းမလုပ်တော့တဲ့အခါ ထိုးထွင်းသိမြင်မှု ရောက်လာတတ်ပါတယ်။",
+      "reversed": "ပြောင်းပြန်ကျရင် ဇောက်ထိုးဆွဲထားသူက ပိတ်မိနေသလို၊ စိတ်မရှည်သလို ဒါမှမဟုတ် ရင်းနှီးပြီးသား အမြင်ကို မလွှတ်ချင်သလို ခံစားရတာကို ညွှန်ပြနိုင်ပါတယ်။ မပြောင်းလဲနိုင်တဲ့ အရာကို စောင့်နေတာ ဒါမှမဟုတ် မသက်မသာ ဖြစ်လို့ ဆုံးဖြတ်ချက်ကို ရွှေ့ဆိုင်းနေတာ ဖြစ်နိုင်ပါတယ်။ ဒီရပ်နားမှုက ကိုယ့်ကို ကူညီနေသေးလား မေးကြည့်ပါ။ ကူညီနေရင် ညင်ညင်သာသာ နားပါ။ မကူညီတော့ရင် ဆုံးဖြတ်ချက်လေးတစ်ခုက တင်းမာမှုကို ဖြေလျှော့ပေးနိုင်ပါတယ်။ ဘယ်လိုပဲဖြစ်ဖြစ် တခြားသူရဲ့ ရှုထောင့်ကနေ ကြည့်ကြည့်ပါ။",
+      "love": {
+        "upright": "အချစ်ရေးမှာ စိတ်ရှည်မှုနဲ့ အမြင်သစ် လိုအပ်နိုင်ပါတယ်။ ဆုံးဖြတ်ချက်ကို အတင်းမချပါနဲ့။ ချစ်သူရဲ့ မျက်လုံးနဲ့ ကြည့်ကြည့်ပါ၊ ဒီတိတ်ဆိတ်တဲ့ ရပ်နားချိန်မှာ နားလည်မှု ကြီးထွားလာနိုင်ပါတယ်။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် စောင့်ဆိုင်းတာက ရပ်တန့်မှု ဖြစ်လာနိုင်ပါတယ်။ ဆက်ဆံရေး ပိတ်မိနေသလို ခံစားရရင် နှစ်ယောက်လုံး တကယ် ဘာလိုအပ်လဲ ညင်သာစွာ မေးပါ။ တခါတလေ ရိုးသားတဲ့ ခြေလှမ်းလေးတစ်ခုက ရှေ့တိုးစေပါတယ်။"
+      },
+      "career": {
+        "upright": "အလုပ်မှာ ရပ်နားမှု ဒါမှမဟုတ် နှောင့်နှေးမှုက တကယ်တော့ အကျိုးရှိနိုင်ပါတယ်။ ချဉ်းကပ်ပုံကို ပြန်စဉ်းစားဖို့၊ အသစ်တစ်ခု သင်ယူဖို့ ဒါမှမဟုတ် ပြဿနာကို ထောင့်တစ်မျိုးကနေ ကြည့်ဖို့ ဒီအချိန်ကို သုံးပါ။ ထိုးထွင်းအမြင် မမျှော်လင့်ဘဲ ရောက်လာနိုင်ပါတယ်။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် မဆုံးဖြတ်နိုင်တာက စွမ်းအင်ကို ကုန်စေနိုင်ပါတယ်။ လိုအပ်တာကို စုဆောင်းပြီး သေးသေးလေးဖြစ်ဖြစ် ရွေးချယ်လိုက်ပါ။ ပုံမှန်နည်းလမ်း အလုပ်မဖြစ်ရင် ဖန်တီးမှုရှိတဲ့ တခြားနည်းလမ်းတွေ ရှာပါ။"
+      },
+      "money": {
+        "upright": "ငွေကြေးမှာ ကြီးကြီးမားမား မလုပ်ခင် စောင့်ဆိုင်းတာ ပညာရှိနိုင်ပါတယ်။ ဦးစားပေးတွေကို ပြန်သုံးသပ်ပြီး ထူးခြားပေမဲ့ ဆင်ခြင်တုံတရားရှိတဲ့ ရွေးချယ်စရာတွေကို စဉ်းစားပါ။ စိတ်ရှည်မှုက အလောတကြီး ရွေးချယ်မှုကနေ ကာကွယ်ပေးနိုင်ပါတယ်။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် ငွေကြေး ဆုံးဖြတ်ချက်တွေကို ရှောင်နေတာက ပိတ်မိနေစေနိုင်ပါတယ်။ အာရုံစိုက်ဖို့ လိုတာကို ညင်သာစွာ ရင်ဆိုင်ပါ။ ယုံကြည်ရတဲ့ မိတ်ဆွေတစ်ယောက်ရဲ့ အမြင်က လက်တွေ့ကျတဲ့ လမ်းကို ပြပေးနိုင်ပါတယ်။"
+      },
+      "health": {
+        "upright": "ကျန်းမာရေးနဲ့ စိတ်ဓာတ်အတွက် အနားယူခြင်းနဲ့ လက်လွှတ်ခြင်းက အားဖြည့်ပေးပါတယ်။ ညင်ညင်သာသာ ဆန့်တာ၊ အသက်ကို ဖြည်းဖြည်းရှူတာ ဒါမှမဟုတ် ရိုးရိုးလေး ရပ်နားတာက တင်းမာမှုကို လျော့စေနိုင်ပါတယ်။ အပြစ်ရှိသလို မခံစားဘဲ နားပါ။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် မငြိမ်မသက် ဖြစ်နေတာက အားကုန်စေနိုင်ပါတယ်။ ဘာကို ခုခံနေလဲ သတိထားကြည့်ပါ။ နေ့စဉ်လုပ်ငန်းကို ညင်သာစွာ ပြောင်းတာ ဒါမှမဟုတ် အခြေအနေကို အမြင်သစ်နဲ့ ကြည့်တာက သက်သာစေနိုင်ပါတယ်။"
+      },
+      "advice": "ဒီနေ့ ခဏရပ်ပြီး ကိုယ့်အခြေအနေကို လုံးဝ မတူတဲ့ ထောင့်တစ်ခုကနေ ကြည့်ပါ။",
+      "suit": "အဓိကအာကာနာ",
+      "element": "ရေ",
+      "astrology": "နက်ပကျွန်းဂြိုဟ်"
+    }
+  },
+  {
+    "id": "major-13-death",
+    "arcana": "major",
+    "suit": "major",
+    "number": 13,
+    "element": "water",
+    "commonsFile": "RWS_Tarot_13_Death.jpg",
+    "en": {
+      "name": "Death",
+      "keywords": [
+        "transformation",
+        "endings",
+        "renewal",
+        "release",
+        "transition"
+      ],
+      "upright": "Despite its name, the Death card is rarely about physical death. It speaks of transformation: one chapter closing so another can begin. Like autumn leaves making room for spring, something in your life may be ready to change form. Endings can bring sadness, and that is natural, yet they also clear space for renewal. Consider what you are ready to release. Letting go with gratitude can open the way to a fresh, more authentic season.",
+      "reversed": "Reversed, the Death card may suggest holding on to something that has already run its course, perhaps out of fear of the unknown. Change might feel slow or uncomfortable. Be patient with yourself; transitions take time. Ask gently what you are protecting by staying the same. Small steps toward release, such as clearing a space or ending an old habit, can make the larger transformation feel safer and more natural.",
+      "love": {
+        "upright": "In love, an old pattern or phase may be ending to make room for something healthier. This can mean a relationship transforming into a deeper stage. Allow change with honesty and care.",
+        "reversed": "Reversed, you may be holding on to a pattern or hope that no longer serves you. Reflect kindly on what you truly need. Releasing the past gently can open space for new connection."
+      },
+      "career": {
+        "upright": "At work, a chapter may be closing, such as a project, role or way of working. Embrace the transition as a chance to grow. New directions often appear after a clear ending.",
+        "reversed": "Reversed, resisting necessary change may be keeping you stuck. Consider what is no longer working. Planning a gradual transition can help you move forward with less stress."
+      },
+      "money": {
+        "upright": "With money, it may be time to end an old habit or arrangement and adopt a new approach. Clearing out what drains you can create room for healthier, steadier finances.",
+        "reversed": "Reversed, clinging to outdated financial habits may be costly. Look honestly at what needs to change. Small, steady adjustments can make the transition easier to manage."
+      },
+      "health": {
+        "upright": "For wellbeing and spirit, this card speaks of renewal. Letting go of a draining habit or old emotional weight can feel freeing. Give yourself time and kindness during change.",
+        "reversed": "Reversed, you may be resisting a change that would help you feel better. Be gentle with yourself and seek support if transitions feel heavy. Renewal can unfold one step at a time."
+      },
+      "advice": "Let go of one thing today that you have already outgrown.",
+      "suit": "Major Arcana",
+      "element": "Water",
+      "astrology": "Scorpio"
+    },
+    "my": {
+      "name": "သေခြင်း",
+      "keywords": [
+        "အသွင်ပြောင်းခြင်း",
+        "အဆုံးသတ်",
+        "ပြန်လည်သစ်လွင်ခြင်း",
+        "လွှတ်ချခြင်း",
+        "ကူးပြောင်းခြင်း"
+      ],
+      "upright": "နာမည်က ဒီလိုဖြစ်ပေမဲ့ သေခြင်းကတ်က ရုပ်ပိုင်းဆိုင်ရာ သေဆုံးခြင်းအကြောင်း ရှားရှားပါးပါးသာ ပြောပါတယ်။ ဒီကတ်က အသွင်ပြောင်းခြင်းအကြောင်းပါ၊ အခန်းတစ်ခု ပိတ်မှ နောက်တစ်ခု စနိုင်တာမျိုးပါ။ ဆောင်းဦးရွက်ကြွေတွေက နွေဦးအတွက် နေရာပေးသလို ကိုယ့်ဘဝထဲက တစ်ခုခု ပုံစံပြောင်းဖို့ အသင့်ဖြစ်နေနိုင်ပါတယ်။ အဆုံးသတ်တွေက ဝမ်းနည်းမှု ယူဆောင်လာနိုင်တာ သဘာဝပါ၊ ဒါပေမဲ့ ပြန်လည်သစ်လွင်ဖို့ နေရာကိုလည်း ရှင်းပေးပါတယ်။ ဘာကို လွှတ်ချဖို့ အသင့်ဖြစ်နေလဲ စဉ်းစားကြည့်ပါ။ ကျေးဇူးတင်စိတ်နဲ့ လက်လွှတ်တာက လတ်ဆတ်တဲ့ ရာသီသစ်ဆီ လမ်းဖွင့်ပေးနိုင်ပါတယ်။",
+      "reversed": "ပြောင်းပြန်ကျရင် သေခြင်းကတ်က မသိတာကို ကြောက်လို့ ပြီးဆုံးသွားပြီးသား အရာကို ဆက်ဆုပ်ကိုင်ထားတာကို ညွှန်ပြနိုင်ပါတယ်။ ပြောင်းလဲမှုက နှေးကွေးသလို ဒါမှမဟုတ် မသက်မသာ ဖြစ်သလို ခံစားရနိုင်ပါတယ်။ ကိုယ့်ကိုယ်ကို စိတ်ရှည်ပါ၊ ကူးပြောင်းမှုတွေက အချိန်ယူပါတယ်။ ဒီအတိုင်း ဆက်နေခြင်းအားဖြင့် ဘာကို ကာကွယ်နေလဲ ညင်ညင်သာသာ မေးကြည့်ပါ။ နေရာတစ်ခု ရှင်းလင်းတာ၊ အကျင့်ဟောင်းတစ်ခု ရပ်တာလို လွှတ်ချဖို့ ခြေလှမ်းလေးတွေက ပိုကြီးတဲ့ အသွင်ပြောင်းမှုကို ပိုလုံခြုံပြီး သဘာဝကျစေနိုင်ပါတယ်။",
+      "love": {
+        "upright": "အချစ်ရေးမှာ ပုံစံဟောင်း ဒါမှမဟုတ် အဆင့်ဟောင်းတစ်ခု ပြီးဆုံးပြီး ပိုကျန်းမာတဲ့ အရာအတွက် နေရာပေးနေနိုင်ပါတယ်။ ဆက်ဆံရေးက ပိုနက်ရှိုင်းတဲ့ အဆင့်ဆီ အသွင်ပြောင်းနေတာလည်း ဖြစ်နိုင်ပါတယ်။ ရိုးသားမှုနဲ့ ဂရုစိုက်မှုနဲ့ ပြောင်းလဲခွင့်ပေးပါ။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် အကျိုးမပြုတော့တဲ့ ပုံစံ ဒါမှမဟုတ် မျှော်လင့်ချက်ကို ဆုပ်ကိုင်ထားနေတာ ဖြစ်နိုင်ပါတယ်။ တကယ်လိုအပ်တာကို ကြင်ကြင်နာနာ ဆင်ခြင်ပါ။ အတိတ်ကို ညင်သာစွာ လွှတ်ချတာက ဆက်နွယ်မှုသစ်အတွက် နေရာဖွင့်ပေးနိုင်ပါတယ်။"
+      },
+      "career": {
+        "upright": "အလုပ်မှာ ပရောဂျက်၊ ရာထူး ဒါမှမဟုတ် အလုပ်လုပ်ပုံလို အခန်းတစ်ခု ပိတ်နေနိုင်ပါတယ်။ ကူးပြောင်းမှုကို ကြီးထွားဖို့ အခွင့်အလမ်းအဖြစ် လက်ခံပါ။ ရှင်းလင်းတဲ့ အဆုံးသတ်တစ်ခုနောက်မှာ ဦးတည်ချက်သစ်တွေ ပေါ်လာတတ်ပါတယ်။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် လိုအပ်တဲ့ ပြောင်းလဲမှုကို ခုခံနေတာက ပိတ်မိနေစေနိုင်ပါတယ်။ ဘာက အလုပ်မဖြစ်တော့လဲ စဉ်းစားပါ။ တဖြည်းဖြည်း ကူးပြောင်းဖို့ စီစဉ်တာက စိတ်ဖိစီးမှု နည်းနည်းနဲ့ ရှေ့ဆက်စေနိုင်ပါတယ်။"
+      },
+      "money": {
+        "upright": "ငွေကြေးမှာ အကျင့်ဟောင်း ဒါမှမဟုတ် အစီအစဉ်ဟောင်းတစ်ခုကို ရပ်ပြီး ချဉ်းကပ်ပုံသစ် ကျင့်သုံးဖို့ အချိန်ရောက်နိုင်ပါတယ်။ အားကုန်စေတာတွေကို ရှင်းထုတ်တာက ပိုကျန်းမာပြီး တည်ငြိမ်တဲ့ ငွေကြေးအတွက် နေရာ ဖန်တီးပေးနိုင်ပါတယ်။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် ခေတ်နောက်ကျတဲ့ ငွေကြေးအကျင့်တွေကို ဆုပ်ကိုင်ထားတာက ကုန်ကျစရိတ် များစေနိုင်ပါတယ်။ ဘာပြောင်းဖို့ လိုလဲ ရိုးရိုးသားသား ကြည့်ပါ။ သေးငယ်ပြီး တည်ငြိမ်တဲ့ ပြင်ဆင်မှုတွေက ကူးပြောင်းမှုကို လွယ်ကူစေနိုင်ပါတယ်။"
+      },
+      "health": {
+        "upright": "ကျန်းမာရေးနဲ့ စိတ်ဓာတ်အတွက် ဒီကတ်က ပြန်လည်သစ်လွင်ခြင်းအကြောင်း ပြောပါတယ်။ အားကုန်စေတဲ့ အကျင့် ဒါမှမဟုတ် စိတ်ဝန်ဟောင်းတစ်ခုကို လွှတ်ချတာက လွတ်မြောက်သလို ခံစားရစေနိုင်ပါတယ်။ ပြောင်းလဲချိန်မှာ ကိုယ့်ကိုယ်ကို အချိန်နဲ့ ကြင်နာမှု ပေးပါ။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် ပိုကောင်းအောင် ကူညီမယ့် ပြောင်းလဲမှုကို ခုခံနေတာ ဖြစ်နိုင်ပါတယ်။ ကိုယ့်ကိုယ်ကို ညင်သာပါ၊ ကူးပြောင်းမှုတွေ လေးလံနေရင် အကူအညီ ရှာပါ။ ပြန်လည်သစ်လွင်မှုက တစ်လှမ်းချင်း ဖြစ်လာနိုင်ပါတယ်။"
+      },
+      "advice": "ဒီနေ့ ကိုယ်ကျော်လွန်ပြီးသား အရာတစ်ခုကို လက်လွှတ်လိုက်ပါ။",
+      "suit": "အဓိကအာကာနာ",
+      "element": "ရေ",
+      "astrology": "ဗြိစ္ဆာရာသီ"
+    }
+  },
+  {
+    "id": "major-14-temperance",
+    "arcana": "major",
+    "suit": "major",
+    "number": 14,
+    "element": "fire",
+    "commonsFile": "RWS_Tarot_14_Temperance.jpg",
+    "en": {
+      "name": "Temperance",
+      "keywords": [
+        "balance",
+        "moderation",
+        "healing",
+        "patience",
+        "blending"
+      ],
+      "upright": "Temperance shows a calm figure pouring water between two cups, blending opposites into something harmonious. This card speaks of balance, patience and gentle healing. Rather than extremes, it invites the middle path: a little of this, a little of that, mixed with care. You may be learning how to combine different parts of your life in a way that feels peaceful. Steady, moderate steps can create results that last and feel good.",
+      "reversed": "Reversed, Temperance may suggest imbalance, impatience or swinging between extremes. Perhaps you are overdoing one area of life while neglecting another, or feeling pulled between competing needs. Pause and notice where you could add a little calm or subtract a little excess. Healing is rarely instant; it is a gradual blending. Be patient with the process and gentle with yourself as you find your balance again.",
+      "love": {
+        "upright": "In love, compromise and patience nurture harmony. Blending different styles, families or routines can work well with mutual care. Steady affection matters more than grand gestures now.",
+        "reversed": "Reversed, imbalance may be causing tension, such as one person giving more or emotions running high. Slow down, listen and look for a fair middle ground together."
+      },
+      "career": {
+        "upright": "At work, cooperation and a measured pace bring good results. You may be the one who calms conflicts and blends ideas. Patience with long projects will likely be rewarded over time.",
+        "reversed": "Reversed, overwork or impatience may be affecting your results. Pace yourself and avoid rushing to finish. Rebalance your priorities so that the quality of your work and your wellbeing are both protected."
+      },
+      "money": {
+        "upright": "With money, moderation is wise. Balance saving and enjoying, spending and planning ahead. A steady, middle-path approach can build lasting security without making daily life feel restrictive.",
+        "reversed": "Reversed, financial extremes such as overspending or excessive worry may be present. Seek balance with a simple plan. Small, consistent adjustments work better than drastic changes."
+      },
+      "health": {
+        "upright": "For wellbeing and spirit, gentle balance supports healing. Moderate habits, enough water, calm breathing and rest can restore harmony. Listen to what your body is asking for.",
+        "reversed": "Reversed, you may be overdoing things or swinging between extremes. Return to simple, moderate routines. Be patient; gentle consistency helps your system find its rhythm again."
+      },
+      "advice": "Choose the middle path today and mix effort with calm.",
+      "suit": "Major Arcana",
+      "element": "Fire",
+      "astrology": "Sagittarius"
+    },
+    "my": {
+      "name": "မျှတခြင်း",
+      "keywords": [
+        "ချိန်ခွင်လျှာညီမှု",
+        "အတိုင်းအတာရှိမှု",
+        "ကုစားခြင်း",
+        "စိတ်ရှည်မှု",
+        "ပေါင်းစပ်ခြင်း"
+      ],
+      "upright": "မျှတခြင်းကတ်မှာ ခွက်နှစ်လုံးကြား ရေကို အေးအေးဆေးဆေး လောင်းထည့်ရင်း ဆန့်ကျင်ဘက်တွေကို သဟဇာတဖြစ်အောင် ပေါင်းစပ်နေတဲ့ ပုံကို ပြပါတယ်။ ဒီကတ်က မျှတမှု၊ စိတ်ရှည်မှုနဲ့ ညင်သာတဲ့ ကုစားမှုအကြောင်း ပြောပါတယ်။ အစွန်းရောက်မှုတွေအစား အလယ်လမ်းကို ဖိတ်ခေါ်ပါတယ်၊ ဒါနည်းနည်း၊ ဟိုဟာနည်းနည်းကို ဂရုတစိုက် ရောစပ်တာမျိုးပါ။ ဘဝရဲ့ မတူညီတဲ့ အစိတ်အပိုင်းတွေကို ငြိမ်းချမ်းစွာ ပေါင်းစပ်ပုံကို သင်ယူနေတာ ဖြစ်နိုင်ပါတယ်။ တည်ငြိမ်ပြီး အတိုင်းအတာရှိတဲ့ ခြေလှမ်းတွေက ကြာရှည်ခံပြီး စိတ်ကျေနပ်စရာ ရလဒ်တွေကို ဖန်တီးနိုင်ပါတယ်။",
+      "reversed": "ပြောင်းပြန်ကျရင် မျှတခြင်းကတ်က မျှတမှုပျက်ခြင်း၊ စိတ်မရှည်ခြင်း ဒါမှမဟုတ် အစွန်းနှစ်ဖက်ကြား လွှဲနေခြင်းကို ညွှန်ပြနိုင်ပါတယ်။ ဘဝရဲ့ နယ်ပယ်တစ်ခုမှာ လွန်ကဲပြီး နောက်တစ်ခုကို လျစ်လျူရှုနေတာ ဒါမှမဟုတ် ပြိုင်ဆိုင်နေတဲ့ လိုအပ်ချက်တွေကြား ဆွဲခံနေရသလို ခံစားရတာ ဖြစ်နိုင်ပါတယ်။ ခဏရပ်ပြီး ဘယ်နေရာမှာ တည်ငြိမ်မှုလေး ထည့်နိုင်လဲ၊ အပိုတွေကို ဘယ်မှာ လျှော့နိုင်လဲ သတိထားပါ။ ကုစားမှုက ချက်ချင်း ဖြစ်လေ့မရှိပါဘူး၊ တဖြည်းဖြည်း ပေါင်းစပ်မှုပါ။ မျှတမှု ပြန်ရှာနေချိန်မှာ ကိုယ့်ကိုယ်ကို ညင်သာပါ။",
+      "love": {
+        "upright": "အချစ်ရေးမှာ အလျှော့အတင်းနဲ့ စိတ်ရှည်မှုက သဟဇာတဖြစ်မှုကို ပြုစုပေးပါတယ်။ မတူညီတဲ့ ပုံစံ၊ မိသားစု ဒါမှမဟုတ် နေ့စဉ်လုပ်ငန်းတွေကို အပြန်အလှန် ဂရုစိုက်မှုနဲ့ ပေါင်းစပ်နိုင်ပါတယ်။ အခုအချိန်မှာ ကြီးကျယ်တဲ့ လုပ်ရပ်ထက် တည်ငြိမ်တဲ့ ချစ်ခင်မှုက ပိုအရေးကြီးပါတယ်။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် တစ်ယောက်က ပိုပေးနေရတာ ဒါမှမဟုတ် စိတ်ခံစားမှုတွေ မြင့်တက်နေတာလို မျှတမှုပျက်ခြင်းက တင်းမာမှု ဖြစ်စေနိုင်ပါတယ်။ နှေးနှေးလေးနေပြီး နားထောင်ကာ အတူတကွ မျှတတဲ့ အလယ်လမ်းကို ရှာပါ။"
+      },
+      "career": {
+        "upright": "အလုပ်မှာ ပူးပေါင်းဆောင်ရွက်မှုနဲ့ အတိုင်းအတာရှိတဲ့ အရှိန်က ရလဒ်ကောင်းတွေ ယူဆောင်လာပါတယ်။ ပဋိပက္ခတွေကို ငြိမ်းစေပြီး အကြံတွေကို ပေါင်းစပ်ပေးသူက သင် ဖြစ်နိုင်ပါတယ်။ ရေရှည်ပရောဂျက်တွေမှာ စိတ်ရှည်တာက အချိန်ကြာလာတာနဲ့ အကျိုးပေးနိုင်ပါတယ်။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် အလုပ်များလွန်းတာ ဒါမှမဟုတ် စိတ်မရှည်တာက ရလဒ်ကို ထိခိုက်နေနိုင်ပါတယ်။ ကိုယ့်အရှိန်ကို ထိန်းပြီး အလောတကြီး မလုပ်ပါနဲ့။ အရည်အသွေးနဲ့ ကိုယ့်ကျန်းမာရေး နှစ်ခုလုံး ကာကွယ်နိုင်အောင် ဦးစားပေးတွေကို ပြန်ညှိပါ။"
+      },
+      "money": {
+        "upright": "ငွေကြေးမှာ အတိုင်းအတာရှိတာက ပညာရှိပါတယ်။ စုဆောင်းခြင်းနဲ့ ခံစားခြင်း၊ သုံးစွဲခြင်းနဲ့ စီစဉ်ခြင်းကို မျှတပါ။ တည်ငြိမ်တဲ့ အလယ်လမ်းက ကန့်သတ်ခံရသလို မခံစားရဘဲ လုံခြုံမှုကို တည်ဆောက်ပေးနိုင်ပါတယ်။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် သုံးလွန်းတာ ဒါမှမဟုတ် စိုးရိမ်လွန်းတာလို ငွေကြေးဆိုင်ရာ အစွန်းရောက်မှုတွေ ရှိနေနိုင်ပါတယ်။ ရိုးရှင်းတဲ့ အစီအစဉ်နဲ့ မျှတမှုကို ရှာပါ။ ပြင်းထန်တဲ့ ပြောင်းလဲမှုထက် သေးငယ်ပြီး ပုံမှန်ပြင်ဆင်မှုက ပိုအဆင်ပြေပါတယ်။"
+      },
+      "health": {
+        "upright": "ကျန်းမာရေးနဲ့ စိတ်ဓာတ်အတွက် ညင်သာတဲ့ မျှတမှုက ကုစားမှုကို ထောက်ကူပါတယ်။ အတိုင်းအတာရှိတဲ့ အလေ့အကျင့်၊ လုံလောက်တဲ့ ရေ၊ အေးဆေးတဲ့ အသက်ရှူမှုနဲ့ အနားယူမှုက သဟဇာတကို ပြန်ပေးနိုင်ပါတယ်။ ခန္ဓာကိုယ်က ဘာတောင်းဆိုနေလဲ နားထောင်ပါ။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် အလွန်အကျွံ လုပ်နေတာ ဒါမှမဟုတ် အစွန်းနှစ်ဖက်ကြား လွှဲနေတာ ဖြစ်နိုင်ပါတယ်။ ရိုးရှင်းပြီး အတိုင်းအတာရှိတဲ့ နေ့စဉ်လုပ်ငန်းဆီ ပြန်သွားပါ။ စိတ်ရှည်ပါ၊ ညင်သာတဲ့ ပုံမှန်မှုက စည်းချက်ကို ပြန်ရှာစေပါတယ်။"
+      },
+      "advice": "ဒီနေ့ အလယ်လမ်းကို ရွေးပြီး ကြိုးစားမှုနဲ့ တည်ငြိမ်မှုကို ရောစပ်ပါ။",
+      "suit": "အဓိကအာကာနာ",
+      "element": "မီး",
+      "astrology": "ဓနုရာသီ"
+    }
+  },
+  {
+    "id": "major-15-devil",
+    "arcana": "major",
+    "suit": "major",
+    "number": 15,
+    "element": "earth",
+    "commonsFile": "RWS_Tarot_15_Devil.jpg",
+    "en": {
+      "name": "The Devil",
+      "keywords": [
+        "attachment",
+        "habits",
+        "temptation",
+        "awareness",
+        "freedom"
+      ],
+      "upright": "The Devil shows two figures loosely chained, and the chains could be lifted off if they noticed. This card is less about evil and more about attachment: habits, fears or patterns that hold more power over us than they should. It gently asks where you feel stuck or driven by something you do not fully choose. Awareness is the first step to freedom. Naming a pattern honestly, without shame, can already loosen its hold.",
+      "reversed": "Reversed, The Devil often signals release. You may be recognising an unhelpful habit, breaking free from a draining dynamic or reclaiming your power. This process can feel both relieving and challenging. Be patient and kind with yourself, since old patterns may try to return. Support from trusted people and small daily choices can help you stay on the freer path you are beginning to walk.",
+      "love": {
+        "upright": "In love, notice whether attraction is mixed with jealousy, control or dependence. Strong chemistry is not the same as healthy connection. Honest reflection can help you choose what truly nurtures you.",
+        "reversed": "Reversed, you may be releasing an unhealthy pattern or setting firmer boundaries. Freedom and respect can grow. Support yourself kindly as you build a more balanced way of loving."
+      },
+      "career": {
+        "upright": "At work, you may feel tied to a role by fear, money or habit. Consider which ties are real and which are assumptions. Small steps toward more choice can restore a sense of agency.",
+        "reversed": "Reversed, you may be breaking free from an unhealthy work pattern, such as overwork or a draining environment. Keep building options and protecting your wellbeing as you go."
+      },
+      "money": {
+        "upright": "With money, look gently at habits like impulse buying, debt or spending to soothe stress. Awareness without self-judgement is powerful. A simple plan can help you regain control.",
+        "reversed": "Reversed, you may be loosening a difficult financial pattern. Celebrate progress, however small. Ask for qualified support if needed, and keep making choices that bring freedom."
+      },
+      "health": {
+        "upright": "For wellbeing and spirit, notice habits that feel compulsive or draining. Be compassionate with yourself. If something feels hard to change alone, reaching out to a professional can help.",
+        "reversed": "Reversed, you may be reclaiming healthier habits and a lighter spirit. Keep going gently. Lean on supportive people and celebrate each step toward feeling more like yourself."
+      },
+      "advice": "Notice one habit that holds you back today, and simply name it with kindness.",
+      "suit": "Major Arcana",
+      "element": "Earth",
+      "astrology": "Capricorn"
+    },
+    "my": {
+      "name": "မကောင်းဆိုးဝါး",
+      "keywords": [
+        "တွယ်တာမှု",
+        "အကျင့်",
+        "သွေးဆောင်မှု",
+        "သတိရှိမှု",
+        "လွတ်လပ်မှု"
+      ],
+      "upright": "မကောင်းဆိုးဝါးကတ်မှာ ချောင်ချောင်ချိတ်ထားတဲ့ ကြိုးတွေနဲ့ လူနှစ်ယောက်ကို ပြပြီး သူတို့ သတိထားမိရင် ကြိုးတွေကို ချွတ်လို့ရပါတယ်။ ဒီကတ်က ဆိုးယုတ်မှုထက် တွယ်တာမှုအကြောင်း ပိုပြောပါတယ်။ ကိုယ့်အပေါ် ရှိသင့်တာထက် ပိုလွှမ်းမိုးနေတဲ့ အကျင့်၊ ကြောက်စိတ် ဒါမှမဟုတ် ပုံစံတွေပါ။ ဘယ်နေရာမှာ ပိတ်မိနေသလို၊ ကိုယ်အပြည့်အဝ မရွေးချယ်ထားတဲ့ အရာက မောင်းနှင်နေသလို ခံစားရလဲ ညင်သာစွာ မေးပါတယ်။ သတိထားမိခြင်းက လွတ်မြောက်ခြင်းရဲ့ ပထမခြေလှမ်းပါ။ ရှက်စိတ်မရှိဘဲ ပုံစံတစ်ခုကို ရိုးရိုးသားသား အမည်တပ်လိုက်တာနဲ့တင် သူ့ချုပ်ကိုင်မှု လျော့သွားနိုင်ပါတယ်။",
+      "reversed": "ပြောင်းပြန်ကျရင် မကောင်းဆိုးဝါးကတ်က လွတ်မြောက်ခြင်းကို မကြာခဏ ညွှန်ပြပါတယ်။ အကျိုးမပြုတဲ့ အကျင့်တစ်ခုကို သိမြင်လာတာ၊ အားကုန်စေတဲ့ ဆက်ဆံမှုပုံစံကနေ ရုန်းထွက်လာတာ ဒါမှမဟုတ် ကိုယ့်ခွန်အားကို ပြန်ရယူနေတာ ဖြစ်နိုင်ပါတယ်။ ဒီဖြစ်စဉ်က စိတ်သက်သာစရာရော စိန်ခေါ်မှုရော ဖြစ်နိုင်ပါတယ်။ ပုံစံဟောင်းတွေ ပြန်လာဖို့ ကြိုးစားနိုင်လို့ ကိုယ့်ကိုယ်ကို စိတ်ရှည်ပြီး ကြင်နာပါ။ ယုံကြည်ရသူတွေရဲ့ အကူအညီနဲ့ နေ့စဉ်ရွေးချယ်မှုလေးတွေက စတင်လျှောက်နေတဲ့ ပိုလွတ်လပ်တဲ့ လမ်းပေါ်မှာ ဆက်ရှိနေအောင် ကူညီနိုင်ပါတယ်။",
+      "love": {
+        "upright": "အချစ်ရေးမှာ ဆွဲဆောင်မှုထဲ မနာလိုမှု၊ ထိန်းချုပ်မှု ဒါမှမဟုတ် မှီခိုမှုတွေ ရောနေလား သတိထားပါ။ ပြင်းထန်တဲ့ ဆွဲငင်မှုက ကျန်းမာတဲ့ ဆက်နွယ်မှုနဲ့ မတူပါဘူး။ ရိုးသားစွာ ဆင်ခြင်တာက ကိုယ့်ကို တကယ် ပြုစုပေးတာကို ရွေးချယ်နိုင်စေပါတယ်။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် ကျန်းမာရေးမညီတဲ့ ပုံစံတစ်ခုကို လွှတ်ချနေတာ ဒါမှမဟုတ် ပိုခိုင်မာတဲ့ နယ်နိမိတ်တွေ သတ်မှတ်နေတာ ဖြစ်နိုင်ပါတယ်။ လွတ်လပ်မှုနဲ့ လေးစားမှု ကြီးထွားလာနိုင်ပါတယ်။ ပိုမျှတတဲ့ ချစ်ခြင်းပုံစံကို တည်ဆောက်ရင်း ကိုယ့်ကိုယ်ကို ကြင်နာစွာ ထောက်ကူပါ။"
+      },
+      "career": {
+        "upright": "အလုပ်မှာ ကြောက်စိတ်၊ ငွေ ဒါမှမဟုတ် အကျင့်ကြောင့် ရာထူးတစ်ခုနဲ့ ချည်နှောင်ခံထားရသလို ခံစားရနိုင်ပါတယ်။ ဘယ်ချည်နှောင်မှုက အမှန်လဲ၊ ဘယ်ဟာက ယူဆချက်လဲ စဉ်းစားပါ။ ရွေးချယ်ခွင့် ပိုရဖို့ ခြေလှမ်းလေးတွေက ကိုယ်ပိုင်စွမ်းအားကို ပြန်ပေးနိုင်ပါတယ်။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် အလုပ်လွန်ကဲတာ ဒါမှမဟုတ် အားကုန်စေတဲ့ ပတ်ဝန်းကျင်လို ကျန်းမာရေးမညီတဲ့ အလုပ်ပုံစံကနေ ရုန်းထွက်နေတာ ဖြစ်နိုင်ပါတယ်။ ရွေးချယ်စရာတွေ ဆက်တည်ဆောက်ပြီး ကိုယ့်ကျန်းမာရေးကို ကာကွယ်ပါ။"
+      },
+      "money": {
+        "upright": "ငွေကြေးမှာ စိတ်လိုက်ဝယ်တာ၊ အကြွေး ဒါမှမဟုတ် စိတ်ဖိစီးမှု ပြေအောင် သုံးတာလို အကျင့်တွေကို ညင်သာစွာ ကြည့်ပါ။ ကိုယ့်ကိုယ်ကို မစီရင်ဘဲ သတိထားမိတာက အစွမ်းထက်ပါတယ်။ ရိုးရှင်းတဲ့ အစီအစဉ်က ပြန်ထိန်းနိုင်စေပါတယ်။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် ခက်ခဲတဲ့ ငွေကြေးပုံစံတစ်ခုကို ဖြေလျှော့နေတာ ဖြစ်နိုင်ပါတယ်။ တိုးတက်မှု ဘယ်လောက်သေးသေး ဂုဏ်ပြုပါ။ လိုအပ်ရင် အရည်အချင်းရှိသူရဲ့ အကူအညီ ရယူပြီး လွတ်လပ်မှု ယူဆောင်လာတဲ့ ရွေးချယ်မှုတွေ ဆက်လုပ်ပါ။"
+      },
+      "health": {
+        "upright": "ကျန်းမာရေးနဲ့ စိတ်ဓာတ်အတွက် မလုပ်မနေရ ဖြစ်နေတဲ့ ဒါမှမဟုတ် အားကုန်စေတဲ့ အကျင့်တွေကို သတိထားပါ။ ကိုယ့်ကိုယ်ကို ကရုဏာထားပါ။ တစ်ယောက်တည်း ပြောင်းရခက်ရင် ကျွမ်းကျင်သူတစ်ယောက်ကို ဆက်သွယ်တာက ကူညီနိုင်ပါတယ်။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် ပိုကျန်းမာတဲ့ အကျင့်တွေနဲ့ ပိုပေါ့ပါးတဲ့ စိတ်ဓာတ်ကို ပြန်ရယူနေတာ ဖြစ်နိုင်ပါတယ်။ ညင်ညင်သာသာ ဆက်သွားပါ။ ထောက်ကူပေးတဲ့ လူတွေကို အားကိုးပြီး ကိုယ့်ကိုယ်ကို ပြန်ဖြစ်လာတဲ့ ခြေလှမ်းတိုင်းကို ဂုဏ်ပြုပါ။"
+      },
+      "advice": "ဒီနေ့ ကိုယ့်ကို နောက်ပြန်ဆွဲနေတဲ့ အကျင့်တစ်ခုကို သတိထားပြီး ကြင်နာစွာ အမည်တပ်ကြည့်ပါ။",
+      "suit": "အဓိကအာကာနာ",
+      "element": "မြေ",
+      "astrology": "မကာရရာသီ"
+    }
+  },
+  {
+    "id": "major-16-tower",
+    "arcana": "major",
+    "suit": "major",
+    "number": 16,
+    "element": "fire",
+    "commonsFile": "RWS_Tarot_16_Tower.jpg",
+    "en": {
+      "name": "The Tower",
+      "keywords": [
+        "sudden change",
+        "revelation",
+        "breakthrough",
+        "release",
+        "rebuilding"
+      ],
+      "upright": "The Tower shows a structure struck by lightning, its crown knocked loose. This card speaks of sudden change or a revelation that shakes what felt certain. It can be unsettling, yet what falls is often something that was not built on solid ground. Truth that arrives quickly can clear the way for something more honest and stable. Be gentle with yourself if things feel shaky. You can rebuild, more wisely, on firmer foundations.",
+      "reversed": "Reversed, The Tower may suggest that change is happening more slowly or privately, or that you are trying hard to avoid an upheaval that may be needed. Perhaps you sense cracks but hope they will go away. Facing them early and calmly can soften the impact. Ask what needs to be repaired or released. Gradual change chosen with care is often easier than change that arrives all at once.",
+      "love": {
+        "upright": "In love, an unexpected truth or shift may come to light. Though surprising, honesty can clear the air and show what is real. Take things one step at a time and be kind to yourself.",
+        "reversed": "Reversed, you may sense tension but avoid addressing it. Gentle, honest conversation now can prevent a bigger shake-up later. Focus on rebuilding trust with patience and care."
+      },
+      "career": {
+        "upright": "At work, plans may change suddenly, or a hidden issue may surface. Stay calm and flexible. This shake-up may clear space for a role, idea or structure that suits you better.",
+        "reversed": "Reversed, you may be resisting changes that are already underway. Prepare quietly, update your skills and look at options. Facing reality early gives you more choice and confidence."
+      },
+      "money": {
+        "upright": "With money, unexpected expenses or changes may appear. Focus on essentials and stay steady. This is a reminder of the value of savings and flexible, practical planning.",
+        "reversed": "Reversed, avoid ignoring warning signs in your finances. Small corrections now can prevent bigger stress later. Review spending, build a cushion and seek sound advice if needed."
+      },
+      "health": {
+        "upright": "For wellbeing and spirit, sudden change can feel overwhelming. Prioritise rest, grounding activities and support from people you trust. Take life one gentle day at a time.",
+        "reversed": "Reversed, stress may be building quietly. Notice your limits and release pressure before it overflows. Calm routines and honest talks with trusted people can help a lot."
+      },
+      "advice": "If something shifts unexpectedly today, breathe and look for the truth it reveals.",
+      "suit": "Major Arcana",
+      "element": "Fire",
+      "astrology": "Mars"
+    },
+    "my": {
+      "name": "မျှော်စင်",
+      "keywords": [
+        "ရုတ်တရက်ပြောင်းလဲမှု",
+        "ထုတ်ဖော်ခြင်း",
+        "ဖောက်ထွက်ခြင်း",
+        "လွှတ်ချခြင်း",
+        "ပြန်လည်တည်ဆောက်ခြင်း"
+      ],
+      "upright": "မျှော်စင်ကတ်မှာ မိုးကြိုးပစ်ခံရလို့ ထိပ်ဆုံးက သရဖူ လွင့်ကျနေတဲ့ အဆောက်အဦကို ပြပါတယ်။ ဒီကတ်က ရုတ်တရက် ပြောင်းလဲမှု ဒါမှမဟုတ် သေချာတယ်လို့ ထင်ခဲ့တာကို လှုပ်ခါစေတဲ့ ထုတ်ဖော်ချက်အကြောင်း ပြောပါတယ်။ စိတ်မငြိမ်စရာ ဖြစ်နိုင်ပေမဲ့ ပြိုကျတာက များသောအားဖြင့် ခိုင်မာတဲ့ မြေပေါ်မှာ မဆောက်ထားခဲ့တဲ့ အရာပါ။ မြန်မြန်ဆန်ဆန် ရောက်လာတဲ့ အမှန်တရားက ပိုရိုးသားပြီး တည်ငြိမ်တဲ့ အရာအတွက် လမ်းရှင်းပေးနိုင်ပါတယ်။ အရာတွေ လှုပ်ယမ်းနေသလို ခံစားရရင် ကိုယ့်ကိုယ်ကို ညင်သာပါ။ ပိုခိုင်မာတဲ့ အုတ်မြစ်ပေါ်မှာ ပိုပညာရှိရှိ ပြန်တည်ဆောက်နိုင်ပါတယ်။",
+      "reversed": "ပြောင်းပြန်ကျရင် မျှော်စင်ကတ်က ပြောင်းလဲမှုက ပိုနှေးနှေး ဒါမှမဟုတ် တိတ်တိတ်ဆိတ်ဆိတ် ဖြစ်နေတာ၊ ဒါမှမဟုတ် လိုအပ်နိုင်တဲ့ ကမောက်ကမဖြစ်မှုကို အပြင်းအထန် ရှောင်နေတာကို ညွှန်ပြနိုင်ပါတယ်။ အက်ကြောင်းတွေကို ခံစားမိပေမဲ့ ပျောက်သွားမယ်လို့ မျှော်လင့်နေတာ ဖြစ်နိုင်ပါတယ်။ စောစောစီးစီး အေးအေးဆေးဆေး ရင်ဆိုင်တာက ထိခိုက်မှုကို လျော့စေနိုင်ပါတယ်။ ဘာကို ပြုပြင်ဖို့ ဒါမှမဟုတ် လွှတ်ချဖို့ လိုလဲ မေးကြည့်ပါ။ ဂရုတစိုက် ရွေးချယ်ထားတဲ့ တဖြည်းဖြည်း ပြောင်းလဲမှုက တစ်ပြိုင်နက် ရောက်လာတဲ့ ပြောင်းလဲမှုထက် ပိုလွယ်ကူတတ်ပါတယ်။",
+      "love": {
+        "upright": "အချစ်ရေးမှာ မမျှော်လင့်ထားတဲ့ အမှန်တရား ဒါမှမဟုတ် အပြောင်းအလဲတစ်ခု ပေါ်လာနိုင်ပါတယ်။ အံ့ဩစရာ ဖြစ်ပေမဲ့ ရိုးသားမှုက လေထုကို ကြည်လင်စေပြီး တကယ်ရှိတာကို ပြပေးနိုင်ပါတယ်။ တစ်လှမ်းချင်း လှမ်းပြီး ကိုယ့်ကိုယ်ကို ကြင်နာပါ။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် တင်းမာမှုကို ခံစားမိပေမဲ့ မဖြေရှင်းဘဲ ရှောင်နေတာ ဖြစ်နိုင်ပါတယ်။ အခု ညင်သာရိုးသားစွာ ပြောဆိုတာက နောင် ပိုကြီးတဲ့ လှုပ်ခါမှုကို ကာကွယ်နိုင်ပါတယ်။ စိတ်ရှည်မှုနဲ့ ဂရုစိုက်မှုနဲ့ ယုံကြည်မှုကို ပြန်တည်ဆောက်ပါ။"
+      },
+      "career": {
+        "upright": "အလုပ်မှာ အစီအစဉ်တွေ ရုတ်တရက် ပြောင်းသွားတာ ဒါမှမဟုတ် ဖုံးကွယ်ထားတဲ့ ပြဿနာ ပေါ်လာတာ ဖြစ်နိုင်ပါတယ်။ အေးဆေးပြီး ပြောင်းလွယ်ပြင်လွယ် နေပါ။ ဒီလှုပ်ခါမှုက ကိုယ်နဲ့ ပိုကိုက်ညီတဲ့ တာဝန်၊ အကြံ ဒါမှမဟုတ် စနစ်အတွက် နေရာရှင်းပေးနိုင်ပါတယ်။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် ဖြစ်ပေါ်နေပြီးသား ပြောင်းလဲမှုတွေကို ခုခံနေတာ ဖြစ်နိုင်ပါတယ်။ တိတ်တိတ်လေး ပြင်ဆင်ပါ၊ ကျွမ်းကျင်မှုတွေ မြှင့်ပါ၊ ရွေးချယ်စရာတွေ ကြည့်ပါ။ အမှန်တရားကို စောစော ရင်ဆိုင်တာက ရွေးချယ်ခွင့်နဲ့ ယုံကြည်မှု ပိုပေးပါတယ်။"
+      },
+      "money": {
+        "upright": "ငွေကြေးမှာ မမျှော်လင့်ထားတဲ့ ကုန်ကျစရိတ် ဒါမှမဟုတ် ပြောင်းလဲမှုတွေ ပေါ်လာနိုင်ပါတယ်။ မရှိမဖြစ် လိုအပ်တာတွေကို အာရုံစိုက်ပြီး တည်ငြိမ်စွာ နေပါ။ စုငွေနဲ့ ပြောင်းလွယ်ပြင်လွယ် လက်တွေ့ကျတဲ့ စီမံကိန်းရဲ့ တန်ဖိုးကို သတိပေးနေပါတယ်။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် ငွေကြေးမှာ သတိပေးလက္ခဏာတွေကို လျစ်လျူမရှုပါနဲ့။ အခု ပြင်ဆင်မှုလေးတွေက နောင် ပိုကြီးတဲ့ စိတ်ဖိစီးမှုကို ကာကွယ်နိုင်ပါတယ်။ သုံးစွဲမှုကို ပြန်စစ်ပြီး အရန်ငွေ စုပါ၊ လိုအပ်ရင် အကြံကောင်း ရယူပါ။"
+      },
+      "health": {
+        "upright": "ကျန်းမာရေးနဲ့ စိတ်ဓာတ်အတွက် ရုတ်တရက် ပြောင်းလဲမှုက လွှမ်းမိုးသလို ခံစားရစေနိုင်ပါတယ်။ အနားယူမှု၊ စိတ်တည်ငြိမ်စေတဲ့ လှုပ်ရှားမှုတွေနဲ့ ယုံကြည်ရသူတွေရဲ့ အကူအညီကို ဦးစားပေးပါ။ တစ်နေ့ချင်း ညင်ညင်သာသာ ဖြတ်သန်းပါ။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် စိတ်ဖိစီးမှုက တိတ်တိတ်လေး စုပုံနေနိုင်ပါတယ်။ ကိုယ့်အကန့်အသတ်ကို သတိထားပြီး မလျှံခင် ဖိအားကို ဖြေလျှော့ပါ။ အေးဆေးတဲ့ နေ့စဉ်လုပ်ငန်းနဲ့ ယုံကြည်ရသူနဲ့ ရိုးသားစွာ စကားပြောတာက အများကြီး ကူညီနိုင်ပါတယ်။"
+      },
+      "advice": "ဒီနေ့ တစ်ခုခု မမျှော်လင့်ဘဲ ပြောင်းသွားရင် အသက်ကို ဖြည်းဖြည်းရှူပြီး ပေါ်လာတဲ့ အမှန်တရားကို ကြည့်ပါ။",
+      "suit": "အဓိကအာကာနာ",
+      "element": "မီး",
+      "astrology": "အင်္ဂါဂြိုဟ်"
+    }
+  },
+  {
+    "id": "major-17-star",
+    "arcana": "major",
+    "suit": "major",
+    "number": 17,
+    "element": "air",
+    "commonsFile": "RWS_Tarot_17_Star.jpg",
+    "en": {
+      "name": "The Star",
+      "keywords": [
+        "hope",
+        "renewal",
+        "inspiration",
+        "calm",
+        "faith in the future"
+      ],
+      "upright": "The Star appears like a clear night sky after a storm. A figure pours water onto land and into a pool, refreshing both, beneath a bright guiding star. This card brings hope, healing and quiet renewal. You may feel inspired again, or more at peace with yourself. Trust that your efforts are being restored by gentle forces. Let yourself dream a little, and allow your sense of purpose to shine softly and steadily.",
+      "reversed": "Reversed, The Star may suggest discouragement, tiredness or a dimmed sense of hope. Perhaps recent challenges have left you doubting yourself or the future. This feeling, while real, does not have to be permanent. Small acts of self-care, time in nature or talking with someone who believes in you can rekindle your inner light. Be patient. Even faint stars are still shining, and yours can brighten again.",
+      "love": {
+        "upright": "In love, healing and hope are present. Trust may be renewed, or a sincere, gentle connection may appear. Let yourself be open and honest, and allow love to feel calm and nourishing.",
+        "reversed": "Reversed, past hurt may be making it harder to trust. Go slowly and be kind to your heart. Focus on self-love first; that foundation helps healthy connection grow again."
+      },
+      "career": {
+        "upright": "At work, inspiration and renewed motivation can guide you. Creative ideas may flow, and your talents may be noticed. Keep your goals in view and trust in steady, hopeful progress.",
+        "reversed": "Reversed, motivation may feel low. Reconnect with why your work matters to you, or set one small, achievable goal. Encouragement from a mentor or friend can help rekindle your spark."
+      },
+      "money": {
+        "upright": "With money, things may gradually improve. Stay hopeful while making sensible choices. A steady, positive approach to budgeting and saving can support a calmer future.",
+        "reversed": "Reversed, money worries may be weighing on your outlook. Focus on small, practical steps that rebuild confidence. Progress, even slow progress, is still meaningful and worth noticing."
+      },
+      "health": {
+        "upright": "For wellbeing and spirit, this is a card of gentle restoration. Rest, fresh water, fresh air and peaceful moments can renew you. Hope itself can be deeply healing.",
+        "reversed": "Reversed, your energy or spirits may feel low. Be patient and caring with yourself. If heaviness persists, reaching out to someone you trust or a professional can help you feel brighter."
+      },
+      "advice": "Hold on to one small hope today and let it guide your steps.",
+      "suit": "Major Arcana",
+      "element": "Air",
+      "astrology": "Aquarius"
+    },
+    "my": {
+      "name": "ကြယ်",
+      "keywords": [
+        "မျှော်လင့်ချက်",
+        "ပြန်လည်လန်းဆန်းခြင်း",
+        "စိတ်ကူးစိတ်သန်း",
+        "တည်ငြိမ်မှု",
+        "အနာဂတ်ကိုယုံကြည်ခြင်း"
+      ],
+      "upright": "ကြယ်ကတ်က မုန်တိုင်းနောက်မှာ ကြည်လင်လာတဲ့ ညကောင်းကင်လို ပေါ်လာပါတယ်။ တောက်ပတဲ့ လမ်းပြကြယ်အောက်မှာ လူတစ်ယောက်က မြေပေါ်ရော ရေကန်ထဲရော ရေလောင်းပြီး နှစ်ခုလုံးကို လန်းဆန်းစေပါတယ်။ ဒီကတ်က မျှော်လင့်ချက်၊ ကုစားမှုနဲ့ တိတ်ဆိတ်တဲ့ ပြန်လည်လန်းဆန်းမှုကို ယူဆောင်လာပါတယ်။ စိတ်ကူးစိတ်သန်း ပြန်ရလာတာ ဒါမှမဟုတ် ကိုယ့်ကိုယ်ကို ပိုငြိမ်းချမ်းလာတာ ဖြစ်နိုင်ပါတယ်။ ကိုယ့်ကြိုးစားမှုတွေကို ညင်သာတဲ့ အင်အားတွေက ပြန်ဖြည့်ပေးနေတယ်လို့ ယုံကြည်ပါ။ နည်းနည်း အိပ်မက်မက်ခွင့်ပေးပြီး ရည်ရွယ်ချက်ကို ညင်ညင်သာသာ တည်တည်ငြိမ်ငြိမ် လင်းလက်ခွင့်ပေးပါ။",
+      "reversed": "ပြောင်းပြန်ကျရင် ကြယ်ကတ်က စိတ်ပျက်အားငယ်မှု၊ ပင်ပန်းမှု ဒါမှမဟုတ် မှိန်ဖျော့နေတဲ့ မျှော်လင့်ချက်ကို ညွှန်ပြနိုင်ပါတယ်။ မကြာသေးခင်က စိန်ခေါ်မှုတွေကြောင့် ကိုယ့်ကိုယ်ကို ဒါမှမဟုတ် အနာဂတ်ကို သံသယဝင်နေတာ ဖြစ်နိုင်ပါတယ်။ ဒီခံစားချက်က အမှန်ဖြစ်ပေမဲ့ ထာဝရ ဖြစ်နေဖို့ မလိုပါဘူး။ ကိုယ့်ကိုယ်ကို ဂရုစိုက်တဲ့ လုပ်ရပ်လေးတွေ၊ သဘာဝထဲမှာ အချိန်ဖြုန်းတာ ဒါမှမဟုတ် ကိုယ့်ကို ယုံကြည်တဲ့သူနဲ့ စကားပြောတာက အတွင်းအလင်းကို ပြန်ညှိပေးနိုင်ပါတယ်။ စိတ်ရှည်ပါ။ မှိန်နေတဲ့ ကြယ်တွေလည်း လင်းနေဆဲပါ၊ သင့်ကြယ်လည်း ပြန်တောက်ပလာနိုင်ပါတယ်။",
+      "love": {
+        "upright": "အချစ်ရေးမှာ ကုစားမှုနဲ့ မျှော်လင့်ချက်တွေ ရှိနေပါတယ်။ ယုံကြည်မှု ပြန်လည်သစ်လွင်လာတာ ဒါမှမဟုတ် စိတ်ရင်းမှန်တဲ့ ညင်သာတဲ့ ဆက်နွယ်မှု ပေါ်လာတာ ဖြစ်နိုင်ပါတယ်။ ပွင့်လင်းရိုးသားပြီး အချစ်ကို အေးချမ်းအားဖြည့်ပေးသလို ခံစားခွင့်ပေးပါ။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် အတိတ်က နာကျင်မှုက ယုံကြည်ဖို့ ခက်ခဲစေနိုင်ပါတယ်။ ဖြည်းဖြည်းချင်း သွားပြီး ကိုယ့်နှလုံးသားကို ကြင်နာပါ။ ကိုယ့်ကိုယ်ကို ချစ်ခြင်းကို အရင်ဦးစားပေးပါ၊ အဲဒီအခြေခံက ကျန်းမာတဲ့ ဆက်နွယ်မှုကို ပြန်ကြီးထွားစေပါတယ်။"
+      },
+      "career": {
+        "upright": "အလုပ်မှာ စိတ်ကူးစိတ်သန်းနဲ့ ပြန်လည်တက်ကြွလာတဲ့ စိတ်အားက လမ်းပြနိုင်ပါတယ်။ ဖန်တီးမှုအကြံတွေ စီးဆင်းလာပြီး သင့်အရည်အချင်းကို သတိထားမိခံရနိုင်ပါတယ်။ ပန်းတိုင်တွေကို မျက်ခြေမပြတ်ဘဲ တည်ငြိမ်တဲ့ တိုးတက်မှုကို ယုံကြည်ပါ။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် စိတ်အားထက်သန်မှု နည်းနေသလို ခံစားရနိုင်ပါတယ်။ ကိုယ့်အလုပ်က ဘာကြောင့် အရေးကြီးလဲဆိုတာနဲ့ ပြန်ဆက်သွယ်ပါ၊ ဒါမှမဟုတ် ရနိုင်တဲ့ ပန်းတိုင်လေးတစ်ခု ချမှတ်ပါ။ လမ်းပြဆရာ ဒါမှမဟုတ် မိတ်ဆွေရဲ့ အားပေးမှုက ကူညီနိုင်ပါတယ်။"
+      },
+      "money": {
+        "upright": "ငွေကြေးမှာ အခြေအနေတွေ တဖြည်းဖြည်း တိုးတက်လာနိုင်ပါတယ်။ ဆင်ခြင်တဲ့ ရွေးချယ်မှုတွေ လုပ်ရင်း မျှော်လင့်ချက် ထားပါ။ ဘတ်ဂျက်နဲ့ စုဆောင်းမှုကို တည်ငြိမ်အပြုသဘော ချဉ်းကပ်တာက ပိုအေးချမ်းတဲ့ အနာဂတ်ကို ထောက်ကူနိုင်ပါတယ်။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် ငွေကြေးစိုးရိမ်မှုက အမြင်ကို လေးလံစေနိုင်ပါတယ်။ ယုံကြည်မှု ပြန်တည်ဆောက်ပေးမယ့် သေးငယ်လက်တွေ့ကျတဲ့ ခြေလှမ်းတွေကို အာရုံစိုက်ပါ။ နှေးနှေး တိုးတက်တာလည်း အဓိပ္ပာယ်ရှိပြီး သတိထားမိထိုက်ပါတယ်။"
+      },
+      "health": {
+        "upright": "ကျန်းမာရေးနဲ့ စိတ်ဓာတ်အတွက် ဒါဟာ ညင်သာတဲ့ ပြန်လည်ကောင်းမွန်မှုရဲ့ ကတ်ပါ။ အနားယူမှု၊ ရေသန့်၊ လေကောင်းလေသန့်နဲ့ ငြိမ်းချမ်းတဲ့ အခိုက်အတန့်တွေက လန်းဆန်းစေနိုင်ပါတယ်။ မျှော်လင့်ချက်ကိုယ်တိုင်က နက်နက်ရှိုင်းရှိုင်း ကုစားပေးနိုင်ပါတယ်။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် စွမ်းအင် ဒါမှမဟုတ် စိတ်ဓာတ် ကျနေသလို ခံစားရနိုင်ပါတယ်။ ကိုယ့်ကိုယ်ကို စိတ်ရှည်ပြီး ဂရုစိုက်ပါ။ လေးလံမှု ဆက်ရှိနေရင် ယုံကြည်ရသူ ဒါမှမဟုတ် ကျွမ်းကျင်သူကို ဆက်သွယ်တာက ပိုလန်းဆန်းစေနိုင်ပါတယ်။"
+      },
+      "advice": "ဒီနေ့ မျှော်လင့်ချက်လေးတစ်ခုကို ဆုပ်ကိုင်ထားပြီး ခြေလှမ်းတွေကို လမ်းပြခွင့်ပေးပါ။",
+      "suit": "အဓိကအာကာနာ",
+      "element": "လေ",
+      "astrology": "ကုံရာသီ"
+    }
+  },
+  {
+    "id": "major-18-moon",
+    "arcana": "major",
+    "suit": "major",
+    "number": 18,
+    "element": "water",
+    "commonsFile": "RWS_Tarot_18_Moon.jpg",
+    "en": {
+      "name": "The Moon",
+      "keywords": [
+        "intuition",
+        "uncertainty",
+        "dreams",
+        "imagination",
+        "the unseen"
+      ],
+      "upright": "The Moon lights a winding path between two towers, where shapes look different in the soft, silvery glow. This card speaks of uncertainty, dreams and the deeper layers of feeling. Not everything is clear yet, and that is all right. Your imagination may be vivid, and fears may seem larger at night than in daylight. Move slowly, trust your intuition and wait for more light before making big decisions. Clarity often comes in its own time.",
+      "reversed": "Reversed, The Moon may suggest that confusion is beginning to lift, or that you are ready to face a fear you have been avoiding. Perhaps a misunderstanding is being cleared up, or you are seeing a situation more realistically. Alternatively, anxiety may be clouding your view. Ground yourself with facts, rest and steady routines. Gently separate what you know from what you fear, and let the truth emerge step by step.",
+      "love": {
+        "upright": "In love, feelings may be strong but unclear. Avoid assumptions and give things time to reveal themselves. Gentle, honest questions can help both people understand what is real.",
+        "reversed": "Reversed, misunderstandings may be clearing up, or you may be ready to talk openly about worries. Clear, kind communication can dissolve doubts and bring you closer together."
+      },
+      "career": {
+        "upright": "At work, not all information may be available yet. Double-check details and avoid rushing decisions. Your intuition can guide you, but pair it with careful verification.",
+        "reversed": "Reversed, confusion may be lifting and clearer information may arrive soon. Ask questions to fill in any gaps. Trust grows when facts and feelings point in the same direction."
+      },
+      "money": {
+        "upright": "With money, be cautious with unclear offers or plans that feel vague. Read the fine print and wait for clarity. It is better to pause than to act on uncertain information.",
+        "reversed": "Reversed, financial confusion may be easing. Review details calmly and organise your records. Facing the facts, even uncomfortable ones, can bring relief and a sense of control."
+      },
+      "health": {
+        "upright": "For wellbeing and spirit, notice your dreams and moods. Restful sleep and calm evenings may help. If worries feel bigger at night, write them down and revisit them in daylight.",
+        "reversed": "Reversed, anxiety may be easing as you understand things better. Keep grounding yourself with routine and rest. Talking through lingering fears with someone you trust can help."
+      },
+      "advice": "Move gently through uncertainty today and trust that clarity will come.",
+      "suit": "Major Arcana",
+      "element": "Water",
+      "astrology": "Pisces"
+    },
+    "my": {
+      "name": "လ",
+      "keywords": [
+        "အလိုလိုသိစိတ်",
+        "မသေချာမှု",
+        "အိပ်မက်",
+        "စိတ်ကူးယဉ်မှု",
+        "မမြင်ရသောအရာ"
+      ],
+      "upright": "လကတ်က မျှော်စင်နှစ်ခုကြားက ကွေ့ကောက်လမ်းကို ငွေရောင် အလင်းဖျော့ဖျော့နဲ့ ထွန်းလင်းပေးထားပြီး ပုံသဏ္ဌာန်တွေက ထူးထူးခြားခြား မြင်ရပါတယ်။ ဒီကတ်က မသေချာမှု၊ အိပ်မက်နဲ့ ခံစားချက်ရဲ့ နက်ရှိုင်းတဲ့ အလွှာတွေအကြောင်း ပြောပါတယ်။ အရာအားလုံး မရှင်းလင်းသေးပါဘူး၊ ဒါလည်း ရပါတယ်။ စိတ်ကူးယဉ်မှုက ပြင်းထန်နေနိုင်ပြီး ကြောက်စိတ်တွေက နေ့ခင်းထက် ညမှာ ပိုကြီးသလို ထင်ရနိုင်ပါတယ်။ ဖြည်းဖြည်းချင်း သွားပါ၊ အလိုလိုသိစိတ်ကို ယုံပါ၊ ဆုံးဖြတ်ချက်ကြီးတွေ မချခင် အလင်းပိုရဖို့ စောင့်ပါ။ ရှင်းလင်းမှုက သူ့အချိန်နဲ့သူ ရောက်လာတတ်ပါတယ်။",
+      "reversed": "ပြောင်းပြန်ကျရင် လကတ်က ရှုပ်ထွေးမှုတွေ စတင်ပြေလည်လာတာ ဒါမှမဟုတ် ရှောင်နေခဲ့တဲ့ ကြောက်စိတ်တစ်ခုကို ရင်ဆိုင်ဖို့ အသင့်ဖြစ်လာတာကို ညွှန်ပြနိုင်ပါတယ်။ နားလည်မှုလွဲတာ တစ်ခု ရှင်းလင်းသွားတာ ဒါမှမဟုတ် အခြေအနေကို ပိုလက်တွေ့ကျကျ မြင်လာတာ ဖြစ်နိုင်ပါတယ်။ ဒါမှမဟုတ် စိုးရိမ်ပူပန်မှုက အမြင်ကို ဝါးဝါးဖြစ်စေနေတာလည်း ဖြစ်နိုင်ပါတယ်။ အချက်အလက်၊ အနားယူမှုနဲ့ တည်ငြိမ်တဲ့ နေ့စဉ်လုပ်ငန်းတွေနဲ့ ကိုယ့်ကိုယ်ကို တည်ငြိမ်အောင် ထားပါ။ သိတာနဲ့ ကြောက်တာကို ညင်သာစွာ ခွဲခြားပြီး အမှန်တရားကို တစ်ဆင့်ချင်း ပေါ်ထွက်လာခွင့် ပေးပါ။",
+      "love": {
+        "upright": "အချစ်ရေးမှာ ခံစားချက်တွေက ပြင်းထန်ပေမဲ့ မရှင်းလင်း ဖြစ်နေနိုင်ပါတယ်။ ယူဆချက်တွေကို ရှောင်ပြီး အရာတွေ သူ့ဘာသာ ပေါ်လာဖို့ အချိန်ပေးပါ။ ညင်သာရိုးသားတဲ့ မေးခွန်းတွေက နှစ်ယောက်လုံး တကယ်ရှိတာကို နားလည်စေနိုင်ပါတယ်။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် နားလည်မှုလွဲတာတွေ ရှင်းလင်းလာတာ ဒါမှမဟုတ် စိုးရိမ်မှုတွေအကြောင်း ပွင့်ပွင့်လင်းလင်း ပြောဖို့ အသင့်ဖြစ်လာတာ ဖြစ်နိုင်ပါတယ်။ ရှင်းလင်းကြင်နာတဲ့ ပြောဆိုမှုက သံသယတွေကို ပျောက်စေပြီး ပိုနီးကပ်စေနိုင်ပါတယ်။"
+      },
+      "career": {
+        "upright": "အလုပ်မှာ အချက်အလက်အားလုံး မရသေးတာ ဖြစ်နိုင်ပါတယ်။ အသေးစိတ်ကို နှစ်ခါစစ်ပြီး အလောတကြီး မဆုံးဖြတ်ပါနဲ့။ အလိုလိုသိစိတ်က လမ်းပြနိုင်ပေမဲ့ ဂရုတစိုက် အတည်ပြုတာနဲ့ တွဲသုံးပါ။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် ရှုပ်ထွေးမှုတွေ ပြေလည်လာပြီး ပိုရှင်းလင်းတဲ့ အချက်အလက်တွေ မကြာခင် ရောက်လာနိုင်ပါတယ်။ ကွက်လပ်တွေ ဖြည့်ဖို့ မေးခွန်းမေးပါ။ အချက်အလက်နဲ့ ခံစားချက် တစ်ဖက်တည်း ညွှန်ပြတဲ့အခါ ယုံကြည်မှု ကြီးထွားပါတယ်။"
+      },
+      "money": {
+        "upright": "ငွေကြေးမှာ မရှင်းလင်းတဲ့ ကမ်းလှမ်းချက် ဒါမှမဟုတ် ဝေဝါးတဲ့ အစီအစဉ်တွေကို သတိထားပါ။ စာသေးလေးတွေကို ဖတ်ပြီး ရှင်းလင်းမှုကို စောင့်ပါ။ မသေချာတဲ့ အချက်အလက်ပေါ် လုပ်ဆောင်တာထက် ခဏရပ်တာ ပိုကောင်းပါတယ်။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် ငွေကြေးဆိုင်ရာ ရှုပ်ထွေးမှုတွေ လျော့လာနိုင်ပါတယ်။ အသေးစိတ်ကို အေးအေးဆေးဆေး ပြန်စစ်ပြီး မှတ်တမ်းတွေကို စနစ်တကျ ထားပါ။ မသက်မသာ ဖြစ်စေတာတောင် အချက်အလက်ကို ရင်ဆိုင်တာက စိတ်သက်သာမှု ပေးနိုင်ပါတယ်။"
+      },
+      "health": {
+        "upright": "ကျန်းမာရေးနဲ့ စိတ်ဓာတ်အတွက် ကိုယ့်အိပ်မက်နဲ့ စိတ်အခြေအနေကို သတိထားပါ။ အိပ်ရေးဝဝ အိပ်တာနဲ့ အေးဆေးတဲ့ ညနေခင်းတွေက ကူညီနိုင်ပါတယ်။ ညဘက် စိုးရိမ်မှုတွေ ကြီးလာသလို ခံစားရရင် ချရေးထားပြီး နေ့ခင်းမှာ ပြန်ကြည့်ပါ။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် အရာတွေကို ပိုနားလည်လာတာနဲ့အမျှ စိုးရိမ်ပူပန်မှု လျော့လာနိုင်ပါတယ်။ နေ့စဉ်လုပ်ငန်းနဲ့ အနားယူမှုနဲ့ ကိုယ့်ကိုယ်ကို ဆက်တည်ငြိမ်အောင် ထားပါ။ ကျန်နေတဲ့ ကြောက်စိတ်တွေကို ယုံကြည်ရသူနဲ့ ပြောပြတာက ကူညီပါတယ်။"
+      },
+      "advice": "ဒီနေ့ မသေချာမှုတွေကြား ညင်ညင်သာသာ ဖြတ်သန်းပြီး ရှင်းလင်းမှု ရောက်လာမယ်လို့ ယုံကြည်ပါ။",
+      "suit": "အဓိကအာကာနာ",
+      "element": "ရေ",
+      "astrology": "မိန်ရာသီ"
+    }
+  },
+  {
+    "id": "major-19-sun",
+    "arcana": "major",
+    "suit": "major",
+    "number": 19,
+    "element": "fire",
+    "commonsFile": "RWS_Tarot_19_Sun.jpg",
+    "en": {
+      "name": "The Sun",
+      "keywords": [
+        "joy",
+        "warmth",
+        "success",
+        "vitality",
+        "clarity"
+      ],
+      "upright": "The Sun shines brightly over a happy child riding through a garden of sunflowers. This card radiates joy, warmth and confidence. Things may feel clearer, lighter and more hopeful now. It is a lovely time to celebrate what is going well, share your happiness and let yourself be seen. Success and recognition can grow naturally from honesty and good energy. Soak up the light, and let it remind you how much there is to enjoy.",
+      "reversed": "Reversed, The Sun may suggest that joy is present but partly hidden, perhaps behind tiredness, worry or high expectations. You may be overlooking what is going well, or waiting for perfection before allowing yourself to feel happy. Clouds pass, and the sun is still there. Look for small pleasures, practise gratitude and connect with people who lift your spirits. Your natural warmth can shine again with a little care.",
+      "love": {
+        "upright": "In love, warmth, playfulness and openness are highlighted. Happy times together, honest affection and shared laughter may brighten your relationship or attract a joyful new connection.",
+        "reversed": "Reversed, stress may be dimming the fun in a relationship. Plan a simple, lighthearted moment together. Appreciating the small, good things can bring back a warm, sunny feeling."
+      },
+      "career": {
+        "upright": "At work, achievements may be recognised and confidence is high. Share your ideas openly and enjoy your successes. Positive energy can inspire teammates and open new doors.",
+        "reversed": "Reversed, you may be underestimating your progress or feeling slightly burnt out. Celebrate small wins and rest when needed. Your efforts matter even when recognition is slow to arrive."
+      },
+      "money": {
+        "upright": "With money, things may look brighter. Enjoy your resources wisely and share generosity where you can. A clear, optimistic plan can help you build on good momentum.",
+        "reversed": "Reversed, avoid overconfidence or overspending during good moments, and avoid excessive worry during slower ones. A balanced, cheerful approach to everyday choices supports steady financial wellbeing over time."
+      },
+      "health": {
+        "upright": "For wellbeing and spirit, vitality and optimism are strong. Time outdoors, movement you enjoy and laughter can lift your energy. Let joy be part of your daily care.",
+        "reversed": "Reversed, energy may be a little low. Rest, gentle sunlight and simple pleasures can help restore you. Be patient; brightness often returns gradually, day by day."
+      },
+      "advice": "Celebrate one good thing today, however small it may seem.",
+      "suit": "Major Arcana",
+      "element": "Fire",
+      "astrology": "The Sun"
+    },
+    "my": {
+      "name": "နေ",
+      "keywords": [
+        "ပျော်ရွှင်မှု",
+        "နွေးထွေးမှု",
+        "အောင်မြင်မှု",
+        "တက်ကြွမှု",
+        "ကြည်လင်မှု"
+      ],
+      "upright": "နေကတ်မှာ နေကြာပန်းဥယျာဉ်ကြားကို ပျော်ပျော်ရွှင်ရွှင် မြင်းစီးလာတဲ့ ကလေးတစ်ယောက်အပေါ် နေက တောက်တောက်ပပ ထွန်းလင်းနေပါတယ်။ ဒီကတ်က ပျော်ရွှင်မှု၊ နွေးထွေးမှုနဲ့ ယုံကြည်မှုကို ဖြာထွက်စေပါတယ်။ အရာတွေက အခု ပိုရှင်းလင်း၊ ပိုပေါ့ပါးပြီး ပိုမျှော်လင့်စရာ ကောင်းလာနိုင်ပါတယ်။ အဆင်ပြေနေတာတွေကို ဂုဏ်ပြုဖို့၊ ပျော်ရွှင်မှုကို မျှဝေဖို့နဲ့ ကိုယ့်ကိုယ်ကို ထင်ထင်ရှားရှား ပြသဖို့ အချိန်ကောင်းပါ။ အောင်မြင်မှုနဲ့ အသိအမှတ်ပြုခံရမှုက ရိုးသားမှုနဲ့ စွမ်းအင်ကောင်းကနေ သဘာဝအတိုင်း ကြီးထွားနိုင်ပါတယ်။ အလင်းကို စုပ်ယူပြီး ပျော်စရာတွေ ဘယ်လောက်ရှိလဲ သတိရပါ။",
+      "reversed": "ပြောင်းပြန်ကျရင် နေကတ်က ပျော်ရွှင်မှု ရှိနေပေမဲ့ ပင်ပန်းမှု၊ စိုးရိမ်မှု ဒါမှမဟုတ် မြင့်မားတဲ့ မျှော်လင့်ချက်တွေနောက်မှာ တစ်စိတ်တစ်ပိုင်း ပုန်းနေတာကို ညွှန်ပြနိုင်ပါတယ်။ အဆင်ပြေနေတာတွေကို မျက်ကွယ်ပြုနေတာ ဒါမှမဟုတ် ပျော်ခွင့်မပေးခင် ပြီးပြည့်စုံမှုကို စောင့်နေတာ ဖြစ်နိုင်ပါတယ်။ တိမ်တွေ ဖြတ်သွားတတ်ပြီး နေကတော့ ရှိနေဆဲပါ။ ပျော်စရာလေးတွေကို ရှာပါ၊ ကျေးဇူးတင်စိတ်ကို လေ့ကျင့်ပါ၊ စိတ်ဓာတ်ကို မြှင့်ပေးတဲ့ လူတွေနဲ့ ဆက်သွယ်ပါ။ နည်းနည်း ဂရုစိုက်လိုက်ရင် သင့်ရဲ့ သဘာဝ နွေးထွေးမှုက ပြန်လင်းလက်လာနိုင်ပါတယ်။",
+      "love": {
+        "upright": "အချစ်ရေးမှာ နွေးထွေးမှု၊ ကစားလိုစိတ်နဲ့ ပွင့်လင်းမှုတွေ ထင်ရှားပါတယ်။ အတူတကွ ပျော်ရွှင်ရတဲ့ အချိန်တွေ၊ ရိုးသားတဲ့ ချစ်ခင်မှုနဲ့ အတူရယ်မောမှုတွေက ဆက်ဆံရေးကို လင်းလက်စေတာ ဒါမှမဟုတ် ပျော်စရာ ဆက်နွယ်မှုသစ်ကို ဆွဲဆောင်တာ ဖြစ်နိုင်ပါတယ်။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် စိတ်ဖိစီးမှုက ဆက်ဆံရေးထဲက ပျော်စရာကို မှိန်စေနိုင်ပါတယ်။ ရိုးရှင်းပေါ့ပါးတဲ့ အချိန်လေးတစ်ခု အတူစီစဉ်ပါ။ သေးငယ်ပေမဲ့ ကောင်းတဲ့ အရာတွေကို တန်ဖိုးထားတာက နွေးထွေးတဲ့ ခံစားချက်ကို ပြန်ယူဆောင်လာနိုင်ပါတယ်။"
+      },
+      "career": {
+        "upright": "အလုပ်မှာ အောင်မြင်မှုတွေ အသိအမှတ်ပြုခံရနိုင်ပြီး ယုံကြည်မှု မြင့်မားနေပါတယ်။ အကြံတွေကို ပွင့်ပွင့်လင်းလင်း မျှဝေပြီး အောင်မြင်မှုကို ခံစားပါ။ အပြုသဘော စွမ်းအင်က အဖွဲ့သားတွေကို အားတက်စေပြီး တံခါးသစ်တွေ ဖွင့်ပေးနိုင်ပါတယ်။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် ကိုယ့်တိုးတက်မှုကို လျှော့တွက်နေတာ ဒါမှမဟုတ် နည်းနည်း အားကုန်နေတာ ဖြစ်နိုင်ပါတယ်။ အောင်မြင်မှုလေးတွေကို ဂုဏ်ပြုပြီး လိုအပ်ရင် အနားယူပါ။ အသိအမှတ်ပြုခံရတာ နှေးနေရင်တောင် ကိုယ့်ကြိုးစားမှုက အရေးပါပါတယ်။"
+      },
+      "money": {
+        "upright": "ငွေကြေးမှာ အခြေအနေတွေ ပိုတောက်ပလာနိုင်ပါတယ်။ ကိုယ့်အရင်းအမြစ်ကို ပညာရှိရှိ ခံစားပြီး တတ်နိုင်သလောက် ရက်ရောမှုကို မျှဝေပါ။ ရှင်းလင်းပြီး အကောင်းမြင်တဲ့ အစီအစဉ်က အရှိန်ကောင်းကို ဆက်တည်ဆောက်နိုင်စေပါတယ်။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် အဆင်ပြေချိန်မှာ ယုံကြည်လွန်းတာ ဒါမှမဟုတ် သုံးလွန်းတာကို ရှောင်ပါ၊ နှေးကွေးချိန်မှာ စိုးရိမ်လွန်းတာကိုလည်း ရှောင်ပါ။ မျှတပြီး ပျော်ရွှင်တဲ့ ချဉ်းကပ်ပုံက တည်ငြိမ်တဲ့ ငွေကြေးအခြေအနေကို ထောက်ကူပါတယ်။"
+      },
+      "health": {
+        "upright": "ကျန်းမာရေးနဲ့ စိတ်ဓာတ်အတွက် တက်ကြွမှုနဲ့ အကောင်းမြင်စိတ် အားကောင်းနေပါတယ်။ အပြင်မှာ အချိန်ဖြုန်းတာ၊ နှစ်သက်တဲ့ လှုပ်ရှားမှုနဲ့ ရယ်မောမှုက စွမ်းအင်ကို မြှင့်ပေးနိုင်ပါတယ်။ ပျော်ရွှင်မှုကို နေ့စဉ် ဂရုစိုက်မှုရဲ့ တစ်စိတ်တစ်ပိုင်း ဖြစ်ပါစေ။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် စွမ်းအင် နည်းနည်း နည်းနေနိုင်ပါတယ်။ အနားယူမှု၊ နူးညံ့တဲ့ နေရောင်နဲ့ ရိုးရှင်းတဲ့ ပျော်စရာတွေက ပြန်လည်ကောင်းမွန်စေနိုင်ပါတယ်။ စိတ်ရှည်ပါ၊ တောက်ပမှုက တစ်နေ့ချင်း တဖြည်းဖြည်း ပြန်ရောက်လာတတ်ပါတယ်။"
+      },
+      "advice": "ဒီနေ့ ကောင်းတဲ့ အရာတစ်ခုကို ဘယ်လောက်သေးသေး ဂုဏ်ပြုပါ။",
+      "suit": "အဓိကအာကာနာ",
+      "element": "မီး",
+      "astrology": "နေ"
+    }
+  },
+  {
+    "id": "major-20-judgement",
+    "arcana": "major",
+    "suit": "major",
+    "number": 20,
+    "element": "fire",
+    "commonsFile": "RWS_Tarot_20_Judgement.jpg",
+    "en": {
+      "name": "Judgement",
+      "keywords": [
+        "awakening",
+        "reflection",
+        "renewal",
+        "calling",
+        "forgiveness"
+      ],
+      "upright": "Judgement shows figures rising in answer to a trumpet's call, as if waking to a new understanding. This card speaks of reflection, renewal and listening to a deeper calling. You may be reviewing the past with fresh eyes, learning from it and preparing for a meaningful next step. Forgiveness, toward yourself and others, can lighten the load. It is a moment to answer what genuinely calls you, with honesty and an open heart.",
+      "reversed": "Reversed, Judgement may suggest self-doubt, harsh self-criticism or hesitation to answer an inner call. Perhaps you are replaying past mistakes instead of learning from them, or fearing how others will judge you. Gently remember that growth is a process. Reflect kindly, take the lesson and let the rest go. Listening quietly to what truly matters to you can help you rise and move forward with renewed purpose.",
+      "love": {
+        "upright": "In love, reflection and honesty can bring renewal. Old misunderstandings may be forgiven, or you may realise clearly what you want. A fresh start, together or apart, can feel freeing.",
+        "reversed": "Reversed, past hurt or self-judgement may be affecting how you love. Be gentle with yourself and others. Forgiveness takes time, and honest conversations can help you begin again."
+      },
+      "career": {
+        "upright": "At work, you may feel called toward a new direction or a greater purpose. Review your experience and recognise how far you have come. A meaningful decision may be ready to be made.",
+        "reversed": "Reversed, doubt may be making it hard to decide. Reflect on your strengths and past successes. Seek honest feedback and trust that your next step does not need to be perfect."
+      },
+      "money": {
+        "upright": "With money, reviewing past choices can guide wiser ones. Learn from what worked and what did not. A fresh, thoughtful approach can help you feel more confident about the future.",
+        "reversed": "Reversed, avoid dwelling on old money mistakes. Note the lesson, forgive yourself and make a simple plan forward. Small, honest steps can rebuild your financial confidence."
+      },
+      "health": {
+        "upright": "For wellbeing and spirit, this card brings renewal. Reflect on what truly restores you and commit to it. Letting go of old guilt can make your body and mind feel lighter.",
+        "reversed": "Reversed, harsh self-talk may be draining you. Replace criticism with encouragement. Small, kind steps toward wellbeing can help you feel renewed and more like yourself."
+      },
+      "advice": "Reflect kindly on your past today, and answer what truly calls you.",
+      "suit": "Major Arcana",
+      "element": "Fire",
+      "astrology": "Pluto"
+    },
+    "my": {
+      "name": "စီရင်ချက်",
+      "keywords": [
+        "နိုးထခြင်း",
+        "ပြန်လည်ဆင်ခြင်ခြင်း",
+        "ပြန်လည်သစ်လွင်ခြင်း",
+        "အတွင်းစိတ်ခေါ်သံ",
+        "ခွင့်လွှတ်ခြင်း"
+      ],
+      "upright": "စီရင်ချက်ကတ်မှာ တံပိုးခေါ်သံကို တုံ့ပြန်ပြီး နားလည်မှုသစ်ဆီ နိုးထလာသလို ထလာကြတဲ့ လူတွေကို ပြပါတယ်။ ဒီကတ်က ပြန်လည်ဆင်ခြင်ခြင်း၊ ပြန်လည်သစ်လွင်ခြင်းနဲ့ ပိုနက်ရှိုင်းတဲ့ အတွင်းစိတ်ခေါ်သံကို နားထောင်ခြင်းအကြောင်း ပြောပါတယ်။ အတိတ်ကို မျက်လုံးသစ်နဲ့ ပြန်ကြည့်ပြီး သင်ယူကာ အဓိပ္ပာယ်ရှိတဲ့ နောက်ခြေလှမ်းအတွက် ပြင်ဆင်နေတာ ဖြစ်နိုင်ပါတယ်။ ကိုယ့်ကိုယ်ကိုရော တခြားသူကိုပါ ခွင့်လွှတ်တာက ဝန်ကို ပေါ့ပါးစေနိုင်ပါတယ်။ ကိုယ့်ကို တကယ် ခေါ်နေတဲ့ အရာကို ရိုးသားမှုနဲ့ ပွင့်လင်းတဲ့ နှလုံးသားနဲ့ တုံ့ပြန်ဖို့ အချိန်ပါ။",
+      "reversed": "ပြောင်းပြန်ကျရင် စီရင်ချက်ကတ်က ကိုယ့်ကိုယ်ကို သံသယဝင်ခြင်း၊ ကြမ်းတမ်းစွာ ဝေဖန်ခြင်း ဒါမှမဟုတ် အတွင်းစိတ်ခေါ်သံကို တုံ့ပြန်ဖို့ တွန့်ဆုတ်ခြင်းကို ညွှန်ပြနိုင်ပါတယ်။ အတိတ်က အမှားတွေကနေ သင်ယူမယ့်အစား ပြန်ပြန်တွေးနေတာ ဒါမှမဟုတ် တခြားသူတွေ ဘယ်လို စီရင်မလဲ ကြောက်နေတာ ဖြစ်နိုင်ပါတယ်။ ကြီးထွားခြင်းဟာ ဖြစ်စဉ်တစ်ခုဆိုတာ ညင်ညင်သာသာ သတိရပါ။ ကြင်နာစွာ ဆင်ခြင်ပြီး သင်ခန်းစာကို ယူကာ ကျန်တာကို လွှတ်ချပါ။ ကိုယ့်အတွက် တကယ် အရေးကြီးတာကို တိတ်တိတ်လေး နားထောင်တာက ရည်ရွယ်ချက်သစ်နဲ့ ထပြီး ရှေ့ဆက်ဖို့ ကူညီနိုင်ပါတယ်။",
+      "love": {
+        "upright": "အချစ်ရေးမှာ ဆင်ခြင်ခြင်းနဲ့ ရိုးသားမှုက ပြန်လည်သစ်လွင်မှုကို ယူဆောင်လာနိုင်ပါတယ်။ နားလည်မှုလွဲတာဟောင်းတွေကို ခွင့်လွှတ်နိုင်တာ ဒါမှမဟုတ် ကိုယ်ဘာလိုချင်လဲ ရှင်းရှင်းလင်းလင်း သဘောပေါက်လာတာ ဖြစ်နိုင်ပါတယ်။ အတူဖြစ်ဖြစ် သီးခြားဖြစ်ဖြစ် အစသစ်က လွတ်မြောက်သလို ခံစားရစေနိုင်ပါတယ်။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် အတိတ်က နာကျင်မှု ဒါမှမဟုတ် ကိုယ့်ကိုယ်ကို စီရင်တာက ချစ်ပုံကို ထိခိုက်နေနိုင်ပါတယ်။ ကိုယ့်ကိုယ်ကိုရော တခြားသူကိုပါ ညင်သာပါ။ ခွင့်လွှတ်မှုက အချိန်ယူပြီး ရိုးသားတဲ့ စကားပြောဆိုမှုက ပြန်စဖို့ ကူညီနိုင်ပါတယ်။"
+      },
+      "career": {
+        "upright": "အလုပ်မှာ ဦးတည်ချက်သစ် ဒါမှမဟုတ် ပိုကြီးမားတဲ့ ရည်ရွယ်ချက်ဆီ ခေါ်နေသလို ခံစားရနိုင်ပါတယ်။ ကိုယ့်အတွေ့အကြုံကို ပြန်သုံးသပ်ပြီး ဘယ်လောက်ဝေးဝေး ရောက်လာပြီလဲ အသိအမှတ်ပြုပါ။ အဓိပ္ပာယ်ရှိတဲ့ ဆုံးဖြတ်ချက်တစ်ခု ချဖို့ အသင့်ဖြစ်နေနိုင်ပါတယ်။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် သံသယက ဆုံးဖြတ်ဖို့ ခက်ခဲစေနိုင်ပါတယ်။ ကိုယ့်အားသာချက်တွေနဲ့ အတိတ်က အောင်မြင်မှုတွေကို ဆင်ခြင်ပါ။ ရိုးသားတဲ့ အကြံပြုချက် ရှာပြီး နောက်ခြေလှမ်းက ပြီးပြည့်စုံဖို့ မလိုဘူးဆိုတာ ယုံကြည်ပါ။"
+      },
+      "money": {
+        "upright": "ငွေကြေးမှာ အတိတ်က ရွေးချယ်မှုတွေကို ပြန်သုံးသပ်တာက ပိုပညာရှိတဲ့ ရွေးချယ်မှုတွေကို လမ်းပြနိုင်ပါတယ်။ ဘာအဆင်ပြေခဲ့လဲ၊ ဘာမပြေခဲ့လဲ သင်ယူပါ။ လတ်ဆတ်ပြီး ဆင်ခြင်တဲ့ ချဉ်းကပ်ပုံက အနာဂတ်အပေါ် ယုံကြည်မှု ပိုရှိစေနိုင်ပါတယ်။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် ငွေကြေးအမှားဟောင်းတွေကို တွေးပြီး မနေပါနဲ့။ သင်ခန်းစာကို မှတ်ထားပြီး ကိုယ့်ကိုယ်ကို ခွင့်လွှတ်ကာ ရှေ့ဆက်ဖို့ ရိုးရှင်းတဲ့ အစီအစဉ်ချပါ။ သေးငယ်ရိုးသားတဲ့ ခြေလှမ်းတွေက ယုံကြည်မှုကို ပြန်တည်ဆောက်ပေးနိုင်ပါတယ်။"
+      },
+      "health": {
+        "upright": "ကျန်းမာရေးနဲ့ စိတ်ဓာတ်အတွက် ဒီကတ်က ပြန်လည်သစ်လွင်မှုကို ယူဆောင်လာပါတယ်။ ဘာက ကိုယ့်ကို တကယ် ပြန်လန်းဆန်းစေလဲ ဆင်ခြင်ပြီး အဲဒါကို လုပ်ဆောင်ပါ။ အပြစ်ရှိစိတ်ဟောင်းတွေကို လွှတ်ချတာက စိတ်နဲ့ ခန္ဓာကိုယ်ကို ပေါ့ပါးစေနိုင်ပါတယ်။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် ကိုယ့်ကိုယ်ကို ကြမ်းတမ်းစွာ ပြောဆိုတာက အားကုန်စေနိုင်ပါတယ်။ ဝေဖန်မှုကို အားပေးစကားနဲ့ အစားထိုးပါ။ ကျန်းမာရေးဆီ ကြင်နာတဲ့ ခြေလှမ်းလေးတွေက ပြန်လန်းဆန်းပြီး ကိုယ့်ကိုယ်ကို ပြန်ဖြစ်လာစေနိုင်ပါတယ်။"
+      },
+      "advice": "ဒီနေ့ ကိုယ့်အတိတ်ကို ကြင်နာစွာ ဆင်ခြင်ပြီး ကိုယ့်ကို တကယ်ခေါ်နေတာကို တုံ့ပြန်ပါ။",
+      "suit": "အဓိကအာကာနာ",
+      "element": "မီး",
+      "astrology": "ပလူတိုဂြိုဟ်"
+    }
+  },
+  {
+    "id": "major-21-world",
+    "arcana": "major",
+    "suit": "major",
+    "number": 21,
+    "element": "earth",
+    "commonsFile": "RWS_Tarot_21_World.jpg",
+    "en": {
+      "name": "The World",
+      "keywords": [
+        "completion",
+        "wholeness",
+        "achievement",
+        "integration",
+        "new horizons"
+      ],
+      "upright": "The World shows a dancer within a wreath, celebrating a journey that has come full circle. This card speaks of completion, wholeness and the satisfaction of reaching a meaningful milestone. You may be finishing a project, a chapter of life or a long period of growth. Take time to honour what you have learned and achieved. With one cycle complete, new horizons naturally open, inviting you forward with confidence and gratitude.",
+      "reversed": "Reversed, The World may suggest that something feels almost finished but not quite. Perhaps a few loose ends remain, or you are hesitating at the threshold of a new chapter. It can also point to seeking closure that has not yet arrived. Be patient and identify what is left to complete. Celebrating partial progress is still worthwhile. Each step brings you closer to the wholeness you are seeking.",
+      "love": {
+        "upright": "In love, a sense of fulfilment and harmony may be present. A relationship may reach a happy milestone, or you may feel complete and content within yourself, ready to share joy.",
+        "reversed": "Reversed, something may feel unfinished, such as an old relationship needing closure or a conversation left incomplete. Address loose ends gently so that you can move forward freely."
+      },
+      "career": {
+        "upright": "At work, a significant goal may be reached. Celebrate your accomplishments and acknowledge others who helped you. New opportunities, perhaps involving travel or wider reach, may follow.",
+        "reversed": "Reversed, a project may be close to finishing but delayed by details. Focus on tying up loose ends. Steady, patient effort can bring the satisfying completion you are looking for."
+      },
+      "money": {
+        "upright": "With money, a financial goal may be achieved or a long-term plan completed. Enjoy this milestone while thoughtfully setting the next goal. A sense of security and balance is highlighted.",
+        "reversed": "Reversed, a financial goal may need a little more time or effort. Review what remains and plan the final steps. Patience and consistency can help you reach the finish line."
+      },
+      "health": {
+        "upright": "For wellbeing and spirit, you may feel more whole, balanced and at peace. Honour the progress you have made. Celebrate your body and mind with care, gratitude and rest.",
+        "reversed": "Reversed, you may be close to a sense of balance but not quite there yet. Gentle consistency and patience can help. Notice what still needs care and give it kind attention."
+      },
+      "advice": "Celebrate how far you have come today, then look gently toward what is next.",
+      "suit": "Major Arcana",
+      "element": "Earth",
+      "astrology": "Saturn"
+    },
+    "my": {
+      "name": "ကမ္ဘာ",
+      "keywords": [
+        "ပြီးမြောက်ခြင်း",
+        "ပြည့်စုံခြင်း",
+        "အောင်မြင်မှု",
+        "ပေါင်းစည်းခြင်း",
+        "မိုးကုပ်စက်ဝိုင်းသစ်"
+      ],
+      "upright": "ကမ္ဘာကတ်မှာ ပန်းကုံးဝိုင်းထဲမှာ ကခုန်နေတဲ့ ကချေသည်တစ်ယောက်ကို ပြပြီး စက်ဝိုင်းတစ်ပတ် ပြည့်သွားတဲ့ ခရီးကို ဂုဏ်ပြုနေပါတယ်။ ဒီကတ်က ပြီးမြောက်ခြင်း၊ ပြည့်စုံခြင်းနဲ့ အဓိပ္ပာယ်ရှိတဲ့ မှတ်တိုင်တစ်ခုကို ရောက်ရှိခြင်းရဲ့ ကျေနပ်မှုအကြောင်း ပြောပါတယ်။ ပရောဂျက်တစ်ခု၊ ဘဝအခန်းတစ်ခု ဒါမှမဟုတ် ကြီးထွားမှုကာလ ရှည်ရှည်တစ်ခုကို အဆုံးသတ်နေတာ ဖြစ်နိုင်ပါတယ်။ သင်ယူခဲ့တာနဲ့ အောင်မြင်ခဲ့တာတွေကို ဂုဏ်ပြုဖို့ အချိန်ယူပါ။ စက်ဝန်းတစ်ခု ပြီးဆုံးတာနဲ့ မိုးကုပ်စက်ဝိုင်းသစ်တွေ သဘာဝအတိုင်း ပွင့်လာပြီး ယုံကြည်မှုနဲ့ ကျေးဇူးတင်စိတ်နဲ့ ရှေ့ဆက်ဖို့ ဖိတ်ခေါ်ပါတယ်။",
+      "reversed": "ပြောင်းပြန်ကျရင် ကမ္ဘာကတ်က တစ်ခုခု ပြီးလုနီးပါး ဖြစ်ပေမဲ့ မပြီးသေးသလို ခံစားရတာကို ညွှန်ပြနိုင်ပါတယ်။ ဖြေရှင်းစရာ အစအနလေးတွေ ကျန်နေတာ ဒါမှမဟုတ် အခန်းသစ်ရဲ့ တံခါးဝမှာ တွန့်ဆုတ်နေတာ ဖြစ်နိုင်ပါတယ်။ မရောက်လာသေးတဲ့ အဆုံးသတ်မှုကို ရှာနေတာကိုလည်း ညွှန်ပြနိုင်ပါတယ်။ စိတ်ရှည်ပြီး ဘာတွေ ပြီးအောင် လုပ်ဖို့ ကျန်သေးလဲ ဖော်ထုတ်ပါ။ တစ်စိတ်တစ်ပိုင်း တိုးတက်မှုကို ဂုဏ်ပြုတာလည်း တန်ဖိုးရှိပါတယ်။ ခြေလှမ်းတိုင်းက ရှာဖွေနေတဲ့ ပြည့်စုံမှုဆီ ပိုနီးကပ်စေပါတယ်။",
+      "love": {
+        "upright": "အချစ်ရေးမှာ ပြည့်ဝမှုနဲ့ သဟဇာတဖြစ်မှုကို ခံစားရနိုင်ပါတယ်။ ဆက်ဆံရေးက ပျော်စရာ မှတ်တိုင်တစ်ခုကို ရောက်တာ ဒါမှမဟုတ် ကိုယ့်ကိုယ်ကို ပြည့်စုံကျေနပ်ပြီး ပျော်ရွှင်မှုကို မျှဝေဖို့ အသင့်ဖြစ်နေတာ ဖြစ်နိုင်ပါတယ်။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် အဆုံးသတ်ဖို့ လိုနေတဲ့ ဆက်ဆံရေးဟောင်း ဒါမှမဟုတ် မပြီးဆုံးသေးတဲ့ စကားဝိုင်းလို တစ်ခုခု မပြီးသေးသလို ခံစားရနိုင်ပါတယ်။ လွတ်လွတ်လပ်လပ် ရှေ့ဆက်နိုင်ဖို့ ကျန်နေတဲ့ ကိစ္စတွေကို ညင်သာစွာ ဖြေရှင်းပါ။"
+      },
+      "career": {
+        "upright": "အလုပ်မှာ အရေးကြီးတဲ့ ပန်းတိုင်တစ်ခုကို ရောက်ရှိနိုင်ပါတယ်။ ကိုယ့်အောင်မြင်မှုတွေကို ဂုဏ်ပြုပြီး ကူညီခဲ့သူတွေကို အသိအမှတ်ပြုပါ။ ခရီးသွားတာ ဒါမှမဟုတ် ပိုကျယ်ပြန့်တဲ့ နယ်ပယ်နဲ့ ပတ်သက်တဲ့ အခွင့်အလမ်းသစ်တွေ နောက်ကလိုက်လာနိုင်ပါတယ်။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် ပရောဂျက်တစ်ခု ပြီးခါနီးပေမဲ့ အသေးစိတ်တွေကြောင့် နှောင့်နှေးနေနိုင်ပါတယ်။ ကျန်နေတဲ့ အစအနတွေကို ဖြေရှင်းဖို့ အာရုံစိုက်ပါ။ တည်ငြိမ်စိတ်ရှည်တဲ့ ကြိုးစားမှုက ရှာဖွေနေတဲ့ ကျေနပ်စရာ ပြီးမြောက်မှုကို ယူဆောင်လာနိုင်ပါတယ်။"
+      },
+      "money": {
+        "upright": "ငွေကြေးမှာ ပန်းတိုင်တစ်ခု အောင်မြင်တာ ဒါမှမဟုတ် ရေရှည်အစီအစဉ်တစ်ခု ပြီးမြောက်တာ ဖြစ်နိုင်ပါတယ်။ နောက်ပန်းတိုင်ကို ဆင်ခြင်ချမှတ်ရင်း ဒီမှတ်တိုင်ကို ခံစားပါ။ လုံခြုံမှုနဲ့ မျှတမှု ခံစားချက်က ထင်ရှားနေပါတယ်။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် ငွေကြေးပန်းတိုင်တစ်ခုက အချိန် ဒါမှမဟုတ် ကြိုးစားမှု နည်းနည်း ထပ်လိုနိုင်ပါတယ်။ ကျန်နေတာကို ပြန်ကြည့်ပြီး နောက်ဆုံးခြေလှမ်းတွေကို စီစဉ်ပါ။ စိတ်ရှည်မှုနဲ့ ပုံမှန်ကြိုးစားမှုက ပန်းတိုင်ကို ရောက်စေနိုင်ပါတယ်။"
+      },
+      "health": {
+        "upright": "ကျန်းမာရေးနဲ့ စိတ်ဓာတ်အတွက် ပိုပြည့်စုံ၊ ပိုမျှတပြီး ပိုငြိမ်းချမ်းသလို ခံစားရနိုင်ပါတယ်။ ကိုယ်ရရှိခဲ့တဲ့ တိုးတက်မှုကို ဂုဏ်ပြုပါ။ ဂရုစိုက်မှု၊ ကျေးဇူးတင်စိတ်နဲ့ အနားယူမှုနဲ့ ကိုယ့်စိတ်နဲ့ ခန္ဓာကိုယ်ကို ဂုဏ်ပြုပါ။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် မျှတမှုကို နီးကပ်နေပေမဲ့ မရောက်သေးတာ ဖြစ်နိုင်ပါတယ်။ ညင်သာတဲ့ ပုံမှန်မှုနဲ့ စိတ်ရှည်မှုက ကူညီနိုင်ပါတယ်။ ဘာကို ဂရုစိုက်ဖို့ ကျန်သေးလဲ သတိထားပြီး ကြင်နာတဲ့ အာရုံစိုက်မှု ပေးပါ။"
+      },
+      "advice": "ဒီနေ့ ကိုယ်ဘယ်လောက်ဝေးဝေး ရောက်လာပြီလဲ ဂုဏ်ပြုပြီး နောက်တစ်ဆင့်ကို ညင်သာစွာ မျှော်ကြည့်ပါ။",
+      "suit": "အဓိကအာကာနာ",
+      "element": "မြေ",
+      "astrology": "စနေဂြိုဟ်"
+    }
+  }
+]
