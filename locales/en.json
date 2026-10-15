@@ -243,7 +243,7 @@
     "sound": "Sound effects",
     "soundHint": "Soft sounds when shuffling and turning cards.",
     "data": "Your data",
-    "dataHint": "Your journal and settings are stored only on this phone.",
+    "dataHint": "Your journal and settings are stored on this phone.",
     "export": "Export my data",
     "exportDialog": "Save your data",
     "exportFailed": "Couldn't export your data. Please try again.",
@@ -253,7 +253,8 @@
     "deleteDataConfirm": "Delete everything",
     "deletedData": "Your data has been deleted",
     "privacy": "Privacy Policy",
-    "terms": "Terms of Use"
+    "terms": "Terms of Use",
+    "deleteDataCloud": "You'll also be signed out of cloud backup. Your cloud copy stays until you delete it under Cloud backup."
   },
   "notifications": {
     "title": "Your card for today is ready",
@@ -311,5 +312,35 @@
   "legal": {
     "notFound": "This page doesn't exist.",
     "effective": "Effective from {{date}}"
+  },
+  "sync": {
+    "title": "Cloud backup",
+    "intro": "Optional. Back up your journal so you can restore it on a new phone. Only readings and notes are backed up; settings stay on this phone.",
+    "emailLabel": "Email",
+    "emailPlaceholder": "you@example.com",
+    "sendCode": "Email me a sign-in code",
+    "codeSent": "We sent a sign-in code to {{email}}. It may take a minute to arrive.",
+    "codeLabel": "Code from the email",
+    "verify": "Sign in and back up",
+    "useDifferentEmail": "Use a different email",
+    "signedIn": "Cloud backup is on",
+    "signedInAs": "Backing up as {{email}}",
+    "lastSynced": "Last backup: {{time}}",
+    "never": "Not backed up yet",
+    "syncing": "Backing up…",
+    "syncNow": "Back up now",
+    "signOut": "Turn off backup on this phone",
+    "deleteAccount": "Delete cloud account",
+    "deleteTitle": "Delete your cloud account?",
+    "deleteBody": "Your account and every reading stored in the cloud will be deleted. Readings on this phone stay here. This can't be undone.",
+    "deleteConfirm": "Delete cloud account",
+    "deleted": "Your cloud account has been deleted",
+    "errors": {
+      "badEmail": "Please enter a valid email address.",
+      "sendFailed": "Couldn't send the code. Check your connection and try again.",
+      "badCode": "That code didn't work. Check it, or ask for a new one.",
+      "syncFailed": "Couldn't back up right now. It will try again automatically.",
+      "deleteFailed": "Couldn't delete the cloud account. Check your connection and try again."
+    }
   }
 }

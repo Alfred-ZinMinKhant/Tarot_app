@@ -5,12 +5,29 @@
     "noUncheckedIndexedAccess": true,
     "noImplicitOverride": true,
     "resolveJsonModule": true,
-    "types": ["jest", "node"],
+    "types": [
+      "jest",
+      "node"
+    ],
     "paths": {
-      "@/*": ["./src/*"],
-      "@data/*": ["./data/*"],
-      "@locales/*": ["./locales/*"]
+      "@/*": [
+        "./src/*"
+      ],
+      "@data/*": [
+        "./data/*"
+      ],
+      "@locales/*": [
+        "./locales/*"
+      ]
     }
   },
-  "include": ["**/*.ts", "**/*.tsx", ".expo/types/**/*.ts", "expo-env.d.ts"]
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    ".expo/types/**/*.ts",
+    "expo-env.d.ts"
+  ],
+  "exclude": [
+    "supabase/functions"
+  ]
 }

@@ -87,6 +87,18 @@ Status key: ✅ automated and passing · 🔶 partly automated, needs a device c
 | 7.4 | Privacy Policy and Terms open in both languages; contact / publisher appear once set in `.env` | J | ✅ |
 | 7.5 | About shows version, art credit, disclaimer | J | ✅ |
 
+## 7b. Cloud backup (only in builds with `ENABLE_CLOUD_SYNC=true`)
+
+| # | Check | Coverage | Status |
+| --- | --- | --- | --- |
+| 7b.1 | Card hidden in builds without cloud backup | J | ✅ |
+| 7b.2 | Email code arrives (check spam), code sign-in works, Burmese digits accepted | J (fake auth) | 📱 needs a real Supabase project |
+| 7b.3 | Journal appears on a second phone after signing in with the same email | J (two simulated devices) | 📱 |
+| 7b.4 | Edits on two phones while offline: the later edit wins on both | J | 📱 |
+| 7b.5 | Airplane mode: app works normally; Settings shows the gentle "couldn't back up" line; backup resumes when online | J | 📱 |
+| 7b.6 | Delete cloud account removes the account (Supabase dashboard) and keeps local readings | J (fake) | 📱 |
+| 7b.7 | Row-level security: one account can't read another's rows (try with two accounts) | SQL review | 📱 |
+
 ## 8. Accessibility
 
 | # | Check | Coverage | Status |

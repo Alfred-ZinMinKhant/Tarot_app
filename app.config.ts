@@ -74,6 +74,12 @@ const config: ExpoConfig = {
     },
     // Shown on the Privacy Policy / Terms / About pages. Sections that need a value are hidden
     // until it is set, so a build without them never shows a blank placeholder.
+    // Optional cloud backup (Phase 6). Off unless all three are set.
+    sync: {
+      enabled: env.ENABLE_CLOUD_SYNC === 'true',
+      url: env.SUPABASE_URL || '',
+      anonKey: env.SUPABASE_ANON_KEY || '',
+    },
     legal: {
       publisher: env.PUBLISHER_NAME || '',
       contactEmail: env.SUPPORT_EMAIL || '',

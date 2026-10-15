@@ -41,6 +41,8 @@ src/
   config/crisis.json     crisis phrases (en + my)
   db/                    SQLite: schema + migrations, journal repository, sql.js adapter (tests),
                          in-memory repo for the web preview (index.web.ts)
+  sync/                  engine.ts (pull → merge → push, last write wins), supabase.ts (client,
+                         backend, email-code auth)
   services/              notifications (plan + schedule reminders), share (view-shot → sharing),
                          sound (expo-audio effects), userData (export/delete), exportFile
   config/brand.json      app name (en + my) and store identifiers — single source of truth
@@ -55,6 +57,7 @@ data/                    cards.json (generated), cards/*.json (sources), cards.r
                          spreads.json (5 spreads, positions + layout, en + my), lessons.json (8),
                          weekday-signs.json (8 signs incl. Rahu), legal.json, content.review.json
 assets/sounds/           flip / shuffle / chime WAVs synthesised by scripts/render-sounds.ts
+supabase/                SQL migration (table, RLS, LWW trigger), delete-account Edge Function, setup
 .maestro/                end-to-end flows: onboarding, daily card, reading → journal
 scripts/                 check-i18n, build-cards, validate-cards, validate-content, optimize-images,
                          render-card-back, render-sounds
@@ -176,6 +179,29 @@ deletes every row in SQLite and wipes settings (including the seed), then sends 
 onboarding. Sounds are played through `useHaptics()`, which handles both vibration and audio for
 card actions.
 
+## Cloud backup (optional, Phase 6)
+
+Off unless the build sets `ENABLE_CLOUD_SYNC=true`, `SUPABASE_URL` and `SUPABASE_ANON_KEY`
+(`src/config/sync.ts`). In that case the root layout wires `useSync` to Supabase. Otherwise
+`syncAvailable()` is false, the Settings card is hidden and no network code runs.
+
+- **Data:** only journal readings, tombstones included. Settings, daily draws and the device seed
+  stay local. SQLite migration 2 adds `readings.dirty`. Every local write sets it, and it is
+  cleared only when the uploaded `updatedAt` still matches.
+- **Round** (`syncJournal`): pull the server's change feed (ordered by
+  `(server_updated_at, id)`, re-reading a 2-minute window to cover slow commits) and merge with
+  `applyRemote`, where a later `updatedAt` wins and ties keep the local copy. Then upload dirty
+  rows. The server trigger `journal_readings_lww` ignores uploads that aren't newer, so neither
+  side can lose a newer edit, in any order.
+- **Triggers** (`useCloudSync`): app launch, return to foreground, and 4 s after the last local
+  journal change (`useJournal.localChanges`). Failures leave rows dirty for the next attempt.
+- **Auth:** email one-time code (`signInWithOtp` / `verifyOtp`), with the session in AsyncStorage.
+  Signing in or out marks every row dirty, so a new account receives the whole journal. *Delete
+  cloud account* calls the `delete-account` Edge Function, which deletes the auth user, and
+  the rows cascade. *Delete my data* signs out first, so the local wipe doesn't propagate.
+- **Tests** use `test/mocks/fakeCloud.ts`, which reproduces the table and trigger in memory, with
+  two simulated devices on separate sql.js databases.
+
 ## Theming
 
 `AppThemeProvider` combines the system colour scheme with `settings.themeMode`, the S/M/L font size
@@ -194,5 +220,6 @@ asserts WCAG AA (≥ 4.5:1) for every text/background pair in both themes. Minim
 | `npm run images` | resize card scans to 300/900 px WebP and regenerate `src/data/cardImages.ts` |
 | `npm run render:card-back` | export the card-back art to `assets/images/card-back.{svg,png}` |
 | `npm test` | Jest: utils, locale parity, contrast, card data + validator, search, engine, SQLite repo (sql.js), notifications (in-memory fake), full-router integration tests (onboarding, signs, Learn, export/delete, legal) |
+| (sync) | `__tests__/sync.test.ts` two-device LWW scenarios, `cloud-sync.test.tsx` UI + store, `supabase-backend.test.ts` query building |
 | `maestro test .maestro` | end-to-end flows on a device or emulator (dev/preview build) |
 | `npm run ci` | all of the above; also run by `.github/workflows/ci.yml` |

@@ -36,6 +36,13 @@ npm run ci           # all of the above
   Commons and bundles 300/900 px WebP versions (needs network access to commons.wikimedia.org and
   upload.wikimedia.org). See `docs/ASSETS.md`.
 
+## Configuration
+
+Copy `.env.example` to `.env` and fill in what you need. Everything is optional for local
+development. After changing `.env`, restart Metro with `npx expo start --clear` (or export with
+`--clear`), because cached bundles keep the old values. Optional cloud backup is described in
+`supabase/README.md`.
+
 ## End-to-end tests
 
 Install [Maestro](https://maestro.mobile.dev), start a development or preview build on an emulator,

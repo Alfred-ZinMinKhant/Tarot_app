@@ -30,6 +30,9 @@ export type ReadingRecord = {
   updatedAt: number;
 };
 
+/** A reading as exchanged with the cloud: includes tombstones (`deletedAt` set). */
+export type SyncRecord = ReadingRecord & { deletedAt: number | null };
+
 export type NewReading = Pick<ReadingRecord, 'kind' | 'spreadId' | 'topic' | 'question' | 'cards'> & {
   notes?: string;
   createdAt?: number;
@@ -60,6 +63,14 @@ export interface JournalRepo {
   deleteReading(id: string): Promise<void>;
   /** Permanently removes every reading and daily draw (Settings → Delete my data). */
   deleteAll(): Promise<void>;
+  /** Rows changed locally since their last upload, tombstones included. */
+  pendingChanges(): Promise<SyncRecord[]>;
+  /** Clears the "changed" flag for rows that haven't been edited again since they were read. */
+  markSynced(rows: Pick<SyncRecord, 'id' | 'updatedAt'>[]): Promise<void>;
+  /** Flags every row for upload (after signing in to another account or deleting the cloud copy). */
+  markAllDirty(): Promise<void>;
+  /** Merges rows from the cloud, last write (by `updatedAt`) wins. Returns how many changed locally. */
+  applyRemote(rows: SyncRecord[]): Promise<number>;
   getDailyDraw(dateKey: string): Promise<DailyDraw | null>;
   saveDailyDraw(draw: Omit<DailyDraw, 'readingId'>): Promise<void>;
   linkDailyReading(dateKey: string, readingId: string): Promise<void>;

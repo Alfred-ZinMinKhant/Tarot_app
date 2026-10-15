@@ -27,6 +27,9 @@ export const MIGRATIONS: readonly string[] = [
      revealed_at INTEGER NOT NULL,
      reading_id TEXT
    );`,
+  // 2 — cloud backup (Phase 6): rows changed on this device since the last successful upload.
+  `ALTER TABLE readings ADD COLUMN dirty INTEGER NOT NULL DEFAULT 1;
+   CREATE INDEX IF NOT EXISTS readings_dirty ON readings (dirty);`,
 ];
 
 export async function migrate(db: Db): Promise<number> {

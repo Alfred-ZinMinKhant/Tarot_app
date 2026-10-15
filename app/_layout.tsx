@@ -8,16 +8,21 @@ import { SafeAreaProvider } from 'react-native-safe-area-context';
 
 import { ToastHost } from '@/components';
 import { useAppFonts } from '@/hooks/useAppFonts';
+import { useCloudSync } from '@/hooks/useCloudSync';
 import { useLanguage } from '@/hooks/useLanguage';
 import { useReminders } from '@/hooks/useReminders';
 import { useSettingsHydrated } from '@/hooks/useSettingsHydrated';
 import { i18n, initI18n } from '@/i18n';
 import { useDaily } from '@/store/daily';
+import { ensureSyncServices } from '@/store/sync';
+import { supabaseServices } from '@/sync/supabase';
 import { useJournal } from '@/store/journal';
 import { palette } from '@/theme/colors';
 import { AppThemeProvider, useAppTheme } from '@/theme/ThemeContext';
 
 void SplashScreen.preventAutoHideAsync();
+// Cloud backup services exist only in builds configured for it (see src/config/sync.ts).
+ensureSyncServices(supabaseServices);
 
 export default function RootLayout() {
   const fontsReady = useAppFonts();
@@ -53,13 +58,14 @@ export default function RootLayout() {
   );
 }
 
-/** Background work that needs i18n: load the journal and today's card, keep reminders in sync. */
+/** Background work: load the journal and today's card, keep reminders and cloud backup current. */
 function AppServices() {
   useEffect(() => {
     void useJournal.getState().refresh().catch(() => undefined);
     void useDaily.getState().load().catch(() => undefined);
   }, []);
   useReminders(true);
+  useCloudSync();
   return null;
 }
 

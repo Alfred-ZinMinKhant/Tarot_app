@@ -19,6 +19,19 @@ describe('journal database', () => {
     expect(tables.map((t) => t.name).sort()).toEqual(['daily_draws', 'readings']);
   });
 
+  it('upgrades a version-1 database: existing readings are queued for the first backup', async () => {
+    const db = await openSqlJsDatabase();
+    await db.execAsync(MIGRATIONS[0]!);
+    await db.execAsync('PRAGMA user_version = 1');
+    await db.runAsync(
+      `INSERT INTO readings (id, kind, spread_id, topic, question, notes, cards, date_key, created_at, updated_at)
+       VALUES ('old', 'spread', 'one-card', 'general', 'Q', '', '[]', '2026-10-01', 1, 1)`,
+    );
+    expect(await migrate(db)).toBe(MIGRATIONS.length);
+    const repo = createJournalRepo(db);
+    expect((await repo.pendingChanges()).map((r) => r.id)).toEqual(['old']);
+  });
+
   it('saves and reads back a reading with its cards', async () => {
     const repo = await getJournalRepo();
     const saved = await repo.saveReading({

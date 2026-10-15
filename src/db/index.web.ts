@@ -52,6 +52,15 @@ function createMemoryRepo(): JournalRepo {
       readings.clear();
       draws.clear();
     },
+    // The web preview has no cloud backup; these keep the interface complete.
+    async pendingChanges() {
+      return [];
+    },
+    async markSynced() {},
+    async markAllDirty() {},
+    async applyRemote() {
+      return 0;
+    },
     async getDailyDraw(dateKey) {
       return draws.get(dateKey) ?? null;
     },

@@ -167,4 +167,23 @@ Ambiguous choices made while building, with the simplest option chosen. Change a
 50. **Content review list.** Lessons, weekday-sign texts and legal texts were written by AI in both
     languages and are listed in `data/content.review.json` for a native-speaker review, like the
     card and UI strings.
+51. **Supabase for cloud backup, journal only.** It has row-level security, email OTP auth and
+    a generous free tier, and it can be swapped out behind the `SyncBackend` / `SyncAuth`
+    interfaces. Settings are not synced: they are per-device choices (font, reminder time), and
+    syncing them would surprise people. The Card of the Day history and seed are not synced
+    either, because they are personal to the device by design.
+52. **Email one-time code, not magic links or passwords.** Codes work without deep-link setup,
+    on any email app, and in places where links open in the wrong browser. Burmese digits typed
+    into the code field are converted.
+53. **Last write wins by the device's `updatedAt`, enforced on both sides.** The brief asked for
+    this. The pull cursor uses the *server* clock, so a phone with a wrong clock can't hide
+    changes from the feed. Its timestamps can still win or lose a conflict, which is an accepted
+    limitation of LWW. Deletes are tombstones that win only if they are newer.
+54. **Sync never blocks the UI.** Readings are always written locally first. Sync runs in the
+    background after a short debounce, and errors appear only in Settings, as a gentle line.
+55. **Account deletion through an Edge Function.** App Store guideline 5.1.1(v) requires in-app
+    account deletion. Deleting an auth user needs the service-role key, which must never ship in
+    the app, so `supabase/functions/delete-account` does it for the signed-in user.
+56. **Pinned dependency versions at least two weeks old** (`@supabase/supabase-js` 2.116.0,
+    `react-native-url-polyfill` 3.0.0) to avoid freshly published releases.
 

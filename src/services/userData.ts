@@ -9,6 +9,7 @@ import { cancelReminders } from '@/services/notifications';
 import { useDaily } from '@/store/daily';
 import { useJournal } from '@/store/journal';
 import { useSettings } from '@/store/settings';
+import { useSync } from '@/store/sync';
 import { localDateKey } from '@/utils/dates';
 
 export const EXPORT_FORMAT = 'nat-tarot-export';
@@ -60,6 +61,9 @@ export function exportFileName(now = new Date()): string {
 /** Removes every reading, note, daily card, reminder and personal setting from this device. */
 export async function deleteAllUserData(): Promise<void> {
   await cancelReminders().catch(() => undefined);
+  // Sign out of cloud backup first so the local wipe isn't mistaken for deletions to upload.
+  // The cloud copy stays until the user deletes it (Settings → Cloud backup).
+  await useSync.getState().signOut();
   await useJournal.getState().removeAll();
   useDaily.setState({ draw: null, dateKey: null });
   useSettings.getState().wipe();

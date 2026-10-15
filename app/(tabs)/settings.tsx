@@ -15,12 +15,14 @@ import {
   Screen,
   SettingRow,
 } from '@/components';
+import { CloudSyncCard } from '@/components/CloudSyncCard';
 import { TextField } from '@/components/TextField';
 import { getSign } from '@/data/content';
 import { useLanguage } from '@/hooks/useLanguage';
 import { shareJsonFile } from '@/services/exportFile';
 import { ensurePermission } from '@/services/notifications';
 import { buildExport, deleteAllUserData, exportFileName } from '@/services/userData';
+import { useSync } from '@/store/sync';
 import { useToast } from '@/store/toast';
 import { formatTime } from '@/utils/dates';
 import { useSettings } from '@/store/settings';
@@ -39,6 +41,7 @@ export default function Settings() {
   const reminderText = formatTime(reminderDate, lang, { burmeseNumerals: s.burmeseNumerals });
   const step = (delta: number) => s.setReminderTime(s.reminderHour, s.reminderMinute + delta);
   const sign = getSign(s.birthSign);
+  const signedIntoCloud = useSync((x) => x.status !== 'signedOut' && x.status !== 'codeSent');
   const [exporting, setExporting] = useState(false);
   const [confirmDelete, setConfirmDelete] = useState(false);
 
@@ -211,6 +214,8 @@ export default function Settings() {
         </Card>
       ) : null}
 
+      <CloudSyncCard />
+
       <Card>
         <AppText variant="heading">{t('settings.data')}</AppText>
         <AppText variant="caption" tone="textMuted">
@@ -260,6 +265,7 @@ export default function Settings() {
         testID="delete-data-sheet"
       >
         <AppText>{t('settings.deleteDataBody')}</AppText>
+        {signedIntoCloud ? <AppText variant="caption">{t('settings.deleteDataCloud')}</AppText> : null}
         <Button label={t('settings.deleteDataConfirm')} onPress={deleteData} testID="delete-data-confirm" />
         <Button label={t('common.cancel')} variant="ghost" onPress={() => setConfirmDelete(false)} />
       </BottomSheet>
