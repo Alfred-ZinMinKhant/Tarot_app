@@ -6,6 +6,7 @@
     "@react-native-async-storage/async-storage": "2.2.0",
     "@shopify/flash-list": "2.0.2",
     "@supabase/supabase-js": "2.116.0",
+    "astronomy-engine": "^2.1.19",
     "expo": "~57.0.29",
     "expo-asset": "~57.0.20",
     "expo-audio": "~57.0.5",
