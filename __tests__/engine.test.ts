@@ -228,3 +228,12 @@ describe('crisis detection', () => {
     expect(detectCrisis(q)).toBe(false);
   });
 });
+
+describe('ids', () => {
+  it('creates RFC 4122 v4 UUIDs', () => {
+    const { uuidV4 } = jest.requireActual<typeof import('../src/utils/id')>('../src/utils/id');
+    const ids = Array.from({ length: 200 }, () => uuidV4());
+    for (const id of ids) expect(id).toMatch(/^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/);
+    expect(new Set(ids).size).toBe(200);
+  });
+});

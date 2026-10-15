@@ -1,6 +1,6 @@
 # Architecture
 
-_Last updated: Phase 3 (reading engine, spreads, reading UI and animations)._
+_Last updated: Phase 4 (journal in SQLite, Card of the Day, sharing, reminders)._
 
 ## Stack
 
@@ -25,6 +25,8 @@ app/                     expo-router routes (screens only)
   (tabs)/                home, library (FlashList grid + filters + search), journal, learn, settings
   card/[id].tsx          card detail: all meanings, upright/reversed toggle
   reading/[spreadId].tsx reading flow: topic + question → shuffle → pick from fan → flip → summary
+  daily.tsx              Card of the Day: reveal once, meaning, save to journal, share
+  journal/[id].tsx       saved reading: cards + meanings, notes, share, delete
 src/
   components/            design-system primitives (AppText, Button, Card, Chip, …)
   components/art/        CardBack (original SVG), CardFace, SuitGlyph
@@ -32,10 +34,13 @@ src/
   engine/                random (expo-crypto), shuffle/draw, daily card, spreads, interpretation,
                          crisis detection
   config/crisis.json     crisis phrases (en + my)
+  db/                    SQLite: schema + migrations, journal repository, sql.js adapter (tests),
+                         in-memory repo for the web preview (index.web.ts)
+  services/              notifications (plan + schedule reminders), share (view-shot → sharing)
   config/brand.json      app name (en + my) and store identifiers — single source of truth
   hooks/                 useLanguage, useAppFonts, useSettingsHydrated
   i18n/                  i18next instance, language helpers, typed keys
-  store/                 Zustand stores (settings, font status)
+  store/                 Zustand stores: settings (persisted), journal, daily, toast, font status
   theme/                 colors, typography, spacing, ThemeContext
   utils/                 myanmar (syllable breaking), numbers, dates
 locales/                 en.json, my.json, my.review.json
@@ -130,6 +135,24 @@ away), `TarotCard` (Y-axis flip), `SpreadBoard` (positions laid out from spread 
 Celtic Cross "crossing" card rotated 90°). Haptics go through `useHaptics` (respects the setting,
 no-op on web), and every animation is skipped when the OS asks to reduce motion.
 
+## Journal & daily card
+
+`src/db` owns persistence. `getJournalRepo()` opens `nattarot.db` once (WAL), runs migrations and
+returns a `JournalRepo`: save, list (topic/kind/date filters), get, update notes, soft-delete,
+delete all, and the daily-draw records. `useJournal` (Zustand) is an in-memory mirror that the
+screens read. It is loaded on startup in `AppServices` (root layout) and updated after each
+write. `useDaily` computes the Card of the Day with `dailyCard(deviceSeed, date)` and persists the
+first reveal.
+
+## Notifications
+
+`planReminders` (pure, tested) produces seven `{date, title, body}` entries at the chosen local
+time. The body is an element teaser for that date's card. `scheduleReminders` replaces queued
+notifications with ids `daily-reminder-YYYY-MM-DD`, using DATE triggers on the `daily-reminder`
+Android channel. `useReminders` (root layout) re-plans whenever the toggle, time or language
+changes, and opens `/daily` when a reminder is tapped. Web gets no-op modules
+(`*.web.ts`).
+
 ## Theming
 
 `AppThemeProvider` combines the system colour scheme with `settings.themeMode`, the S/M/L font size
@@ -146,5 +169,5 @@ asserts WCAG AA (≥ 4.5:1) for every text/background pair in both themes. Minim
 | `npm run build:cards` | regenerate `data/cards.json` from `data/cards/*.json` + `src/data/deck.ts` |
 | `npm run images` | resize card scans to 300/900 px WebP and regenerate `src/data/cardImages.ts` |
 | `npm run render:card-back` | export the card-back art to `assets/images/card-back.{svg,png}` |
-| `npm test` | Jest: utils, locale parity, contrast, card data + validator, search, full-router integration tests |
+| `npm test` | Jest: utils, locale parity, contrast, card data + validator, search, engine, SQLite repo (sql.js), notifications (in-memory fake), full-router integration tests |
 | `npm run ci` | all of the above; also run by `.github/workflows/ci.yml` |

@@ -35,7 +35,12 @@
     "introTitle": "How $t(appName) works",
     "introBody": "Ask a question, draw cards, and use their meanings as gentle prompts for reflection. Your readings stay on this phone.",
     "startReading": "Start a reading",
-    "spreadCards": "Cards: {{n}}"
+    "spreadCards": "Cards: {{n}}",
+    "dailyTitle": "Card of the Day",
+    "dailyTap": "Tap the card to reveal today's message",
+    "dailyReadMore": "Read today's card",
+    "recentTitle": "Recent readings",
+    "seeAll": "See all"
   },
   "library": {
     "title": "Card Library",
@@ -117,12 +122,51 @@
     "crisisEdit": "Change my question",
     "pickForMe": "Choose for me",
     "shuffleTap": "Tap to spread the cards",
-    "positionHeading": "{{number}}. {{position}}"
+    "positionHeading": "{{number}}. {{position}}",
+    "share": "Share"
+  },
+  "daily": {
+    "title": "Card of the Day",
+    "subtitle": "Your card for {{date}}",
+    "reveal": "Reveal my card",
+    "save": "Save to journal",
+    "saved": "Saved in your journal",
+    "openJournal": "Open in journal",
+    "share": "Share",
+    "viewCard": "See all meanings"
   },
   "journal": {
     "title": "Journal",
     "emptyTitle": "No readings yet",
-    "emptyBody": "Readings you save will appear here, so you can look back and reflect."
+    "emptyBody": "Every reading you finish is saved here automatically, so you can look back and reflect.",
+    "filterTopicA11y": "Filter by topic",
+    "filterDateA11y": "Filter by date",
+    "dateAll": "All time",
+    "noMatchTitle": "Nothing here yet",
+    "noMatchBody": "No saved readings match these filters.",
+    "dailyLabel": "Card of the Day",
+    "notes": "My notes",
+    "notesPlaceholder": "What do you notice? How do you feel?",
+    "saveNotes": "Save notes",
+    "notesSaved": "Notes saved",
+    "share": "Share",
+    "delete": "Delete",
+    "deleteTitle": "Delete this reading?",
+    "deleteBody": "It will be removed from this phone. This can't be undone.",
+    "deleteConfirm": "Delete reading",
+    "deleted": "Reading deleted",
+    "notFound": "This reading couldn't be found.",
+    "saved": "Saved to your journal",
+    "open": "Open",
+    "dateDays": "Last {{n}} days",
+    "dateMonths": "Last {{n}} months"
+  },
+  "share": {
+    "title": "Share this reading",
+    "button": "Share image",
+    "dialogTitle": "Share your reading",
+    "unavailable": "Sharing isn't available on this device.",
+    "failed": "Couldn't create the image. Please try again."
   },
   "learn": {
     "title": "Learn",
@@ -158,7 +202,21 @@
     "readings": "Readings",
     "reversedCards": "Reversed cards",
     "reversedCardsHint": "Cards can appear upside down, adding nuance to their meaning.",
-    "haptics": "Vibration feedback"
+    "haptics": "Vibration feedback",
+    "reminder": "Daily reminder",
+    "reminderHint": "A gentle nudge to see your Card of the Day. The card itself stays a surprise.",
+    "reminderTime": "Reminder time: {{time}}",
+    "timeEarlier": "{{n}} minutes earlier",
+    "timeLater": "{{n}} minutes later",
+    "permissionDenied": "Notifications are turned off for this app. You can allow them in your phone's settings."
+  },
+  "notifications": {
+    "title": "Your card for today is ready",
+    "teaserFire": "Today's card carries Fire energy: courage and a spark of new ideas. Take a quiet minute to meet it.",
+    "teaserWater": "Today's card carries Water energy: feelings, care and intuition. Take a quiet minute to meet it.",
+    "teaserAir": "Today's card carries Air energy: clear thoughts and honest words. Take a quiet minute to meet it.",
+    "teaserEarth": "Today's card carries Earth energy: steady, practical steps. Take a quiet minute to meet it.",
+    "channelName": "Daily reminder"
   },
   "disclaimer": {
     "short": "For entertainment and self-reflection only. Tarot cannot predict the future.",

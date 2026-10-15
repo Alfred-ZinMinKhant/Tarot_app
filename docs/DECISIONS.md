@@ -102,3 +102,35 @@ Ambiguous choices made while building, with the simplest option chosen. Change a
 33. **i18n placeholders never use `{{count}}`.** i18next treats `count` as a plural selector, and the
     app passes numbers pre-formatted (possibly in Burmese digits). `check:i18n` enforces this.
 
+## Phase 4 — journal, daily card, sharing, reminders
+
+34. **Readings are saved automatically** once every card is turned over, then a toast offers to open
+    the saved entry. The brief says every reading is saved, and saving automatically means a
+    reading can't be lost by forgetting a button.
+35. **SQLite schema** (`src/db/schema.ts`): `readings` holds the spread, topic, question, notes and
+    `cards` (JSON `[{positionId, cardId, reversed}]`); `daily_draws` holds one row per date.
+    Migrations are tracked in `PRAGMA user_version`. Only card ids are stored, so saved readings
+    always show the current (reviewed) card text in the active language.
+36. **Deleting a reading clears its question and notes and marks it with `deleted_at`.** The empty
+    row lets Phase 6 sync propagate the delete (last write wins). "Delete my data" (Phase 5)
+    removes rows completely.
+37. **Card of the Day is drawn once per day.** The first reveal is written to `daily_draws`
+    (`INSERT OR IGNORE`). Later opens show the same card even if the reversals setting changes
+    during the day.
+38. **Tests run the real SQL** through `sql.js` (pure JavaScript SQLite), which stands in for
+    `expo-sqlite` in `jest.setup.ts`. The web preview uses an in-memory repository
+    (`src/db/index.web.ts`), because expo-sqlite on web needs extra worker/WASM headers and web
+    is not a target.
+39. **Reminders are seven dated notifications, not one repeating trigger.** Each day gets its own
+    text in the active language. The teaser names the element of that day's card ("Fire
+    energy…") without naming the card. The queue is rebuilt on app start and whenever the
+    language, time or toggle changes, so it always runs a week ahead. Tapping a reminder opens
+    `/daily`. Time is set in 15-minute steps with two large buttons, which avoids adding a
+    native date-picker dependency.
+40. **Sharing shows a preview first.** A bottom sheet displays the image (app name, reading title,
+    date, question, cards, positions and the disclaimer). `react-native-view-shot` captures that
+    visible view and `expo-sharing` opens the system share sheet. On web, or where sharing isn't
+    available, a toast explains it.
+41. **UUIDs come from `expo-crypto` random bytes** (`src/utils/id.ts`), because `randomUUID` is not
+    implemented in the Jest environment.
+

@@ -1,5 +1,5 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { randomUUID } from 'expo-crypto';
+import { uuidV4 } from '@/utils/id';
 import { create } from 'zustand';
 import { createJSONStorage, persist } from 'zustand/middleware';
 
@@ -18,6 +18,10 @@ export type SettingsState = {
   /** Allow reversed cards in readings and the daily card. */
   reversedCards: boolean;
   haptics: boolean;
+  reminderEnabled: boolean;
+  /** Local time of the daily reminder. */
+  reminderHour: number;
+  reminderMinute: number;
   hasOnboarded: boolean;
   /**
    * Private random seed created once on this device; makes the Card of the Day personal but stable
@@ -31,6 +35,8 @@ export type SettingsState = {
   setBurmeseNumerals: (enabled: boolean) => void;
   setReversedCards: (enabled: boolean) => void;
   setHaptics: (enabled: boolean) => void;
+  setReminderEnabled: (enabled: boolean) => void;
+  setReminderTime: (hour: number, minute: number) => void;
   /** Returns the device seed, creating it on first use. */
   ensureDeviceSeed: () => string;
   completeOnboarding: () => void;
@@ -45,6 +51,9 @@ export const DEFAULT_SETTINGS = {
   burmeseNumerals: false,
   reversedCards: true,
   haptics: true,
+  reminderEnabled: false,
+  reminderHour: 8,
+  reminderMinute: 0,
   hasOnboarded: false,
   deviceSeed: null as string | null,
 } satisfies Partial<SettingsState>;
@@ -60,10 +69,15 @@ export const useSettings = create<SettingsState>()(
       setBurmeseNumerals: (burmeseNumerals) => set({ burmeseNumerals }),
       setReversedCards: (reversedCards) => set({ reversedCards }),
       setHaptics: (haptics) => set({ haptics }),
+      setReminderEnabled: (reminderEnabled) => set({ reminderEnabled }),
+      setReminderTime: (hour, minute) => {
+        const total = (((hour * 60 + minute) % 1440) + 1440) % 1440;
+        set({ reminderHour: Math.floor(total / 60), reminderMinute: total % 60 });
+      },
       ensureDeviceSeed: () => {
         const existing = get().deviceSeed;
         if (existing) return existing;
-        const deviceSeed = randomUUID();
+        const deviceSeed = uuidV4();
         set({ deviceSeed });
         return deviceSeed;
       },
@@ -83,6 +97,9 @@ export const useSettings = create<SettingsState>()(
         burmeseNumerals: s.burmeseNumerals,
         reversedCards: s.reversedCards,
         haptics: s.haptics,
+        reminderEnabled: s.reminderEnabled,
+        reminderHour: s.reminderHour,
+        reminderMinute: s.reminderMinute,
         hasOnboarded: s.hasOnboarded,
         deviceSeed: s.deviceSeed,
       }),

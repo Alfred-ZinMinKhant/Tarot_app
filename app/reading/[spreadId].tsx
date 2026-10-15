@@ -15,6 +15,7 @@ import {
   Header,
   Screen,
   ShuffleStack,
+  ShareSheet,
   SpreadBoard,
 } from '@/components';
 import { getCard } from '@/data/cards';
@@ -33,10 +34,14 @@ import {
 import { useHaptics } from '@/hooks/useHaptics';
 import { useLanguage } from '@/hooks/useLanguage';
 import { useNumberFormat } from '@/hooks/useNumberFormat';
+import { useJournal } from '@/store/journal';
 import { useSettings } from '@/store/settings';
+import { useToast } from '@/store/toast';
 import { radius, spacing } from '@/theme/spacing';
 import { useAppTheme } from '@/theme/ThemeContext';
 import { fontFamilyFor, scriptForLanguage } from '@/theme/typography';
+import { formatDate } from '@/utils/dates';
+import { shareEntries } from '@/utils/readings';
 import { useReduceMotion } from '@/hooks/useReduceMotion';
 
 type Phase = 'setup' | 'crisis' | 'shuffling' | 'picking' | 'reveal';
@@ -67,6 +72,11 @@ export default function Reading() {
   const [deck, setDeck] = useState<DrawnCard[]>([]);
   const [picks, setPicks] = useState<number[]>([]);
   const [revealed, setRevealed] = useState<boolean[]>([]);
+  const [savedId, setSavedId] = useState<string | null>(null);
+  const [sharing, setSharing] = useState(false);
+  const saveReading = useJournal((s) => s.save);
+  const toast = useToast((s) => s.show);
+  const burmeseNumerals = useSettings((s) => s.burmeseNumerals);
   const timer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   useEffect(() => () => {
@@ -76,6 +86,30 @@ export default function Reading() {
   const count = spread?.cardCount ?? 0;
   const drawn = useMemo(() => picks.map((i) => deck[i]!), [picks, deck]);
   const allRevealed = phase === 'reveal' && revealed.length === count && revealed.every(Boolean);
+
+  // Every finished reading is saved to the journal automatically (once).
+  const saving = useRef(false);
+  useEffect(() => {
+    if (!allRevealed || savedId || saving.current || !spread) return;
+    saving.current = true;
+    void saveReading({
+      kind: 'spread',
+      spreadId: spread.id,
+      topic,
+      question,
+      cards: drawn.map((d, i) => ({ positionId: spread.positions[i]!.id, cardId: d.cardId, reversed: d.reversed })),
+    })
+      .then((record) => {
+        setSavedId(record.id);
+        toast(t('journal.saved'), {
+          label: t('journal.open'),
+          onPress: () => router.push({ pathname: '/journal/[id]', params: { id: record.id } }),
+        });
+      })
+      .finally(() => {
+        saving.current = false;
+      });
+  }, [allRevealed, savedId, spread, topic, question, drawn, saveReading, toast, t]);
 
   const later = useCallback((fn: () => void, ms: number) => {
     if (timer.current) clearTimeout(timer.current);
@@ -126,6 +160,7 @@ export default function Reading() {
     haptics.success();
   };
   const restart = () => {
+    setSavedId(null);
     setPhase('setup');
     setPicks([]);
     setDeck([]);
@@ -304,6 +339,24 @@ export default function Reading() {
                   <AppText key={line.key}>{t(`reading.summary.${line.key}`, line.params)}</AppText>
                 ))}
               </Card>
+              <Button
+                label={t('reading.share')}
+                variant="secondary"
+                onPress={() => setSharing(true)}
+                testID="reading-share"
+              />
+              <ShareSheet
+                visible={sharing}
+                onClose={() => setSharing(false)}
+                title={spread[lang].name}
+                subtitle={formatDate(new Date(), lang, { style: 'long', burmeseNumerals })}
+                question={question.trim() || undefined}
+                entries={shareEntries(
+                  spread.id,
+                  drawn.map((d, i) => ({ positionId: spread.positions[i]!.id, cardId: d.cardId, reversed: d.reversed })),
+                  lang,
+                )}
+              />
               <Button label={t('reading.newReading')} onPress={restart} testID="reading-new" />
               <Button
                 label={t('reading.backHome')}

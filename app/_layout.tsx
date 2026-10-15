@@ -6,10 +6,14 @@ import { View } from 'react-native';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 
+import { ToastHost } from '@/components';
 import { useAppFonts } from '@/hooks/useAppFonts';
 import { useLanguage } from '@/hooks/useLanguage';
+import { useReminders } from '@/hooks/useReminders';
 import { useSettingsHydrated } from '@/hooks/useSettingsHydrated';
 import { i18n, initI18n } from '@/i18n';
+import { useDaily } from '@/store/daily';
+import { useJournal } from '@/store/journal';
 import { palette } from '@/theme/colors';
 import { AppThemeProvider, useAppTheme } from '@/theme/ThemeContext';
 
@@ -40,11 +44,23 @@ export default function RootLayout() {
         <I18nextProvider i18n={i18n}>
           <AppThemeProvider>
             <Navigation />
+            <AppServices />
+            <ToastHost />
           </AppThemeProvider>
         </I18nextProvider>
       </SafeAreaProvider>
     </GestureHandlerRootView>
   );
+}
+
+/** Background work that needs i18n: load the journal and today's card, keep reminders in sync. */
+function AppServices() {
+  useEffect(() => {
+    void useJournal.getState().refresh().catch(() => undefined);
+    void useDaily.getState().load().catch(() => undefined);
+  }, []);
+  useReminders(true);
+  return null;
 }
 
 function Navigation() {
@@ -73,6 +89,8 @@ function Navigation() {
         <Stack.Screen name="(tabs)" />
         <Stack.Screen name="card/[id]" />
         <Stack.Screen name="reading/[spreadId]" />
+        <Stack.Screen name="journal/[id]" />
+        <Stack.Screen name="daily" />
       </Stack>
     </ThemeProvider>
   );

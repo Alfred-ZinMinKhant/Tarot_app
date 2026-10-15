@@ -57,6 +57,8 @@ const config: ExpoConfig = {
       },
     ],
     'expo-image',
+    'expo-sqlite',
+    ['expo-notifications', { color: '#D4AF37' }],
   ],
   experiments: {
     typedRoutes: true,

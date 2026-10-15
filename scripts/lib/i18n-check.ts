@@ -24,6 +24,11 @@ export function flatten(obj: Json, prefix = '', out: Record<string, Json> = {}):
 
 const PLACEHOLDER = /\{\{\s*([\w.]+)\s*\}\}|\$t\(([\w.]+)\)/g;
 
+/** Keys allowed to contain literal digits (e.g. the numerals setting shows ၀–၉ on purpose). */
+const DIGITS_ALLOWED = new Set(['settings.burmeseNumerals']);
+
+const placeholderless = (value: string) => value.replace(PLACEHOLDER, '');
+
 export function placeholders(value: string): string[] {
   return [...value.matchAll(PLACEHOLDER)].map((m) => m[1] ?? `$t(${m[2]})`).sort();
 }
@@ -47,6 +52,10 @@ export function checkLocales(en: Json, my: Json, review: ReviewFile): string[] {
     const pe = placeholders(ev).join(',');
     const pm = placeholders(mv).join(',');
     if (pe !== pm) errors.push(`"${key}" placeholders differ: en=[${pe}] my=[${pm}]`);
+    if (!DIGITS_ALLOWED.has(key) && (/[0-9\u1040-\u1049]/.test(placeholderless(ev)) || /[0-9\u1040-\u1049]/.test(placeholderless(mv)))) {
+      // Numbers must go through formatNumber so the Burmese-numerals setting applies.
+      errors.push(`"${key}" contains a hard-coded number; pass it as a {{placeholder}} formatted with formatNumber`);
+    }
     if (/\{\{\s*count\s*\}\}/.test(ev)) {
       // i18next treats `count` as a plural selector; numbers are pre-formatted (Burmese digits), so
       // use another name such as {{n}}.
