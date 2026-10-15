@@ -1,3 +1,4 @@
+import { sameBirth, sanitizeBirth } from '@/astro/birth';
 import { isSignId } from '@/data/content';
 import { isLanguage } from '@/i18n/languages';
 import type { SettingsState } from '@/store/settings';
@@ -19,6 +20,7 @@ export const SYNCED_SETTING_KEYS = [
   'reminderHour',
   'reminderMinute',
   'birthSign',
+  'birth',
   'soundEnabled',
   'lessonsRead',
 ] as const satisfies readonly (keyof SettingsState)[];
@@ -30,7 +32,7 @@ export function pickSynced(s: SettingsState): Record<string, unknown> {
 }
 
 export const syncedChanged = (a: SettingsState, b: SettingsState): boolean =>
-  SYNCED_SETTING_KEYS.some((k) => (k === 'lessonsRead' ? a[k] !== b[k] : !Object.is(a[k], b[k])));
+  SYNCED_SETTING_KEYS.some((k) => (k === 'birth' ? !sameBirth(a.birth, b.birth) : k === 'lessonsRead' ? a[k] !== b[k] : !Object.is(a[k], b[k])));
 
 const isInt = (v: unknown, min: number, max: number): v is number =>
   typeof v === 'number' && Number.isInteger(v) && v >= min && v <= max;
@@ -50,6 +52,11 @@ export function sanitizeSettings(data: Record<string, unknown>): Partial<Synced>
   if (isInt(data.reminderHour, 0, 23)) out.reminderHour = data.reminderHour;
   if (isInt(data.reminderMinute, 0, 59)) out.reminderMinute = data.reminderMinute;
   if (data.birthSign === null || isSignId(data.birthSign)) out.birthSign = data.birthSign;
+  if (data.birth === null) out.birth = null;
+  else if (data.birth !== undefined) {
+    const birth = sanitizeBirth(data.birth);
+    if (birth) out.birth = birth;
+  }
   if (Array.isArray(data.lessonsRead) && data.lessonsRead.every((x) => typeof x === 'string')) {
     out.lessonsRead = [...new Set(data.lessonsRead as string[])].slice(0, 200);
   }

@@ -3,6 +3,7 @@ import { uuidV4 } from '@/utils/id';
 import { create } from 'zustand';
 import { createJSONStorage, persist } from 'zustand/middleware';
 
+import type { BirthData } from '@/astro/birth';
 import type { SignId } from '@/data/content';
 import type { Language } from '@/i18n/languages';
 import type { FontSizeSetting, MyanmarFont } from '@/theme/typography';
@@ -28,6 +29,8 @@ export type SettingsState = {
   name: string;
   /** Burmese weekday sign chosen in onboarding or on the sign screen. */
   birthSign: SignId | null;
+  /** Birth date, optional time and place for the natal chart. */
+  birth: BirthData | null;
   /** Soft sound effects for shuffling and card flips. Off by default. */
   soundEnabled: boolean;
   /** Ids of finished Learn lessons. */
@@ -49,6 +52,7 @@ export type SettingsState = {
   /** Returns the device seed, creating it on first use. */
   setName: (name: string) => void;
   setBirthSign: (sign: SignId | null) => void;
+  setBirth: (birth: BirthData | null) => void;
   setSoundEnabled: (enabled: boolean) => void;
   markLessonRead: (id: string) => void;
   ensureDeviceSeed: () => string;
@@ -72,6 +76,7 @@ export const DEFAULT_SETTINGS = {
   hasOnboarded: false,
   name: '',
   birthSign: null as SignId | null,
+  birth: null as BirthData | null,
   soundEnabled: false,
   lessonsRead: [] as string[],
   deviceSeed: null as string | null,
@@ -95,6 +100,7 @@ export const useSettings = create<SettingsState>()(
       },
       setName: (name) => set({ name: name.slice(0, 40) }),
       setBirthSign: (birthSign) => set({ birthSign }),
+      setBirth: (birth) => set({ birth }),
       setSoundEnabled: (soundEnabled) => set({ soundEnabled }),
       markLessonRead: (id) => {
         const read = get().lessonsRead;
@@ -130,6 +136,7 @@ export const useSettings = create<SettingsState>()(
         hasOnboarded: s.hasOnboarded,
         name: s.name,
         birthSign: s.birthSign,
+        birth: s.birth,
         soundEnabled: s.soundEnabled,
         lessonsRead: s.lessonsRead,
         deviceSeed: s.deviceSeed,

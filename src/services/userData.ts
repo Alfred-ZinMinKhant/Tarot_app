@@ -2,6 +2,7 @@
  * Settings → Export my data / Delete my data.
  * The export is a plain JSON file the user controls; nothing is uploaded.
  */
+import type { BirthData } from '@/astro/birth';
 import Constants from 'expo-constants';
 
 import { getJournalRepo, type ReadingRecord } from '@/db';
@@ -20,7 +21,7 @@ export type UserDataExport = {
   version: typeof EXPORT_VERSION;
   appVersion: string;
   exportedAt: string;
-  profile: { name: string; birthSign: string | null };
+  profile: { name: string; birthSign: string | null; birth: BirthData | null };
   settings: Record<string, unknown>;
   lessonsRead: string[];
   readings: ReadingRecord[];
@@ -35,7 +36,7 @@ export async function buildExport(now = new Date()): Promise<UserDataExport> {
     version: EXPORT_VERSION,
     appVersion: Constants.expoConfig?.version ?? '',
     exportedAt: now.toISOString(),
-    profile: { name: s.name, birthSign: s.birthSign },
+    profile: { name: s.name, birthSign: s.birthSign, birth: s.birth },
     settings: {
       language: s.language,
       themeMode: s.themeMode,
