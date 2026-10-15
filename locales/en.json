@@ -315,7 +315,12 @@
   },
   "sync": {
     "title": "Cloud backup",
-    "intro": "Optional. Back up your journal so you can restore it on a new phone. Only readings and notes are backed up; settings stay on this phone.",
+    "intro": "Optional. Back up your journal, settings and Card of the Day history so you can restore them on a new phone. Your name stays on this phone.",
+    "continue": {
+      "google": "Continue with Google",
+      "apple": "Continue with Apple"
+    },
+    "or": "or",
     "emailLabel": "Email",
     "emailPlaceholder": "you@example.com",
     "sendCode": "Email me a sign-in code",
@@ -340,7 +345,8 @@
       "sendFailed": "Couldn't send the code. Check your connection and try again.",
       "badCode": "That code didn't work. Check it, or ask for a new one.",
       "syncFailed": "Couldn't back up right now. It will try again automatically.",
-      "deleteFailed": "Couldn't delete the cloud account. Check your connection and try again."
+      "deleteFailed": "Couldn't delete the cloud account. Check your connection and try again.",
+      "oauthFailed": "Couldn't sign in. Check your connection and try again."
     }
   },
   "premium": {

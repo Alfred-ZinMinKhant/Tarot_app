@@ -15,6 +15,22 @@ import type {
   SyncRecord,
 } from './types';
 
+type DailyRow = {
+  date_key: string;
+  card_id: string;
+  reversed: number;
+  revealed_at: number;
+  reading_id: string | null;
+};
+
+const toDraw = (row: DailyRow): DailyDraw => ({
+  dateKey: row.date_key,
+  cardId: row.card_id,
+  reversed: !!row.reversed,
+  revealedAt: Number(row.revealed_at),
+  readingId: row.reading_id,
+});
+
 type ReadingRow = {
   id: string;
   kind: string;
@@ -34,14 +50,18 @@ function parseCards(json: string): SavedCard[] {
     const value = JSON.parse(json) as unknown;
     if (!Array.isArray(value)) return [];
     return value
-      .filter((c): c is SavedCard => !!c && typeof c.cardId === 'string' && typeof c.positionId === 'string')
+      .filter(
+        (c): c is SavedCard =>
+          !!c && typeof c.cardId === 'string' && typeof c.positionId === 'string',
+      )
       .map((c) => ({ positionId: c.positionId, cardId: c.cardId, reversed: !!c.reversed }));
   } catch {
     return [];
   }
 }
 
-const toTopic = (t: string): Topic => ((TOPICS as readonly string[]).includes(t) ? (t as Topic) : 'general');
+const toTopic = (t: string): Topic =>
+  (TOPICS as readonly string[]).includes(t) ? (t as Topic) : 'general';
 
 function fromRow(r: ReadingRow): ReadingRecord {
   return {
@@ -120,25 +140,27 @@ export function createJournalRepo(db: Db, now: () => number = Date.now): Journal
     },
 
     async getReading(id: string) {
-      const row = await db.getFirstAsync<ReadingRow>('SELECT * FROM readings WHERE id = ? AND deleted_at IS NULL', [
-        id,
-      ]);
+      const row = await db.getFirstAsync<ReadingRow>(
+        'SELECT * FROM readings WHERE id = ? AND deleted_at IS NULL',
+        [id],
+      );
       return row ? fromRow(row) : null;
     },
 
     async updateNotes(id: string, notes: string) {
-      await db.runAsync('UPDATE readings SET notes = ?, updated_at = ?, dirty = 1 WHERE id = ?', [notes, now(), id]);
+      await db.runAsync('UPDATE readings SET notes = ?, updated_at = ?, dirty = 1 WHERE id = ?', [
+        notes,
+        now(),
+        id,
+      ]);
     },
 
     async deleteReading(id: string) {
       const t = now();
-      await db.runAsync('UPDATE readings SET deleted_at = ?, updated_at = ?, notes = ?, question = ?, dirty = 1 WHERE id = ?', [
-        t,
-        t,
-        '',
-        '',
-        id,
-      ]);
+      await db.runAsync(
+        'UPDATE readings SET deleted_at = ?, updated_at = ?, notes = ?, question = ?, dirty = 1 WHERE id = ?',
+        [t, t, '', '', id],
+      );
       await db.runAsync('UPDATE daily_draws SET reading_id = NULL WHERE reading_id = ?', [id]);
     },
 
@@ -149,7 +171,9 @@ export function createJournalRepo(db: Db, now: () => number = Date.now): Journal
     },
 
     async pendingChanges() {
-      const rows = await db.getAllAsync<ReadingRow>('SELECT * FROM readings WHERE dirty = 1 ORDER BY updated_at');
+      const rows = await db.getAllAsync<ReadingRow>(
+        'SELECT * FROM readings WHERE dirty = 1 ORDER BY updated_at',
+      );
       return rows.map(toSyncRecord);
     },
 
@@ -157,7 +181,10 @@ export function createJournalRepo(db: Db, now: () => number = Date.now): Journal
       if (!rows.length) return;
       await db.withTransactionAsync(async () => {
         for (const r of rows) {
-          await db.runAsync('UPDATE readings SET dirty = 0 WHERE id = ? AND updated_at = ?', [r.id, r.updatedAt]);
+          await db.runAsync('UPDATE readings SET dirty = 0 WHERE id = ? AND updated_at = ?', [
+            r.id,
+            r.updatedAt,
+          ]);
         }
       });
     },
@@ -170,9 +197,10 @@ export function createJournalRepo(db: Db, now: () => number = Date.now): Journal
       let changed = 0;
       await db.withTransactionAsync(async () => {
         for (const r of rows) {
-          const local = await db.getFirstAsync<{ updated_at: number }>('SELECT updated_at FROM readings WHERE id = ?', [
-            r.id,
-          ]);
+          const local = await db.getFirstAsync<{ updated_at: number }>(
+            'SELECT updated_at FROM readings WHERE id = ?',
+            [r.id],
+          );
           // Last write wins; on a tie the local copy stays (it is identical or will be uploaded).
           if (local && Number(local.updated_at) >= r.updatedAt) continue;
           await db.runAsync(
@@ -193,7 +221,10 @@ export function createJournalRepo(db: Db, now: () => number = Date.now): Journal
               r.deletedAt,
             ],
           );
-          if (r.deletedAt) await db.runAsync('UPDATE daily_draws SET reading_id = NULL WHERE reading_id = ?', [r.id]);
+          if (r.deletedAt)
+            await db.runAsync('UPDATE daily_draws SET reading_id = NULL WHERE reading_id = ?', [
+              r.id,
+            ]);
           changed++;
         }
       });
@@ -201,21 +232,49 @@ export function createJournalRepo(db: Db, now: () => number = Date.now): Journal
     },
 
     async getDailyDraw(dateKey: string) {
-      const row = await db.getFirstAsync<{
-        date_key: string;
-        card_id: string;
-        reversed: number;
-        revealed_at: number;
-        reading_id: string | null;
-      }>('SELECT * FROM daily_draws WHERE date_key = ?', [dateKey]);
-      if (!row) return null;
-      return {
-        dateKey: row.date_key,
-        cardId: row.card_id,
-        reversed: !!row.reversed,
-        revealedAt: Number(row.revealed_at),
-        readingId: row.reading_id,
-      } satisfies DailyDraw;
+      const row = await db.getFirstAsync<DailyRow>('SELECT * FROM daily_draws WHERE date_key = ?', [
+        dateKey,
+      ]);
+      return row ? toDraw(row) : null;
+    },
+
+    async listDailyDraws() {
+      const rows = await db.getAllAsync<DailyRow>('SELECT * FROM daily_draws ORDER BY date_key');
+      return rows.map(toDraw);
+    },
+
+    async applyRemoteDraws(draws) {
+      let changed = 0;
+      await db.withTransactionAsync(async () => {
+        for (const d of draws) {
+          const local = await db.getFirstAsync<DailyRow>(
+            'SELECT * FROM daily_draws WHERE date_key = ?',
+            [d.dateKey],
+          );
+          // Only link to a journal entry that exists here and isn't deleted.
+          const linkable =
+            d.readingId &&
+            (await db.getFirstAsync<{ id: string }>(
+              'SELECT id FROM readings WHERE id = ? AND deleted_at IS NULL',
+              [d.readingId],
+            ));
+          const readingId = linkable ? d.readingId : null;
+          if (!local) {
+            await db.runAsync(
+              'INSERT INTO daily_draws (date_key, card_id, reversed, revealed_at, reading_id) VALUES (?, ?, ?, ?, ?)',
+              [d.dateKey, d.cardId, d.reversed ? 1 : 0, d.revealedAt, readingId],
+            );
+            changed++;
+          } else if (!local.reading_id && readingId) {
+            await db.runAsync('UPDATE daily_draws SET reading_id = ? WHERE date_key = ?', [
+              readingId,
+              d.dateKey,
+            ]);
+            changed++;
+          }
+        }
+      });
+      return changed;
     },
 
     async saveDailyDraw(draw) {
@@ -227,7 +286,10 @@ export function createJournalRepo(db: Db, now: () => number = Date.now): Journal
     },
 
     async linkDailyReading(dateKey: string, readingId: string) {
-      await db.runAsync('UPDATE daily_draws SET reading_id = ? WHERE date_key = ?', [readingId, dateKey]);
+      await db.runAsync('UPDATE daily_draws SET reading_id = ? WHERE date_key = ?', [
+        readingId,
+        dateKey,
+      ]);
     },
   };
 }

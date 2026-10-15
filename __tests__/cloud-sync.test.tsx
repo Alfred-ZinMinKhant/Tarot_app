@@ -1,7 +1,7 @@
 import { act, fireEvent, renderRouter, screen, waitFor } from 'expo-router/testing-library';
 
 import en from '../locales/en.json';
-import { fakeServices } from '../test/mocks/fakeCloud';
+import { FakeCloud, fakeServices } from '../test/mocks/fakeCloud';
 
 import { getJournalRepo, resetJournalRepo } from '@/db';
 import { syncTiming } from '@/hooks/useCloudSync';
@@ -12,7 +12,14 @@ import { DEFAULT_SETTINGS, useSettings } from '@/store/settings';
 import { setSyncServices, useSync } from '@/store/sync';
 import { useToast } from '@/store/toast';
 
-const SIGNED_OUT = { status: 'signedOut', email: null, error: null, cursor: null, lastSyncedAt: null } as const;
+const SIGNED_OUT = {
+  status: 'signedOut',
+  email: null,
+  error: null,
+  cursor: null,
+  lastSyncedAt: null,
+  settingsChangedAt: 0,
+} as const;
 let svc: ReturnType<typeof fakeServices>;
 
 beforeEach(() => {
@@ -20,7 +27,13 @@ beforeEach(() => {
   useJournal.setState({ readings: [], loaded: false, localChanges: 0 });
   useDaily.setState({ dateKey: null, draw: null, loading: false });
   useToast.setState({ current: null });
-  useSettings.setState({ ...DEFAULT_SETTINGS, language: 'en', hasOnboarded: true, haptics: false, deviceSeed: 's' });
+  useSettings.setState({
+    ...DEFAULT_SETTINGS,
+    language: 'en',
+    hasOnboarded: true,
+    haptics: false,
+    deviceSeed: 's',
+  });
   useSync.setState({ ...SIGNED_OUT });
   svc = fakeServices();
   setSyncServices(svc);
@@ -65,7 +78,9 @@ describe('cloud backup', () => {
     // Burmese digits typed on a Myanmar keyboard are accepted.
     fireEvent.changeText(screen.getByTestId('sync-code'), '၁၂၃၄၅၆');
     fireEvent.press(screen.getByTestId('sync-verify'));
-    expect(await screen.findByTestId('sync-account')).toHaveTextContent('Backing up as mya@example.com');
+    expect(await screen.findByTestId('sync-account')).toHaveTextContent(
+      'Backing up as mya@example.com',
+    );
     await waitFor(() => expect(svc.cloud.rows.size).toBe(1));
     expect([...svc.cloud.rows.values()][0]!.question).toBe('Before signing in');
     expect(useSync.getState().lastSyncedAt).not.toBeNull();
@@ -125,7 +140,12 @@ describe('cloud backup', () => {
     useSync.setState({ status: 'idle', email: 'a@b.co' });
     svc.auth.email = 'a@b.co';
     await save('Keep me locally');
-    await act(() => useSync.getState().syncNow().then(() => undefined));
+    await act(() =>
+      useSync
+        .getState()
+        .syncNow()
+        .then(() => undefined),
+    );
     renderRouter('./app', { initialUrl: '/settings' });
     fireEvent.press(await screen.findByTestId('sync-delete-account'));
     fireEvent.press(await screen.findByTestId('sync-delete-confirm'));
@@ -148,5 +168,67 @@ describe('cloud backup', () => {
     expect(svc.auth.email).toBeNull();
     expect(svc.cloud.rows.size).toBe(1);
     expect(useJournal.getState().readings).toEqual([]);
+  });
+
+  it('signs in with Google, uploads the journal, and shows the account', async () => {
+    await save('Before signing in');
+    renderRouter('./app', { initialUrl: '/settings' });
+    fireEvent.press(await screen.findByTestId('sync-google'));
+    expect(await screen.findByTestId('sync-account')).toBeTruthy();
+    expect(screen.getByText(en.sync.signedInAs.replace('{{email}}', 'mya@gmail.com'))).toBeTruthy();
+    expect(svc.auth.providerCalls).toEqual(['google']);
+    expect(svc.cloud.rows.size).toBe(1);
+  });
+
+  it('stays signed out, without an error, when the person closes the Google page', async () => {
+    svc.auth.providerResult = null;
+    renderRouter('./app', { initialUrl: '/settings' });
+    fireEvent.press(await screen.findByTestId('sync-google'));
+    await waitFor(() => expect(svc.auth.providerCalls).toEqual(['google']));
+    expect(await screen.findByTestId('sync-google')).toBeTruthy();
+    expect(screen.queryByTestId('sync-error')).toBeNull();
+  });
+
+  it('shows a gentle error when provider sign-in fails', async () => {
+    svc.auth.providerResult = new Error('boom');
+    renderRouter('./app', { initialUrl: '/settings' });
+    fireEvent.press(await screen.findByTestId('sync-google'));
+    expect(await screen.findByText(en.sync.errors.oauthFailed)).toBeTruthy();
+  });
+
+  it('shows only the sign-in methods this build offers', async () => {
+    setSyncServices(fakeServices(new FakeCloud(), { providers: ['google'], email: false }));
+    renderRouter('./app', { initialUrl: '/settings' });
+    await screen.findByTestId('sync-google');
+    expect(screen.queryByTestId('sync-email')).toBeNull();
+    expect(screen.queryByTestId('sync-or')).toBeNull();
+  });
+
+  it('backs up settings and the Card of the Day, but never the name or device seed', async () => {
+    useSettings.setState({ name: 'Mya', deviceSeed: 'secret-seed' });
+    await useSync.getState().sendCode('mya@example.com');
+    await useSync.getState().verifyCode('123456');
+    // The brand-new account got this phone's settings.
+    expect(svc.cloud.settings?.data).toMatchObject({ haptics: false, reversedCards: true });
+
+    useSettings.getState().setFontSize('L');
+    await useDaily.getState().reveal();
+    await useSync.getState().syncNow();
+    expect(svc.cloud.settings?.data).toMatchObject({ fontSize: 'L' });
+    expect(JSON.stringify(svc.cloud.settings)).not.toMatch(/Mya|secret-seed/);
+    expect(svc.cloud.draws.size).toBe(1);
+
+    // A fresh phone signing in to the same account receives both.
+    resetJournalRepo();
+    useDaily.setState({ dateKey: null, draw: null });
+    useSettings.setState({ ...DEFAULT_SETTINGS, haptics: true });
+    useSync.setState({ ...SIGNED_OUT });
+    await useSync.getState().sendCode('mya@example.com');
+    await useSync.getState().verifyCode('123456');
+    expect(useSettings.getState().fontSize).toBe('L');
+    expect(useSettings.getState().haptics).toBe(false);
+    expect((await useDaily.getState().reveal()).cardId).toBe(
+      [...svc.cloud.draws.values()][0]!.cardId,
+    );
   });
 });

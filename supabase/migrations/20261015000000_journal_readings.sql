@@ -1,4 +1,4 @@
--- Nat Tarot cloud backup (optional). Apply with `supabase db push` or paste into the SQL editor.
+-- Mingalar Tarot cloud backup (optional). Apply with `supabase db push` or paste into the SQL editor.
 -- Each row mirrors one journal reading on a device. Deletes are tombstones (deleted_at set) so they
 -- reach the user's other devices.
 

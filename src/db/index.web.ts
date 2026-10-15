@@ -64,6 +64,12 @@ function createMemoryRepo(): JournalRepo {
     async getDailyDraw(dateKey) {
       return draws.get(dateKey) ?? null;
     },
+    async listDailyDraws() {
+      return [...draws.values()].sort((a, b) => (a.dateKey < b.dateKey ? -1 : 1));
+    },
+    async applyRemoteDraws() {
+      return 0;
+    },
     async saveDailyDraw(draw) {
       if (!draws.has(draw.dateKey)) draws.set(draw.dateKey, { ...draw, readingId: null });
     },

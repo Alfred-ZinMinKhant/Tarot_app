@@ -24,7 +24,7 @@ Ambiguous choices made while building, with the simplest option chosen. Change a
 8. **App name lives in `src/config/brand.json`** (read by both `app.config.ts` and the i18n bundle).
    Store identifiers can be overridden from `.env` (see `.env.example`).
 9. **"Tarot" stays in English in Burmese text** (owner decision). Burmese strings write the Latin word
-   "Tarot" (e.g. "Tarot ကတ်") instead of a transliteration, and the app name is "Nat Tarot" in both
+   "Tarot" (e.g. "Tarot ကတ်") instead of a transliteration, and the app name is "Mingalar Tarot" in both
    languages (`src/config/brand.json`).
 10. **Language "follow device" is the default** (`settings.language = null`). Picking a language on
     onboarding or in Settings pins it.
@@ -167,11 +167,14 @@ Ambiguous choices made while building, with the simplest option chosen. Change a
 50. **Content review list.** Lessons, weekday-sign texts and legal texts were written by AI in both
     languages and are listed in `data/content.review.json` for a native-speaker review, like the
     card and UI strings.
-51. **Supabase for cloud backup, journal only.** It has row-level security, email OTP auth and
-    a generous free tier, and it can be swapped out behind the `SyncBackend` / `SyncAuth`
-    interfaces. Settings are not synced: they are per-device choices (font, reminder time), and
-    syncing them would surprise people. The Card of the Day history and seed are not synced
-    either, because they are personal to the device by design.
+51. **Supabase for cloud backup: journal, portable settings and Card of the Day history.** It has
+    row-level security, email OTP auth and a generous free tier, and it can be swapped out behind
+    the `SyncBackend` / `SyncAuth` interfaces. Settings and draws are tiny (one row, and ~50 bytes
+    per revealed day), so they use ordinary Postgres tables, not Storage. Settings sync as one blob,
+    last write wins. Draws never change once revealed: the first reveal of a day wins, only the
+    journal link can be added later. Still device-only: the name and the device seed (the privacy
+    text says they never leave the phone), the reminder on/off switch (needs this phone's
+    notification permission), the onboarding flag and the free share count.
 52. **Email one-time code, not magic links or passwords.** Codes work without deep-link setup,
     on any email app, and in places where links open in the wrong browser. Burmese digits typed
     into the code field are converted.

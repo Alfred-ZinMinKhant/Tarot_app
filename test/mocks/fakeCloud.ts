@@ -1,5 +1,12 @@
-import type { SyncRecord } from '@/db/types';
-import type { SyncAuth, SyncBackend, SyncCursor, SyncServices } from '@/sync/engine';
+import type { DailyDraw, SyncRecord } from '@/db/types';
+import type { OAuthProvider, SyncMethods } from '@/config/sync';
+import type {
+  RemoteSettings,
+  SyncAuth,
+  SyncBackend,
+  SyncCursor,
+  SyncServices,
+} from '@/sync/engine';
 
 type StoredRow = SyncRecord & { serverAt: string };
 
@@ -12,6 +19,8 @@ export class FakeCloud {
   private clock = Date.UTC(2026, 9, 15);
   offline = false;
   pushes = 0;
+  draws = new Map<string, DailyDraw>();
+  settings: RemoteSettings | null = null;
 
   private stamp(): string {
     this.clock += 1000;
@@ -26,7 +35,9 @@ export class FakeCloud {
           !cursor || r.serverAt > cursor.at || (r.serverAt === cursor.at && r.id > cursor.id);
         const rows = [...this.rows.values()]
           .filter(after)
-          .sort((a, b) => (a.serverAt === b.serverAt ? (a.id < b.id ? -1 : 1) : a.serverAt < b.serverAt ? -1 : 1))
+          .sort((a, b) =>
+            a.serverAt === b.serverAt ? (a.id < b.id ? -1 : 1) : a.serverAt < b.serverAt ? -1 : 1,
+          )
           .slice(0, limit);
         const last = rows[rows.length - 1];
         return {
@@ -44,6 +55,32 @@ export class FakeCloud {
           this.rows.set(r.id, { ...clean, serverAt: this.stamp() });
         }
       },
+      // Mirrors the server triggers: first reveal wins, the journal link is only ever added.
+      pullDraws: async () => {
+        if (this.offline) throw new Error('offline');
+        return [...this.draws.values()].map((d) => ({ ...d }));
+      },
+      pushDraws: async (draws: DailyDraw[]) => {
+        if (this.offline) throw new Error('offline');
+        for (const d of draws) {
+          const existing = this.draws.get(d.dateKey);
+          this.draws.set(
+            d.dateKey,
+            existing ? { ...existing, readingId: d.readingId ?? existing.readingId } : { ...d },
+          );
+        }
+      },
+      pullSettings: async () => {
+        if (this.offline) throw new Error('offline');
+        return this.settings
+          ? { data: { ...this.settings.data }, updatedAt: this.settings.updatedAt }
+          : null;
+      },
+      pushSettings: async (s: RemoteSettings) => {
+        if (this.offline) throw new Error('offline');
+        if (this.settings && s.updatedAt <= this.settings.updatedAt) return;
+        this.settings = { data: { ...s.data }, updatedAt: s.updatedAt };
+      },
     };
   }
 }
@@ -52,7 +89,10 @@ export class FakeAuth implements SyncAuth {
   email: string | null = null;
   sentTo: string[] = [];
   deleted = false;
-  constructor(private cloud: FakeCloud, public validCode = '123456') {}
+  constructor(
+    private cloud: FakeCloud,
+    public validCode = '123456',
+  ) {}
   async currentEmail() {
     return this.email;
   }
@@ -65,17 +105,31 @@ export class FakeAuth implements SyncAuth {
     this.email = email;
     return email;
   }
+  /** What the next provider sign-in does: an account label, or null for "closed the browser". */
+  providerResult: string | null | Error = 'mya@gmail.com';
+  providerCalls: OAuthProvider[] = [];
+  async signInWithProvider(provider: OAuthProvider) {
+    this.providerCalls.push(provider);
+    if (this.providerResult instanceof Error) throw this.providerResult;
+    this.email = this.providerResult;
+    return this.providerResult;
+  }
   async signOut() {
     this.email = null;
   }
   async deleteAccount() {
     if (this.cloud.offline) throw new Error('offline');
     this.cloud.rows.clear();
+    this.cloud.draws.clear();
+    this.cloud.settings = null;
     this.deleted = true;
     this.email = null;
   }
 }
 
-export function fakeServices(cloud = new FakeCloud()): SyncServices & { cloud: FakeCloud; auth: FakeAuth } {
-  return { cloud, auth: new FakeAuth(cloud), backend: cloud.backend() };
+export function fakeServices(
+  cloud = new FakeCloud(),
+  methods: SyncMethods = { providers: ['google'], email: true },
+): SyncServices & { cloud: FakeCloud; auth: FakeAuth } {
+  return { cloud, auth: new FakeAuth(cloud), backend: cloud.backend(), methods };
 }

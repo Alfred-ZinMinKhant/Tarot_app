@@ -4,7 +4,7 @@ import { StyleSheet, View } from 'react-native';
 
 import { useLanguage } from '@/hooks/useLanguage';
 import { useSettings } from '@/store/settings';
-import { syncAvailable, useSync } from '@/store/sync';
+import { syncAvailable, syncMethods, useSync } from '@/store/sync';
 import { useToast } from '@/store/toast';
 import { spacing } from '@/theme/spacing';
 import { formatDate } from '@/utils/dates';
@@ -47,26 +47,45 @@ export function CloudSyncCard() {
 
   let body;
   if (sync.status === 'signedOut') {
+    const { providers, email: emailEnabled } = syncMethods();
     body = (
       <>
-        <TextField
-          label={t('sync.emailLabel')}
-          value={email}
-          onChangeText={setEmail}
-          placeholder={t('sync.emailPlaceholder')}
-          keyboardType="email-address"
-          autoCapitalize="none"
-          autoComplete="email"
-          testID="sync-email"
-        />
+        {providers.map((provider) => (
+          <Button
+            key={provider}
+            label={t(`sync.continue.${provider}`)}
+            onPress={() => run(() => sync.signInWithProvider(provider))}
+            loading={busy}
+            testID={`sync-${provider}`}
+          />
+        ))}
+        {providers.length > 0 && emailEnabled ? (
+          <AppText variant="caption" tone="textMuted" testID="sync-or">
+            {t('sync.or')}
+          </AppText>
+        ) : null}
+        {emailEnabled ? (
+          <>
+            <TextField
+              label={t('sync.emailLabel')}
+              value={email}
+              onChangeText={setEmail}
+              placeholder={t('sync.emailPlaceholder')}
+              keyboardType="email-address"
+              autoCapitalize="none"
+              autoComplete="email"
+              testID="sync-email"
+            />
+            <Button
+              label={t('sync.sendCode')}
+              onPress={() => run(() => sync.sendCode(email))}
+              loading={busy}
+              disabled={!email.trim()}
+              testID="sync-send-code"
+            />
+          </>
+        ) : null}
         {error}
-        <Button
-          label={t('sync.sendCode')}
-          onPress={() => run(() => sync.sendCode(email))}
-          loading={busy}
-          disabled={!email.trim()}
-          testID="sync-send-code"
-        />
       </>
     );
   } else if (sync.status === 'codeSent') {
@@ -95,13 +114,22 @@ export function CloudSyncCard() {
           disabled={code.length < 6}
           testID="sync-verify"
         />
-        <Button label={t('sync.useDifferentEmail')} variant="ghost" onPress={sync.cancelCode} testID="sync-cancel-code" />
+        <Button
+          label={t('sync.useDifferentEmail')}
+          variant="ghost"
+          onPress={sync.cancelCode}
+          testID="sync-cancel-code"
+        />
       </>
     );
   } else {
     const last = sync.lastSyncedAt
       ? t('sync.lastSynced', {
-          time: formatDate(new Date(sync.lastSyncedAt), lang, { style: 'short', burmeseNumerals, withTime: true }),
+          time: formatDate(new Date(sync.lastSyncedAt), lang, {
+            style: 'short',
+            burmeseNumerals,
+            withTime: true,
+          }),
         })
       : t('sync.never');
     body = (
@@ -120,7 +148,12 @@ export function CloudSyncCard() {
           loading={sync.status === 'syncing'}
           testID="sync-now"
         />
-        <Button label={t('sync.signOut')} variant="ghost" onPress={() => sync.signOut()} testID="sync-sign-out" />
+        <Button
+          label={t('sync.signOut')}
+          variant="ghost"
+          onPress={() => sync.signOut()}
+          testID="sync-sign-out"
+        />
         <Button
           label={t('sync.deleteAccount')}
           variant="ghost"
@@ -158,7 +191,11 @@ export function CloudSyncCard() {
           }
           testID="sync-delete-confirm"
         />
-        <Button label={t('common.cancel')} variant="ghost" onPress={() => setConfirmDelete(false)} />
+        <Button
+          label={t('common.cancel')}
+          variant="ghost"
+          onPress={() => setConfirmDelete(false)}
+        />
       </BottomSheet>
     </Card>
   );

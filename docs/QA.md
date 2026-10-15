@@ -97,6 +97,8 @@ Status key: ✅ automated and passing · 🔶 partly automated, needs a device c
 | 7b.4 | Edits on two phones while offline: the later edit wins on both | J | 📱 |
 | 7b.5 | Airplane mode: app works normally; Settings shows the gentle "couldn't back up" line; backup resumes when online | J | 📱 |
 | 7b.6 | Delete cloud account removes the account (Supabase dashboard) and keeps local readings | J (fake) | 📱 |
+| 7b.8 | Change text size on phone A; it follows to phone B after signing in / reopening. Name, reminder switch and device seed stay per phone | J (fake) | 📱 |
+| 7b.9 | Reveal the Card of the Day on phone A; phone B (same account) shows the same card for that day | J (two simulated devices) | 📱 |
 | 7b.7 | Row-level security: one account can't read another's rows (try with two accounts) | SQL review | 📱 |
 
 ## 7c. Premium (only in builds with RevenueCat keys)

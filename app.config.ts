@@ -80,6 +80,7 @@ const config: ExpoConfig = {
     typedRoutes: true,
   },
   extra: {
+    eas: { projectId: '2998fd9a-2662-4b98-a316-19e5f257c2b2' },
     appName: brand.appName,
     // Shown in the crisis-support message when set. Leave empty until a verified local service is
     // chosen; the message then encourages contacting someone trusted or local emergency services.
@@ -95,6 +96,9 @@ const config: ExpoConfig = {
       enabled: env.ENABLE_CLOUD_SYNC === 'true',
       url: env.SUPABASE_URL || '',
       anonKey: env.SUPABASE_ANON_KEY || '',
+      // Comma-separated sign-in providers (google, apple) and whether the email-code form is shown.
+      providers: env.SYNC_PROVIDERS ?? 'google',
+      email: env.SYNC_EMAIL === 'true',
     },
     // Optional in-app purchases (Phase 7, RevenueCat public SDK keys). With no key for a
     // platform, that platform has no paywall and every feature is unlocked.

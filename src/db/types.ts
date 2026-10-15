@@ -33,7 +33,10 @@ export type ReadingRecord = {
 /** A reading as exchanged with the cloud: includes tombstones (`deletedAt` set). */
 export type SyncRecord = ReadingRecord & { deletedAt: number | null };
 
-export type NewReading = Pick<ReadingRecord, 'kind' | 'spreadId' | 'topic' | 'question' | 'cards'> & {
+export type NewReading = Pick<
+  ReadingRecord,
+  'kind' | 'spreadId' | 'topic' | 'question' | 'cards'
+> & {
   notes?: string;
   createdAt?: number;
   dateKey?: string;
@@ -72,6 +75,12 @@ export interface JournalRepo {
   /** Merges rows from the cloud, last write (by `updatedAt`) wins. Returns how many changed locally. */
   applyRemote(rows: SyncRecord[]): Promise<number>;
   getDailyDraw(dateKey: string): Promise<DailyDraw | null>;
+  listDailyDraws(): Promise<DailyDraw[]>;
+  /**
+   * Merges Card of the Day draws from the cloud: a day already drawn here keeps its card (first
+   * reveal wins) and only gains a journal link it lacked. Returns how many rows changed locally.
+   */
+  applyRemoteDraws(draws: DailyDraw[]): Promise<number>;
   saveDailyDraw(draw: Omit<DailyDraw, 'readingId'>): Promise<void>;
   linkDailyReading(dateKey: string, readingId: string): Promise<void>;
 }
