@@ -1,4 +1,4 @@
-# Nat Tarot / နတ်တရော့
+# Nat Tarot
 
 A bilingual (English + Burmese) offline-first tarot app for Android and iOS, built with Expo.
 

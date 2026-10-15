@@ -1,12 +1,12 @@
-# Burmese glossary (တားရော့ ဝေါဟာရ)
+# Burmese glossary (Tarot ဝေါဟာရ)
 
 Chosen Burmese terms for consistent translation. **All entries are AI-proposed and need approval
 by a native speaker.** Edit the "Chosen" column and the locale/card files will be updated to match.
 
 | English | Chosen Burmese | Alternatives considered | Notes |
 | --- | --- | --- | --- |
-| Tarot | တားရော့ | တရော့ | App-name placeholder uses တရော့ — pick one spelling for both |
-| Tarot card | တားရော့ကတ် | | |
+| Tarot | Tarot (Latin script) | တားရော့, တရော့ | Owner decision: keep the English word, no transliteration |
+| Tarot card | Tarot ကတ် | တားရော့ကတ် | |
 | Deck | ကတ်ထုပ် | | |
 | Major Arcana | အဓိကအာကာနာ | မေဂျာအာကာနာ | as suggested in the brief |
 | Minor Arcana | အသေးစားအာကာနာ | မိုင်နာအာကာနာ | as suggested in the brief |

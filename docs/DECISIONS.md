@@ -23,8 +23,9 @@ Ambiguous choices made while building, with the simplest option chosen. Change a
    searchable.
 8. **App name lives in `src/config/brand.json`** (read by both `app.config.ts` and the i18n bundle).
    Store identifiers can be overridden from `.env` (see `.env.example`).
-9. **Spelling of "tarot" in Burmese.** Running text uses **တားရော့** (the common transliteration); the
-   placeholder app name you supplied uses **တရော့** ("နတ်တရော့"). Please pick one — see the glossary.
+9. **"Tarot" stays in English in Burmese text** (owner decision). Burmese strings write the Latin word
+   "Tarot" (e.g. "Tarot ကတ်") instead of a transliteration, and the app name is "Nat Tarot" in both
+   languages (`src/config/brand.json`).
 10. **Language "follow device" is the default** (`settings.language = null`). Picking a language on
     onboarding or in Settings pins it.
 11. **Intl-free number/date formatting.** Hermes builds don't reliably include Burmese locale data,
