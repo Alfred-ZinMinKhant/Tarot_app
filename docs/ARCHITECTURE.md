@@ -21,23 +21,30 @@ Later phases add expo-sqlite (journal), expo-crypto (draws), reanimated/gesture-
 app/                     expo-router routes (screens only)
   _layout.tsx            root: font loading, settings hydration, i18n, theme, Stack
   index.tsx              redirect → onboarding or /home
-  (onboarding)/          welcome, language
+  (onboarding)/          welcome (+ disclaimer), language, about-you (name, weekday sign, reminder)
   (tabs)/                home, library (FlashList grid + filters + search), journal, learn, settings
   card/[id].tsx          card detail: all meanings, upright/reversed toggle
   reading/[spreadId].tsx reading flow: topic + question → shuffle → pick from fan → flip → summary
   daily.tsx              Card of the Day: reveal once, meaning, save to journal, share
   journal/[id].tsx       saved reading: cards + meanings, notes, share, delete
+  sign.tsx               Burmese weekday sign: details, daily mood, chooser, explore all eight
+  learn/[id].tsx         one lesson; finishing marks it read and opens the next
+  about.tsx              about, disclaimer, art credit, publisher/contact (from .env)
+  legal/[doc].tsx        privacy policy / terms (data/legal.json, variables from .env)
 src/
   components/            design-system primitives (AppText, Button, Card, Chip, …)
   components/art/        CardBack (original SVG), CardFace, SuitGlyph
-  data/                  deck table, types, card access/search, generated image map
+  data/                  deck table, types, card access/search, generated image map;
+                         content.ts (weekday signs, lessons, legal texts)
   engine/                random (expo-crypto), shuffle/draw, daily card, spreads, interpretation,
                          crisis detection
   config/crisis.json     crisis phrases (en + my)
   db/                    SQLite: schema + migrations, journal repository, sql.js adapter (tests),
                          in-memory repo for the web preview (index.web.ts)
-  services/              notifications (plan + schedule reminders), share (view-shot → sharing)
+  services/              notifications (plan + schedule reminders), share (view-shot → sharing),
+                         sound (expo-audio effects), userData (export/delete), exportFile
   config/brand.json      app name (en + my) and store identifiers — single source of truth
+  config/legal.ts        publisher / contact / effective date from app config (.env)
   hooks/                 useLanguage, useAppFonts, useSettingsHydrated
   i18n/                  i18next instance, language helpers, typed keys
   store/                 Zustand stores: settings (persisted), journal, daily, toast, font status
@@ -45,8 +52,12 @@ src/
   utils/                 myanmar (syllable breaking), numbers, dates
 locales/                 en.json, my.json, my.review.json
 data/                    cards.json (generated), cards/*.json (sources), cards.review.json,
-                         spreads.json (5 spreads, positions + layout, en + my)
-scripts/                 check-i18n, build-cards, validate-cards, optimize-images, render-card-back
+                         spreads.json (5 spreads, positions + layout, en + my), lessons.json (8),
+                         weekday-signs.json (8 signs incl. Rahu), legal.json, content.review.json
+assets/sounds/           flip / shuffle / chime WAVs synthesised by scripts/render-sounds.ts
+.maestro/                end-to-end flows: onboarding, daily card, reading → journal
+scripts/                 check-i18n, build-cards, validate-cards, validate-content, optimize-images,
+                         render-card-back, render-sounds
                          (+ lib/ shared with tests)
 docs/                    this file, DECISIONS, glossary, assets
 __tests__/               Jest suites
@@ -153,6 +164,18 @@ Android channel. `useReminders` (root layout) re-plans whenever the toggle, time
 changes, and opens `/daily` when a reminder is tapped. Web gets no-op modules
 (`*.web.ts`).
 
+## Weekday signs, Learn and personal data
+
+`src/data/content.ts` loads `data/weekday-signs.json` and `data/lessons.json`. `signForWeekday` and
+`signForBirthDate` map a birth weekday or date to one of the eight signs. Wednesday is split at
+noon: from noon onwards the sign is Rahu. `dailyMood` hashes the sign and date to pick one of five
+light-hearted lines, so the line stays the same all day. Settings holds `name`, `birthSign`,
+`lessonsRead` and `soundEnabled`, persisted with the rest. `services/userData.ts` builds the JSON
+export (everything except the device seed) and runs *Delete my data*: it cancels reminders, hard-
+deletes every row in SQLite and wipes settings (including the seed), then sends the user back to
+onboarding. Sounds are played through `useHaptics()`, which handles both vibration and audio for
+card actions.
+
 ## Theming
 
 `AppThemeProvider` combines the system colour scheme with `settings.themeMode`, the S/M/L font size
@@ -165,9 +188,11 @@ asserts WCAG AA (≥ 4.5:1) for every text/background pair in both themes. Minim
 | --- | --- |
 | `npm run typecheck` | `tsc --noEmit` |
 | `npm run lint` | `expo lint` (ESLint 9 flat config), zero warnings allowed |
-| `npm run validate` | locale checks + card-data validation (`check:i18n`, `check:cards`) |
+| `npm run validate` | locale checks + card-data + content validation (`check:i18n`, `check:cards`, `check:content`) |
+| `npm run render:sounds` | regenerate the original sound effects in `assets/sounds/` |
 | `npm run build:cards` | regenerate `data/cards.json` from `data/cards/*.json` + `src/data/deck.ts` |
 | `npm run images` | resize card scans to 300/900 px WebP and regenerate `src/data/cardImages.ts` |
 | `npm run render:card-back` | export the card-back art to `assets/images/card-back.{svg,png}` |
-| `npm test` | Jest: utils, locale parity, contrast, card data + validator, search, engine, SQLite repo (sql.js), notifications (in-memory fake), full-router integration tests |
+| `npm test` | Jest: utils, locale parity, contrast, card data + validator, search, engine, SQLite repo (sql.js), notifications (in-memory fake), full-router integration tests (onboarding, signs, Learn, export/delete, legal) |
+| `maestro test .maestro` | end-to-end flows on a device or emulator (dev/preview build) |
 | `npm run ci` | all of the above; also run by `.github/workflows/ci.yml` |

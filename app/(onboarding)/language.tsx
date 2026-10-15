@@ -8,7 +8,7 @@ import { useSettings } from '@/store/settings';
 export default function LanguageStep() {
   const { t } = useTranslation();
   const completeOnboarding = useSettings((s) => s.completeOnboarding);
-  const finish = () => {
+  const skip = () => {
     completeOnboarding();
     router.replace('/home');
   };
@@ -16,11 +16,12 @@ export default function LanguageStep() {
     <OnboardingFrame
       testID="onboarding-language-step"
       step={2}
-      total={2}
+      total={3}
       title={t('onboarding.languageTitle')}
       body={t('onboarding.languageBody')}
-      primaryLabel={t('common.getStarted')}
-      onPrimary={finish}
+      primaryLabel={t('common.continue')}
+      onPrimary={() => router.push('/about-you')}
+      onSkip={skip}
     >
       <LanguageSwitch testID="onboarding-language" />
       <Card>

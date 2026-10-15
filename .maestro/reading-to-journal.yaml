@@ -1,0 +1,39 @@
+appId: ${APP_ID || 'com.nattarot.app'}
+name: Three-card reading is saved to the journal with notes
+---
+- launchApp:
+    clearState: true
+- tapOn:
+    id: onboarding-skip
+- scrollUntilVisible:
+    element:
+      id: home-spread-three-past-present-future
+- tapOn:
+    id: home-spread-three-past-present-future
+- tapOn:
+    id: reading-question-input
+- inputText: "What should I focus on this week?"
+- hideKeyboard
+- tapOn:
+    id: reading-start
+- tapOn:
+    id: reading-shuffle
+- tapOn:
+    id: reading-pick-for-me
+- tapOn:
+    id: reading-reveal-all
+- scrollUntilVisible:
+    element:
+      id: reading-summary
+- assertVisible:
+    id: reading-disclaimer
+- tapOn: "Journal"
+- assertVisible: ".*What should I focus on this week.*"
+- tapOn: ".*What should I focus on this week.*"
+- tapOn:
+    id: journal-notes-input
+- inputText: "Feeling hopeful."
+- hideKeyboard
+- tapOn:
+    id: journal-save-notes
+- assertVisible: "Notes saved"

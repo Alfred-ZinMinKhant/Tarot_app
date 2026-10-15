@@ -1,10 +1,26 @@
 import Constants from 'expo-constants';
+import { router } from 'expo-router';
+import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Platform, StyleSheet, View } from 'react-native';
 
-import { AppText, Button, Card, ChipGroup, Header, LanguageSwitch, Screen, SettingRow } from '@/components';
+import {
+  AppText,
+  BottomSheet,
+  Button,
+  Card,
+  ChipGroup,
+  Header,
+  LanguageSwitch,
+  Screen,
+  SettingRow,
+} from '@/components';
+import { TextField } from '@/components/TextField';
+import { getSign } from '@/data/content';
 import { useLanguage } from '@/hooks/useLanguage';
+import { shareJsonFile } from '@/services/exportFile';
 import { ensurePermission } from '@/services/notifications';
+import { buildExport, deleteAllUserData, exportFileName } from '@/services/userData';
 import { useToast } from '@/store/toast';
 import { formatTime } from '@/utils/dates';
 import { useSettings } from '@/store/settings';
@@ -22,6 +38,25 @@ export default function Settings() {
   const reminderDate = new Date(2000, 0, 1, s.reminderHour, s.reminderMinute);
   const reminderText = formatTime(reminderDate, lang, { burmeseNumerals: s.burmeseNumerals });
   const step = (delta: number) => s.setReminderTime(s.reminderHour, s.reminderMinute + delta);
+  const sign = getSign(s.birthSign);
+  const [exporting, setExporting] = useState(false);
+  const [confirmDelete, setConfirmDelete] = useState(false);
+
+  const exportData = async () => {
+    setExporting(true);
+    const data = await buildExport();
+    const result = await shareJsonFile(exportFileName(), JSON.stringify(data, null, 2), t('settings.exportDialog'));
+    setExporting(false);
+    if (result === 'failed') toast(t('settings.exportFailed'));
+    else if (result === 'unavailable') toast(t('share.unavailable'));
+  };
+
+  const deleteData = async () => {
+    setConfirmDelete(false);
+    await deleteAllUserData();
+    toast(t('settings.deletedData'));
+    router.replace('/welcome');
+  };
 
   const toggleReminder = async (on: boolean) => {
     if (!on) return s.setReminderEnabled(false);
@@ -37,6 +72,28 @@ export default function Settings() {
       <Card>
         <SettingRow label={t('language.label')}>
           <LanguageSwitch testID="settings-language" />
+        </SettingRow>
+      </Card>
+
+      <Card>
+        <AppText variant="heading">{t('settings.profile')}</AppText>
+        <TextField
+          label={t('settings.name')}
+          hint={t('settings.nameHint')}
+          value={s.name}
+          onChangeText={s.setName}
+          placeholder={t('onboarding.namePlaceholder')}
+          autoCapitalize="words"
+          maxLength={40}
+          testID="settings-name"
+        />
+        <SettingRow label={t('settings.birthSign')} description={sign ? sign[lang].name : t('settings.birthSignNone')}>
+          <Button
+            label={sign ? t('settings.birthSignOpen') : t('settings.birthSignChoose')}
+            variant="secondary"
+            onPress={() => router.push('/sign')}
+            testID="settings-sign"
+          />
         </SettingRow>
       </Card>
 
@@ -110,6 +167,13 @@ export default function Settings() {
           onValueChange={s.setHaptics}
           testID="toggle-haptics"
         />
+        <SettingRow
+          label={t('settings.sound')}
+          description={t('settings.soundHint')}
+          value={s.soundEnabled}
+          onValueChange={s.setSoundEnabled}
+          testID="toggle-sound"
+        />
       </Card>
 
       {Platform.OS !== 'web' ? (
@@ -148,12 +212,57 @@ export default function Settings() {
       ) : null}
 
       <Card>
-        <AppText variant="heading">{t('settings.about')}</AppText>
-        <AppText>{t('disclaimer.long')}</AppText>
+        <AppText variant="heading">{t('settings.data')}</AppText>
         <AppText variant="caption" tone="textMuted">
+          {t('settings.dataHint')}
+        </AppText>
+        <Button
+          label={t('settings.export')}
+          variant="secondary"
+          onPress={exportData}
+          loading={exporting}
+          testID="settings-export"
+        />
+        <Button
+          label={t('settings.deleteData')}
+          variant="ghost"
+          onPress={() => setConfirmDelete(true)}
+          testID="settings-delete-data"
+        />
+      </Card>
+
+      <Card>
+        <AppText variant="heading">{t('settings.about')}</AppText>
+        <AppText variant="caption">{t('disclaimer.short')}</AppText>
+        <Button label={t('about.title')} variant="secondary" onPress={() => router.push('/about')} testID="settings-about" />
+        <Button
+          label={t('settings.privacy')}
+          variant="ghost"
+          onPress={() => router.push({ pathname: '/legal/[doc]', params: { doc: 'privacy' } })}
+          testID="settings-privacy"
+        />
+        <Button
+          label={t('settings.terms')}
+          variant="ghost"
+          onPress={() => router.push({ pathname: '/legal/[doc]', params: { doc: 'terms' } })}
+          testID="settings-terms"
+        />
+        <AppText variant="caption" tone="textMuted" center testID="settings-version">
           {t('settings.version', { version })}
         </AppText>
       </Card>
+
+      <BottomSheet
+        visible={confirmDelete}
+        onClose={() => setConfirmDelete(false)}
+        title={t('settings.deleteDataTitle')}
+        closeLabel={t('common.cancel')}
+        testID="delete-data-sheet"
+      >
+        <AppText>{t('settings.deleteDataBody')}</AppText>
+        <Button label={t('settings.deleteDataConfirm')} onPress={deleteData} testID="delete-data-confirm" />
+        <Button label={t('common.cancel')} variant="ghost" onPress={() => setConfirmDelete(false)} />
+      </BottomSheet>
     </Screen>
   );
 }

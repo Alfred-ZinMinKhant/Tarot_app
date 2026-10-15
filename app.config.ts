@@ -72,6 +72,13 @@ const config: ExpoConfig = {
       phone: env.CRISIS_HELPLINE_PHONE ?? '',
       url: env.CRISIS_HELPLINE_URL ?? '',
     },
+    // Shown on the Privacy Policy / Terms / About pages. Sections that need a value are hidden
+    // until it is set, so a build without them never shows a blank placeholder.
+    legal: {
+      publisher: env.PUBLISHER_NAME || '',
+      contactEmail: env.SUPPORT_EMAIL || '',
+      effectiveDate: env.LEGAL_EFFECTIVE_DATE || '',
+    },
   },
 };
 

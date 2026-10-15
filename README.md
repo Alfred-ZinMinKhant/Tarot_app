@@ -17,7 +17,7 @@ development build: `npx expo run:android` / `npx expo run:ios`, or `eas build --
 ```bash
 npm run typecheck    # tsc --noEmit
 npm run lint         # ESLint, zero warnings
-npm run validate     # locale + card-data validation (all 78 cards, both languages)
+npm run validate     # locale, card-data and content validation (both languages)
 npm test             # Jest
 npm run ci           # all of the above
 ```
@@ -35,5 +35,10 @@ npm run ci           # all of the above
 - Illustrations: `npm run images -- --download` fetches the public-domain 1909 scans from Wikimedia
   Commons and bundles 300/900 px WebP versions (needs network access to commons.wikimedia.org and
   upload.wikimedia.org). See `docs/ASSETS.md`.
+
+## End-to-end tests
+
+Install [Maestro](https://maestro.mobile.dev), start a development or preview build on an emulator,
+then run `maestro test .maestro`. Manual release checks are in `docs/QA.md`.
 
 See `docs/ARCHITECTURE.md`, `docs/DECISIONS.md` and `docs/glossary-my.md`.

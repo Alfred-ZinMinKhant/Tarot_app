@@ -40,7 +40,12 @@
     "dailyTap": "Tap the card to reveal today's message",
     "dailyReadMore": "Read today's card",
     "recentTitle": "Recent readings",
-    "seeAll": "See all"
+    "seeAll": "See all",
+    "signTitle": "Your weekday sign",
+    "signEmptyTitle": "Find your weekday sign",
+    "signEmptyBody": "In Burmese tradition, the day of the week you were born on has its own animal, planet and direction. Discover yours, just for fun.",
+    "signFind": "Find my sign",
+    "signOpen": "More about my sign"
   },
   "library": {
     "title": "Card Library",
@@ -170,15 +175,34 @@
   },
   "learn": {
     "title": "Learn",
-    "emptyTitle": "Lessons are on their way",
-    "emptyBody": "Short beginner lessons about tarot will appear here."
+    "subtitle": "Short lessons to help you read the cards with confidence.",
+    "progress": "{{done}} of {{total}} lessons finished",
+    "lessonNumber": "Lesson {{n}}",
+    "lessonOf": "Lesson {{n}} of {{total}}",
+    "finished": "Finished",
+    "finish": "Mark as finished",
+    "finishNext": "Finish and go to the next lesson",
+    "next": "Next lesson: {{title}}",
+    "backToList": "Back to all lessons",
+    "finishedToast": "Lesson finished",
+    "allDone": "You've finished every lesson. Lovely work!",
+    "notFound": "This lesson doesn't exist."
   },
   "onboarding": {
     "welcomeTitle": "Welcome to $t(appName)",
     "welcomeBody": "Draw a card, pause, and listen to your own inner voice. $t(appName) works offline, and everything you write stays on your phone.",
     "languageTitle": "Choose your language",
     "languageBody": "You can change this anytime in Settings.",
-    "stepA11y": "Step {{current}} of {{total}}"
+    "stepA11y": "Step {{current}} of {{total}}",
+    "disclaimerTitle": "Before you begin",
+    "aboutTitle": "A little about you",
+    "aboutBody": "Everything here is optional and stays on your phone. You can change it later in Settings.",
+    "nameLabel": "Your first name",
+    "namePlaceholder": "What should we call you?",
+    "signLabel": "The weekday you were born",
+    "signHint": "Used for your Burmese weekday sign on the Home screen.",
+    "reminderLabel": "Daily reminder",
+    "reminderHint": "A gentle morning nudge to see your Card of the Day. You can change the time in Settings."
   },
   "settings": {
     "title": "Settings",
@@ -208,7 +232,28 @@
     "reminderTime": "Reminder time: {{time}}",
     "timeEarlier": "{{n}} minutes earlier",
     "timeLater": "{{n}} minutes later",
-    "permissionDenied": "Notifications are turned off for this app. You can allow them in your phone's settings."
+    "permissionDenied": "Notifications are turned off for this app. You can allow them in your phone's settings.",
+    "profile": "About you",
+    "name": "Name",
+    "nameHint": "Used only to greet you on the Home screen.",
+    "birthSign": "Weekday sign",
+    "birthSignNone": "Not chosen yet",
+    "birthSignOpen": "View or change",
+    "birthSignChoose": "Choose my sign",
+    "sound": "Sound effects",
+    "soundHint": "Soft sounds when shuffling and turning cards.",
+    "data": "Your data",
+    "dataHint": "Your journal and settings are stored only on this phone.",
+    "export": "Export my data",
+    "exportDialog": "Save your data",
+    "exportFailed": "Couldn't export your data. Please try again.",
+    "deleteData": "Delete my data",
+    "deleteDataTitle": "Delete all your data?",
+    "deleteDataBody": "This removes every reading and note, your name, your weekday sign, lesson progress and settings from this phone. It can't be undone. You may want to export your data first.",
+    "deleteDataConfirm": "Delete everything",
+    "deletedData": "Your data has been deleted",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Use"
   },
   "notifications": {
     "title": "Your card for today is ready",
@@ -221,5 +266,50 @@
   "disclaimer": {
     "short": "For entertainment and self-reflection only. Tarot cannot predict the future.",
     "long": "$t(appName) is made for entertainment and personal reflection. The cards do not predict the future and are not a substitute for professional advice about health, money, legal or personal matters. You are always the one who decides what is right for your life."
+  },
+  "sign": {
+    "title": "Weekday signs",
+    "subtitle": "A Burmese tradition, shared for fun and reflection.",
+    "choose": "Choose the weekday you were born",
+    "wednesdayHint": "Born on a Wednesday? Before noon is Wednesday; from noon onwards is Rahu.",
+    "findByDate": "Not sure? Work it out from your birth date",
+    "day": "Day",
+    "month": "Month",
+    "year": "Year",
+    "afternoon": "Born in the afternoon",
+    "afternoonHint": "Only matters for Wednesday births: noon onwards counts as Rahu.",
+    "findButton": "Find my sign",
+    "dateResult": "You were born on a {{weekday}}. Your sign is now selected.",
+    "dateInvalid": "That date doesn't look right. Please check the day, month and year.",
+    "animalPlanet": "{{animal}} · {{planet}}",
+    "yours": "Your sign",
+    "animal": "Animal",
+    "planet": "Planet",
+    "direction": "Direction",
+    "traits": "Traits",
+    "todayMood": "Today's mood",
+    "personality": "Personality",
+    "setMine": "This is my sign",
+    "change": "Change my sign",
+    "saved": "Your sign is saved",
+    "explore": "Explore all eight signs",
+    "compassA11y": "Direction: {{direction}}",
+    "disclaimer": "Weekday signs are a cultural tradition shared for entertainment. They don't describe your health, money or future."
+  },
+  "about": {
+    "title": "About $t(appName)",
+    "body": "$t(appName) is a calm, bilingual tarot companion for English and Burmese readers. Draw a card, read its meaning, and write down what it brings to mind.",
+    "responsibleTitle": "Using $t(appName) kindly",
+    "artTitle": "Card art",
+    "artBody": "The card illustrations are the original Rider–Waite–Smith artwork drawn by Pamela Colman Smith and published in {{year}}. They are in the public domain.",
+    "wordsTitle": "Words",
+    "wordsBody": "All card meanings, lessons and weekday sign texts were written especially for $t(appName), in English and Burmese.",
+    "signsTitle": "Weekday signs",
+    "publisher": "Published by {{publisher}}",
+    "contact": "Contact: {{email}}"
+  },
+  "legal": {
+    "notFound": "This page doesn't exist.",
+    "effective": "Effective from {{date}}"
   }
 }

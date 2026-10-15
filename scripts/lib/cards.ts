@@ -98,7 +98,7 @@ export function validateSources(sources: CardSource[]): string[] {
   return errors;
 }
 
-function checkString(
+export function checkString(
   errors: string[],
   where: string,
   value: unknown,

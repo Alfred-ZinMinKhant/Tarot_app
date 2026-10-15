@@ -2,20 +2,34 @@ import * as Haptics from 'expo-haptics';
 import { useMemo } from 'react';
 import { Platform } from 'react-native';
 
+import { playSound } from '@/services/sound';
 import { useSettings } from '@/store/settings';
 
 const ignore = () => undefined;
 
-/** Haptic feedback that respects Settings → Vibration feedback (and is a no-op on web). */
+/**
+ * Tactile and audio feedback for card actions. Vibration follows Settings → Vibration feedback
+ * (never on web); sound follows Settings → Sound effects (off by default).
+ */
 export function useHaptics() {
-  const enabled = useSettings((s) => s.haptics) && Platform.OS !== 'web';
+  const vibrate = useSettings((s) => s.haptics) && Platform.OS !== 'web';
+  const sound = useSettings((s) => s.soundEnabled);
   return useMemo(
     () => ({
-      select: () => (enabled ? Haptics.selectionAsync().catch(ignore) : undefined),
-      flip: () => (enabled ? Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light).catch(ignore) : undefined),
-      success: () =>
-        enabled ? Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success).catch(ignore) : undefined,
+      select: () => (vibrate ? Haptics.selectionAsync().catch(ignore) : undefined),
+      shuffle: () => {
+        if (sound) playSound('shuffle');
+        if (vibrate) void Haptics.selectionAsync().catch(ignore);
+      },
+      flip: () => {
+        if (sound) playSound('flip');
+        if (vibrate) void Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light).catch(ignore);
+      },
+      success: () => {
+        if (sound) playSound('chime');
+        if (vibrate) void Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success).catch(ignore);
+      },
     }),
-    [enabled],
+    [vibrate, sound],
   );
 }

@@ -1,0 +1,37 @@
+appId: ${APP_ID || 'com.nattarot.app'}
+name: Onboarding in Burmese, with name and weekday sign
+---
+- launchApp:
+    clearState: true
+- assertVisible:
+    id: onboarding-welcome
+- assertVisible:
+    id: onboarding-disclaimer
+# Switch to Burmese: the screen must update instantly.
+- tapOn:
+    id: onboarding-language-my
+- assertVisible: "ဆက်သွားမယ်"
+- tapOn:
+    id: onboarding-next
+- assertVisible:
+    id: onboarding-language-step
+- tapOn:
+    id: onboarding-next
+- assertVisible:
+    id: onboarding-about-you
+- tapOn:
+    id: onboarding-name
+- inputText: "Su Su"
+- hideKeyboard
+- tapOn:
+    id: onboarding-sign-rahu
+- scrollUntilVisible:
+    element:
+      id: onboarding-next
+- tapOn:
+    id: onboarding-next
+- assertVisible:
+    id: screen-home
+- assertVisible: ".*Su Su"
+- assertVisible:
+    id: home-sign

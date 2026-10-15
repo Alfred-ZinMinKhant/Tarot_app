@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { Pressable, StyleSheet, View } from 'react-native';
 
 import { AppText, Card, DailyCardPanel, Header, Icon, Screen } from '@/components';
+import { SignPanel } from '@/components/SignPanel';
 import { SPREADS } from '@/engine';
 import { useLanguage } from '@/hooks/useLanguage';
 import { useNumberFormat } from '@/hooks/useNumberFormat';
@@ -21,15 +22,18 @@ export default function Home() {
   const { colors } = useAppTheme();
   const burmeseNumerals = useSettings((s) => s.burmeseNumerals);
   const recent = useJournal((s) => s.readings).slice(0, 3);
+  const name = useSettings((s) => s.name).trim();
   const now = new Date();
+  const greeting = t(`greeting.${timeOfDay(now)}`);
   return (
     <Screen testID="screen-home">
-      <Header title={t(`greeting.${timeOfDay(now)}`)} subtitle={t('home.subtitle')} />
+      <Header title={name ? t('greeting.withName', { greeting, name }) : greeting} subtitle={t('home.subtitle')} />
       <AppText tone="textMuted" testID="home-date">
         {t('home.todayIs', { date: formatDate(now, language, { style: 'weekday-long', burmeseNumerals }) })}
       </AppText>
 
       <DailyCardPanel />
+      <SignPanel />
 
       <View style={styles.section}>
         <AppText variant="heading" accessibilityRole="header">

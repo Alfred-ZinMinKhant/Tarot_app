@@ -9,3 +9,6 @@ jest.mock('expo-sqlite', () => ({
 
 // expo-notifications needs native code; use an in-memory fake (see test/mocks).
 jest.mock('expo-notifications', () => jest.requireActual('./test/mocks/expoNotifications'));
+
+// expo-audio needs native players; record what would have played instead.
+jest.mock('expo-audio', () => jest.requireActual('./test/mocks/expoAudio'));

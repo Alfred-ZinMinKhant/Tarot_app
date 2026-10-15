@@ -2,6 +2,7 @@ import type { ReactNode } from 'react';
 import { useTranslation } from 'react-i18next';
 import { StyleSheet, View } from 'react-native';
 
+import { useNumberFormat } from '@/hooks/useNumberFormat';
 import { radius, spacing } from '@/theme/spacing';
 import { useAppTheme } from '@/theme/ThemeContext';
 
@@ -24,12 +25,13 @@ type Props = {
 export function OnboardingFrame({ step, total, title, body, children, primaryLabel, onPrimary, onSkip, testID }: Props) {
   const { t } = useTranslation();
   const { colors } = useAppTheme();
+  const fmt = useNumberFormat();
   return (
     <Screen testID={testID} contentStyle={styles.content}>
       <View
         style={styles.dots}
         accessible
-        accessibilityLabel={t('onboarding.stepA11y', { current: step, total })}
+        accessibilityLabel={t('onboarding.stepA11y', { current: fmt(step), total: fmt(total) })}
       >
         {Array.from({ length: total }, (_, i) => (
           <View

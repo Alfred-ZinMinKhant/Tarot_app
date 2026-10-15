@@ -1,0 +1,322 @@
+[
+  {
+    "id": "what-is-tarot",
+    "en": {
+      "title": "What is tarot?",
+      "summary": "A deck of 78 picture cards used as a mirror for reflection.",
+      "sections": [
+        {
+          "heading": "A deck of pictures",
+          "body": "Tarot is a deck of 78 illustrated cards. It began in 15th-century Italy as a card game, and over time people started using the pictures for reflection. This app uses the Rider–Waite–Smith deck, first published in 1909, whose detailed scenes made it the most widely known tarot deck in the world."
+        },
+        {
+          "heading": "A mirror, not a crystal ball",
+          "body": "Tarot cannot predict the future or make decisions for you. Think of each card as a story with many meanings. When you draw a card, you notice which part of that story speaks to your situation. The insight comes from you: from what you notice, remember and feel while looking at the card."
+        },
+        {
+          "heading": "How to use this app",
+          "body": "Use readings as gentle prompts for thinking and journaling. Notice what feels true and leave what doesn't. For important matters such as health, money, law or safety, please talk to people and professionals you trust."
+        }
+      ]
+    },
+    "my": {
+      "title": "Tarot ဆိုတာ ဘာလဲ",
+      "summary": "ဆင်ခြင်ဖို့ မှန်တစ်ချပ်လို အသုံးပြုတဲ့ ပုံကတ် ၇၈ ချပ်ပါ ကတ်ထုပ်တစ်ထုပ်။",
+      "sections": [
+        {
+          "heading": "ပုံတွေပါတဲ့ ကတ်ထုပ်",
+          "body": "Tarot ဆိုတာ ပုံဆွဲထားတဲ့ ကတ် ၇၈ ချပ်ပါ ကတ်ထုပ်တစ်ထုပ်ပါ။ ၁၅ ရာစု အီတလီမှာ ကတ်ဂိမ်းအဖြစ် စတင်ခဲ့ပြီး အချိန်ကြာလာတာနဲ့ လူတွေက ပုံတွေကို ဆင်ခြင်ဖို့ သုံးလာကြပါတယ်။ ဒီအက်ပ်က ၁၉၀၉ ခုနှစ်မှာ ပထမဆုံး ထုတ်ဝေခဲ့တဲ့ Rider–Waite–Smith ကတ်ထုပ်ကို သုံးပါတယ်။ အသေးစိတ်ပါတဲ့ မြင်ကွင်းတွေကြောင့် ကမ္ဘာပေါ်မှာ အကျော်ကြားဆုံး Tarot ကတ်ထုပ် ဖြစ်လာခဲ့ပါတယ်။"
+        },
+        {
+          "heading": "မှန်တစ်ချပ်၊ ပဒမ္မာမဟုတ်",
+          "body": "Tarot က အနာဂတ်ကို ကြိုဟောလို့ မရသလို သင့်အစား ဆုံးဖြတ်ပေးလို့လည်း မရပါဘူး။ ကတ်တစ်ချပ်ချင်းစီကို အဓိပ္ပာယ် အများအပြားပါတဲ့ ပုံပြင်တစ်ပုဒ်လို့ မြင်ကြည့်ပါ။ ကတ်တစ်ချပ် နှိုက်လိုက်တဲ့အခါ အဲဒီပုံပြင်ရဲ့ ဘယ်အပိုင်းက ကိုယ့်အခြေအနေနဲ့ ကိုက်လဲ သတိထားမိပါတယ်။ ထိုးထွင်းအမြင်က သင့်ဆီကနေ လာပါတယ် - ကတ်ကို ကြည့်ရင်း သတိထားမိတာ၊ သတိရတာနဲ့ ခံစားရတာတွေကနေပါ။"
+        },
+        {
+          "heading": "ဒီအက်ပ်ကို ဘယ်လို သုံးမလဲ",
+          "body": "ဟောစာတွေကို တွေးတောဖို့နဲ့ မှတ်တမ်းရေးဖို့ ညင်သာတဲ့ လှုံ့ဆော်ချက်တွေအဖြစ် သုံးပါ။ မှန်တယ်လို့ ခံစားရတာကို သတိထားပြီး မကိုက်တာကို ချန်ထားခဲ့ပါ။ ကျန်းမာရေး၊ ငွေကြေး၊ ဥပဒေ ဒါမှမဟုတ် လုံခြုံရေးလို အရေးကြီးတဲ့ ကိစ္စတွေအတွက် ယုံကြည်ရတဲ့ လူတွေနဲ့ ကျွမ်းကျင်သူတွေနဲ့ တိုင်ပင်ပါ။"
+        }
+      ]
+    }
+  },
+  {
+    "id": "how-a-reading-works",
+    "en": {
+      "title": "How a reading works",
+      "summary": "Shuffling, choosing cards and reading positions in a spread.",
+      "sections": [
+        {
+          "heading": "Settle and ask",
+          "body": "Start by taking a slow breath and choosing what the reading is about. You can pick a topic such as love or work, and add a question if you like. Holding your question in mind while the cards are shuffled helps you notice what is relevant when they are turned over."
+        },
+        {
+          "heading": "Spreads and positions",
+          "body": "A spread is a layout where each place has a meaning. In Past · Present · Future, the first card reflects what has shaped things, the second where you are now, and the third where things may be heading. The same card reads differently depending on its position, which is what gives a spread its story."
+        },
+        {
+          "heading": "Putting it together",
+          "body": "Read each card in its position first, then look at the whole spread. Do the cards share a suit or a mood? Are many reversed? Notice connections, write down your thoughts, and give yourself time. A reading is a conversation with yourself, not a verdict."
+        }
+      ]
+    },
+    "my": {
+      "title": "ဟောစာ ဘယ်လို အလုပ်လုပ်လဲ",
+      "summary": "ကတ်ရောမွှေခြင်း၊ ကတ်ရွေးခြင်းနဲ့ ကတ်ခင်းပုံထဲက နေရာတွေကို ဖတ်ခြင်း။",
+      "sections": [
+        {
+          "heading": "စိတ်ငြိမ်ပြီး မေးပါ",
+          "body": "အသက်ကို ဖြည်းဖြည်း ရှူပြီး ဟောစာက ဘာအကြောင်းလဲ ရွေးချယ်ခြင်းနဲ့ စပါ။ အချစ်ရေး ဒါမှမဟုတ် အလုပ်လို အကြောင်းအရာတစ်ခု ရွေးနိုင်ပြီး လိုချင်ရင် မေးခွန်းတစ်ခု ထည့်နိုင်ပါတယ်။ ကတ်တွေ ရောမွှေနေစဉ် မေးခွန်းကို စိတ်ထဲ ထားထားတာက ကတ်တွေ လှန်လိုက်တဲ့အခါ ဘာက ဆက်စပ်လဲ သတိထားမိစေပါတယ်။"
+        },
+        {
+          "heading": "ကတ်ခင်းပုံနဲ့ နေရာများ",
+          "body": "ကတ်ခင်းပုံဆိုတာ နေရာတစ်ခုချင်းစီမှာ အဓိပ္ပာယ်ရှိတဲ့ ခင်းကျင်းပုံပါ။ အတိတ် · ပစ္စုပ္ပန် · အနာဂတ် မှာ ပထမကတ်က အခြေအနေကို ပုံဖော်ခဲ့တာ၊ ဒုတိယကတ်က အခု ရောက်နေတဲ့နေရာ၊ တတိယကတ်က ဦးတည်သွားနိုင်တဲ့ နေရာကို ထင်ဟပ်ပါတယ်။ ကတ်တစ်ချပ်တည်းကပဲ နေရာပေါ် မူတည်ပြီး အဓိပ္ပာယ် ကွာခြားတာကြောင့် ကတ်ခင်းပုံမှာ ပုံပြင်တစ်ပုဒ် ဖြစ်လာတာပါ။"
+        },
+        {
+          "heading": "ပေါင်းစပ်ကြည့်ခြင်း",
+          "body": "ကတ်တစ်ချပ်ချင်းကို သူ့နေရာမှာ အရင်ဖတ်ပြီးမှ ကတ်ခင်းပုံတစ်ခုလုံးကို ကြည့်ပါ။ ကတ်တွေမှာ ကတ်အုပ်စုတူတာ ဒါမှမဟုတ် စိတ်အခြေအနေတူတာ ရှိလား။ ပြောင်းပြန်ကတ် များနေလား။ ဆက်စပ်မှုတွေကို သတိထားပြီး အတွေးတွေကို ချရေးကာ ကိုယ့်ကိုယ်ကို အချိန်ပေးပါ။ ဟောစာဆိုတာ ကိုယ့်ကိုယ်ကိုယ် စကားပြောခြင်းဖြစ်ပြီး စီရင်ချက် မဟုတ်ပါဘူး။"
+        }
+      ]
+    }
+  },
+  {
+    "id": "asking-good-questions",
+    "en": {
+      "title": "Asking good questions",
+      "summary": "Open, personal questions lead to the most useful readings.",
+      "sections": [
+        {
+          "heading": "Open rather than yes or no",
+          "body": "Questions that begin with “how” or “what” invite reflection. Instead of “Will I get the job?”, try “What can I do to prepare well for this interview?” Instead of “Does he love me?”, try “How can I understand this relationship better?” Open questions give the cards room to offer something useful."
+        },
+        {
+          "heading": "Keep the focus on you",
+          "body": "You can only make choices about your own life, so questions about yourself are the most helpful. Asking what someone else is secretly thinking often leads to guessing. Asking how you can communicate, grow or care for yourself leads to ideas you can actually use."
+        },
+        {
+          "heading": "Questions to leave for people",
+          "body": "Some questions are too important for cards: medical symptoms, legal decisions, large financial risks, or anything involving your safety. For these, please talk with a qualified professional or someone you trust. If you are going through a very painful time, reaching out to a person is always the right step."
+        }
+      ]
+    },
+    "my": {
+      "title": "မေးခွန်းကောင်း မေးနည်း",
+      "summary": "ပွင့်လင်းပြီး ကိုယ်နဲ့ဆိုင်တဲ့ မေးခွန်းတွေက အသုံးဝင်ဆုံး ဟောစာတွေကို ပေးပါတယ်။",
+      "sections": [
+        {
+          "heading": "ဟုတ်/မဟုတ်ထက် ပွင့်လင်းတဲ့ မေးခွန်း",
+          "body": "“ဘယ်လို” “ဘာ” နဲ့ စတဲ့ မေးခွန်းတွေက ဆင်ခြင်မှုကို ဖိတ်ခေါ်ပါတယ်။ “ဒီအလုပ် ရမလား” အစား “ဒီအင်တာဗျူးအတွက် ကောင်းကောင်း ပြင်ဆင်ဖို့ ဘာလုပ်နိုင်လဲ” လို့ မေးကြည့်ပါ။ “သူ ကိုယ့်ကို ချစ်လား” အစား “ဒီဆက်ဆံရေးကို ဘယ်လို ပိုနားလည်နိုင်မလဲ” လို့ မေးကြည့်ပါ။ ပွင့်လင်းတဲ့ မေးခွန်းတွေက ကတ်တွေကို အသုံးဝင်တာ ပေးဖို့ နေရာ ပေးပါတယ်။"
+        },
+        {
+          "heading": "ကိုယ့်အပေါ် အာရုံစိုက်ပါ",
+          "body": "ကိုယ့်ဘဝအတွက်ပဲ ရွေးချယ်မှုတွေ လုပ်နိုင်တာမို့ ကိုယ့်အကြောင်း မေးခွန်းတွေက အထောက်အကူ အဖြစ်ဆုံးပါ။ တခြားသူ လျှို့ဝှက်စွာ ဘာတွေးနေလဲ မေးတာက ခန့်မှန်းမှုဆီ ပို့ဆောင်တတ်ပါတယ်။ ကိုယ် ဘယ်လို ပြောဆိုဆက်ဆံမလဲ၊ ကြီးထွားမလဲ၊ ကိုယ့်ကိုယ်ကို ဂရုစိုက်မလဲ မေးတာက တကယ် အသုံးချနိုင်တဲ့ အကြံတွေဆီ ပို့ဆောင်ပါတယ်။"
+        },
+        {
+          "heading": "လူတွေကို မေးသင့်တဲ့ မေးခွန်းများ",
+          "body": "တချို့ မေးခွန်းတွေက ကတ်တွေအတွက် အရမ်း အရေးကြီးလွန်းပါတယ် - ရောဂါလက္ခဏာ၊ ဥပဒေဆိုင်ရာ ဆုံးဖြတ်ချက်၊ ငွေကြေး အန္တရာယ်ကြီးတွေ ဒါမှမဟုတ် ကိုယ့်လုံခြုံရေးနဲ့ ပတ်သက်တဲ့ ဘာမဆိုပါ။ ဒါတွေအတွက် အရည်အချင်းရှိ ကျွမ်းကျင်သူ ဒါမှမဟုတ် ယုံကြည်ရသူနဲ့ တိုင်ပင်ပါ။ အရမ်း နာကျင်စရာ ကာလကို ဖြတ်သန်းနေရရင် လူတစ်ယောက်ကို ဆက်သွယ်တာက အမြဲ မှန်ကန်တဲ့ ခြေလှမ်းပါ။"
+        }
+      ]
+    }
+  },
+  {
+    "id": "major-and-minor",
+    "en": {
+      "title": "Major and Minor Arcana",
+      "summary": "Big life themes and everyday moments: the two halves of the deck.",
+      "sections": [
+        {
+          "heading": "The Major Arcana",
+          "body": "The 22 Major Arcana cards, numbered 0 to 21, describe big themes and turning points: beginnings, love, change, hope, completion. Many people read them as a journey, starting with The Fool setting out and ending with The World, where a cycle is complete. When several appear together, a reading may be touching something important."
+        },
+        {
+          "heading": "The Minor Arcana",
+          "body": "The 56 Minor Arcana cards describe everyday life. They are divided into four suits of 14 cards: numbers Ace to Ten, plus four court cards. The numbers show how a situation develops, from the fresh start of an Ace to the fullness of a Ten."
+        },
+        {
+          "heading": "Reading them together",
+          "body": "A helpful way to see it: Major cards show the lesson, Minor cards show where it is happening in daily life. A reading with no Major cards is often about ordinary choices that are fully in your hands."
+        }
+      ]
+    },
+    "my": {
+      "title": "အဓိကအာကာနာနဲ့ အသေးစားအာကာနာ",
+      "summary": "ဘဝရဲ့ အကြောင်းအရာကြီးတွေနဲ့ နေ့စဉ် အခိုက်အတန့်တွေ - ကတ်ထုပ်ရဲ့ အပိုင်းနှစ်ပိုင်း။",
+      "sections": [
+        {
+          "heading": "အဓိကအာကာနာ",
+          "body": "၀ ကနေ ၂၁ အထိ နံပါတ်တပ်ထားတဲ့ အဓိကအာကာနာ ကတ် ၂၂ ချပ်က အစ၊ အချစ်၊ ပြောင်းလဲမှု၊ မျှော်လင့်ချက်၊ ပြီးမြောက်ခြင်းလို အကြောင်းအရာကြီးတွေနဲ့ အလှည့်အပြောင်းတွေကို ဖော်ပြပါတယ်။ လူအများက ဒါတွေကို ခရီးတစ်ခုလို ဖတ်ကြပြီး လူအ ထွက်ခွာတာနဲ့ စကာ စက်ဝန်းတစ်ခု ပြီးဆုံးတဲ့ ကမ္ဘာနဲ့ အဆုံးသတ်ပါတယ်။ အများအပြား အတူ ပေါ်လာရင် ဟောစာက အရေးကြီးတဲ့ တစ်ခုခုကို ထိတွေ့နေတာ ဖြစ်နိုင်ပါတယ်။"
+        },
+        {
+          "heading": "အသေးစားအာကာနာ",
+          "body": "အသေးစားအာကာနာ ကတ် ၅၆ ချပ်က နေ့စဉ်ဘဝကို ဖော်ပြပါတယ်။ ကတ် ၁၄ ချပ်စီပါတဲ့ ကတ်အုပ်စု လေးခု ခွဲထားပြီး အေ့စ်ကနေ ဆယ်အထိ နံပါတ်ကတ်တွေနဲ့ မင်းမျိုးကတ် လေးချပ် ပါပါတယ်။ နံပါတ်တွေက အေ့စ်ရဲ့ လတ်ဆတ်တဲ့ အစကနေ ဆယ်ရဲ့ ပြည့်ဝမှုအထိ အခြေအနေတစ်ခု ဘယ်လို ဖွံ့ဖြိုးလာလဲ ပြပါတယ်။"
+        },
+        {
+          "heading": "အတူ ဖတ်ကြည့်ခြင်း",
+          "body": "အထောက်အကူဖြစ်တဲ့ မြင်ပုံတစ်ခုက - အဓိကကတ်တွေက သင်ခန်းစာကို ပြပြီး အသေးစားကတ်တွေက နေ့စဉ်ဘဝရဲ့ ဘယ်နေရာမှာ ဖြစ်နေလဲ ပြပါတယ်။ အဓိကကတ် မပါတဲ့ ဟောစာက ကိုယ့်လက်ထဲမှာ အပြည့်ရှိတဲ့ သာမန် ရွေးချယ်မှုတွေအကြောင်း ဖြစ်တတ်ပါတယ်။"
+        }
+      ]
+    }
+  },
+  {
+    "id": "suits-and-elements",
+    "en": {
+      "title": "The four suits and elements",
+      "summary": "Wands, Cups, Swords and Pentacles, and the elements behind them.",
+      "sections": [
+        {
+          "heading": "Wands: Fire",
+          "body": "Wands are living branches. They speak of energy, passion, creativity and action: the spark that gets things started. When Wands appear, ask what excites you and where you want to put your energy."
+        },
+        {
+          "heading": "Cups: Water",
+          "body": "Cups hold feelings. They speak of love, friendship, intuition and emotional life. When Cups appear, ask how you feel, and how you are caring for your heart and the hearts of others."
+        },
+        {
+          "heading": "Swords: Air",
+          "body": "Swords cut through to the truth. They speak of thoughts, words, decisions and sometimes conflict or worry. When Swords appear, ask what you believe, what you need to say, and whether your thoughts are being kind to you."
+        },
+        {
+          "heading": "Pentacles: Earth",
+          "body": "Pentacles are coins carved with a star. They speak of work, money, the body, home and practical steps. When Pentacles appear, ask what you are building and what would help you feel steady and secure."
+        }
+      ]
+    },
+    "my": {
+      "title": "ကတ်အုပ်စု လေးခုနဲ့ ဓာတ်များ",
+      "summary": "တုတ်၊ ခွက်၊ ဓားနဲ့ ဒင်္ဂါး၊ နောက်ကွယ်က ဓာတ်တွေ။",
+      "sections": [
+        {
+          "heading": "တုတ် - မီး",
+          "body": "တုတ်တွေက အသက်ရှင်တဲ့ သစ်ကိုင်းတွေပါ။ စွမ်းအင်၊ စိတ်အားထက်သန်မှု၊ ဖန်တီးမှုနဲ့ လုပ်ဆောင်မှုအကြောင်း ပြောပါတယ် - အရာတွေကို စတင်စေတဲ့ မီးပွားပါ။ တုတ်ကတ်တွေ ပေါ်လာရင် ဘာက ကိုယ့်ကို စိတ်လှုပ်ရှားစေလဲ၊ စွမ်းအင်ကို ဘယ်မှာ ထည့်ချင်လဲ မေးကြည့်ပါ။"
+        },
+        {
+          "heading": "ခွက် - ရေ",
+          "body": "ခွက်တွေက ခံစားချက်တွေကို ထည့်ထားပါတယ်။ အချစ်၊ ခင်မင်မှု၊ အလိုလိုသိစိတ်နဲ့ စိတ်ခံစားမှုဘဝအကြောင်း ပြောပါတယ်။ ခွက်ကတ်တွေ ပေါ်လာရင် ဘယ်လို ခံစားရလဲ၊ ကိုယ့်နှလုံးသားနဲ့ တခြားသူတွေရဲ့ နှလုံးသားကို ဘယ်လို ဂရုစိုက်နေလဲ မေးကြည့်ပါ။"
+        },
+        {
+          "heading": "ဓား - လေ",
+          "body": "ဓားတွေက အမှန်တရားဆီ ဖြတ်သန်းပါတယ်။ အတွေး၊ စကား၊ ဆုံးဖြတ်ချက်နဲ့ တခါတလေ ပဋိပက္ခ ဒါမှမဟုတ် စိုးရိမ်မှုအကြောင်း ပြောပါတယ်။ ဓားကတ်တွေ ပေါ်လာရင် ဘာကို ယုံကြည်လဲ၊ ဘာပြောဖို့ လိုလဲ၊ ကိုယ့်အတွေးတွေက ကိုယ့်ကို ကြင်နာနေလား မေးကြည့်ပါ။"
+        },
+        {
+          "heading": "ဒင်္ဂါး - မြေ",
+          "body": "ဒင်္ဂါးတွေက ကြယ်ပုံ ထွင်းထားတဲ့ အကြွေစေ့တွေပါ။ အလုပ်၊ ငွေကြေး၊ ခန္ဓာကိုယ်၊ အိမ်နဲ့ လက်တွေ့ခြေလှမ်းတွေအကြောင်း ပြောပါတယ်။ ဒင်္ဂါးကတ်တွေ ပေါ်လာရင် ဘာကို တည်ဆောက်နေလဲ၊ ဘာက တည်ငြိမ်လုံခြုံသလို ခံစားစေမလဲ မေးကြည့်ပါ။"
+        }
+      ]
+    }
+  },
+  {
+    "id": "reversed-cards",
+    "en": {
+      "title": "Reading reversed cards",
+      "summary": "Upside-down cards add nuance; they are not simply bad news.",
+      "sections": [
+        {
+          "heading": "What reversal means",
+          "body": "When a card appears upside down, it is called reversed. A reversed card is not a warning or a curse. It usually shows the same theme in a different way: blocked, slowed down, turned inward, or still developing. The Sun reversed, for example, may be joy that is there but partly hidden behind tiredness."
+        },
+        {
+          "heading": "Three gentle ways to read them",
+          "body": "Ask whether the energy is blocked (something is in the way), internal (it is happening inside you rather than outside), or just beginning or ending. One of these usually feels closest to your situation. Trust that feeling."
+        },
+        {
+          "heading": "Your choice",
+          "body": "Some readers prefer not to use reversals at all. You can turn them off in Settings at any time, and every card will appear upright. Both ways are valid."
+        }
+      ]
+    },
+    "my": {
+      "title": "ပြောင်းပြန်ကတ်တွေကို ဖတ်ခြင်း",
+      "summary": "ဇောက်ထိုးကတ်တွေက အဓိပ္ပာယ်ကို ပိုနက်ရှိုင်းစေပါတယ်၊ သတင်းဆိုး သက်သက် မဟုတ်ပါဘူး။",
+      "sections": [
+        {
+          "heading": "ပြောင်းပြန်ဆိုတာ ဘာလဲ",
+          "body": "ကတ်တစ်ချပ် ဇောက်ထိုး ပေါ်လာရင် ပြောင်းပြန်လို့ ခေါ်ပါတယ်။ ပြောင်းပြန်ကတ်ဟာ သတိပေးချက် ဒါမှမဟုတ် ကျိန်စာ မဟုတ်ပါဘူး။ များသောအားဖြင့် အကြောင်းအရာ တစ်ခုတည်းကို တခြားနည်းနဲ့ ပြတာပါ - ပိတ်ဆို့နေတာ၊ နှေးကွေးနေတာ၊ အတွင်းဘက် လှည့်နေတာ ဒါမှမဟုတ် ဖွံ့ဖြိုးဆဲ ဖြစ်တာပါ။ ဥပမာ နေကတ် ပြောင်းပြန်က ပျော်ရွှင်မှု ရှိနေပေမဲ့ ပင်ပန်းမှုနောက်မှာ တစ်စိတ်တစ်ပိုင်း ပုန်းနေတာ ဖြစ်နိုင်ပါတယ်။"
+        },
+        {
+          "heading": "ညင်သာတဲ့ ဖတ်နည်း သုံးမျိုး",
+          "body": "စွမ်းအင်က ပိတ်ဆို့နေလား (တစ်ခုခု ကြားခံနေလား)၊ အတွင်းပိုင်းလား (အပြင်မှာထက် ကိုယ့်အတွင်းမှာ ဖြစ်နေလား) ဒါမှမဟုတ် စတင်ကာစ ဒါမှမဟုတ် ပြီးဆုံးခါနီးလား မေးကြည့်ပါ။ ဒီထဲက တစ်ခုက ကိုယ့်အခြေအနေနဲ့ အနီးစပ်ဆုံး ခံစားရတတ်ပါတယ်။ အဲဒီခံစားချက်ကို ယုံပါ။"
+        },
+        {
+          "heading": "သင့်ရွေးချယ်မှု",
+          "body": "တချို့ ဖတ်သူတွေက ပြောင်းပြန်ကတ်တွေကို လုံးဝ မသုံးချင်ကြပါဘူး။ ဆက်တင်ထဲမှာ ဘယ်အချိန်မဆို ပိတ်နိုင်ပြီး ကတ်တိုင်း အတည့်ပဲ ပေါ်လာပါမယ်။ နှစ်မျိုးလုံး မှန်ကန်ပါတယ်။"
+        }
+      ]
+    }
+  },
+  {
+    "id": "court-cards",
+    "en": {
+      "title": "Court cards",
+      "summary": "Pages, Knights, Queens and Kings as people, roles and energies.",
+      "sections": [
+        {
+          "heading": "Four ranks",
+          "body": "Each suit has four court cards. Pages are learners: curious, fresh and open. Knights are movers: energetic and focused on a goal. Queens are nurturers: they understand their suit from the inside. Kings are leaders: they use their suit's gifts with experience and responsibility."
+        },
+        {
+          "heading": "People or qualities",
+          "body": "A court card can stand for a person in your life, for a role you are playing, or for a quality you are being invited to use. The Queen of Cups might be a caring friend, or a reminder to treat your own feelings with that same compassion."
+        },
+        {
+          "heading": "Not about age or gender",
+          "body": "Anyone can be a Page or a King. The titles describe ways of acting, not who someone is. Notice which court card feels like you today; it may change tomorrow."
+        }
+      ]
+    },
+    "my": {
+      "title": "မင်းမျိုးကတ်များ",
+      "summary": "စာတော်ပြန်၊ မြင်းစီးသူရဲ၊ ဘုရင်မနဲ့ ဘုရင်တွေက လူတွေ၊ အခန်းကဏ္ဍတွေနဲ့ စွမ်းအင်တွေ။",
+      "sections": [
+        {
+          "heading": "အဆင့် လေးဆင့်",
+          "body": "ကတ်အုပ်စုတိုင်းမှာ မင်းမျိုးကတ် လေးချပ်စီ ရှိပါတယ်။ စာတော်ပြန်တွေက သင်ယူသူတွေပါ - စူးစမ်းချင်ပြီး လတ်ဆတ်၊ ပွင့်လင်းပါတယ်။ မြင်းစီးသူရဲတွေက ရွေ့လျားသူတွေပါ - စွမ်းအင်ပြည့်ပြီး ပန်းတိုင်ကို အာရုံစိုက်ပါတယ်။ ဘုရင်မတွေက ပြုစုစောင့်ရှောက်သူတွေပါ - ကိုယ့်ကတ်အုပ်စုကို အတွင်းကနေ နားလည်ပါတယ်။ ဘုရင်တွေက ခေါင်းဆောင်တွေပါ - ကိုယ့်ကတ်အုပ်စုရဲ့ ဆုလာဘ်တွေကို အတွေ့အကြုံနဲ့ တာဝန်ယူမှုနဲ့ သုံးပါတယ်။"
+        },
+        {
+          "heading": "လူတွေ ဒါမှမဟုတ် အရည်အသွေးတွေ",
+          "body": "မင်းမျိုးကတ်တစ်ချပ်က ကိုယ့်ဘဝထဲက လူတစ်ယောက်၊ ကိုယ်ထမ်းဆောင်နေတဲ့ အခန်းကဏ္ဍ ဒါမှမဟုတ် သုံးဖို့ ဖိတ်ခေါ်ခံနေရတဲ့ အရည်အသွေးကို ကိုယ်စားပြုနိုင်ပါတယ်။ ခွက် ဘုရင်မက ဂရုစိုက်တတ်တဲ့ မိတ်ဆွေတစ်ယောက် ဖြစ်နိုင်သလို ကိုယ့်ခံစားချက်တွေကိုလည်း အဲဒီလို ကရုဏာနဲ့ ဆက်ဆံဖို့ သတိပေးချက်လည်း ဖြစ်နိုင်ပါတယ်။"
+        },
+        {
+          "heading": "အသက် ဒါမှမဟုတ် ကျား/မ နဲ့ မဆိုင်ပါ",
+          "body": "ဘယ်သူမဆို စာတော်ပြန် ဒါမှမဟုတ် ဘုရင် ဖြစ်နိုင်ပါတယ်။ ဘွဲ့အမည်တွေက ပြုမူပုံတွေကို ဖော်ပြတာဖြစ်ပြီး တစ်ယောက်ယောက် ဘယ်သူလဲဆိုတာကို မဟုတ်ပါဘူး။ ဒီနေ့ ဘယ်မင်းမျိုးကတ်က ကိုယ်နဲ့ တူလဲ သတိထားကြည့်ပါ၊ မနက်ဖြန် ပြောင်းသွားနိုင်ပါတယ်။"
+        }
+      ]
+    }
+  },
+  {
+    "id": "using-tarot-kindly",
+    "en": {
+      "title": "Using tarot kindly",
+      "summary": "Healthy habits for reflection, and when to reach out to people instead.",
+      "sections": [
+        {
+          "heading": "One question, then pause",
+          "body": "Drawing card after card on the same question rarely brings clarity; it usually reflects worry. If a reading feels unclear, write down what you noticed and come back another day. Often the meaning becomes clearer after some rest."
+        },
+        {
+          "heading": "Kindness to yourself",
+          "body": "Cards like Death, The Tower or Ten of Swords can look frightening, but they are about change and release, not literal events. Read every card with the same kindness you would offer a friend. You always keep the right to choose your own path."
+        },
+        {
+          "heading": "When to talk to someone",
+          "body": "Tarot is for entertainment and self-reflection. It is never a replacement for medical, legal, financial or psychological advice. If you are struggling, especially if you have thoughts of harming yourself, please contact someone you trust or a local professional or emergency service right away. You deserve real support."
+        }
+      ]
+    },
+    "my": {
+      "title": "Tarot ကို ကြင်နာစွာ သုံးခြင်း",
+      "summary": "ဆင်ခြင်ဖို့ ကျန်းမာတဲ့ အလေ့အကျင့်တွေနဲ့ လူတွေကို ဘယ်အချိန် ဆက်သွယ်သင့်လဲ။",
+      "sections": [
+        {
+          "heading": "မေးခွန်းတစ်ခု၊ ပြီးရင် ခဏရပ်ပါ",
+          "body": "မေးခွန်းတစ်ခုတည်းအတွက် ကတ်တွေကို ထပ်ခါထပ်ခါ နှိုက်တာက ရှင်းလင်းမှု ရှားရှားပါးပါးသာ ပေးပြီး များသောအားဖြင့် စိုးရိမ်မှုကို ထင်ဟပ်ပါတယ်။ ဟောစာတစ်ခု မရှင်းလင်းဘူးလို့ ခံစားရရင် သတိထားမိတာကို ချရေးထားပြီး တခြားနေ့မှ ပြန်လာပါ။ အနားယူပြီးနောက် အဓိပ္ပာယ်က ပိုရှင်းလာတတ်ပါတယ်။"
+        },
+        {
+          "heading": "ကိုယ့်ကိုယ်ကို ကြင်နာပါ",
+          "body": "သေခြင်း၊ မျှော်စင် ဒါမှမဟုတ် ဓား ဆယ်လက်လို ကတ်တွေက ကြောက်စရာ ထင်ရနိုင်ပေမဲ့ တကယ့်ဖြစ်ရပ်တွေ မဟုတ်ဘဲ ပြောင်းလဲမှုနဲ့ လွှတ်ချခြင်းအကြောင်းပါ။ မိတ်ဆွေတစ်ယောက်ကို ပေးမယ့် ကြင်နာမှုမျိုးနဲ့ ကတ်တိုင်းကို ဖတ်ပါ။ ကိုယ့်လမ်းကိုယ် ရွေးချယ်ခွင့် အမြဲ ရှိပါတယ်။"
+        },
+        {
+          "heading": "ဘယ်အချိန် တစ်ယောက်ယောက်နဲ့ ပြောသင့်လဲ",
+          "body": "Tarot က ဖျော်ဖြေရေးနဲ့ ကိုယ့်ကိုယ်ကို ဆင်ခြင်ဖို့အတွက်ပါ။ ဆေး၊ ဥပဒေ၊ ငွေကြေး ဒါမှမဟုတ် စိတ်ပိုင်းဆိုင်ရာ အကြံဉာဏ်အစား ဘယ်တော့မှ အစားထိုးလို့ မရပါဘူး။ ရုန်းကန်နေရရင်၊ အထူးသဖြင့် ကိုယ့်ကိုယ်ကို ထိခိုက်ဖို့ အတွေးတွေ ရှိရင် ယုံကြည်ရသူ ဒါမှမဟုတ် ဒေသခံ ကျွမ်းကျင်သူ ဒါမှမဟုတ် အရေးပေါ် ဝန်ဆောင်မှုကို ချက်ချင်း ဆက်သွယ်ပါ။ သင် တကယ့် အကူအညီ ရထိုက်ပါတယ်။"
+        }
+      ]
+    }
+  }
+]

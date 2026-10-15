@@ -1,7 +1,7 @@
 import { router } from 'expo-router';
 import { useTranslation } from 'react-i18next';
 
-import { LanguageSwitch } from '@/components';
+import { AppText, Card, LanguageSwitch } from '@/components';
 import { OnboardingFrame } from '@/components/OnboardingFrame';
 import { useSettings } from '@/store/settings';
 
@@ -12,7 +12,7 @@ export default function Welcome() {
     <OnboardingFrame
       testID="onboarding-welcome"
       step={1}
-      total={2}
+      total={3}
       title={t('onboarding.welcomeTitle')}
       body={t('onboarding.welcomeBody')}
       primaryLabel={t('common.continue')}
@@ -23,6 +23,12 @@ export default function Welcome() {
       }}
     >
       <LanguageSwitch testID="onboarding-language" />
+      <Card testID="onboarding-disclaimer">
+        <AppText variant="label" bold>
+          {t('onboarding.disclaimerTitle')}
+        </AppText>
+        <AppText variant="caption">{t('disclaimer.long')}</AppText>
+      </Card>
     </OnboardingFrame>
   );
 }

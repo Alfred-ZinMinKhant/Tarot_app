@@ -121,7 +121,7 @@ describe('card of the day', () => {
     expect(await screen.findByTestId('daily-name')).toHaveTextContent(card.en.name);
 
     // Restart: the stored draw is loaded again.
-    useDaily.setState({ dateKey: null, draw: null });
+    act(() => useDaily.setState({ dateKey: null, draw: null }));
     await act(() => useDaily.getState().load());
     expect(useDaily.getState().draw).toMatchObject({ cardId: expected.cardId, reversed: expected.reversed });
 

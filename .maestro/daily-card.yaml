@@ -1,0 +1,27 @@
+appId: ${APP_ID || 'com.nattarot.app'}
+name: Card of the Day stays the same after a restart
+---
+- launchApp:
+    clearState: true
+- tapOn:
+    id: onboarding-skip
+- assertVisible:
+    id: daily-panel
+- tapOn:
+    id: daily-card
+- assertVisible:
+    id: daily-name
+- copyTextFrom:
+    id: daily-name
+- stopApp
+- launchApp
+- assertVisible:
+    id: daily-name
+- assertVisible: ${maestro.copiedText}
+- tapOn:
+    id: daily-read-more
+- assertVisible:
+    id: screen-daily
+- tapOn:
+    id: daily-save
+- assertVisible: "Saved to your journal"

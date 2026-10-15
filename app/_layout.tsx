@@ -91,6 +91,10 @@ function Navigation() {
         <Stack.Screen name="reading/[spreadId]" />
         <Stack.Screen name="journal/[id]" />
         <Stack.Screen name="daily" />
+        <Stack.Screen name="sign" />
+        <Stack.Screen name="learn/[id]" />
+        <Stack.Screen name="about" />
+        <Stack.Screen name="legal/[doc]" />
       </Stack>
     </ThemeProvider>
   );

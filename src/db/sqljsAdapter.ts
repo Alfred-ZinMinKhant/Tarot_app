@@ -46,10 +46,12 @@ export function sqlJsDb(db: Database): Db {
   };
 }
 
-/** Opens a fresh in-memory SQLite database (pure-JS build, no WebAssembly needed). */
+let sqlModule: ReturnType<typeof import('sql.js').default> | undefined;
+
+/** Opens a fresh in-memory SQLite database (WebAssembly build with the binary inlined). */
 export async function openSqlJsDatabase(): Promise<Db> {
   // eslint-disable-next-line @typescript-eslint/no-require-imports
-  const initSqlJs = require('sql.js/dist/sql-asm.js') as typeof import('sql.js').default;
-  const SQL = await initSqlJs();
+  const initSqlJs = require('sql.js/dist/sql-wasm-inline.js') as typeof import('sql.js').default;
+  const SQL = await (sqlModule ??= initSqlJs());
   return sqlJsDb(new SQL.Database());
 }

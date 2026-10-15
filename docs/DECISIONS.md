@@ -133,4 +133,38 @@ Ambiguous choices made while building, with the simplest option chosen. Change a
     available, a toast explains it.
 41. **UUIDs come from `expo-crypto` random bytes** (`src/utils/id.ts`), because `randomUUID` is not
     implemented in the Jest environment.
+42. **Eight weekday signs, Wednesday split at noon.** People born on a Wednesday before noon get
+    Wednesday (tusked elephant). From noon onwards they get Rahu (tuskless elephant). The
+    birth-date finder asks about the afternoon with a separate switch, because many people don't
+    know their exact birth time. Each sign keeps its traditional animal, planet and direction.
+    The compass is drawn as plain geometry, and there are no pagoda, Buddha or other sacred
+    images. Mood lines are playful and reflective. `check:content` rejects health or money
+    wording in them.
+43. **Lesson progress is a list of finished lesson ids** stored in settings. A lesson counts as
+    finished when the user taps the finish button, not when they open it, so the count shows
+    lessons actually read.
+44. **Sound is off by default.** Tarot is often used in quiet moments and in public. The three
+    effects are synthesised by `scripts/render-sounds.ts`, so the app has no third-party audio
+    licences. On iOS they respect the silent switch and mix with other audio.
+45. **Export is a JSON file shared through the system share sheet**, so the user chooses where it
+    goes (Files, Drive, email…). The file has no device seed, because that value only
+    personalises the daily card. Deleted readings are not included.
+46. **Delete my data is total and local.** It removes every row, cancels reminders and resets
+    every setting, including the seed, so a fresh Card of the Day sequence starts. It then
+    returns to onboarding. Cloud data (Phase 6) has its own delete control.
+47. **Legal texts are templates with configured variables.** `data/legal.json` (en + my) uses
+    `{appName}`, `{publisher}` and `{contactEmail}`. A section that needs a value that isn't set
+    in `.env` (`PUBLISHER_NAME`, `SUPPORT_EMAIL`) is hidden instead of showing a placeholder. The
+    effective date (`LEGAL_EFFECTIVE_DATE`) appears only when set. These are templates, not legal
+    advice. Have them reviewed before publishing.
+48. **Onboarding step 3 only saves on "Get started".** Skipping discards the name, sign and
+    reminder choice made on that screen. The reminder switch asks for notification permission
+    when turned on and stays off if permission is refused.
+49. **Burmese-safe inputs** (`TextField`) turn off autocorrect and spell-check, which break up
+    Myanmar syllables on several keyboards. They use the Myanmar font whenever the text contains
+    Myanmar script and keep the 1.8× line height. Numeric fields also accept Burmese digits
+    (၀–၉).
+50. **Content review list.** Lessons, weekday-sign texts and legal texts were written by AI in both
+    languages and are listed in `data/content.review.json` for a native-speaker review, like the
+    card and UI strings.
 

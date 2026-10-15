@@ -130,7 +130,7 @@ export default function Reading() {
     setPicks([]);
     setRevealed(Array.from({ length: count }, () => false));
     setPhase('shuffling');
-    haptics.select();
+    haptics.shuffle();
     later(finishShuffle, reduceMotion ? 0 : SHUFFLE_MS);
   };
 

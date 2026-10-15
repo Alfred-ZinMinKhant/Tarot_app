@@ -3,6 +3,7 @@ import { uuidV4 } from '@/utils/id';
 import { create } from 'zustand';
 import { createJSONStorage, persist } from 'zustand/middleware';
 
+import type { SignId } from '@/data/content';
 import type { Language } from '@/i18n/languages';
 import type { FontSizeSetting, MyanmarFont } from '@/theme/typography';
 
@@ -23,6 +24,14 @@ export type SettingsState = {
   reminderHour: number;
   reminderMinute: number;
   hasOnboarded: boolean;
+  /** Optional first name for the greeting (stays on the device). */
+  name: string;
+  /** Burmese weekday sign chosen in onboarding or on the sign screen. */
+  birthSign: SignId | null;
+  /** Soft sound effects for shuffling and card flips. Off by default. */
+  soundEnabled: boolean;
+  /** Ids of finished Learn lessons. */
+  lessonsRead: string[];
   /**
    * Private random seed created once on this device; makes the Card of the Day personal but stable
    * for the whole day. Never leaves the device.
@@ -38,9 +47,15 @@ export type SettingsState = {
   setReminderEnabled: (enabled: boolean) => void;
   setReminderTime: (hour: number, minute: number) => void;
   /** Returns the device seed, creating it on first use. */
+  setName: (name: string) => void;
+  setBirthSign: (sign: SignId | null) => void;
+  setSoundEnabled: (enabled: boolean) => void;
+  markLessonRead: (id: string) => void;
   ensureDeviceSeed: () => string;
   completeOnboarding: () => void;
   reset: () => void;
+  /** Delete my data: back to first-run defaults, including a fresh device seed. */
+  wipe: () => void;
 };
 
 export const DEFAULT_SETTINGS = {
@@ -55,6 +70,10 @@ export const DEFAULT_SETTINGS = {
   reminderHour: 8,
   reminderMinute: 0,
   hasOnboarded: false,
+  name: '',
+  birthSign: null as SignId | null,
+  soundEnabled: false,
+  lessonsRead: [] as string[],
   deviceSeed: null as string | null,
 } satisfies Partial<SettingsState>;
 
@@ -74,6 +93,13 @@ export const useSettings = create<SettingsState>()(
         const total = (((hour * 60 + minute) % 1440) + 1440) % 1440;
         set({ reminderHour: Math.floor(total / 60), reminderMinute: total % 60 });
       },
+      setName: (name) => set({ name: name.slice(0, 40) }),
+      setBirthSign: (birthSign) => set({ birthSign }),
+      setSoundEnabled: (soundEnabled) => set({ soundEnabled }),
+      markLessonRead: (id) => {
+        const read = get().lessonsRead;
+        if (!read.includes(id)) set({ lessonsRead: [...read, id] });
+      },
       ensureDeviceSeed: () => {
         const existing = get().deviceSeed;
         if (existing) return existing;
@@ -84,6 +110,7 @@ export const useSettings = create<SettingsState>()(
       completeOnboarding: () => set({ hasOnboarded: true }),
       // Keeps the device seed so the Card of the Day doesn't change after a settings reset.
       reset: () => set({ ...DEFAULT_SETTINGS, deviceSeed: get().deviceSeed }),
+      wipe: () => set({ ...DEFAULT_SETTINGS }),
     }),
     {
       name: 'nat-tarot.settings',
@@ -101,6 +128,10 @@ export const useSettings = create<SettingsState>()(
         reminderHour: s.reminderHour,
         reminderMinute: s.reminderMinute,
         hasOnboarded: s.hasOnboarded,
+        name: s.name,
+        birthSign: s.birthSign,
+        soundEnabled: s.soundEnabled,
+        lessonsRead: s.lessonsRead,
         deviceSeed: s.deviceSeed,
       }),
     },

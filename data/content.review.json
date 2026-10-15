@@ -1,0 +1,25 @@
+{
+  "_note": "Burmese text in lessons, weekday signs, legal pages and spreads was written by AI and needs a native-speaker review. Move an entry to \"reviewed\" once checked.",
+  "pending": [
+    "lessons/what-is-tarot",
+    "lessons/how-a-reading-works",
+    "lessons/asking-good-questions",
+    "lessons/major-and-minor",
+    "lessons/suits-and-elements",
+    "lessons/reversed-cards",
+    "lessons/court-cards",
+    "lessons/using-tarot-kindly",
+    "weekday-signs/sunday",
+    "weekday-signs/monday",
+    "weekday-signs/tuesday",
+    "weekday-signs/wednesday",
+    "weekday-signs/rahu",
+    "weekday-signs/thursday",
+    "weekday-signs/friday",
+    "weekday-signs/saturday",
+    "legal/privacy",
+    "legal/terms",
+    "spreads/all"
+  ],
+  "reviewed": []
+}
