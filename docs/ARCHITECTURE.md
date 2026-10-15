@@ -1,6 +1,6 @@
 # Architecture
 
-_Last updated: Phase 1 (scaffold, theme, i18n, fonts, navigation shell)._
+_Last updated: Phase 2 (card data, validation, library, card art)._
 
 ## Stack
 
@@ -22,9 +22,12 @@ app/                     expo-router routes (screens only)
   _layout.tsx            root: font loading, settings hydration, i18n, theme, Stack
   index.tsx              redirect → onboarding or /home
   (onboarding)/          welcome, language
-  (tabs)/                home, library, journal, learn, settings
+  (tabs)/                home, library (FlashList grid + filters + search), journal, learn, settings
+  card/[id].tsx          card detail: all meanings, upright/reversed toggle
 src/
   components/            design-system primitives (AppText, Button, Card, Chip, …)
+  components/art/        CardBack (original SVG), CardFace, SuitGlyph
+  data/                  deck table, types, card access/search, generated image map
   config/brand.json      app name (en + my) and store identifiers — single source of truth
   hooks/                 useLanguage, useAppFonts, useSettingsHydrated
   i18n/                  i18next instance, language helpers, typed keys
@@ -32,7 +35,9 @@ src/
   theme/                 colors, typography, spacing, ThemeContext
   utils/                 myanmar (syllable breaking), numbers, dates
 locales/                 en.json, my.json, my.review.json
-scripts/                 check-i18n.ts (+ lib/ shared with tests)
+data/                    cards.json (generated), cards/*.json (sources), cards.review.json
+scripts/                 check-i18n, build-cards, validate-cards, optimize-images, render-card-back
+                         (+ lib/ shared with tests)
 docs/                    this file, DECISIONS, glossary, assets
 __tests__/               Jest suites
 ```
@@ -79,6 +84,30 @@ Utilities (all Intl-free so output is identical on Hermes without ICU locale dat
 - `formatNumber` (Latin / Burmese digits) — `src/utils/numbers.ts`
 - `formatDate`, `formatTime`, `timeOfDay`, `localDateKey` — `src/utils/dates.ts`
 
+## Card data
+
+```
+src/data/deck.ts      structural table: 78 ids, arcana, suit, number, element, astrology (en/my),
+                      Wikimedia Commons file name
+data/cards/*.json     hand-written text per card, en + my: name, 3–5 keywords, upright, reversed,
+                      love/career/money/health × upright/reversed, daily advice
+        │  npm run build:cards  (scripts/build-cards.ts → scripts/lib/cards.ts)
+        ▼
+data/cards.json       generated; imported by src/data/cards.ts (CARDS, getCard, searchCards)
+data/cards.review.json  Burmese native-speaker review status per card
+```
+
+`scripts/lib/cards.ts` validates every field in both languages: presence, length (English words /
+Burmese syllables), keyword count, no zero-width spaces, no Zawgyi-looking text, no certainty
+phrases ("guaranteed", "you will die", "သေချာပေါက်" …), unique names, canonical order. It also
+checks that `cards.json` matches its sources and that every card is in the review file. The same
+functions run in Jest.
+
+Illustrations: `scripts/optimize-images.ts` turns the 1909 scans in `assets/cards/source/` (not
+committed) into `assets/cards/{thumb,full}/<id>.webp` and writes `src/data/cardImages.ts`.
+`CardFace` uses the image when the map has one, and otherwise draws the typographic face. The card
+back is SVG generated in code (`src/components/art/cardBackSvg.ts`), rendered with `SvgXml`.
+
 ## Theming
 
 `AppThemeProvider` combines the system colour scheme with `settings.themeMode`, the S/M/L font size
@@ -91,6 +120,9 @@ asserts WCAG AA (≥ 4.5:1) for every text/background pair in both themes. Minim
 | --- | --- |
 | `npm run typecheck` | `tsc --noEmit` |
 | `npm run lint` | `expo lint` (ESLint 9 flat config), zero warnings allowed |
-| `npm run validate` | locale checks (card-data validation joins in Phase 2) |
-| `npm test` | Jest: utils, locale parity, contrast, and full-router integration tests |
+| `npm run validate` | locale checks + card-data validation (`check:i18n`, `check:cards`) |
+| `npm run build:cards` | regenerate `data/cards.json` from `data/cards/*.json` + `src/data/deck.ts` |
+| `npm run images` | resize card scans to 300/900 px WebP and regenerate `src/data/cardImages.ts` |
+| `npm run render:card-back` | export the card-back art to `assets/images/card-back.{svg,png}` |
+| `npm test` | Jest: utils, locale parity, contrast, card data + validator, search, full-router integration tests |
 | `npm run ci` | all of the above; also run by `.github/workflows/ci.yml` |

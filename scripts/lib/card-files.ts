@@ -7,6 +7,7 @@ import type { CardSource } from '../../src/data/types';
 export const ROOT = join(__dirname, '..', '..');
 export const SOURCES_DIR = join(ROOT, 'data', 'cards');
 export const CARDS_JSON = join(ROOT, 'data', 'cards.json');
+export const REVIEW_JSON = join(ROOT, 'data', 'cards.review.json');
 
 export function readSources(): CardSource[] {
   return readdirSync(SOURCES_DIR)

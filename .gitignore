@@ -42,3 +42,6 @@ yarn-error.*
 
 # env
 .env
+
+# Original card scans (large); only the optimised WebP files are committed
+assets/cards/source/

@@ -58,3 +58,48 @@ by a native speaker.** Edit the "Chosen" column and the locale/card files will b
 - Conversational register (တယ်/ပါတယ်), not formal literary style (သည်/ပါသည်), except in legal text.
 - Myanmar Unicode only; never Zawgyi. Don't type zero-width spaces — wrapping is handled in code.
 - Readings are phrased as possibilities and reflections, never as certainties.
+
+## Card names
+
+Pip cards use the natural counter for each suit:
+
+| Suit | Counter | Example |
+| --- | --- | --- |
+| Wands (တုတ်) | ချောင်း | တုတ် သုံးချောင်း (Three of Wands) |
+| Cups (ခွက်) | လုံး | ခွက် သုံးလုံး |
+| Swords (ဓား) | လက် | ဓား သုံးလက် |
+| Pentacles (ဒင်္ဂါး) | ပြား | ဒင်္ဂါး သုံးပြား |
+
+Aces are "<suit> အေ့စ်", and court cards are "<suit> <rank>", e.g. "ခွက် ဘုရင်မ".
+
+| # | Major Arcana | Burmese | Note |
+| --- | --- | --- | --- |
+| 0 | The Fool | လူအ | gentle "innocent one", not the insulting လူမိုက် |
+| 1 | The Magician | မှော်ဆရာ | |
+| 2 | The High Priestess | ပုရောဟိတ်မကြီး | court-priest title, not a Buddhist nun |
+| 3 | The Empress | ဧကရီ | |
+| 4 | The Emperor | ဧကရာဇ် | |
+| 5 | The Hierophant | ပုရောဟိတ်ကြီး | avoids ဓမ္မ |
+| 6 | The Lovers | ချစ်သူများ | |
+| 7 | The Chariot | စစ်ရထား | |
+| 8 | Strength | ခွန်အား | |
+| 9 | The Hermit | ရသေ့ | hermit/ascetic, not a monk |
+| 10 | Wheel of Fortune | ကံကြမ္မာစက်ဝိုင်း | |
+| 11 | Justice | တရားမျှတမှု | |
+| 12 | The Hanged Man | ဇောက်ထိုးဆွဲထားသူ | |
+| 13 | Death | သေခြင်း | card text frames it as transformation |
+| 14 | Temperance | မျှတခြင်း | |
+| 15 | The Devil | မကောင်းဆိုးဝါး | avoids မာရ်နတ် (Māra) and နတ် |
+| 16 | The Tower | မျှော်စင် | |
+| 17 | The Star | ကြယ် | |
+| 18 | The Moon | လ | |
+| 19 | The Sun | နေ | |
+| 20 | Judgement | စီရင်ချက် | alternative: နိုးထခြင်း |
+| 21 | The World | ကမ္ဘာ | |
+
+## Astrology terms
+
+Signs: မိဿ (Aries), ပြိဿ (Taurus), မေထုန် (Gemini), ကရကဋ် (Cancer), သိဟ် (Leo), ကန် (Virgo),
+တူ (Libra), ဗြိစ္ဆာ (Scorpio), ဓနု (Sagittarius), မကာရ (Capricorn), ကုံ (Aquarius), မိန် (Pisces),
+each followed by ရာသီ. Planets: နေ, လ, ဗုဒ္ဓဟူး/ကြာသပတေး/သောကြာ/အင်္ဂါ/စနေ + ဂြိုဟ်, and the modern
+planets transliterated (ယူရေးနပ်စ်, နက်ပကျွန်း, ပလူတို).

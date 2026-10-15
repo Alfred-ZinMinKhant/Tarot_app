@@ -208,4 +208,21 @@ export function validateCards(cards: TarotCard[]): string[] {
   return errors;
 }
 
+export type CardReviewFile = { _note?: string; pending: string[]; reviewed: string[] };
+
+/** Every card must be listed exactly once, as either pending native-speaker review or reviewed. */
+export function validateReview(review: CardReviewFile): string[] {
+  const errors: string[] = [];
+  const known = new Set(DECK.map((d) => d.id));
+  const listed = [...(review.pending ?? []), ...(review.reviewed ?? [])];
+  const seen = new Set<string>();
+  for (const id of listed) {
+    if (!known.has(id)) errors.push(`cards.review.json: unknown card id ${id}`);
+    if (seen.has(id)) errors.push(`cards.review.json: ${id} listed more than once`);
+    seen.add(id);
+  }
+  for (const id of known) if (!seen.has(id)) errors.push(`cards.review.json: ${id} is not listed`);
+  return errors;
+}
+
 export type { CardSource, CardTextSource };

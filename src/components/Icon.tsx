@@ -1,7 +1,18 @@
 import type { ColorValue } from 'react-native';
 import Svg, { Circle, Path, Rect } from 'react-native-svg';
 
-export type IconName = 'home' | 'cards' | 'journal' | 'learn' | 'settings' | 'moon' | 'globe' | 'check';
+export type IconName =
+  | 'home'
+  | 'cards'
+  | 'journal'
+  | 'learn'
+  | 'settings'
+  | 'moon'
+  | 'globe'
+  | 'check'
+  | 'back'
+  | 'search'
+  | 'close';
 
 type Props = { name: IconName; size?: number; color: ColorValue };
 
@@ -54,6 +65,14 @@ export function Icon({ name, size = 24, color }: Props) {
         </>
       )}
       {name === 'check' && <Path {...common} d="M5 12.5 10 17l9-10" />}
+      {name === 'back' && <Path {...common} d="M15 5l-7 7 7 7" />}
+      {name === 'search' && (
+        <>
+          <Circle {...common} cx={10.5} cy={10.5} r={6} />
+          <Path {...common} d="M15 15l5 5" />
+        </>
+      )}
+      {name === 'close' && <Path {...common} d="M6 6l12 12M18 6 6 18" />}
     </Svg>
   );
 }
