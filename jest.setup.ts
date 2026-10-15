@@ -12,3 +12,10 @@ jest.mock('expo-notifications', () => jest.requireActual('./test/mocks/expoNotif
 
 // expo-audio needs native players; record what would have played instead.
 jest.mock('expo-audio', () => jest.requireActual('./test/mocks/expoAudio'));
+
+// react-native-purchases needs its native module; tests inject a fake PurchasesService instead.
+jest.mock('react-native-purchases', () => ({
+  __esModule: true,
+  default: {},
+  PACKAGE_TYPE: { MONTHLY: 'MONTHLY', ANNUAL: 'ANNUAL', LIFETIME: 'LIFETIME' },
+}));

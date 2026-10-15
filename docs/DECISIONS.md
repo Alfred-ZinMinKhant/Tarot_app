@@ -186,4 +186,23 @@ Ambiguous choices made while building, with the simplest option chosen. Change a
     the app, so `supabase/functions/delete-account` does it for the signed-in user.
 56. **Pinned dependency versions at least two weeks old** (`@supabase/supabase-js` 2.116.0,
     `react-native-url-polyfill` 3.0.0) to avoid freshly published releases.
+57. **No RevenueCat key means no paywall, not locked features.** A build without monetisation
+    (development, or a first free release) should never show features nobody can buy. The web
+    preview has no purchases either.
+58. **"Unlimited export" means sharing reading images.** The free plan can share 3 per calendar
+    month (local time) and Premium has no limit. The JSON data export in Settings stays free,
+    because people must always be able to take their data with them. The count is stored on
+    the device, so reinstalling resets it. That is acceptable for a soft limit.
+59. **Premium status is cached locally.** It updates from RevenueCat on launch and whenever
+    the entitlement changes, so a subscriber offline in a lift still has Celtic Cross.
+    RevenueCat's own cache also answers `getCustomerInfo` offline.
+60. **The paywall preselects the yearly package**, lists it first and labels it "Best value".
+    Store price strings are shown as they are, because they are already localised (kyat,
+    grouping) by the store. The Burmese renewal text keeps "Google Play → Subscriptions" in
+    Latin script, as that is what users see in the Play Store.
+61. **Local payments are offer and promo codes sold outside the app**, never a custom checkout
+    inside it. The section shows only when configured, and `docs/MONETIZATION.md` warns about
+    store policy. "Redeem a code" uses Apple's native offer-code sheet and Play's redeem page.
+62. **react-native-purchases 10.9.1** (released 2026-09-10) is pinned. It is autolinked and
+    needs no config plugin. A development build is required.
 

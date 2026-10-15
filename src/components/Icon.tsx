@@ -12,7 +12,9 @@ export type IconName =
   | 'check'
   | 'back'
   | 'search'
-  | 'close';
+  | 'close'
+  | 'lock'
+  | 'star';
 
 type Props = { name: IconName; size?: number; color: ColorValue };
 
@@ -73,6 +75,13 @@ export function Icon({ name, size = 24, color }: Props) {
         </>
       )}
       {name === 'close' && <Path {...common} d="M6 6l12 12M18 6 6 18" />}
+      {name === 'lock' && (
+        <>
+          <Rect {...common} x={5} y={11} width={14} height={10} rx={2} />
+          <Path {...common} d="M8 11V8a4 4 0 0 1 8 0v3" />
+        </>
+      )}
+      {name === 'star' && <Path {...common} d="M12 3.5l2.6 5.3 5.9.9-4.3 4.1 1 5.8-5.2-2.8-5.2 2.8 1-5.8-4.3-4.1 5.9-.9z" />}
     </Svg>
   );
 }

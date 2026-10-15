@@ -4,6 +4,8 @@ import { Pressable, StyleSheet, View } from 'react-native';
 
 import { AppText, Card, DailyCardPanel, Header, Icon, Screen } from '@/components';
 import { SignPanel } from '@/components/SignPanel';
+import { isPremiumSpread } from '@/premium/features';
+import { useUnlocked } from '@/store/premium';
 import { SPREADS } from '@/engine';
 import { useLanguage } from '@/hooks/useLanguage';
 import { useNumberFormat } from '@/hooks/useNumberFormat';
@@ -22,14 +24,20 @@ export default function Home() {
   const { colors } = useAppTheme();
   const burmeseNumerals = useSettings((s) => s.burmeseNumerals);
   const recent = useJournal((s) => s.readings).slice(0, 3);
+  const unlocked = useUnlocked();
   const name = useSettings((s) => s.name).trim();
   const now = new Date();
   const greeting = t(`greeting.${timeOfDay(now)}`);
   return (
     <Screen testID="screen-home">
-      <Header title={name ? t('greeting.withName', { greeting, name }) : greeting} subtitle={t('home.subtitle')} />
+      <Header
+        title={name ? t('greeting.withName', { greeting, name }) : greeting}
+        subtitle={t('home.subtitle')}
+      />
       <AppText tone="textMuted" testID="home-date">
-        {t('home.todayIs', { date: formatDate(now, language, { style: 'weekday-long', burmeseNumerals }) })}
+        {t('home.todayIs', {
+          date: formatDate(now, language, { style: 'weekday-long', burmeseNumerals }),
+        })}
       </AppText>
 
       <DailyCardPanel />
@@ -39,34 +47,60 @@ export default function Home() {
         <AppText variant="heading" accessibilityRole="header">
           {t('home.startReading')}
         </AppText>
-        {SPREADS.map((spread) => (
-          <Pressable
-            key={spread.id}
-            onPress={() => router.push({ pathname: '/reading/[spreadId]', params: { spreadId: spread.id } })}
-            accessibilityRole="button"
-            accessibilityLabel={`${spread[language].name}. ${spread[language].description}`}
-            testID={`home-spread-${spread.id}`}
-            style={({ pressed }) => [
-              styles.spread,
-              { backgroundColor: colors.surface, borderColor: colors.border, opacity: pressed ? 0.85 : 1 },
-            ]}
-          >
-            <View style={styles.spreadText}>
-              <AppText variant="label" bold>
-                {spread[language].name}
-              </AppText>
-              <AppText variant="caption" tone="textMuted">
-                {spread[language].description}
-              </AppText>
-              <AppText variant="caption" tone="accent">
-                {t('home.spreadCards', { n: fmt(spread.cardCount) })}
-              </AppText>
-            </View>
-            <View style={styles.chevron}>
-              <Icon name="back" size={20} color={colors.textMuted} />
-            </View>
-          </Pressable>
-        ))}
+        {SPREADS.map((spread) => {
+          const locked = !unlocked && isPremiumSpread(spread.id);
+          return (
+            <Pressable
+              key={spread.id}
+              onPress={() =>
+                locked
+                  ? router.push({ pathname: '/paywall', params: { reason: `spread:${spread.id}` } })
+                  : router.push({
+                      pathname: '/reading/[spreadId]',
+                      params: { spreadId: spread.id },
+                    })
+              }
+              accessibilityRole="button"
+              accessibilityLabel={`${spread[language].name}. ${spread[language].description}${locked ? `. ${t('premium.badge')}` : ''}`}
+              testID={`home-spread-${spread.id}`}
+              style={({ pressed }) => [
+                styles.spread,
+                {
+                  backgroundColor: colors.surface,
+                  borderColor: colors.border,
+                  opacity: pressed ? 0.85 : 1,
+                },
+              ]}
+            >
+              <View style={styles.spreadText}>
+                <AppText variant="label" bold>
+                  {spread[language].name}
+                </AppText>
+                <AppText variant="caption" tone="textMuted">
+                  {spread[language].description}
+                </AppText>
+                <AppText variant="caption" tone="accent">
+                  {t('home.spreadCards', { n: fmt(spread.cardCount) })}
+                </AppText>
+              </View>
+              {locked ? (
+                <View
+                  style={[styles.premium, { borderColor: colors.primary }]}
+                  testID={`home-spread-lock-${spread.id}`}
+                >
+                  <Icon name="lock" size={14} color={colors.primary} />
+                  <AppText variant="caption" tone="primary" bold>
+                    {t('premium.badge')}
+                  </AppText>
+                </View>
+              ) : (
+                <View style={styles.chevron}>
+                  <Icon name="back" size={20} color={colors.textMuted} />
+                </View>
+              )}
+            </Pressable>
+          );
+        })}
       </View>
 
       {recent.length ? (
@@ -95,7 +129,11 @@ export default function Home() {
               testID={`home-recent-${r.id}`}
               style={({ pressed }) => [
                 styles.recent,
-                { backgroundColor: colors.surface, borderColor: colors.border, opacity: pressed ? 0.85 : 1 },
+                {
+                  backgroundColor: colors.surface,
+                  borderColor: colors.border,
+                  opacity: pressed ? 0.85 : 1,
+                },
               ]}
             >
               <AppText variant="label" bold>
@@ -103,7 +141,9 @@ export default function Home() {
               </AppText>
               <AppText variant="caption" tone="textMuted" numberOfLines={1}>
                 {formatDate(new Date(r.createdAt), language, { style: 'short', burmeseNumerals })} ·{' '}
-                {r.cards.map((c) => getCard(c.cardId)?.[language].name ?? '').join(language === 'my' ? '၊ ' : ', ')}
+                {r.cards
+                  .map((c) => getCard(c.cardId)?.[language].name ?? '')
+                  .join(language === 'my' ? '၊ ' : ', ')}
               </AppText>
             </Pressable>
           ))}
@@ -144,4 +184,13 @@ const styles = StyleSheet.create({
   },
   spreadText: { flex: 1, gap: 2 },
   chevron: { transform: [{ rotate: '180deg' }] },
+  premium: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 4,
+    borderWidth: 1,
+    borderRadius: radius.pill,
+    paddingHorizontal: spacing.sm,
+    paddingVertical: 2,
+  },
 });

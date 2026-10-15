@@ -14,6 +14,8 @@ import { useReminders } from '@/hooks/useReminders';
 import { useSettingsHydrated } from '@/hooks/useSettingsHydrated';
 import { i18n, initI18n } from '@/i18n';
 import { useDaily } from '@/store/daily';
+import { revenueCatService } from '@/premium/revenuecat';
+import { ensurePurchasesService, usePremium } from '@/store/premium';
 import { ensureSyncServices } from '@/store/sync';
 import { supabaseServices } from '@/sync/supabase';
 import { useJournal } from '@/store/journal';
@@ -23,6 +25,8 @@ import { AppThemeProvider, useAppTheme } from '@/theme/ThemeContext';
 void SplashScreen.preventAutoHideAsync();
 // Cloud backup services exist only in builds configured for it (see src/config/sync.ts).
 ensureSyncServices(supabaseServices);
+// In-app purchases exist only in builds with a RevenueCat key (see src/config/purchases.ts).
+ensurePurchasesService(revenueCatService);
 
 export default function RootLayout() {
   const fontsReady = useAppFonts();
@@ -63,6 +67,7 @@ function AppServices() {
   useEffect(() => {
     void useJournal.getState().refresh().catch(() => undefined);
     void useDaily.getState().load().catch(() => undefined);
+    void usePremium.getState().init();
   }, []);
   useReminders(true);
   useCloudSync();
@@ -101,6 +106,7 @@ function Navigation() {
         <Stack.Screen name="learn/[id]" />
         <Stack.Screen name="about" />
         <Stack.Screen name="legal/[doc]" />
+        <Stack.Screen name="paywall" options={{ presentation: 'modal' }} />
       </Stack>
     </ThemeProvider>
   );

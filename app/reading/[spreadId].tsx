@@ -35,6 +35,7 @@ import { useHaptics } from '@/hooks/useHaptics';
 import { useLanguage } from '@/hooks/useLanguage';
 import { useNumberFormat } from '@/hooks/useNumberFormat';
 import { useJournal } from '@/store/journal';
+import { useSpreadLocked } from '@/store/premium';
 import { useSettings } from '@/store/settings';
 import { useToast } from '@/store/toast';
 import { radius, spacing } from '@/theme/spacing';
@@ -51,7 +52,8 @@ const FAN_SIZE = 21;
 const SHUFFLE_MS = 1600;
 const AFTER_LAST_PICK_MS = 350;
 
-const isTopic = (v: unknown): v is Topic => typeof v === 'string' && (TOPICS as readonly string[]).includes(v);
+const isTopic = (v: unknown): v is Topic =>
+  typeof v === 'string' && (TOPICS as readonly string[]).includes(v);
 
 export default function Reading() {
   const params = useLocalSearchParams<{ spreadId: string; topic?: string }>();
@@ -63,6 +65,7 @@ export default function Reading() {
   const haptics = useHaptics();
   const reduceMotion = useReduceMotion();
   const reversals = useSettings((s) => s.reversedCards);
+  const locked = useSpreadLocked(params.spreadId ?? '');
   const { width } = useWindowDimensions();
   const contentWidth = Math.min(width, 720) - spacing.lg * 2;
 
@@ -79,9 +82,12 @@ export default function Reading() {
   const burmeseNumerals = useSettings((s) => s.burmeseNumerals);
   const timer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
-  useEffect(() => () => {
-    if (timer.current) clearTimeout(timer.current);
-  }, []);
+  useEffect(
+    () => () => {
+      if (timer.current) clearTimeout(timer.current);
+    },
+    [],
+  );
 
   const count = spread?.cardCount ?? 0;
   const drawn = useMemo(() => picks.map((i) => deck[i]!), [picks, deck]);
@@ -97,7 +103,11 @@ export default function Reading() {
       spreadId: spread.id,
       topic,
       question,
-      cards: drawn.map((d, i) => ({ positionId: spread.positions[i]!.id, cardId: d.cardId, reversed: d.reversed })),
+      cards: drawn.map((d, i) => ({
+        positionId: spread.positions[i]!.id,
+        cardId: d.cardId,
+        reversed: d.reversed,
+      })),
     })
       .then((record) => {
         setSavedId(record.id);
@@ -143,9 +153,12 @@ export default function Reading() {
   };
 
   const pickForMe = () => {
-    const remaining = Array.from({ length: FAN_SIZE }, (_, i) => i).filter((i) => !picks.includes(i));
+    const remaining = Array.from({ length: FAN_SIZE }, (_, i) => i).filter(
+      (i) => !picks.includes(i),
+    );
     const next = [...picks];
-    while (next.length < count && remaining.length) next.push(remaining.splice(secureRandom(remaining.length), 1)[0]!);
+    while (next.length < count && remaining.length)
+      next.push(remaining.splice(secureRandom(remaining.length), 1)[0]!);
     setPicks(next);
     haptics.select();
     later(() => setPhase('reveal'), AFTER_LAST_PICK_MS);
@@ -176,6 +189,23 @@ export default function Reading() {
     );
   }
 
+  if (locked) {
+    // Reached directly (deep link or old journal link) without Premium.
+    return (
+      <Screen testID="screen-reading-locked">
+        <BackButton fallback="/home" />
+        <EmptyState icon="cards" title={spread[lang].name} body={t('premium.lockedBody')} />
+        <Button
+          label={t('premium.see')}
+          onPress={() =>
+            router.replace({ pathname: '/paywall', params: { reason: `spread:${spread.id}` } })
+          }
+          testID="reading-unlock"
+        />
+      </Screen>
+    );
+  }
+
   const positionName = (i: number) => spread.positions[i]![lang].name;
   const summary = allRevealed ? summarize(drawn, lang, { reversals }) : [];
   const inputScript = scriptForLanguage(lang);
@@ -183,7 +213,10 @@ export default function Reading() {
   return (
     <Screen testID="screen-reading">
       <BackButton fallback="/home" />
-      <Header title={spread[lang].name} subtitle={phase === 'setup' ? spread[lang].description : undefined} />
+      <Header
+        title={spread[lang].name}
+        subtitle={phase === 'setup' ? spread[lang].description : undefined}
+      />
 
       {phase !== 'setup' && phase !== 'crisis' && question.trim() ? (
         <AppText tone="textMuted" testID="reading-question">
@@ -259,7 +292,12 @@ export default function Reading() {
 
       {phase === 'picking' ? (
         <>
-          <AppText variant="heading" center accessibilityLiveRegion="polite" testID="reading-pick-title">
+          <AppText
+            variant="heading"
+            center
+            accessibilityLiveRegion="polite"
+            testID="reading-pick-title"
+          >
             {t('reading.pickTitle', { remaining: fmt(count - picks.length) })}
           </AppText>
           <FanDeck
@@ -307,7 +345,12 @@ export default function Reading() {
             revealLabel={(i) => t('reading.turnOverA11y', { position: positionName(i) })}
           />
           {!allRevealed ? (
-            <Button label={t('reading.revealAll')} variant="secondary" onPress={revealAll} testID="reading-reveal-all" />
+            <Button
+              label={t('reading.revealAll')}
+              variant="secondary"
+              onPress={revealAll}
+              testID="reading-reveal-all"
+            />
           ) : null}
 
           {drawn.map((d, i) => {
@@ -317,7 +360,8 @@ export default function Reading() {
             return (
               <Card key={pos.id} testID={`reading-position-${i}`}>
                 <AppText variant="caption" tone="textMuted">
-                  {t('reading.positionHeading', { number: fmt(i + 1), position: pos[lang].name })} · {pos[lang].prompt}
+                  {t('reading.positionHeading', { number: fmt(i + 1), position: pos[lang].name })} ·{' '}
+                  {pos[lang].prompt}
                 </AppText>
                 <View style={styles.cardTitle}>
                   <AppText variant="heading">{card[lang].name}</AppText>
@@ -353,7 +397,11 @@ export default function Reading() {
                 question={question.trim() || undefined}
                 entries={shareEntries(
                   spread.id,
-                  drawn.map((d, i) => ({ positionId: spread.positions[i]!.id, cardId: d.cardId, reversed: d.reversed })),
+                  drawn.map((d, i) => ({
+                    positionId: spread.positions[i]!.id,
+                    cardId: d.cardId,
+                    reversed: d.reversed,
+                  })),
                   lang,
                 )}
               />
@@ -407,7 +455,12 @@ function CrisisCard({ onEdit }: { onEdit: () => void }) {
           ) : null}
         </>
       ) : null}
-      <Button label={t('reading.crisisEdit')} variant="ghost" onPress={onEdit} testID="reading-crisis-edit" />
+      <Button
+        label={t('reading.crisisEdit')}
+        variant="ghost"
+        onPress={onEdit}
+        testID="reading-crisis-edit"
+      />
     </View>
   );
 }

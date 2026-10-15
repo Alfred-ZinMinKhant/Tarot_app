@@ -80,6 +80,18 @@ const config: ExpoConfig = {
       url: env.SUPABASE_URL || '',
       anonKey: env.SUPABASE_ANON_KEY || '',
     },
+    // Optional in-app purchases (Phase 7, RevenueCat public SDK keys). With no key for a
+    // platform, that platform has no paywall and every feature is unlocked.
+    purchases: {
+      iosApiKey: env.REVENUECAT_IOS_API_KEY || '',
+      androidApiKey: env.REVENUECAT_ANDROID_API_KEY || '',
+      entitlement: env.REVENUECAT_ENTITLEMENT || 'premium',
+    },
+    // Optional local payment partner shown on the paywall (both must be set).
+    localPayment: {
+      url: env.LOCAL_PAYMENT_URL || '',
+      name: env.LOCAL_PAYMENT_NAME || '',
+    },
     legal: {
       publisher: env.PUBLISHER_NAME || '',
       contactEmail: env.SUPPORT_EMAIL || '',

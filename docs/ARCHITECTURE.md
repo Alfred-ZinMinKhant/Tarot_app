@@ -31,6 +31,7 @@ app/                     expo-router routes (screens only)
   learn/[id].tsx         one lesson; finishing marks it read and opens the next
   about.tsx              about, disclaimer, art credit, publisher/contact (from .env)
   legal/[doc].tsx        privacy policy / terms (data/legal.json, variables from .env)
+  paywall.tsx            Premium paywall (modal): benefits, store packages, restore, local payment
 src/
   components/            design-system primitives (AppText, Button, Card, Chip, …)
   components/art/        CardBack (original SVG), CardFace, SuitGlyph
@@ -41,6 +42,8 @@ src/
   config/crisis.json     crisis phrases (en + my)
   db/                    SQLite: schema + migrations, journal repository, sql.js adapter (tests),
                          in-memory repo for the web preview (index.web.ts)
+  premium/               features.ts (what's Premium), service.ts (interface), revenuecat.ts
+                         (+ .web.ts no-op)
   sync/                  engine.ts (pull → merge → push, last write wins), supabase.ts (client,
                          backend, email-code auth)
   services/              notifications (plan + schedule reminders), share (view-shot → sharing),
@@ -202,6 +205,23 @@ Off unless the build sets `ENABLE_CLOUD_SYNC=true`, `SUPABASE_URL` and `SUPABASE
 - **Tests** use `test/mocks/fakeCloud.ts`, which reproduces the table and trigger in memory, with
   two simulated devices on separate sql.js databases.
 
+## Premium (optional, Phase 7)
+
+`usePremium` (Zustand, persisted) caches the entitlement, so Premium stays unlocked offline,
+along with the free-plan share counter (`shareMonth`, `sharesUsed`). The root layout wires a
+`PurchasesService`. That is RevenueCat when `purchasesConfig()` finds a key for the platform;
+otherwise it is `null`, and `useUnlocked()` is then always true. Gates:
+
+- **Home** marks Love and Celtic Cross with a Premium badge, and tapping either opens
+  `/paywall?reason=spread:<id>`.
+- **`reading/[spreadId]`** shows a locked state for direct links.
+- **`ShareSheet`** counts free image shares per calendar month and sends the user to the
+  paywall when they run out.
+
+`revenueCatService` maps RevenueCat offerings to `PremiumPackage` (with the store-localised
+price string), maps purchase errors to `cancelled` / `failed`, and listens for entitlement
+changes. Tests use `test/mocks/fakePurchases.ts`. See `docs/MONETIZATION.md` for store setup.
+
 ## Theming
 
 `AppThemeProvider` combines the system colour scheme with `settings.themeMode`, the S/M/L font size
@@ -221,5 +241,6 @@ asserts WCAG AA (≥ 4.5:1) for every text/background pair in both themes. Minim
 | `npm run render:card-back` | export the card-back art to `assets/images/card-back.{svg,png}` |
 | `npm test` | Jest: utils, locale parity, contrast, card data + validator, search, engine, SQLite repo (sql.js), notifications (in-memory fake), full-router integration tests (onboarding, signs, Learn, export/delete, legal) |
 | (sync) | `__tests__/sync.test.ts` two-device LWW scenarios, `cloud-sync.test.tsx` UI + store, `supabase-backend.test.ts` query building |
+| (premium) | `__tests__/premium.test.tsx`: gating, purchase, cancel, restore, offline prices, share allowance, local payment |
 | `maestro test .maestro` | end-to-end flows on a device or emulator (dev/preview build) |
 | `npm run ci` | all of the above; also run by `.github/workflows/ci.yml` |

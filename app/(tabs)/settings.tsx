@@ -16,6 +16,7 @@ import {
   SettingRow,
 } from '@/components';
 import { CloudSyncCard } from '@/components/CloudSyncCard';
+import { PremiumCard } from '@/components/PremiumCard';
 import { TextField } from '@/components/TextField';
 import { getSign } from '@/data/content';
 import { useLanguage } from '@/hooks/useLanguage';
@@ -213,6 +214,8 @@ export default function Settings() {
           ) : null}
         </Card>
       ) : null}
+
+      <PremiumCard />
 
       <CloudSyncCard />
 

@@ -99,6 +99,22 @@ Status key: ✅ automated and passing · 🔶 partly automated, needs a device c
 | 7b.6 | Delete cloud account removes the account (Supabase dashboard) and keeps local readings | J (fake) | 📱 |
 | 7b.7 | Row-level security: one account can't read another's rows (try with two accounts) | SQL review | 📱 |
 
+## 7c. Premium (only in builds with RevenueCat keys)
+
+| # | Check | Coverage | Status |
+| --- | --- | --- | --- |
+| 7c.1 | Without keys: no Premium badges, all spreads open | J | ✅ |
+| 7c.2 | Love and Celtic Cross show a Premium badge; tapping opens the paywall with the reason | J | ✅ |
+| 7c.3 | Paywall shows real store prices in local currency (sandbox / licence tester) | J (fake) | 📱 |
+| 7c.4 | Buy monthly, yearly, lifetime in sandbox; Premium unlocks immediately | J (fake) | 📱 |
+| 7c.5 | Cancel the purchase sheet: no error, still on the paywall | J | 🔶 real sheet is device only |
+| 7c.6 | Restore on a second device / after reinstall | J (fake) | 📱 |
+| 7c.7 | Subscription expiry (sandbox accelerated) locks Premium again | J (listener) | 📱 |
+| 7c.8 | Three free image shares per month, then the paywall | J | ✅ |
+| 7c.9 | Airplane mode: Premium stays unlocked; paywall shows "prices couldn't load" with retry | J | 🔶 |
+| 7c.10 | Local payment section only when configured; Redeem a code opens the native sheet (iOS) / Play redeem (Android) | J | 📱 |
+| 7c.11 | Paywall text fits in Burmese at Large text size | W (M size) | 📱 |
+
 ## 8. Accessibility
 
 | # | Check | Coverage | Status |
