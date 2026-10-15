@@ -1,0 +1,359 @@
+[
+  {
+    "id": "one-card",
+    "cardCount": 1,
+    "en": {
+      "name": "One Card",
+      "description": "A single card for a quick moment of reflection."
+    },
+    "my": {
+      "name": "ကတ်တစ်ချပ်",
+      "description": "အမြန် ဆင်ခြင်ဖို့ ကတ်တစ်ချပ်။"
+    },
+    "positions": [
+      {
+        "id": "focus",
+        "x": 0,
+        "y": 0,
+        "en": {
+          "name": "Your card",
+          "prompt": "The energy or message to reflect on right now."
+        },
+        "my": {
+          "name": "သင့်ကတ်",
+          "prompt": "အခု ဆင်ခြင်ဖို့ စွမ်းအင် ဒါမှမဟုတ် သတင်းစကား။"
+        }
+      }
+    ]
+  },
+  {
+    "id": "three-past-present-future",
+    "cardCount": 3,
+    "en": {
+      "name": "Past · Present · Future",
+      "description": "Three cards that trace how a situation has grown and where it may be heading."
+    },
+    "my": {
+      "name": "အတိတ် · ပစ္စုပ္ပန် · အနာဂတ်",
+      "description": "အခြေအနေတစ်ခု ဘယ်လို ကြီးထွားလာခဲ့လဲ၊ ဘယ်ကို ဦးတည်နိုင်လဲ ပြတဲ့ ကတ်သုံးချပ်။"
+    },
+    "positions": [
+      {
+        "id": "past",
+        "x": 0,
+        "y": 0,
+        "en": {
+          "name": "Past",
+          "prompt": "What has shaped this situation."
+        },
+        "my": {
+          "name": "အတိတ်",
+          "prompt": "ဒီအခြေအနေကို ပုံဖော်ခဲ့တဲ့ အရာ။"
+        }
+      },
+      {
+        "id": "present",
+        "x": 1,
+        "y": 0,
+        "en": {
+          "name": "Present",
+          "prompt": "Where things stand now."
+        },
+        "my": {
+          "name": "ပစ္စုပ္ပန်",
+          "prompt": "အခု ဘယ်လို ဖြစ်နေလဲ။"
+        }
+      },
+      {
+        "id": "future",
+        "x": 2,
+        "y": 0,
+        "en": {
+          "name": "Future",
+          "prompt": "Where things may be heading if nothing changes."
+        },
+        "my": {
+          "name": "အနာဂတ်",
+          "prompt": "ဘာမှ မပြောင်းလဲရင် ဦးတည်သွားနိုင်တဲ့ နေရာ။"
+        }
+      }
+    ]
+  },
+  {
+    "id": "three-situation-challenge-advice",
+    "cardCount": 3,
+    "en": {
+      "name": "Situation · Challenge · Advice",
+      "description": "Three cards for a practical look at what is happening and how to meet it."
+    },
+    "my": {
+      "name": "အခြေအနေ · အခက်အခဲ · အကြံပြုချက်",
+      "description": "ဘာဖြစ်နေလဲ၊ ဘယ်လို ရင်ဆိုင်မလဲ လက်တွေ့ကျကျ ကြည့်ဖို့ ကတ်သုံးချပ်။"
+    },
+    "positions": [
+      {
+        "id": "situation",
+        "x": 0,
+        "y": 0,
+        "en": {
+          "name": "Situation",
+          "prompt": "The heart of what is happening."
+        },
+        "my": {
+          "name": "အခြေအနေ",
+          "prompt": "ဖြစ်ပျက်နေတာရဲ့ အနှစ်သာရ။"
+        }
+      },
+      {
+        "id": "challenge",
+        "x": 1,
+        "y": 0,
+        "en": {
+          "name": "Challenge",
+          "prompt": "What asks for your attention or patience."
+        },
+        "my": {
+          "name": "အခက်အခဲ",
+          "prompt": "သင့်ရဲ့ အာရုံစိုက်မှု ဒါမှမဟုတ် စိတ်ရှည်မှု လိုနေတဲ့ အရာ။"
+        }
+      },
+      {
+        "id": "advice",
+        "x": 2,
+        "y": 0,
+        "en": {
+          "name": "Advice",
+          "prompt": "A helpful way to approach it."
+        },
+        "my": {
+          "name": "အကြံပြုချက်",
+          "prompt": "ချဉ်းကပ်ဖို့ အထောက်အကူဖြစ်တဲ့ နည်းလမ်း။"
+        }
+      }
+    ]
+  },
+  {
+    "id": "love",
+    "cardCount": 5,
+    "en": {
+      "name": "Love Spread",
+      "description": "Five cards about a relationship: both hearts, the bond between you, and how it can grow."
+    },
+    "my": {
+      "name": "အချစ်ရေး ကတ်ခင်းပုံ",
+      "description": "ဆက်ဆံရေးအကြောင်း ကတ်ငါးချပ် - နှလုံးသားနှစ်ခု၊ နှစ်ယောက်ကြား ချည်နှောင်မှုနဲ့ ဘယ်လို ကြီးထွားနိုင်လဲ။"
+    },
+    "positions": [
+      {
+        "id": "you",
+        "x": 0,
+        "y": 0,
+        "en": {
+          "name": "You",
+          "prompt": "Your feelings and what you bring."
+        },
+        "my": {
+          "name": "သင်",
+          "prompt": "သင့်ခံစားချက်နဲ့ သင်ယူဆောင်လာတဲ့ အရာ။"
+        }
+      },
+      {
+        "id": "connection",
+        "x": 1,
+        "y": 0,
+        "en": {
+          "name": "The connection",
+          "prompt": "What is alive between you."
+        },
+        "my": {
+          "name": "ဆက်နွယ်မှု",
+          "prompt": "နှစ်ယောက်ကြား ရှင်သန်နေတဲ့ အရာ။"
+        }
+      },
+      {
+        "id": "other",
+        "x": 2,
+        "y": 0,
+        "en": {
+          "name": "The other person",
+          "prompt": "Their side, as far as the cards can suggest."
+        },
+        "my": {
+          "name": "တစ်ဖက်လူ",
+          "prompt": "ကတ်တွေ အကြံပြုနိုင်သလောက် တစ်ဖက်လူရဲ့ ဘက်။"
+        }
+      },
+      {
+        "id": "challenge",
+        "x": 0.5,
+        "y": 1,
+        "en": {
+          "name": "The challenge",
+          "prompt": "What asks for care or patience."
+        },
+        "my": {
+          "name": "စိန်ခေါ်မှု",
+          "prompt": "ဂရုစိုက်မှု ဒါမှမဟုတ် စိတ်ရှည်မှု လိုနေတဲ့ အရာ။"
+        }
+      },
+      {
+        "id": "potential",
+        "x": 1.5,
+        "y": 1,
+        "en": {
+          "name": "The potential",
+          "prompt": "How the relationship could grow."
+        },
+        "my": {
+          "name": "အလားအလာ",
+          "prompt": "ဆက်ဆံရေး ကြီးထွားနိုင်တဲ့ လမ်း။"
+        }
+      }
+    ]
+  },
+  {
+    "id": "celtic-cross",
+    "cardCount": 10,
+    "en": {
+      "name": "Celtic Cross",
+      "description": "The classic ten-card spread for a deep, many-sided look at one question."
+    },
+    "my": {
+      "name": "ကဲလ်တစ် ကြက်ခြေခတ်",
+      "description": "မေးခွန်းတစ်ခုကို ဘက်ပေါင်းစုံကနေ နက်နက်ရှိုင်းရှိုင်း ကြည့်ဖို့ ဂန္ထဝင် ကတ်ဆယ်ချပ် ကတ်ခင်းပုံ။"
+    },
+    "positions": [
+      {
+        "id": "present",
+        "x": 1.5,
+        "y": 1.5,
+        "en": {
+          "name": "The present",
+          "prompt": "The centre of the situation."
+        },
+        "my": {
+          "name": "ပစ္စုပ္ပန်",
+          "prompt": "အခြေအနေရဲ့ ဗဟိုချက်။"
+        }
+      },
+      {
+        "id": "crossing",
+        "x": 1.5,
+        "y": 1.5,
+        "rotate": 90,
+        "en": {
+          "name": "What crosses you",
+          "prompt": "The tension or obstacle in play."
+        },
+        "my": {
+          "name": "ဖြတ်ကျော်နေတဲ့ အရာ",
+          "prompt": "ပါဝင်နေတဲ့ တင်းမာမှု ဒါမှမဟုတ် အတားအဆီး။"
+        }
+      },
+      {
+        "id": "foundation",
+        "x": 1.5,
+        "y": 2.5,
+        "en": {
+          "name": "The foundation",
+          "prompt": "What lies beneath, often unspoken."
+        },
+        "my": {
+          "name": "အခြေခံ",
+          "prompt": "အောက်ခြေမှာ ရှိနေတဲ့၊ မကြာခဏ မပြောဖြစ်တဲ့ အရာ။"
+        }
+      },
+      {
+        "id": "recent-past",
+        "x": 0,
+        "y": 1.5,
+        "en": {
+          "name": "The recent past",
+          "prompt": "What is just moving out of the picture."
+        },
+        "my": {
+          "name": "မကြာသေးခင်က",
+          "prompt": "မြင်ကွင်းထဲကနေ ထွက်ခွာနေပြီဖြစ်တဲ့ အရာ။"
+        }
+      },
+      {
+        "id": "aim",
+        "x": 1.5,
+        "y": 0.5,
+        "en": {
+          "name": "What you aim for",
+          "prompt": "Your hopes and conscious goals here."
+        },
+        "my": {
+          "name": "ရည်မှန်းချက်",
+          "prompt": "ဒီကိစ္စမှာ သင့်ရဲ့ မျှော်လင့်ချက်နဲ့ သိသိကြီး ထားတဲ့ ပန်းတိုင်။"
+        }
+      },
+      {
+        "id": "near-future",
+        "x": 3,
+        "y": 1.5,
+        "en": {
+          "name": "The near future",
+          "prompt": "What may be coming into the picture soon."
+        },
+        "my": {
+          "name": "မကြာမီ အနာဂတ်",
+          "prompt": "မကြာခင် မြင်ကွင်းထဲ ရောက်လာနိုင်တဲ့ အရာ။"
+        }
+      },
+      {
+        "id": "self",
+        "x": 4.4,
+        "y": 3,
+        "en": {
+          "name": "Yourself",
+          "prompt": "How you are meeting this situation."
+        },
+        "my": {
+          "name": "သင်ကိုယ်တိုင်",
+          "prompt": "ဒီအခြေအနေကို သင် ဘယ်လို ရင်ဆိုင်နေလဲ။"
+        }
+      },
+      {
+        "id": "surroundings",
+        "x": 4.4,
+        "y": 2,
+        "en": {
+          "name": "Your surroundings",
+          "prompt": "The people and influences around you."
+        },
+        "my": {
+          "name": "ပတ်ဝန်းကျင်",
+          "prompt": "သင့်ပတ်လည်က လူတွေနဲ့ လွှမ်းမိုးမှုတွေ။"
+        }
+      },
+      {
+        "id": "hopes-fears",
+        "x": 4.4,
+        "y": 1,
+        "en": {
+          "name": "Hopes and fears",
+          "prompt": "What you wish for, and what you worry about."
+        },
+        "my": {
+          "name": "မျှော်လင့်ချက်နဲ့ စိုးရိမ်ချက်",
+          "prompt": "သင် လိုချင်တာနဲ့ စိုးရိမ်နေတာ။"
+        }
+      },
+      {
+        "id": "direction",
+        "x": 4.4,
+        "y": 0,
+        "en": {
+          "name": "Where things are heading",
+          "prompt": "A likely direction, which your choices can still change."
+        },
+        "my": {
+          "name": "ဦးတည်ရာ",
+          "prompt": "ဖြစ်နိုင်ချေရှိတဲ့ ဦးတည်ချက်၊ သင့်ရွေးချယ်မှုတွေနဲ့ ပြောင်းလဲနိုင်သေးတယ်။"
+        }
+      }
+    ]
+  }
+]

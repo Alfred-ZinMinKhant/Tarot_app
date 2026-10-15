@@ -47,6 +47,11 @@ export function checkLocales(en: Json, my: Json, review: ReviewFile): string[] {
     const pe = placeholders(ev).join(',');
     const pm = placeholders(mv).join(',');
     if (pe !== pm) errors.push(`"${key}" placeholders differ: en=[${pe}] my=[${pm}]`);
+    if (/\{\{\s*count\s*\}\}/.test(ev)) {
+      // i18next treats `count` as a plural selector; numbers are pre-formatted (Burmese digits), so
+      // use another name such as {{n}}.
+      errors.push(`"${key}" uses {{count}}; rename it (e.g. {{n}}) — i18next reserves count for plurals`);
+    }
     if (/[က-႟]/.test(mv) && /​/.test(mv)) {
       errors.push(`"${key}" in my.json contains zero-width spaces; line breaks are added at runtime`);
     }

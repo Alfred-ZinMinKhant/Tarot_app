@@ -78,6 +78,7 @@
     "testPathIgnorePatterns": [
       "/node_modules/",
       "/.maestro/"
-    ]
+    ],
+    "resolver": "react-native-worklets/jest/resolver.js"
   }
 }

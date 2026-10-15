@@ -1,35 +1,16 @@
-import { router, useLocalSearchParams } from 'expo-router';
+import { useLocalSearchParams } from 'expo-router';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Pressable, StyleSheet, useWindowDimensions, View } from 'react-native';
+import { StyleSheet, useWindowDimensions, View } from 'react-native';
 
-import { AppText, Card, Chip, ChipGroup, EmptyState, Icon, Screen } from '@/components';
+import { AppText, BackButton, Card, Chip, ChipGroup, EmptyState, Screen } from '@/components';
 import { CardFace } from '@/components/art';
 import { CARD_IMAGES } from '@/data/cardImages';
 import { getCard, toRoman } from '@/data/cards';
 import { READING_AREAS, type Orientation } from '@/data/types';
 import { useLanguage } from '@/hooks/useLanguage';
 import { useNumberFormat } from '@/hooks/useNumberFormat';
-import { MIN_TAP, spacing } from '@/theme/spacing';
-import { useAppTheme } from '@/theme/ThemeContext';
-
-function BackButton() {
-  const { t } = useTranslation();
-  const { colors } = useAppTheme();
-  return (
-    <Pressable
-      onPress={() => (router.canGoBack() ? router.back() : router.replace('/library'))}
-      accessibilityRole="button"
-      accessibilityLabel={t('card.back')}
-      hitSlop={8}
-      style={styles.back}
-      testID="card-back-button"
-    >
-      <Icon name="back" color={colors.text} />
-      <AppText variant="label">{t('card.back')}</AppText>
-    </Pressable>
-  );
-}
+import { spacing } from '@/theme/spacing';
 
 export default function CardDetail() {
   const { id } = useLocalSearchParams<{ id: string }>();
@@ -43,7 +24,7 @@ export default function CardDetail() {
   if (!card) {
     return (
       <Screen testID="screen-card-missing">
-        <BackButton />
+        <BackButton fallback="/library" testID="card-back-button" />
         <EmptyState icon="cards" title={t('card.notFoundTitle')} body={t('card.notFoundBody')} />
       </Screen>
     );
@@ -56,7 +37,7 @@ export default function CardDetail() {
 
   return (
     <Screen testID={`screen-card-${card.id}`}>
-      <BackButton />
+      <BackButton fallback="/library" testID="card-back-button" />
 
       <View style={styles.hero}>
         <CardFace card={card} width={heroWidth} large reversed={orientation === 'reversed'} />
@@ -131,7 +112,6 @@ export default function CardDetail() {
 }
 
 const styles = StyleSheet.create({
-  back: { flexDirection: 'row', alignItems: 'center', gap: spacing.xs, minHeight: MIN_TAP, alignSelf: 'flex-start' },
   hero: { alignItems: 'center', gap: spacing.md },
   titles: { gap: spacing.xs, alignItems: 'center' },
   chips: { flexDirection: 'row', flexWrap: 'wrap', gap: spacing.sm },

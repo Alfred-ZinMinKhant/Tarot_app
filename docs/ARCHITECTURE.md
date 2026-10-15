@@ -1,6 +1,6 @@
 # Architecture
 
-_Last updated: Phase 2 (card data, validation, library, card art)._
+_Last updated: Phase 3 (reading engine, spreads, reading UI and animations)._
 
 ## Stack
 
@@ -24,10 +24,14 @@ app/                     expo-router routes (screens only)
   (onboarding)/          welcome, language
   (tabs)/                home, library (FlashList grid + filters + search), journal, learn, settings
   card/[id].tsx          card detail: all meanings, upright/reversed toggle
+  reading/[spreadId].tsx reading flow: topic + question → shuffle → pick from fan → flip → summary
 src/
   components/            design-system primitives (AppText, Button, Card, Chip, …)
   components/art/        CardBack (original SVG), CardFace, SuitGlyph
   data/                  deck table, types, card access/search, generated image map
+  engine/                random (expo-crypto), shuffle/draw, daily card, spreads, interpretation,
+                         crisis detection
+  config/crisis.json     crisis phrases (en + my)
   config/brand.json      app name (en + my) and store identifiers — single source of truth
   hooks/                 useLanguage, useAppFonts, useSettingsHydrated
   i18n/                  i18next instance, language helpers, typed keys
@@ -35,7 +39,8 @@ src/
   theme/                 colors, typography, spacing, ThemeContext
   utils/                 myanmar (syllable breaking), numbers, dates
 locales/                 en.json, my.json, my.review.json
-data/                    cards.json (generated), cards/*.json (sources), cards.review.json
+data/                    cards.json (generated), cards/*.json (sources), cards.review.json,
+                         spreads.json (5 spreads, positions + layout, en + my)
 scripts/                 check-i18n, build-cards, validate-cards, optimize-images, render-card-back
                          (+ lib/ shared with tests)
 docs/                    this file, DECISIONS, glossary, assets
@@ -107,6 +112,23 @@ Illustrations: `scripts/optimize-images.ts` turns the 1909 scans in `assets/card
 committed) into `assets/cards/{thumb,full}/<id>.webp` and writes `src/data/cardImages.ts`.
 `CardFace` uses the image when the map has one, and otherwise draws the typographic face. The card
 back is SVG generated in code (`src/components/art/cardBackSvg.ts`), rendered with `SvgXml`.
+
+## Reading engine (`src/engine/`)
+
+| Module | Responsibility |
+| --- | --- |
+| `random.ts` | `secureRandomInt` (expo-crypto bytes, rejection sampling), FNV-1a `hashString`, seeded `mulberry32` |
+| `draw.ts` | Fisher–Yates `shuffle`, `prepareDeck` (orientation per card, respects the reversals setting), `drawCards` |
+| `daily.ts` | `dailyCard(seed, dateKey)`: deterministic Card of the Day |
+| `spreads.ts` | typed access to `data/spreads.json` + layout bounds |
+| `interpret.ts` | `readingText` (topic-aware), `summarize` (rule-based, returns i18n keys) |
+| `crisis.ts` | `detectCrisis`, `configuredHelpline` (from `app.config.ts` `extra`, fed by `.env`) |
+
+Screen flow (`app/reading/[spreadId].tsx`): `setup → (crisis | shuffling) → picking → reveal`.
+Animations use Reanimated: `ShuffleStack` (riffle), `FanDeck` (arc of 21 backs, picked cards lift
+away), `TarotCard` (Y-axis flip), `SpreadBoard` (positions laid out from spread coordinates, the
+Celtic Cross "crossing" card rotated 90°). Haptics go through `useHaptics` (respects the setting,
+no-op on web), and every animation is skipped when the OS asks to reduce motion.
 
 ## Theming
 

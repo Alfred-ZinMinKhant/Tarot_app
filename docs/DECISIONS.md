@@ -73,3 +73,32 @@ Ambiguous choices made while building, with the simplest option chosen. Change a
 25. **The library count avoids plural forms** ("Showing 14 of 78"). Burmese has no plural
     categories, and i18next plural keys would break the identical-keys rule between the two files.
 
+## Phase 3 — reading engine and reading UI
+
+26. **Orientation is decided when the deck is shuffled.** `prepareDeck` shuffles all 78 cards
+    (Fisher–Yates with `expo-crypto` bytes and rejection sampling, so no modulo bias) and flips a
+    secure coin for each card. The user then picks from that deck, so a spread can never repeat a
+    card.
+27. **The fan shows the top 21 cards of the shuffled deck.** All 78 overlapping cards would be too
+    thin to tap at 360 dp. Because the deck was shuffled securely, picking from the top 21 is just
+    as random. "Choose for me" helps anyone who finds the fan hard to tap (screen reader users,
+    large text, motor difficulties).
+28. **The daily card is deterministic per device and date.** It uses a FNV-1a hash of
+    `deviceSeed|YYYY-MM-DD` feeding mulberry32. The seed is a random UUID created on first use and
+    stored only in settings. Turning reversals off keeps the same card but shows it upright.
+29. **Topic readings.** Love, Career, Money and Health use each card's area reading. General and
+    "Ask a question" use the main upright or reversed meaning.
+30. **The summary is rule-based, not generated.** It notes "many/no Major Arcana", a dominant suit,
+    "many reversed" or "all upright", then lists the key themes and gives the advice of the last
+    position. Every sentence is a reviewed locale string, so nothing unvetted reaches the user.
+31. **Crisis detection** uses a phrase list in `src/config/crisis.json` (en + my). Matching ignores
+    case and zero-width spaces, and ignores spaces inside Burmese phrases. The reading is replaced
+    by a caring message. Helpline details come only from `.env` (`CRISIS_HELPLINE_*`). With no
+    helpline configured, the message points to trusted people and local emergency numbers without
+    printing any number.
+32. **Reduced motion** comes from `AccessibilityInfo` (`useReduceMotion`), which skips the shuffle and
+    flip animations. Reanimated's own hook isn't in its Jest mock. Jest uses
+    `react-native-worklets/jest/resolver.js` so Reanimated runs under test.
+33. **i18n placeholders never use `{{count}}`.** i18next treats `count` as a plural selector, and the
+    app passes numbers pre-formatted (possibly in Burmese digits). `check:i18n` enforces this.
+

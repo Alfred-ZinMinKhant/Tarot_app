@@ -65,7 +65,7 @@ export function CardFace({ card, width, reversed = false, large = false, showNam
           <View style={styles.glyph}>
             <SuitGlyph suit={card.suit} size={width * 0.42} color={palette.goldDeep} />
           </View>
-          {showName ? (
+          {showName && width >= 72 ? (
             <AppText
               variant={compact ? 'caption' : 'label'}
               bold

@@ -1,0 +1,38 @@
+{
+  "_note": "Phrases that suggest the person may be in crisis. When a question contains one, the app shows a caring message and does not give a reading. Matching ignores case, extra spaces and zero-width spaces. Add phrases in either language; keep them specific to avoid false alarms. Helpline details are configured in .env (CRISIS_HELPLINE_*), never hard-coded here.",
+  "en": [
+    "suicide",
+    "suicidal",
+    "kill myself",
+    "killing myself",
+    "end my life",
+    "ending my life",
+    "take my own life",
+    "want to die",
+    "wanna die",
+    "better off dead",
+    "no reason to live",
+    "self harm",
+    "self-harm",
+    "hurt myself",
+    "hurting myself",
+    "cut myself",
+    "cutting myself",
+    "overdose"
+  ],
+  "my": [
+    "သေချင်",
+    "မိမိကိုယ်ကို သတ်",
+    "ကိုယ့်ကိုယ်ကို သတ်",
+    "ကိုယ့်ကိုကိုယ် သတ်",
+    "သတ်သေ",
+    "အဆုံးစီရင်",
+    "အသက်မရှင်ချင်",
+    "ဆက်မနေချင်တော့",
+    "ဘဝကို အဆုံးသတ်",
+    "ကိုယ့်ကိုယ်ကို ထိခိုက်",
+    "မိမိကိုယ်ကို ထိခိုက်",
+    "ကိုယ့်ကိုယ်ကို နာကျင်အောင်",
+    "ဆေးအလွန်အကျွံ"
+  ]
+}

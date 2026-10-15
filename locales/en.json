@@ -33,7 +33,9 @@
     "subtitle": "Take a quiet moment for yourself today.",
     "todayIs": "Today is {{date}}",
     "introTitle": "How $t(appName) works",
-    "introBody": "Ask a question, draw cards, and use their meanings as gentle prompts for reflection. Your readings stay on this phone."
+    "introBody": "Ask a question, draw cards, and use their meanings as gentle prompts for reflection. Your readings stay on this phone.",
+    "startReading": "Start a reading",
+    "spreadCards": "Cards: {{n}}"
   },
   "library": {
     "title": "Card Library",
@@ -48,7 +50,6 @@
     "noResultsBody": "Try another word, in English or Burmese."
   },
   "card": {
-    "back": "Back",
     "notFoundTitle": "Card not found",
     "notFoundBody": "This card isn't in the deck.",
     "upright": "Upright",
@@ -68,6 +69,55 @@
     "majorArcana": "Major Arcana",
     "minorArcana": "Minor Arcana",
     "imageCredit": "Illustration: Pamela Colman Smith, {{year}} (public domain)"
+  },
+  "reading": {
+    "topicTitle": "What is this reading about?",
+    "topics": {
+      "general": "General",
+      "love": "Love",
+      "career": "Career",
+      "money": "Money",
+      "health": "Health & spirit",
+      "question": "Ask a question"
+    },
+    "questionLabel": "Your question (optional)",
+    "questionPlaceholder": "For example: What should I focus on this week?",
+    "questionHint": "Open questions work best: ask “how” or “what” rather than yes or no.",
+    "start": "Shuffle the cards",
+    "shuffling": "Shuffling…",
+    "shuffleHint": "Take a slow breath and keep your question in mind.",
+    "pickTitle": "Tap the cards that call to you. {{remaining}} to go.",
+    "pickA11y": "Face-down card {{number}}",
+    "slotA11y": "{{position}}: not chosen yet",
+    "revealTitle": "Tap each card to turn it over",
+    "revealAll": "Turn over all cards",
+    "turnOverA11y": "Turn over the card for {{position}}",
+    "summaryTitle": "Reading summary",
+    "summary": {
+      "majorsMany": "Several Major Arcana cards appeared, so this may be a meaningful chapter with bigger lessons in it.",
+      "majorsNone": "No Major Arcana appeared: this looks like everyday territory, shaped mostly by your own choices.",
+      "suitWands": "Wands lead this reading: energy, drive and creative fire are in focus.",
+      "suitCups": "Cups lead this reading: feelings, relationships and intuition are in focus.",
+      "suitSwords": "Swords lead this reading: thoughts, decisions and honest words are in focus.",
+      "suitPentacles": "Pentacles lead this reading: work, money and everyday practical matters are in focus.",
+      "reversedMany": "Many cards are reversed, which can point to energy turned inward or something still unfolding. Go gently.",
+      "allUpright": "Every card is upright, suggesting energy that is flowing openly.",
+      "keywords": "Key themes: {{keywords}}.",
+      "advice": "A thought to carry with you: {{advice}}"
+    },
+    "questionShown": "Your question: {{question}}",
+    "newReading": "New reading",
+    "backHome": "Back to Home",
+    "notFound": "This spread doesn't exist.",
+    "crisisTitle": "You don't have to face this alone",
+    "crisisBody": "It sounds like you may be going through something very painful. A tarot reading isn't the right support for this moment. Please reach out to someone you trust, or to a local health professional. If you might be in danger right now, contact your local emergency number.",
+    "crisisHelpline": "You can also contact {{name}}.",
+    "crisisCall": "Call {{phone}}",
+    "crisisWebsite": "Open website",
+    "crisisEdit": "Change my question",
+    "pickForMe": "Choose for me",
+    "shuffleTap": "Tap to spread the cards",
+    "positionHeading": "{{number}}. {{position}}"
   },
   "journal": {
     "title": "Journal",
@@ -104,7 +154,11 @@
     "preview": "Preview",
     "previewText": "Today is a good day to listen to your heart.",
     "about": "About",
-    "version": "Version {{version}}"
+    "version": "Version {{version}}",
+    "readings": "Readings",
+    "reversedCards": "Reversed cards",
+    "reversedCardsHint": "Cards can appear upside down, adding nuance to their meaning.",
+    "haptics": "Vibration feedback"
   },
   "disclaimer": {
     "short": "For entertainment and self-reflection only. Tarot cannot predict the future.",

@@ -72,6 +72,7 @@ function Navigation() {
         <Stack.Screen name="(onboarding)" />
         <Stack.Screen name="(tabs)" />
         <Stack.Screen name="card/[id]" />
+        <Stack.Screen name="reading/[spreadId]" />
       </Stack>
     </ThemeProvider>
   );

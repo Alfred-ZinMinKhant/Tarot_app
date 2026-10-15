@@ -80,6 +80,23 @@ export default function Settings() {
       </Card>
 
       <Card>
+        <AppText variant="heading">{t('settings.readings')}</AppText>
+        <SettingRow
+          label={t('settings.reversedCards')}
+          description={t('settings.reversedCardsHint')}
+          value={s.reversedCards}
+          onValueChange={s.setReversedCards}
+          testID="toggle-reversed-cards"
+        />
+        <SettingRow
+          label={t('settings.haptics')}
+          value={s.haptics}
+          onValueChange={s.setHaptics}
+          testID="toggle-haptics"
+        />
+      </Card>
+
+      <Card>
         <AppText variant="heading">{t('settings.about')}</AppText>
         <AppText>{t('disclaimer.long')}</AppText>
         <AppText variant="caption" tone="textMuted">

@@ -7,11 +7,12 @@ import brand from './src/config/brand.json';
  * variables (see .env.example). Defaults come from src/config/brand.json,
  * the single source of truth for the app name.
  */
+// `||` (not `??`) so blank lines copied from .env.example fall back to the defaults.
 const env = process.env;
 
 const config: ExpoConfig = {
-  name: env.APP_DISPLAY_NAME ?? brand.appName.en,
-  slug: env.EXPO_SLUG ?? brand.slug,
+  name: env.APP_DISPLAY_NAME || brand.appName.en,
+  slug: env.EXPO_SLUG || brand.slug,
   scheme: brand.scheme,
   version: '1.0.0',
   orientation: 'portrait',
@@ -19,14 +20,14 @@ const config: ExpoConfig = {
   userInterfaceStyle: 'automatic',
   ios: {
     supportsTablet: false,
-    bundleIdentifier: env.IOS_BUNDLE_IDENTIFIER ?? brand.iosBundleIdentifier,
+    bundleIdentifier: env.IOS_BUNDLE_IDENTIFIER || brand.iosBundleIdentifier,
     infoPlist: {
       CFBundleAllowMixedLocalizations: true,
       CFBundleLocalizations: ['en', 'my'],
     },
   },
   android: {
-    package: env.ANDROID_PACKAGE ?? brand.androidPackage,
+    package: env.ANDROID_PACKAGE || brand.androidPackage,
     adaptiveIcon: {
       backgroundColor: '#14102B',
       foregroundImage: './assets/images/android-icon-foreground.png',
@@ -62,6 +63,13 @@ const config: ExpoConfig = {
   },
   extra: {
     appName: brand.appName,
+    // Shown in the crisis-support message when set. Leave empty until a verified local service is
+    // chosen; the message then encourages contacting someone trusted or local emergency services.
+    crisisHelpline: {
+      name: env.CRISIS_HELPLINE_NAME ?? '',
+      phone: env.CRISIS_HELPLINE_PHONE ?? '',
+      url: env.CRISIS_HELPLINE_URL ?? '',
+    },
   },
 };
 
