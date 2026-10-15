@@ -1,0 +1,274 @@
+[
+  {
+    "id": "sunday",
+    "weekday": 0,
+    "en": {
+      "name": "Sunday-born",
+      "animal": "Garuda",
+      "planet": "The Sun",
+      "direction": "North-east",
+      "traits": ["generous", "independent", "big-hearted"],
+      "personality": "Tradition links Sunday-born people with the Garuda, the great bird that flies high. They are often described as generous, independent and full of warm energy, the kind of friend who lifts a room. A gentle growth edge is remembering to rest and to let others help sometimes. Like the Garuda, you may do your best when you can see the bigger picture.",
+      "moods": [
+        "A good day to share something kind with no expectation in return.",
+        "Look at today from a little higher up, like the Garuda. What matters most?",
+        "Your warmth is a gift today. Let it reach someone who needs it.",
+        "Give yourself a short rest; even strong wings need a pause.",
+        "Try saying yes to help when it is offered."
+      ]
+    },
+    "my": {
+      "name": "တနင်္ဂနွေ မွေး",
+      "animal": "ဂဠုန်",
+      "planet": "နေ",
+      "direction": "အရှေ့မြောက်",
+      "traits": ["ရက်ရောသူ", "ကိုယ့်ခြေထောက်ပေါ် ရပ်တည်သူ", "စိတ်ထားကြီးသူ"],
+      "personality": "ရိုးရာအယူအဆအရ တနင်္ဂနွေ မွေးသူတွေကို မြင့်မြင့် ပျံသန်းတဲ့ ငှက်ကြီး ဂဠုန်နဲ့ ဆက်စပ်ကြပါတယ်။ ရက်ရော၊ ကိုယ့်ခြေထောက်ပေါ် ရပ်တည်ပြီး နွေးထွေးတဲ့ စွမ်းအင် ပြည့်နေသူတွေလို့ ပြောလေ့ရှိပြီး အခန်းတစ်ခုလုံးကို လန်းဆန်းစေတဲ့ မိတ်ဆွေမျိုးပါ။ ညင်ညင်သာသာ ကြီးထွားစရာကတော့ တခါတလေ အနားယူဖို့နဲ့ တခြားသူတွေကို ကူညီခွင့်ပေးဖို့ သတိရဖို့ပါ။ ဂဠုန်လိုပဲ ရုပ်ပုံကြီးကို မြင်နိုင်တဲ့အခါ အကောင်းဆုံး လုပ်နိုင်တတ်ပါတယ်။",
+      "moods": [
+        "ပြန်ရမယ်လို့ မမျှော်ဘဲ ကြင်နာတဲ့ တစ်ခုခုကို မျှဝေဖို့ နေ့ကောင်းပါ။",
+        "ဂဠုန်လို ဒီနေ့ကို နည်းနည်း မြင့်မြင့်ကနေ ကြည့်ကြည့်ပါ။ ဘာက အရေးအကြီးဆုံးလဲ။",
+        "သင့်ရဲ့ နွေးထွေးမှုက ဒီနေ့ လက်ဆောင်တစ်ခုပါ။ လိုအပ်နေတဲ့ တစ်ယောက်ယောက်ဆီ ရောက်ပါစေ။",
+        "ခဏလေး အနားယူပါ၊ သန်မာတဲ့ အတောင်ပံတွေလည်း ရပ်နားဖို့ လိုပါတယ်။",
+        "ကူညီပေးမယ်လို့ ကမ်းလာရင် လက်ခံကြည့်ပါ။"
+      ]
+    }
+  },
+  {
+    "id": "monday",
+    "weekday": 1,
+    "en": {
+      "name": "Monday-born",
+      "animal": "Tiger",
+      "planet": "The Moon",
+      "direction": "East",
+      "traits": ["perceptive", "caring", "determined"],
+      "personality": "Monday-born people are traditionally paired with the Tiger and the Moon. They are often seen as perceptive and caring, quietly noticing how others feel, with a tiger's determination once their mind is made up. Moods may change like the moon's phases, which can also make them wonderfully understanding. A gentle growth edge is sharing worries out loud instead of carrying them alone.",
+      "moods": [
+        "Trust the quiet thing you noticed today; your perception is a strength.",
+        "Like the moon, it is fine to show only part of yourself while you rest.",
+        "Choose one goal and approach it with calm tiger focus.",
+        "Someone may appreciate a check-in from you today.",
+        "Say a worry out loud to someone you trust; it often feels lighter."
+      ]
+    },
+    "my": {
+      "name": "တနင်္လာ မွေး",
+      "animal": "ကျား",
+      "planet": "လ",
+      "direction": "အရှေ့",
+      "traits": ["အကဲခတ်တတ်သူ", "ဂရုစိုက်တတ်သူ", "ဆုံးဖြတ်ချက်ခိုင်သူ"],
+      "personality": "ရိုးရာအရ တနင်္လာ မွေးသူတွေကို ကျားနဲ့ လနဲ့ တွဲထားကြပါတယ်။ တခြားသူတွေ ဘယ်လို ခံစားနေလဲ တိတ်တိတ်လေး သတိထားမိတတ်တဲ့ အကဲခတ်တတ်ပြီး ဂရုစိုက်တတ်သူတွေလို့ မြင်ကြပြီး စိတ်ဆုံးဖြတ်ပြီးရင် ကျားလို ခိုင်မာတတ်ပါတယ်။ စိတ်အခြေအနေက လရဲ့ အဆင့်တွေလို ပြောင်းတတ်ပေမဲ့ အဲဒါကပဲ တခြားသူကို အံ့ဩစရာ နားလည်ပေးနိုင်စေပါတယ်။ ညင်ညင်သာသာ ကြီးထွားစရာကတော့ စိုးရိမ်မှုတွေကို တစ်ယောက်တည်း မထမ်းဘဲ ထုတ်ပြောဖို့ပါ။",
+      "moods": [
+        "ဒီနေ့ တိတ်တိတ်လေး သတိထားမိခဲ့တာကို ယုံပါ၊ သင့်အကဲခတ်နိုင်မှုက ခွန်အားတစ်ခုပါ။",
+        "လလိုပဲ အနားယူနေချိန်မှာ ကိုယ့်ရဲ့ တစ်စိတ်တစ်ပိုင်းကိုပဲ ပြတာ ရပါတယ်။",
+        "ပန်းတိုင်တစ်ခု ရွေးပြီး အေးဆေးတဲ့ ကျားရဲ့ အာရုံစူးစိုက်မှုနဲ့ ချဉ်းကပ်ပါ။",
+        "ဒီနေ့ တစ်ယောက်ယောက်က သင့်ဆီက နှုတ်ဆက်စကားလေးကို တန်ဖိုးထားနိုင်ပါတယ်။",
+        "စိုးရိမ်မှုတစ်ခုကို ယုံကြည်ရသူကို ပြောပြကြည့်ပါ၊ များသောအားဖြင့် ပေါ့ပါးသွားတတ်ပါတယ်။"
+      ]
+    }
+  },
+  {
+    "id": "tuesday",
+    "weekday": 2,
+    "en": {
+      "name": "Tuesday-born",
+      "animal": "Lion",
+      "planet": "Mars",
+      "direction": "South-east",
+      "traits": ["honest", "brave", "loyal"],
+      "personality": "Tuesday-born people are traditionally connected with the Lion and the planet Mars. They are often described as honest, brave and loyal, ready to stand up for people they care about. Their directness is refreshing, and their courage can inspire others. A gentle growth edge is pausing before speaking when emotions run high, so that strength and kindness travel together.",
+      "moods": [
+        "Your honesty can help someone today; pair it with a soft tone.",
+        "A little courage goes a long way. Take one brave, small step.",
+        "Stand up for something you care about, calmly and kindly.",
+        "Take three slow breaths before replying to anything that stirs you.",
+        "Loyal friends are treasures. Thank one today."
+      ]
+    },
+    "my": {
+      "name": "အင်္ဂါ မွေး",
+      "animal": "ခြင်္သေ့",
+      "planet": "အင်္ဂါဂြိုဟ်",
+      "direction": "အရှေ့တောင်",
+      "traits": ["ရိုးသားသူ", "သတ္တိရှိသူ", "သစ္စာရှိသူ"],
+      "personality": "ရိုးရာအရ အင်္ဂါ မွေးသူတွေကို ခြင်္သေ့နဲ့ အင်္ဂါဂြိုဟ်နဲ့ ဆက်စပ်ကြပါတယ်။ ရိုးသား၊ သတ္တိရှိပြီး သစ္စာရှိသူတွေ၊ ကိုယ်ဂရုစိုက်တဲ့ လူတွေအတွက် ရပ်တည်ပေးဖို့ အသင့်ရှိသူတွေလို့ ပြောလေ့ရှိပါတယ်။ သူတို့ရဲ့ တိုက်ရိုက်ဆန်မှုက လန်းဆန်းစရာ ကောင်းပြီး သတ္တိက တခြားသူတွေကို အားတက်စေနိုင်ပါတယ်။ ညင်ညင်သာသာ ကြီးထွားစရာကတော့ ခံစားချက်တွေ မြင့်နေချိန်မှာ မပြောခင် ခဏရပ်ဖို့ပါ၊ ဒါမှ ခွန်အားနဲ့ ကြင်နာမှု အတူတကွ သွားနိုင်မှာပါ။",
+      "moods": [
+        "သင့်ရိုးသားမှုက ဒီနေ့ တစ်ယောက်ယောက်ကို ကူညီနိုင်ပါတယ်၊ နူးညံ့တဲ့ လေသံနဲ့ တွဲပါ။",
+        "သတ္တိနည်းနည်းက အများကြီး အကျိုးရှိပါတယ်။ ရဲရင့်တဲ့ ခြေလှမ်းလေးတစ်လှမ်း လှမ်းပါ။",
+        "ကိုယ်ဂရုစိုက်တဲ့ အရာအတွက် အေးအေးဆေးဆေးနဲ့ ကြင်ကြင်နာနာ ရပ်တည်ပါ။",
+        "စိတ်လှုပ်ရှားစေတဲ့ ဘာကိုမဆို မတုံ့ပြန်ခင် အသက်ကို ဖြည်းဖြည်း သုံးကြိမ် ရှူပါ။",
+        "သစ္စာရှိတဲ့ မိတ်ဆွေတွေက ရတနာတွေပါ။ ဒီနေ့ တစ်ယောက်ကို ကျေးဇူးတင်ပါ။"
+      ]
+    }
+  },
+  {
+    "id": "wednesday",
+    "weekday": 3,
+    "en": {
+      "name": "Wednesday-born (morning)",
+      "animal": "Elephant with tusks",
+      "planet": "Mercury",
+      "direction": "South",
+      "traits": ["quick-witted", "warm", "expressive"],
+      "personality": "People born on Wednesday morning are traditionally linked with the tusked Elephant and the planet Mercury. They are often described as quick-witted, warm and expressive, good with words and quick to forgive. Feelings may flare up and settle again just as fast. A gentle growth edge is giving big decisions a night's sleep, so that their bright ideas can land with care.",
+      "moods": [
+        "Your words carry weight today. Use them to encourage someone.",
+        "If something irritates you, let it pass like a cloud before you respond.",
+        "Write down one bright idea before it flies away.",
+        "Sleep on any big decision; tomorrow's view may be clearer.",
+        "Laugh with someone today; your warmth is contagious."
+      ]
+    },
+    "my": {
+      "name": "ဗုဒ္ဓဟူး မွေး (မနက်ပိုင်း)",
+      "animal": "ဆင် (အစွယ်ရှိ)",
+      "planet": "ဗုဒ္ဓဟူးဂြိုဟ်",
+      "direction": "တောင်",
+      "traits": ["ဉာဏ်ထက်မြက်သူ", "နွေးထွေးသူ", "ထုတ်ဖော်ပြောဆိုတတ်သူ"],
+      "personality": "ရိုးရာအရ ဗုဒ္ဓဟူး မနက်ပိုင်း မွေးသူတွေကို အစွယ်ရှိ ဆင်နဲ့ ဗုဒ္ဓဟူးဂြိုဟ်နဲ့ ဆက်စပ်ကြပါတယ်။ ဉာဏ်ထက်မြက်၊ နွေးထွေးပြီး ထုတ်ဖော်ပြောဆိုတတ်သူတွေ၊ စကားကောင်းပြီး မြန်မြန် ခွင့်လွှတ်တတ်သူတွေလို့ ပြောလေ့ရှိပါတယ်။ ခံစားချက်တွေ ရုတ်တရက် ပြင်းထန်လာပြီး အလားတူ မြန်မြန် ငြိမ်သွားတတ်ပါတယ်။ ညင်ညင်သာသာ ကြီးထွားစရာကတော့ ဆုံးဖြတ်ချက်ကြီးတွေကို တစ်ညလောက် အိပ်ပြီးမှ ချဖို့ပါ၊ ဒါမှ တောက်ပတဲ့ အကြံတွေက ဂရုစိုက်မှုနဲ့ အကောင်အထည် ပေါ်လာမှာပါ။",
+      "moods": [
+        "ဒီနေ့ သင့်စကားတွေက အလေးချိန် ရှိပါတယ်။ တစ်ယောက်ယောက်ကို အားပေးဖို့ သုံးပါ။",
+        "တစ်ခုခုက စိတ်တိုစေရင် မတုံ့ပြန်ခင် တိမ်တိုက်လို ဖြတ်သွားခွင့်ပေးပါ။",
+        "အကြံကောင်းတစ်ခု ပျံမသွားခင် ချရေးထားပါ။",
+        "ဆုံးဖြတ်ချက်ကြီးကို တစ်ညအိပ်ပြီးမှ ချပါ၊ မနက်ဖြန် အမြင်က ပိုရှင်းနိုင်ပါတယ်။",
+        "ဒီနေ့ တစ်ယောက်ယောက်နဲ့ အတူ ရယ်မောပါ၊ သင့်နွေးထွေးမှုက ကူးစက်တတ်ပါတယ်။"
+      ]
+    }
+  },
+  {
+    "id": "rahu",
+    "weekday": 3,
+    "en": {
+      "name": "Wednesday-born (afternoon, Rahu)",
+      "animal": "Elephant without tusks",
+      "planet": "Rahu",
+      "direction": "North-west",
+      "traits": ["independent", "imaginative", "steady"],
+      "personality": "In Burmese tradition, people born on Wednesday afternoon belong to Rahu, symbolised by the tuskless Elephant. They are often described as independent, imaginative and steady under pressure, preferring to find their own way. Their quiet strength can surprise people. A gentle growth edge is letting others in a little more, since sharing plans can make the road easier.",
+      "moods": [
+        "Your own way is valid. Take one step on it today.",
+        "Let your imagination play for a few minutes; ideas grow in play.",
+        "Share a plan with someone you trust and see what they add.",
+        "Steady beats hurried today. Go at your own pace.",
+        "Notice a small beauty around you and let it calm you."
+      ]
+    },
+    "my": {
+      "name": "ဗုဒ္ဓဟူး မွေး (ညနေပိုင်း၊ ရာဟု)",
+      "animal": "ဟိုင်း (အစွယ်မဲ့ဆင်)",
+      "planet": "ရာဟု",
+      "direction": "အနောက်မြောက်",
+      "traits": ["ကိုယ့်ခြေထောက်ပေါ် ရပ်တည်သူ", "စိတ်ကူးကောင်းသူ", "တည်ငြိမ်သူ"],
+      "personality": "မြန်မာ့ရိုးရာအရ ဗုဒ္ဓဟူး ညနေပိုင်း မွေးသူတွေက ရာဟုမှာ ပါဝင်ပြီး အစွယ်မဲ့ ဆင်ဖြစ်တဲ့ ဟိုင်းနဲ့ ကိုယ်စားပြုပါတယ်။ ကိုယ့်ခြေထောက်ပေါ် ရပ်တည်၊ စိတ်ကူးကောင်းပြီး ဖိအားအောက်မှာ တည်ငြိမ်သူတွေ၊ ကိုယ့်လမ်းကိုယ် ရှာဖို့ နှစ်သက်သူတွေလို့ ပြောလေ့ရှိပါတယ်။ သူတို့ရဲ့ တိတ်ဆိတ်တဲ့ ခွန်အားက လူတွေကို အံ့ဩစေနိုင်ပါတယ်။ ညင်ညင်သာသာ ကြီးထွားစရာကတော့ တခြားသူတွေကို နည်းနည်း ပိုဝင်ခွင့်ပေးဖို့ပါ၊ အစီအစဉ်တွေ မျှဝေတာက လမ်းကို ပိုလွယ်စေနိုင်ပါတယ်။",
+      "moods": [
+        "ကိုယ့်လမ်းကိုယ် လျှောက်တာ မှန်ပါတယ်။ ဒီနေ့ အဲဒီလမ်းပေါ် ခြေလှမ်းတစ်လှမ်း လှမ်းပါ။",
+        "စိတ်ကူးယဉ်မှုကို မိနစ်အနည်းငယ် ကစားခွင့်ပေးပါ၊ အကြံတွေက ကစားရင်း ကြီးထွားတတ်ပါတယ်။",
+        "ယုံကြည်ရသူတစ်ယောက်နဲ့ အစီအစဉ်တစ်ခု မျှဝေပြီး သူတို့ ဘာထပ်ဖြည့်ပေးမလဲ ကြည့်ပါ။",
+        "ဒီနေ့ အလောတကြီးထက် တည်ငြိမ်တာက ပိုကောင်းပါတယ်။ ကိုယ့်အရှိန်နဲ့ကိုယ် သွားပါ။",
+        "ပတ်ဝန်းကျင်က လှပမှုလေးတစ်ခုကို သတိထားကြည့်ပြီး စိတ်ကို အေးခွင့်ပေးပါ။"
+      ]
+    }
+  },
+  {
+    "id": "thursday",
+    "weekday": 4,
+    "en": {
+      "name": "Thursday-born",
+      "animal": "Rat",
+      "planet": "Jupiter",
+      "direction": "West",
+      "traits": ["gentle", "thoughtful", "fair"],
+      "personality": "Thursday-born people are traditionally associated with the Rat and the planet Jupiter. They are often described as gentle, thoughtful and fair, people who listen well and think before acting. Their calm presence can make others feel safe. A gentle growth edge is trusting their own judgement a little more, because their quiet wisdom is usually worth sharing.",
+      "moods": [
+        "Your calm presence helps others today; simply being there is enough.",
+        "Trust your judgement on a small choice without asking anyone.",
+        "Listen fully to one person today, without planning your reply.",
+        "Share a piece of your quiet wisdom; someone may need it.",
+        "Be as fair to yourself as you are to others."
+      ]
+    },
+    "my": {
+      "name": "ကြာသပတေး မွေး",
+      "animal": "ကြွက်",
+      "planet": "ကြာသပတေးဂြိုဟ်",
+      "direction": "အနောက်",
+      "traits": ["နူးညံ့သူ", "စဉ်းစားဆင်ခြင်တတ်သူ", "မျှတသူ"],
+      "personality": "ရိုးရာအရ ကြာသပတေး မွေးသူတွေကို ကြွက်နဲ့ ကြာသပတေးဂြိုဟ်နဲ့ ဆက်စပ်ကြပါတယ်။ နူးညံ့၊ စဉ်းစားဆင်ခြင်တတ်ပြီး မျှတသူတွေ၊ ကောင်းကောင်း နားထောင်ပြီး မလုပ်ခင် စဉ်းစားတတ်သူတွေလို့ ပြောလေ့ရှိပါတယ်။ သူတို့ရဲ့ အေးဆေးတဲ့ ရှိနေမှုက တခြားသူတွေကို လုံခြုံသလို ခံစားစေနိုင်ပါတယ်။ ညင်ညင်သာသာ ကြီးထွားစရာကတော့ ကိုယ့်ဆုံးဖြတ်ချက်ကို နည်းနည်း ပိုယုံဖို့ပါ၊ သူတို့ရဲ့ တိတ်ဆိတ်တဲ့ ပညာက များသောအားဖြင့် မျှဝေထိုက်ပါတယ်။",
+      "moods": [
+        "ဒီနေ့ သင့်ရဲ့ အေးဆေးတဲ့ ရှိနေမှုက တခြားသူကို ကူညီပါတယ်၊ ရှိနေပေးရုံနဲ့ လုံလောက်ပါတယ်။",
+        "ရွေးချယ်မှုလေးတစ်ခုမှာ ဘယ်သူ့ကိုမှ မမေးဘဲ ကိုယ့်ဆုံးဖြတ်ချက်ကို ယုံကြည့်ပါ။",
+        "ဒီနေ့ တစ်ယောက်ကို ပြန်ဖြေဖို့ မစီစဉ်ဘဲ အပြည့်အဝ နားထောင်ပါ။",
+        "သင့်ရဲ့ တိတ်ဆိတ်တဲ့ ပညာလေးကို မျှဝေပါ၊ တစ်ယောက်ယောက် လိုအပ်နေနိုင်ပါတယ်။",
+        "တခြားသူတွေကို မျှတသလို ကိုယ့်ကိုယ်ကိုလည်း မျှတပါ။"
+      ]
+    }
+  },
+  {
+    "id": "friday",
+    "weekday": 5,
+    "en": {
+      "name": "Friday-born",
+      "animal": "Guinea pig",
+      "planet": "Venus",
+      "direction": "North",
+      "traits": ["sociable", "creative", "cheerful"],
+      "personality": "Friday-born people are traditionally linked with the Guinea pig and the planet Venus. They are often described as sociable, creative and cheerful, enjoying good company, beauty and conversation. Their friendliness opens doors and their creativity brightens everyday life. A gentle growth edge is following ideas through to the end, so that their many sparks can become finished, lovely things.",
+      "moods": [
+        "Bring a little beauty into your day: music, flowers or a tidy corner.",
+        "Reach out to a friend you have not talked to in a while.",
+        "Finish one small creative thing you started.",
+        "Your cheerfulness is welcome today; share a smile.",
+        "Enjoy good company, and save a quiet moment for yourself too."
+      ]
+    },
+    "my": {
+      "name": "သောကြာ မွေး",
+      "animal": "ပူး",
+      "planet": "သောကြာဂြိုဟ်",
+      "direction": "မြောက်",
+      "traits": ["ပေါင်းသင်းဆံ့သူ", "ဖန်တီးမှုရှိသူ", "ရွှင်လန်းသူ"],
+      "personality": "ရိုးရာအရ သောကြာ မွေးသူတွေကို ပူးနဲ့ သောကြာဂြိုဟ်နဲ့ ဆက်စပ်ကြပါတယ်။ ပေါင်းသင်းဆံ့၊ ဖန်တီးမှုရှိပြီး ရွှင်လန်းသူတွေ၊ အဖော်ကောင်း၊ လှပမှုနဲ့ စကားဝိုင်းကို နှစ်သက်သူတွေလို့ ပြောလေ့ရှိပါတယ်။ သူတို့ရဲ့ ဖော်ရွေမှုက တံခါးတွေ ဖွင့်ပေးပြီး ဖန်တီးမှုက နေ့စဉ်ဘဝကို လင်းလက်စေပါတယ်။ ညင်ညင်သာသာ ကြီးထွားစရာကတော့ အကြံတွေကို အဆုံးထိ လုပ်ဆောင်ဖို့ပါ၊ ဒါမှ မီးပွားများစွာက ပြီးစီးပြီး လှပတဲ့ အရာတွေ ဖြစ်လာမှာပါ။",
+      "moods": [
+        "ဒီနေ့ လှပမှုလေး ထည့်ပါ - ဂီတ၊ ပန်း ဒါမှမဟုတ် သပ်ရပ်တဲ့ ထောင့်လေးတစ်ခု။",
+        "မပြောဖြစ်တာ ကြာနေတဲ့ မိတ်ဆွေတစ်ယောက်ကို ဆက်သွယ်ကြည့်ပါ။",
+        "စထားတဲ့ ဖန်တီးမှု အလုပ်လေးတစ်ခုကို အပြီးသတ်ပါ။",
+        "ဒီနေ့ သင့်ရွှင်လန်းမှုကို ကြိုဆိုပါတယ်၊ အပြုံးလေးတစ်ခု မျှဝေပါ။",
+        "အဖော်ကောင်းတွေနဲ့ ပျော်ရွှင်ပါ၊ ကိုယ့်အတွက်လည်း တိတ်ဆိတ်တဲ့ အချိန်လေး ချန်ထားပါ။"
+      ]
+    }
+  },
+  {
+    "id": "saturday",
+    "weekday": 6,
+    "en": {
+      "name": "Saturday-born",
+      "animal": "Naga",
+      "planet": "Saturn",
+      "direction": "South-west",
+      "traits": ["hard-working", "patient", "protective"],
+      "personality": "Saturday-born people are traditionally paired with the Naga, the great serpent-dragon, and the planet Saturn. They are often described as hard-working, patient and protective, people who build things that last and look after those close to them. Their persistence is remarkable. A gentle growth edge is softening when things don't go to plan, and letting playfulness balance all that dedication.",
+      "moods": [
+        "Your steady effort is adding up, even if it feels slow.",
+        "Protect your own energy as carefully as you protect others.",
+        "Let one thing go that did not go to plan; tomorrow is new.",
+        "Add a playful moment to a serious day.",
+        "Patience is your quiet superpower today."
+      ]
+    },
+    "my": {
+      "name": "စနေ မွေး",
+      "animal": "နဂါး",
+      "planet": "စနေဂြိုဟ်",
+      "direction": "အနောက်တောင်",
+      "traits": ["ကြိုးစားသူ", "စိတ်ရှည်သူ", "ကာကွယ်စောင့်ရှောက်တတ်သူ"],
+      "personality": "ရိုးရာအရ စနေ မွေးသူတွေကို နဂါးနဲ့ စနေဂြိုဟ်နဲ့ တွဲထားကြပါတယ်။ ကြိုးစား၊ စိတ်ရှည်ပြီး ကာကွယ်စောင့်ရှောက်တတ်သူတွေ၊ ကြာရှည်ခံတဲ့ အရာတွေကို တည်ဆောက်ပြီး နီးစပ်သူတွေကို ဂရုစိုက်သူတွေလို့ ပြောလေ့ရှိပါတယ်။ သူတို့ရဲ့ ဇွဲက ချီးကျူးစရာပါ။ ညင်ညင်သာသာ ကြီးထွားစရာကတော့ အရာတွေ အစီအစဉ်အတိုင်း မဖြစ်တဲ့အခါ ပျော့ပျောင်းဖို့နဲ့ အပ်နှံမှုတွေကို ကစားလိုစိတ်နဲ့ မျှတဖို့ပါ။",
+      "moods": [
+        "နှေးသလို ခံစားရရင်တောင် သင့်ရဲ့ တည်ငြိမ်တဲ့ ကြိုးစားမှုက စုပုံလာနေပါတယ်။",
+        "တခြားသူကို ကာကွယ်သလောက် ကိုယ့်စွမ်းအင်ကိုလည်း ဂရုတစိုက် ကာကွယ်ပါ။",
+        "အစီအစဉ်အတိုင်း မဖြစ်ခဲ့တဲ့ တစ်ခုကို လွှတ်ချလိုက်ပါ၊ မနက်ဖြန်က အသစ်ပါ။",
+        "လေးနက်တဲ့ နေ့တစ်နေ့မှာ ကစားစရာ အခိုက်အတန့်လေး ထည့်ပါ။",
+        "စိတ်ရှည်မှုက ဒီနေ့ သင့်ရဲ့ တိတ်ဆိတ်တဲ့ အစွမ်းထက်မှုပါ။"
+      ]
+    }
+  }
+]
