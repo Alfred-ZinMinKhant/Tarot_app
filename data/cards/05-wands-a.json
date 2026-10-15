@@ -1,0 +1,345 @@
+[
+  {
+    "id": "wands-01-ace",
+    "en": {
+      "name": "Ace of Wands",
+      "keywords": ["spark", "inspiration", "new venture", "enthusiasm", "potential"],
+      "upright": "The Ace of Wands offers a single living branch, sprouting fresh leaves, from a hand reaching out of the clouds. It is the spark of a new idea, a burst of motivation or a creative calling that wants to be explored. Energy is available now, and it responds well to action. Write down the idea, take the first step or simply say yes to what excites you. Small sparks, tended well, can grow into steady flames.",
+      "reversed": "Reversed, the Ace of Wands may suggest a spark that has not yet caught, perhaps because of doubt, tiredness or bad timing. You might feel uninspired, or have many ideas but struggle to start any of them. Be patient. Inspiration often returns when you rest, change your surroundings or try something playful without pressure. Choose one small idea and nurture it gently, rather than waiting for a perfect moment.",
+      "love": {
+        "upright": "In love, a new spark of attraction or excitement may appear. Passion and playfulness are highlighted. If you are in a relationship, try something new together to rekindle warmth and fun.",
+        "reversed": "Reversed, enthusiasm may feel low or mismatched between two people. Avoid forcing chemistry. Rest, honest talk and small playful gestures can help warmth return naturally over time."
+      },
+      "career": {
+        "upright": "At work, a fresh project, idea or opportunity may excite you. This is a good time to start something, pitch a concept or explore a creative path. Act while the energy is strong.",
+        "reversed": "Reversed, a project may be delayed or motivation may be slipping. Clarify what you really want to build. Breaking a big idea into smaller steps can help you get moving again."
+      },
+      "money": {
+        "upright": "With money, a new idea for earning or a creative opportunity may appear. Explore it with enthusiasm and good planning. Initial steps can be small while you test what works.",
+        "reversed": "Reversed, be cautious with impulsive investments driven by excitement alone. Let ideas mature a little. A clearer plan can turn a promising spark into something practical and steady."
+      },
+      "health": {
+        "upright": "For wellbeing and spirit, fresh energy and motivation are available. Try a new activity, sport or creative hobby. Movement that feels fun can be especially energising now.",
+        "reversed": "Reversed, energy may feel low or scattered. Rest is not failure; it rebuilds your spark. Gentle activity, good sleep and something that makes you smile can help restore vitality."
+      },
+      "advice": "Act on one inspiring idea today, even with the smallest first step."
+    },
+    "my": {
+      "name": "တုတ် အေ့စ်",
+      "keywords": ["မီးပွား", "စိတ်ကူးစိတ်သန်း", "လုပ်ငန်းသစ်", "စိတ်အားထက်သန်မှု", "အလားအလာ"],
+      "upright": "တုတ် အေ့စ်မှာ တိမ်တိုက်ထဲက ထွက်လာတဲ့ လက်တစ်ဖက်က အရွက်နုလေးတွေ ပေါက်နေတဲ့ အသက်ရှင်တဲ့ သစ်ကိုင်းတစ်ချောင်းကို ကမ်းပေးနေပါတယ်။ ဒါဟာ အကြံသစ်ရဲ့ မီးပွား၊ စိတ်အားတက်ကြွမှု ဒါမှမဟုတ် စူးစမ်းချင်တဲ့ ဖန်တီးမှုခေါ်သံ ဖြစ်ပါတယ်။ အခု စွမ်းအင်ရှိနေပြီး လုပ်ဆောင်မှုကို ကောင်းကောင်း တုံ့ပြန်ပါတယ်။ အကြံကို ချရေးပါ၊ ပထမခြေလှမ်းကို လှမ်းပါ ဒါမှမဟုတ် စိတ်လှုပ်ရှားစေတဲ့ အရာကို လက်ခံလိုက်ပါ။ ကောင်းကောင်း ပြုစုထားတဲ့ မီးပွားလေးတွေက တည်ငြိမ်တဲ့ မီးလျှံအဖြစ် ကြီးထွားလာနိုင်ပါတယ်။",
+      "reversed": "ပြောင်းပြန်ကျရင် တုတ် အေ့စ်က သံသယ၊ ပင်ပန်းမှု ဒါမှမဟုတ် အချိန်မကိုက်မှုကြောင့် မီးမစွဲသေးတဲ့ မီးပွားကို ညွှန်ပြနိုင်ပါတယ်။ စိတ်ကူးမပေါ်သလို ခံစားရတာ ဒါမှမဟုတ် အကြံတွေ အများကြီးရှိပေမဲ့ ဘယ်တစ်ခုမှ စဖို့ ခက်နေတာ ဖြစ်နိုင်ပါတယ်။ စိတ်ရှည်ပါ။ အနားယူတဲ့အခါ၊ ပတ်ဝန်းကျင် ပြောင်းတဲ့အခါ ဒါမှမဟုတ် ဖိအားမရှိဘဲ ပျော်စရာ တစ်ခုခု စမ်းကြည့်တဲ့အခါ စိတ်ကူးစိတ်သန်းက ပြန်ရောက်လာတတ်ပါတယ်။ ပြီးပြည့်စုံတဲ့ အချိန်ကို စောင့်မယ့်အစား အကြံလေးတစ်ခုကို ရွေးပြီး ညင်သာစွာ ပြုစုပါ။",
+      "love": {
+        "upright": "အချစ်ရေးမှာ ဆွဲဆောင်မှု ဒါမှမဟုတ် စိတ်လှုပ်ရှားမှု မီးပွားသစ် ပေါ်လာနိုင်ပါတယ်။ စိတ်အားထက်သန်မှုနဲ့ ကစားလိုစိတ်တွေ ထင်ရှားပါတယ်။ ဆက်ဆံရေးရှိရင် နွေးထွေးမှုနဲ့ ပျော်စရာကို ပြန်နှိုးဖို့ အတူတကွ အသစ်တစ်ခုခု စမ်းကြည့်ပါ။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် စိတ်အားထက်သန်မှု နည်းနေတာ ဒါမှမဟုတ် နှစ်ယောက်ကြား မကိုက်ညီတာ ဖြစ်နိုင်ပါတယ်။ ဆွဲငင်မှုကို အတင်းမဖန်တီးပါနဲ့။ အနားယူမှု၊ ရိုးသားတဲ့ စကားနဲ့ ပျော်စရာ လုပ်ရပ်လေးတွေက နွေးထွေးမှုကို သဘာဝအတိုင်း ပြန်ယူဆောင်လာနိုင်ပါတယ်။"
+      },
+      "career": {
+        "upright": "အလုပ်မှာ ပရောဂျက်သစ်၊ အကြံသစ် ဒါမှမဟုတ် အခွင့်အလမ်းသစ်က စိတ်လှုပ်ရှားစေနိုင်ပါတယ်။ တစ်ခုခု စတင်ဖို့၊ အယူအဆ တင်ပြဖို့ ဒါမှမဟုတ် ဖန်တီးမှုလမ်းကြောင်း စူးစမ်းဖို့ အချိန်ကောင်းပါ။ စွမ်းအင် အားကောင်းနေတုန်း လုပ်ဆောင်ပါ။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် ပရောဂျက်တစ်ခု နှောင့်နှေးနေတာ ဒါမှမဟုတ် စိတ်အားလျော့နေတာ ဖြစ်နိုင်ပါတယ်။ ကိုယ်တကယ် ဘာတည်ဆောက်ချင်လဲ ရှင်းလင်းပါ။ အကြံကြီးကို ခြေလှမ်းလေးတွေ ခွဲလိုက်တာက ပြန်လှုပ်ရှားနိုင်အောင် ကူညီနိုင်ပါတယ်။"
+      },
+      "money": {
+        "upright": "ငွေကြေးမှာ ဝင်ငွေရဖို့ အကြံသစ် ဒါမှမဟုတ် ဖန်တီးမှုဆိုင်ရာ အခွင့်အလမ်း ပေါ်လာနိုင်ပါတယ်။ စိတ်အားထက်သန်မှုနဲ့ စီမံကိန်းကောင်းကောင်းနဲ့ စူးစမ်းပါ။ ဘာအလုပ်ဖြစ်လဲ စမ်းနေတုန်း ပထမခြေလှမ်းတွေကို သေးသေးလေး ထားနိုင်ပါတယ်။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် စိတ်လှုပ်ရှားမှု သက်သက်ကြောင့် စိတ်လိုက် ရင်းနှီးမြှုပ်နှံတာကို သတိထားပါ။ အကြံတွေ နည်းနည်း ရင့်ကျက်လာပါစေ။ ပိုရှင်းလင်းတဲ့ အစီအစဉ်က အလားအလာရှိတဲ့ မီးပွားကို လက်တွေ့ကျပြီး တည်ငြိမ်တဲ့ အရာအဖြစ် ပြောင်းပေးနိုင်ပါတယ်။"
+      },
+      "health": {
+        "upright": "ကျန်းမာရေးနဲ့ စိတ်ဓာတ်အတွက် လတ်ဆတ်တဲ့ စွမ်းအင်နဲ့ စိတ်အားထက်သန်မှု ရနိုင်ပါတယ်။ လှုပ်ရှားမှုအသစ်၊ အားကစား ဒါမှမဟုတ် ဖန်တီးမှု ဝါသနာတစ်ခု စမ်းကြည့်ပါ။ ပျော်စရာကောင်းတဲ့ လှုပ်ရှားမှုက အခု အထူး အားဖြည့်ပေးနိုင်ပါတယ်။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် စွမ်းအင် နည်းနေတာ ဒါမှမဟုတ် ပြန့်ကျဲနေတာ ဖြစ်နိုင်ပါတယ်။ အနားယူတာ ရှုံးနိမ့်တာ မဟုတ်ပါဘူး၊ မီးပွားကို ပြန်တည်ဆောက်ပေးတာပါ။ ညင်သာတဲ့ လှုပ်ရှားမှု၊ အိပ်ရေးဝမှုနဲ့ ပြုံးစေတဲ့ အရာက တက်ကြွမှုကို ပြန်ပေးနိုင်ပါတယ်။"
+      },
+      "advice": "ဒီနေ့ စိတ်အားတက်စေတဲ့ အကြံတစ်ခုကို အသေးဆုံး ခြေလှမ်းနဲ့ဖြစ်ဖြစ် လုပ်ဆောင်ပါ။"
+    }
+  },
+  {
+    "id": "wands-02-two",
+    "en": {
+      "name": "Two of Wands",
+      "keywords": ["planning", "vision", "decisions", "future", "courage to expand"],
+      "upright": "The Two of Wands shows a figure holding a small globe, gazing out from a high wall toward distant lands. You have a sense of what is possible, and now you are weighing where to go next. This card favours planning, vision and the courage to look beyond familiar ground. Consider your options carefully and dream a little bigger than usual. A thoughtful plan, made with honesty about your goals, can prepare you for meaningful expansion.",
+      "reversed": "Reversed, the Two of Wands may point to hesitation, fear of the unknown or plans that remain stuck on paper. You might feel safe where you are but quietly restless. Alternatively, a plan may lack clear direction. Ask yourself what is holding you back and whether that fear is protecting you or limiting you. Even a small step beyond your comfort zone can make the larger vision feel more achievable.",
+      "love": {
+        "upright": "In love, you may be thinking about the future of a relationship or what you want in a partner. Talk openly about plans and dreams. Shared vision can bring two people closer.",
+        "reversed": "Reversed, uncertainty about the future may be causing hesitation. Avoid making assumptions about what the other person wants. Honest, gentle talk about direction can ease worry for both of you."
+      },
+      "career": {
+        "upright": "At work, long-term planning and bold thinking are favoured. Consider new markets, roles or skills. Map out a strategy, and be willing to step a little beyond familiar territory.",
+        "reversed": "Reversed, fear of risk may be keeping you from progress. Revisit your goals and identify one realistic step forward. Seek advice if the path feels unclear or overwhelming."
+      },
+      "money": {
+        "upright": "With money, planning for the future is wise. Consider long-term goals such as saving for education, travel or a home. Research options carefully before you choose a direction.",
+        "reversed": "Reversed, you may be hesitating on a financial decision or planning without a clear goal. Define what you are saving or working toward. Clarity can make choices feel easier."
+      },
+      "health": {
+        "upright": "For wellbeing and spirit, set a gentle long-term goal, such as a new routine or a wellness plan. Looking ahead with hope can motivate healthy, sustainable choices day by day.",
+        "reversed": "Reversed, restlessness or worry about the future may be affecting your peace. Bring your attention back to the present with simple grounding habits like walking, stretching or journaling."
+      },
+      "advice": "Spend a few minutes today imagining where you want to be, then write one step down."
+    },
+    "my": {
+      "name": "တုတ် နှစ်ချောင်း",
+      "keywords": ["စီမံကိန်းချခြင်း", "အမြင်", "ဆုံးဖြတ်ချက်", "အနာဂတ်", "ချဲ့ထွင်ရဲသောသတ္တိ"],
+      "upright": "တုတ် နှစ်ချောင်းမှာ ကမ္ဘာလုံးလေးတစ်လုံးကို ကိုင်ပြီး မြင့်မားတဲ့ နံရံပေါ်ကနေ ဝေးလံတဲ့ နယ်မြေတွေဆီ မျှော်ကြည့်နေတဲ့ လူတစ်ယောက်ကို ပြပါတယ်။ ဘာတွေ ဖြစ်နိုင်လဲဆိုတာ သင်သိနေပြီး နောက်ဘယ်ကို သွားမလဲ ချိန်ဆနေပါတယ်။ ဒီကတ်က စီမံကိန်းချခြင်း၊ အမြင်ကျယ်ခြင်းနဲ့ ရင်းနှီးပြီးသား နယ်မြေကို ကျော်ကြည့်ရဲတဲ့ သတ္တိကို အားပေးပါတယ်။ ရွေးချယ်စရာတွေကို ဂရုတစိုက် စဉ်းစားပြီး ပုံမှန်ထက် နည်းနည်း ကြီးကြီး အိပ်မက်မက်ကြည့်ပါ။ ကိုယ့်ပန်းတိုင်ကို ရိုးသားစွာ သိပြီး ချမှတ်ထားတဲ့ အစီအစဉ်က အဓိပ္ပာယ်ရှိတဲ့ ချဲ့ထွင်မှုအတွက် ပြင်ဆင်ပေးနိုင်ပါတယ်။",
+      "reversed": "ပြောင်းပြန်ကျရင် တုတ် နှစ်ချောင်းက တွန့်ဆုတ်ခြင်း၊ မသိတာကို ကြောက်ခြင်း ဒါမှမဟုတ် စာရွက်ပေါ်မှာပဲ ရပ်နေတဲ့ အစီအစဉ်တွေကို ညွှန်ပြနိုင်ပါတယ်။ ရှိနေတဲ့နေရာမှာ လုံခြုံပေမဲ့ တိတ်တိတ်လေး မငြိမ်မသက် ဖြစ်နေတာ ဖြစ်နိုင်ပါတယ်။ ဒါမှမဟုတ် အစီအစဉ်တစ်ခုမှာ ရှင်းလင်းတဲ့ ဦးတည်ချက် မရှိတာ ဖြစ်နိုင်ပါတယ်။ ဘာက နောက်ပြန်ဆွဲထားလဲ၊ အဲဒီကြောက်စိတ်က ကာကွယ်ပေးနေတာလား ကန့်သတ်နေတာလား မေးကြည့်ပါ။ သက်တောင့်သက်သာ နယ်ကို ကျော်တဲ့ ခြေလှမ်းလေးတစ်လှမ်းကတောင် အမြင်ကြီးကို ပိုလက်လှမ်းမီသလို ခံစားရစေနိုင်ပါတယ်။",
+      "love": {
+        "upright": "အချစ်ရေးမှာ ဆက်ဆံရေးရဲ့ အနာဂတ် ဒါမှမဟုတ် အဖော်မှာ ဘာလိုချင်လဲဆိုတာ စဉ်းစားနေနိုင်ပါတယ်။ အစီအစဉ်တွေနဲ့ အိပ်မက်တွေအကြောင်း ပွင့်ပွင့်လင်းလင်း ပြောပါ။ မျှဝေထားတဲ့ အမြင်က လူနှစ်ယောက်ကို ပိုနီးကပ်စေနိုင်ပါတယ်။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် အနာဂတ်အပေါ် မသေချာမှုက တွန့်ဆုတ်စေနိုင်ပါတယ်။ တစ်ဖက်လူ ဘာလိုချင်လဲဆိုတာ ကိုယ့်ဘာသာ မယူဆပါနဲ့။ ဦးတည်ချက်အကြောင်း ရိုးသားညင်သာစွာ ပြောတာက နှစ်ယောက်လုံးရဲ့ စိုးရိမ်မှုကို လျော့စေနိုင်ပါတယ်။"
+      },
+      "career": {
+        "upright": "အလုပ်မှာ ရေရှည် စီမံကိန်းချခြင်းနဲ့ ရဲရင့်တဲ့ တွေးခေါ်မှု အခွင့်သာပါတယ်။ ဈေးကွက်သစ်၊ ရာထူးသစ် ဒါမှမဟုတ် ကျွမ်းကျင်မှုသစ်တွေကို စဉ်းစားပါ။ ဗျူဟာတစ်ခု ချမှတ်ပြီး ရင်းနှီးပြီးသား နယ်ပယ်ကို နည်းနည်း ကျော်လှမ်းဖို့ ဆန္ဒရှိပါ။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် အန္တရာယ်ကို ကြောက်တာက တိုးတက်မှုကို တားဆီးနေနိုင်ပါတယ်။ ပန်းတိုင်တွေကို ပြန်ကြည့်ပြီး လက်တွေ့ကျတဲ့ ရှေ့ခြေလှမ်းတစ်ခု ဖော်ထုတ်ပါ။ လမ်းကြောင်း မရှင်းလင်းရင် ဒါမှမဟုတ် လွှမ်းမိုးနေရင် အကြံဉာဏ် ရှာပါ။"
+      },
+      "money": {
+        "upright": "ငွေကြေးမှာ အနာဂတ်အတွက် စီစဉ်တာ ပညာရှိပါတယ်။ ပညာရေး၊ ခရီးသွားခြင်း ဒါမှမဟုတ် အိမ်အတွက် စုဆောင်းတာလို ရေရှည်ပန်းတိုင်တွေကို စဉ်းစားပါ။ ဦးတည်ချက် မရွေးခင် ရွေးချယ်စရာတွေကို ဂရုတစိုက် လေ့လာပါ။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် ငွေကြေးဆုံးဖြတ်ချက်တစ်ခုမှာ တွန့်ဆုတ်နေတာ ဒါမှမဟုတ် ရှင်းလင်းတဲ့ ပန်းတိုင်မရှိဘဲ စီစဉ်နေတာ ဖြစ်နိုင်ပါတယ်။ ဘာအတွက် စုဆောင်းနေလဲ၊ ဘာဆီ ကြိုးစားနေလဲ သတ်မှတ်ပါ။ ရှင်းလင်းမှုက ရွေးချယ်ရတာကို ပိုလွယ်စေပါတယ်။"
+      },
+      "health": {
+        "upright": "ကျန်းမာရေးနဲ့ စိတ်ဓာတ်အတွက် နေ့စဉ်လုပ်ငန်းသစ် ဒါမှမဟုတ် ကျန်းမာရေး အစီအစဉ်လို ညင်သာတဲ့ ရေရှည်ပန်းတိုင်တစ်ခု ချမှတ်ပါ။ မျှော်လင့်ချက်နဲ့ ရှေ့ကို မျှော်ကြည့်တာက ကျန်းမာပြီး ရေရှည်တည်တံ့တဲ့ ရွေးချယ်မှုတွေကို အားပေးနိုင်ပါတယ်။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် အနာဂတ်အပေါ် မငြိမ်မသက်မှု ဒါမှမဟုတ် စိုးရိမ်မှုက ငြိမ်းချမ်းမှုကို ထိခိုက်နေနိုင်ပါတယ်။ လမ်းလျှောက်တာ၊ ဆန့်တာ ဒါမှမဟုတ် မှတ်စုရေးတာလို ရိုးရှင်းတဲ့ အလေ့အကျင့်တွေနဲ့ ပစ္စုပ္ပန်ဆီ အာရုံပြန်ပို့ပါ။"
+      },
+      "advice": "ဒီနေ့ ကိုယ်ရောက်ချင်တဲ့ နေရာကို မိနစ်အနည်းငယ် စိတ်ကူးကြည့်ပြီး ခြေလှမ်းတစ်ခု ချရေးပါ။"
+    }
+  },
+  {
+    "id": "wands-03-three",
+    "en": {
+      "name": "Three of Wands",
+      "keywords": ["progress", "foresight", "expansion", "waiting with confidence", "opportunity"],
+      "upright": "The Three of Wands shows a figure on a hilltop watching ships sail across a wide sea. Your earlier efforts are underway, and now you can look ahead with confidence. This card speaks of progress, foresight and opportunities that may come from further away than expected. Keep your vision broad and your plans flexible. Patience is part of the process here; what you have set in motion may need a little time to arrive.",
+      "reversed": "Reversed, the Three of Wands may point to delays, frustration or plans that are not unfolding as quickly as hoped. Perhaps obstacles have appeared, or you feel your vision is limited by circumstances. Take a breath and review your approach. Is there another route or a different timeline that could work? Setbacks can offer useful information. Adjusting your plans thoughtfully can keep you moving toward your larger goals.",
+      "love": {
+        "upright": "In love, a relationship may be growing and looking toward the future. Long-distance connections or plans to travel together may feature. Trust and patience help love expand.",
+        "reversed": "Reversed, delays or differing expectations may cause frustration. Be patient and communicate clearly. If plans need to change, adjust them together rather than deciding alone."
+      },
+      "career": {
+        "upright": "At work, projects may be progressing well. Opportunities could come from overseas, new clients or wider networks. Keep thinking strategically and be ready to expand when the time comes.",
+        "reversed": "Reversed, setbacks or slow responses may test your patience. Re-evaluate timelines and look for alternative paths. Careful preparation can turn delays into better outcomes later."
+      },
+      "money": {
+        "upright": "With money, earlier efforts may start to bring results. Consider growth opportunities with careful research. Steady patience can allow your plans to mature naturally over time.",
+        "reversed": "Reversed, returns may be slower than expected. Avoid making hasty decisions out of frustration. Review your plans and keep a reasonable buffer for unexpected changes."
+      },
+      "health": {
+        "upright": "For wellbeing and spirit, you may feel more hopeful about your progress. Keep up good routines and look ahead to new healthy goals. Fresh air and wide views may lift your mood.",
+        "reversed": "Reversed, progress may feel slow, which can be discouraging. Celebrate small gains and adjust expectations kindly. Steady, consistent care often brings results in its own time."
+      },
+      "advice": "Look ahead with patience today, trusting that your efforts are already moving."
+    },
+    "my": {
+      "name": "တုတ် သုံးချောင်း",
+      "keywords": ["တိုးတက်မှု", "ကြိုတင်မြင်နိုင်မှု", "ချဲ့ထွင်မှု", "ယုံကြည်စွာစောင့်ခြင်း", "အခွင့်အလမ်း"],
+      "upright": "တုတ် သုံးချောင်းမှာ တောင်ထိပ်ပေါ်ကနေ ကျယ်ပြန့်တဲ့ ပင်လယ်ကို ဖြတ်ရွက်လွှင့်နေတဲ့ သင်္ဘောတွေကို ကြည့်နေတဲ့ လူတစ်ယောက်ကို ပြပါတယ်။ အရင်က ကြိုးစားမှုတွေ စတင်လည်ပတ်နေပြီး အခု ယုံကြည်မှုနဲ့ ရှေ့ကို မျှော်ကြည့်နိုင်ပါပြီ။ ဒီကတ်က တိုးတက်မှု၊ ကြိုတင်မြင်နိုင်မှုနဲ့ မျှော်လင့်ထားတာထက် ဝေးတဲ့နေရာက လာနိုင်တဲ့ အခွင့်အလမ်းတွေအကြောင်း ပြောပါတယ်။ အမြင်ကို ကျယ်ကျယ်ထားပြီး အစီအစဉ်တွေကို ပြောင်းလွယ်ပြင်လွယ် ထားပါ။ စိတ်ရှည်မှုက ဒီဖြစ်စဉ်ရဲ့ တစ်စိတ်တစ်ပိုင်းပါ၊ စတင်ထားတာတွေ ရောက်လာဖို့ အချိန်နည်းနည်း လိုနိုင်ပါတယ်။",
+      "reversed": "ပြောင်းပြန်ကျရင် တုတ် သုံးချောင်းက နှောင့်နှေးမှု၊ စိတ်ပျက်မှု ဒါမှမဟုတ် မျှော်လင့်ထားသလောက် မြန်မြန် မဖြစ်လာတဲ့ အစီအစဉ်တွေကို ညွှန်ပြနိုင်ပါတယ်။ အတားအဆီးတွေ ပေါ်လာတာ ဒါမှမဟုတ် အခြေအနေတွေကြောင့် အမြင်က ကန့်သတ်ခံနေရသလို ခံစားရတာ ဖြစ်နိုင်ပါတယ်။ အသက်ကို ဖြည်းဖြည်းရှူပြီး ချဉ်းကပ်ပုံကို ပြန်သုံးသပ်ပါ။ တခြားလမ်းကြောင်း ဒါမှမဟုတ် အချိန်ဇယား တစ်မျိုး အဆင်ပြေနိုင်မလား။ အခက်အခဲတွေက အသုံးဝင်တဲ့ အချက်အလက်တွေ ပေးနိုင်ပါတယ်။ အစီအစဉ်တွေကို ဆင်ခြင်ပြင်ဆင်တာက ပန်းတိုင်ကြီးဆီ ဆက်ရွေ့စေနိုင်ပါတယ်။",
+      "love": {
+        "upright": "အချစ်ရေးမှာ ဆက်ဆံရေးက ကြီးထွားလာပြီး အနာဂတ်ကို မျှော်ကြည့်နေနိုင်ပါတယ်။ အဝေးဆက်ဆံရေး ဒါမှမဟုတ် အတူခရီးသွားဖို့ အစီအစဉ်တွေ ပါဝင်လာနိုင်ပါတယ်။ ယုံကြည်မှုနဲ့ စိတ်ရှည်မှုက အချစ်ကို ကျယ်ပြန့်စေပါတယ်။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် နှောင့်နှေးမှု ဒါမှမဟုတ် မတူညီတဲ့ မျှော်လင့်ချက်တွေက စိတ်ပျက်စေနိုင်ပါတယ်။ စိတ်ရှည်ပြီး ရှင်းရှင်းလင်းလင်း ပြောဆိုပါ။ အစီအစဉ် ပြောင်းဖို့ လိုရင် တစ်ယောက်တည်း မဟုတ်ဘဲ အတူတကွ ပြင်ဆင်ပါ။"
+      },
+      "career": {
+        "upright": "အလုပ်မှာ ပရောဂျက်တွေ ကောင်းကောင်း တိုးတက်နေနိုင်ပါတယ်။ ပြည်ပ၊ ဖောက်သည်သစ် ဒါမှမဟုတ် ပိုကျယ်ပြန့်တဲ့ ကွန်ရက်တွေကနေ အခွင့်အလမ်းတွေ လာနိုင်ပါတယ်။ ဗျူဟာကျကျ ဆက်တွေးပြီး အချိန်ရောက်ရင် ချဲ့ထွင်ဖို့ အသင့်ရှိပါ။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် အခက်အခဲတွေ ဒါမှမဟုတ် နှေးကွေးတဲ့ တုံ့ပြန်မှုတွေက စိတ်ရှည်မှုကို စမ်းသပ်နိုင်ပါတယ်။ အချိန်ဇယားတွေကို ပြန်ချိန်ဆပြီး တခြားလမ်းတွေ ရှာပါ။ ဂရုတစိုက် ပြင်ဆင်မှုက နှောင့်နှေးမှုကို နောင် ပိုကောင်းတဲ့ ရလဒ်အဖြစ် ပြောင်းပေးနိုင်ပါတယ်။"
+      },
+      "money": {
+        "upright": "ငွေကြေးမှာ အရင်က ကြိုးစားမှုတွေ ရလဒ် စပေးလာနိုင်ပါတယ်။ ကြီးထွားဖို့ အခွင့်အလမ်းတွေကို ဂရုတစိုက် လေ့လာပြီး စဉ်းစားပါ။ တည်ငြိမ်တဲ့ စိတ်ရှည်မှုက အစီအစဉ်တွေကို အချိန်နဲ့အမျှ သဘာဝအတိုင်း ရင့်ကျက်ခွင့်ပေးပါတယ်။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် ပြန်ရမယ့်အကျိုးက မျှော်လင့်ထားတာထက် နှေးနိုင်ပါတယ်။ စိတ်ပျက်လို့ အလောတကြီး ဆုံးဖြတ်ချက်တွေ မချပါနဲ့။ အစီအစဉ်တွေကို ပြန်ကြည့်ပြီး မမျှော်လင့်တဲ့ ပြောင်းလဲမှုတွေအတွက် သင့်တင့်တဲ့ အရန်ငွေ ထားပါ။"
+      },
+      "health": {
+        "upright": "ကျန်းမာရေးနဲ့ စိတ်ဓာတ်အတွက် ကိုယ့်တိုးတက်မှုအပေါ် ပိုမျှော်လင့်ချက် ရှိလာနိုင်ပါတယ်။ ကောင်းတဲ့ နေ့စဉ်လုပ်ငန်းတွေကို ဆက်ထိန်းပြီး ကျန်းမာရေး ပန်းတိုင်သစ်တွေကို မျှော်ကြည့်ပါ။ လေကောင်းလေသန့်နဲ့ ကျယ်ပြန့်တဲ့ ရှုခင်းက စိတ်ကို မြှင့်ပေးနိုင်ပါတယ်။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် တိုးတက်မှုက နှေးသလို ခံစားရလို့ စိတ်ဓာတ်ကျစရာ ဖြစ်နိုင်ပါတယ်။ အကျိုးကျေးဇူးလေးတွေကို ဂုဏ်ပြုပြီး မျှော်လင့်ချက်တွေကို ကြင်နာစွာ ပြင်ဆင်ပါ။ တည်ငြိမ်ပုံမှန် ဂရုစိုက်မှုက သူ့အချိန်နဲ့သူ ရလဒ်ပေးတတ်ပါတယ်။"
+      },
+      "advice": "ဒီနေ့ ကိုယ့်ကြိုးစားမှုတွေ ရွေ့နေပြီလို့ ယုံကြည်ပြီး စိတ်ရှည်စွာ ရှေ့ကို မျှော်ကြည့်ပါ။"
+    }
+  },
+  {
+    "id": "wands-04-four",
+    "en": {
+      "name": "Four of Wands",
+      "keywords": ["celebration", "home", "harmony", "milestone", "community"],
+      "upright": "The Four of Wands shows a garland stretched between four wands, with people gathering joyfully beyond it. This card celebrates milestones, homecomings and moments of shared happiness. Something you have worked toward may be ready to be honoured. It is a lovely time to gather with family and friends, appreciate what you have built together and feel a sense of belonging. Let yourself pause and enjoy the warmth of this stage.",
+      "reversed": "Reversed, the Four of Wands may suggest that celebration feels delayed, or that home and community feel less harmonious than you would like. Perhaps plans for an event have changed, or tension has crept into a shared space. Be gentle with yourself and others. Simple gatherings, kind words and small acts of appreciation can restore a sense of welcome. Belonging can be rebuilt one warm moment at a time.",
+      "love": {
+        "upright": "In love, joyful milestones such as moving in together, an engagement or meeting family may be highlighted. A sense of stability and celebration can deepen your bond and warm your home.",
+        "reversed": "Reversed, plans may be postponed, or small tensions may affect harmony at home. Focus on appreciation and simple time together. Small celebrations can rekindle a sense of togetherness."
+      },
+      "career": {
+        "upright": "At work, a project milestone or team success may be celebrated. A supportive environment helps everyone thrive. Take time to appreciate your colleagues and what you have achieved together.",
+        "reversed": "Reversed, teamwork may feel strained or recognition may be delayed. Acknowledge your own progress and encourage others. Building a positive atmosphere can help the group reconnect."
+      },
+      "money": {
+        "upright": "With money, stability and security may be growing. You might celebrate a financial milestone or invest in your home. Enjoy your progress while keeping sensible plans in place.",
+        "reversed": "Reversed, household expenses or shared costs may cause some stress. Talk openly with those involved and agree on fair, simple arrangements that support harmony at home."
+      },
+      "health": {
+        "upright": "For wellbeing and spirit, feeling at home and connected supports your energy. Time with loved ones, comfortable surroundings and shared meals can lift your mood and calm your mind.",
+        "reversed": "Reversed, tension at home or a lack of connection may be tiring you. Create a peaceful corner for yourself, and gently reach out to people who make you feel welcome."
+      },
+      "advice": "Celebrate a small success today with someone you care about."
+    },
+    "my": {
+      "name": "တုတ် လေးချောင်း",
+      "keywords": ["ပွဲလမ်းသဘင်", "အိမ်", "သဟဇာတဖြစ်မှု", "မှတ်တိုင်", "အသိုင်းအဝိုင်း"],
+      "upright": "တုတ် လေးချောင်းမှာ တုတ်လေးချောင်းကြား ပန်းကုံးတစ်ကုံး ဆွဲထားပြီး အဲဒီနောက်မှာ လူတွေ ပျော်ပျော်ရွှင်ရွှင် စုဝေးနေကြပါတယ်။ ဒီကတ်က မှတ်တိုင်တွေ၊ အိမ်ပြန်ရောက်ခြင်းနဲ့ အတူတကွ ပျော်ရွှင်ရတဲ့ အခိုက်အတန့်တွေကို ဂုဏ်ပြုပါတယ်။ ကြိုးစားခဲ့တဲ့ တစ်ခုခုကို ဂုဏ်ပြုဖို့ အသင့်ဖြစ်နေနိုင်ပါတယ်။ မိသားစုနဲ့ မိတ်ဆွေတွေနဲ့ စုဝေးဖို့၊ အတူတကွ တည်ဆောက်ခဲ့တာကို တန်ဖိုးထားဖို့နဲ့ ပိုင်ဆိုင်မှု ခံစားချက်ကို ခံစားဖို့ အချိန်ကောင်းပါ။ ခဏရပ်ပြီး ဒီအဆင့်ရဲ့ နွေးထွေးမှုကို ခံစားခွင့်ပေးပါ။",
+      "reversed": "ပြောင်းပြန်ကျရင် တုတ် လေးချောင်းက ဂုဏ်ပြုပွဲ နှောင့်နှေးနေသလို ဒါမှမဟုတ် အိမ်နဲ့ အသိုင်းအဝိုင်းက လိုချင်သလောက် သဟဇာတ မဖြစ်သလို ခံစားရတာကို ညွှန်ပြနိုင်ပါတယ်။ ပွဲတစ်ခုအတွက် အစီအစဉ်တွေ ပြောင်းသွားတာ ဒါမှမဟုတ် မျှဝေနေထိုင်တဲ့ နေရာထဲ တင်းမာမှု ဝင်လာတာ ဖြစ်နိုင်ပါတယ်။ ကိုယ့်ကိုယ်ကိုရော တခြားသူကိုပါ ညင်သာပါ။ ရိုးရှင်းတဲ့ စုဝေးမှု၊ ကြင်နာတဲ့ စကားနဲ့ တန်ဖိုးထားကြောင်း ပြတဲ့ လုပ်ရပ်လေးတွေက ကြိုဆိုခံရတဲ့ ခံစားချက်ကို ပြန်ပေးနိုင်ပါတယ်။ နွေးထွေးတဲ့ အခိုက်အတန့် တစ်ခုချင်းစီနဲ့ ပိုင်ဆိုင်မှုကို ပြန်တည်ဆောက်နိုင်ပါတယ်။",
+      "love": {
+        "upright": "အချစ်ရေးမှာ အတူနေဖို့ ပြောင်းတာ၊ စေ့စပ်တာ ဒါမှမဟုတ် မိသားစုနဲ့ တွေ့ဆုံတာလို ပျော်စရာ မှတ်တိုင်တွေ ထင်ရှားနိုင်ပါတယ်။ တည်ငြိမ်မှုနဲ့ ဂုဏ်ပြုမှု ခံစားချက်က ချည်နှောင်မှုကို နက်ရှိုင်းစေပြီး အိမ်ကို နွေးထွေးစေနိုင်ပါတယ်။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် အစီအစဉ်တွေ ရွှေ့ဆိုင်းခံရတာ ဒါမှမဟုတ် အိမ်မှာ တင်းမာမှုလေးတွေက သဟဇာတကို ထိခိုက်နေတာ ဖြစ်နိုင်ပါတယ်။ တန်ဖိုးထားမှုနဲ့ ရိုးရှင်းတဲ့ အတူရှိချိန်ကို အာရုံစိုက်ပါ။ ဂုဏ်ပြုပွဲလေးတွေက အတူရှိခြင်း ခံစားချက်ကို ပြန်နှိုးပေးနိုင်ပါတယ်။"
+      },
+      "career": {
+        "upright": "အလုပ်မှာ ပရောဂျက် မှတ်တိုင် ဒါမှမဟုတ် အဖွဲ့လိုက် အောင်မြင်မှုကို ဂုဏ်ပြုနိုင်ပါတယ်။ ထောက်ကူပေးတဲ့ ပတ်ဝန်းကျင်က လူတိုင်းကို ဖွံ့ဖြိုးစေပါတယ်။ လုပ်ဖော်ကိုင်ဖက်တွေနဲ့ အတူတကွ အောင်မြင်ခဲ့တာကို တန်ဖိုးထားဖို့ အချိန်ယူပါ။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် အဖွဲ့လိုက် လုပ်ဆောင်မှု တင်းမာနေတာ ဒါမှမဟုတ် အသိအမှတ်ပြုခံရတာ နှောင့်နှေးနေတာ ဖြစ်နိုင်ပါတယ်။ ကိုယ့်တိုးတက်မှုကို ကိုယ်တိုင် အသိအမှတ်ပြုပြီး တခြားသူတွေကို အားပေးပါ။ အပြုသဘော လေထုက အဖွဲ့ကို ပြန်ဆက်စပ်စေနိုင်ပါတယ်။"
+      },
+      "money": {
+        "upright": "ငွေကြေးမှာ တည်ငြိမ်မှုနဲ့ လုံခြုံမှု ကြီးထွားလာနိုင်ပါတယ်။ ငွေကြေး မှတ်တိုင်တစ်ခုကို ဂုဏ်ပြုတာ ဒါမှမဟုတ် အိမ်အတွက် ရင်းနှီးတာ ဖြစ်နိုင်ပါတယ်။ ဆင်ခြင်တဲ့ အစီအစဉ်တွေကို ထိန်းထားရင်း ကိုယ့်တိုးတက်မှုကို ခံစားပါ။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် အိမ်ထောင်စုစရိတ် ဒါမှမဟုတ် မျှဝေကုန်ကျစရိတ်တွေက စိတ်ဖိစီးမှု နည်းနည်း ဖြစ်စေနိုင်ပါတယ်။ ပတ်သက်သူတွေနဲ့ ပွင့်ပွင့်လင်းလင်း ပြောပြီး သဟဇာတကို ထောက်ကူမယ့် မျှတရိုးရှင်းတဲ့ သဘောတူညီချက် ချမှတ်ပါ။"
+      },
+      "health": {
+        "upright": "ကျန်းမာရေးနဲ့ စိတ်ဓာတ်အတွက် အိမ်မှာလို ခံစားရပြီး ဆက်နွယ်မှုရှိတာက စွမ်းအင်ကို ထောက်ကူပါတယ်။ ချစ်ရသူတွေနဲ့ အချိန်၊ သက်တောင့်သက်သာ ပတ်ဝန်းကျင်နဲ့ အတူစားသောက်ခြင်းက စိတ်ကို မြှင့်ပြီး အေးချမ်းစေနိုင်ပါတယ်။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် အိမ်မှာ တင်းမာမှု ဒါမှမဟုတ် ဆက်နွယ်မှု နည်းတာက ပင်ပန်းစေနိုင်ပါတယ်။ ကိုယ့်အတွက် ငြိမ်းချမ်းတဲ့ နေရာလေးတစ်ခု ဖန်တီးပြီး ကြိုဆိုခံရသလို ခံစားစေတဲ့ လူတွေကို ညင်သာစွာ ဆက်သွယ်ပါ။"
+      },
+      "advice": "ဒီနေ့ ကိုယ်ဂရုစိုက်တဲ့ သူတစ်ယောက်နဲ့ အောင်မြင်မှုလေးတစ်ခုကို ဂုဏ်ပြုပါ။"
+    }
+  },
+  {
+    "id": "wands-05-five",
+    "en": {
+      "name": "Five of Wands",
+      "keywords": ["competition", "friction", "debate", "energy", "different views"],
+      "upright": "The Five of Wands shows five people waving wands in a lively scuffle that looks more like a game than a battle. This card speaks of competition, friction and a clash of ideas. Everyone wants to be heard, and energy is high. Disagreement can be healthy when it sharpens thinking and brings fresh solutions. Try to listen as much as you speak, keep your sense of humour and look for ways that different views can strengthen the outcome.",
+      "reversed": "Reversed, the Five of Wands may suggest that tension is easing, or that you are avoiding a conflict that needs attention. Perhaps you are tired of arguing and ready for cooperation. Alternatively, unspoken disagreements may be simmering under the surface. Gentle, honest conversation can clear the air. Focus on shared goals rather than winning. Finding common ground often brings more peace than proving a point.",
+      "love": {
+        "upright": "In love, playful teasing or small disagreements may appear. Keep things respectful and light. Discussing differences honestly can actually bring you closer, as long as both people feel heard.",
+        "reversed": "Reversed, tension may be easing, or arguments may be avoided rather than resolved. Choose a calm moment to talk. Listening with patience can turn friction into understanding."
+      },
+      "career": {
+        "upright": "At work, competition or lively debate may be part of the scene. Use it to sharpen your ideas, and stay respectful. Collaboration can come from finding common ground in the noise.",
+        "reversed": "Reversed, workplace conflicts may be calming, or you may need to address a disagreement directly. Seek fair solutions and focus on what helps the whole team succeed."
+      },
+      "money": {
+        "upright": "With money, competing priorities may pull you in different directions. Clarify what matters most. In shared finances, open discussion can prevent small disagreements from growing larger.",
+        "reversed": "Reversed, financial disagreements may be settling down. Agree on clear, fair arrangements. Simplifying your goals can reduce stress and help everyone feel more at ease."
+      },
+      "health": {
+        "upright": "For wellbeing and spirit, energetic activities like team sports or vigorous exercise can release tension. Notice whether inner conflict is making you restless, and channel that energy kindly.",
+        "reversed": "Reversed, you may be ready for more calm after a busy, tense period. Choose gentle activities and peaceful environments. Resolving lingering conflicts can ease your mind."
+      },
+      "advice": "Listen to a different point of view today with curiosity rather than defence."
+    },
+    "my": {
+      "name": "တုတ် ငါးချောင်း",
+      "keywords": ["ပြိုင်ဆိုင်မှု", "ပွတ်တိုက်မှု", "အငြင်းအခုံ", "စွမ်းအင်", "ကွဲပြားသောအမြင်များ"],
+      "upright": "တုတ် ငါးချောင်းမှာ လူငါးယောက်က တုတ်တွေ ဝှေ့ယမ်းပြီး တိုက်ပွဲထက် ကစားပွဲနဲ့ ပိုတူတဲ့ ရုန်းရင်းဆန်ခတ်ကို ပြပါတယ်။ ဒီကတ်က ပြိုင်ဆိုင်မှု၊ ပွတ်တိုက်မှုနဲ့ အကြံအစည်တွေ ထိပ်တိုက်တွေ့တာအကြောင်း ပြောပါတယ်။ လူတိုင်းက နားထောင်ခံချင်ကြပြီး စွမ်းအင် မြင့်နေပါတယ်။ သဘောထားကွဲလွဲမှုက တွေးခေါ်မှုကို ထက်မြက်စေပြီး ဖြေရှင်းချက်သစ်တွေ ယူဆောင်လာရင် ကျန်းမာပါတယ်။ ပြောသလောက် နားထောင်ဖို့ ကြိုးစားပါ၊ ဟာသဉာဏ်ကို ထိန်းထားပါ၊ မတူညီတဲ့ အမြင်တွေက ရလဒ်ကို ဘယ်လို ခိုင်မာစေနိုင်လဲ ရှာပါ။",
+      "reversed": "ပြောင်းပြန်ကျရင် တုတ် ငါးချောင်းက တင်းမာမှု လျော့လာတာ ဒါမှမဟုတ် အာရုံစိုက်ဖို့ လိုတဲ့ ပဋိပက္ခကို ရှောင်နေတာကို ညွှန်ပြနိုင်ပါတယ်။ ငြင်းခုံရတာ ပင်ပန်းပြီး ပူးပေါင်းဖို့ အသင့်ဖြစ်နေတာ ဖြစ်နိုင်ပါတယ်။ ဒါမှမဟုတ် မပြောရသေးတဲ့ သဘောထားကွဲလွဲမှုတွေက မျက်နှာပြင်အောက်မှာ ပွက်ပွက်ဆူနေတာ ဖြစ်နိုင်ပါတယ်။ ညင်သာရိုးသားတဲ့ စကားပြောဆိုမှုက လေထုကို ကြည်လင်စေနိုင်ပါတယ်။ အနိုင်ယူဖို့ထက် မျှဝေထားတဲ့ ပန်းတိုင်တွေကို အာရုံစိုက်ပါ။ ဘုံသဘောတူညီချက် ရှာတာက အချက်တစ်ခုကို သက်သေပြတာထက် ငြိမ်းချမ်းမှု ပိုပေးတတ်ပါတယ်။",
+      "love": {
+        "upright": "အချစ်ရေးမှာ ကစားသဘော စနောက်တာ ဒါမှမဟုတ် သဘောထားကွဲလွဲမှုလေးတွေ ပေါ်လာနိုင်ပါတယ်။ လေးစားမှုရှိရှိ ပေါ့ပေါ့ပါးပါး ထားပါ။ နှစ်ယောက်လုံး နားထောင်ခံရတယ်လို့ ခံစားရသရွေ့ ကွဲပြားမှုတွေကို ရိုးသားစွာ ဆွေးနွေးတာက ပိုနီးကပ်စေနိုင်ပါတယ်။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် တင်းမာမှု လျော့လာတာ ဒါမှမဟုတ် ငြင်းခုံမှုတွေကို ဖြေရှင်းမယ့်အစား ရှောင်နေတာ ဖြစ်နိုင်ပါတယ်။ အေးဆေးတဲ့ အချိန်တစ်ခုကို ရွေးပြီး စကားပြောပါ။ စိတ်ရှည်စွာ နားထောင်တာက ပွတ်တိုက်မှုကို နားလည်မှုအဖြစ် ပြောင်းပေးနိုင်ပါတယ်။"
+      },
+      "career": {
+        "upright": "အလုပ်မှာ ပြိုင်ဆိုင်မှု ဒါမှမဟုတ် တက်ကြွတဲ့ ငြင်းခုံမှုတွေ ရှိနေနိုင်ပါတယ်။ အကြံတွေကို ထက်မြက်စေဖို့ အသုံးချပြီး လေးစားမှုရှိရှိ နေပါ။ ဆူညံမှုကြားက ဘုံသဘောတူညီချက်ကို ရှာတွေ့တာကနေ ပူးပေါင်းဆောင်ရွက်မှု ဖြစ်လာနိုင်ပါတယ်။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် အလုပ်ခွင် ပဋိပက္ခတွေ ငြိမ်လာတာ ဒါမှမဟုတ် သဘောထားကွဲလွဲမှုကို တိုက်ရိုက် ဖြေရှင်းဖို့ လိုတာ ဖြစ်နိုင်ပါတယ်။ မျှတတဲ့ ဖြေရှင်းချက်တွေ ရှာပြီး အဖွဲ့တစ်ခုလုံး အောင်မြင်စေမယ့်အရာကို အာရုံစိုက်ပါ။"
+      },
+      "money": {
+        "upright": "ငွေကြေးမှာ ပြိုင်ဆိုင်နေတဲ့ ဦးစားပေးတွေက မတူတဲ့ ဘက်တွေဆီ ဆွဲနိုင်ပါတယ်။ ဘာက အရေးအကြီးဆုံးလဲ ရှင်းလင်းပါ။ မျှဝေသုံးစွဲတဲ့ ငွေကြေးမှာ ပွင့်လင်းတဲ့ ဆွေးနွေးမှုက သဘောထားကွဲလွဲမှုလေးတွေ မကြီးထွားအောင် ကာကွယ်နိုင်ပါတယ်။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် ငွေကြေးဆိုင်ရာ သဘောထားကွဲလွဲမှုတွေ ငြိမ်လာနိုင်ပါတယ်။ ရှင်းလင်းမျှတတဲ့ သဘောတူညီချက်တွေ ချမှတ်ပါ။ ပန်းတိုင်တွေကို ရိုးရှင်းအောင် လုပ်တာက စိတ်ဖိစီးမှုကို လျော့စေပြီး လူတိုင်း ပိုစိတ်သက်သာစေနိုင်ပါတယ်။"
+      },
+      "health": {
+        "upright": "ကျန်းမာရေးနဲ့ စိတ်ဓာတ်အတွက် အသင်းလိုက် အားကစား ဒါမှမဟုတ် ပြင်းပြင်းထန်ထန် လေ့ကျင့်ခန်းလို တက်ကြွတဲ့ လှုပ်ရှားမှုတွေက တင်းမာမှုကို ဖြေလျှော့ပေးနိုင်ပါတယ်။ အတွင်းစိတ် ပဋိပက္ခက မငြိမ်မသက် ဖြစ်စေနေလား သတိထားပြီး အဲဒီစွမ်းအင်ကို ကြင်နာစွာ လမ်းကြောင်းပေးပါ။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် အလုပ်များပြီး တင်းမာတဲ့ ကာလနောက်မှာ ပိုတည်ငြိမ်ဖို့ အသင့်ဖြစ်နေနိုင်ပါတယ်။ ညင်သာတဲ့ လှုပ်ရှားမှုတွေနဲ့ ငြိမ်းချမ်းတဲ့ ပတ်ဝန်းကျင်ကို ရွေးပါ။ ကျန်နေတဲ့ ပဋိပက္ခတွေကို ဖြေရှင်းတာက စိတ်ကို သက်သာစေနိုင်ပါတယ်။"
+      },
+      "advice": "ဒီနေ့ မတူတဲ့ အမြင်တစ်ခုကို ကာကွယ်ပြောဆိုမယ့်အစား စူးစမ်းစိတ်နဲ့ နားထောင်ပါ။"
+    }
+  },
+  {
+    "id": "wands-06-six",
+    "en": {
+      "name": "Six of Wands",
+      "keywords": ["recognition", "success", "confidence", "public praise", "victory"],
+      "upright": "The Six of Wands shows a rider wearing a laurel wreath, greeted by a cheering crowd. This card celebrates recognition, success and the confidence that comes from a job well done. Your efforts may be noticed and appreciated. Enjoy the moment, and let yourself receive praise graciously. True success also includes humility and gratitude for those who helped along the way. Let this win encourage you to keep moving forward with a steady, generous heart.",
+      "reversed": "Reversed, the Six of Wands may suggest feeling overlooked, doubting your achievements or relying too much on others' approval. Perhaps recognition has been slow to arrive, or you have been comparing yourself with others. Remember that your worth is not measured only by applause. Acknowledge your own progress honestly. Quiet confidence, built from within, can be more lasting than praise that comes and goes.",
+      "love": {
+        "upright": "In love, you may feel appreciated and proud of your relationship. Celebrating each other's successes can strengthen your bond. Confidence and warmth make you especially attractive now.",
+        "reversed": "Reversed, you may feel unappreciated or insecure. Express your needs kindly, and also appreciate yourself. Avoid comparing your relationship to others'; every connection has its own pace."
+      },
+      "career": {
+        "upright": "At work, achievements may be recognised through praise, promotion or positive feedback. Share credit with your team and enjoy the momentum. Leadership opportunities may arise from this success.",
+        "reversed": "Reversed, your efforts may not be noticed yet. Keep a record of your contributions and speak up about them calmly. Self-belief and patience can help recognition arrive in time."
+      },
+      "money": {
+        "upright": "With money, progress may be rewarded, perhaps through a bonus or a successful venture. Celebrate sensibly and plan for the future. Confidence can help you negotiate fairly.",
+        "reversed": "Reversed, avoid spending to impress others or chasing status. Focus on what truly matters to you. Quiet, steady progress is still progress, even when it goes unnoticed."
+      },
+      "health": {
+        "upright": "For wellbeing and spirit, you may feel proud of the healthy changes you have made. Acknowledge your progress and keep going. Confidence can be a wonderful source of energy.",
+        "reversed": "Reversed, comparison with others may be affecting your self-esteem. Focus on your own journey and celebrate small wins. Kind self-talk can lift both your mood and motivation."
+      },
+      "advice": "Acknowledge your own progress today, and thank someone who helped you."
+    },
+    "my": {
+      "name": "တုတ် ခြောက်ချောင်း",
+      "keywords": ["အသိအမှတ်ပြုခံရခြင်း", "အောင်မြင်မှု", "ယုံကြည်မှု", "လူထုချီးကျူးမှု", "အောင်ပွဲ"],
+      "upright": "တုတ် ခြောက်ချောင်းမှာ အောင်ပွဲပန်းကုံး ဆောင်းထားတဲ့ မြင်းစီးသူကို အားပေးသံ ညံနေတဲ့ လူအုပ်က ကြိုဆိုနေပါတယ်။ ဒီကတ်က အသိအမှတ်ပြုခံရခြင်း၊ အောင်မြင်မှုနဲ့ အလုပ်တစ်ခု ကောင်းကောင်း ပြီးမြောက်လို့ရလာတဲ့ ယုံကြည်မှုကို ဂုဏ်ပြုပါတယ်။ ကိုယ့်ကြိုးစားမှုတွေကို သတိထားမိပြီး တန်ဖိုးထားခံရနိုင်ပါတယ်။ ဒီအခိုက်အတန့်ကို ခံစားပြီး ချီးကျူးမှုကို ယဉ်ကျေးစွာ လက်ခံပါ။ တကယ့်အောင်မြင်မှုမှာ နှိမ့်ချမှုနဲ့ လမ်းတစ်လျှောက် ကူညီခဲ့သူတွေအပေါ် ကျေးဇူးတင်စိတ်လည်း ပါဝင်ပါတယ်။ ဒီအောင်ပွဲက တည်ငြိမ်ရက်ရောတဲ့ နှလုံးသားနဲ့ ရှေ့ဆက်ဖို့ အားပေးပါစေ။",
+      "reversed": "ပြောင်းပြန်ကျရင် တုတ် ခြောက်ချောင်းက လျစ်လျူရှုခံရသလို ခံစားရတာ၊ ကိုယ့်အောင်မြင်မှုကို သံသယဝင်တာ ဒါမှမဟုတ် တခြားသူတွေရဲ့ သဘောတူမှုကို အရမ်းအားကိုးတာကို ညွှန်ပြနိုင်ပါတယ်။ အသိအမှတ်ပြုခံရတာ နှေးနေတာ ဒါမှမဟုတ် တခြားသူတွေနဲ့ ကိုယ့်ကိုယ်ကို နှိုင်းယှဉ်နေတာ ဖြစ်နိုင်ပါတယ်။ ကိုယ့်တန်ဖိုးကို လက်ခုပ်သံနဲ့တင် မတိုင်းတာဘူးဆိုတာ သတိရပါ။ ကိုယ့်တိုးတက်မှုကို ရိုးရိုးသားသား အသိအမှတ်ပြုပါ။ အတွင်းကနေ တည်ဆောက်ထားတဲ့ တိတ်ဆိတ်တဲ့ ယုံကြည်မှုက လာလိုက်ပြန်လိုက် ဖြစ်တဲ့ ချီးကျူးမှုထက် ပိုကြာရှည်ခံနိုင်ပါတယ်။",
+      "love": {
+        "upright": "အချစ်ရေးမှာ တန်ဖိုးထားခံရသလို ခံစားရပြီး ကိုယ့်ဆက်ဆံရေးအတွက် ဂုဏ်ယူနေနိုင်ပါတယ်။ တစ်ယောက်ရဲ့ အောင်မြင်မှုကို တစ်ယောက်က ဂုဏ်ပြုတာက ချည်နှောင်မှုကို ခိုင်မာစေပါတယ်။ ယုံကြည်မှုနဲ့ နွေးထွေးမှုက အခု သင့်ကို အထူး ဆွဲဆောင်မှုရှိစေပါတယ်။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် တန်ဖိုးမထားခံရသလို ဒါမှမဟုတ် မလုံခြုံသလို ခံစားရနိုင်ပါတယ်။ ကိုယ့်လိုအပ်ချက်ကို ကြင်ကြင်နာနာ ပြောပြပြီး ကိုယ့်ကိုယ်ကိုလည်း တန်ဖိုးထားပါ။ ကိုယ့်ဆက်ဆံရေးကို တခြားသူတွေနဲ့ မနှိုင်းယှဉ်ပါနဲ့၊ ဆက်နွယ်မှုတိုင်းမှာ ကိုယ်ပိုင်အရှိန် ရှိပါတယ်။"
+      },
+      "career": {
+        "upright": "အလုပ်မှာ ချီးကျူးမှု၊ ရာထူးတိုးမှု ဒါမှမဟုတ် အပြုသဘော တုံ့ပြန်ချက်တွေနဲ့ အောင်မြင်မှုတွေ အသိအမှတ်ပြုခံရနိုင်ပါတယ်။ ဂုဏ်ကို အဖွဲ့နဲ့ မျှဝေပြီး အရှိန်ကို ခံစားပါ။ ဒီအောင်မြင်မှုကနေ ခေါင်းဆောင်မှု အခွင့်အလမ်းတွေ ပေါ်လာနိုင်ပါတယ်။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် ကိုယ့်ကြိုးစားမှုကို သတိမထားမိသေးတာ ဖြစ်နိုင်ပါတယ်။ ကိုယ့်ပံ့ပိုးမှုတွေကို မှတ်တမ်းတင်ထားပြီး အေးအေးဆေးဆေး ပြောပြပါ။ ကိုယ့်ကိုယ်ကို ယုံကြည်မှုနဲ့ စိတ်ရှည်မှုက အသိအမှတ်ပြုမှုကို အချိန်တန်ရင် ရောက်လာစေနိုင်ပါတယ်။"
+      },
+      "money": {
+        "upright": "ငွေကြေးမှာ ဘောနပ်စ် ဒါမှမဟုတ် အောင်မြင်တဲ့ လုပ်ငန်းတစ်ခုလို တိုးတက်မှုအတွက် ဆုချခံရနိုင်ပါတယ်။ ဆင်ခြင်စွာ ဂုဏ်ပြုပြီး အနာဂတ်အတွက် စီစဉ်ပါ။ ယုံကြည်မှုက မျှမျှတတ ညှိနှိုင်းဖို့ ကူညီနိုင်ပါတယ်။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် တခြားသူတွေကို အထင်ကြီးစေဖို့ သုံးစွဲတာ ဒါမှမဟုတ် ဂုဏ်ပုဒ်ကို လိုက်ရှာတာကို ရှောင်ပါ။ ကိုယ့်အတွက် တကယ် အရေးကြီးတာကို အာရုံစိုက်ပါ။ သတိမထားမိခံရရင်တောင် တိတ်ဆိတ်တည်ငြိမ်တဲ့ တိုးတက်မှုက တိုးတက်မှုပါပဲ။"
+      },
+      "health": {
+        "upright": "ကျန်းမာရေးနဲ့ စိတ်ဓာတ်အတွက် ကိုယ်လုပ်ခဲ့တဲ့ ကျန်းမာရေး ပြောင်းလဲမှုတွေအတွက် ဂုဏ်ယူနေနိုင်ပါတယ်။ ကိုယ့်တိုးတက်မှုကို အသိအမှတ်ပြုပြီး ဆက်လုပ်ပါ။ ယုံကြည်မှုက စွမ်းအင်ရဲ့ အံ့ဩစရာ အရင်းအမြစ် ဖြစ်နိုင်ပါတယ်။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် တခြားသူတွေနဲ့ နှိုင်းယှဉ်တာက ကိုယ့်ကိုယ်ကို တန်ဖိုးထားမှုကို ထိခိုက်နေနိုင်ပါတယ်။ ကိုယ့်ခရီးကို အာရုံစိုက်ပြီး အောင်မြင်မှုလေးတွေကို ဂုဏ်ပြုပါ။ ကိုယ့်ကိုယ်ကို ကြင်နာစွာ ပြောတာက စိတ်ဓာတ်ရော စိတ်အားရော မြှင့်ပေးနိုင်ပါတယ်။"
+      },
+      "advice": "ဒီနေ့ ကိုယ့်တိုးတက်မှုကို အသိအမှတ်ပြုပြီး ကူညီခဲ့သူတစ်ယောက်ကို ကျေးဇူးတင်ပါ။"
+    }
+  },
+  {
+    "id": "wands-07-seven",
+    "en": {
+      "name": "Seven of Wands",
+      "keywords": ["standing firm", "perseverance", "conviction", "challenge", "self-belief"],
+      "upright": "The Seven of Wands shows a figure on higher ground, holding one wand against several rising from below. This card speaks of standing up for what you believe in, even when it feels like you are facing many challenges at once. You may need to defend your position, your boundaries or your ideas. Stay calm and grounded. Your conviction is a strength, especially when it comes from honest values rather than stubbornness.",
+      "reversed": "Reversed, the Seven of Wands may suggest feeling overwhelmed, worn down or unsure whether a fight is worth continuing. Perhaps you have been on the defensive for too long, or doubting yourself under pressure. It is okay to rest and reassess. Choose your battles wisely. Sometimes stepping back is wiser than holding on, and sometimes a little support from others can give you the strength to continue.",
+      "love": {
+        "upright": "In love, you may need to stand up for your relationship or your own needs. Healthy boundaries and calm conviction can protect what matters. Avoid becoming defensive with your partner.",
+        "reversed": "Reversed, constant tension may be tiring you. Ask whether you are defending something important or simply arguing out of habit. Gentle honesty can release unnecessary pressure."
+      },
+      "career": {
+        "upright": "At work, you may face competition or criticism. Stand by your ideas with confidence and evidence. Your persistence can earn respect, especially if you remain fair and professional.",
+        "reversed": "Reversed, pressure may feel overwhelming. Prioritise what truly matters and let go of minor battles. Seek allies who support your work, and rest before you reach burnout."
+      },
+      "money": {
+        "upright": "With money, protect your resources and stick to your plan, even if others pressure you to spend. Firm, sensible boundaries can keep your finances secure and steady.",
+        "reversed": "Reversed, financial stress may be wearing you down. Ask for help or advice if you feel overwhelmed. Simplifying obligations can make the situation feel more manageable."
+      },
+      "health": {
+        "upright": "For wellbeing and spirit, protect your energy with clear boundaries. Saying no to things that drain you is a form of self-care. Stand firm in your healthy habits.",
+        "reversed": "Reversed, constant defensiveness or stress may be exhausting you. Allow yourself to rest. Release battles that no longer matter, and lean on supportive people for strength."
+      },
+      "advice": "Stand firm today for one thing that truly matters to you."
+    },
+    "my": {
+      "name": "တုတ် ခုနစ်ချောင်း",
+      "keywords": ["ခိုင်ခိုင်မာမာရပ်တည်ခြင်း", "ဇွဲ", "ယုံကြည်ချက်", "စိန်ခေါ်မှု", "ကိုယ့်ကိုယ်ကိုယုံကြည်ခြင်း"],
+      "upright": "တုတ် ခုနစ်ချောင်းမှာ မြင့်တဲ့နေရာမှာ ရပ်ပြီး အောက်ကနေ ထိုးတက်လာတဲ့ တုတ်တွေကို တုတ်တစ်ချောင်းနဲ့ ခုခံနေတဲ့ လူတစ်ယောက်ကို ပြပါတယ်။ စိန်ခေါ်မှုတွေ အများကြီးကို တစ်ပြိုင်နက် ရင်ဆိုင်နေရသလို ခံစားရရင်တောင် ကိုယ်ယုံကြည်တဲ့ အရာအတွက် ရပ်တည်ခြင်းအကြောင်း ဒီကတ်က ပြောပါတယ်။ ကိုယ့်ရပ်တည်ချက်၊ နယ်နိမိတ် ဒါမှမဟုတ် အကြံအစည်တွေကို ကာကွယ်ဖို့ လိုနိုင်ပါတယ်။ အေးဆေးပြီး ခိုင်ခိုင်မာမာ နေပါ။ ခေါင်းမာမှုကနေ မဟုတ်ဘဲ ရိုးသားတဲ့ တန်ဖိုးတွေကနေ လာတဲ့ ယုံကြည်ချက်က ခွန်အားတစ်ခုပါ။",
+      "reversed": "ပြောင်းပြန်ကျရင် တုတ် ခုနစ်ချောင်းက လွှမ်းမိုးခံရသလို၊ ပင်ပန်းနွမ်းနယ်သလို ဒါမှမဟုတ် ဆက်တိုက်ဖို့ တန်လား မသေချာသလို ခံစားရတာကို ညွှန်ပြနိုင်ပါတယ်။ အကြာကြီး ကာကွယ်ရေးအနေအထားမှာ ရှိနေခဲ့တာ ဒါမှမဟုတ် ဖိအားအောက်မှာ ကိုယ့်ကိုယ်ကို သံသယဝင်နေတာ ဖြစ်နိုင်ပါတယ်။ အနားယူပြီး ပြန်ချိန်ဆတာ ရပါတယ်။ ဘယ်တိုက်ပွဲကို တိုက်မလဲ ပညာရှိရှိ ရွေးပါ။ တခါတလေ နောက်ဆုတ်တာက ဆက်ဆုပ်ကိုင်ထားတာထက် ပိုပညာရှိပြီး တခါတလေ တခြားသူတွေရဲ့ အကူအညီလေးက ဆက်လုပ်ဖို့ ခွန်အားပေးနိုင်ပါတယ်။",
+      "love": {
+        "upright": "အချစ်ရေးမှာ ကိုယ့်ဆက်ဆံရေး ဒါမှမဟုတ် ကိုယ့်လိုအပ်ချက်တွေအတွက် ရပ်တည်ဖို့ လိုနိုင်ပါတယ်။ ကျန်းမာတဲ့ နယ်နိမိတ်တွေနဲ့ အေးဆေးတဲ့ ယုံကြည်ချက်က အရေးကြီးတာကို ကာကွယ်ပေးနိုင်ပါတယ်။ ချစ်သူအပေါ် ကာကွယ်ရေးစိတ် လွန်ကဲတာကို ရှောင်ပါ။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် မပြတ်တဲ့ တင်းမာမှုက ပင်ပန်းစေနိုင်ပါတယ်။ အရေးကြီးတာကို ကာကွယ်နေတာလား၊ အကျင့်ပါလို့ ငြင်းခုံနေတာလား မေးကြည့်ပါ။ ညင်သာတဲ့ ရိုးသားမှုက မလိုအပ်တဲ့ ဖိအားကို ဖြေလျှော့ပေးနိုင်ပါတယ်။"
+      },
+      "career": {
+        "upright": "အလုပ်မှာ ပြိုင်ဆိုင်မှု ဒါမှမဟုတ် ဝေဖန်မှုတွေနဲ့ ရင်ဆိုင်ရနိုင်ပါတယ်။ ယုံကြည်မှုနဲ့ အထောက်အထားတွေနဲ့ ကိုယ့်အကြံဘက်က ရပ်တည်ပါ။ မျှတပြီး ကျွမ်းကျင်သူပီပီ ဆက်ဆံသရွေ့ ကိုယ့်ဇွဲက လေးစားမှုကို ရစေနိုင်ပါတယ်။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် ဖိအားက လွှမ်းမိုးသလို ခံစားရနိုင်ပါတယ်။ တကယ်အရေးကြီးတာကို ဦးစားပေးပြီး သေးသေးမွှားမွှား တိုက်ပွဲတွေကို လွှတ်ချပါ။ ကိုယ့်အလုပ်ကို ထောက်ခံတဲ့ မဟာမိတ်တွေ ရှာပြီး အားကုန်ခမ်းမသွားခင် အနားယူပါ။"
+      },
+      "money": {
+        "upright": "ငွေကြေးမှာ တခြားသူတွေက သုံးဖို့ ဖိအားပေးရင်တောင် ကိုယ့်အရင်းအမြစ်ကို ကာကွယ်ပြီး အစီအစဉ်ကို လိုက်နာပါ။ ခိုင်မာပြီး ဆင်ခြင်တုံတရားရှိတဲ့ နယ်နိမိတ်တွေက ငွေကြေးကို လုံခြုံတည်ငြိမ်စေနိုင်ပါတယ်။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် ငွေကြေးဆိုင်ရာ စိတ်ဖိစီးမှုက ပင်ပန်းစေနိုင်ပါတယ်။ လွှမ်းမိုးခံရသလို ခံစားရရင် အကူအညီ ဒါမှမဟုတ် အကြံဉာဏ် တောင်းပါ။ တာဝန်တွေကို ရိုးရှင်းအောင် လုပ်တာက အခြေအနေကို ပိုကိုင်တွယ်နိုင်သလို ခံစားရစေနိုင်ပါတယ်။"
+      },
+      "health": {
+        "upright": "ကျန်းမာရေးနဲ့ စိတ်ဓာတ်အတွက် ရှင်းလင်းတဲ့ နယ်နိမိတ်တွေနဲ့ ကိုယ့်စွမ်းအင်ကို ကာကွယ်ပါ။ အားကုန်စေတဲ့ အရာတွေကို ငြင်းဆန်တာက ကိုယ့်ကိုယ်ကို ဂရုစိုက်ခြင်း တစ်မျိုးပါ။ ကျန်းမာတဲ့ အလေ့အကျင့်တွေမှာ ခိုင်ခိုင်မာမာ ရပ်တည်ပါ။",
+        "reversed": "ပြောင်းပြန်ဆိုရင် မပြတ်တဲ့ ကာကွယ်ရေးစိတ် ဒါမှမဟုတ် စိတ်ဖိစီးမှုက ပင်ပန်းနွမ်းနယ်စေနိုင်ပါတယ်။ အနားယူခွင့် ပေးပါ။ အရေးမပါတော့တဲ့ တိုက်ပွဲတွေကို လွှတ်ချပြီး ထောက်ကူပေးတဲ့ လူတွေကို ခွန်အားအတွက် အားကိုးပါ။"
+      },
+      "advice": "ဒီနေ့ ကိုယ့်အတွက် တကယ်အရေးကြီးတဲ့ အရာတစ်ခုအတွက် ခိုင်ခိုင်မာမာ ရပ်တည်ပါ။"
+    }
+  }
+]
