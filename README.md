@@ -43,6 +43,21 @@ development. After changing `.env`, restart Metro with `npx expo start --clear` 
 `--clear`), because cached bundles keep the old values. Optional cloud backup is described in
 `supabase/README.md`, and optional Premium in `docs/MONETIZATION.md`.
 
+## Building for the stores
+
+```bash
+npm install -g eas-cli && eas login
+eas init                                   # links the project (writes the EAS project id)
+eas env:create --environment production    # once per secret from .env (SUPABASE_*, REVENUECAT_*, …)
+eas build --profile development --platform android   # dev client for testing native features
+eas build --profile production --platform all        # store builds (AAB + IPA)
+eas submit --profile production --platform all       # upload to Play (internal track, draft) and App Store Connect
+```
+
+Store text, privacy answers and graphics: `STORE-LISTING.md`, `docs/CONTENT-RATING.md`, `store/`.
+Regenerate assets with `npm run render:icons`, `npm run store:screenshots` (after a web export)
+and `npm run legal:export`.
+
 ## End-to-end tests
 
 Install [Maestro](https://maestro.mobile.dev), start a development or preview build on an emulator,

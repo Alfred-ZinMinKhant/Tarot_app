@@ -24,6 +24,8 @@ const config: ExpoConfig = {
     infoPlist: {
       CFBundleAllowMixedLocalizations: true,
       CFBundleLocalizations: ['en', 'my'],
+      // Only standard HTTPS: exempt from export-compliance documentation.
+      ITSAppUsesNonExemptEncryption: false,
     },
   },
   android: {
@@ -35,6 +37,15 @@ const config: ExpoConfig = {
       monochromeImage: './assets/images/android-icon-monochrome.png',
     },
     predictiveBackGestureEnabled: false,
+    // The app never records audio, draws over other apps or reads shared storage; keep the store
+    // listing's permission list honest even if a library's manifest asks for these.
+    blockedPermissions: [
+      'android.permission.RECORD_AUDIO',
+      'android.permission.SYSTEM_ALERT_WINDOW',
+      'android.permission.READ_EXTERNAL_STORAGE',
+      'android.permission.WRITE_EXTERNAL_STORAGE',
+      'android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK',
+    ],
   },
   web: {
     favicon: './assets/images/favicon.png',
@@ -59,6 +70,11 @@ const config: ExpoConfig = {
     'expo-image',
     'expo-sqlite',
     ['expo-notifications', { color: '#D4AF37' }],
+    // Short sound effects only: no microphone, no background audio.
+    [
+      'expo-audio',
+      { microphonePermission: false, recordAudioAndroid: false, enableBackgroundPlayback: false },
+    ],
   ],
   experiments: {
     typedRoutes: true,

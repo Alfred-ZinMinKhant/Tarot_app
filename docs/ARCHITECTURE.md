@@ -60,10 +60,12 @@ data/                    cards.json (generated), cards/*.json (sources), cards.r
                          spreads.json (5 spreads, positions + layout, en + my), lessons.json (8),
                          weekday-signs.json (8 signs incl. Rahu), legal.json, content.review.json
 assets/sounds/           flip / shuffle / chime WAVs synthesised by scripts/render-sounds.ts
+store/                   store graphics, screenshots (en + my), hostable legal pages
 supabase/                SQL migration (table, RLS, LWW trigger), delete-account Edge Function, setup
 .maestro/                end-to-end flows: onboarding, daily card, reading → journal
 scripts/                 check-i18n, build-cards, validate-cards, validate-content, optimize-images,
-                         render-card-back, render-sounds
+                         render-card-back, render-sounds, render-icons, store-screenshots,
+                         export-legal
                          (+ lib/ shared with tests)
 docs/                    this file, DECISIONS, glossary, assets
 __tests__/               Jest suites
@@ -235,6 +237,9 @@ asserts WCAG AA (≥ 4.5:1) for every text/background pair in both themes. Minim
 | `npm run typecheck` | `tsc --noEmit` |
 | `npm run lint` | `expo lint` (ESLint 9 flat config), zero warnings allowed |
 | `npm run validate` | locale checks + card-data + content validation (`check:i18n`, `check:cards`, `check:content`) |
+| `npm run render:icons` | regenerate the app icon set and Play graphics |
+| `npm run store:screenshots` | capture store screenshots from `dist/` (web export) in en + my |
+| `npm run legal:export` | write `store/legal/` privacy + terms (md, html) with `.env` values |
 | `npm run render:sounds` | regenerate the original sound effects in `assets/sounds/` |
 | `npm run build:cards` | regenerate `data/cards.json` from `data/cards/*.json` + `src/data/deck.ts` |
 | `npm run images` | resize card scans to 300/900 px WebP and regenerate `src/data/cardImages.ts` |

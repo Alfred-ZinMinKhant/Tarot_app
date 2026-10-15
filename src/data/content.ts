@@ -6,7 +6,7 @@ import legalRaw from '@data/legal.json';
 import lessonsRaw from '@data/lessons.json';
 import signsRaw from '@data/weekday-signs.json';
 
-import { hashString } from '@/engine/random';
+import { hashString } from '@/utils/hash';
 import type { Language } from '@/i18n/languages';
 
 // ---------------------------------------------------------------------------------------------

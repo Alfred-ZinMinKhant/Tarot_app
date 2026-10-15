@@ -205,4 +205,21 @@ Ambiguous choices made while building, with the simplest option chosen. Change a
     store policy. "Redeem a code" uses Apple's native offer-code sheet and Play's redeem page.
 62. **react-native-purchases 10.9.1** (released 2026-09-10) is pinned. It is autolinked and
     needs no config plugin. A development build is required.
+63. **The app icon is two tarot cards with a crescent moon**, not the card-back lotus. It reads
+    clearly at small sizes and avoids any religious reading of the icon. It is drawn from code
+    (`scripts/render-icons.ts`) like the other art.
+64. **Store screenshots are captured from the web build** with Playwright at the store sizes
+    (iPhone 6.9" 1290×2796, Android 1080×1920), in English and Burmese, with no marketing
+    caption bands. Caption text is in `STORE-LISTING.md` if you want to add bands in a design
+    tool.
+65. **Unneeded Android permissions are blocked** (`RECORD_AUDIO`, `SYSTEM_ALERT_WINDOW`, external
+    storage, media-playback foreground service), and expo-audio is configured without a
+    microphone or background audio. This keeps the Data safety form and permission list minimal.
+    `ITSAppUsesNonExemptEncryption` is `false`, because the app only uses standard HTTPS.
+66. **eas.json uses remote app versions with `autoIncrement`** for production, APKs for
+    development and preview, and an AAB for production. Play submissions start as a draft on the
+    internal track. Secrets (`SUPABASE_*`, `REVENUECAT_*`, …) belong in EAS environment
+    variables (`eas env:create`), because `.env` is gitignored and EAS doesn't upload it.
+67. **Burmese is a Google Play listing language only.** App Store Connect has no Burmese
+    localization, so the App Store listing is in English and mentions Burmese support.
 

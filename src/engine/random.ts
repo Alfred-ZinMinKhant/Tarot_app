@@ -31,15 +31,7 @@ export function secureRandomInt(max: number, bytes: (n: number) => Uint8Array = 
 
 export const secureRandom: RandomInt = (max) => secureRandomInt(max);
 
-/** 32-bit FNV-1a hash of a string (UTF-16 code units), used to turn seeds into numbers. */
-export function hashString(text: string): number {
-  let h = 0x811c9dc5;
-  for (let i = 0; i < text.length; i++) {
-    h ^= text.charCodeAt(i);
-    h = Math.imul(h, 0x01000193);
-  }
-  return h >>> 0;
-}
+export { hashString } from '@/utils/hash';
 
 /** Deterministic PRNG (mulberry32) producing uniform integers, for the daily card and tests. */
 export function seededRandom(seed: number): RandomInt {
