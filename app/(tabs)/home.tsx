@@ -42,6 +42,25 @@ export default function Home() {
 
       <DailyCardPanel />
       <SignPanel />
+      <Pressable
+        onPress={() => router.push('/birth-chart')}
+        accessibilityRole="button"
+        accessibilityLabel={`${t('home.chartTitle')}. ${t('home.chartBody')}`}
+        testID="home-birth-chart"
+        style={({ pressed }) => [
+          styles.spread,
+          { backgroundColor: colors.surface, borderColor: colors.border, opacity: pressed ? 0.85 : 1 },
+        ]}
+      >
+        <View style={styles.spreadText}>
+          <AppText variant="label" bold>
+            {t('home.chartTitle')}
+          </AppText>
+          <AppText variant="caption" tone="textMuted">
+            {t('home.chartBody')}
+          </AppText>
+        </View>
+      </Pressable>
 
       <View style={styles.section}>
         <AppText variant="heading" accessibilityRole="header">

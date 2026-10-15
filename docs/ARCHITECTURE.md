@@ -51,6 +51,7 @@ src/
   config/brand.json      app name (en + my) and store identifiers — single source of truth
   config/legal.ts        publisher / contact / effective date from app config (.env)
   hooks/                 useLanguage, useAppFonts, useSettingsHydrated
+  astro/                 birth chart: ephemeris, houses, aspects, places, readings (see DECISIONS 68)
   i18n/                  i18next instance, language helpers, typed keys
   store/                 Zustand stores: settings (persisted), journal, daily, toast, font status
   theme/                 colors, typography, spacing, ThemeContext

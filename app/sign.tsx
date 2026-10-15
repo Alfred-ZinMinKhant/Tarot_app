@@ -1,3 +1,4 @@
+import { useRouter } from 'expo-router';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { StyleSheet, View } from 'react-native';
@@ -16,6 +17,7 @@ import { localDateKey } from '@/utils/dates';
 export default function SignScreen() {
   const { t } = useTranslation();
   const lang = useLanguage();
+  const router = useRouter();
   const toast = useToast((s) => s.show);
   const birthSign = useSettings((s) => s.birthSign);
   const setBirthSign = useSettings((s) => s.setBirthSign);
@@ -99,6 +101,8 @@ export default function SignScreen() {
           ))}
         </View>
       </View>
+
+      <Button label={t('home.chartTitle')} variant="secondary" onPress={() => router.push('/birth-chart')} testID="sign-open-chart" />
 
       <AppText variant="caption" tone="textMuted" center>
         {t('sign.disclaimer')}

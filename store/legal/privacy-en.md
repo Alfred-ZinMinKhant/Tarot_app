@@ -6,7 +6,7 @@ Mingalar Tarot is designed to work offline. Your readings, notes, name and setti
 
 ## What stays on your phone
 
-Your journal (readings, questions and notes), your Card of the Day history, the name and birth weekday you choose to enter, your lesson progress and your settings. A private random code is created on your phone so your Card of the Day is personal; it never leaves the device unless you turn on cloud backup.
+Your journal (readings, questions and notes), your Card of the Day history, the name, birth weekday and birth chart details (birth date, optional birth time and birth place) you choose to enter, your lesson progress and your settings. A private random code is created on your phone so your Card of the Day is personal; it never leaves the device unless you turn on cloud backup.
 
 ## Notifications
 
@@ -14,7 +14,7 @@ If you turn on the daily reminder, the reminders are scheduled by your phone its
 
 ## Optional cloud backup
 
-Cloud backup is off unless you turn it on. If you sign in to back up your journal, your readings and notes are stored with our database provider so they can be restored on another phone. You can stop backing up and delete the copy in the cloud from Settings.
+Cloud backup is off unless you turn it on. If you sign in to back up your journal, your readings and notes, your settings, your Card of the Day history and your birth chart details (birth date, optional time and place) are stored with our database provider so they can be restored on another phone. You can stop backing up and delete the copy in the cloud from Settings.
 
 ## Purchases
 

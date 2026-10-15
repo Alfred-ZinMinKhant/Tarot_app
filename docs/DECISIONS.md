@@ -225,4 +225,14 @@ Ambiguous choices made while building, with the simplest option chosen. Change a
     variables (`eas env:create`), because `.env` is gitignored and EAS doesn't upload it.
 67. **Burmese is a Google Play listing language only.** App Store Connect has no Burmese
     localization, so the App Store listing is in English and mentions Burmese support.
-
+68. **Birth chart: Western tropical, whole-sign houses, fully offline.** Planet positions come
+    from `astronomy-engine` (pure JS) in `src/astro/`; the Ascendant and Midheaven are computed
+    from sidereal time, and houses are Whole Sign so they work at every latitude. Birth place is
+    picked from a bundled list of 4,252 cities (`data/cities.json`, GeoNames, CC BY 4.0) with its
+    IANA time zone, so no network call or location permission is needed. The place is saved as a
+    snapshot (name, coordinates, zone) in settings. Birth date, optional time and place **do sync**
+    with the cloud backup (privacy text and store disclosures say so). With no birth time the chart
+    is calculated for noon and the Ascendant, houses and exact Moon are left out. The lunar node is
+    the mean node, shown as Rahu in Burmese. Readings (`data/chart-readings.json`) are short and
+    playful, in the same entertainment-only tone as item 42, and each placement links to its
+    Golden Dawn tarot card via `src/astro/astroCards.ts`.

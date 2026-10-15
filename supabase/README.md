@@ -24,7 +24,7 @@ Mingalar Tarot works fully offline. Cloud backup of the journal is only compiled
 
 What is synced: journal readings (question, notes, cards, dates) and deletions; portable settings
 (language, theme, text size, Burmese font and numerals, reversed cards, haptics, sound, reminder
-time, weekday sign, finished lessons); and the Card of the Day history. Not synced: the name, the
+time, weekday sign, birth chart details, finished lessons); and the Card of the Day history. Not synced: the name, the
 private device seed, the reminder on/off switch, the onboarding flag and the free share count.
 All of it is a few KB per user, well inside the free tier (500 MB database). No Storage bucket is
 used. Apply both migrations; the second one adds `user_settings` and `daily_draws`.

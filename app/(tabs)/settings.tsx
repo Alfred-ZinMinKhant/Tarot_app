@@ -77,6 +77,17 @@ export default function Settings() {
         <SettingRow label={t('language.label')}>
           <LanguageSwitch testID="settings-language" />
         </SettingRow>
+        <SettingRow
+          label={t('settings.birthChart')}
+          description={s.birth ? t('settings.birthChartSet') : t('settings.birthChartNone')}
+        >
+          <Button
+            label={s.birth ? t('settings.birthChartOpen') : t('settings.birthChartCreate')}
+            variant="secondary"
+            onPress={() => router.push('/birth-chart')}
+            testID="settings-birth-chart"
+          />
+        </SettingRow>
       </Card>
 
       <Card>

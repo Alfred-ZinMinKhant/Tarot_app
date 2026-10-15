@@ -71,10 +71,10 @@ GENTLE BY DESIGN
 
 Mingalar Tarot is for entertainment and self-reflection. Tarot cannot predict the future and is not a substitute for professional advice about health, money, legal or personal matters.
 
-Premium (optional): Celtic Cross, Love spread and unlimited image sharing. The Card of the Day, one- and three-card readings, the journal, library, lessons and weekday signs are free.
+Premium (optional): Celtic Cross, Love spread and unlimited image sharing. The Card of the Day, one- and three-card readings, the journal, library, lessons, weekday signs and the birth chart are free.
 
 **What's new** (first release)
-Welcome to Mingalar Tarot! Card of the Day, five spreads, all 78 cards, a private journal, lessons and Burmese weekday signs — in English and Burmese.
+Welcome to Mingalar Tarot! Card of the Day, five spreads, all 78 cards, a private journal, lessons, Burmese weekday signs and a birth chart — in English and Burmese.
 
 **Screenshot captions** (if you add a caption band)
 1. Your Card of the Day, every morning
@@ -82,7 +82,7 @@ Welcome to Mingalar Tarot! Card of the Day, five spreads, all 78 cards, a privat
 3. Classic spreads, including the Celtic Cross
 4. All 78 cards, in English and Burmese
 5. Search the full Rider–Waite–Smith deck
-6. Your Burmese weekday sign
+6. Your Burmese weekday sign and birth chart
 7. Short lessons to read with confidence
 
 ---
@@ -169,6 +169,7 @@ Mingalar Tarot မှ ကြိုဆိုပါတယ်။ နေ့စဉ်
 **If cloud backup is enabled (Supabase):**
 - Email address — collected, linked to the user, used for app functionality (account), not for tracking.
 - User content (journal: questions, notes, readings) — collected, linked, app functionality.
+- Personal info — birth date, optional birth time and birth place (for the birth chart; only if the user enters them) — collected, linked, app functionality, not for tracking. Declare this under *Other personal info* (Apple) / *Personal info → Other* and *Location → Approximate location* is **not** needed: only a chosen city name and its coordinates are stored.
 - Encrypted in transit (HTTPS); users can delete their account and cloud data in the app.
 
 **If Premium is enabled (RevenueCat):**

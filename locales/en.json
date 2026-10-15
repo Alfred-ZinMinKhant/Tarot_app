@@ -45,7 +45,9 @@
     "signEmptyTitle": "Find your weekday sign",
     "signEmptyBody": "In Burmese tradition, the day of the week you were born on has its own animal, planet and direction. Discover yours, just for fun.",
     "signFind": "Find my sign",
-    "signOpen": "More about my sign"
+    "signOpen": "More about my sign",
+    "chartTitle": "Your birth chart",
+    "chartBody": "See your Sun, Moon and Rising sign."
   },
   "library": {
     "title": "Card Library",
@@ -254,7 +256,12 @@
     "deletedData": "Your data has been deleted",
     "privacy": "Privacy Policy",
     "terms": "Terms of Use",
-    "deleteDataCloud": "You'll also be signed out of cloud backup. Your cloud copy stays until you delete it under Cloud backup."
+    "deleteDataCloud": "You'll also be signed out of cloud backup. Your cloud copy stays until you delete it under Cloud backup.",
+    "birthChart": "Birth chart",
+    "birthChartNone": "Not set up yet",
+    "birthChartSet": "Saved on this phone",
+    "birthChartOpen": "Open",
+    "birthChartCreate": "Set up"
   },
   "notifications": {
     "title": "Your card for today is ready",
@@ -307,7 +314,9 @@
     "wordsBody": "All card meanings, lessons and weekday sign texts were written especially for $t(appName), in English and Burmese.",
     "signsTitle": "Weekday signs",
     "publisher": "Published by {{publisher}}",
-    "contact": "Contact: {{email}}"
+    "contact": "Contact: {{email}}",
+    "chartTitle": "Birth chart",
+    "chartBody": "Planet positions are calculated on your phone with the open-source astronomy-engine library. City names, coordinates and time zones come from GeoNames (geonames.org), licensed under Creative Commons Attribution {{version}}."
   },
   "legal": {
     "notFound": "This page doesn't exist.",
@@ -394,5 +403,38 @@
     "statusPremium": "Premium is active",
     "statusFree": "Free plan",
     "manage": "Manage subscription"
+  },
+  "chart": {
+    "title": "Birth chart",
+    "subtitle": "Where the Sun, Moon and planets stood when you were born.",
+    "formTitle": "Your birth details",
+    "errorDate": "That date doesn't look right. Please check the day, month and year.",
+    "errorTime": "That time doesn't look right. Use {{n}}-hour time, for example {{h}} and {{m}}.",
+    "errorPlace": "Please choose your birth place from the list.",
+    "saved": "Your birth chart is saved",
+    "hour": "Hour",
+    "hour24": "{{n}}-hour clock, {{from}} to {{to}}",
+    "minute": "Minute",
+    "unknownTime": "I don't know my birth time",
+    "unknownTimeHint": "That's fine. You'll still get your Sun and planets, but no Rising sign or houses.",
+    "timeHint": "Local time where you were born. The Rising sign changes about every two hours, so the exact time matters.",
+    "place": "Birth place",
+    "placePlaceholder": "Start typing a city",
+    "placeHint": "Search a larger city near where you were born",
+    "placeChosen": "{{place}} · time zone {{zone}}",
+    "calculate": "Show my chart",
+    "privacy": "Your birth details are saved on this phone, and in your cloud backup if you turn it on.",
+    "wheelA11y": "Your birth chart wheel. The same details are listed below.",
+    "noTimeNote": "Without a birth time the chart is drawn for noon, and the Rising sign and houses are left out.",
+    "bigThree": "Your big three",
+    "rising": "Rising",
+    "moonMaybe": "On your birth day the Moon moved from {{a}} to {{b}}, so your Moon could be either.",
+    "placements": "Planets",
+    "retrograde": "retrograde",
+    "house": "house {{n}}",
+    "seeCard": "See the {{planet}} tarot card",
+    "edit": "Change my birth details",
+    "clear": "Remove my birth chart",
+    "disclaimer": "Astrology is shared for entertainment and reflection. It doesn't describe your health, money or future."
   }
 }

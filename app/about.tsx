@@ -29,6 +29,10 @@ export default function About() {
         <AppText>{t('about.wordsBody')}</AppText>
       </Card>
       <Card>
+        <AppText variant="heading">{t('about.chartTitle')}</AppText>
+        <AppText testID="about-chart-credits">{t('about.chartBody', { version: `${fmt(4)}.${fmt(0)}` })}</AppText>
+      </Card>
+      <Card>
         <AppText variant="heading">{t('about.signsTitle')}</AppText>
         <AppText>{t('sign.disclaimer')}</AppText>
       </Card>
