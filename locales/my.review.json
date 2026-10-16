@@ -128,6 +128,8 @@
     "journal.title",
     "journal.emptyTitle",
     "journal.emptyBody",
+    "journal.searchPlaceholder",
+    "journal.searchA11y",
     "journal.filterTopicA11y",
     "journal.filterDateA11y",
     "journal.dateAll",

@@ -149,6 +149,8 @@
     "title": "Journal",
     "emptyTitle": "No readings yet",
     "emptyBody": "Every reading you finish is saved here automatically, so you can look back and reflect.",
+    "searchPlaceholder": "Search questions, notes or cards",
+    "searchA11y": "Search your journal",
     "filterTopicA11y": "Filter by topic",
     "filterDateA11y": "Filter by date",
     "dateAll": "All time",

@@ -2,18 +2,16 @@ import { FlashList } from '@shopify/flash-list';
 import { router } from 'expo-router';
 import { memo, useCallback, useDeferredValue, useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Platform, Pressable, StyleSheet, TextInput, useWindowDimensions, View } from 'react-native';
+import { Pressable, StyleSheet, useWindowDimensions, View } from 'react-native';
 
-import { AppText, ChipGroup, EmptyState, Header, Icon, Screen } from '@/components';
+import { AppText, ChipGroup, EmptyState, Header, Screen, SearchField } from '@/components';
 import { CardFace } from '@/components/art';
 import { CARDS, searchCards, SUIT_FILTERS, type SuitFilter } from '@/data/cards';
 import { SUIT_LABELS } from '@/data/deck';
 import type { TarotCard } from '@/data/types';
 import { useLanguage } from '@/hooks/useLanguage';
 import { useNumberFormat } from '@/hooks/useNumberFormat';
-import { MIN_TAP, radius, spacing } from '@/theme/spacing';
-import { useAppTheme } from '@/theme/ThemeContext';
-import { fontFamilyFor, scriptForLanguage } from '@/theme/typography';
+import { spacing } from '@/theme/spacing';
 
 const GAP = spacing.md;
 
@@ -44,7 +42,6 @@ export default function Library() {
   const { t } = useTranslation();
   const lang = useLanguage();
   const fmt = useNumberFormat();
-  const theme = useAppTheme();
   const { width } = useWindowDimensions();
   const [query, setQuery] = useState('');
   const [suit, setSuit] = useState<SuitFilter>('all');
@@ -72,47 +69,18 @@ export default function Library() {
     [cellWidth, lang],
   );
 
-  const inputScript = scriptForLanguage(lang);
-
   return (
     <Screen testID="screen-library" ad scroll={false} contentStyle={styles.content}>
       <Header title={t('library.title')} subtitle={t('library.subtitle', { total: fmt(CARDS.length) })} />
 
-      <View style={[styles.search, { backgroundColor: theme.colors.surface, borderColor: theme.colors.border }]}>
-        <Icon name="search" size={20} color={theme.colors.textMuted} />
-        <TextInput
-          value={query}
-          onChangeText={setQuery}
-          placeholder={t('library.searchPlaceholder')}
-          placeholderTextColor={theme.colors.textMuted}
-          accessibilityLabel={t('library.searchA11y')}
-          autoCorrect={false}
-          autoCapitalize="none"
-          spellCheck={false}
-          returnKeyType="search"
-          testID="library-search"
-          style={[
-            styles.input,
-            {
-              color: theme.colors.text,
-              fontFamily: fontFamilyFor(inputScript, false, theme.myanmarFont),
-              fontSize: theme.size('body'),
-            },
-          ]}
-        />
-        {query ? (
-          <Pressable
-            onPress={() => setQuery('')}
-            accessibilityRole="button"
-            accessibilityLabel={t('library.clearSearch')}
-            hitSlop={8}
-            style={styles.clear}
-            testID="library-search-clear"
-          >
-            <Icon name="close" size={18} color={theme.colors.textMuted} />
-          </Pressable>
-        ) : null}
-      </View>
+      <SearchField
+        value={query}
+        onChangeText={setQuery}
+        placeholder={t('library.searchPlaceholder')}
+        accessibilityLabel={t('library.searchA11y')}
+        clearLabel={t('library.clearSearch')}
+        testID="library-search"
+      />
 
       <ChipGroup
         options={filterOptions}
@@ -156,22 +124,6 @@ function Separator() {
 
 const styles = StyleSheet.create({
   content: { paddingBottom: 0, gap: spacing.md },
-  search: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: spacing.sm,
-    borderWidth: 1,
-    borderRadius: radius.pill,
-    paddingHorizontal: spacing.md,
-    minHeight: MIN_TAP + 4,
-  },
-  input: {
-    flex: 1,
-    paddingVertical: spacing.sm,
-    // The pill border already shows focus; drop the browser's default outline on web.
-    ...(Platform.OS === 'web' ? { outlineWidth: 0 } : null),
-  },
-  clear: { minWidth: MIN_TAP, minHeight: MIN_TAP, alignItems: 'center', justifyContent: 'center' },
   list: { flex: 1 },
   listContent: { paddingBottom: spacing.xxl },
   column: { flex: 1, alignItems: 'center' },

@@ -1,10 +1,10 @@
 import { FlashList } from '@shopify/flash-list';
 import { router } from 'expo-router';
-import { useMemo, useState } from 'react';
+import { useDeferredValue, useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Pressable, StyleSheet, View } from 'react-native';
 
-import { AppText, ChipGroup, EmptyState, Header, Screen } from '@/components';
+import { AppText, ChipGroup, EmptyState, Header, Screen, SearchField } from '@/components';
 import { CardFace } from '@/components/art';
 import { getCard } from '@/data/cards';
 import type { ReadingRecord } from '@/db/types';
@@ -69,13 +69,26 @@ export default function Journal() {
   const readings = useJournal((s) => s.readings);
   const [topic, setTopic] = useState<Topic | 'all'>('all');
   const [range, setRange] = useState<DateRange>('all');
-  const shown = useMemo(() => filterReadings(readings, topic, range), [readings, topic, range]);
+  const [query, setQuery] = useState('');
+  const deferredQuery = useDeferredValue(query);
+  const shown = useMemo(
+    () => filterReadings(readings, topic, range, undefined, deferredQuery),
+    [readings, topic, range, deferredQuery],
+  );
 
   return (
     <Screen testID="screen-journal" scroll={false} contentStyle={styles.content}>
       <Header title={t('journal.title')} />
       {readings.length ? (
         <>
+          <SearchField
+            value={query}
+            onChangeText={setQuery}
+            placeholder={t('journal.searchPlaceholder')}
+            accessibilityLabel={t('journal.searchA11y')}
+            clearLabel={t('library.clearSearch')}
+            testID="journal-search"
+          />
           <ChipGroup<Topic | 'all'>
             scroll
             testIDPrefix="journal-topic"

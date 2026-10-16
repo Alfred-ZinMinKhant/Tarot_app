@@ -10,6 +10,7 @@ export { Header } from './Header';
 export { Icon, type IconName } from './Icon';
 export { LanguageSwitch } from './LanguageSwitch';
 export { Screen } from './Screen';
+export { SearchField } from './SearchField';
 export { SettingRow } from './SettingRow';
 export { FanDeck } from './FanDeck';
 export { ShuffleStack } from './ShuffleStack';

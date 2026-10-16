@@ -101,6 +101,50 @@ describe('journal', () => {
     expect(filterReadings(rows, 'career', '7', now)).toEqual([]);
   });
 
+  describe('search', () => {
+    const base = { kind: 'spread' as const, spreadId: 'one-card', topic: 'general' as const, dateKey: '', updatedAt: 0, createdAt: 1 };
+    const fool = { positionId: 'one', cardId: 'major-00-fool', reversed: false };
+    const ace = { positionId: 'one', cardId: 'wands-01-ace', reversed: false };
+    const rows = [
+      { ...base, id: 'a', question: 'Should I change jobs?', notes: '', cards: [fool] },
+      { ...base, id: 'b', question: '', notes: 'Felt a spark of hope', cards: [ace] },
+    ];
+    const ids = (q: string) => filterReadings(rows, 'all', 'all', undefined, q).map((r) => r.id);
+
+    it('matches the question, notes, card names and keywords, ignoring case', () => {
+      expect(ids('JOBS')).toEqual(['a']);
+      expect(ids('hope')).toEqual(['b']);
+      expect(ids('the fool')).toEqual(['a']);
+      expect(ids('inspiration')).toEqual(['b']); // a keyword of the Ace of Wands
+    });
+
+    it('matches a Burmese card name and requires every word to match', () => {
+      expect(ids(getCard('major-00-fool')!.my.name)).toEqual(['a']);
+      expect(ids('spark hope')).toEqual(['b']);
+      expect(ids('spark jobs')).toEqual([]);
+    });
+
+    it('returns everything for a blank query', () => {
+      expect(ids('   ')).toEqual(['a', 'b']);
+    });
+
+    it('filters the Journal tab as you type and can be cleared', async () => {
+      // The app shell reloads the (empty) database on start, so keep the seeded rows in place.
+      const realRefresh = useJournal.getState().refresh;
+      useJournal.setState({ readings: rows, loaded: true, refresh: async () => undefined });
+      renderRouter('./app', { initialUrl: '/journal' });
+      expect(await screen.findByTestId('journal-row-a')).toBeTruthy();
+      fireEvent.changeText(screen.getByTestId('journal-search'), 'hope');
+      await waitFor(() => expect(screen.queryByTestId('journal-row-a')).toBeNull());
+      expect(screen.getByTestId('journal-row-b')).toBeTruthy();
+      fireEvent.changeText(screen.getByTestId('journal-search'), 'zzz');
+      expect(await screen.findByText(en.journal.noMatchTitle)).toBeTruthy();
+      fireEvent.press(screen.getByTestId('journal-search-clear'));
+      expect(await screen.findByTestId('journal-row-a')).toBeTruthy();
+      useJournal.setState({ refresh: realRefresh });
+    });
+  });
+
   it('shares a reading as an image', async () => {
     await finishOneCardReading();
     fireEvent.press(screen.getByTestId('reading-share'));

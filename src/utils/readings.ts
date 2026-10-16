@@ -1,5 +1,5 @@
 import type { ShareEntry } from '@/components/ShareCard';
-import { getCard } from '@/data/cards';
+import { getCard, normaliseSearch } from '@/data/cards';
 import type { ReadingRecord, SavedCard } from '@/db/types';
 import { getSpread } from '@/engine';
 import type { Language } from '@/i18n/languages';
@@ -27,12 +27,38 @@ export function shareEntries(spreadId: string, cards: readonly SavedCard[], lang
 export type DateRange = 'all' | '7' | '30' | '365';
 const DAY = 24 * 60 * 60 * 1000;
 
+/** Everything a person might search a reading by, in both languages so either script matches. */
+function searchText(r: ReadingRecord): string {
+  const spread = getSpread(r.spreadId);
+  const cards = r.cards.map((c) => getCard(c.cardId)).filter((c) => !!c);
+  return normaliseSearch(
+    [
+      r.question,
+      r.notes,
+      spread?.en.name,
+      spread?.my.name,
+      ...cards.flatMap((c) => [c.en.name, c.my.name, ...c.en.keywords, ...c.my.keywords]),
+    ].join(' | '),
+  );
+}
+
+/**
+ * Filters by topic, date range and an optional text query. Every word of the query must appear in
+ * the question, notes, spread name or a card's name/keywords.
+ */
 export function filterReadings(
   readings: readonly ReadingRecord[],
   topic: Topic | 'all',
   range: DateRange,
   now = Date.now(),
+  query = '',
 ): ReadingRecord[] {
   const since = range === 'all' ? -Infinity : now - Number(range) * DAY;
-  return readings.filter((r) => (topic === 'all' || r.topic === topic) && r.createdAt >= since);
+  const terms = normaliseSearch(query).split(' ').filter(Boolean);
+  return readings.filter(
+    (r) =>
+      (topic === 'all' || r.topic === topic) &&
+      r.createdAt >= since &&
+      (!terms.length || terms.every((term) => searchText(r).includes(term))),
+  );
 }
