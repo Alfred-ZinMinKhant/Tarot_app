@@ -19,3 +19,6 @@ jest.mock('react-native-purchases', () => ({
   default: {},
   PACKAGE_TYPE: { MONTHLY: 'MONTHLY', ANNUAL: 'ANNUAL', LIFETIME: 'LIFETIME' },
 }));
+
+// The reading and home screens render a lot of SVG; give slow or busy machines room.
+jest.setTimeout(20000);

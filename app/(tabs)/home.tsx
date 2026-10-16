@@ -4,6 +4,7 @@ import { Pressable, StyleSheet, View } from 'react-native';
 
 import { AppText, Card, DailyCardPanel, Header, Icon, Screen } from '@/components';
 import { SignPanel } from '@/components/SignPanel';
+import { SpreadGlyph } from '@/components/art/SpreadGlyph';
 import { isPremiumSpread } from '@/premium/features';
 import { useUnlocked } from '@/store/premium';
 import { SPREADS } from '@/engine';
@@ -91,6 +92,9 @@ export default function Home() {
                 },
               ]}
             >
+              <View style={[styles.glyph, { backgroundColor: colors.surfaceAlt }]}>
+                <SpreadGlyph spread={spread} size={64} color={colors.primary} fill={colors.surface} />
+              </View>
               <View style={styles.spreadText}>
                 <AppText variant="label" bold>
                   {spread[language].name}
@@ -201,6 +205,7 @@ const styles = StyleSheet.create({
     padding: spacing.lg,
     minHeight: MIN_TAP,
   },
+  glyph: { width: 64, height: 64, borderRadius: radius.md, alignItems: 'center', justifyContent: 'center' },
   spreadText: { flex: 1, gap: 2 },
   chevron: { transform: [{ rotate: '180deg' }] },
   premium: {

@@ -18,6 +18,8 @@ import {
   ShareSheet,
   SpreadBoard,
 } from '@/components';
+import { PositionGlyph } from '@/components/art/PositionGlyph';
+import { SpreadGlyph } from '@/components/art/SpreadGlyph';
 import { getCard } from '@/data/cards';
 import {
   configuredHelpline,
@@ -218,6 +220,12 @@ export default function Reading() {
         subtitle={phase === 'setup' ? spread[lang].description : undefined}
       />
 
+      {phase === 'setup' ? (
+        <View style={styles.layoutPreview} testID="reading-layout-preview">
+          <SpreadGlyph spread={spread} size={96} color={theme.colors.primary} fill={theme.colors.surfaceAlt} />
+        </View>
+      ) : null}
+
       {phase !== 'setup' && phase !== 'crisis' && question.trim() ? (
         <AppText tone="textMuted" testID="reading-question">
           {t('reading.questionShown', { question: question.trim() })}
@@ -359,10 +367,13 @@ export default function Reading() {
             const pos = spread.positions[i]!;
             return (
               <Card key={pos.id} testID={`reading-position-${i}`}>
-                <AppText variant="caption" tone="textMuted">
-                  {t('reading.positionHeading', { number: fmt(i + 1), position: pos[lang].name })} ·{' '}
-                  {pos[lang].prompt}
-                </AppText>
+                <View style={styles.positionRow}>
+                  <PositionGlyph id={pos.id} size={28} color={theme.colors.primary} />
+                  <AppText variant="caption" tone="textMuted" style={styles.flex}>
+                    {t('reading.positionHeading', { number: fmt(i + 1), position: pos[lang].name })} ·{' '}
+                    {pos[lang].prompt}
+                  </AppText>
+                </View>
                 <View style={styles.cardTitle}>
                   <AppText variant="heading">{card[lang].name}</AppText>
                   {d.reversed ? <Chip label={t('card.reversed')} /> : null}
@@ -474,6 +485,9 @@ const styles = StyleSheet.create({
     padding: spacing.md,
   },
   centre: { alignItems: 'center', gap: spacing.sm },
+  positionRow: { flexDirection: 'row', alignItems: 'center', gap: spacing.sm },
+  flex: { flex: 1 },
+  layoutPreview: { alignItems: 'center' },
   cardTitle: { flexDirection: 'row', flexWrap: 'wrap', alignItems: 'center', gap: spacing.sm },
   crisis: { borderWidth: 2, borderRadius: radius.lg, padding: spacing.lg, gap: spacing.md },
 });

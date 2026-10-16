@@ -10,6 +10,7 @@ import { useAppTheme } from '@/theme/ThemeContext';
 
 import { AppText } from './AppText';
 import { CARD_ASPECT } from './art/cardBackSvg';
+import { PositionGlyph } from './art/PositionGlyph';
 import { TarotCard } from './TarotCard';
 
 type Props = {
@@ -24,6 +25,7 @@ type Props = {
   revealLabel: (index: number) => string;
 };
 
+const LABEL_MIN_WIDTH = 90; // narrower slots show the symbol only
 const GAP = 0.12; // gap between cards, as a fraction of card width
 
 /** Lays out a spread's positions (empty slots, face-down or face-up cards) to fit the given width. */
@@ -70,7 +72,14 @@ export function SpreadBoard({ spread, cards, revealed, onReveal, width, lang, sl
                 accessible
                 accessibilityLabel={slotLabel(i)}
                 style={[styles.empty, { borderColor: colors.border, borderRadius: cardWidth * 0.06 }]}
-              />
+              >
+                <PositionGlyph id={p.id} size={cardWidth * 0.42} color={colors.textMuted} />
+                {cardWidth >= LABEL_MIN_WIDTH && !p.rotate ? (
+                  <AppText variant="caption" tone="textMuted" center numberOfLines={2}>
+                    {p[lang].name}
+                  </AppText>
+                ) : null}
+              </View>
             )}
             <View style={[styles.badge, { backgroundColor: colors.primary }]} pointerEvents="none">
               <AppText variant="caption" bold tone="onPrimary" center>
@@ -87,7 +96,7 @@ export function SpreadBoard({ spread, cards, revealed, onReveal, width, lang, sl
 const styles = StyleSheet.create({
   board: { alignSelf: 'center' },
   slot: { position: 'absolute' },
-  empty: { flex: 1, borderWidth: 1.5, borderStyle: 'dashed' },
+  empty: { flex: 1, borderWidth: 1.5, borderStyle: 'dashed', alignItems: 'center', justifyContent: 'center', gap: 4, padding: 4 },
   badge: {
     position: 'absolute',
     top: -8,
