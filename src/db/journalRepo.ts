@@ -231,6 +231,38 @@ export function createJournalRepo(db: Db, now: () => number = Date.now): Journal
       return changed;
     },
 
+    async importReadings(rows) {
+      let changed = 0;
+      await db.withTransactionAsync(async () => {
+        for (const r of rows) {
+          const local = await db.getFirstAsync<{ updated_at: number }>(
+            'SELECT updated_at FROM readings WHERE id = ?',
+            [r.id],
+          );
+          if (local && Number(local.updated_at) >= r.updatedAt) continue;
+          await db.runAsync(
+            `INSERT OR REPLACE INTO readings
+               (id, kind, spread_id, topic, question, notes, cards, date_key, created_at, updated_at, deleted_at, dirty)
+             VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, NULL, 1)`,
+            [
+              r.id,
+              r.kind,
+              r.spreadId,
+              r.topic,
+              r.question,
+              r.notes,
+              JSON.stringify(r.cards),
+              r.dateKey,
+              r.createdAt,
+              r.updatedAt,
+            ],
+          );
+          changed++;
+        }
+      });
+      return changed;
+    },
+
     async getDailyDraw(dateKey: string) {
       const row = await db.getFirstAsync<DailyRow>('SELECT * FROM daily_draws WHERE date_key = ?', [
         dateKey,

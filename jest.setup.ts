@@ -36,5 +36,8 @@ jest.mock('react-native-google-mobile-ads', () => ({
 }));
 jest.mock('expo-tracking-transparency', () => ({ requestTrackingPermissionsAsync: jest.fn() }));
 
+// expo-document-picker needs the native file chooser; tests mock getDocumentAsync themselves.
+jest.mock('expo-document-picker', () => ({ getDocumentAsync: jest.fn() }));
+
 // The reading and home screens render a lot of SVG; give slow or busy machines room.
 jest.setTimeout(20000);

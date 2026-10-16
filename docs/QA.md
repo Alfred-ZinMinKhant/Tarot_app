@@ -86,6 +86,8 @@ Status key: ✅ automated and passing · 🔶 partly automated, needs a device c
 | 7.3 | Delete my data: confirm sheet, everything gone, back to onboarding, reminders cancelled | J | ✅ |
 | 7.4 | Privacy Policy and Terms open in both languages; contact / publisher appear once set in `.env` | J | ✅ |
 | 7.5 | About shows version, art credit, disclaimer | J | ✅ |
+| 7.6 | Restore from a backup file: system file chooser opens (needs a new native build), a file exported in 7.2 adds its readings, running it twice adds nothing | J (picker mocked) | 📱 |
+| 7.7 | Unfinished reading: leave a spread after picking some cards, reopen it, "Continue my reading" restores the same cards; gone after 24 h, after finishing, and after Delete my data | J | 🔶 |
 
 ## 7b. Cloud backup (only in builds with `ENABLE_CLOUD_SYNC=true`)
 

@@ -61,6 +61,16 @@ function createMemoryRepo(): JournalRepo {
     async applyRemote() {
       return 0;
     },
+    async importReadings(rows) {
+      let changed = 0;
+      for (const r of rows) {
+        const local = readings.get(r.id);
+        if (local && local.updatedAt >= r.updatedAt) continue;
+        readings.set(r.id, r);
+        changed++;
+      }
+      return changed;
+    },
     async getDailyDraw(dateKey) {
       return draws.get(dateKey) ?? null;
     },

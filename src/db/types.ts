@@ -74,6 +74,12 @@ export interface JournalRepo {
   markAllDirty(): Promise<void>;
   /** Merges rows from the cloud, last write (by `updatedAt`) wins. Returns how many changed locally. */
   applyRemote(rows: SyncRecord[]): Promise<number>;
+  /**
+   * Adds readings from a backup file. A reading already here is kept unless the file's copy is
+   * newer (by `updatedAt`); a deleted reading stays deleted. Imported rows are flagged for upload.
+   * Returns how many were added or updated.
+   */
+  importReadings(rows: ReadingRecord[]): Promise<number>;
   getDailyDraw(dateKey: string): Promise<DailyDraw | null>;
   listDailyDraws(): Promise<DailyDraw[]>;
   /**

@@ -22,11 +22,14 @@ import { TextField } from '@/components/TextField';
 import { getSign } from '@/data/content';
 import { useLanguage } from '@/hooks/useLanguage';
 import { shareJsonFile } from '@/services/exportFile';
+import { ImportError, importBackup } from '@/services/importData';
+import { pickBackupFile } from '@/services/pickBackup';
 import { ensurePermission } from '@/services/notifications';
 import { buildExport, deleteAllUserData, exportFileName } from '@/services/userData';
 import { useSync } from '@/store/sync';
 import { useToast } from '@/store/toast';
 import { formatTime } from '@/utils/dates';
+import { logError } from '@/utils/log';
 import { useSettings } from '@/store/settings';
 import { spacing } from '@/theme/spacing';
 import type { FontSizeSetting, MyanmarFont } from '@/theme/typography';
@@ -45,6 +48,7 @@ export default function Settings() {
   const sign = getSign(s.birthSign);
   const signedIntoCloud = useSync((x) => x.status !== 'signedOut' && x.status !== 'codeSent');
   const [exporting, setExporting] = useState(false);
+  const [importing, setImporting] = useState(false);
   const [confirmDelete, setConfirmDelete] = useState(false);
 
   const exportData = async () => {
@@ -54,6 +58,30 @@ export default function Settings() {
     setExporting(false);
     if (result === 'failed') toast(t('settings.exportFailed'));
     else if (result === 'unavailable') toast(t('share.unavailable'));
+  };
+
+  const restoreData = async () => {
+    setImporting(true);
+    try {
+      const json = await pickBackupFile();
+      if (json === null) return;
+      const { added } = await importBackup(json);
+      toast(added > 0 ? t('settings.importDone', { n: formatNumber(added, { burmeseNumerals: s.burmeseNumerals }) }) : t('settings.importNothing'));
+    } catch (e) {
+      logError('settings.import', e);
+      const code = e instanceof ImportError ? e.code : null;
+      const key =
+        code === 'notBackup' || code === 'notJson'
+          ? 'importInvalid'
+          : code === 'newerVersion'
+            ? 'importNewer'
+            : code === 'tooBig'
+              ? 'importTooBig'
+              : 'importFailed';
+      toast(t(`settings.${key}`));
+    } finally {
+      setImporting(false);
+    }
   };
 
   const deleteData = async () => {
@@ -245,6 +273,16 @@ export default function Settings() {
           loading={exporting}
           testID="settings-export"
         />
+        <Button
+          label={t('settings.import')}
+          variant="secondary"
+          onPress={restoreData}
+          loading={importing}
+          testID="settings-import"
+        />
+        <AppText variant="caption" tone="textMuted">
+          {t('settings.importHint')}
+        </AppText>
         <Button
           label={t('settings.deleteData')}
           variant="ghost"
