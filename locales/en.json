@@ -147,7 +147,13 @@
     "saved": "Saved in your journal",
     "openJournal": "Open in journal",
     "share": "Share",
-    "viewCard": "See all meanings"
+    "viewCard": "See all meanings",
+    "deeperTitle": "Deeper reading",
+    "deeperWatch": "Watch an ad for a deeper reading",
+    "deeperBody": "See what this card says about love, career, money and health.",
+    "extraTitle": "A second card",
+    "extraWatch": "Watch an ad for a second card",
+    "extraBody": "Draw one more card for today."
   },
   "journal": {
     "title": "Journal",

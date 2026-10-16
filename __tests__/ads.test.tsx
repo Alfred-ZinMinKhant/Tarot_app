@@ -26,7 +26,7 @@ beforeEach(() => {
   useReadingDraft.setState({ draft: null });
   resetJournalRepo();
   useJournal.setState({ readings: [], loaded: false, localChanges: 0 });
-  useDaily.setState({ dateKey: null, draw: null, loading: false });
+  useDaily.setState({ dateKey: null, draw: null, loading: false, bonus: null });
   useToast.setState({ current: null });
   useSettings.setState({ ...DEFAULT_SETTINGS, language: 'en', hasOnboarded: true, haptics: false, deviceSeed: 's' });
   usePremium.setState({ isPremium: false, packages: [], packagesError: false, shareMonth: monthKey(), sharesUsed: 0 });
@@ -129,5 +129,50 @@ describe('rewarded ad unlock', () => {
     await openPaywall();
     expect(await screen.findByTestId('screen-paywall')).toBeTruthy();
     expect(screen.queryByTestId('paywall-watch-ad')).toBeNull();
+  });
+  describe('Card of the Day rewards', () => {
+    async function openDaily() {
+      renderRouter('./app', { initialUrl: '/daily' });
+      await startAds();
+      fireEvent.press(await screen.findByTestId('daily-reveal-button'));
+      await screen.findByTestId('daily-title');
+    }
+
+    it('unlocks the deeper reading and a second card after rewarded ads', async () => {
+      await openDaily();
+      expect(screen.queryByTestId('daily-deeper')).toBeNull();
+      expect(screen.queryByTestId('daily-extra')).toBeNull();
+      fireEvent.press(await screen.findByTestId('daily-deeper-watch'));
+      expect(await screen.findByTestId('daily-deeper')).toBeTruthy();
+      fireEvent.press(await screen.findByTestId('daily-extra-watch'));
+      expect(await screen.findByTestId('daily-extra')).toBeTruthy();
+      expect(ads.shown).toBe(2);
+    });
+
+    it('keeps them locked when the ad is not finished', async () => {
+      ads.nextReward = 'closed';
+      await openDaily();
+      fireEvent.press(await screen.findByTestId('daily-extra-watch'));
+      expect(await screen.findByText(en.ads.notFinished)).toBeTruthy();
+      expect(screen.queryByTestId('daily-extra')).toBeNull();
+    });
+
+    it('gives Premium both without an ad', async () => {
+      usePremium.setState({ isPremium: true });
+      const store = new FakePurchases();
+      store.premium = true;
+      setPurchasesService(store);
+      await openDaily();
+      expect(await screen.findByTestId('daily-deeper')).toBeTruthy();
+      expect(await screen.findByTestId('daily-extra')).toBeTruthy();
+      expect(ads.shown).toBe(0);
+    });
+
+    it('offers nothing in a build without ads', async () => {
+      setAdsService(null);
+      await openDaily();
+      expect(screen.queryByTestId('daily-deeper-watch')).toBeNull();
+      expect(screen.queryByTestId('daily-extra-watch')).toBeNull();
+    });
   });
 });

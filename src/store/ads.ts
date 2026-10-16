@@ -9,6 +9,8 @@ type AdsState = {
   /** The viewer is in a region that must be able to reopen the consent form. */
   privacyOptions: boolean;
   init: () => Promise<void>;
+  /** Plays a rewarded ad. 'earned' means the viewer watched it to the end. */
+  watchRewarded: () => Promise<RewardOutcome>;
   /** Plays a rewarded ad; a finished one grants a single reading of `spreadId`. */
   watchForSpread: (spreadId: string) => Promise<RewardOutcome>;
   openPrivacyOptions: () => Promise<void>;
@@ -40,7 +42,7 @@ const grants = new Set<string>();
 /** Uses up a rewarded-ad pass for `spreadId`. True when there was one. */
 export const consumeSpreadGrant = (spreadId: string): boolean => grants.delete(spreadId);
 
-export const useAds = create<AdsState>()((set) => ({
+export const useAds = create<AdsState>()((set, get) => ({
   ready: false,
   privacyOptions: false,
   init: async () => {
@@ -52,14 +54,16 @@ export const useAds = create<AdsState>()((set) => ({
       set({ ready: false });
     }
   },
-  watchForSpread: async (spreadId) => {
+  watchRewarded: async () => {
     if (!service) return 'unavailable';
-    let outcome: RewardOutcome;
     try {
-      outcome = await service.showRewarded();
+      return await service.showRewarded();
     } catch {
-      outcome = 'unavailable';
+      return 'unavailable';
     }
+  },
+  watchForSpread: async (spreadId) => {
+    const outcome = await get().watchRewarded();
     if (outcome === 'earned') grants.add(spreadId);
     return outcome;
   },

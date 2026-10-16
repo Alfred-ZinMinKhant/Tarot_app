@@ -76,6 +76,9 @@ Ads are optional and **off by default**. They only run in a build with `ENABLE_A
 - **Rewarded ad:** on the paywall, when someone tapped a Premium spread, "Watch a short ad to
   unlock this reading once" opens that spread for one reading (the pass lives in memory and is
   used up when the reading screen opens). Watching less than the whole ad grants nothing.
+- **Rewarded ad on the Card of the Day:** after the card is revealed, one ad unlocks a deeper
+  reading (love, career, money, health text already in the card data) and another a second card
+  for the day. Both live in memory and reset on a new day; Premium gets them without an ad.
 - **Premium removes everything.** `useShowAds()` is false for subscribers.
 - Ad content is capped at PG. A build with no ad unit IDs for a format shows none of it.
 
