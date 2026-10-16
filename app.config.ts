@@ -127,6 +127,8 @@ const config: ExpoConfig = {
       bannerAndroid: env.ADMOB_BANNER_ANDROID || '',
       rewardedIos: env.ADMOB_REWARDED_IOS || '',
       rewardedAndroid: env.ADMOB_REWARDED_ANDROID || '',
+      // Comma-separated AdMob test device IDs: these devices get test ads, so you can tap them.
+      testDevices: (env.ADMOB_TEST_DEVICES || '').split(',').map((d) => d.trim()).filter(Boolean),
     },
     // Optional local payment partner shown on the paywall (both must be set).
     localPayment: {

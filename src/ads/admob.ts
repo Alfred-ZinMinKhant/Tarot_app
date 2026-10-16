@@ -36,7 +36,10 @@ export function adMobService(): AdsService | null {
       const info = await AdsConsent.getConsentInfo();
       if (!info.canRequestAds) return false;
       // A tarot app should not get violent or sexual ads: keep them to PG.
-      await MobileAds().setRequestConfiguration({ maxAdContentRating: MaxAdContentRating.PG });
+      await MobileAds().setRequestConfiguration({
+        maxAdContentRating: MaxAdContentRating.PG,
+        testDeviceIdentifiers: config.testDevices,
+      });
       await MobileAds().initialize();
       return true;
     },

@@ -6,6 +6,8 @@ export type AdsConfig = {
   banner: string | null;
   /** Rewarded ad unit ("watch an ad to unlock one reading"), or null. */
   rewarded: string | null;
+  /** AdMob test device IDs that always get test ads. */
+  testDevices: string[];
 };
 
 type Extra = {
@@ -15,6 +17,7 @@ type Extra = {
     bannerAndroid?: string;
     rewardedIos?: string;
     rewardedAndroid?: string;
+    testDevices?: string[];
   };
 };
 
@@ -31,5 +34,5 @@ export function adsConfig(): AdsConfig | null {
   const banner = (ios ? a.bannerIos : a.bannerAndroid) || null;
   const rewarded = (ios ? a.rewardedIos : a.rewardedAndroid) || null;
   if (!__DEV__ && !banner && !rewarded) return null;
-  return { banner, rewarded };
+  return { banner, rewarded, testDevices: a.testDevices ?? [] };
 }
