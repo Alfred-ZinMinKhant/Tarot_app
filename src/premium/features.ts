@@ -1,3 +1,5 @@
+import { pad2 } from '@/utils/dates';
+
 /** What Premium unlocks. Everything else (daily card, one- and three-card spreads, journal,
  * library, lessons, signs, data export) is free forever. */
 export const PREMIUM_SPREADS: readonly string[] = ['love', 'celtic-cross'];
@@ -9,5 +11,5 @@ export const isPremiumSpread = (spreadId: string): boolean => PREMIUM_SPREADS.in
 
 /** "YYYY-MM" in local time, the period the free share allowance resets on. */
 export function monthKey(date = new Date()): string {
-  return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}`;
+  return `${date.getFullYear()}-${pad2(date.getMonth() + 1)}`;
 }

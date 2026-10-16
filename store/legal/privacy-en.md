@@ -2,7 +2,7 @@
 
 ## The short version
 
-Mingalar Tarot is designed to work offline. Your readings, notes, name and settings are stored on your phone. We don't run ads, we don't sell data, and we don't track you across other apps or websites.
+Mingalar Tarot is designed to work offline. Your readings, notes, name and settings are stored on your phone. We don't sell your data and we never put your readings, notes or birth details into ads. If the free version shows ads, they come from Google AdMob (see Ads below).
 
 ## What stays on your phone
 
@@ -19,6 +19,10 @@ Cloud backup is off unless you turn it on. If you sign in to back up your journa
 ## Purchases
 
 If you buy Premium, the payment is handled by the App Store or Google Play. Our purchase service receives an anonymous ID and your purchase status so Premium can unlock on your devices. We never see your card details.
+
+## Ads
+
+The free version may show banner ads and optional "watch an ad to unlock" videos from Google AdMob. Google and its ad partners may use your device's advertising ID and approximate location to choose and measure ads. Where the law requires it, the app asks for your consent first, and you can change your choice in Settings. On iPhone, ads that use your advertising ID appear only if you allow tracking when asked. Premium removes all ads, and ads never use your journal, questions or birth details.
 
 ## Your choices
 

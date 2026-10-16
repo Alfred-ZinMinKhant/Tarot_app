@@ -15,6 +15,7 @@ import {
   Screen,
   SettingRow,
 } from '@/components';
+import { AdPrivacyRow } from '@/components/AdPrivacyRow';
 import { CloudSyncCard } from '@/components/CloudSyncCard';
 import { PremiumCard } from '@/components/PremiumCard';
 import { TextField } from '@/components/TextField';
@@ -227,6 +228,8 @@ export default function Settings() {
       ) : null}
 
       <PremiumCard />
+
+      <AdPrivacyRow />
 
       <CloudSyncCard />
 

@@ -20,5 +20,21 @@ jest.mock('react-native-purchases', () => ({
   PACKAGE_TYPE: { MONTHLY: 'MONTHLY', ANNUAL: 'ANNUAL', LIFETIME: 'LIFETIME' },
 }));
 
+// The ad SDK and iOS tracking prompt need native code; ads are off in tests unless one is injected.
+jest.mock('react-native-google-mobile-ads', () => ({
+  __esModule: true,
+  default: () => ({ setRequestConfiguration: jest.fn(), initialize: jest.fn() }),
+  AdEventType: {},
+  AdsConsent: {},
+  AdsConsentPrivacyOptionsRequirementStatus: { REQUIRED: 'REQUIRED' },
+  BannerAd: () => null,
+  BannerAdSize: {},
+  MaxAdContentRating: { PG: 'PG' },
+  RewardedAd: {},
+  RewardedAdEventType: {},
+  TestIds: { ADAPTIVE_BANNER: 'test-banner', REWARDED: 'test-rewarded' },
+}));
+jest.mock('expo-tracking-transparency', () => ({ requestTrackingPermissionsAsync: jest.fn() }));
+
 // The reading and home screens render a lot of SVG; give slow or busy machines room.
 jest.setTimeout(20000);

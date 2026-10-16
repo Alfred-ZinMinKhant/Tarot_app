@@ -30,7 +30,7 @@ export default function Home() {
   const now = new Date();
   const greeting = t(`greeting.${timeOfDay(now)}`);
   return (
-    <Screen testID="screen-home">
+    <Screen testID="screen-home" ad>
       <Header
         title={name ? t('greeting.withName', { greeting, name }) : greeting}
         subtitle={t('home.subtitle')}

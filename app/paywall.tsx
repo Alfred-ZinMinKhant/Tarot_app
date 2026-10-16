@@ -10,6 +10,7 @@ import { useLanguage } from '@/hooks/useLanguage';
 import { useNumberFormat } from '@/hooks/useNumberFormat';
 import { FREE_SHARES_PER_MONTH } from '@/premium/features';
 import type { PremiumPackage } from '@/premium/service';
+import { useAds, useRewardedAvailable } from '@/store/ads';
 import { purchasesAvailable, usePremium } from '@/store/premium';
 import { useToast } from '@/store/toast';
 import { MIN_TAP, radius, spacing } from '@/theme/spacing';
@@ -27,7 +28,8 @@ export default function Paywall() {
   const toast = useToast((s) => s.show);
   const p = usePremium();
   const [selected, setSelected] = useState<string | null>(null);
-  const [busy, setBusy] = useState<'buy' | 'restore' | null>(null);
+  const [busy, setBusy] = useState<'buy' | 'restore' | 'ad' | null>(null);
+  const rewardedAvailable = useRewardedAvailable();
   const local = localPaymentConfig();
   const available = purchasesAvailable();
 
@@ -57,6 +59,16 @@ export default function Paywall() {
       toast(t('premium.thanks'));
       close();
     } else if (outcome === 'failed') toast(t('premium.purchaseFailed'));
+  };
+
+  /** Watch a rewarded ad to open this one Premium spread without subscribing. */
+  const watchAd = async () => {
+    if (!spread) return;
+    setBusy('ad');
+    const outcome = await useAds.getState().watchForSpread(spread.id);
+    setBusy(null);
+    if (outcome === 'earned') router.replace({ pathname: '/reading/[spreadId]', params: { spreadId: spread.id } });
+    else toast(t(outcome === 'closed' ? 'ads.notFinished' : 'ads.unavailable'));
   };
 
   const restore = async () => {
@@ -95,7 +107,7 @@ export default function Paywall() {
       ) : null}
 
       <Card>
-        {(['benefitCeltic', 'benefitLove', 'benefitShare', 'benefitSupport'] as const).map((k) => (
+        {(['benefitCeltic', 'benefitLove', 'benefitShare', 'benefitNoAds', 'benefitSupport'] as const).map((k) => (
           <View key={k} style={styles.benefit}>
             <Icon name="check" size={20} color={colors.accent} />
             <AppText style={styles.flex}>{t(`premium.${k}`)}</AppText>
@@ -139,6 +151,15 @@ export default function Paywall() {
           onPress={buy}
           loading={busy === 'buy'}
           testID="paywall-buy"
+        />
+      ) : null}
+      {spread && rewardedAvailable ? (
+        <Button
+          label={t('ads.watchToUnlock')}
+          variant="secondary"
+          onPress={watchAd}
+          loading={busy === 'ad'}
+          testID="paywall-watch-ad"
         />
       ) : null}
       <Button

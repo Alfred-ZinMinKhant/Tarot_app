@@ -75,7 +75,7 @@ export default function Library() {
   const inputScript = scriptForLanguage(lang);
 
   return (
-    <Screen testID="screen-library" scroll={false} contentStyle={styles.content}>
+    <Screen testID="screen-library" ad scroll={false} contentStyle={styles.content}>
       <Header title={t('library.title')} subtitle={t('library.subtitle', { total: fmt(CARDS.length) })} />
 
       <View style={[styles.search, { backgroundColor: theme.colors.surface, borderColor: theme.colors.border }]}>

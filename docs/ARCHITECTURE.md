@@ -1,6 +1,6 @@
 # Architecture
 
-_Last updated: Phase 4 (journal in SQLite, Card of the Day, sharing, reminders)._
+_Last updated: Phase 7 (adds cloud backup, Premium, ads and the birth chart on top of the Phase 4 base)._
 
 ## Stack
 

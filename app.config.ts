@@ -70,6 +70,18 @@ const config: ExpoConfig = {
     'expo-image',
     'expo-sqlite',
     ['expo-notifications', { color: '#D4AF37' }],
+    // Optional ads (AdMob). The defaults are Google's sample app IDs, which only serve test ads;
+    // set the real ones in .env for release builds (see docs/MONETIZATION.md).
+    [
+      'react-native-google-mobile-ads',
+      {
+        androidAppId: env.ADMOB_ANDROID_APP_ID || 'ca-app-pub-3940256099942544~3347511713',
+        iosAppId: env.ADMOB_IOS_APP_ID || 'ca-app-pub-3940256099942544~1458002511',
+        userTrackingUsageDescription:
+          'This identifier is used to show you ads that are more relevant to you. You can say no and still use every feature.',
+      },
+    ],
+    'expo-tracking-transparency',
     // Short sound effects only: no microphone, no background audio.
     [
       'expo-audio',
@@ -106,6 +118,15 @@ const config: ExpoConfig = {
       iosApiKey: env.REVENUECAT_IOS_API_KEY || '',
       androidApiKey: env.REVENUECAT_ANDROID_API_KEY || '',
       entitlement: env.REVENUECAT_ENTITLEMENT || 'premium',
+    },
+    // Optional ads (AdMob). Off unless ENABLE_ADS=true; a release build shows a format only when
+    // its ad unit ID is set. Premium removes banners and the rewarded option.
+    ads: {
+      enabled: env.ENABLE_ADS === 'true',
+      bannerIos: env.ADMOB_BANNER_IOS || '',
+      bannerAndroid: env.ADMOB_BANNER_ANDROID || '',
+      rewardedIos: env.ADMOB_REWARDED_IOS || '',
+      rewardedAndroid: env.ADMOB_REWARDED_ANDROID || '',
     },
     // Optional local payment partner shown on the paywall (both must be set).
     localPayment: {

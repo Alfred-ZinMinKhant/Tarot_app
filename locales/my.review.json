@@ -322,6 +322,7 @@
     "premium.benefitCeltic",
     "premium.benefitLove",
     "premium.benefitShare",
+    "premium.benefitNoAds",
     "premium.benefitSupport",
     "premium.freeForever",
     "premium.loading",
@@ -384,7 +385,13 @@
     "chart.seeCard",
     "chart.edit",
     "chart.clear",
-    "chart.disclaimer"
+    "chart.disclaimer",
+    "ads.watchToUnlock",
+    "ads.unavailable",
+    "ads.notFinished",
+    "ads.privacyTitle",
+    "ads.privacyBody",
+    "ads.privacyButton"
   ],
   "reviewed": []
 }

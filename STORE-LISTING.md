@@ -66,7 +66,7 @@ MADE FOR BURMESE READERS
 • Switch language instantly, any time
 
 GENTLE BY DESIGN
-• No ads, no tracking, works offline
+• Works offline; your journal never leaves your phone unless you back it up
 • Text size, light and dark themes, screen-reader labels in both languages
 
 Mingalar Tarot is for entertainment and self-reflection. Tarot cannot predict the future and is not a substitute for professional advice about health, money, legal or personal matters.
@@ -155,7 +155,7 @@ Mingalar Tarot မှ ကြိုဆိုပါတယ်။ နေ့စဉ်
 | Category | Lifestyle (secondary: Entertainment) | Lifestyle |
 | Price | Free, with in-app purchases if RevenueCat is configured | Free (contains in-app purchases if configured) |
 | Age rating | Expected **4+** (questionnaire answers in `docs/CONTENT-RATING.md`) | IARC: expected Everyone / PEGI 3 |
-| Contains ads | No | No |
+| Contains ads | Yes, only if `ENABLE_ADS=true` (AdMob banner + rewarded); otherwise No | Same: answer *Yes* only for an ads build |
 | Support URL | your website or a page with `SUPPORT_EMAIL` | email = `SUPPORT_EMAIL` |
 | Privacy policy URL | host `store/legal/privacy-en.html` | same |
 | Copyright | `© <year> <PUBLISHER_NAME>` | — |
@@ -176,8 +176,16 @@ Mingalar Tarot မှ ကြိုဆိုပါတယ်။ နေ့စဉ်
 - Purchase history — collected, linked to an anonymous app user ID, app functionality.
 - Identifiers — RevenueCat's anonymous app user ID (not used for tracking).
 
-No data is used for tracking or advertising in any configuration. Keep the in-app Privacy
-Policy (`data/legal.json`) in sync with what you enable.
+**If ads are enabled (AdMob, `ENABLE_ADS=true`):** the Google Mobile Ads SDK collects data for
+advertising, so the *Data Not Collected* answer above no longer applies.
+- Google Play "Data safety": *Device or other IDs* (advertising ID) and *Approximate location*,
+  collected and shared with Google for *Advertising or marketing* and *Analytics*; also
+  *App activity → App interactions* and *App info and performance → Diagnostics* as AdMob lists.
+  Answer *Yes* to "Contains ads" and declare the advertising ID use.
+- App Store "App Privacy": *Data Used to Track You* → Identifiers (Device ID), plus Usage Data and
+  Diagnostics as AdMob lists. Keep the ATT prompt (`expo-tracking-transparency`) in the build.
+- Journal, questions and birth details are never sent to the ad SDK.
+Keep the in-app Privacy Policy (`data/legal.json`) in sync with what you enable.
 
 ## App Review notes (App Store)
 

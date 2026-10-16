@@ -64,3 +64,46 @@ it.
 - Terms of Use and Privacy Policy are linked from the paywall.
 - Manage subscription opens the platform's subscription page.
 - A purchase the user cancels shows no error. A failed purchase says nobody was charged.
+
+# Ads (Google AdMob)
+
+Ads are optional and **off by default**. They only run in a build with `ENABLE_ADS=true`.
+
+## What the app shows
+
+- **Banner:** an adaptive banner at the end of the Home, Library and Learn tabs. Never during a
+  reading, in the journal, on the card of the day or on the paywall.
+- **Rewarded ad:** on the paywall, when someone tapped a Premium spread, "Watch a short ad to
+  unlock this reading once" opens that spread for one reading (the pass lives in memory and is
+  used up when the reading screen opens). Watching less than the whole ad grants nothing.
+- **Premium removes everything.** `useShowAds()` is false for subscribers.
+- Ad content is capped at PG. A build with no ad unit IDs for a format shows none of it.
+
+Code: `src/ads/` (AdMob service), `src/store/ads.ts` (state, one-off passes),
+`src/components/AdBanner.tsx`, `src/config/ads.ts`.
+
+## Turning it on
+
+1. In AdMob, add the Android and iOS apps, then create one **Banner** and one **Rewarded** ad unit
+   per platform.
+2. Set in `.env` (and `eas env:create` for builds): `ENABLE_ADS=true`, `ADMOB_ANDROID_APP_ID`,
+   `ADMOB_IOS_APP_ID`, `ADMOB_BANNER_ANDROID/IOS`, `ADMOB_REWARDED_ANDROID/IOS`.
+   Without the app IDs the build uses Google's sample IDs: the app runs but **earns nothing**.
+3. Make a development or production build (the AdMob SDK is native; it does not work in Expo Go).
+   Development builds always show Google's test ads. Never tap your own live ads: that can get
+   the AdMob account banned. Add your phone as an AdMob test device if you test release builds.
+4. Create a consent message in AdMob → Privacy & messaging (GDPR, plus US states if you want it)
+   and publish it. The app shows it through Google's UMP SDK before the first ad request, asks
+   for iOS tracking permission, and exposes "Manage ad privacy" in Settings where the law requires.
+5. Update the store forms: see `STORE-LISTING.md` (Contains ads, Data safety, App Privacy) and
+   `docs/CONTENT-RATING.md`. The Privacy Policy already has an Ads section; run
+   `npm run legal:export` and republish the hosted copy.
+6. Create `app-ads.txt` on the website listed in your store listing (AdMob gives you the line),
+   otherwise ad revenue is limited.
+
+## Notes
+
+- AdMob pays per impression and click, and is low in Myanmar-heavy traffic; expect the
+  subscription and the local-payment route to matter more than ads.
+- A build with ads but no RevenueCat keys has no way to remove them. Ship both together.
+- The app is for adults (18+), so no child-directed treatment is applied.

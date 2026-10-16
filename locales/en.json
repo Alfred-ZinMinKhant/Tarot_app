@@ -369,6 +369,7 @@
     "benefitCeltic": "Celtic Cross: the classic ten-card spread for big questions",
     "benefitLove": "Love spread: five cards about you, them and the connection",
     "benefitShare": "Share readings as images as often as you like",
+    "benefitNoAds": "No ads while Premium is active",
     "benefitSupport": "Support new lessons and better Burmese content",
     "freeForever": "Always free: Card of the Day, one-card and three-card readings, the journal, card library, lessons and weekday signs.",
     "loading": "Loading prices…",
@@ -436,5 +437,13 @@
     "edit": "Change my birth details",
     "clear": "Remove my birth chart",
     "disclaimer": "Astrology is shared for entertainment and reflection. It doesn't describe your health, money or future."
+  },
+  "ads": {
+    "watchToUnlock": "Watch a short ad to unlock this reading once",
+    "unavailable": "No ad is available right now. Please try again later.",
+    "notFinished": "Watch the whole ad to unlock the reading.",
+    "privacyTitle": "Ad privacy choices",
+    "privacyBody": "Review or change how ads use your data. This never affects the readings.",
+    "privacyButton": "Manage ad privacy"
   }
 }

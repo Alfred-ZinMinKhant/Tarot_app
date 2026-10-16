@@ -5,15 +5,19 @@ import { type Edge, SafeAreaView } from 'react-native-safe-area-context';
 import { spacing } from '@/theme/spacing';
 import { useAppTheme } from '@/theme/ThemeContext';
 
+import { AdBanner } from './AdBanner';
+
 type Props = {
   children: ReactNode;
   scroll?: boolean;
   edges?: Edge[];
   contentStyle?: ViewStyle;
+  /** Show a banner ad at the end of the screen (hidden for Premium and in builds without ads). */
+  ad?: boolean;
   testID?: string;
 };
 
-export function Screen({ children, scroll = true, edges = ['top', 'left', 'right'], contentStyle, testID }: Props) {
+export function Screen({ children, scroll = true, edges = ['top', 'left', 'right'], contentStyle, ad, testID }: Props) {
   const { colors } = useAppTheme();
   return (
     <SafeAreaView edges={edges} style={[styles.root, { backgroundColor: colors.background }]} testID={testID}>
@@ -24,9 +28,13 @@ export function Screen({ children, scroll = true, edges = ['top', 'left', 'right
           showsVerticalScrollIndicator={false}
         >
           {children}
+          {ad ? <AdBanner /> : null}
         </ScrollView>
       ) : (
-        <View style={[styles.content, styles.fill, contentStyle]}>{children}</View>
+        <View style={[styles.content, styles.fill, contentStyle]}>
+          {children}
+          {ad ? <AdBanner /> : null}
+        </View>
       )}
     </SafeAreaView>
   );

@@ -13,8 +13,10 @@ import { useLanguage } from '@/hooks/useLanguage';
 import { useReminders } from '@/hooks/useReminders';
 import { useSettingsHydrated } from '@/hooks/useSettingsHydrated';
 import { i18n, initI18n } from '@/i18n';
+import { adMobService } from '@/ads/admob';
 import { useDaily } from '@/store/daily';
 import { revenueCatService } from '@/premium/revenuecat';
+import { ensureAdsService, useAds } from '@/store/ads';
 import { ensurePurchasesService, usePremium } from '@/store/premium';
 import { ensureSyncServices } from '@/store/sync';
 import { supabaseServices } from '@/sync/supabase';
@@ -27,6 +29,8 @@ void SplashScreen.preventAutoHideAsync();
 ensureSyncServices(supabaseServices);
 // In-app purchases exist only in builds with a RevenueCat key (see src/config/purchases.ts).
 ensurePurchasesService(revenueCatService);
+// Ads exist only in builds with ENABLE_ADS=true (see src/config/ads.ts).
+ensureAdsService(adMobService);
 
 export default function RootLayout() {
   const fontsReady = useAppFonts();
@@ -67,7 +71,11 @@ function AppServices() {
   useEffect(() => {
     void useJournal.getState().refresh().catch(() => undefined);
     void useDaily.getState().load().catch(() => undefined);
-    void usePremium.getState().init();
+    // Premium status first, so a subscriber never sees a banner flash up while consent loads.
+    void usePremium
+      .getState()
+      .init()
+      .finally(() => void useAds.getState().init());
   }, []);
   useReminders(true);
   useCloudSync();

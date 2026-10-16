@@ -5,7 +5,7 @@
       "sections": [
         {
           "heading": "The short version",
-          "body": "{appName} is designed to work offline. Your readings, notes, name and settings are stored on your phone. We don't run ads, we don't sell data, and we don't track you across other apps or websites."
+          "body": "{appName} is designed to work offline. Your readings, notes, name and settings are stored on your phone. We don't sell your data and we never put your readings, notes or birth details into ads. If the free version shows ads, they come from Google AdMob (see Ads below)."
         },
         {
           "heading": "What stays on your phone",
@@ -22,6 +22,10 @@
         {
           "heading": "Purchases",
           "body": "If you buy Premium, the payment is handled by the App Store or Google Play. Our purchase service receives an anonymous ID and your purchase status so Premium can unlock on your devices. We never see your card details."
+        },
+        {
+          "heading": "Ads",
+          "body": "The free version may show banner ads and optional \"watch an ad to unlock\" videos from Google AdMob. Google and its ad partners may use your device's advertising ID and approximate location to choose and measure ads. Where the law requires it, the app asks for your consent first, and you can change your choice in Settings. On iPhone, ads that use your advertising ID appear only if you allow tracking when asked. Premium removes all ads, and ads never use your journal, questions or birth details."
         },
         {
           "heading": "Your choices",
@@ -56,7 +60,7 @@
       "sections": [
         {
           "heading": "အတိုချုပ်",
-          "body": "{appName} ကို အင်တာနက်မလိုဘဲ သုံးနိုင်အောင် ဖန်တီးထားပါတယ်။ သင့်ရဲ့ ဟောစာတွေ၊ မှတ်စုတွေ၊ နာမည်နဲ့ ဆက်တင်တွေကို သင့်ဖုန်းထဲမှာပဲ သိမ်းပါတယ်။ ကြော်ငြာ မပြပါဘူး၊ ဒေတာ မရောင်းပါဘူး၊ တခြား app တွေ ဝက်ဘ်ဆိုက်တွေမှာ သင့်ကို ခြေရာမခံပါဘူး။"
+          "body": "{appName} ကို အင်တာနက်မလိုဘဲ သုံးနိုင်အောင် ဖန်တီးထားပါတယ်။ သင့်ရဲ့ ဟောစာတွေ၊ မှတ်စုတွေ၊ နာမည်နဲ့ ဆက်တင်တွေကို သင့်ဖုန်းထဲမှာပဲ သိမ်းပါတယ်။ ဒေတာ မရောင်းပါဘူး၊ သင့်ဟောစာ၊ မှတ်စု၊ မွေးဖွားမှုအချက်အလက်တွေကို ကြော်ငြာထဲ ဘယ်တော့မှ မထည့်ပါဘူး။ အခမဲ့ဗားရှင်းမှာ ကြော်ငြာပြရင် Google AdMob ကပါ (အောက်က ကြော်ငြာ ကဏ္ဍကို ကြည့်ပါ)။"
         },
         {
           "heading": "သင့်ဖုန်းထဲမှာပဲ ရှိနေမယ့် အရာများ",
@@ -73,6 +77,10 @@
         {
           "heading": "ဝယ်ယူမှုများ",
           "body": "Premium ဝယ်ရင် ငွေပေးချေမှုကို App Store ဒါမှမဟုတ် Google Play က ကိုင်တွယ်ပါတယ်။ သင့်စက်တွေမှာ Premium ဖွင့်ပေးနိုင်ဖို့ ကျွန်ုပ်တို့ရဲ့ ဝယ်ယူမှု ဝန်ဆောင်မှုက အမည်မသိ ID နဲ့ ဝယ်ယူမှု အခြေအနေကိုပဲ ရပါတယ်။ သင့်ကတ်အချက်အလက်ကို ဘယ်တော့မှ မမြင်ရပါဘူး။"
+        },
+        {
+          "heading": "ကြော်ငြာများ",
+          "body": "အခမဲ့ဗားရှင်းမှာ Google AdMob က ဘန်နာကြော်ငြာတွေနဲ့ \"ကြော်ငြာကြည့်ပြီး ဖွင့်ရန်\" ဗီဒီယိုတွေ ပြနိုင်ပါတယ်။ Google နဲ့ ၎င်းရဲ့ ကြော်ငြာမိတ်ဖက်တွေက ကြော်ငြာရွေးချယ်ဖို့နဲ့ တိုင်းတာဖို့ သင့်စက်ရဲ့ ကြော်ငြာ ID နဲ့ ခန့်မှန်းတည်နေရာကို သုံးနိုင်ပါတယ်။ ဥပဒေက လိုအပ်တဲ့နေရာမှာ အရင်ဆုံး သင့်ခွင့်ပြုချက်ကို တောင်းပြီး ဆက်တင်ထဲမှာ ပြောင်းနိုင်ပါတယ်။ iPhone မှာ ခြေရာခံခွင့် မေးတဲ့အခါ ခွင့်ပြုမှသာ သင့်ကြော်ငြာ ID သုံးတဲ့ ကြော်ငြာတွေ ပေါ်ပါမယ်။ Premium က ကြော်ငြာအားလုံးကို ဖယ်ရှားပေးပြီး ကြော်ငြာတွေက သင့်ဂျာနယ်၊ မေးခွန်းတွေ၊ မွေးဖွားမှုအချက်အလက်တွေကို ဘယ်တော့မှ မသုံးပါဘူး။"
         },
         {
           "heading": "သင့်ရွေးချယ်ခွင့်များ",

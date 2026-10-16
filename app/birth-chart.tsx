@@ -15,9 +15,8 @@ import { useLanguage } from '@/hooks/useLanguage';
 import { useSettings } from '@/store/settings';
 import { useToast } from '@/store/toast';
 import { spacing } from '@/theme/spacing';
+import { pad2 } from '@/utils/dates';
 import { formatNumber } from '@/utils/numbers';
-
-const pad = (n: number) => String(n).padStart(2, '0');
 
 /** Birth chart: enter a birth date, optional time and place; see Sun, Moon, Rising and the planets. */
 export default function BirthChartScreen() {
@@ -44,7 +43,7 @@ export default function BirthChartScreen() {
   const num = (n: number, opts?: { grouping?: boolean }) => formatNumber(n, { burmeseNumerals: numerals, ...opts });
 
   const save = () => {
-    const date = `${year.padStart(4, '0')}-${pad(Number(month))}-${pad(Number(day))}`;
+    const date = `${year.padStart(4, '0')}-${pad2(Number(month))}-${pad2(Number(day))}`;
     if (!isBirthDate(date)) return setError(t('chart.errorDate'));
     let time: string | null = null;
     if (!unknownTime) {
@@ -53,7 +52,7 @@ export default function BirthChartScreen() {
       if (hour === '' || !Number.isInteger(h) || h < 0 || h > 23 || !Number.isInteger(m) || m < 0 || m > 59) {
         return setError(t('chart.errorTime', { n: num(24), h: num(14), m: num(30) }));
       }
-      time = `${pad(h)}:${pad(m)}`;
+      time = `${pad2(h)}:${pad2(m)}`;
     }
     if (!place) return setError(t('chart.errorPlace'));
     setError(null);

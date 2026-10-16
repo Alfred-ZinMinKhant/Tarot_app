@@ -37,6 +37,7 @@ import { useHaptics } from '@/hooks/useHaptics';
 import { useLanguage } from '@/hooks/useLanguage';
 import { useNumberFormat } from '@/hooks/useNumberFormat';
 import { useJournal } from '@/store/journal';
+import { consumeSpreadGrant } from '@/store/ads';
 import { useSpreadLocked } from '@/store/premium';
 import { useSettings } from '@/store/settings';
 import { useToast } from '@/store/toast';
@@ -67,7 +68,9 @@ export default function Reading() {
   const haptics = useHaptics();
   const reduceMotion = useReduceMotion();
   const reversals = useSettings((s) => s.reversedCards);
-  const locked = useSpreadLocked(params.spreadId ?? '');
+  // A finished rewarded ad opens this one reading of a Premium spread.
+  const [adPass] = useState(() => consumeSpreadGrant(params.spreadId ?? ''));
+  const locked = useSpreadLocked(params.spreadId ?? '') && !adPass;
   const { width } = useWindowDimensions();
   const contentWidth = Math.min(width, 720) - spacing.lg * 2;
 

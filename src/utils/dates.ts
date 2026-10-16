@@ -93,10 +93,10 @@ export function timeOfDay(date: Date): TimeOfDay {
   return 'night';
 }
 
+/** Zero-pads to two digits, e.g. 7 -> "07". */
+export const pad2 = (n: number): string => String(n).padStart(2, '0');
+
 /** Local calendar date key, e.g. "2026-10-15". Used for the daily card seed. */
 export function localDateKey(date: Date): string {
-  const y = date.getFullYear();
-  const m = String(date.getMonth() + 1).padStart(2, '0');
-  const d = String(date.getDate()).padStart(2, '0');
-  return `${y}-${m}-${d}`;
+  return `${date.getFullYear()}-${pad2(date.getMonth() + 1)}-${pad2(date.getDate())}`;
 }

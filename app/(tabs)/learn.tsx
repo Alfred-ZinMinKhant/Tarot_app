@@ -19,7 +19,7 @@ export default function Learn() {
   const done = LESSONS.filter((l) => read.includes(l.id)).length;
 
   return (
-    <Screen testID="screen-learn">
+    <Screen testID="screen-learn" ad>
       <Header title={t('learn.title')} subtitle={t('learn.subtitle')} />
       <View style={styles.progress} accessible accessibilityRole="progressbar" accessibilityValue={{ min: 0, max: LESSONS.length, now: done }}>
         <AppText variant="caption" tone="textMuted" testID="learn-progress">

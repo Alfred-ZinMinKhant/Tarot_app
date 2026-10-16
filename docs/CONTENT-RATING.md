@@ -15,7 +15,7 @@ the answers.
   There is no nudity beyond the stylised figures of the 1909 Lovers and Star cards, which are
   line illustrations with no sexual content.
 - No user-to-user communication, no user-generated content shared with others (sharing an
-  image goes through the phone's own share sheet), no location, no web browsing, no ads.
+  image goes through the phone's own share sheet), no location, no web browsing. Ads (AdMob) appear only in a build with `ENABLE_ADS=true`; the ad content rating is capped at PG.
 - A self-harm safety feature. Questions that mention self-harm or suicide get a supportive
   message instead of a reading, and a helpline when one is configured.
 - Optional in-app purchases (Premium).
@@ -58,7 +58,7 @@ the answers.
 - **Target audience:** 18+ (adults). The app is not designed for children. Choosing 18+ also
   keeps it outside the Families policy requirements.
 - **News app:** No. **Government app:** No. **Health app:** No (it is not a health or medical app).
-- **Ads:** No ads.
+- **Ads:** Yes in an ads build (`ENABLE_ADS=true`), otherwise No. Not a child-directed app.
 - **Data safety:** see `STORE-LISTING.md` → Privacy answers.
 - **Account deletion URL** (needed only when cloud backup is enabled): link to a page explaining
   *Settings → Cloud backup → Delete cloud account* and your support email.

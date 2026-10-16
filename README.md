@@ -9,7 +9,7 @@ npm install
 npm start            # then press a (Android) or i (iOS), or scan the QR code
 ```
 
-Expo Go works for Phase 1. Later phases add native modules (SQLite, notifications), after which use a
+Expo Go is not enough: the app uses native modules (SQLite, notifications, purchases, ads), so use a
 development build: `npx expo run:android` / `npx expo run:ios`, or `eas build --profile development`.
 
 ## Checks
