@@ -1,9 +1,11 @@
-import { fireEvent, renderRouter, screen, within } from 'expo-router/testing-library';
+import { act, fireEvent, renderRouter, screen, waitFor, within } from 'expo-router/testing-library';
 
 import en from '../locales/en.json';
 
 import { CARDS } from '@/data/cards';
+import { useJournal } from '@/store/journal';
 import { DEFAULT_SETTINGS, useSettings } from '@/store/settings';
+import { useToast } from '@/store/toast';
 import { stripZwsp } from '@/utils/myanmar';
 
 const normalizer = (s: string) => stripZwsp(s).trim();
@@ -121,5 +123,29 @@ describe('reading flow', () => {
   it('handles an unknown spread', async () => {
     renderRouter('./app', { initialUrl: '/reading/nope' });
     expect(await screen.findByText(en.reading.notFound)).toBeTruthy();
+  });
+
+  it('tells the user when saving fails, and saves on retry', async () => {
+    jest.spyOn(console, 'warn').mockImplementation(() => undefined);
+    const realSave = useJournal.getState().save;
+    const failingSave = jest.fn().mockRejectedValueOnce(new Error('disk full')).mockImplementation(realSave);
+    useJournal.setState({ save: failingSave });
+    useToast.setState({ current: null });
+    try {
+      await startAndPick('one-card', [3]);
+      await revealStep();
+      fireEvent.press(screen.getByTestId('spread-card-0'));
+      await screen.findByTestId('reading-summary');
+
+      await waitFor(() => expect(useToast.getState().current?.text).toBe(en.journal.saveFailed));
+      expect(useToast.getState().current?.actionLabel).toBe(en.common.errorRetry);
+
+      act(() => useToast.getState().current?.onAction?.());
+      await waitFor(() => expect(useToast.getState().current?.text).toBe(en.journal.saved));
+      expect(failingSave).toHaveBeenCalledTimes(2);
+    } finally {
+      useJournal.setState({ save: realSave });
+      jest.restoreAllMocks();
+    }
   });
 });
