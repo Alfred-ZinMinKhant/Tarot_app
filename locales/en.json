@@ -6,7 +6,10 @@
     "done": "Done",
     "cancel": "Cancel",
     "getStarted": "Get started",
-    "selected": "Selected"
+    "selected": "Selected",
+    "errorTitle": "Something went wrong",
+    "errorBody": "The app hit an unexpected problem. Your journal is safe on this phone.",
+    "errorRetry": "Try again"
   },
   "tabs": {
     "home": "Home",
@@ -164,6 +167,7 @@
     "deleted": "Reading deleted",
     "notFound": "This reading couldn't be found.",
     "saved": "Saved to your journal",
+    "saveFailed": "Couldn't save this reading to your journal.",
     "open": "Open",
     "dateDays": "Last {{n}} days",
     "dateMonths": "Last {{n}} months"
@@ -412,6 +416,7 @@
     "errorDate": "That date doesn't look right. Please check the day, month and year.",
     "errorTime": "That time doesn't look right. Use {{n}}-hour time, for example {{h}} and {{m}}.",
     "errorPlace": "Please choose your birth place from the list.",
+    "errorCompute": "We couldn't calculate this chart. Please check the date and birth place, then try again.",
     "saved": "Your birth chart is saved",
     "hour": "Hour",
     "hour24": "{{n}}-hour clock, {{from}} to {{to}}",

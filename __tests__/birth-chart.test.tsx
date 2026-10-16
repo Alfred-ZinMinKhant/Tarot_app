@@ -1,5 +1,8 @@
 import { fireEvent, renderRouter, screen } from 'expo-router/testing-library';
 
+import en from '../locales/en.json';
+
+import * as chart from '@/astro/chart';
 import { DEFAULT_SETTINGS, useSettings } from '@/store/settings';
 
 const yangon = { name: 'Yangon', country: 'MM', latitude: 16.8053, longitude: 96.1561, timeZone: 'Asia/Yangon' };
@@ -42,5 +45,20 @@ describe('birth chart screen', () => {
     fireEvent.press(screen.getByTestId('chart-clear'));
     expect(useSettings.getState().birth).toBeNull();
     expect(await screen.findByTestId('chart-form')).toBeTruthy();
+  });
+
+  it('shows an error card instead of a blank screen when the chart cannot be computed', async () => {
+    jest.spyOn(console, 'warn').mockImplementation(() => undefined);
+    jest.spyOn(chart, 'computeChart').mockImplementation(() => {
+      throw new Error('ephemeris failed');
+    });
+    useSettings.setState({ birth: { date: '1995-05-05', time: null, place: yangon } });
+    renderRouter('./app', { initialUrl: '/birth-chart' });
+    expect(await screen.findByTestId('chart-compute-error')).toBeTruthy();
+    expect(screen.getByText(en.chart.errorCompute)).toBeTruthy();
+    expect(screen.queryByTestId('chart-result')).toBeNull();
+    fireEvent.press(screen.getByText(en.chart.edit));
+    expect(await screen.findByTestId('chart-form')).toBeTruthy();
+    jest.restoreAllMocks();
   });
 });

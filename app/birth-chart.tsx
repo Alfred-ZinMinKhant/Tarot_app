@@ -16,6 +16,7 @@ import { useSettings } from '@/store/settings';
 import { useToast } from '@/store/toast';
 import { spacing } from '@/theme/spacing';
 import { pad2 } from '@/utils/dates';
+import { logError } from '@/utils/log';
 import { formatNumber } from '@/utils/numbers';
 
 /** Birth chart: enter a birth date, optional time and place; see Sun, Moon, Rising and the planets. */
@@ -65,7 +66,8 @@ export default function BirthChartScreen() {
     if (!birth) return null;
     try {
       return computeChart({ date: birth.date, time: birth.time, place: birth.place });
-    } catch {
+    } catch (e) {
+      logError('birth-chart.compute', e);
       return null;
     }
   }, [birth]);
@@ -148,6 +150,15 @@ export default function BirthChartScreen() {
           <AppText variant="caption" tone="textMuted">
             {t('chart.privacy')}
           </AppText>
+        </Card>
+      ) : null}
+
+      {!editing && birth && !chart ? (
+        <Card testID="chart-compute-error">
+          <AppText tone="danger" accessibilityLiveRegion="polite">
+            {t('chart.errorCompute')}
+          </AppText>
+          <Button label={t('chart.edit')} onPress={() => setEditing(true)} />
         </Card>
       ) : null}
 

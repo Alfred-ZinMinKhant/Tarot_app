@@ -13,6 +13,7 @@ import {
 } from '@/sync/engine';
 import { pickSynced, sanitizeSettings, syncedChanged } from '@/sync/settingsData';
 
+import { logError } from '@/utils/log';
 import { useDaily } from './daily';
 import { useJournal } from './journal';
 import { useSettings } from './settings';
@@ -107,7 +108,8 @@ export const useSync = create<SyncState>()(
             await services.auth.sendCode(email);
             set({ status: 'codeSent', email, error: null });
             return true;
-          } catch {
+          } catch (e) {
+            logError('sync.sendCode', e);
             set({ error: 'sendFailed' });
             return false;
           }
@@ -117,7 +119,8 @@ export const useSync = create<SyncState>()(
           if (!services || !email) return false;
           try {
             await beginSession(await services.auth.verifyCode(email, code.trim()));
-          } catch {
+          } catch (e) {
+            logError('sync.verifyCode', e);
             set({ error: 'badCode' });
             return false;
           }
@@ -129,7 +132,8 @@ export const useSync = create<SyncState>()(
             const account = await services.auth.signInWithProvider(provider);
             if (!account) return false;
             await beginSession(account);
-          } catch {
+          } catch (e) {
+            logError('sync.signInWithProvider', e);
             set({ error: 'oauthFailed' });
             return false;
           }
@@ -166,7 +170,8 @@ export const useSync = create<SyncState>()(
               if (result.pulled) await useJournal.getState().refresh();
               if (draws.pulled) await useDaily.getState().load();
               return true;
-            } catch {
+            } catch (e) {
+              logError('sync.syncNow', e);
               set({ status: 'error', error: 'syncFailed' });
               return false;
             }
@@ -176,7 +181,7 @@ export const useSync = create<SyncState>()(
           return running;
         },
         signOut: async () => {
-          await services?.auth.signOut().catch(() => undefined);
+          await services?.auth.signOut().catch((e) => logError('sync.signOut', e));
           // If the user signs in again (maybe to another account) everything is uploaded afresh.
           await (await getJournalRepo()).markAllDirty();
           set({ ...SIGNED_OUT });
@@ -185,7 +190,8 @@ export const useSync = create<SyncState>()(
           if (!services) return false;
           try {
             await services.auth.deleteAccount();
-          } catch {
+          } catch (e) {
+            logError('sync.deleteAccount', e);
             set({ error: 'deleteFailed' });
             return false;
           }

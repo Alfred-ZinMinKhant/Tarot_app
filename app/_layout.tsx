@@ -2,7 +2,7 @@ import { DarkTheme, DefaultTheme, SplashScreen, Stack, ThemeProvider } from 'exp
 import { StatusBar } from 'expo-status-bar';
 import { useEffect, useMemo } from 'react';
 import { I18nextProvider } from 'react-i18next';
-import { View } from 'react-native';
+import { Pressable, Text, View } from 'react-native';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 
@@ -23,6 +23,7 @@ import { supabaseServices } from '@/sync/supabase';
 import { useJournal } from '@/store/journal';
 import { palette } from '@/theme/colors';
 import { AppThemeProvider, useAppTheme } from '@/theme/ThemeContext';
+import { logError } from '@/utils/log';
 
 void SplashScreen.preventAutoHideAsync();
 // Cloud backup services exist only in builds configured for it (see src/config/sync.ts).
@@ -66,11 +67,32 @@ export default function RootLayout() {
   );
 }
 
+/** Root error boundary (expo-router): shown instead of a blank crash. Uses plain views because the
+ * theme provider may be what failed. */
+export function ErrorBoundary({ error, retry }: { error: Error; retry: () => Promise<void> }) {
+  useEffect(() => logError('root.boundary', error), [error]);
+  return (
+    <View style={{ flex: 1, backgroundColor: palette.indigo, justifyContent: 'center', padding: 24, gap: 12 }}>
+      <Text accessibilityRole="header" style={{ color: palette.ivory, fontSize: 22, fontWeight: '600' }}>
+        {i18n.t('common.errorTitle')}
+      </Text>
+      <Text style={{ color: palette.ivoryDeep, fontSize: 16, lineHeight: 24 }}>{i18n.t('common.errorBody')}</Text>
+      <Pressable
+        accessibilityRole="button"
+        onPress={() => void retry()}
+        style={{ backgroundColor: palette.gold, borderRadius: 12, paddingVertical: 14, alignItems: 'center', marginTop: 8 }}
+      >
+        <Text style={{ color: palette.indigo, fontSize: 16, fontWeight: '600' }}>{i18n.t('common.errorRetry')}</Text>
+      </Pressable>
+    </View>
+  );
+}
+
 /** Background work: load the journal and today's card, keep reminders and cloud backup current. */
 function AppServices() {
   useEffect(() => {
-    void useJournal.getState().refresh().catch(() => undefined);
-    void useDaily.getState().load().catch(() => undefined);
+    void useJournal.getState().refresh().catch((e) => logError('journal.refresh', e));
+    void useDaily.getState().load().catch((e) => logError('daily.load', e));
     // Premium status first, so a subscriber never sees a banner flash up while consent loads.
     void usePremium
       .getState()

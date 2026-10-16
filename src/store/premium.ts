@@ -4,6 +4,7 @@ import { createJSONStorage, persist } from 'zustand/middleware';
 
 import { FREE_SHARES_PER_MONTH, isPremiumSpread, monthKey } from '@/premium/features';
 import type { PremiumPackage, PurchaseOutcome, PurchasesService } from '@/premium/service';
+import { logError } from '@/utils/log';
 
 type PremiumState = {
   /** Last known entitlement, cached so Premium stays unlocked offline and at startup. */
@@ -33,7 +34,8 @@ export function ensurePurchasesService(create: () => PurchasesService | null): v
   if (service === undefined) {
     try {
       service = create();
-    } catch {
+    } catch (e) {
+      logError('premium.create', e);
       service = null;
     }
   }
@@ -56,8 +58,9 @@ export const usePremium = create<PremiumState>()(
         service.onChange((isPremium) => set({ isPremium }));
         try {
           set({ isPremium: await service.isPremium() });
-        } catch {
+        } catch (e) {
           // Offline and no store cache yet: keep the last known value.
+          logError('premium.init', e);
         }
       },
       loadPackages: async () => {
@@ -65,15 +68,21 @@ export const usePremium = create<PremiumState>()(
         set({ loadingPackages: true, packagesError: false });
         try {
           set({ packages: await service.packages(), loadingPackages: false });
-        } catch {
+        } catch (e) {
+          logError('premium.loadPackages', e);
           set({ loadingPackages: false, packagesError: true });
         }
       },
       purchase: async (packageId) => {
         if (!service) return 'failed';
-        const { outcome, premium } = await service.purchase(packageId);
-        if (premium) set({ isPremium: true });
-        return outcome;
+        try {
+          const { outcome, premium } = await service.purchase(packageId);
+          if (premium) set({ isPremium: true });
+          return outcome;
+        } catch (e) {
+          logError('premium.purchase', e);
+          return 'failed';
+        }
       },
       restore: async () => {
         if (!service) return null;
@@ -81,12 +90,13 @@ export const usePremium = create<PremiumState>()(
           const isPremium = await service.restore();
           set({ isPremium });
           return isPremium;
-        } catch {
+        } catch (e) {
+          logError('premium.restore', e);
           return null;
         }
       },
       redeemCode: async () => {
-        await service?.redeemCode().catch(() => undefined);
+        await service?.redeemCode().catch((e) => logError('premium.redeemCode', e));
       },
       recordShare: (now = new Date()) => {
         const month = monthKey(now);
