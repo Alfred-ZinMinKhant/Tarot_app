@@ -39,7 +39,7 @@ CARD OF THE DAY
 
 READINGS
 • One-card and two different three-card spreads
-• Love spread (5 cards) and the classic Celtic Cross (10 cards) with Premium
+• Love spread (5 cards) and the classic Celtic Cross (10 cards): unlock each by watching a short ad
 • Ask your own question or choose a topic: general, love, career, money, health & spirit
 • Shuffle and pick cards from a fan, then turn them over one by one
 • A short summary of the themes in your reading
@@ -71,7 +71,7 @@ GENTLE BY DESIGN
 
 Mingalar Tarot is for entertainment and self-reflection. Tarot cannot predict the future and is not a substitute for professional advice about health, money, legal or personal matters.
 
-Premium (optional): Celtic Cross, Love spread and unlimited image sharing. The Card of the Day, one- and three-card readings, the journal, library, lessons, weekday signs and the birth chart are free.
+Free with ads. A banner ad appears in the app, and optional short video ads unlock the Celtic Cross, the Love spread, a deeper Card of the Day reading and a second daily card. The Card of the Day, one- and three-card readings, the journal, library, lessons, weekday signs and the birth chart are free.
 
 **What's new** (first release)
 Welcome to Mingalar Tarot! Card of the Day, five spreads, all 78 cards, a private journal, lessons, Burmese weekday signs and a birth chart — in English and Burmese.
@@ -107,7 +107,7 @@ Mingalar Tarot ဟာ အင်္ဂလိပ်နဲ့ မြန်မာ (M
 
 ဟောစာများ
 • ကတ်တစ်ချပ်နဲ့ ကတ်သုံးချပ် ဖြန့်ပုံ နှစ်မျိုး
-• Premium နဲ့ အချစ်ရေး ဖြန့်ပုံ (ကတ်ငါးချပ်) နဲ့ ဂန္ထဝင် Celtic Cross (ကတ်ဆယ်ချပ်)
+• အချစ်ရေး ဖြန့်ပုံ (ကတ်ငါးချပ်) နဲ့ ဂန္ထဝင် Celtic Cross (ကတ်ဆယ်ချပ်) — ကြော်ငြာတိုတစ်ခု ကြည့်ပြီး ဖွင့်နိုင်
 • ကိုယ်ပိုင်မေးခွန်း မေးနိုင်သလို ယေဘုယျ၊ အချစ်ရေး၊ အလုပ်အကိုင်၊ ငွေကြေး၊ ကျန်းမာရေးနဲ့ စိတ်ဓာတ် ခေါင်းစဉ်တွေ ရွေးနိုင်
 • ကတ်ရော၊ ယပ်တောင်ပုံ ဖြန့်ထားတဲ့ ကတ်တွေထဲက ရွေးပြီး တစ်ချပ်ချင်း လှန်ကြည့်ပါ
 • ဟောစာထဲက အဓိက အကြောင်းအရာတွေကို အကျဉ်းချုပ်ပေးပါတယ်
@@ -134,12 +134,12 @@ Mingalar Tarot ဟာ အင်္ဂလိပ်နဲ့ မြန်မာ (M
 • ဘာသာစကားကို အချိန်မရွေး ချက်ချင်း ပြောင်းနိုင်
 
 ညင်သာစွာ ဒီဇိုင်းထုတ်ထားခြင်း
-• ကြော်ငြာ မရှိ၊ ခြေရာခံခြင်း မရှိ၊ အင်တာနက်မလိုဘဲ သုံးနိုင်
+• ဂျာနယ်နဲ့ ဟောစာတွေကို အင်တာနက်မလိုဘဲ သုံးနိုင်
 • စာလုံးအရွယ်၊ အလင်း/အမှောင် အပြင်အဆင်၊ နှစ်ဘာသာလုံးနဲ့ Screen reader အညွှန်းများ
 
 Mingalar Tarot ဟာ ဖျော်ဖြေရေးနဲ့ ကိုယ့်ကိုယ်ကို ဆင်ခြင်ဖို့အတွက်သာ ဖြစ်ပါတယ်။ Tarot က အနာဂတ်ကို ကြိုဟောနိုင်တာ မဟုတ်သလို ကျန်းမာရေး၊ ငွေကြေး၊ ဥပဒေ ဒါမှမဟုတ် ကိုယ်ရေးကိစ္စတွေအတွက် ကျွမ်းကျင်သူ အကြံဉာဏ်ကို အစားထိုးတာလည်း မဟုတ်ပါ။
 
-Premium (ရွေးချယ်နိုင်) - Celtic Cross၊ အချစ်ရေး ဖြန့်ပုံနဲ့ အကန့်အသတ်မဲ့ ပုံမျှဝေခွင့်။ နေ့စဉ်ကတ်၊ ကတ်တစ်ချပ်နဲ့ သုံးချပ် ဟောစာ၊ ဂျာနယ်၊ ကတ်စာကြည့်တိုက်၊ သင်ခန်းစာနဲ့ မွေးနေ့ နိမိတ်တွေက အခမဲ့ ဖြစ်ပါတယ်။
+အခမဲ့ အသုံးပြုနိုင်ပြီး ကြော်ငြာပါဝင်ပါတယ်။ ရွေးချယ်ကြည့်ရှုနိုင်တဲ့ ကြော်ငြာတိုတွေက Celtic Cross၊ အချစ်ရေး ဖြန့်ပုံ၊ နေ့စဉ်ကတ် အသေးစိတ်ဖတ်ရှုမှုနဲ့ ဒုတိယကတ်ကို ဖွင့်ပေးပါတယ်။ နေ့စဉ်ကတ်၊ ကတ်တစ်ချပ်နဲ့ သုံးချပ် ဟောစာ၊ ဂျာနယ်၊ ကတ်စာကြည့်တိုက်၊ သင်ခန်းစာနဲ့ မွေးနေ့ နိမိတ်တွေက အခမဲ့ ဖြစ်ပါတယ်။
 
 **အသစ်ပါဝင်မှု** (ပထမ ထုတ်ဝေမှု)
 Mingalar Tarot မှ ကြိုဆိုပါတယ်။ နေ့စဉ်ကတ်၊ ကတ်ဖြန့်ပုံ ငါးမျိုး၊ ကတ် ၇၈ ချပ်လုံး၊ ကိုယ်ပိုင်ဂျာနယ်၊ သင်ခန်းစာနဲ့ မွေးနေ့ နိမိတ် — မြန်မာ၊ အင်္ဂလိပ် နှစ်ဘာသာ။
