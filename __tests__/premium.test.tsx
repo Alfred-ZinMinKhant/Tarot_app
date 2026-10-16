@@ -10,6 +10,7 @@ import { FREE_SHARES_PER_MONTH, monthKey } from '@/premium/features';
 import { useDaily } from '@/store/daily';
 import { useJournal } from '@/store/journal';
 import { setPurchasesService, usePremium } from '@/store/premium';
+import { useReadingDraft } from '@/store/readingDraft';
 import { DEFAULT_SETTINGS, useSettings } from '@/store/settings';
 import { useToast } from '@/store/toast';
 import { stripZwsp } from '@/utils/myanmar';
@@ -24,6 +25,7 @@ const normalizer = (s: string) => stripZwsp(s).trim();
 let store: FakePurchases;
 
 beforeEach(() => {
+  useReadingDraft.setState({ draft: null });
   resetJournalRepo();
   useJournal.setState({ readings: [], loaded: false, localChanges: 0 });
   useDaily.setState({ dateKey: null, draw: null, loading: false });

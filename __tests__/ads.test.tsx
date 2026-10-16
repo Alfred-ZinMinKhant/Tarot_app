@@ -10,6 +10,7 @@ import { useDaily } from '@/store/daily';
 import { setAdsService, useAds } from '@/store/ads';
 import { useJournal } from '@/store/journal';
 import { setPurchasesService, usePremium } from '@/store/premium';
+import { useReadingDraft } from '@/store/readingDraft';
 import { DEFAULT_SETTINGS, useSettings } from '@/store/settings';
 import { useToast } from '@/store/toast';
 
@@ -22,6 +23,7 @@ async function startAds() {
 }
 
 beforeEach(() => {
+  useReadingDraft.setState({ draft: null });
   resetJournalRepo();
   useJournal.setState({ readings: [], loaded: false, localChanges: 0 });
   useDaily.setState({ dateKey: null, draw: null, loading: false });

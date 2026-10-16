@@ -9,6 +9,7 @@ import { getJournalRepo, type ReadingRecord } from '@/db';
 import { cancelReminders } from '@/services/notifications';
 import { useDaily } from '@/store/daily';
 import { useJournal } from '@/store/journal';
+import { useReadingDraft } from '@/store/readingDraft';
 import { useSettings } from '@/store/settings';
 import { useSync } from '@/store/sync';
 import { localDateKey } from '@/utils/dates';
@@ -67,5 +68,6 @@ export async function deleteAllUserData(): Promise<void> {
   await useSync.getState().signOut();
   await useJournal.getState().removeAll();
   useDaily.setState({ draw: null, dateKey: null });
+  useReadingDraft.getState().clear();
   useSettings.getState().wipe();
 }

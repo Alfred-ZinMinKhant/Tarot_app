@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1792122461361" clover="3.2.0">
-  <project timestamp="1792122461361" name="All files">
-    <metrics statements="2362" coveredstatements="2084" conditionals="1739" coveredconditionals="1340" methods="873" coveredmethods="714" elements="4974" coveredelements="4138" complexity="0" loc="2362" ncloc="2362" packages="25" files="147" classes="147"/>
+<coverage generated="1792122702177" clover="3.2.0">
+  <project timestamp="1792122702178" name="All files">
+    <metrics statements="2399" coveredstatements="2120" conditionals="1774" coveredconditionals="1372" methods="886" coveredmethods="727" elements="5059" coveredelements="4219" complexity="0" loc="2399" ncloc="2399" packages="25" files="149" classes="149"/>
     <package name="app">
       <metrics statements="226" coveredstatements="209" conditionals="203" coveredconditionals="177" methods="85" coveredmethods="66"/>
       <file name="_layout.tsx" path="/Users/zinminkhant/Desktop/Side Project/Tarot/Tarot_app/app/_layout.tsx">
@@ -10,33 +10,33 @@
         <line num="30" count="10" type="stmt"/>
         <line num="32" count="10" type="stmt"/>
         <line num="34" count="10" type="stmt"/>
-        <line num="37" count="157" type="stmt"/>
-        <line num="38" count="157" type="stmt"/>
-        <line num="39" count="157" type="stmt"/>
-        <line num="42" count="157" type="stmt"/>
-        <line num="43" count="157" type="stmt"/>
-        <line num="44" count="80" type="cond" truecount="2" falsecount="0"/>
-        <line num="47" count="157" type="cond" truecount="2" falsecount="0"/>
-        <line num="48" count="157" type="stmt"/>
-        <line num="49" count="152" type="cond" truecount="2" falsecount="0"/>
-        <line num="53" count="157" type="cond" truecount="2" falsecount="0"/>
-        <line num="55" count="81" type="stmt"/>
+        <line num="37" count="163" type="stmt"/>
+        <line num="38" count="163" type="stmt"/>
+        <line num="39" count="163" type="stmt"/>
+        <line num="42" count="163" type="stmt"/>
+        <line num="43" count="163" type="stmt"/>
+        <line num="44" count="83" type="cond" truecount="2" falsecount="0"/>
+        <line num="47" count="163" type="cond" truecount="2" falsecount="0"/>
+        <line num="48" count="163" type="stmt"/>
+        <line num="49" count="158" type="cond" truecount="2" falsecount="0"/>
+        <line num="53" count="163" type="cond" truecount="2" falsecount="0"/>
+        <line num="55" count="84" type="stmt"/>
         <line num="73" count="0" type="stmt"/>
         <line num="74" count="0" type="stmt"/>
         <line num="82" count="0" type="stmt"/>
-        <line num="93" count="88" type="stmt"/>
-        <line num="94" count="76" type="stmt"/>
-        <line num="95" count="76" type="stmt"/>
-        <line num="97" count="76" type="stmt"/>
-        <line num="100" count="76" type="stmt"/>
-        <line num="102" count="88" type="stmt"/>
-        <line num="103" count="88" type="stmt"/>
-        <line num="104" count="88" type="stmt"/>
-        <line num="108" count="82" type="stmt"/>
-        <line num="109" count="82" type="stmt"/>
-        <line num="110" count="76" type="cond" truecount="1" falsecount="1"/>
-        <line num="111" count="76" type="stmt"/>
-        <line num="124" count="82" type="stmt"/>
+        <line num="93" count="91" type="stmt"/>
+        <line num="94" count="79" type="stmt"/>
+        <line num="95" count="79" type="stmt"/>
+        <line num="97" count="79" type="stmt"/>
+        <line num="100" count="79" type="stmt"/>
+        <line num="102" count="91" type="stmt"/>
+        <line num="103" count="91" type="stmt"/>
+        <line num="104" count="91" type="stmt"/>
+        <line num="108" count="85" type="stmt"/>
+        <line num="109" count="85" type="stmt"/>
+        <line num="110" count="79" type="cond" truecount="1" falsecount="1"/>
+        <line num="111" count="79" type="stmt"/>
+        <line num="124" count="85" type="stmt"/>
       </file>
       <file name="about.tsx" path="/Users/zinminkhant/Desktop/Side Project/Tarot/Tarot_app/app/about.tsx">
         <metrics statements="7" coveredstatements="5" conditionals="10" coveredconditionals="5" methods="3" coveredmethods="1"/>
@@ -307,41 +307,41 @@
       <file name="_layout.tsx" path="/Users/zinminkhant/Desktop/Side Project/Tarot/Tarot_app/app/(tabs)/_layout.tsx">
         <metrics statements="11" coveredstatements="11" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
         <line num="9" count="10" type="stmt"/>
-        <line num="18" count="53" type="stmt"/>
-        <line num="19" count="53" type="stmt"/>
-        <line num="20" count="53" type="stmt"/>
-        <line num="21" count="53" type="cond" truecount="2" falsecount="0"/>
-        <line num="22" count="53" type="stmt"/>
-        <line num="23" count="53" type="stmt"/>
-        <line num="26" count="53" type="stmt"/>
-        <line num="27" count="53" type="stmt"/>
-        <line num="50" count="265" type="stmt"/>
-        <line num="57" count="540" type="stmt"/>
+        <line num="18" count="58" type="stmt"/>
+        <line num="19" count="58" type="stmt"/>
+        <line num="20" count="58" type="stmt"/>
+        <line num="21" count="58" type="cond" truecount="2" falsecount="0"/>
+        <line num="22" count="58" type="stmt"/>
+        <line num="23" count="58" type="stmt"/>
+        <line num="26" count="58" type="stmt"/>
+        <line num="27" count="58" type="stmt"/>
+        <line num="50" count="290" type="stmt"/>
+        <line num="57" count="590" type="stmt"/>
       </file>
       <file name="home.tsx" path="/Users/zinminkhant/Desktop/Side Project/Tarot/Tarot_app/app/(tabs)/home.tsx">
         <metrics statements="23" coveredstatements="20" conditionals="22" coveredconditionals="17" methods="14" coveredmethods="11"/>
-        <line num="22" count="47" type="stmt"/>
-        <line num="23" count="47" type="stmt"/>
-        <line num="24" count="47" type="stmt"/>
-        <line num="25" count="47" type="stmt"/>
-        <line num="26" count="141" type="stmt"/>
-        <line num="27" count="167" type="stmt"/>
-        <line num="28" count="47" type="stmt"/>
-        <line num="29" count="141" type="stmt"/>
-        <line num="30" count="47" type="stmt"/>
-        <line num="31" count="47" type="stmt"/>
-        <line num="32" count="47" type="stmt"/>
+        <line num="22" count="56" type="stmt"/>
+        <line num="23" count="56" type="stmt"/>
+        <line num="24" count="56" type="stmt"/>
+        <line num="25" count="56" type="stmt"/>
+        <line num="26" count="168" type="stmt"/>
+        <line num="27" count="197" type="stmt"/>
+        <line num="28" count="56" type="stmt"/>
+        <line num="29" count="168" type="stmt"/>
+        <line num="30" count="56" type="stmt"/>
+        <line num="31" count="56" type="stmt"/>
+        <line num="32" count="56" type="stmt"/>
         <line num="47" count="0" type="stmt"/>
-        <line num="51" count="47" type="stmt"/>
-        <line num="71" count="235" type="cond" truecount="2" falsecount="0"/>
-        <line num="72" count="235" type="stmt"/>
-        <line num="76" count="13" type="cond" truecount="2" falsecount="0"/>
-        <line num="86" count="235" type="stmt"/>
+        <line num="51" count="56" type="stmt"/>
+        <line num="71" count="280" type="cond" truecount="2" falsecount="0"/>
+        <line num="72" count="280" type="stmt"/>
+        <line num="76" count="18" type="cond" truecount="2" falsecount="0"/>
+        <line num="86" count="280" type="stmt"/>
         <line num="136" count="0" type="stmt"/>
-        <line num="148" count="28" type="stmt"/>
+        <line num="148" count="55" type="stmt"/>
         <line num="150" count="0" type="stmt"/>
-        <line num="153" count="28" type="stmt"/>
-        <line num="168" count="100" type="cond" truecount="1" falsecount="1"/>
+        <line num="153" count="55" type="stmt"/>
+        <line num="168" count="208" type="cond" truecount="1" falsecount="1"/>
         <line num="187" count="6" type="stmt"/>
       </file>
       <file name="journal.tsx" path="/Users/zinminkhant/Desktop/Side Project/Tarot/Tarot_app/app/(tabs)/journal.tsx">
@@ -593,47 +593,47 @@
       </file>
     </package>
     <package name="app.reading">
-      <metrics statements="38" coveredstatements="37" conditionals="47" coveredconditionals="42" methods="19" coveredmethods="18"/>
+      <metrics statements="38" coveredstatements="37" conditionals="49" coveredconditionals="44" methods="19" coveredmethods="18"/>
       <file name="[spreadId].tsx" path="/Users/zinminkhant/Desktop/Side Project/Tarot/Tarot_app/app/reading/[spreadId].tsx">
-        <metrics statements="38" coveredstatements="37" conditionals="47" coveredconditionals="42" methods="19" coveredmethods="18"/>
-        <line num="35" count="4" type="stmt"/>
-        <line num="36" count="80" type="cond" truecount="1" falsecount="1"/>
-        <line num="39" count="80" type="stmt"/>
-        <line num="40" count="80" type="cond" truecount="1" falsecount="1"/>
-        <line num="41" count="80" type="stmt"/>
-        <line num="42" count="80" type="stmt"/>
-        <line num="43" count="80" type="stmt"/>
-        <line num="44" count="80" type="stmt"/>
-        <line num="45" count="240" type="stmt"/>
-        <line num="47" count="80" type="cond" truecount="1" falsecount="1"/>
-        <line num="48" count="80" type="cond" truecount="3" falsecount="1"/>
-        <line num="49" count="80" type="stmt"/>
-        <line num="50" count="80" type="stmt"/>
-        <line num="51" count="80" type="stmt"/>
-        <line num="53" count="80" type="cond" truecount="1" falsecount="1"/>
-        <line num="57" count="80" type="stmt"/>
-        <line num="59" count="80" type="cond" truecount="2" falsecount="0"/>
-        <line num="60" count="1" type="stmt"/>
-        <line num="68" count="79" type="cond" truecount="2" falsecount="0"/>
-        <line num="70" count="1" type="stmt"/>
-        <line num="77" count="1" type="stmt"/>
-        <line num="85" count="84" type="stmt"/>
-        <line num="86" count="78" type="cond" truecount="2" falsecount="0"/>
-        <line num="88" count="78" type="stmt"/>
-        <line num="118" count="1" type="cond" truecount="2" falsecount="0"/>
-        <line num="153" count="378" type="stmt"/>
-        <line num="164" count="58" type="stmt"/>
-        <line num="168" count="31" type="stmt"/>
-        <line num="169" count="27" type="stmt"/>
-        <line num="188" count="0" type="stmt"/>
-        <line num="189" count="26" type="stmt"/>
-        <line num="201" count="82" type="cond" truecount="2" falsecount="0"/>
-        <line num="217" count="46" type="stmt"/>
-        <line num="223" count="1" type="stmt"/>
-        <line num="228" count="1" type="stmt"/>
-        <line num="234" count="56" type="stmt"/>
-        <line num="246" count="1" type="stmt"/>
-        <line num="260" count="4" type="stmt"/>
+        <metrics statements="38" coveredstatements="37" conditionals="49" coveredconditionals="44" methods="19" coveredmethods="18"/>
+        <line num="36" count="4" type="stmt"/>
+        <line num="37" count="133" type="cond" truecount="1" falsecount="1"/>
+        <line num="40" count="133" type="stmt"/>
+        <line num="41" count="133" type="cond" truecount="1" falsecount="1"/>
+        <line num="42" count="133" type="stmt"/>
+        <line num="43" count="133" type="stmt"/>
+        <line num="44" count="133" type="stmt"/>
+        <line num="45" count="133" type="stmt"/>
+        <line num="46" count="398" type="stmt"/>
+        <line num="48" count="133" type="cond" truecount="1" falsecount="1"/>
+        <line num="49" count="133" type="cond" truecount="3" falsecount="1"/>
+        <line num="50" count="133" type="stmt"/>
+        <line num="51" count="133" type="stmt"/>
+        <line num="52" count="133" type="stmt"/>
+        <line num="54" count="133" type="cond" truecount="1" falsecount="1"/>
+        <line num="59" count="133" type="stmt"/>
+        <line num="61" count="133" type="cond" truecount="2" falsecount="0"/>
+        <line num="62" count="1" type="stmt"/>
+        <line num="70" count="132" type="cond" truecount="2" falsecount="0"/>
+        <line num="72" count="1" type="stmt"/>
+        <line num="79" count="1" type="stmt"/>
+        <line num="87" count="174" type="stmt"/>
+        <line num="88" count="131" type="cond" truecount="2" falsecount="0"/>
+        <line num="90" count="131" type="stmt"/>
+        <line num="122" count="1" type="cond" truecount="2" falsecount="0"/>
+        <line num="157" count="840" type="stmt"/>
+        <line num="168" count="120" type="stmt"/>
+        <line num="172" count="52" type="stmt"/>
+        <line num="173" count="68" type="stmt"/>
+        <line num="192" count="0" type="stmt"/>
+        <line num="193" count="54" type="stmt"/>
+        <line num="205" count="139" type="cond" truecount="2" falsecount="0"/>
+        <line num="221" count="68" type="stmt"/>
+        <line num="227" count="1" type="stmt"/>
+        <line num="232" count="1" type="stmt"/>
+        <line num="238" count="85" type="stmt"/>
+        <line num="250" count="1" type="stmt"/>
+        <line num="264" count="4" type="stmt"/>
       </file>
     </package>
     <package name="src.ads">
@@ -743,7 +743,7 @@
         <line num="47" count="5" type="cond" truecount="5" falsecount="0"/>
         <line num="48" count="3" type="stmt"/>
         <line num="55" count="12" type="stmt"/>
-        <line num="56" count="87" type="stmt"/>
+        <line num="56" count="91" type="stmt"/>
       </file>
       <file name="chart.ts" path="/Users/zinminkhant/Desktop/Side Project/Tarot/Tarot_app/src/astro/chart.ts">
         <metrics statements="20" coveredstatements="20" conditionals="16" coveredconditionals="16" methods="4" coveredmethods="4"/>
@@ -852,12 +852,12 @@
       </file>
     </package>
     <package name="src.components">
-      <metrics statements="354" coveredstatements="338" conditionals="316" coveredconditionals="273" methods="125" coveredmethods="112"/>
+      <metrics statements="354" coveredstatements="338" conditionals="316" coveredconditionals="272" methods="125" coveredmethods="112"/>
       <file name="AdBanner.tsx" path="/Users/zinminkhant/Desktop/Side Project/Tarot/Tarot_app/src/components/AdBanner.tsx">
         <metrics statements="5" coveredstatements="5" conditionals="6" coveredconditionals="5" methods="1" coveredmethods="1"/>
-        <line num="10" count="64" type="stmt"/>
-        <line num="11" count="64" type="cond" truecount="1" falsecount="1"/>
-        <line num="12" count="64" type="cond" truecount="4" falsecount="0"/>
+        <line num="10" count="73" type="stmt"/>
+        <line num="11" count="73" type="cond" truecount="1" falsecount="1"/>
+        <line num="12" count="73" type="cond" truecount="4" falsecount="0"/>
         <line num="13" count="10" type="stmt"/>
         <line num="20" count="10" type="stmt"/>
       </file>
@@ -876,50 +876,50 @@
       </file>
       <file name="AppText.tsx" path="/Users/zinminkhant/Desktop/Side Project/Tarot/Tarot_app/src/components/AppText.tsx">
         <metrics statements="15" coveredstatements="14" conditionals="34" coveredconditionals="29" methods="6" coveredmethods="6"/>
-        <line num="20" count="3942" type="stmt"/>
-        <line num="21" count="3942" type="stmt"/>
-        <line num="22" count="4434" type="cond" truecount="2" falsecount="2"/>
+        <line num="20" count="4302" type="stmt"/>
+        <line num="21" count="4302" type="stmt"/>
+        <line num="22" count="4962" type="cond" truecount="2" falsecount="2"/>
         <line num="23" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="25" count="3942" type="stmt"/>
-        <line num="45" count="7843" type="stmt"/>
-        <line num="46" count="7843" type="stmt"/>
-        <line num="47" count="7843" type="cond" truecount="4" falsecount="0"/>
-        <line num="48" count="7843" type="cond" truecount="4" falsecount="0"/>
-        <line num="49" count="7843" type="stmt"/>
-        <line num="50" count="7843" type="stmt"/>
-        <line num="52" count="4041" type="cond" truecount="4" falsecount="0"/>
+        <line num="25" count="4302" type="stmt"/>
+        <line num="45" count="8797" type="stmt"/>
+        <line num="46" count="8797" type="stmt"/>
+        <line num="47" count="8797" type="cond" truecount="4" falsecount="0"/>
+        <line num="48" count="8797" type="cond" truecount="4" falsecount="0"/>
+        <line num="49" count="8797" type="stmt"/>
+        <line num="50" count="8797" type="stmt"/>
+        <line num="52" count="4401" type="cond" truecount="4" falsecount="0"/>
         <line num="54" count="383" type="cond" truecount="1" falsecount="1"/>
-        <line num="58" count="7843" type="stmt"/>
+        <line num="58" count="8797" type="stmt"/>
         <line num="81" count="10" type="stmt"/>
       </file>
       <file name="BackButton.tsx" path="/Users/zinminkhant/Desktop/Side Project/Tarot/Tarot_app/src/components/BackButton.tsx">
         <metrics statements="5" coveredstatements="4" conditionals="3" coveredconditionals="1" methods="2" coveredmethods="1"/>
-        <line num="15" count="192" type="stmt"/>
-        <line num="16" count="192" type="stmt"/>
-        <line num="17" count="192" type="stmt"/>
+        <line num="15" count="244" type="stmt"/>
+        <line num="16" count="244" type="stmt"/>
+        <line num="17" count="244" type="stmt"/>
         <line num="19" count="0" type="cond" truecount="0" falsecount="2"/>
         <line num="32" count="10" type="stmt"/>
       </file>
       <file name="BottomSheet.tsx" path="/Users/zinminkhant/Desktop/Side Project/Tarot/Tarot_app/src/components/BottomSheet.tsx">
         <metrics statements="4" coveredstatements="4" conditionals="4" coveredconditionals="2" methods="1" coveredmethods="1"/>
-        <line num="22" count="126" type="stmt"/>
-        <line num="23" count="126" type="stmt"/>
-        <line num="24" count="126" type="stmt"/>
+        <line num="22" count="137" type="stmt"/>
+        <line num="23" count="137" type="stmt"/>
+        <line num="24" count="137" type="stmt"/>
         <line num="56" count="10" type="stmt"/>
       </file>
       <file name="Button.tsx" path="/Users/zinminkhant/Desktop/Side Project/Tarot/Tarot_app/src/components/Button.tsx">
         <metrics statements="6" coveredstatements="6" conditionals="19" coveredconditionals="18" methods="2" coveredmethods="2"/>
-        <line num="24" count="919" type="stmt"/>
-        <line num="25" count="919" type="cond" truecount="4" falsecount="0"/>
-        <line num="26" count="919" type="cond" truecount="2" falsecount="0"/>
-        <line num="27" count="919" type="stmt"/>
-        <line num="36" count="919" type="stmt"/>
+        <line num="24" count="1003" type="stmt"/>
+        <line num="25" count="1003" type="cond" truecount="4" falsecount="0"/>
+        <line num="26" count="1003" type="cond" truecount="2" falsecount="0"/>
+        <line num="27" count="1003" type="stmt"/>
+        <line num="36" count="1003" type="stmt"/>
         <line num="56" count="10" type="stmt"/>
       </file>
       <file name="Card.tsx" path="/Users/zinminkhant/Desktop/Side Project/Tarot/Tarot_app/src/components/Card.tsx">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="10" count="736" type="stmt"/>
-        <line num="11" count="736" type="stmt"/>
+        <line num="10" count="805" type="stmt"/>
+        <line num="11" count="805" type="stmt"/>
         <line num="18" count="10" type="stmt"/>
       </file>
       <file name="ChartWheel.tsx" path="/Users/zinminkhant/Desktop/Side Project/Tarot/Tarot_app/src/components/ChartWheel.tsx">
@@ -961,19 +961,19 @@
       </file>
       <file name="Chip.tsx" path="/Users/zinminkhant/Desktop/Side Project/Tarot/Tarot_app/src/components/Chip.tsx">
         <metrics statements="4" coveredstatements="4" conditionals="13" coveredconditionals="12" methods="2" coveredmethods="2"/>
-        <line num="17" count="1028" type="stmt"/>
-        <line num="18" count="1028" type="stmt"/>
-        <line num="26" count="1028" type="stmt"/>
+        <line num="17" count="1083" type="stmt"/>
+        <line num="18" count="1083" type="stmt"/>
+        <line num="26" count="1083" type="stmt"/>
         <line num="42" count="10" type="stmt"/>
       </file>
       <file name="ChipGroup.tsx" path="/Users/zinminkhant/Desktop/Side Project/Tarot/Tarot_app/src/components/ChipGroup.tsx">
         <metrics statements="7" coveredstatements="7" conditionals="5" coveredconditionals="4" methods="3" coveredmethods="3"/>
-        <line num="28" count="170" type="stmt"/>
-        <line num="29" count="633" type="stmt"/>
+        <line num="28" count="176" type="stmt"/>
+        <line num="29" count="669" type="stmt"/>
         <line num="34" count="5" type="stmt"/>
-        <line num="38" count="170" type="cond" truecount="2" falsecount="0"/>
+        <line num="38" count="176" type="cond" truecount="2" falsecount="0"/>
         <line num="39" count="37" type="stmt"/>
-        <line num="52" count="133" type="stmt"/>
+        <line num="52" count="139" type="stmt"/>
         <line num="59" count="10" type="stmt"/>
       </file>
       <file name="CloudSyncCard.tsx" path="/Users/zinminkhant/Desktop/Side Project/Tarot/Tarot_app/src/components/CloudSyncCard.tsx">
@@ -1022,21 +1022,21 @@
       <file name="DailyCardPanel.tsx" path="/Users/zinminkhant/Desktop/Side Project/Tarot/Tarot_app/src/components/DailyCardPanel.tsx">
         <metrics statements="19" coveredstatements="17" conditionals="18" coveredconditionals="17" methods="9" coveredmethods="7"/>
         <line num="19" count="10" type="stmt"/>
-        <line num="23" count="51" type="stmt"/>
-        <line num="24" count="51" type="stmt"/>
-        <line num="25" count="51" type="stmt"/>
-        <line num="26" count="194" type="stmt"/>
-        <line num="27" count="194" type="stmt"/>
-        <line num="28" count="51" type="stmt"/>
-        <line num="29" count="51" type="cond" truecount="2" falsecount="0"/>
-        <line num="32" count="51" type="stmt"/>
-        <line num="33" count="28" type="cond" truecount="4" falsecount="0"/>
+        <line num="23" count="60" type="stmt"/>
+        <line num="24" count="60" type="stmt"/>
+        <line num="25" count="60" type="stmt"/>
+        <line num="26" count="226" type="stmt"/>
+        <line num="27" count="226" type="stmt"/>
+        <line num="28" count="60" type="stmt"/>
+        <line num="29" count="60" type="cond" truecount="2" falsecount="0"/>
+        <line num="32" count="60" type="stmt"/>
+        <line num="33" count="33" type="cond" truecount="4" falsecount="0"/>
         <line num="34" count="3" type="stmt"/>
         <line num="35" count="3" type="stmt"/>
-        <line num="38" count="51" type="stmt"/>
+        <line num="38" count="60" type="stmt"/>
         <line num="39" count="1" type="stmt"/>
         <line num="40" count="1" type="stmt"/>
-        <line num="43" count="51" type="stmt"/>
+        <line num="43" count="60" type="stmt"/>
         <line num="55" count="0" type="stmt"/>
         <line num="87" count="0" type="stmt"/>
         <line num="95" count="10" type="stmt"/>
@@ -1051,35 +1051,35 @@
         <metrics statements="21" coveredstatements="21" conditionals="15" coveredconditionals="10" methods="6" coveredmethods="6"/>
         <line num="20" count="10" type="stmt"/>
         <line num="22" count="10" type="stmt"/>
-        <line num="45" count="378" type="stmt"/>
-        <line num="46" count="378" type="cond" truecount="2" falsecount="0"/>
-        <line num="47" count="378" type="stmt"/>
-        <line num="48" count="378" type="cond" truecount="3" falsecount="3"/>
-        <line num="52" count="378" type="cond" truecount="1" falsecount="1"/>
-        <line num="53" count="378" type="stmt"/>
-        <line num="54" count="378" type="stmt"/>
-        <line num="55" count="378" type="stmt"/>
-        <line num="56" count="378" type="stmt"/>
-        <line num="58" count="378" type="stmt"/>
-        <line num="63" count="378" type="stmt"/>
-        <line num="66" count="7" type="stmt"/>
-        <line num="82" count="18" type="stmt"/>
-        <line num="83" count="18" type="stmt"/>
-        <line num="84" count="18" type="stmt"/>
-        <line num="85" count="18" type="stmt"/>
-        <line num="86" count="18" type="stmt"/>
-        <line num="89" count="378" type="stmt"/>
+        <line num="45" count="840" type="stmt"/>
+        <line num="46" count="840" type="cond" truecount="2" falsecount="0"/>
+        <line num="47" count="840" type="stmt"/>
+        <line num="48" count="840" type="cond" truecount="3" falsecount="3"/>
+        <line num="52" count="840" type="cond" truecount="1" falsecount="1"/>
+        <line num="53" count="840" type="stmt"/>
+        <line num="54" count="840" type="stmt"/>
+        <line num="55" count="840" type="stmt"/>
+        <line num="56" count="840" type="stmt"/>
+        <line num="58" count="840" type="stmt"/>
+        <line num="63" count="840" type="stmt"/>
+        <line num="66" count="11" type="stmt"/>
+        <line num="82" count="40" type="stmt"/>
+        <line num="83" count="40" type="stmt"/>
+        <line num="84" count="40" type="stmt"/>
+        <line num="85" count="40" type="stmt"/>
+        <line num="86" count="40" type="stmt"/>
+        <line num="89" count="840" type="stmt"/>
         <line num="106" count="10" type="stmt"/>
       </file>
       <file name="Header.tsx" path="/Users/zinminkhant/Desktop/Side Project/Tarot/Tarot_app/src/components/Header.tsx">
         <metrics statements="2" coveredstatements="2" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
-        <line num="11" count="300" type="stmt"/>
+        <line num="11" count="361" type="stmt"/>
         <line num="24" count="10" type="stmt"/>
       </file>
       <file name="Icon.tsx" path="/Users/zinminkhant/Desktop/Side Project/Tarot/Tarot_app/src/components/Icon.tsx">
         <metrics statements="2" coveredstatements="2" conditionals="27" coveredconditionals="25" methods="1" coveredmethods="1"/>
-        <line num="23" count="1325" type="stmt"/>
-        <line num="24" count="1325" type="stmt"/>
+        <line num="23" count="1472" type="stmt"/>
+        <line num="24" count="1472" type="stmt"/>
       </file>
       <file name="LanguageSwitch.tsx" path="/Users/zinminkhant/Desktop/Side Project/Tarot/Tarot_app/src/components/LanguageSwitch.tsx">
         <metrics statements="7" coveredstatements="7" conditionals="1" coveredconditionals="0" methods="4" coveredmethods="4"/>
@@ -1117,8 +1117,8 @@
       </file>
       <file name="Screen.tsx" path="/Users/zinminkhant/Desktop/Side Project/Tarot/Tarot_app/src/components/Screen.tsx">
         <metrics statements="3" coveredstatements="3" conditionals="8" coveredconditionals="8" methods="1" coveredmethods="1"/>
-        <line num="21" count="326" type="stmt"/>
-        <line num="22" count="326" type="stmt"/>
+        <line num="21" count="387" type="stmt"/>
+        <line num="22" count="387" type="stmt"/>
         <line num="43" count="10" type="stmt"/>
       </file>
       <file name="SearchField.tsx" path="/Users/zinminkhant/Desktop/Side Project/Tarot/Tarot_app/src/components/SearchField.tsx">
@@ -1138,7 +1138,7 @@
         <line num="51" count="10" type="stmt"/>
       </file>
       <file name="ShareCard.tsx" path="/Users/zinminkhant/Desktop/Side Project/Tarot/Tarot_app/src/components/ShareCard.tsx">
-        <metrics statements="9" coveredstatements="9" conditionals="9" coveredconditionals="6" methods="3" coveredmethods="3"/>
+        <metrics statements="9" coveredstatements="9" conditionals="9" coveredconditionals="5" methods="3" coveredmethods="3"/>
         <line num="26" count="10" type="stmt"/>
         <line num="29" count="10" type="stmt"/>
         <line num="33" count="10" type="cond" truecount="1" falsecount="1"/>
@@ -1151,17 +1151,17 @@
       </file>
       <file name="ShareSheet.tsx" path="/Users/zinminkhant/Desktop/Side Project/Tarot/Tarot_app/src/components/ShareSheet.tsx">
         <metrics statements="24" coveredstatements="24" conditionals="14" coveredconditionals="12" methods="4" coveredmethods="4"/>
-        <line num="30" count="45" type="stmt"/>
-        <line num="31" count="45" type="stmt"/>
-        <line num="32" count="147" type="stmt"/>
-        <line num="33" count="45" type="stmt"/>
-        <line num="34" count="45" type="stmt"/>
-        <line num="35" count="140" type="stmt"/>
-        <line num="36" count="45" type="stmt"/>
-        <line num="37" count="45" type="stmt"/>
-        <line num="38" count="45" type="stmt"/>
-        <line num="39" count="45" type="stmt"/>
-        <line num="41" count="45" type="stmt"/>
+        <line num="30" count="56" type="stmt"/>
+        <line num="31" count="56" type="stmt"/>
+        <line num="32" count="181" type="stmt"/>
+        <line num="33" count="56" type="stmt"/>
+        <line num="34" count="56" type="stmt"/>
+        <line num="35" count="173" type="stmt"/>
+        <line num="36" count="56" type="stmt"/>
+        <line num="37" count="56" type="stmt"/>
+        <line num="38" count="56" type="stmt"/>
+        <line num="39" count="56" type="stmt"/>
+        <line num="41" count="56" type="stmt"/>
         <line num="42" count="5" type="cond" truecount="2" falsecount="0"/>
         <line num="43" count="1" type="stmt"/>
         <line num="44" count="1" type="stmt"/>
@@ -1173,23 +1173,23 @@
         <line num="51" count="4" type="cond" truecount="1" falsecount="1"/>
         <line num="53" count="4" type="cond" truecount="2" falsecount="0"/>
         <line num="54" count="4" type="stmt"/>
-        <line num="58" count="45" type="stmt"/>
+        <line num="58" count="56" type="stmt"/>
         <line num="90" count="10" type="stmt"/>
       </file>
       <file name="ShuffleStack.tsx" path="/Users/zinminkhant/Desktop/Side Project/Tarot/Tarot_app/src/components/ShuffleStack.tsx">
         <metrics statements="13" coveredstatements="13" conditionals="4" coveredconditionals="3" methods="5" coveredmethods="5"/>
         <line num="17" count="10" type="stmt"/>
-        <line num="20" count="50" type="stmt"/>
-        <line num="21" count="50" type="stmt"/>
-        <line num="22" count="50" type="stmt"/>
-        <line num="23" count="50" type="cond" truecount="1" falsecount="1"/>
-        <line num="24" count="50" type="cond" truecount="2" falsecount="0"/>
-        <line num="25" count="50" type="stmt"/>
-        <line num="34" count="50" type="stmt"/>
-        <line num="41" count="50" type="stmt"/>
-        <line num="50" count="10" type="stmt"/>
-        <line num="51" count="10" type="stmt"/>
-        <line num="61" count="50" type="stmt"/>
+        <line num="20" count="65" type="stmt"/>
+        <line num="21" count="65" type="stmt"/>
+        <line num="22" count="65" type="stmt"/>
+        <line num="23" count="65" type="cond" truecount="1" falsecount="1"/>
+        <line num="24" count="65" type="cond" truecount="2" falsecount="0"/>
+        <line num="25" count="65" type="stmt"/>
+        <line num="34" count="65" type="stmt"/>
+        <line num="41" count="65" type="stmt"/>
+        <line num="50" count="13" type="stmt"/>
+        <line num="51" count="13" type="stmt"/>
+        <line num="61" count="65" type="stmt"/>
         <line num="68" count="10" type="stmt"/>
       </file>
       <file name="SignCompass.tsx" path="/Users/zinminkhant/Desktop/Side Project/Tarot/Tarot_app/src/components/SignCompass.tsx">
@@ -1207,11 +1207,11 @@
       </file>
       <file name="SignPanel.tsx" path="/Users/zinminkhant/Desktop/Side Project/Tarot/Tarot_app/src/components/SignPanel.tsx">
         <metrics statements="10" coveredstatements="8" conditionals="2" coveredconditionals="2" methods="4" coveredmethods="2"/>
-        <line num="18" count="47" type="stmt"/>
-        <line num="19" count="47" type="stmt"/>
-        <line num="20" count="141" type="stmt"/>
-        <line num="22" count="47" type="cond" truecount="2" falsecount="0"/>
-        <line num="23" count="46" type="stmt"/>
+        <line num="18" count="56" type="stmt"/>
+        <line num="19" count="56" type="stmt"/>
+        <line num="20" count="168" type="stmt"/>
+        <line num="22" count="56" type="cond" truecount="2" falsecount="0"/>
+        <line num="23" count="55" type="stmt"/>
         <line num="29" count="0" type="stmt"/>
         <line num="34" count="1" type="stmt"/>
         <line num="35" count="1" type="stmt"/>
@@ -1248,36 +1248,36 @@
         <metrics statements="20" coveredstatements="20" conditionals="22" coveredconditionals="22" methods="3" coveredmethods="3"/>
         <line num="28" count="10" type="stmt"/>
         <line num="29" count="10" type="stmt"/>
-        <line num="33" count="46" type="stmt"/>
-        <line num="34" count="46" type="stmt"/>
-        <line num="35" count="46" type="stmt"/>
-        <line num="36" count="46" type="cond" truecount="2" falsecount="0"/>
-        <line num="37" count="46" type="stmt"/>
-        <line num="38" count="46" type="stmt"/>
-        <line num="39" count="46" type="stmt"/>
-        <line num="40" count="46" type="stmt"/>
-        <line num="41" count="46" type="stmt"/>
-        <line num="42" count="46" type="stmt"/>
-        <line num="44" count="46" type="stmt"/>
-        <line num="47" count="140" type="stmt"/>
-        <line num="48" count="140" type="cond" truecount="2" falsecount="0"/>
-        <line num="49" count="140" type="stmt"/>
-        <line num="50" count="140" type="stmt"/>
-        <line num="51" count="140" type="stmt"/>
-        <line num="66" count="3" type="cond" truecount="4" falsecount="0"/>
+        <line num="33" count="89" type="stmt"/>
+        <line num="34" count="89" type="stmt"/>
+        <line num="35" count="89" type="stmt"/>
+        <line num="36" count="89" type="cond" truecount="2" falsecount="0"/>
+        <line num="37" count="89" type="stmt"/>
+        <line num="38" count="89" type="stmt"/>
+        <line num="39" count="89" type="stmt"/>
+        <line num="40" count="89" type="stmt"/>
+        <line num="41" count="89" type="stmt"/>
+        <line num="42" count="89" type="stmt"/>
+        <line num="44" count="89" type="stmt"/>
+        <line num="47" count="259" type="stmt"/>
+        <line num="48" count="259" type="cond" truecount="2" falsecount="0"/>
+        <line num="49" count="259" type="stmt"/>
+        <line num="50" count="259" type="stmt"/>
+        <line num="51" count="259" type="stmt"/>
+        <line num="66" count="4" type="cond" truecount="4" falsecount="0"/>
         <line num="96" count="10" type="stmt"/>
       </file>
       <file name="TarotCard.tsx" path="/Users/zinminkhant/Desktop/Side Project/Tarot/Tarot_app/src/components/TarotCard.tsx">
         <metrics statements="10" coveredstatements="10" conditionals="17" coveredconditionals="14" methods="4" coveredmethods="4"/>
         <line num="28" count="10" type="stmt"/>
-        <line num="32" count="139" type="stmt"/>
-        <line num="33" count="139" type="cond" truecount="2" falsecount="0"/>
-        <line num="34" count="139" type="stmt"/>
-        <line num="36" count="139" type="stmt"/>
-        <line num="37" count="134" type="cond" truecount="3" falsecount="3"/>
-        <line num="40" count="139" type="stmt"/>
-        <line num="44" count="139" type="stmt"/>
-        <line num="49" count="139" type="stmt"/>
+        <line num="32" count="237" type="stmt"/>
+        <line num="33" count="237" type="cond" truecount="2" falsecount="0"/>
+        <line num="34" count="237" type="stmt"/>
+        <line num="36" count="237" type="stmt"/>
+        <line num="37" count="232" type="cond" truecount="3" falsecount="3"/>
+        <line num="40" count="237" type="stmt"/>
+        <line num="44" count="237" type="stmt"/>
+        <line num="49" count="237" type="stmt"/>
         <line num="69" count="10" type="stmt"/>
       </file>
       <file name="TextField.tsx" path="/Users/zinminkhant/Desktop/Side Project/Tarot/Tarot_app/src/components/TextField.tsx">
@@ -1292,16 +1292,16 @@
       <file name="Toast.tsx" path="/Users/zinminkhant/Desktop/Side Project/Tarot/Tarot_app/src/components/Toast.tsx">
         <metrics statements="14" coveredstatements="12" conditionals="8" coveredconditionals="8" methods="6" coveredmethods="5"/>
         <line num="12" count="10" type="stmt"/>
-        <line num="16" count="347" type="stmt"/>
-        <line num="17" count="347" type="stmt"/>
-        <line num="18" count="107" type="stmt"/>
-        <line num="19" count="107" type="stmt"/>
-        <line num="21" count="107" type="stmt"/>
-        <line num="22" count="102" type="cond" truecount="2" falsecount="0"/>
-        <line num="23" count="35" type="stmt"/>
-        <line num="24" count="35" type="stmt"/>
-        <line num="27" count="107" type="cond" truecount="2" falsecount="0"/>
-        <line num="28" count="35" type="stmt"/>
+        <line num="16" count="360" type="stmt"/>
+        <line num="17" count="360" type="stmt"/>
+        <line num="18" count="111" type="stmt"/>
+        <line num="19" count="111" type="stmt"/>
+        <line num="21" count="111" type="stmt"/>
+        <line num="22" count="106" type="cond" truecount="2" falsecount="0"/>
+        <line num="23" count="39" type="stmt"/>
+        <line num="24" count="39" type="stmt"/>
+        <line num="27" count="111" type="cond" truecount="2" falsecount="0"/>
+        <line num="28" count="39" type="stmt"/>
         <line num="43" count="0" type="stmt"/>
         <line num="44" count="0" type="stmt"/>
         <line num="62" count="10" type="stmt"/>
@@ -1314,67 +1314,67 @@
       <metrics statements="97" coveredstatements="91" conditionals="75" coveredconditionals="46" methods="22" coveredmethods="19"/>
       <file name="CardBack.tsx" path="/Users/zinminkhant/Desktop/Side Project/Tarot/Tarot_app/src/components/art/CardBack.tsx">
         <metrics statements="3" coveredstatements="3" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
-        <line num="10" count="607" type="stmt"/>
-        <line num="11" count="607" type="stmt"/>
+        <line num="10" count="1191" type="stmt"/>
+        <line num="11" count="1191" type="stmt"/>
         <line num="24" count="10" type="stmt"/>
       </file>
       <file name="CardFace.tsx" path="/Users/zinminkhant/Desktop/Side Project/Tarot/Tarot_app/src/components/art/CardFace.tsx">
         <metrics statements="10" coveredstatements="10" conditionals="33" coveredconditionals="19" methods="1" coveredmethods="1"/>
-        <line num="31" count="478" type="stmt"/>
-        <line num="32" count="478" type="stmt"/>
-        <line num="33" count="478" type="stmt"/>
-        <line num="34" count="478" type="stmt"/>
-        <line num="35" count="478" type="cond" truecount="4" falsecount="0"/>
-        <line num="36" count="478" type="cond" truecount="3" falsecount="1"/>
-        <line num="38" count="478" type="cond" truecount="6" falsecount="0"/>
-        <line num="39" count="478" type="stmt"/>
-        <line num="41" count="478" type="stmt"/>
+        <line num="31" count="507" type="stmt"/>
+        <line num="32" count="507" type="stmt"/>
+        <line num="33" count="507" type="stmt"/>
+        <line num="34" count="507" type="stmt"/>
+        <line num="35" count="507" type="cond" truecount="4" falsecount="0"/>
+        <line num="36" count="507" type="cond" truecount="3" falsecount="1"/>
+        <line num="38" count="507" type="cond" truecount="6" falsecount="0"/>
+        <line num="39" count="507" type="stmt"/>
+        <line num="41" count="507" type="stmt"/>
         <line num="89" count="10" type="stmt"/>
       </file>
       <file name="PositionGlyph.tsx" path="/Users/zinminkhant/Desktop/Side Project/Tarot/Tarot_app/src/components/art/PositionGlyph.tsx">
         <metrics statements="22" coveredstatements="20" conditionals="16" coveredconditionals="14" methods="4" coveredmethods="3"/>
         <line num="8" count="10" type="stmt"/>
         <line num="32" count="0" type="stmt"/>
-        <line num="39" count="682" type="stmt"/>
-        <line num="40" count="682" type="stmt"/>
-        <line num="41" count="682" type="cond" truecount="13" falsecount="1"/>
-        <line num="43" count="55" type="stmt"/>
-        <line num="45" count="56" type="stmt"/>
-        <line num="49" count="448" type="stmt"/>
-        <line num="50" count="448" type="stmt"/>
-        <line num="55" count="136" type="stmt"/>
-        <line num="57" count="51" type="stmt"/>
-        <line num="64" count="105" type="stmt"/>
-        <line num="66" count="51" type="stmt"/>
-        <line num="75" count="102" type="stmt"/>
-        <line num="82" count="54" type="stmt"/>
-        <line num="84" count="48" type="stmt"/>
-        <line num="91" count="6" type="stmt"/>
-        <line num="93" count="6" type="stmt"/>
-        <line num="101" count="6" type="stmt"/>
-        <line num="108" count="6" type="stmt"/>
+        <line num="39" count="856" type="stmt"/>
+        <line num="40" count="856" type="stmt"/>
+        <line num="41" count="856" type="cond" truecount="13" falsecount="1"/>
+        <line num="43" count="73" type="stmt"/>
+        <line num="45" count="79" type="stmt"/>
+        <line num="49" count="632" type="stmt"/>
+        <line num="50" count="632" type="stmt"/>
+        <line num="55" count="183" type="stmt"/>
+        <line num="57" count="60" type="stmt"/>
+        <line num="64" count="125" type="stmt"/>
+        <line num="66" count="60" type="stmt"/>
+        <line num="75" count="122" type="stmt"/>
+        <line num="82" count="65" type="stmt"/>
+        <line num="84" count="57" type="stmt"/>
+        <line num="91" count="8" type="stmt"/>
+        <line num="93" count="8" type="stmt"/>
+        <line num="101" count="8" type="stmt"/>
+        <line num="108" count="8" type="stmt"/>
         <line num="115" count="0" type="stmt"/>
-        <line num="122" count="87" type="stmt"/>
+        <line num="122" count="137" type="stmt"/>
       </file>
       <file name="SpreadGlyph.tsx" path="/Users/zinminkhant/Desktop/Side Project/Tarot/Tarot_app/src/components/art/SpreadGlyph.tsx">
         <metrics statements="17" coveredstatements="17" conditionals="5" coveredconditionals="4" methods="2" coveredmethods="2"/>
         <line num="10" count="6" type="stmt"/>
         <line num="11" count="6" type="stmt"/>
-        <line num="15" count="256" type="stmt"/>
-        <line num="17" count="256" type="stmt"/>
-        <line num="18" count="256" type="stmt"/>
-        <line num="19" count="256" type="stmt"/>
-        <line num="20" count="256" type="stmt"/>
-        <line num="21" count="256" type="stmt"/>
-        <line num="22" count="256" type="stmt"/>
-        <line num="23" count="256" type="stmt"/>
-        <line num="24" count="256" type="stmt"/>
-        <line num="25" count="256" type="stmt"/>
-        <line num="26" count="256" type="stmt"/>
-        <line num="28" count="256" type="stmt"/>
-        <line num="31" count="1105" type="stmt"/>
-        <line num="32" count="1105" type="stmt"/>
-        <line num="33" count="1105" type="stmt"/>
+        <line num="15" count="307" type="stmt"/>
+        <line num="17" count="307" type="stmt"/>
+        <line num="18" count="307" type="stmt"/>
+        <line num="19" count="307" type="stmt"/>
+        <line num="20" count="307" type="stmt"/>
+        <line num="21" count="307" type="stmt"/>
+        <line num="22" count="307" type="stmt"/>
+        <line num="23" count="307" type="stmt"/>
+        <line num="24" count="307" type="stmt"/>
+        <line num="25" count="307" type="stmt"/>
+        <line num="26" count="307" type="stmt"/>
+        <line num="28" count="307" type="stmt"/>
+        <line num="31" count="1319" type="stmt"/>
+        <line num="32" count="1319" type="stmt"/>
+        <line num="33" count="1319" type="stmt"/>
       </file>
       <file name="SuitGlyph.tsx" path="/Users/zinminkhant/Desktop/Side Project/Tarot/Tarot_app/src/components/art/SuitGlyph.tsx">
         <metrics statements="4" coveredstatements="0" conditionals="11" coveredconditionals="0" methods="2" coveredmethods="0"/>
@@ -1432,7 +1432,7 @@
       </file>
     </package>
     <package name="src.components.reading">
-      <metrics statements="21" coveredstatements="19" conditionals="10" coveredconditionals="4" methods="6" coveredmethods="4"/>
+      <metrics statements="23" coveredstatements="21" conditionals="10" coveredconditionals="4" methods="7" coveredmethods="5"/>
       <file name="CrisisCard.tsx" path="/Users/zinminkhant/Desktop/Side Project/Tarot/Tarot_app/src/components/reading/CrisisCard.tsx">
         <metrics statements="7" coveredstatements="5" conditionals="6" coveredconditionals="1" methods="3" coveredmethods="1"/>
         <line num="13" count="1" type="stmt"/>
@@ -1445,22 +1445,27 @@
       </file>
       <file name="PositionCard.tsx" path="/Users/zinminkhant/Desktop/Side Project/Tarot/Tarot_app/src/components/reading/PositionCard.tsx">
         <metrics statements="7" coveredstatements="7" conditionals="4" coveredconditionals="3" methods="1" coveredmethods="1"/>
-        <line num="20" count="56" type="stmt"/>
-        <line num="21" count="56" type="stmt"/>
-        <line num="22" count="56" type="stmt"/>
-        <line num="23" count="56" type="stmt"/>
-        <line num="24" count="56" type="stmt"/>
-        <line num="25" count="56" type="stmt"/>
+        <line num="20" count="85" type="stmt"/>
+        <line num="21" count="85" type="stmt"/>
+        <line num="22" count="85" type="stmt"/>
+        <line num="23" count="85" type="stmt"/>
+        <line num="24" count="85" type="stmt"/>
+        <line num="25" count="85" type="stmt"/>
         <line num="46" count="4" type="stmt"/>
+      </file>
+      <file name="ResumeCard.tsx" path="/Users/zinminkhant/Desktop/Side Project/Tarot/Tarot_app/src/components/reading/ResumeCard.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="14" count="2" type="stmt"/>
+        <line num="15" count="2" type="stmt"/>
       </file>
       <file name="SetupForm.tsx" path="/Users/zinminkhant/Desktop/Side Project/Tarot/Tarot_app/src/components/reading/SetupForm.tsx">
         <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-        <line num="24" count="21" type="stmt"/>
-        <line num="25" count="21" type="stmt"/>
-        <line num="26" count="21" type="stmt"/>
-        <line num="27" count="21" type="stmt"/>
-        <line num="28" count="21" type="stmt"/>
-        <line num="36" count="126" type="stmt"/>
+        <line num="24" count="27" type="stmt"/>
+        <line num="25" count="27" type="stmt"/>
+        <line num="26" count="27" type="stmt"/>
+        <line num="27" count="27" type="stmt"/>
+        <line num="28" count="27" type="stmt"/>
+        <line num="36" count="162" type="stmt"/>
         <line num="76" count="4" type="stmt"/>
       </file>
     </package>
@@ -1521,7 +1526,7 @@
         <metrics statements="25" coveredstatements="22" conditionals="11" coveredconditionals="10" methods="10" coveredmethods="8"/>
         <line num="11" count="14" type="stmt"/>
         <line num="13" count="1092" type="stmt"/>
-        <line num="16" count="543" type="stmt"/>
+        <line num="16" count="836" type="stmt"/>
         <line num="20" count="0" type="stmt"/>
         <line num="24" count="0" type="stmt"/>
         <line num="25" count="0" type="stmt"/>
@@ -1536,20 +1541,20 @@
         <line num="63" count="872" type="cond" truecount="1" falsecount="1"/>
         <line num="64" count="903" type="stmt"/>
         <line num="68" count="14" type="stmt"/>
-        <line num="78" count="159" type="cond" truecount="2" falsecount="0"/>
-        <line num="79" count="142" type="stmt"/>
-        <line num="80" count="142" type="stmt"/>
-        <line num="81" count="142" type="stmt"/>
-        <line num="82" count="710" type="stmt"/>
-        <line num="83" count="353" type="stmt"/>
-        <line num="84" count="353" type="stmt"/>
-        <line num="87" count="142" type="stmt"/>
+        <line num="78" count="145" type="cond" truecount="2" falsecount="0"/>
+        <line num="79" count="128" type="stmt"/>
+        <line num="80" count="128" type="stmt"/>
+        <line num="81" count="128" type="stmt"/>
+        <line num="82" count="640" type="stmt"/>
+        <line num="83" count="318" type="stmt"/>
+        <line num="84" count="318" type="stmt"/>
+        <line num="87" count="128" type="stmt"/>
       </file>
       <file name="content.ts" path="/Users/zinminkhant/Desktop/Side Project/Tarot/Tarot_app/src/data/content.ts">
         <metrics statements="26" coveredstatements="26" conditionals="26" coveredconditionals="24" methods="17" coveredmethods="17"/>
         <line num="15" count="13" type="stmt"/>
         <line num="30" count="13" type="stmt"/>
-        <line num="33" count="677" type="stmt"/>
+        <line num="33" count="749" type="stmt"/>
         <line num="37" count="4" type="cond" truecount="2" falsecount="0"/>
         <line num="45" count="9" type="stmt"/>
         <line num="46" count="9" type="stmt"/>
@@ -1627,13 +1632,13 @@
         <line num="15" count="0" type="cond" truecount="0" falsecount="1"/>
         <line num="16" count="0" type="stmt"/>
         <line num="20" count="11" type="stmt"/>
-        <line num="24" count="218" type="stmt"/>
+        <line num="24" count="225" type="stmt"/>
         <line num="25" count="63" type="stmt"/>
         <line num="26" count="63" type="cond" truecount="3" falsecount="1"/>
         <line num="27" count="63" type="stmt"/>
         <line num="28" count="63" type="stmt"/>
         <line num="29" count="63" type="stmt"/>
-        <line num="31" count="218" type="stmt"/>
+        <line num="31" count="225" type="stmt"/>
         <line num="36" count="66" type="stmt"/>
       </file>
       <file name="index.web.ts" path="/Users/zinminkhant/Desktop/Side Project/Tarot/Tarot_app/src/db/index.web.ts">
@@ -1673,35 +1678,35 @@
       <file name="journalRepo.ts" path="/Users/zinminkhant/Desktop/Side Project/Tarot/Tarot_app/src/db/journalRepo.ts">
         <metrics statements="74" coveredstatements="72" conditionals="59" coveredconditionals="55" methods="27" coveredmethods="27"/>
         <line num="26" count="28" type="stmt"/>
-        <line num="49" count="1087" type="stmt"/>
-        <line num="50" count="1087" type="stmt"/>
-        <line num="51" count="1086" type="cond" truecount="1" falsecount="1"/>
-        <line num="52" count="1086" type="stmt"/>
-        <line num="55" count="1187" type="cond" truecount="3" falsecount="0"/>
-        <line num="57" count="1187" type="stmt"/>
+        <line num="49" count="1102" type="stmt"/>
+        <line num="50" count="1102" type="stmt"/>
+        <line num="51" count="1101" type="cond" truecount="1" falsecount="1"/>
+        <line num="52" count="1101" type="stmt"/>
+        <line num="55" count="1256" type="cond" truecount="3" falsecount="0"/>
+        <line num="57" count="1256" type="stmt"/>
         <line num="59" count="1" type="stmt"/>
         <line num="63" count="12" type="stmt"/>
-        <line num="64" count="1087" type="cond" truecount="2" falsecount="0"/>
-        <line num="67" count="1087" type="stmt"/>
+        <line num="64" count="1102" type="cond" truecount="2" falsecount="0"/>
+        <line num="67" count="1102" type="stmt"/>
         <line num="82" count="526" type="cond" truecount="2" falsecount="0"/>
         <line num="86" count="83" type="stmt"/>
-        <line num="88" count="537" type="cond" truecount="2" falsecount="0"/>
-        <line num="89" count="537" type="stmt"/>
-        <line num="101" count="537" type="stmt"/>
-        <line num="117" count="537" type="stmt"/>
-        <line num="121" count="90" type="stmt"/>
-        <line num="122" count="90" type="stmt"/>
-        <line num="123" count="90" type="cond" truecount="4" falsecount="0"/>
+        <line num="88" count="538" type="cond" truecount="2" falsecount="0"/>
+        <line num="89" count="538" type="stmt"/>
+        <line num="101" count="538" type="stmt"/>
+        <line num="117" count="538" type="stmt"/>
+        <line num="121" count="93" type="stmt"/>
+        <line num="122" count="93" type="stmt"/>
+        <line num="123" count="93" type="cond" truecount="4" falsecount="0"/>
         <line num="124" count="1" type="stmt"/>
         <line num="125" count="1" type="stmt"/>
-        <line num="127" count="90" type="cond" truecount="4" falsecount="0"/>
+        <line num="127" count="93" type="cond" truecount="4" falsecount="0"/>
         <line num="128" count="1" type="stmt"/>
         <line num="129" count="1" type="stmt"/>
-        <line num="131" count="90" type="cond" truecount="2" falsecount="0"/>
+        <line num="131" count="93" type="cond" truecount="2" falsecount="0"/>
         <line num="132" count="1" type="stmt"/>
         <line num="133" count="1" type="stmt"/>
-        <line num="135" count="90" type="stmt"/>
-        <line num="139" count="90" type="stmt"/>
+        <line num="135" count="93" type="stmt"/>
+        <line num="139" count="93" type="stmt"/>
         <line num="143" count="14" type="stmt"/>
         <line num="147" count="14" type="cond" truecount="2" falsecount="0"/>
         <line num="151" count="8" type="stmt"/>
@@ -1727,8 +1732,8 @@
         <line num="225" count="1" type="stmt"/>
         <line num="228" count="514" type="stmt"/>
         <line num="231" count="35" type="stmt"/>
-        <line num="235" count="91" type="stmt"/>
-        <line num="238" count="91" type="cond" truecount="2" falsecount="0"/>
+        <line num="235" count="94" type="stmt"/>
+        <line num="238" count="94" type="cond" truecount="2" falsecount="0"/>
         <line num="242" count="20" type="stmt"/>
         <line num="243" count="20" type="stmt"/>
         <line num="247" count="20" type="stmt"/>
@@ -1764,20 +1769,20 @@
       <file name="sqljsAdapter.ts" path="/Users/zinminkhant/Desktop/Side Project/Tarot/Tarot_app/src/db/sqljsAdapter.ts">
         <metrics statements="27" coveredstatements="25" conditionals="6" coveredconditionals="5" methods="8" coveredmethods="8"/>
         <line num="10" count="84" type="cond" truecount="1" falsecount="0"/>
-        <line num="11" count="875" type="stmt"/>
-        <line num="12" count="875" type="stmt"/>
-        <line num="13" count="875" type="stmt"/>
-        <line num="14" count="875" type="stmt"/>
-        <line num="15" count="1221" type="stmt"/>
-        <line num="16" count="875" type="stmt"/>
-        <line num="18" count="875" type="stmt"/>
+        <line num="11" count="881" type="stmt"/>
+        <line num="12" count="881" type="stmt"/>
+        <line num="13" count="881" type="stmt"/>
+        <line num="14" count="881" type="stmt"/>
+        <line num="15" count="1236" type="stmt"/>
+        <line num="16" count="881" type="stmt"/>
+        <line num="18" count="881" type="stmt"/>
         <line num="21" count="84" type="stmt"/>
         <line num="22" count="84" type="stmt"/>
         <line num="24" count="402" type="stmt"/>
-        <line num="27" count="1622" type="stmt"/>
-        <line num="28" count="1622" type="stmt"/>
-        <line num="30" count="151" type="stmt"/>
-        <line num="31" count="724" type="cond" truecount="2" falsecount="0"/>
+        <line num="27" count="1623" type="stmt"/>
+        <line num="28" count="1623" type="stmt"/>
+        <line num="30" count="154" type="stmt"/>
+        <line num="31" count="727" type="cond" truecount="2" falsecount="0"/>
         <line num="33" count="244" type="cond" truecount="1" falsecount="1"/>
         <line num="34" count="244" type="stmt"/>
         <line num="35" count="244" type="stmt"/>
@@ -1799,10 +1804,10 @@
       <metrics statements="82" coveredstatements="82" conditionals="80" coveredconditionals="74" methods="28" coveredmethods="28"/>
       <file name="crisis.ts" path="/Users/zinminkhant/Desktop/Side Project/Tarot/Tarot_app/src/engine/crisis.ts">
         <metrics statements="12" coveredstatements="12" conditionals="21" coveredconditionals="18" methods="4" coveredmethods="4"/>
-        <line num="6" count="425" type="stmt"/>
+        <line num="6" count="428" type="stmt"/>
         <line num="8" count="13" type="stmt"/>
-        <line num="15" count="22" type="stmt"/>
-        <line num="16" count="22" type="cond" truecount="2" falsecount="0"/>
+        <line num="15" count="25" type="stmt"/>
+        <line num="16" count="25" type="cond" truecount="2" falsecount="0"/>
         <line num="17" count="13" type="stmt"/>
         <line num="18" count="283" type="cond" truecount="3" falsecount="0"/>
         <line num="25" count="1" type="cond" truecount="2" falsecount="0"/>
@@ -1821,12 +1826,12 @@
       <file name="draw.ts" path="/Users/zinminkhant/Desktop/Side Project/Tarot/Tarot_app/src/engine/draw.ts">
         <metrics statements="11" coveredstatements="11" conditionals="13" coveredconditionals="12" methods="5" coveredmethods="5"/>
         <line num="14" count="1014" type="stmt"/>
-        <line num="18" count="64016" type="stmt"/>
-        <line num="19" count="64016" type="stmt"/>
-        <line num="20" count="429232" type="stmt"/>
-        <line num="21" count="429232" type="stmt"/>
-        <line num="23" count="64016" type="stmt"/>
-        <line num="32" count="313170" type="cond" truecount="2" falsecount="0"/>
+        <line num="18" count="64019" type="stmt"/>
+        <line num="19" count="64019" type="stmt"/>
+        <line num="20" count="429463" type="stmt"/>
+        <line num="21" count="429463" type="stmt"/>
+        <line num="23" count="64019" type="stmt"/>
+        <line num="32" count="313404" type="cond" truecount="2" falsecount="0"/>
         <line num="37" count="4004" type="stmt"/>
         <line num="38" count="4004" type="cond" truecount="5" falsecount="0"/>
         <line num="39" count="1" type="stmt"/>
@@ -1838,46 +1843,46 @@
       <file name="interpret.ts" path="/Users/zinminkhant/Desktop/Side Project/Tarot/Tarot_app/src/engine/interpret.ts">
         <metrics statements="28" coveredstatements="28" conditionals="34" coveredconditionals="32" methods="9" coveredmethods="9"/>
         <line num="7" count="13" type="stmt"/>
-        <line num="12" count="65" type="stmt"/>
-        <line num="13" count="65" type="cond" truecount="2" falsecount="0"/>
-        <line num="14" count="65" type="cond" truecount="6" falsecount="0"/>
-        <line num="15" count="61" type="stmt"/>
+        <line num="12" count="94" type="stmt"/>
+        <line num="13" count="94" type="cond" truecount="2" falsecount="0"/>
+        <line num="14" count="94" type="cond" truecount="6" falsecount="0"/>
+        <line num="15" count="89" type="stmt"/>
         <line num="32" count="13" type="stmt"/>
         <line num="39" count="13" type="stmt"/>
-        <line num="47" count="63" type="stmt"/>
-        <line num="48" count="23" type="stmt"/>
-        <line num="49" count="23" type="stmt"/>
-        <line num="50" count="23" type="cond" truecount="1" falsecount="1"/>
-        <line num="52" count="23" type="cond" truecount="2" falsecount="0"/>
-        <line num="53" count="46" type="stmt"/>
-        <line num="54" count="6" type="cond" truecount="2" falsecount="0"/>
-        <line num="55" count="3" type="cond" truecount="2" falsecount="0"/>
-        <line num="57" count="6" type="stmt"/>
-        <line num="58" count="46" type="cond" truecount="4" falsecount="0"/>
-        <line num="59" count="13" type="stmt"/>
-        <line num="60" count="6" type="stmt"/>
-        <line num="61" count="6" type="cond" truecount="6" falsecount="0"/>
-        <line num="63" count="6" type="cond" truecount="2" falsecount="0"/>
-        <line num="64" count="26" type="stmt"/>
-        <line num="65" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="47" count="92" type="stmt"/>
+        <line num="48" count="34" type="stmt"/>
+        <line num="49" count="34" type="stmt"/>
+        <line num="50" count="34" type="cond" truecount="1" falsecount="1"/>
+        <line num="52" count="34" type="cond" truecount="2" falsecount="0"/>
+        <line num="53" count="66" type="stmt"/>
+        <line num="54" count="8" type="cond" truecount="2" falsecount="0"/>
+        <line num="55" count="7" type="cond" truecount="2" falsecount="0"/>
+        <line num="57" count="8" type="stmt"/>
+        <line num="58" count="66" type="cond" truecount="4" falsecount="0"/>
+        <line num="59" count="28" type="stmt"/>
+        <line num="60" count="8" type="stmt"/>
+        <line num="61" count="8" type="cond" truecount="6" falsecount="0"/>
+        <line num="63" count="8" type="cond" truecount="2" falsecount="0"/>
+        <line num="64" count="36" type="stmt"/>
+        <line num="65" count="5" type="cond" truecount="2" falsecount="0"/>
         <line num="66" count="1" type="cond" truecount="1" falsecount="1"/>
-        <line num="70" count="63" type="stmt"/>
-        <line num="71" count="23" type="stmt"/>
-        <line num="72" count="23" type="stmt"/>
-        <line num="73" count="23" type="stmt"/>
+        <line num="70" count="92" type="stmt"/>
+        <line num="71" count="34" type="stmt"/>
+        <line num="72" count="34" type="stmt"/>
+        <line num="73" count="34" type="stmt"/>
       </file>
       <file name="random.ts" path="/Users/zinminkhant/Desktop/Side Project/Tarot/Tarot_app/src/engine/random.ts">
         <metrics statements="20" coveredstatements="20" conditionals="8" coveredconditionals="8" methods="6" coveredmethods="6"/>
         <line num="10" count="13" type="stmt"/>
-        <line num="13" count="749331" type="cond" truecount="5" falsecount="0"/>
+        <line num="13" count="749796" type="cond" truecount="5" falsecount="0"/>
         <line num="14" count="2" type="stmt"/>
-        <line num="23" count="623959" type="stmt"/>
-        <line num="24" count="623957" type="stmt"/>
-        <line num="25" count="623957" type="stmt"/>
-        <line num="26" count="623958" type="stmt"/>
-        <line num="27" count="623958" type="stmt"/>
-        <line num="28" count="623958" type="cond" truecount="2" falsecount="0"/>
-        <line num="32" count="623958" type="stmt"/>
+        <line num="23" count="624424" type="stmt"/>
+        <line num="24" count="624422" type="stmt"/>
+        <line num="25" count="624422" type="stmt"/>
+        <line num="26" count="624423" type="stmt"/>
+        <line num="27" count="624423" type="stmt"/>
+        <line num="28" count="624423" type="cond" truecount="2" falsecount="0"/>
+        <line num="32" count="624423" type="stmt"/>
         <line num="38" count="2549" type="stmt"/>
         <line num="39" count="2549" type="stmt"/>
         <line num="40" count="125372" type="stmt"/>
@@ -1892,40 +1897,40 @@
       <file name="spreads.ts" path="/Users/zinminkhant/Desktop/Side Project/Tarot/Tarot_app/src/engine/spreads.ts">
         <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
         <line num="20" count="13" type="stmt"/>
-        <line num="25" count="714" type="stmt"/>
-        <line num="30" count="304" type="stmt"/>
-        <line num="31" count="304" type="stmt"/>
-        <line num="32" count="304" type="stmt"/>
-        <line num="33" count="1258" type="stmt"/>
-        <line num="34" count="1258" type="stmt"/>
-        <line num="36" count="304" type="stmt"/>
+        <line num="25" count="985" type="stmt"/>
+        <line num="30" count="398" type="stmt"/>
+        <line num="31" count="398" type="stmt"/>
+        <line num="32" count="398" type="stmt"/>
+        <line num="33" count="1591" type="stmt"/>
+        <line num="34" count="1591" type="stmt"/>
+        <line num="36" count="398" type="stmt"/>
       </file>
     </package>
     <package name="src.hooks">
-      <metrics statements="166" coveredstatements="154" conditionals="81" coveredconditionals="60" methods="82" coveredmethods="73"/>
+      <metrics statements="187" coveredstatements="174" conditionals="96" coveredconditionals="73" methods="87" coveredmethods="78"/>
       <file name="useAppFonts.ts" path="/Users/zinminkhant/Desktop/Side Project/Tarot/Tarot_app/src/hooks/useAppFonts.ts">
         <metrics statements="15" coveredstatements="15" conditionals="4" coveredconditionals="2" methods="7" coveredmethods="7"/>
         <line num="7" count="10" type="stmt"/>
-        <line num="25" count="157" type="stmt"/>
-        <line num="26" count="548" type="stmt"/>
-        <line num="28" count="157" type="stmt"/>
-        <line num="29" count="76" type="stmt"/>
-        <line num="30" count="76" type="stmt"/>
-        <line num="31" count="76" type="stmt"/>
-        <line num="33" count="152" type="stmt"/>
-        <line num="34" count="152" type="stmt"/>
-        <line num="37" count="76" type="cond" truecount="1" falsecount="1"/>
-        <line num="38" count="152" type="cond" truecount="1" falsecount="1"/>
-        <line num="39" count="76" type="stmt"/>
-        <line num="41" count="76" type="stmt"/>
-        <line num="42" count="76" type="stmt"/>
-        <line num="46" count="157" type="stmt"/>
+        <line num="25" count="163" type="stmt"/>
+        <line num="26" count="569" type="stmt"/>
+        <line num="28" count="163" type="stmt"/>
+        <line num="29" count="79" type="stmt"/>
+        <line num="30" count="79" type="stmt"/>
+        <line num="31" count="79" type="stmt"/>
+        <line num="33" count="158" type="stmt"/>
+        <line num="34" count="158" type="stmt"/>
+        <line num="37" count="79" type="cond" truecount="1" falsecount="1"/>
+        <line num="38" count="158" type="cond" truecount="1" falsecount="1"/>
+        <line num="39" count="79" type="stmt"/>
+        <line num="41" count="79" type="stmt"/>
+        <line num="42" count="79" type="stmt"/>
+        <line num="46" count="163" type="stmt"/>
       </file>
       <file name="useCloudSync.ts" path="/Users/zinminkhant/Desktop/Side Project/Tarot/Tarot_app/src/hooks/useCloudSync.ts">
         <metrics statements="20" coveredstatements="16" conditionals="8" coveredconditionals="4" methods="7" coveredmethods="5"/>
         <line num="10" count="10" type="stmt"/>
-        <line num="18" count="88" type="stmt"/>
-        <line num="19" count="76" type="cond" truecount="2" falsecount="0"/>
+        <line num="18" count="91" type="stmt"/>
+        <line num="19" count="79" type="cond" truecount="2" falsecount="0"/>
         <line num="20" count="9" type="stmt"/>
         <line num="21" count="8" type="stmt"/>
         <line num="24" count="8" type="stmt"/>
@@ -1947,157 +1952,178 @@
       <file name="useHaptics.ts" path="/Users/zinminkhant/Desktop/Side Project/Tarot/Tarot_app/src/hooks/useHaptics.ts">
         <metrics statements="12" coveredstatements="12" conditionals="16" coveredconditionals="10" methods="9" coveredmethods="8"/>
         <line num="8" count="10" type="stmt"/>
-        <line num="15" count="450" type="cond" truecount="2" falsecount="0"/>
-        <line num="16" count="450" type="stmt"/>
-        <line num="17" count="150" type="stmt"/>
-        <line num="18" count="43" type="stmt"/>
-        <line num="19" count="9" type="cond" truecount="1" falsecount="1"/>
-        <line num="21" count="10" type="cond" truecount="1" falsecount="1"/>
-        <line num="22" count="10" type="cond" truecount="1" falsecount="1"/>
-        <line num="25" count="7" type="cond" truecount="2" falsecount="0"/>
-        <line num="26" count="7" type="cond" truecount="1" falsecount="1"/>
+        <line num="15" count="635" type="cond" truecount="2" falsecount="0"/>
+        <line num="16" count="635" type="stmt"/>
+        <line num="17" count="212" type="stmt"/>
+        <line num="18" count="53" type="stmt"/>
+        <line num="19" count="13" type="cond" truecount="1" falsecount="1"/>
+        <line num="21" count="13" type="cond" truecount="1" falsecount="1"/>
+        <line num="22" count="13" type="cond" truecount="1" falsecount="1"/>
+        <line num="25" count="8" type="cond" truecount="2" falsecount="0"/>
+        <line num="26" count="8" type="cond" truecount="1" falsecount="1"/>
         <line num="29" count="6" type="cond" truecount="1" falsecount="1"/>
         <line num="30" count="6" type="cond" truecount="1" falsecount="1"/>
       </file>
       <file name="useLanguage.ts" path="/Users/zinminkhant/Desktop/Side Project/Tarot/Tarot_app/src/hooks/useLanguage.ts">
         <metrics statements="2" coveredstatements="2" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
-        <line num="7" count="4892" type="stmt"/>
-        <line num="8" count="1588" type="cond" truecount="2" falsecount="0"/>
+        <line num="7" count="5383" type="stmt"/>
+        <line num="8" count="1752" type="cond" truecount="2" falsecount="0"/>
       </file>
       <file name="useNumberFormat.ts" path="/Users/zinminkhant/Desktop/Side Project/Tarot/Tarot_app/src/hooks/useNumberFormat.ts">
         <metrics statements="3" coveredstatements="3" conditionals="1" coveredconditionals="1" methods="3" coveredmethods="3"/>
-        <line num="8" count="2706" type="stmt"/>
-        <line num="9" count="891" type="stmt"/>
-        <line num="11" count="1304" type="stmt"/>
+        <line num="8" count="3227" type="stmt"/>
+        <line num="9" count="1065" type="stmt"/>
+        <line num="11" count="2004" type="stmt"/>
       </file>
       <file name="useReadingFlow.ts" path="/Users/zinminkhant/Desktop/Side Project/Tarot/Tarot_app/src/hooks/useReadingFlow.ts">
-        <metrics statements="81" coveredstatements="75" conditionals="34" coveredconditionals="29" methods="34" coveredmethods="32"/>
-        <line num="23" count="4" type="stmt"/>
+        <metrics statements="102" coveredstatements="95" conditionals="49" coveredconditionals="42" methods="39" coveredmethods="37"/>
         <line num="24" count="4" type="stmt"/>
         <line num="25" count="4" type="stmt"/>
-        <line num="32" count="80" type="stmt"/>
-        <line num="33" count="80" type="stmt"/>
-        <line num="34" count="80" type="stmt"/>
-        <line num="35" count="240" type="stmt"/>
-        <line num="36" count="261" type="stmt"/>
-        <line num="37" count="249" type="stmt"/>
-        <line num="39" count="80" type="stmt"/>
-        <line num="40" count="80" type="stmt"/>
-        <line num="41" count="80" type="stmt"/>
-        <line num="42" count="80" type="stmt"/>
-        <line num="43" count="80" type="stmt"/>
-        <line num="44" count="80" type="stmt"/>
-        <line num="45" count="80" type="stmt"/>
-        <line num="46" count="80" type="stmt"/>
-        <line num="48" count="80" type="stmt"/>
-        <line num="49" count="17" type="stmt"/>
-        <line num="50" count="17" type="cond" truecount="2" falsecount="0"/>
-        <line num="55" count="80" type="cond" truecount="2" falsecount="0"/>
-        <line num="56" count="80" type="stmt"/>
-        <line num="57" count="80" type="cond" truecount="3" falsecount="0"/>
-        <line num="60" count="80" type="stmt"/>
-        <line num="61" count="80" type="stmt"/>
-        <line num="62" count="80" type="stmt"/>
-        <line num="63" count="59" type="cond" truecount="6" falsecount="0"/>
-        <line num="64" count="9" type="stmt"/>
-        <line num="65" count="9" type="stmt"/>
-        <line num="70" count="27" type="stmt"/>
-        <line num="77" count="8" type="stmt"/>
-        <line num="78" count="8" type="stmt"/>
-        <line num="80" count="0" type="stmt"/>
-        <line num="84" count="1" type="stmt"/>
-        <line num="85" count="1" type="stmt"/>
-        <line num="87" count="1" type="stmt"/>
-        <line num="91" count="9" type="stmt"/>
-        <line num="95" count="80" type="stmt"/>
-        <line num="96" count="18" type="cond" truecount="2" falsecount="0"/>
-        <line num="97" count="18" type="stmt"/>
-        <line num="100" count="80" type="stmt"/>
-        <line num="101" count="9" type="cond" truecount="1" falsecount="1"/>
-        <line num="102" count="9" type="cond" truecount="1" falsecount="1"/>
-        <line num="105" count="80" type="stmt"/>
-        <line num="106" count="11" type="cond" truecount="2" falsecount="0"/>
-        <line num="107" count="1" type="stmt"/>
+        <line num="26" count="4" type="stmt"/>
+        <line num="33" count="133" type="stmt"/>
+        <line num="34" count="133" type="stmt"/>
+        <line num="35" count="133" type="stmt"/>
+        <line num="36" count="398" type="stmt"/>
+        <line num="37" count="420" type="stmt"/>
+        <line num="38" count="408" type="stmt"/>
+        <line num="40" count="133" type="stmt"/>
+        <line num="41" count="133" type="stmt"/>
+        <line num="42" count="133" type="stmt"/>
+        <line num="43" count="133" type="stmt"/>
+        <line num="44" count="133" type="stmt"/>
+        <line num="45" count="133" type="stmt"/>
+        <line num="46" count="133" type="stmt"/>
+        <line num="47" count="133" type="stmt"/>
+        <line num="48" count="444" type="stmt"/>
+        <line num="49" count="444" type="stmt"/>
+        <line num="50" count="444" type="stmt"/>
+        <line num="52" count="133" type="stmt"/>
+        <line num="53" count="22" type="stmt"/>
+        <line num="54" count="22" type="cond" truecount="2" falsecount="0"/>
+        <line num="59" count="133" type="cond" truecount="2" falsecount="0"/>
+        <line num="60" count="133" type="stmt"/>
+        <line num="61" count="133" type="cond" truecount="3" falsecount="0"/>
+        <line num="64" count="133" type="stmt"/>
+        <line num="65" count="86" type="cond" truecount="2" falsecount="0"/>
+        <line num="66" count="85" type="cond" truecount="2" falsecount="0"/>
+        <line num="67" count="9" type="stmt"/>
+        <line num="68" count="9" type="stmt"/>
+        <line num="70" count="76" type="cond" truecount="5" falsecount="0"/>
+        <line num="71" count="23" type="stmt"/>
+        <line num="84" count="133" type="stmt"/>
+        <line num="85" count="133" type="stmt"/>
+        <line num="86" count="133" type="stmt"/>
+        <line num="87" count="74" type="cond" truecount="6" falsecount="0"/>
+        <line num="88" count="10" type="stmt"/>
+        <line num="89" count="10" type="stmt"/>
+        <line num="94" count="28" type="stmt"/>
+        <line num="101" count="9" type="stmt"/>
+        <line num="102" count="9" type="stmt"/>
+        <line num="104" count="0" type="stmt"/>
         <line num="108" count="1" type="stmt"/>
-        <line num="110" count="10" type="stmt"/>
-        <line num="111" count="10" type="stmt"/>
-        <line num="112" count="30" type="stmt"/>
-        <line num="113" count="10" type="stmt"/>
-        <line num="114" count="10" type="stmt"/>
-        <line num="115" count="10" type="cond" truecount="1" falsecount="1"/>
-        <line num="118" count="80" type="stmt"/>
-        <line num="119" count="7" type="cond" truecount="4" falsecount="1"/>
-        <line num="120" count="7" type="stmt"/>
-        <line num="121" count="7" type="stmt"/>
-        <line num="122" count="7" type="stmt"/>
-        <line num="123" count="7" type="cond" truecount="2" falsecount="0"/>
-        <line num="126" count="80" type="stmt"/>
-        <line num="127" count="42" type="stmt"/>
-        <line num="128" count="42" type="stmt"/>
-        <line num="130" count="2" type="stmt"/>
-        <line num="131" count="2" type="cond" truecount="2" falsecount="0"/>
-        <line num="132" count="20" type="stmt"/>
-        <line num="133" count="2" type="stmt"/>
-        <line num="134" count="2" type="stmt"/>
-        <line num="135" count="2" type="stmt"/>
-        <line num="138" count="80" type="stmt"/>
-        <line num="139" count="3" type="cond" truecount="1" falsecount="1"/>
-        <line num="140" count="3" type="stmt"/>
-        <line num="142" count="80" type="stmt"/>
-        <line num="143" count="23" type="stmt"/>
-        <line num="144" count="5" type="stmt"/>
-        <line num="146" count="80" type="stmt"/>
-        <line num="147" count="0" type="stmt"/>
-        <line num="148" count="0" type="stmt"/>
-        <line num="149" count="0" type="stmt"/>
-        <line num="150" count="0" type="stmt"/>
-        <line num="151" count="0" type="stmt"/>
-        <line num="154" count="80" type="stmt"/>
+        <line num="109" count="1" type="stmt"/>
+        <line num="111" count="1" type="stmt"/>
+        <line num="115" count="10" type="stmt"/>
+        <line num="119" count="133" type="stmt"/>
+        <line num="120" count="22" type="cond" truecount="2" falsecount="0"/>
+        <line num="121" count="22" type="stmt"/>
+        <line num="124" count="133" type="stmt"/>
+        <line num="125" count="12" type="cond" truecount="1" falsecount="1"/>
+        <line num="126" count="12" type="cond" truecount="1" falsecount="1"/>
+        <line num="129" count="133" type="stmt"/>
+        <line num="130" count="14" type="cond" truecount="2" falsecount="0"/>
+        <line num="131" count="1" type="stmt"/>
+        <line num="132" count="1" type="stmt"/>
+        <line num="134" count="13" type="stmt"/>
+        <line num="135" count="13" type="stmt"/>
+        <line num="136" count="13" type="stmt"/>
+        <line num="137" count="37" type="stmt"/>
+        <line num="138" count="13" type="stmt"/>
+        <line num="139" count="13" type="stmt"/>
+        <line num="140" count="13" type="cond" truecount="1" falsecount="1"/>
+        <line num="143" count="133" type="stmt"/>
+        <line num="144" count="11" type="cond" truecount="4" falsecount="1"/>
+        <line num="145" count="11" type="stmt"/>
+        <line num="146" count="11" type="stmt"/>
+        <line num="147" count="11" type="stmt"/>
+        <line num="148" count="11" type="cond" truecount="2" falsecount="0"/>
+        <line num="151" count="133" type="stmt"/>
+        <line num="152" count="42" type="stmt"/>
+        <line num="153" count="42" type="stmt"/>
+        <line num="155" count="2" type="stmt"/>
+        <line num="156" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="157" count="20" type="stmt"/>
+        <line num="158" count="2" type="stmt"/>
+        <line num="159" count="2" type="stmt"/>
+        <line num="160" count="2" type="stmt"/>
+        <line num="163" count="133" type="stmt"/>
+        <line num="164" count="4" type="cond" truecount="1" falsecount="1"/>
+        <line num="165" count="4" type="stmt"/>
+        <line num="167" count="133" type="stmt"/>
+        <line num="168" count="23" type="stmt"/>
+        <line num="169" count="5" type="stmt"/>
+        <line num="171" count="133" type="cond" truecount="2" falsecount="0"/>
+        <line num="172" count="133" type="stmt"/>
+        <line num="173" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="174" count="1" type="stmt"/>
+        <line num="175" count="1" type="stmt"/>
+        <line num="176" count="1" type="stmt"/>
+        <line num="177" count="1" type="stmt"/>
+        <line num="178" count="1" type="stmt"/>
+        <line num="179" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="181" count="133" type="stmt"/>
+        <line num="182" count="0" type="stmt"/>
+        <line num="183" count="0" type="stmt"/>
+        <line num="184" count="0" type="stmt"/>
+        <line num="185" count="0" type="stmt"/>
+        <line num="186" count="0" type="stmt"/>
+        <line num="187" count="0" type="stmt"/>
+        <line num="190" count="133" type="stmt"/>
       </file>
       <file name="useReduceMotion.ts" path="/Users/zinminkhant/Desktop/Side Project/Tarot/Tarot_app/src/hooks/useReduceMotion.ts">
         <metrics statements="11" coveredstatements="10" conditionals="2" coveredconditionals="2" methods="5" coveredmethods="4"/>
-        <line num="6" count="647" type="stmt"/>
-        <line num="7" count="647" type="stmt"/>
-        <line num="8" count="315" type="stmt"/>
-        <line num="9" count="315" type="stmt"/>
-        <line num="10" count="315" type="cond" truecount="2" falsecount="0"/>
+        <line num="6" count="1275" type="stmt"/>
+        <line num="7" count="1275" type="stmt"/>
+        <line num="8" count="426" type="stmt"/>
+        <line num="9" count="426" type="stmt"/>
+        <line num="10" count="426" type="cond" truecount="2" falsecount="0"/>
         <line num="11" count="0" type="stmt"/>
-        <line num="12" count="315" type="stmt"/>
-        <line num="13" count="315" type="stmt"/>
-        <line num="14" count="315" type="stmt"/>
-        <line num="15" count="315" type="stmt"/>
-        <line num="18" count="647" type="stmt"/>
+        <line num="12" count="426" type="stmt"/>
+        <line num="13" count="426" type="stmt"/>
+        <line num="14" count="426" type="stmt"/>
+        <line num="15" count="426" type="stmt"/>
+        <line num="18" count="1275" type="stmt"/>
       </file>
       <file name="useReminders.ts" path="/Users/zinminkhant/Desktop/Side Project/Tarot/Tarot_app/src/hooks/useReminders.ts">
         <metrics statements="19" coveredstatements="18" conditionals="14" coveredconditionals="10" methods="11" coveredmethods="9"/>
-        <line num="15" count="88" type="stmt"/>
-        <line num="16" count="285" type="stmt"/>
-        <line num="17" count="285" type="stmt"/>
-        <line num="18" count="285" type="stmt"/>
-        <line num="19" count="285" type="stmt"/>
-        <line num="20" count="88" type="stmt"/>
-        <line num="22" count="88" type="stmt"/>
-        <line num="23" count="83" type="cond" truecount="3" falsecount="1"/>
-        <line num="24" count="83" type="cond" truecount="2" falsecount="0"/>
-        <line num="41" count="83" type="stmt"/>
-        <line num="44" count="88" type="stmt"/>
-        <line num="45" count="76" type="cond" truecount="3" falsecount="1"/>
-        <line num="46" count="76" type="stmt"/>
-        <line num="47" count="76" type="stmt"/>
-        <line num="48" count="76" type="cond" truecount="2" falsecount="2"/>
-        <line num="51" count="76" type="stmt"/>
+        <line num="15" count="91" type="stmt"/>
+        <line num="16" count="294" type="stmt"/>
+        <line num="17" count="294" type="stmt"/>
+        <line num="18" count="294" type="stmt"/>
+        <line num="19" count="294" type="stmt"/>
+        <line num="20" count="91" type="stmt"/>
+        <line num="22" count="91" type="stmt"/>
+        <line num="23" count="86" type="cond" truecount="3" falsecount="1"/>
+        <line num="24" count="86" type="cond" truecount="2" falsecount="0"/>
+        <line num="41" count="86" type="stmt"/>
+        <line num="44" count="91" type="stmt"/>
+        <line num="45" count="79" type="cond" truecount="3" falsecount="1"/>
+        <line num="46" count="79" type="stmt"/>
+        <line num="47" count="79" type="stmt"/>
+        <line num="48" count="79" type="cond" truecount="2" falsecount="2"/>
+        <line num="51" count="79" type="stmt"/>
         <line num="53" count="0" type="stmt"/>
-        <line num="54" count="76" type="stmt"/>
-        <line num="55" count="76" type="stmt"/>
+        <line num="54" count="79" type="stmt"/>
+        <line num="55" count="79" type="stmt"/>
       </file>
       <file name="useReminders.web.ts" path="/Users/zinminkhant/Desktop/Side Project/Tarot/Tarot_app/src/hooks/useReminders.web.ts">
         <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
       </file>
       <file name="useSettingsHydrated.ts" path="/Users/zinminkhant/Desktop/Side Project/Tarot/Tarot_app/src/hooks/useSettingsHydrated.ts">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
-        <line num="5" count="76" type="stmt"/>
-        <line num="6" count="390" type="stmt"/>
-        <line num="10" count="157" type="stmt"/>
+        <line num="5" count="79" type="stmt"/>
+        <line num="6" count="405" type="stmt"/>
+        <line num="10" count="163" type="stmt"/>
       </file>
     </package>
     <package name="src.i18n">
@@ -2113,7 +2139,7 @@
         <line num="24" count="0" type="stmt"/>
         <line num="29" count="10" type="stmt"/>
         <line num="30" count="10" type="stmt"/>
-        <line num="33" count="157" type="cond" truecount="2" falsecount="0"/>
+        <line num="33" count="163" type="cond" truecount="2" falsecount="0"/>
         <line num="34" count="10" type="stmt"/>
         <line num="35" count="10" type="stmt"/>
         <line num="44" count="10" type="stmt"/>
@@ -2132,7 +2158,7 @@
         <metrics statements="4" coveredstatements="4" conditionals="1" coveredconditionals="1" methods="2" coveredmethods="2"/>
         <line num="5" count="11" type="stmt"/>
         <line num="8" count="11" type="stmt"/>
-        <line num="10" count="165" type="stmt"/>
+        <line num="10" count="218" type="stmt"/>
         <line num="14" count="52" type="stmt"/>
       </file>
       <file name="revenuecat.ts" path="/Users/zinminkhant/Desktop/Side Project/Tarot/Tarot_app/src/premium/revenuecat.ts">
@@ -2171,7 +2197,7 @@
       </file>
     </package>
     <package name="src.services">
-      <metrics statements="90" coveredstatements="71" conditionals="39" coveredconditionals="28" methods="23" coveredmethods="13"/>
+      <metrics statements="91" coveredstatements="72" conditionals="39" coveredconditionals="28" methods="23" coveredmethods="13"/>
       <file name="exportFile.ts" path="/Users/zinminkhant/Desktop/Side Project/Tarot/Tarot_app/src/services/exportFile.ts">
         <metrics statements="9" coveredstatements="8" conditionals="4" coveredconditionals="2" methods="1" coveredmethods="1"/>
         <line num="8" count="1" type="stmt"/>
@@ -2223,9 +2249,9 @@
         <line num="78" count="1" type="cond" truecount="1" falsecount="1"/>
         <line num="79" count="0" type="stmt"/>
         <line num="80" count="0" type="stmt"/>
-        <line num="84" count="88" type="cond" truecount="1" falsecount="1"/>
-        <line num="85" count="88" type="stmt"/>
-        <line num="86" count="88" type="stmt"/>
+        <line num="84" count="91" type="cond" truecount="1" falsecount="1"/>
+        <line num="85" count="91" type="stmt"/>
+        <line num="86" count="91" type="stmt"/>
         <line num="88" count="35" type="stmt"/>
         <line num="89" count="35" type="stmt"/>
         <line num="95" count="5" type="cond" truecount="1" falsecount="1"/>
@@ -2270,22 +2296,23 @@
         <line num="29" count="1" type="stmt"/>
       </file>
       <file name="userData.ts" path="/Users/zinminkhant/Desktop/Side Project/Tarot/Tarot_app/src/services/userData.ts">
-        <metrics statements="11" coveredstatements="11" conditionals="4" coveredconditionals="4" methods="4" coveredmethods="3"/>
-        <line num="16" count="6" type="stmt"/>
+        <metrics statements="12" coveredstatements="12" conditionals="4" coveredconditionals="4" methods="4" coveredmethods="3"/>
         <line num="17" count="6" type="stmt"/>
-        <line num="32" count="2" type="stmt"/>
+        <line num="18" count="6" type="stmt"/>
         <line num="33" count="2" type="stmt"/>
         <line num="34" count="2" type="stmt"/>
-        <line num="59" count="1" type="stmt"/>
-        <line num="64" count="2" type="stmt"/>
-        <line num="67" count="2" type="stmt"/>
+        <line num="35" count="2" type="stmt"/>
+        <line num="60" count="1" type="stmt"/>
+        <line num="65" count="2" type="stmt"/>
         <line num="68" count="2" type="stmt"/>
         <line num="69" count="2" type="stmt"/>
         <line num="70" count="2" type="stmt"/>
+        <line num="71" count="2" type="stmt"/>
+        <line num="72" count="2" type="stmt"/>
       </file>
     </package>
     <package name="src.store">
-      <metrics statements="247" coveredstatements="223" conditionals="104" coveredconditionals="86" methods="96" coveredmethods="84"/>
+      <metrics statements="260" coveredstatements="236" conditionals="122" coveredconditionals="104" methods="103" coveredmethods="91"/>
       <file name="ads.ts" path="/Users/zinminkhant/Desktop/Side Project/Tarot/Tarot_app/src/store/ads.ts">
         <metrics statements="26" coveredstatements="23" conditionals="14" coveredconditionals="13" methods="13" coveredmethods="11"/>
         <line num="21" count="21" type="stmt"/>
@@ -2295,9 +2322,9 @@
         <line num="29" count="0" type="stmt"/>
         <line num="35" count="10" type="stmt"/>
         <line num="38" count="10" type="stmt"/>
-        <line num="41" count="17" type="stmt"/>
+        <line num="41" count="22" type="stmt"/>
         <line num="43" count="10" type="stmt"/>
-        <line num="47" count="85" type="cond" truecount="2" falsecount="0"/>
+        <line num="47" count="88" type="cond" truecount="2" falsecount="0"/>
         <line num="48" count="18" type="stmt"/>
         <line num="49" count="18" type="stmt"/>
         <line num="50" count="18" type="cond" truecount="2" falsecount="0"/>
@@ -2309,20 +2336,20 @@
         <line num="63" count="3" type="cond" truecount="2" falsecount="0"/>
         <line num="64" count="3" type="stmt"/>
         <line num="67" count="1" type="stmt"/>
-        <line num="73" count="363" type="stmt"/>
-        <line num="74" count="411" type="stmt"/>
-        <line num="75" count="117" type="cond" truecount="2" falsecount="0"/>
+        <line num="73" count="390" type="stmt"/>
+        <line num="74" count="438" type="stmt"/>
+        <line num="75" count="126" type="cond" truecount="2" falsecount="0"/>
         <line num="80" count="53" type="stmt"/>
         <line num="81" count="53" type="cond" truecount="2" falsecount="0"/>
       </file>
       <file name="daily.ts" path="/Users/zinminkhant/Desktop/Side Project/Tarot/Tarot_app/src/store/daily.ts">
         <metrics statements="25" coveredstatements="25" conditionals="10" coveredconditionals="8" methods="4" coveredmethods="4"/>
         <line num="21" count="10" type="stmt"/>
-        <line num="26" count="78" type="stmt"/>
-        <line num="27" count="78" type="stmt"/>
-        <line num="28" count="78" type="stmt"/>
-        <line num="29" count="78" type="stmt"/>
-        <line num="30" count="78" type="stmt"/>
+        <line num="26" count="81" type="stmt"/>
+        <line num="27" count="81" type="stmt"/>
+        <line num="28" count="81" type="stmt"/>
+        <line num="29" count="81" type="stmt"/>
+        <line num="30" count="81" type="stmt"/>
         <line num="33" count="6" type="stmt"/>
         <line num="34" count="6" type="cond" truecount="2" falsecount="0"/>
         <line num="35" count="6" type="cond" truecount="2" falsecount="0"/>
@@ -2346,18 +2373,18 @@
       <file name="fonts.ts" path="/Users/zinminkhant/Desktop/Side Project/Tarot/Tarot_app/src/store/fonts.ts">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
         <line num="11" count="10" type="stmt"/>
-        <line num="13" count="76" type="stmt"/>
+        <line num="13" count="79" type="stmt"/>
       </file>
       <file name="journal.ts" path="/Users/zinminkhant/Desktop/Side Project/Tarot/Tarot_app/src/store/journal.ts">
         <metrics statements="18" coveredstatements="18" conditionals="2" coveredconditionals="1" methods="9" coveredmethods="9"/>
         <line num="18" count="10" type="stmt"/>
-        <line num="23" count="79" type="stmt"/>
-        <line num="24" count="79" type="stmt"/>
-        <line num="27" count="15" type="stmt"/>
-        <line num="28" count="15" type="stmt"/>
-        <line num="29" count="15" type="stmt"/>
-        <line num="30" count="10" type="stmt"/>
-        <line num="34" count="15" type="stmt"/>
+        <line num="23" count="82" type="stmt"/>
+        <line num="24" count="82" type="stmt"/>
+        <line num="27" count="16" type="stmt"/>
+        <line num="28" count="16" type="stmt"/>
+        <line num="29" count="16" type="stmt"/>
+        <line num="30" count="15" type="stmt"/>
+        <line num="34" count="16" type="stmt"/>
         <line num="37" count="1" type="stmt"/>
         <line num="38" count="1" type="stmt"/>
         <line num="39" count="1" type="stmt"/>
@@ -2377,10 +2404,10 @@
         <line num="36" count="8" type="stmt"/>
         <line num="38" count="0" type="stmt"/>
         <line num="39" count="0" type="stmt"/>
-        <line num="45" count="257" type="stmt"/>
+        <line num="45" count="330" type="stmt"/>
         <line num="47" count="11" type="stmt"/>
         <line num="49" count="11" type="stmt"/>
-        <line num="57" count="77" type="cond" truecount="2" falsecount="0"/>
+        <line num="57" count="80" type="cond" truecount="2" falsecount="0"/>
         <line num="58" count="21" type="stmt"/>
         <line num="59" count="21" type="stmt"/>
         <line num="60" count="21" type="stmt"/>
@@ -2411,16 +2438,32 @@
         <line num="104" count="6" type="stmt"/>
         <line num="110" count="11" type="stmt"/>
         <line num="111" count="81" type="stmt"/>
-        <line num="118" count="543" type="stmt"/>
-        <line num="119" count="172" type="cond" truecount="2" falsecount="0"/>
-        <line num="123" count="80" type="stmt"/>
-        <line num="124" count="80" type="cond" truecount="2" falsecount="0"/>
-        <line num="129" count="45" type="stmt"/>
-        <line num="130" count="140" type="stmt"/>
-        <line num="131" count="140" type="stmt"/>
-        <line num="132" count="45" type="cond" truecount="2" falsecount="0"/>
+        <line num="118" count="761" type="stmt"/>
+        <line num="119" count="245" type="cond" truecount="2" falsecount="0"/>
+        <line num="123" count="133" type="stmt"/>
+        <line num="124" count="133" type="cond" truecount="2" falsecount="0"/>
+        <line num="129" count="56" type="stmt"/>
+        <line num="130" count="173" type="stmt"/>
+        <line num="131" count="173" type="stmt"/>
+        <line num="132" count="56" type="cond" truecount="2" falsecount="0"/>
         <line num="133" count="13" type="cond" truecount="1" falsecount="1"/>
         <line num="134" count="13" type="stmt"/>
+      </file>
+      <file name="readingDraft.ts" path="/Users/zinminkhant/Desktop/Side Project/Tarot/Tarot_app/src/store/readingDraft.ts">
+        <metrics statements="13" coveredstatements="13" conditionals="18" coveredconditionals="18" methods="7" coveredmethods="7"/>
+        <line num="8" count="8" type="stmt"/>
+        <line num="29" count="8" type="stmt"/>
+        <line num="31" count="8" type="stmt"/>
+        <line num="33" count="23" type="stmt"/>
+        <line num="34" count="25" type="stmt"/>
+        <line num="39" count="8" type="stmt"/>
+        <line num="40" count="93" type="stmt"/>
+        <line num="51" count="35" type="cond" truecount="5" falsecount="0"/>
+        <line num="52" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="53" count="5" type="stmt"/>
+        <line num="55" count="5" type="cond" truecount="3" falsecount="0"/>
+        <line num="57" count="6" type="cond" truecount="3" falsecount="0"/>
+        <line num="58" count="5" type="cond" truecount="4" falsecount="0"/>
       </file>
       <file name="settings.ts" path="/Users/zinminkhant/Desktop/Side Project/Tarot/Tarot_app/src/store/settings.ts">
         <metrics statements="29" coveredstatements="21" conditionals="4" coveredconditionals="2" methods="21" coveredmethods="16"/>
@@ -2452,14 +2495,14 @@
         <line num="118" count="0" type="stmt"/>
         <line num="119" count="2" type="stmt"/>
         <line num="124" count="10" type="stmt"/>
-        <line num="125" count="135" type="stmt"/>
+        <line num="125" count="139" type="stmt"/>
       </file>
       <file name="sync.ts" path="/Users/zinminkhant/Desktop/Side Project/Tarot/Tarot_app/src/store/sync.ts">
         <metrics statements="93" coveredstatements="86" conditionals="50" coveredconditionals="42" methods="24" coveredmethods="21"/>
         <line num="47" count="10" type="stmt"/>
         <line num="51" count="24" type="stmt"/>
         <line num="56" count="10" type="cond" truecount="2" falsecount="0"/>
-        <line num="59" count="142" type="stmt"/>
+        <line num="59" count="145" type="stmt"/>
         <line num="62" count="21" type="cond" truecount="1" falsecount="1"/>
         <line num="64" count="10" type="stmt"/>
         <line num="66" count="10" type="stmt"/>
@@ -2544,8 +2587,8 @@
         <line num="219" count="10" type="cond" truecount="5" falsecount="1"/>
         <line num="220" count="10" type="stmt"/>
         <line num="230" count="10" type="stmt"/>
-        <line num="231" count="125" type="cond" truecount="5" falsecount="0"/>
-        <line num="232" count="79" type="stmt"/>
+        <line num="231" count="129" type="cond" truecount="5" falsecount="0"/>
+        <line num="232" count="83" type="stmt"/>
         <line num="233" count="46" type="stmt"/>
         <line num="234" count="46" type="cond" truecount="4" falsecount="0"/>
         <line num="235" count="2" type="stmt"/>
@@ -2554,7 +2597,7 @@
         <metrics statements="4" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="2"/>
         <line num="11" count="10" type="stmt"/>
         <line num="13" count="10" type="stmt"/>
-        <line num="16" count="25" type="stmt"/>
+        <line num="16" count="26" type="stmt"/>
         <line num="17" count="0" type="stmt"/>
       </file>
     </package>
@@ -2605,7 +2648,7 @@
         <line num="12" count="12" type="stmt"/>
         <line num="31" count="104" type="stmt"/>
         <line num="34" count="12" type="stmt"/>
-        <line num="35" count="1287" type="cond" truecount="4" falsecount="0"/>
+        <line num="35" count="1339" type="cond" truecount="4" falsecount="0"/>
         <line num="37" count="12" type="stmt"/>
         <line num="38" count="10" type="cond" truecount="4" falsecount="0"/>
         <line num="39" count="12" type="stmt"/>
@@ -2703,22 +2746,22 @@
       <file name="ThemeContext.tsx" path="/Users/zinminkhant/Desktop/Side Project/Tarot/Tarot_app/src/theme/ThemeContext.tsx">
         <metrics statements="17" coveredstatements="16" conditionals="12" coveredconditionals="5" methods="9" coveredmethods="9"/>
         <line num="23" count="10" type="stmt"/>
-        <line num="26" count="81" type="cond" truecount="1" falsecount="1"/>
+        <line num="26" count="84" type="cond" truecount="1" falsecount="1"/>
         <line num="27" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="31" count="82" type="stmt"/>
-        <line num="32" count="267" type="stmt"/>
-        <line num="33" count="267" type="stmt"/>
-        <line num="34" count="267" type="stmt"/>
-        <line num="35" count="247" type="stmt"/>
-        <line num="36" count="82" type="stmt"/>
-        <line num="38" count="82" type="stmt"/>
-        <line num="39" count="81" type="cond" truecount="2" falsecount="2"/>
-        <line num="40" count="81" type="stmt"/>
-        <line num="46" count="8081" type="stmt"/>
-        <line num="50" count="82" type="stmt"/>
-        <line num="54" count="12477" type="stmt"/>
-        <line num="55" count="12477" type="cond" truecount="1" falsecount="1"/>
-        <line num="56" count="12477" type="stmt"/>
+        <line num="31" count="85" type="stmt"/>
+        <line num="32" count="276" type="stmt"/>
+        <line num="33" count="276" type="stmt"/>
+        <line num="34" count="276" type="stmt"/>
+        <line num="35" count="256" type="stmt"/>
+        <line num="36" count="85" type="stmt"/>
+        <line num="38" count="85" type="stmt"/>
+        <line num="39" count="84" type="cond" truecount="2" falsecount="2"/>
+        <line num="40" count="84" type="stmt"/>
+        <line num="46" count="9041" type="stmt"/>
+        <line num="50" count="85" type="stmt"/>
+        <line num="54" count="13915" type="stmt"/>
+        <line num="55" count="13915" type="cond" truecount="1" falsecount="1"/>
+        <line num="56" count="13915" type="stmt"/>
       </file>
       <file name="colors.ts" path="/Users/zinminkhant/Desktop/Side Project/Tarot/Tarot_app/src/theme/colors.ts">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
@@ -2738,10 +2781,10 @@
         <line num="15" count="10" type="stmt"/>
         <line num="24" count="10" type="stmt"/>
         <line num="36" count="10" type="stmt"/>
-        <line num="46" count="8134" type="cond" truecount="2" falsecount="0"/>
+        <line num="46" count="9099" type="cond" truecount="2" falsecount="0"/>
         <line num="47" count="490" type="cond" truecount="1" falsecount="3"/>
         <line num="48" count="490" type="cond" truecount="2" falsecount="0"/>
-        <line num="52" count="8077" type="cond" truecount="2" falsecount="0"/>
+        <line num="52" count="9037" type="cond" truecount="2" falsecount="0"/>
       </file>
     </package>
     <package name="src.utils">
@@ -2750,21 +2793,21 @@
         <metrics statements="35" coveredstatements="35" conditionals="44" coveredconditionals="42" methods="8" coveredmethods="8"/>
         <line num="5" count="14" type="stmt"/>
         <line num="17" count="14" type="stmt"/>
-        <line num="42" count="151" type="cond" truecount="3" falsecount="0"/>
-        <line num="43" count="302" type="cond" truecount="1" falsecount="0"/>
-        <line num="44" count="151" type="stmt"/>
-        <line num="45" count="151" type="stmt"/>
-        <line num="46" count="151" type="stmt"/>
-        <line num="47" count="151" type="stmt"/>
-        <line num="50" count="151" type="cond" truecount="2" falsecount="0"/>
+        <line num="42" count="198" type="cond" truecount="3" falsecount="0"/>
+        <line num="43" count="396" type="cond" truecount="1" falsecount="0"/>
+        <line num="44" count="198" type="stmt"/>
+        <line num="45" count="198" type="stmt"/>
+        <line num="46" count="198" type="stmt"/>
+        <line num="47" count="198" type="stmt"/>
+        <line num="50" count="198" type="cond" truecount="2" falsecount="0"/>
         <line num="51" count="4" type="cond" truecount="2" falsecount="0"/>
         <line num="53" count="3" type="stmt"/>
         <line num="54" count="3" type="cond" truecount="2" falsecount="0"/>
-        <line num="57" count="147" type="cond" truecount="2" falsecount="0"/>
-        <line num="59" count="98" type="stmt"/>
-        <line num="60" count="98" type="cond" truecount="2" falsecount="0"/>
-        <line num="64" count="151" type="cond" truecount="2" falsecount="0"/>
-        <line num="65" count="151" type="stmt"/>
+        <line num="57" count="194" type="cond" truecount="2" falsecount="0"/>
+        <line num="59" count="118" type="stmt"/>
+        <line num="60" count="118" type="cond" truecount="2" falsecount="0"/>
+        <line num="64" count="198" type="cond" truecount="2" falsecount="0"/>
+        <line num="65" count="198" type="stmt"/>
         <line num="70" count="64" type="cond" truecount="1" falsecount="0"/>
         <line num="71" count="70" type="cond" truecount="1" falsecount="0"/>
         <line num="72" count="64" type="stmt"/>
@@ -2776,13 +2819,13 @@
         <line num="81" count="1" type="cond" truecount="1" falsecount="1"/>
         <line num="82" count="1" type="cond" truecount="1" falsecount="1"/>
         <line num="83" count="1" type="stmt"/>
-        <line num="89" count="52" type="stmt"/>
-        <line num="90" count="52" type="cond" truecount="4" falsecount="0"/>
+        <line num="89" count="61" type="stmt"/>
+        <line num="90" count="61" type="cond" truecount="4" falsecount="0"/>
         <line num="91" count="4" type="cond" truecount="4" falsecount="0"/>
         <line num="92" count="3" type="cond" truecount="4" falsecount="0"/>
         <line num="93" count="2" type="stmt"/>
-        <line num="97" count="1456" type="stmt"/>
-        <line num="101" count="699" type="stmt"/>
+        <line num="97" count="1464" type="stmt"/>
+        <line num="101" count="703" type="stmt"/>
       </file>
       <file name="hash.ts" path="/Users/zinminkhant/Desktop/Side Project/Tarot/Tarot_app/src/utils/hash.ts">
         <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
@@ -2794,11 +2837,11 @@
       </file>
       <file name="id.ts" path="/Users/zinminkhant/Desktop/Side Project/Tarot/Tarot_app/src/utils/id.ts">
         <metrics statements="5" coveredstatements="5" conditionals="1" coveredconditionals="1" methods="2" coveredmethods="2"/>
-        <line num="5" count="737" type="stmt"/>
-        <line num="6" count="737" type="stmt"/>
-        <line num="7" count="737" type="stmt"/>
-        <line num="8" count="11792" type="stmt"/>
-        <line num="9" count="737" type="stmt"/>
+        <line num="5" count="738" type="stmt"/>
+        <line num="6" count="738" type="stmt"/>
+        <line num="7" count="738" type="stmt"/>
+        <line num="8" count="11808" type="stmt"/>
+        <line num="9" count="738" type="stmt"/>
       </file>
       <file name="log.ts" path="/Users/zinminkhant/Desktop/Side Project/Tarot/Tarot_app/src/utils/log.ts">
         <metrics statements="4" coveredstatements="4" conditionals="2" coveredconditionals="1" methods="2" coveredmethods="2"/>
@@ -2811,10 +2854,10 @@
         <metrics statements="34" coveredstatements="34" conditionals="42" coveredconditionals="41" methods="12" coveredmethods="12"/>
         <line num="8" count="16" type="stmt"/>
         <line num="10" count="16" type="stmt"/>
-        <line num="17" count="4196828" type="cond" truecount="2" falsecount="0"/>
-        <line num="21" count="349224" type="stmt"/>
-        <line num="22" count="1371807" type="cond" truecount="2" falsecount="0"/>
-        <line num="24" count="14351" type="stmt"/>
+        <line num="17" count="4307099" type="cond" truecount="2" falsecount="0"/>
+        <line num="21" count="350178" type="stmt"/>
+        <line num="22" count="1408564" type="cond" truecount="2" falsecount="0"/>
+        <line num="24" count="15305" type="stmt"/>
         <line num="27" count="16" type="stmt"/>
         <line num="28" count="16" type="stmt"/>
         <line num="29" count="16" type="stmt"/>
@@ -2841,7 +2884,7 @@
         <line num="83" count="815285" type="stmt"/>
         <line num="85" count="65982" type="stmt"/>
         <line num="89" count="748378" type="cond" truecount="2" falsecount="0"/>
-        <line num="94" count="79383" type="stmt"/>
+        <line num="94" count="80326" type="stmt"/>
         <line num="99" count="65718" type="stmt"/>
       </file>
       <file name="numbers.ts" path="/Users/zinminkhant/Desktop/Side Project/Tarot/Tarot_app/src/utils/numbers.ts">
@@ -2849,25 +2892,25 @@
         <line num="1" count="15" type="stmt"/>
         <line num="5" count="110" type="stmt"/>
         <line num="10" count="20" type="stmt"/>
-        <line num="26" count="1906" type="cond" truecount="3" falsecount="0"/>
-        <line num="27" count="1906" type="cond" truecount="1" falsecount="1"/>
-        <line num="28" count="1906" type="stmt"/>
-        <line num="29" count="1906" type="cond" truecount="0" falsecount="1"/>
-        <line num="30" count="1906" type="stmt"/>
-        <line num="31" count="1906" type="cond" truecount="2" falsecount="0"/>
-        <line num="32" count="1906" type="cond" truecount="4" falsecount="0"/>
-        <line num="33" count="1906" type="cond" truecount="2" falsecount="0"/>
-        <line num="34" count="1906" type="stmt"/>
+        <line num="26" count="2700" type="cond" truecount="3" falsecount="0"/>
+        <line num="27" count="2700" type="cond" truecount="1" falsecount="1"/>
+        <line num="28" count="2700" type="stmt"/>
+        <line num="29" count="2700" type="cond" truecount="0" falsecount="1"/>
+        <line num="30" count="2700" type="stmt"/>
+        <line num="31" count="2700" type="cond" truecount="2" falsecount="0"/>
+        <line num="32" count="2700" type="cond" truecount="4" falsecount="0"/>
+        <line num="33" count="2700" type="cond" truecount="2" falsecount="0"/>
+        <line num="34" count="2700" type="stmt"/>
       </file>
       <file name="readings.ts" path="/Users/zinminkhant/Desktop/Side Project/Tarot/Tarot_app/src/utils/readings.ts">
         <metrics statements="17" coveredstatements="17" conditionals="17" coveredconditionals="15" methods="12" coveredmethods="12"/>
-        <line num="10" count="46" type="cond" truecount="2" falsecount="0"/>
-        <line num="11" count="45" type="cond" truecount="1" falsecount="1"/>
-        <line num="16" count="246" type="stmt"/>
-        <line num="17" count="82" type="cond" truecount="2" falsecount="0"/>
-        <line num="21" count="41" type="stmt"/>
-        <line num="22" count="77" type="stmt"/>
-        <line num="23" count="77" type="cond" truecount="1" falsecount="1"/>
+        <line num="10" count="73" type="cond" truecount="2" falsecount="0"/>
+        <line num="11" count="72" type="cond" truecount="1" falsecount="1"/>
+        <line num="16" count="365" type="stmt"/>
+        <line num="17" count="111" type="cond" truecount="2" falsecount="0"/>
+        <line num="21" count="52" type="stmt"/>
+        <line num="22" count="106" type="stmt"/>
+        <line num="23" count="106" type="cond" truecount="1" falsecount="1"/>
         <line num="28" count="7" type="stmt"/>
         <line num="32" count="21" type="stmt"/>
         <line num="33" count="21" type="stmt"/>

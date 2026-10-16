@@ -9,6 +9,7 @@ import { getJournalRepo, resetJournalRepo } from '@/db';
 import { dailyCard } from '@/engine';
 import { useDaily } from '@/store/daily';
 import { useJournal } from '@/store/journal';
+import { useReadingDraft } from '@/store/readingDraft';
 import { DEFAULT_SETTINGS, useSettings } from '@/store/settings';
 import { useToast } from '@/store/toast';
 import { localDateKey } from '@/utils/dates';
@@ -24,6 +25,7 @@ jest.mock('expo-sharing', () => ({
 const normalizer = (s: string) => stripZwsp(s).trim();
 
 beforeEach(() => {
+  useReadingDraft.setState({ draft: null });
   resetJournalRepo();
   useJournal.setState({ readings: [], loaded: false });
   useDaily.setState({ dateKey: null, draw: null, loading: false });

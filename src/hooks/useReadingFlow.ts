@@ -13,6 +13,7 @@ import {
 import { useHaptics } from '@/hooks/useHaptics';
 import { useReduceMotion } from '@/hooks/useReduceMotion';
 import { useJournal } from '@/store/journal';
+import { useReadingDraft, usableDraft } from '@/store/readingDraft';
 import { useSettings } from '@/store/settings';
 import { useToast } from '@/store/toast';
 import { logError } from '@/utils/log';
@@ -44,6 +45,9 @@ export function useReadingFlow(spread: Spread | undefined, initialTopic: Topic) 
   const [revealed, setRevealed] = useState<boolean[]>([]);
   const [savedId, setSavedId] = useState<string | null>(null);
   const timer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const storedDraft = useReadingDraft((s) => s.draft);
+  const saveDraft = useReadingDraft((s) => s.save);
+  const clearDraft = useReadingDraft((s) => s.clear);
 
   useEffect(
     () => () => {
@@ -55,6 +59,26 @@ export function useReadingFlow(spread: Spread | undefined, initialTopic: Topic) 
   const count = spread?.cardCount ?? 0;
   const drawn = useMemo(() => picks.map((i) => deck[i]!), [picks, deck]);
   const allRevealed = phase === 'reveal' && revealed.length === count && revealed.every(Boolean);
+
+  // Keep an unfinished reading so it can be picked up again; a finished one lives in the journal.
+  useEffect(() => {
+    if (!spread) return;
+    if (allRevealed) {
+      clearDraft();
+      return;
+    }
+    if ((phase === 'picking' || phase === 'reveal') && picks.length > 0) {
+      saveDraft({
+        spreadId: spread.id,
+        topic,
+        question,
+        deck: deck.slice(0, FAN_SIZE),
+        picks,
+        revealed,
+        savedAt: Date.now(),
+      });
+    }
+  }, [allRevealed, phase, spread, topic, question, deck, picks, revealed, saveDraft, clearDraft]);
 
   // Every finished reading is saved to the journal automatically (once).
   const saving = useRef(false);
@@ -107,6 +131,7 @@ export function useReadingFlow(spread: Spread | undefined, initialTopic: Topic) 
       setPhase('crisis');
       return;
     }
+    clearDraft();
     setDeck(prepareDeck({ reversals }));
     setPicks([]);
     setRevealed(Array.from({ length: count }, () => false));
@@ -143,7 +168,18 @@ export function useReadingFlow(spread: Spread | undefined, initialTopic: Topic) 
     setRevealed((r) => r.map(() => true));
     haptics.success();
   };
+  const pendingDraft = phase === 'setup' ? usableDraft(storedDraft, spread) : null;
+  const resume = () => {
+    if (!pendingDraft) return;
+    setTopic(pendingDraft.topic);
+    setQuestion(pendingDraft.question);
+    setDeck(pendingDraft.deck);
+    setPicks(pendingDraft.picks);
+    setRevealed(pendingDraft.revealed);
+    setPhase(pendingDraft.picks.length >= count ? 'reveal' : 'picking');
+  };
   const restart = () => {
+    clearDraft();
     setSavedId(null);
     setPhase('setup');
     setPicks([]);
@@ -171,5 +207,8 @@ export function useReadingFlow(spread: Spread | undefined, initialTopic: Topic) 
     revealAll,
     restart,
     finishShuffle,
+    pendingDraft,
+    resume,
+    discardDraft: clearDraft,
   };
 }

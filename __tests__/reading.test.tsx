@@ -1,9 +1,12 @@
+import { router } from 'expo-router';
 import { act, fireEvent, renderRouter, screen, waitFor, within } from 'expo-router/testing-library';
 
 import en from '../locales/en.json';
 
 import { CARDS } from '@/data/cards';
+import { getSpread } from '@/engine';
 import { useJournal } from '@/store/journal';
+import { DRAFT_TTL_MS, usableDraft, useReadingDraft } from '@/store/readingDraft';
 import { DEFAULT_SETTINGS, useSettings } from '@/store/settings';
 import { useToast } from '@/store/toast';
 import { stripZwsp } from '@/utils/myanmar';
@@ -11,6 +14,7 @@ import { stripZwsp } from '@/utils/myanmar';
 const normalizer = (s: string) => stripZwsp(s).trim();
 
 beforeEach(() => {
+  useReadingDraft.setState({ draft: null });
   useSettings.setState({ ...DEFAULT_SETTINGS, language: 'en', hasOnboarded: true, haptics: false });
 });
 
@@ -147,5 +151,60 @@ describe('reading flow', () => {
       useJournal.setState({ save: realSave });
       jest.restoreAllMocks();
     }
+  });
+
+  describe('resuming an unfinished reading', () => {
+    /** Leaves the reading half-done (back to Home) and opens the spread again. */
+    const leaveAndReopen = async (spreadId: string) => {
+      act(() => router.replace('/home'));
+      fireEvent.press(await screen.findByTestId(`home-spread-${spreadId}`));
+    };
+
+    it('offers to continue where you left off, with the same cards', async () => {
+      await startAndPick('three-past-present-future', [2, 7]);
+      const { draft } = useReadingDraft.getState();
+      expect(draft?.picks).toEqual([2, 7]);
+
+      await leaveAndReopen('three-past-present-future');
+      expect(await screen.findByTestId('reading-resume')).toBeTruthy();
+      fireEvent.press(screen.getByTestId('reading-resume-continue'));
+      expect(await screen.findByTestId('reading-pick-title')).toHaveTextContent(/1 to go/);
+      expect(screen.queryByTestId('reading-resume')).toBeNull();
+    });
+
+    it('lets you start fresh', async () => {
+      await startAndPick('three-past-present-future', [2]);
+      await leaveAndReopen('three-past-present-future');
+      fireEvent.press(await screen.findByTestId('reading-resume-discard'));
+      expect(useReadingDraft.getState().draft).toBeNull();
+      expect(screen.queryByTestId('reading-resume')).toBeNull();
+      expect(screen.getByTestId('reading-start')).toBeTruthy();
+    });
+
+    it('clears the draft once the reading is finished', async () => {
+      await startAndPick('one-card', [3]);
+      await revealStep();
+      fireEvent.press(screen.getByTestId('spread-card-0'));
+      await screen.findByTestId('reading-summary');
+      expect(useReadingDraft.getState().draft).toBeNull();
+    });
+
+    it('does not offer a draft of a different spread or one older than a day', () => {
+      const spread = getSpread('three-past-present-future')!;
+      const draft = {
+        spreadId: spread.id,
+        topic: 'general' as const,
+        question: '',
+        deck: Array.from({ length: 21 }, () => ({ cardId: 'major-00-fool', reversed: false })),
+        picks: [1],
+        revealed: [false, false, false],
+        savedAt: 1_000,
+      };
+      expect(usableDraft(draft, spread, 2_000)).toBe(draft);
+      expect(usableDraft(draft, getSpread('one-card'), 2_000)).toBeNull();
+      expect(usableDraft(draft, spread, 1_000 + DRAFT_TTL_MS + 1)).toBeNull();
+      expect(usableDraft({ ...draft, picks: [99] }, spread, 2_000)).toBeNull();
+      expect(usableDraft({ ...draft, revealed: [false] }, spread, 2_000)).toBeNull();
+    });
   });
 });

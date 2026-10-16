@@ -19,6 +19,7 @@ import {
 import { SpreadGlyph } from '@/components/art/SpreadGlyph';
 import { CrisisCard } from '@/components/reading/CrisisCard';
 import { PositionCard } from '@/components/reading/PositionCard';
+import { ResumeCard } from '@/components/reading/ResumeCard';
 import { SetupForm } from '@/components/reading/SetupForm';
 import { getSpread, summarize, type Topic, TOPICS } from '@/engine';
 import { FAN_SIZE, useReadingFlow } from '@/hooks/useReadingFlow';
@@ -54,6 +55,7 @@ export default function Reading() {
   const {
     phase, setPhase, topic, setTopic, question, setQuestion, count, picks, drawn, revealed,
     allRevealed, reversals, start, pick, pickForMe, reveal, revealAll, restart, finishShuffle,
+    pendingDraft, resume, discardDraft,
   } = flow;
 
   if (!spread) {
@@ -104,6 +106,8 @@ export default function Reading() {
           {t('reading.questionShown', { question: question.trim() })}
         </AppText>
       ) : null}
+
+      {pendingDraft ? <ResumeCard onContinue={resume} onDiscard={discardDraft} /> : null}
 
       {phase === 'setup' ? (
         <SetupForm
