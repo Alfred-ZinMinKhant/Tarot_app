@@ -61,4 +61,18 @@ describe('birth chart screen', () => {
     expect(await screen.findByTestId('chart-form')).toBeTruthy();
     jest.restoreAllMocks();
   });
+
+  it('accepts Burmese digits typed on a Myanmar keyboard', async () => {
+    renderRouter('./app', { initialUrl: '/birth-chart' });
+    fireEvent.changeText(await screen.findByTestId('chart-day'), '၅');
+    fireEvent.changeText(screen.getByTestId('chart-month'), '၅');
+    fireEvent.changeText(screen.getByTestId('chart-year'), '၁၉၉၅');
+    fireEvent.changeText(screen.getByTestId('chart-hour'), '၄');
+    fireEvent.changeText(screen.getByTestId('chart-minute'), '၁၅');
+    fireEvent.changeText(screen.getByTestId('chart-place'), 'Yangon');
+    fireEvent.press(await screen.findByTestId('chart-place-Yangon'));
+    fireEvent.press(screen.getByTestId('chart-save'));
+    expect(await screen.findByTestId('chart-sun')).toBeTruthy();
+    expect(useSettings.getState().birth).toMatchObject({ date: '1995-05-05', time: '04:15' });
+  });
 });

@@ -17,7 +17,7 @@ import { useToast } from '@/store/toast';
 import { spacing } from '@/theme/spacing';
 import { pad2 } from '@/utils/dates';
 import { logError } from '@/utils/log';
-import { formatNumber } from '@/utils/numbers';
+import { formatNumber, toLatinDigits } from '@/utils/numbers';
 
 /** Birth chart: enter a birth date, optional time and place; see Sun, Moon, Rising and the planets. */
 export default function BirthChartScreen() {
@@ -44,13 +44,15 @@ export default function BirthChartScreen() {
   const num = (n: number, opts?: { grouping?: boolean }) => formatNumber(n, { burmeseNumerals: numerals, ...opts });
 
   const save = () => {
-    const date = `${year.padStart(4, '0')}-${pad2(Number(month))}-${pad2(Number(day))}`;
+    // Digits typed on a Myanmar keyboard (၁၅) count the same as Latin ones.
+    const [dd, mm, yyyy, hh, min] = [day, month, year, hour, minute].map((v) => toLatinDigits(v.trim()));
+    const date = `${yyyy!.padStart(4, '0')}-${pad2(Number(mm))}-${pad2(Number(dd))}`;
     if (!isBirthDate(date)) return setError(t('chart.errorDate'));
     let time: string | null = null;
     if (!unknownTime) {
-      const h = Number(hour);
-      const m = Number(minute || '0');
-      if (hour === '' || !Number.isInteger(h) || h < 0 || h > 23 || !Number.isInteger(m) || m < 0 || m > 59) {
+      const h = Number(hh);
+      const m = Number(min || '0');
+      if (hh === '' || !Number.isInteger(h) || h < 0 || h > 23 || !Number.isInteger(m) || m < 0 || m > 59) {
         return setError(t('chart.errorTime', { n: num(24), h: num(14), m: num(30) }));
       }
       time = `${pad2(h)}:${pad2(m)}`;
