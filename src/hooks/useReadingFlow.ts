@@ -24,6 +24,8 @@ export type ReadingPhase = 'setup' | 'crisis' | 'shuffling' | 'picking' | 'revea
 export const FAN_SIZE = 21;
 const SHUFFLE_MS = 1600;
 const AFTER_LAST_PICK_MS = 350;
+/** Gap between cards when "Choose for me" deals them one by one. */
+const AUTO_PICK_STEP_MS = 90;
 
 /**
  * The reading state machine: setup -> shuffling -> picking -> reveal, with the crisis detour, the
@@ -45,6 +47,8 @@ export function useReadingFlow(spread: Spread | undefined, initialTopic: Topic) 
   const [revealed, setRevealed] = useState<boolean[]>([]);
   const [savedId, setSavedId] = useState<string | null>(null);
   const timer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  // True while "Choose for me" is dealing cards, so a stray tap can't pick the same card twice.
+  const autoPicking = useRef(false);
   const storedDraft = useReadingDraft((s) => s.draft);
   const saveDraft = useReadingDraft((s) => s.save);
   const clearDraft = useReadingDraft((s) => s.clear);
@@ -132,6 +136,7 @@ export function useReadingFlow(spread: Spread | undefined, initialTopic: Topic) 
       return;
     }
     clearDraft();
+    autoPicking.current = false;
     setDeck(prepareDeck({ reversals }));
     setPicks([]);
     setRevealed(Array.from({ length: count }, () => false));
@@ -141,7 +146,8 @@ export function useReadingFlow(spread: Spread | undefined, initialTopic: Topic) 
   };
 
   const pick = (index: number) => {
-    if (phase !== 'picking' || picks.includes(index) || picks.length >= count) return;
+    if (phase !== 'picking' || autoPicking.current || picks.includes(index) || picks.length >= count)
+      return;
     const next = [...picks, index];
     setPicks(next);
     haptics.select();
@@ -149,15 +155,37 @@ export function useReadingFlow(spread: Spread | undefined, initialTopic: Topic) 
   };
 
   const pickForMe = () => {
+    if (autoPicking.current) return;
     const remaining = Array.from({ length: FAN_SIZE }, (_, i) => i).filter(
       (i) => !picks.includes(i),
     );
-    const next = [...picks];
-    while (next.length < count && remaining.length)
-      next.push(remaining.splice(secureRandom(remaining.length), 1)[0]!);
-    setPicks(next);
-    haptics.select();
-    later(() => setPhase('reveal'), AFTER_LAST_PICK_MS);
+    const chosen: number[] = [];
+    while (picks.length + chosen.length < count && remaining.length)
+      chosen.push(remaining.splice(secureRandom(remaining.length), 1)[0]!);
+    if (reduceMotion) {
+      setPicks([...picks, ...chosen]);
+      haptics.select();
+      later(() => setPhase('reveal'), AFTER_LAST_PICK_MS);
+      return;
+    }
+    // Deal the cards one at a time, like picking by hand. Mounting the whole board and lifting every
+    // fan card in a single frame froze the Celtic Cross (10 cards) until Android killed the app.
+    autoPicking.current = true;
+    let dealt = 0;
+    const deal = () => {
+      const index = chosen[dealt++]!;
+      setPicks((p) => [...p, index]);
+      haptics.select();
+      if (dealt < chosen.length) {
+        later(deal, AUTO_PICK_STEP_MS);
+      } else {
+        later(() => {
+          autoPicking.current = false;
+          setPhase('reveal');
+        }, AFTER_LAST_PICK_MS);
+      }
+    };
+    deal();
   };
 
   const reveal = (i: number) => {
@@ -181,6 +209,7 @@ export function useReadingFlow(spread: Spread | undefined, initialTopic: Topic) 
   const restart = () => {
     clearDraft();
     setSavedId(null);
+    autoPicking.current = false;
     setPhase('setup');
     setPicks([]);
     setDeck([]);
