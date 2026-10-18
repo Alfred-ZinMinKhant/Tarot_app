@@ -9,7 +9,8 @@
     "selected": "Selected",
     "errorTitle": "Something went wrong",
     "errorBody": "The app hit an unexpected problem. Your journal is safe on this phone.",
-    "errorRetry": "Try again"
+    "errorRetry": "Try again",
+    "backToTop": "Back to top"
   },
   "tabs": {
     "home": "Home",

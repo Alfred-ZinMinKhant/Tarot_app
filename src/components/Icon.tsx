@@ -11,6 +11,7 @@ export type IconName =
   | 'globe'
   | 'check'
   | 'back'
+  | 'up'
   | 'search'
   | 'close'
   | 'lock'
@@ -68,6 +69,7 @@ export function Icon({ name, size = 24, color }: Props) {
       )}
       {name === 'check' && <Path {...common} d="M5 12.5 10 17l9-10" />}
       {name === 'back' && <Path {...common} d="M15 5l-7 7 7 7" />}
+      {name === 'up' && <Path {...common} d="M5 15l7-7 7 7" />}
       {name === 'search' && (
         <>
           <Circle {...common} cx={10.5} cy={10.5} r={6} />

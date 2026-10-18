@@ -428,7 +428,8 @@
     "home.chartNudgeDismiss",
     "onboarding.chartTitle",
     "onboarding.chartBody",
-    "onboarding.chartSee"
+    "onboarding.chartSee",
+    "common.backToTop"
   ],
   "reviewed": []
 }
