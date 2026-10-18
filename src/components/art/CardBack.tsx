@@ -1,29 +1,39 @@
-import { StyleSheet, View } from 'react-native';
-import { SvgXml } from 'react-native-svg';
+import { memo } from 'react';
+import { Image, StyleSheet, View } from 'react-native';
 
-import { CARD_ASPECT, CARD_BACK_SVG } from './cardBackSvg';
+import { CARD_ASPECT } from './cardBackSvg';
 
-type Props = { width: number; accessibilityLabel?: string; testID?: string };
+// Rendered from the SVG source by `npm run render:card-back`. A bitmap is far cheaper than building
+// the SVG tree for every card: the Celtic Cross mounts over thirty backs at once.
+const CARD_BACK_IMAGE = require('../../../assets/images/card-back.png');
+
+type Props = {
+  width: number;
+  /** Skip the drop shadow; used where many backs are on screen at once (Android draws each shadow offscreen). */
+  flat?: boolean;
+  accessibilityLabel?: string;
+  testID?: string;
+};
 
 /** The original indigo-and-gold card back (lotus, kanok scrolls, crescent moon). */
-export function CardBack({ width, accessibilityLabel, testID }: Props) {
+export const CardBack = memo(function CardBack({ width, flat, accessibilityLabel, testID }: Props) {
   const height = width / CARD_ASPECT;
   return (
     <View
-      style={[styles.shadow, { width, height, borderRadius: width * 0.06 }]}
+      style={[styles.base, !flat && styles.shadow, { width, height, borderRadius: width * 0.06 }]}
       accessible={!!accessibilityLabel}
       accessibilityRole={accessibilityLabel ? 'image' : undefined}
       accessibilityLabel={accessibilityLabel}
       testID={testID}
     >
-      <SvgXml xml={CARD_BACK_SVG} width={width} height={height} />
+      <Image source={CARD_BACK_IMAGE} style={{ width, height }} resizeMode="cover" />
     </View>
   );
-}
+});
 
 const styles = StyleSheet.create({
+  base: { overflow: 'hidden' },
   shadow: {
-    overflow: 'hidden',
     shadowColor: '#000',
     shadowOpacity: 0.35,
     shadowRadius: 8,

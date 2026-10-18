@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { memo, useCallback, useEffect, useRef } from 'react';
 import { Pressable, StyleSheet, View } from 'react-native';
 import Animated, { useAnimatedStyle, useSharedValue, withTiming } from 'react-native-reanimated';
 
@@ -21,7 +21,7 @@ const MAX_ANGLE = 28;
 /** How far the outermost cards dip below the centre ones. */
 const ARC_DROP = 26;
 
-function FanCard({
+const FanCard = memo(function FanCard({
   index,
   count,
   width,
@@ -71,11 +71,11 @@ function FanCard({
         importantForAccessibility={picked ? 'no-hide-descendants' : 'auto'}
         testID={`fan-card-${index}`}
       >
-        <CardBack width={cardWidth} />
+        <CardBack width={cardWidth} flat />
       </Pressable>
     </Animated.View>
   );
-}
+});
 
 /** Face-down cards spread in an arc; the user taps the ones that call to them. */
 export function FanDeck({ count, picked, onPick, width, disabled = false, cardLabel }: Props) {
@@ -83,6 +83,12 @@ export function FanDeck({ count, picked, onPick, width, disabled = false, cardLa
   const cardHeight = cardWidth / CARD_ASPECT;
   const height = cardHeight + ARC_DROP + 64;
   const taken = new Set(picked);
+  // A stable handler lets the memoized fan cards skip re-rendering when only another card is picked.
+  const onPickRef = useRef(onPick);
+  useEffect(() => {
+    onPickRef.current = onPick;
+  }, [onPick]);
+  const pickCard = useCallback((i: number) => onPickRef.current(i), []);
   return (
     <View style={{ width, height }} testID="fan-deck">
       {Array.from({ length: count }, (_, i) => (
@@ -95,7 +101,7 @@ export function FanDeck({ count, picked, onPick, width, disabled = false, cardLa
           cardHeight={cardHeight}
           picked={taken.has(i)}
           disabled={disabled}
-          onPick={onPick}
+          onPick={pickCard}
           label={cardLabel(i)}
         />
       ))}
