@@ -6,7 +6,7 @@ import { AppText, Button, Card, DailyCardPanel, Header, Icon, ReadingRow, Screen
 import { SignPanel } from '@/components/SignPanel';
 import { SpreadGlyph } from '@/components/art/SpreadGlyph';
 import { isPremiumSpread } from '@/premium/features';
-import { useUnlocked } from '@/store/premium';
+import { useSpreadsUnlocked } from '@/store/spreadAccess';
 import { SPREADS } from '@/engine';
 import { useLanguage } from '@/hooks/useLanguage';
 import { useNumberFormat } from '@/hooks/useNumberFormat';
@@ -23,7 +23,7 @@ export default function Home() {
   const { colors } = useAppTheme();
   const burmeseNumerals = useSettings((s) => s.burmeseNumerals);
   const recent = useJournal((s) => s.readings).slice(0, 3);
-  const unlocked = useUnlocked();
+  const unlocked = useSpreadsUnlocked();
   const name = useSettings((s) => s.name).trim();
   const hasChart = useSettings((s) => s.birth !== null);
   const nudgeDismissed = useSettings((s) => s.chartNudgeDismissed);

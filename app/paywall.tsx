@@ -10,7 +10,7 @@ import { useLanguage } from '@/hooks/useLanguage';
 import { useNumberFormat } from '@/hooks/useNumberFormat';
 import { FREE_SHARES_PER_MONTH } from '@/premium/features';
 import type { PremiumPackage } from '@/premium/service';
-import { useAds, useRewardedAvailable } from '@/store/ads';
+import { rewardedConfigured, useAds, useRewardedAvailable } from '@/store/ads';
 import { purchasesAvailable, usePremium } from '@/store/premium';
 import { useToast } from '@/store/toast';
 import { MIN_TAP, radius, spacing } from '@/theme/spacing';
@@ -80,6 +80,28 @@ export default function Paywall() {
       close();
     } else toast(result === false ? t('premium.nothingToRestore') : t('premium.restoreFailed'));
   };
+
+  // No Premium on sale, but a rewarded ad unlocks this one reading.
+  if (!available && !p.isPremium && rewardedConfigured()) {
+    return (
+      <Screen testID="screen-paywall-ad">
+        <BackButton fallback="/home" />
+        <Header title={t('ads.unlockTitle')} subtitle={why ?? t('ads.unlockBody')} />
+        {spread && rewardedAvailable ? (
+          <Button
+            label={t('ads.watchToUnlock')}
+            onPress={watchAd}
+            loading={busy === 'ad'}
+            testID="paywall-watch-ad"
+          />
+        ) : (
+          <AppText tone="textMuted" testID="paywall-ad-unavailable">
+            {t('ads.unavailable')}
+          </AppText>
+        )}
+      </Screen>
+    );
+  }
 
   if (p.isPremium || !available) {
     return (

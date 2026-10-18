@@ -46,6 +46,9 @@ export function ensureAdsService(create: () => AdsService | null): void {
 /** True when this build shows ads at all. */
 export const adsAvailable = (): boolean => !!service;
 
+/** True when a rewarded ad unit is configured, so Premium spreads can be unlocked by watching one. */
+export const rewardedConfigured = (): boolean => !!service?.hasRewarded();
+
 /** Spreads the viewer earned a one-off reading of by watching a rewarded ad (memory only). */
 const grants = new Set<string>();
 

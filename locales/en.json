@@ -477,6 +477,8 @@
     "disclaimer": "Astrology is shared for entertainment and reflection. It doesn't describe your health, money or future."
   },
   "ads": {
+    "unlockTitle": "Unlock this reading",
+    "unlockBody": "Watch a short ad to open this reading once.",
     "watchToUnlock": "Watch a short ad to unlock this reading once",
     "unavailable": "No ad is available right now. Please try again later.",
     "notFinished": "Watch the whole ad to unlock the reading.",

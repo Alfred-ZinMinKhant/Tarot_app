@@ -2,7 +2,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import { create } from 'zustand';
 import { createJSONStorage, persist } from 'zustand/middleware';
 
-import { FREE_SHARES_PER_MONTH, isPremiumSpread, monthKey } from '@/premium/features';
+import { FREE_SHARES_PER_MONTH, monthKey } from '@/premium/features';
 import type { PremiumPackage, PurchaseOutcome, PurchasesService } from '@/premium/service';
 import { logError } from '@/utils/log';
 
@@ -117,11 +117,6 @@ export const usePremium = create<PremiumState>()(
 export function useUnlocked(): boolean {
   const isPremium = usePremium((s) => s.isPremium);
   return isPremium || !purchasesAvailable();
-}
-
-export function useSpreadLocked(spreadId: string): boolean {
-  const unlocked = useUnlocked();
-  return isPremiumSpread(spreadId) && !unlocked;
 }
 
 /** Free image shares left this month, or null when unlimited. */

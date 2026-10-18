@@ -94,6 +94,43 @@ describe('ads', () => {
   });
 });
 
+describe('a build with rewarded ads but no Premium for sale', () => {
+  const open = async (spreadId: string) => {
+    setPurchasesService(null);
+    renderRouter('./app', { initialUrl: '/home' });
+    await startAds();
+    fireEvent.press(await screen.findByTestId(`home-spread-${spreadId}`));
+  };
+
+  it('locks the Premium spreads behind the rewarded ad', async () => {
+    await open('celtic-cross');
+    expect(await screen.findByTestId('screen-paywall-ad')).toBeTruthy();
+    expect(screen.queryByTestId('paywall-buy')).toBeNull();
+    fireEvent.press(screen.getByTestId('paywall-watch-ad'));
+    expect(await screen.findByTestId('reading-start')).toBeTruthy();
+    expect(ads.shown).toBe(1);
+  });
+
+  it('keeps the spread closed when the ad is dismissed early', async () => {
+    ads.nextReward = 'closed';
+    await open('love');
+    fireEvent.press(await screen.findByTestId('paywall-watch-ad'));
+    expect(await screen.findByText(en.ads.notFinished)).toBeTruthy();
+    expect(screen.getByTestId('screen-paywall-ad')).toBeTruthy();
+  });
+
+  it('leaves the free spreads open and the share limit off', async () => {
+    await open('three-past-present-future');
+    expect(await screen.findByTestId('reading-start')).toBeTruthy();
+  });
+
+  it('opens everything when there is no rewarded ad unit either', async () => {
+    ads.rewarded = false;
+    await open('celtic-cross');
+    expect(await screen.findByTestId('reading-start')).toBeTruthy();
+  });
+});
+
 describe('rewarded ad unlock', () => {
   const openPaywall = async () => {
     renderRouter('./app', { initialUrl: '/home' });
