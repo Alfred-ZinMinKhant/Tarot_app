@@ -6,6 +6,7 @@ import { AppText, Button, Card, DailyCardPanel, Header, Icon, ReadingRow, Screen
 import { SignPanel } from '@/components/SignPanel';
 import { SpreadGlyph } from '@/components/art/SpreadGlyph';
 import { isPremiumSpread } from '@/premium/features';
+import { purchasesAvailable } from '@/store/premium';
 import { useSpreadsUnlocked } from '@/store/spreadAccess';
 import { SPREADS } from '@/engine';
 import { useLanguage } from '@/hooks/useLanguage';
@@ -24,6 +25,7 @@ export default function Home() {
   const burmeseNumerals = useSettings((s) => s.burmeseNumerals);
   const recent = useJournal((s) => s.readings).slice(0, 3);
   const unlocked = useSpreadsUnlocked();
+  const lockBadge = t(purchasesAvailable() ? 'premium.badge' : 'ads.badge');
   const name = useSettings((s) => s.name).trim();
   const hasChart = useSettings((s) => s.birth !== null);
   const nudgeDismissed = useSettings((s) => s.chartNudgeDismissed);
@@ -92,7 +94,7 @@ export default function Home() {
                     })
               }
               accessibilityRole="button"
-              accessibilityLabel={`${spread[language].name}. ${spread[language].description}${locked ? `. ${t('premium.badge')}` : ''}`}
+              accessibilityLabel={`${spread[language].name}. ${spread[language].description}${locked ? `. ${lockBadge}` : ''}`}
               testID={`home-spread-${spread.id}`}
               style={({ pressed }) => [
                 styles.spread,
@@ -124,7 +126,7 @@ export default function Home() {
                 >
                   <Icon name="lock" size={14} color={colors.primary} />
                   <AppText variant="caption" tone="primary" bold>
-                    {t('premium.badge')}
+                    {lockBadge}
                   </AppText>
                 </View>
               ) : (

@@ -477,6 +477,10 @@
     "disclaimer": "Astrology is shared for entertainment and reflection. It doesn't describe your health, money or future."
   },
   "ads": {
+    "badge": "Watch an ad",
+    "see": "Unlock this reading",
+    "lockedBody": "This spread opens with a short ad. The Card of the Day, one-card and three-card readings stay free.",
+    "reasonSpread": "{{spread}} opens with a short ad.",
     "unlockTitle": "Unlock this reading",
     "unlockBody": "Watch a short ad to open this reading once.",
     "watchToUnlock": "Watch a short ad to unlock this reading once",

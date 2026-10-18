@@ -86,7 +86,10 @@ export default function Paywall() {
     return (
       <Screen testID="screen-paywall-ad">
         <BackButton fallback="/home" />
-        <Header title={t('ads.unlockTitle')} subtitle={why ?? t('ads.unlockBody')} />
+        <Header
+          title={t('ads.unlockTitle')}
+          subtitle={spread ? t('ads.reasonSpread', { spread: spread[lang].name }) : t('ads.unlockBody')}
+        />
         {spread && rewardedAvailable ? (
           <Button
             label={t('ads.watchToUnlock')}

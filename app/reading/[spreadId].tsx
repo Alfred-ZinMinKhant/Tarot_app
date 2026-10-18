@@ -26,6 +26,7 @@ import { FAN_SIZE, useReadingFlow } from '@/hooks/useReadingFlow';
 import { useLanguage } from '@/hooks/useLanguage';
 import { useNumberFormat } from '@/hooks/useNumberFormat';
 import { consumeSpreadGrant, useAds } from '@/store/ads';
+import { purchasesAvailable } from '@/store/premium';
 import { useSpreadLocked } from '@/store/spreadAccess';
 import { useSettings } from '@/store/settings';
 import { spacing } from '@/theme/spacing';
@@ -86,9 +87,9 @@ export default function Reading() {
     return (
       <Screen testID="screen-reading-locked">
         <BackButton fallback="/home" />
-        <EmptyState icon="cards" title={spread[lang].name} body={t('premium.lockedBody')} />
+        <EmptyState icon="cards" title={spread[lang].name} body={t(purchasesAvailable() ? 'premium.lockedBody' : 'ads.lockedBody')} />
         <Button
-          label={t('premium.see')}
+          label={t(purchasesAvailable() ? 'premium.see' : 'ads.see')}
           onPress={() =>
             router.replace({ pathname: '/paywall', params: { reason: `spread:${spread.id}` } })
           }
