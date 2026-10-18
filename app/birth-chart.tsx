@@ -1,19 +1,19 @@
 import { useRouter } from 'expo-router';
 import { useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Pressable, StyleSheet, View } from 'react-native';
+import { Pressable } from 'react-native';
 
 import { cardForPlanet, cardForSign } from '@/astro/astroCards';
 import { computeChart } from '@/astro/chart';
-import { bigThreeReading, placementLine, planetMeaning, planetName, zodiacName } from '@/astro/readings';
+import { bigThreeReading, planetName, zodiacName } from '@/astro/readings';
 import { AppText, BackButton, Button, Card, Header, Screen } from '@/components';
 import { BirthFormFields } from '@/components/BirthFormFields';
-import { ChartWheel } from '@/components/ChartWheel';
+import { BigThreeCard, ChartHero, PlacementRow } from '@/components/BirthChartParts';
 import { useBirthForm } from '@/hooks/useBirthForm';
 import { useLanguage } from '@/hooks/useLanguage';
 import { useSettings } from '@/store/settings';
 import { useToast } from '@/store/toast';
-import { spacing } from '@/theme/spacing';
+import { formatDate } from '@/utils/dates';
 import { logError } from '@/utils/log';
 import { formatNumber } from '@/utils/numbers';
 
@@ -49,6 +49,16 @@ export default function BirthChartScreen() {
     }
   }, [birth]);
 
+  const summary = birth
+    ? [
+        formatDate(new Date(Number(birth.date.slice(0, 4)), Number(birth.date.slice(5, 7)) - 1, Number(birth.date.slice(8))), lang, { style: 'long', burmeseNumerals: numerals }),
+        birth.time ? birth.time : null,
+        birth.place.name,
+      ]
+        .filter(Boolean)
+        .join(' · ')
+    : '';
+
   const openCard = (id?: string) => id && router.push({ pathname: '/card/[id]', params: { id } });
 
   return (
@@ -80,71 +90,75 @@ export default function BirthChartScreen() {
 
       {!editing && birth && chart ? (
         <>
-          <Card testID="chart-result">
-            <View style={styles.center}>
-              <ChartWheel chart={chart} accessibilityLabel={t('chart.wheelA11y')} />
-            </View>
-            {!chart.timeKnown ? (
-              <AppText variant="caption" tone="textMuted">
-                {t('chart.noTimeNote')}
-              </AppText>
-            ) : null}
-          </Card>
+          <ChartHero
+            chart={chart}
+            lang={lang}
+            wheelLabel={t('chart.wheelA11y')}
+            summary={summary}
+            note={!chart.timeKnown ? t('chart.noTimeNote') : undefined}
+          />
 
-          <Card>
-            <AppText variant="heading" accessibilityRole="header">
-              {t('chart.bigThree')}
-            </AppText>
-            {(['sun', 'moon'] as const).map((kind) => {
-              const p = chart.planets.find((x) => x.id === kind)!;
-              return (
-                <View key={kind} style={styles.block} testID={`chart-${kind}`}>
-                  <AppText bold>{placementLine(p, lang)}</AppText>
-                  <AppText>{bigThreeReading(kind, p.sign, lang)}</AppText>
-                  {kind === 'moon' && chart.moonSignAmbiguous ? (
-                    <AppText variant="caption" tone="textMuted">
-                      {t('chart.moonMaybe', {
+          <AppText variant="heading" accessibilityRole="header">
+            {t('chart.bigThree')}
+          </AppText>
+          {(['sun', 'moon'] as const).map((kind) => {
+            const p = chart.planets.find((x) => x.id === kind)!;
+            return (
+              <BigThreeCard
+                key={kind}
+                testID={`chart-${kind}`}
+                kind={kind}
+                label={planetName(kind, lang)}
+                sign={p.sign}
+                lang={lang}
+                reading={bigThreeReading(kind, p.sign, lang)}
+                footnote={
+                  kind === 'moon' && chart.moonSignAmbiguous
+                    ? t('chart.moonMaybe', {
                         a: zodiacName(chart.moonSignAmbiguous[0], lang),
                         b: zodiacName(chart.moonSignAmbiguous[1], lang),
-                      })}
-                    </AppText>
-                  ) : null}
-                </View>
-              );
-            })}
-            {chart.ascendant ? (
-              <View style={styles.block} testID="chart-rising">
-                <AppText bold>{`${t('chart.rising')} · ${zodiacName(chart.ascendant.sign, lang)}`}</AppText>
-                <AppText>{bigThreeReading('rising', chart.ascendant.sign, lang)}</AppText>
-              </View>
-            ) : null}
-          </Card>
+                      })
+                    : undefined
+                }
+              />
+            );
+          })}
+          {chart.ascendant ? (
+            <BigThreeCard
+              testID="chart-rising"
+              kind="rising"
+              label={t('chart.rising')}
+              sign={chart.ascendant.sign}
+              lang={lang}
+              reading={bigThreeReading('rising', chart.ascendant.sign, lang)}
+            />
+          ) : null}
 
           <Card>
             <AppText variant="heading" accessibilityRole="header">
               {t('chart.placements')}
             </AppText>
-            {chart.planets.map((p) => {
+            {chart.planets.map((p, i) => {
               const card = cardForPlanet(p.id) ?? cardForSign(p.sign);
               return (
-                <View key={p.id} style={styles.block} testID={`chart-planet-${p.id}`}>
-                  <AppText bold>
-                    {placementLine(p, lang)}
-                    {` · ${num(p.degree)}°`}
-                    {p.retrograde && p.id !== 'node' ? ` · ${t('chart.retrograde')}` : ''}
-                    {p.house ? ` · ${t('chart.house', { n: num(p.house) })}` : ''}
-                  </AppText>
-                  <AppText variant="caption" tone="textMuted">
-                    {planetMeaning(p.id, lang)}
-                  </AppText>
-                  {card ? (
-                    <Pressable onPress={() => openCard(card)} accessibilityRole="link" hitSlop={8}>
-                      <AppText variant="label" tone="accent">
-                        {t('chart.seeCard', { planet: planetName(p.id, lang) })}
-                      </AppText>
-                    </Pressable>
-                  ) : null}
-                </View>
+                <PlacementRow
+                  key={p.id}
+                  planet={p}
+                  lang={lang}
+                  degree={`${num(p.degree)}°`}
+                  houseLabel={p.house ? t('chart.house', { n: num(p.house) }) : undefined}
+                  retrogradeLabel={t('chart.retrograde')}
+                  last={i === chart.planets.length - 1}
+                  cardLink={
+                    card ? (
+                      <Pressable onPress={() => openCard(card)} accessibilityRole="link" hitSlop={8}>
+                        <AppText variant="label" tone="accent">
+                          {t('chart.seeCard', { planet: planetName(p.id, lang) })}
+                        </AppText>
+                      </Pressable>
+                    ) : null
+                  }
+                />
               );
             })}
           </Card>
@@ -169,8 +183,3 @@ export default function BirthChartScreen() {
     </Screen>
   );
 }
-
-const styles = StyleSheet.create({
-  center: { alignItems: 'center' },
-  block: { gap: 2, paddingVertical: spacing.xs },
-});

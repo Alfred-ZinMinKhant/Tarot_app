@@ -2,7 +2,7 @@ import { router } from 'expo-router';
 import { useTranslation } from 'react-i18next';
 import { Pressable, StyleSheet, View } from 'react-native';
 
-import { AppText, Button, Card, DailyCardPanel, Header, Icon, Screen } from '@/components';
+import { AppText, Button, Card, DailyCardPanel, Header, Icon, ReadingRow, Screen } from '@/components';
 import { SignPanel } from '@/components/SignPanel';
 import { SpreadGlyph } from '@/components/art/SpreadGlyph';
 import { isPremiumSpread } from '@/premium/features';
@@ -15,8 +15,6 @@ import { useSettings } from '@/store/settings';
 import { MIN_TAP, radius, spacing } from '@/theme/spacing';
 import { useAppTheme } from '@/theme/ThemeContext';
 import { formatDate, timeOfDay } from '@/utils/dates';
-import { readingTitle } from '@/utils/readings';
-import { getCard } from '@/data/cards';
 
 export default function Home() {
   const { t } = useTranslation();
@@ -158,30 +156,7 @@ export default function Home() {
             </Pressable>
           </View>
           {recent.map((r) => (
-            <Pressable
-              key={r.id}
-              onPress={() => router.push({ pathname: '/journal/[id]', params: { id: r.id } })}
-              accessibilityRole="button"
-              testID={`home-recent-${r.id}`}
-              style={({ pressed }) => [
-                styles.recent,
-                {
-                  backgroundColor: colors.surface,
-                  borderColor: colors.border,
-                  opacity: pressed ? 0.85 : 1,
-                },
-              ]}
-            >
-              <AppText variant="label" bold>
-                {readingTitle(r, language, t('journal.dailyLabel'))}
-              </AppText>
-              <AppText variant="caption" tone="textMuted" numberOfLines={1}>
-                {formatDate(new Date(r.createdAt), language, { style: 'short', burmeseNumerals })} ·{' '}
-                {r.cards
-                  .map((c) => getCard(c.cardId)?.[language].name ?? '')
-                  .join(language === 'my' ? '၊ ' : ', ')}
-              </AppText>
-            </Pressable>
+            <ReadingRow key={r.id} reading={r} lang={language} testID={`home-recent-${r.id}`} />
           ))}
         </View>
       ) : null}
@@ -202,13 +177,6 @@ const styles = StyleSheet.create({
   sectionHeader: { flexDirection: 'row', alignItems: 'center', gap: spacing.md },
   flex: { flex: 1 },
   seeAll: { minHeight: MIN_TAP, justifyContent: 'center' },
-  recent: {
-    borderWidth: StyleSheet.hairlineWidth,
-    borderRadius: radius.lg,
-    padding: spacing.md,
-    gap: 2,
-    minHeight: MIN_TAP,
-  },
   spread: {
     flexDirection: 'row',
     alignItems: 'center',

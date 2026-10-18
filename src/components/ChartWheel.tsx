@@ -2,24 +2,9 @@ import Svg, { Circle, G, Line, Text as SvgText } from 'react-native-svg';
 
 import type { Chart } from '@/astro/chart';
 import type { PlanetId } from '@/astro/ephemeris';
+import { glyphText as text, PLANET_GLYPHS, SIGN_GLYPHS } from '@/astro/glyphs';
 import { useAppTheme } from '@/theme/ThemeContext';
 
-const SIGN_GLYPHS = ['♈', '♉', '♊', '♋', '♌', '♍', '♎', '♏', '♐', '♑', '♒', '♓'];
-const PLANET_GLYPHS: Record<PlanetId, string> = {
-  sun: '☉',
-  moon: '☽',
-  mercury: '☿',
-  venus: '♀',
-  mars: '♂',
-  jupiter: '♃',
-  saturn: '♄',
-  uranus: '♅',
-  neptune: '♆',
-  pluto: '♇',
-  node: '☊',
-};
-// The text variation selector keeps the glyphs monochrome instead of emoji-styled.
-const text = (g: string) => `${g}︎`;
 const MIN_GAP = 9; // degrees between planet glyphs
 
 /** Spreads crowded planets apart so their glyphs don't overlap; positions only move on screen. */

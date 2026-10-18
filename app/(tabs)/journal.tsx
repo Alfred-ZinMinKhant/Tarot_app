@@ -1,66 +1,15 @@
 import { FlashList } from '@shopify/flash-list';
-import { router } from 'expo-router';
 import { useDeferredValue, useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Pressable, StyleSheet, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 
-import { AppText, ChipGroup, EmptyState, Header, Screen, SearchField } from '@/components';
-import { CardFace } from '@/components/art';
-import { getCard } from '@/data/cards';
-import type { ReadingRecord } from '@/db/types';
+import { ChipGroup, EmptyState, Header, ReadingRow, Screen, SearchField } from '@/components';
 import { type Topic, TOPICS } from '@/engine';
 import { useLanguage } from '@/hooks/useLanguage';
+import { spacing } from '@/theme/spacing';
 import { useNumberFormat } from '@/hooks/useNumberFormat';
-import type { Language } from '@/i18n/languages';
 import { useJournal } from '@/store/journal';
-import { useSettings } from '@/store/settings';
-import { radius, spacing } from '@/theme/spacing';
-import { useAppTheme } from '@/theme/ThemeContext';
-import { formatDate, formatTime } from '@/utils/dates';
-import { type DateRange, filterReadings, readingTitle } from '@/utils/readings';
-
-function JournalRow({ reading, lang }: { reading: ReadingRecord; lang: Language }) {
-  const { t } = useTranslation();
-  const { colors } = useAppTheme();
-  const burmeseNumerals = useSettings((s) => s.burmeseNumerals);
-  const date = new Date(reading.createdAt);
-  const title = readingTitle(reading, lang, t('journal.dailyLabel'));
-  const cards = reading.cards.map((c) => getCard(c.cardId)).filter((c) => !!c);
-  const when = `${formatDate(date, lang, { style: 'short', burmeseNumerals })} · ${formatTime(date, lang, { burmeseNumerals })}`;
-  const first = cards[0];
-  return (
-    <Pressable
-      onPress={() => router.push({ pathname: '/journal/[id]', params: { id: reading.id } })}
-      accessibilityRole="button"
-      accessibilityLabel={`${title}, ${when}`}
-      testID={`journal-row-${reading.id}`}
-      style={({ pressed }) => [
-        styles.row,
-        { backgroundColor: colors.surface, borderColor: colors.border, opacity: pressed ? 0.85 : 1 },
-      ]}
-    >
-      {first ? (
-        <CardFace card={first} width={52} reversed={reading.cards[0]!.reversed} showName={false} />
-      ) : null}
-      <View style={styles.rowText}>
-        <AppText variant="label" bold>
-          {title}
-        </AppText>
-        <AppText variant="caption" tone="textMuted">
-          {when} · {t(`reading.topics.${reading.topic}`)}
-        </AppText>
-        {reading.question ? (
-          <AppText variant="caption" numberOfLines={2}>
-            “{reading.question}”
-          </AppText>
-        ) : null}
-        <AppText variant="caption" tone="accent" numberOfLines={2}>
-          {cards.map((c) => c[lang].name).join(lang === 'my' ? '၊ ' : ', ')}
-        </AppText>
-      </View>
-    </Pressable>
-  );
-}
+import { type DateRange, filterReadings } from '@/utils/readings';
 
 export default function Journal() {
   const { t } = useTranslation();
@@ -118,7 +67,7 @@ export default function Journal() {
               <FlashList
                 data={shown}
                 keyExtractor={(r) => r.id}
-                renderItem={({ item }) => <JournalRow reading={item} lang={lang} />}
+                renderItem={({ item }) => <ReadingRow reading={item} lang={lang} showQuestion testID={`journal-row-${item.id}`} />}
                 extraData={lang}
                 ItemSeparatorComponent={Separator}
                 contentContainerStyle={styles.listContent}
@@ -149,13 +98,4 @@ const styles = StyleSheet.create({
   content: { paddingBottom: 0, gap: spacing.md },
   list: { flex: 1 },
   listContent: { paddingBottom: spacing.xxl },
-  row: {
-    flexDirection: 'row',
-    gap: spacing.md,
-    padding: spacing.md,
-    borderRadius: radius.lg,
-    borderWidth: StyleSheet.hairlineWidth,
-    alignItems: 'flex-start',
-  },
-  rowText: { flex: 1, gap: 2 },
 });

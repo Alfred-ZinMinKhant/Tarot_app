@@ -9,6 +9,7 @@ export { EmptyState } from './EmptyState';
 export { Header } from './Header';
 export { Icon, type IconName } from './Icon';
 export { LanguageSwitch } from './LanguageSwitch';
+export { ReadingRow } from './ReadingRow';
 export { Screen } from './Screen';
 export { SearchField } from './SearchField';
 export { SettingRow } from './SettingRow';
