@@ -26,7 +26,7 @@ import { FAN_SIZE, useReadingFlow } from '@/hooks/useReadingFlow';
 import { useLanguage } from '@/hooks/useLanguage';
 import { useNumberFormat } from '@/hooks/useNumberFormat';
 import { consumeSpreadGrant, useAds } from '@/store/ads';
-import { useSpreadLocked } from '@/store/premium';
+import { useSpreadLocked } from '@/store/spreadAccess';
 import { useSettings } from '@/store/settings';
 import { spacing } from '@/theme/spacing';
 import { useAppTheme } from '@/theme/ThemeContext';
@@ -54,7 +54,7 @@ export default function Reading() {
   const flow = useReadingFlow(spread, isTopic(params.topic) ? params.topic : 'general');
   const {
     phase, setPhase, topic, setTopic, question, setQuestion, count, picks, drawn, revealed,
-    allRevealed, reversals, start, pick, pickForMe, reveal, revealAll, restart, finishShuffle,
+    busy, allRevealed, reversals, start, pick, pickForMe, reveal, revealAll, restart, finishShuffle,
     pendingDraft, resume, discardDraft, savedId,
   } = flow;
 
@@ -102,7 +102,7 @@ export default function Reading() {
   const summary = allRevealed ? summarize(drawn, lang, { reversals }) : [];
 
   return (
-    <Screen testID="screen-reading">
+    <Screen testID="screen-reading" lockTouch={busy}>
       <BackButton fallback="/home" />
       <Header
         title={spread[lang].name}

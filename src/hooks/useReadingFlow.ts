@@ -26,6 +26,8 @@ const SHUFFLE_MS = 1600;
 const AFTER_LAST_PICK_MS = 350;
 /** Gap between cards when "Choose for me" deals them one by one. */
 const AUTO_PICK_STEP_MS = 90;
+/** Touches stay locked this long after the board appears, while the cards mount and settle. */
+const REVEAL_SETTLE_MS = 800;
 
 /**
  * The reading state machine: setup -> shuffling -> picking -> reveal, with the crisis detour, the
@@ -49,6 +51,9 @@ export function useReadingFlow(spread: Spread | undefined, initialTopic: Topic) 
   const timer = useRef<ReturnType<typeof setTimeout> | null>(null);
   // True while "Choose for me" is dealing cards, so a stray tap can't pick the same card twice.
   const autoPicking = useRef(false);
+  // Touch is locked from the first deal until the face-down board has settled: scrolling or tapping
+  // while ten cards mount and animate froze the app on the Celtic Cross.
+  const [busy, setBusy] = useState(false);
   const storedDraft = useReadingDraft((s) => s.draft);
   const saveDraft = useReadingDraft((s) => s.save);
   const clearDraft = useReadingDraft((s) => s.clear);
@@ -137,6 +142,7 @@ export function useReadingFlow(spread: Spread | undefined, initialTopic: Topic) 
     }
     clearDraft();
     autoPicking.current = false;
+    setBusy(false);
     setDeck(prepareDeck({ reversals }));
     setPicks([]);
     setRevealed(Array.from({ length: count }, () => false));
@@ -151,7 +157,17 @@ export function useReadingFlow(spread: Spread | undefined, initialTopic: Topic) 
     const next = [...picks, index];
     setPicks(next);
     haptics.select();
-    if (next.length === count) later(() => setPhase('reveal'), AFTER_LAST_PICK_MS);
+    if (next.length === count) toReveal();
+  };
+
+  /** After the last pick: show the board, then keep touch locked until it has settled. */
+  const toReveal = () => {
+    setBusy(true);
+    later(() => {
+      autoPicking.current = false;
+      setPhase('reveal');
+      later(() => setBusy(false), reduceMotion ? 0 : REVEAL_SETTLE_MS);
+    }, AFTER_LAST_PICK_MS);
   };
 
   const pickForMe = () => {
@@ -165,12 +181,13 @@ export function useReadingFlow(spread: Spread | undefined, initialTopic: Topic) 
     if (reduceMotion) {
       setPicks([...picks, ...chosen]);
       haptics.select();
-      later(() => setPhase('reveal'), AFTER_LAST_PICK_MS);
+      toReveal();
       return;
     }
     // Deal the cards one at a time, like picking by hand. Mounting the whole board and lifting every
     // fan card in a single frame froze the Celtic Cross (10 cards) until Android killed the app.
     autoPicking.current = true;
+    setBusy(true);
     let dealt = 0;
     const deal = () => {
       const index = chosen[dealt++]!;
@@ -179,10 +196,7 @@ export function useReadingFlow(spread: Spread | undefined, initialTopic: Topic) 
       if (dealt < chosen.length) {
         later(deal, AUTO_PICK_STEP_MS);
       } else {
-        later(() => {
-          autoPicking.current = false;
-          setPhase('reveal');
-        }, AFTER_LAST_PICK_MS);
+        toReveal();
       }
     };
     deal();
@@ -210,6 +224,7 @@ export function useReadingFlow(spread: Spread | undefined, initialTopic: Topic) 
     clearDraft();
     setSavedId(null);
     autoPicking.current = false;
+    setBusy(false);
     setPhase('setup');
     setPicks([]);
     setDeck([]);
@@ -217,6 +232,7 @@ export function useReadingFlow(spread: Spread | undefined, initialTopic: Topic) 
   };
 
   return {
+    busy,
     phase,
     setPhase,
     topic,

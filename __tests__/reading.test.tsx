@@ -72,6 +72,14 @@ describe('reading flow', () => {
     expect(await screen.findByTestId('reading-summary')).toBeTruthy();
   });
 
+  it('locks touch while "Choose for me" deals the cards and the board settles', async () => {
+    await startAndPick('celtic-cross', 'auto');
+    expect(screen.getByTestId('touch-lock')).toBeTruthy();
+    await revealStep();
+    expect(screen.getByTestId('touch-lock')).toBeTruthy();
+    await waitFor(() => expect(screen.queryByTestId('touch-lock')).toBeNull(), { timeout: 3000 });
+  });
+
   it('uses the topic reading for the chosen topic', async () => {
     renderRouter('./app', { initialUrl: '/reading/one-card' });
     fireEvent.press(await screen.findByTestId('topic-love'));

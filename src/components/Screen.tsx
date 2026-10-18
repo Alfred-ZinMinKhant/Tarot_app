@@ -15,13 +15,15 @@ type Props = {
   contentStyle?: ViewStyle;
   /** Show a banner ad at the end of the screen (hidden for Premium and in builds without ads). */
   ad?: boolean;
+  /** Swallow every touch (taps and scrolling) while something is animating into place. */
+  lockTouch?: boolean;
   testID?: string;
 };
 
 /** Scrolled further than this (about one screen) and the back-to-top button appears. */
 const BACK_TO_TOP_AFTER = 600;
 
-export function Screen({ children, scroll = true, edges = ['top', 'left', 'right'], contentStyle, ad, testID }: Props) {
+export function Screen({ children, scroll = true, edges = ['top', 'left', 'right'], contentStyle, ad, lockTouch, testID }: Props) {
   const { colors } = useAppTheme();
   const scrollRef = useRef<ScrollView>(null);
   const [showTop, setShowTop] = useState(false);
@@ -49,6 +51,9 @@ export function Screen({ children, scroll = true, edges = ['top', 'left', 'right
           {ad ? <AdBanner /> : null}
         </View>
       )}
+      {lockTouch ? (
+        <View style={StyleSheet.absoluteFill} onStartShouldSetResponder={() => true} testID="touch-lock" />
+      ) : null}
       {scroll && showTop ? <BackToTop onPress={() => scrollRef.current?.scrollTo({ y: 0, animated: true })} /> : null}
     </SafeAreaView>
   );
