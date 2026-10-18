@@ -2,7 +2,7 @@ import { router } from 'expo-router';
 import { useTranslation } from 'react-i18next';
 import { Pressable, StyleSheet, View } from 'react-native';
 
-import { AppText, Card, DailyCardPanel, Header, Icon, Screen } from '@/components';
+import { AppText, Button, Card, DailyCardPanel, Header, Icon, Screen } from '@/components';
 import { SignPanel } from '@/components/SignPanel';
 import { SpreadGlyph } from '@/components/art/SpreadGlyph';
 import { isPremiumSpread } from '@/premium/features';
@@ -27,6 +27,9 @@ export default function Home() {
   const recent = useJournal((s) => s.readings).slice(0, 3);
   const unlocked = useUnlocked();
   const name = useSettings((s) => s.name).trim();
+  const hasChart = useSettings((s) => s.birth !== null);
+  const nudgeDismissed = useSettings((s) => s.chartNudgeDismissed);
+  const dismissNudge = useSettings((s) => s.dismissChartNudge);
   const now = new Date();
   const greeting = t(`greeting.${timeOfDay(now)}`);
   return (
@@ -43,6 +46,16 @@ export default function Home() {
 
       <DailyCardPanel />
       <SignPanel />
+      {!hasChart && !nudgeDismissed ? (
+        <Card testID="home-chart-nudge">
+          <AppText variant="heading" accessibilityRole="header">
+            {t('home.chartNudgeTitle')}
+          </AppText>
+          <AppText tone="textMuted">{t('home.chartNudgeBody')}</AppText>
+          <Button label={t('home.chartNudgeCreate')} onPress={() => router.push('/birth-chart')} testID="home-chart-nudge-create" />
+          <Button label={t('home.chartNudgeDismiss')} variant="ghost" onPress={dismissNudge} testID="home-chart-nudge-dismiss" />
+        </Card>
+      ) : null}
       <Pressable
         onPress={() => router.push('/birth-chart')}
         accessibilityRole="button"

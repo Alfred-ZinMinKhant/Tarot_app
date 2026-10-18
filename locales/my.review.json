@@ -416,7 +416,19 @@
     "ads.notFinished",
     "ads.privacyTitle",
     "ads.privacyBody",
-    "ads.privacyButton"
+    "ads.privacyButton",
+    "onboarding.birthDateLabel",
+    "onboarding.birthDateHint",
+    "onboarding.weekdayOnly",
+    "onboarding.dateOnly",
+    "onboarding.dateInvalid",
+    "home.chartNudgeTitle",
+    "home.chartNudgeBody",
+    "home.chartNudgeCreate",
+    "home.chartNudgeDismiss",
+    "onboarding.chartTitle",
+    "onboarding.chartBody",
+    "onboarding.chartSee"
   ],
   "reviewed": []
 }

@@ -12,7 +12,7 @@ export default function Welcome() {
     <OnboardingFrame
       testID="onboarding-welcome"
       step={1}
-      total={3}
+      total={4}
       title={t('onboarding.welcomeTitle')}
       body={t('onboarding.welcomeBody')}
       primaryLabel={t('common.continue')}

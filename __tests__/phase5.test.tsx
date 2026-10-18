@@ -58,13 +58,14 @@ describe('onboarding', () => {
   it('walks through three steps and saves name and sign', async () => {
     const r = renderRouter('./app', { initialUrl: '/' });
     expect(await screen.findByTestId('onboarding-disclaimer')).toBeTruthy();
-    expect(screen.getByLabelText('Step 1 of 3')).toBeTruthy();
+    expect(screen.getByLabelText('Step 1 of 4')).toBeTruthy();
     fireEvent.press(screen.getByTestId('onboarding-next'));
     expect(await screen.findByTestId('onboarding-language-step')).toBeTruthy();
     fireEvent.press(screen.getByTestId('onboarding-next'));
     expect(await screen.findByTestId('onboarding-about-you')).toBeTruthy();
 
     fireEvent.changeText(screen.getByTestId('onboarding-name'), 'Su Su');
+    fireEvent.press(screen.getByTestId('onboarding-toggle-weekday'));
     fireEvent.press(screen.getByTestId('onboarding-sign-rahu'));
     fireEvent.press(screen.getByTestId('onboarding-next'));
 
@@ -75,10 +76,69 @@ describe('onboarding', () => {
     expect(screen.getByTestId('home-sign-mood')).toBeTruthy();
   });
 
+  it('a birth date gives the weekday sign, then step 4 collects time and place for the chart', async () => {
+    const r = renderRouter('./app', { initialUrl: '/about-you' });
+    fireEvent.changeText(await screen.findByTestId('onboarding-day'), '16');
+    fireEvent.changeText(screen.getByTestId('onboarding-month'), '5');
+    fireEvent.changeText(screen.getByTestId('onboarding-year'), '1990'); // a Wednesday
+    fireEvent(await screen.findByTestId('onboarding-afternoon'), 'valueChange', true);
+    fireEvent.press(screen.getByTestId('onboarding-next'));
+
+    expect(await screen.findByTestId('onboarding-your-chart')).toBeTruthy();
+    expect(screen.getByLabelText('Step 4 of 4')).toBeTruthy();
+    expect(useSettings.getState()).toMatchObject({ hasOnboarded: false, birthSign: 'rahu' });
+    expect(screen.getByTestId('chart-day').props.value).toBe('16');
+    expect(screen.getByTestId('chart-year').props.value).toBe('1990');
+
+    fireEvent.changeText(screen.getByTestId('chart-hour'), '14');
+    fireEvent.changeText(screen.getByTestId('chart-place'), 'Yangon');
+    fireEvent.press(await screen.findByTestId('chart-place-Yangon'));
+    fireEvent.press(screen.getByTestId('onboarding-next'));
+
+    expect(await screen.findByTestId('chart-result')).toBeTruthy();
+    expect(r.getPathname()).toBe('/birth-chart');
+    expect(useSettings.getState().hasOnboarded).toBe(true);
+    expect(useSettings.getState().birth).toMatchObject({ date: '1990-05-16', time: '14:00' });
+  });
+
+  it('skipping the chart step still finishes onboarding and keeps the Home nudge', async () => {
+    renderRouter('./app', { initialUrl: '/your-chart?date=1990-05-16' });
+    fireEvent.press(await screen.findByTestId('onboarding-skip'));
+    expect(await screen.findByTestId('home-chart-nudge')).toBeTruthy();
+    expect(useSettings.getState()).toMatchObject({ hasOnboarded: true, birth: null });
+  });
+
+  it('asks for a place before saving the chart', async () => {
+    renderRouter('./app', { initialUrl: '/your-chart?date=1990-05-16' });
+    fireEvent.changeText(await screen.findByTestId('chart-hour'), '14');
+    fireEvent.press(screen.getByTestId('onboarding-next'));
+    expect(await screen.findByTestId('chart-error')).toBeTruthy();
+    expect(useSettings.getState().hasOnboarded).toBe(false);
+  });
+
+  it('rejects an impossible date without leaving the step', async () => {
+    renderRouter('./app', { initialUrl: '/about-you' });
+    fireEvent.changeText(await screen.findByTestId('onboarding-day'), '31');
+    fireEvent.changeText(screen.getByTestId('onboarding-month'), '2');
+    fireEvent.changeText(screen.getByTestId('onboarding-year'), '1990');
+    fireEvent.press(screen.getByTestId('onboarding-next'));
+    expect(await screen.findByTestId('onboarding-date-error')).toBeTruthy();
+    expect(useSettings.getState().hasOnboarded).toBe(false);
+  });
+
+  it('shows a dismissible chart card on Home until a chart exists', async () => {
+    useSettings.setState({ hasOnboarded: true });
+    renderRouter('./app', { initialUrl: '/home' });
+    expect(await screen.findByTestId('home-chart-nudge')).toBeTruthy();
+    fireEvent.press(screen.getByTestId('home-chart-nudge-dismiss'));
+    await waitFor(() => expect(screen.queryByTestId('home-chart-nudge')).toBeNull());
+    expect(useSettings.getState().chartNudgeDismissed).toBe(true);
+  });
+
   it('skipping the last step keeps nothing', async () => {
     renderRouter('./app', { initialUrl: '/about-you' });
     fireEvent.changeText(await screen.findByTestId('onboarding-name'), 'Ko Ko');
-    fireEvent.press(screen.getByTestId('onboarding-sign-monday'));
+    fireEvent.changeText(screen.getByTestId('onboarding-year'), '1990');
     fireEvent.press(screen.getByTestId('onboarding-skip'));
     expect(await screen.findByTestId('screen-home')).toBeTruthy();
     expect(useSettings.getState()).toMatchObject({ hasOnboarded: true, name: '', birthSign: null });

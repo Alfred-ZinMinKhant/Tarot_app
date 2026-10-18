@@ -31,6 +31,8 @@ export type SettingsState = {
   birthSign: SignId | null;
   /** Birth date, optional time and place for the natal chart. */
   birth: BirthData | null;
+  /** The Home "create your birth chart" card was dismissed. Device-only. */
+  chartNudgeDismissed: boolean;
   /** Soft sound effects for shuffling and card flips. Off by default. */
   soundEnabled: boolean;
   /** Ids of finished Learn lessons. */
@@ -53,6 +55,7 @@ export type SettingsState = {
   setName: (name: string) => void;
   setBirthSign: (sign: SignId | null) => void;
   setBirth: (birth: BirthData | null) => void;
+  dismissChartNudge: () => void;
   setSoundEnabled: (enabled: boolean) => void;
   markLessonRead: (id: string) => void;
   ensureDeviceSeed: () => string;
@@ -77,6 +80,7 @@ export const DEFAULT_SETTINGS = {
   name: '',
   birthSign: null as SignId | null,
   birth: null as BirthData | null,
+  chartNudgeDismissed: false,
   soundEnabled: false,
   lessonsRead: [] as string[],
   deviceSeed: null as string | null,
@@ -101,6 +105,7 @@ export const useSettings = create<SettingsState>()(
       setName: (name) => set({ name: name.slice(0, 40) }),
       setBirthSign: (birthSign) => set({ birthSign }),
       setBirth: (birth) => set({ birth }),
+      dismissChartNudge: () => set({ chartNudgeDismissed: true }),
       setSoundEnabled: (soundEnabled) => set({ soundEnabled }),
       markLessonRead: (id) => {
         const read = get().lessonsRead;
@@ -137,6 +142,7 @@ export const useSettings = create<SettingsState>()(
         name: s.name,
         birthSign: s.birthSign,
         birth: s.birth,
+        chartNudgeDismissed: s.chartNudgeDismissed,
         soundEnabled: s.soundEnabled,
         lessonsRead: s.lessonsRead,
         deviceSeed: s.deviceSeed,

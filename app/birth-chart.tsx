@@ -4,20 +4,18 @@ import { useTranslation } from 'react-i18next';
 import { Pressable, StyleSheet, View } from 'react-native';
 
 import { cardForPlanet, cardForSign } from '@/astro/astroCards';
-import { isBirthDate } from '@/astro/birth';
 import { computeChart } from '@/astro/chart';
-import { searchPlaces, type Place } from '@/astro/places';
 import { bigThreeReading, placementLine, planetMeaning, planetName, zodiacName } from '@/astro/readings';
-import { AppText, BackButton, Button, Card, Chip, Header, Screen } from '@/components';
+import { AppText, BackButton, Button, Card, Header, Screen } from '@/components';
+import { BirthFormFields } from '@/components/BirthFormFields';
 import { ChartWheel } from '@/components/ChartWheel';
-import { TextField } from '@/components/TextField';
+import { useBirthForm } from '@/hooks/useBirthForm';
 import { useLanguage } from '@/hooks/useLanguage';
 import { useSettings } from '@/store/settings';
 import { useToast } from '@/store/toast';
 import { spacing } from '@/theme/spacing';
-import { pad2 } from '@/utils/dates';
 import { logError } from '@/utils/log';
-import { formatNumber, toLatinDigits } from '@/utils/numbers';
+import { formatNumber } from '@/utils/numbers';
 
 /** Birth chart: enter a birth date, optional time and place; see Sun, Moon, Rising and the planets. */
 export default function BirthChartScreen() {
@@ -29,37 +27,14 @@ export default function BirthChartScreen() {
   const setBirth = useSettings((s) => s.setBirth);
   const numerals = useSettings((s) => s.burmeseNumerals);
   const [editing, setEditing] = useState(!birth);
+  const form = useBirthForm({ birth });
 
-  const [day, setDay] = useState(birth ? String(Number(birth.date.slice(8))) : '');
-  const [month, setMonth] = useState(birth ? String(Number(birth.date.slice(5, 7))) : '');
-  const [year, setYear] = useState(birth ? birth.date.slice(0, 4) : '');
-  const [unknownTime, setUnknownTime] = useState(birth ? birth.time === null : false);
-  const [hour, setHour] = useState(birth?.time ? String(Number(birth.time.slice(0, 2))) : '');
-  const [minute, setMinute] = useState(birth?.time ? String(Number(birth.time.slice(3))) : '');
-  const [query, setQuery] = useState(birth ? birth.place.name : '');
-  const [place, setPlace] = useState<Place | null>(birth?.place ?? null);
-  const [error, setError] = useState<string | null>(null);
-
-  const matches = useMemo(() => (place && place.name === query ? [] : searchPlaces(query)), [query, place]);
   const num = (n: number, opts?: { grouping?: boolean }) => formatNumber(n, { burmeseNumerals: numerals, ...opts });
 
   const save = () => {
-    // Digits typed on a Myanmar keyboard (၁၅) count the same as Latin ones.
-    const [dd, mm, yyyy, hh, min] = [day, month, year, hour, minute].map((v) => toLatinDigits(v.trim()));
-    const date = `${yyyy!.padStart(4, '0')}-${pad2(Number(mm))}-${pad2(Number(dd))}`;
-    if (!isBirthDate(date)) return setError(t('chart.errorDate'));
-    let time: string | null = null;
-    if (!unknownTime) {
-      const h = Number(hh);
-      const m = Number(min || '0');
-      if (hh === '' || !Number.isInteger(h) || h < 0 || h > 23 || !Number.isInteger(m) || m < 0 || m > 59) {
-        return setError(t('chart.errorTime', { n: num(24), h: num(14), m: num(30) }));
-      }
-      time = `${pad2(h)}:${pad2(m)}`;
-    }
-    if (!place) return setError(t('chart.errorPlace'));
-    setError(null);
-    setBirth({ date, time, place });
+    const data = form.submit();
+    if (!data) return;
+    setBirth(data);
     setEditing(false);
     toast(t('chart.saved'));
   };
@@ -86,68 +61,7 @@ export default function BirthChartScreen() {
           <AppText variant="heading" accessibilityRole="header">
             {t('chart.formTitle')}
           </AppText>
-          <View style={styles.row}>
-            <View style={styles.field}>
-              <TextField label={t('sign.day')} value={day} onChangeText={setDay} keyboardType="number-pad" maxLength={2} placeholder={num(15)} testID="chart-day" />
-            </View>
-            <View style={styles.field}>
-              <TextField label={t('sign.month')} value={month} onChangeText={setMonth} keyboardType="number-pad" maxLength={2} placeholder={num(6)} testID="chart-month" />
-            </View>
-            <View style={styles.yearField}>
-              <TextField label={t('sign.year')} value={year} onChangeText={setYear} keyboardType="number-pad" maxLength={4} placeholder={num(1995, { grouping: false })} testID="chart-year" />
-            </View>
-          </View>
-
-          {unknownTime ? null : (
-            <View style={styles.row}>
-              <View style={styles.field}>
-                <TextField label={t('chart.hour')} value={hour} onChangeText={setHour} keyboardType="number-pad" maxLength={2} placeholder={num(14)} hint={t('chart.hour24', { n: num(24), from: num(0), to: num(23) })} testID="chart-hour" />
-              </View>
-              <View style={styles.field}>
-                <TextField label={t('chart.minute')} value={minute} onChangeText={setMinute} keyboardType="number-pad" maxLength={2} placeholder={num(30)} testID="chart-minute" />
-              </View>
-            </View>
-          )}
-          <Chip label={t('chart.unknownTime')} selected={unknownTime} onPress={() => setUnknownTime(!unknownTime)} testID="chart-unknown-time" />
-          <AppText variant="caption" tone="textMuted">
-            {t(unknownTime ? 'chart.unknownTimeHint' : 'chart.timeHint')}
-          </AppText>
-
-          <TextField
-            label={t('chart.place')}
-            value={query}
-            onChangeText={(v) => {
-              setQuery(v);
-              setPlace(null);
-            }}
-            placeholder={t('chart.placePlaceholder')}
-            hint={t('chart.placeHint')}
-            autoCapitalize="words"
-            testID="chart-place"
-          />
-          <View style={styles.chips}>
-            {matches.map((p) => (
-              <Chip
-                key={`${p.name}-${p.country}-${p.latitude}`}
-                label={`${p.name}, ${p.country}`}
-                onPress={() => {
-                  setPlace(p);
-                  setQuery(p.name);
-                }}
-                testID={`chart-place-${p.name}`}
-              />
-            ))}
-          </View>
-          {place ? (
-            <AppText variant="caption" tone="textMuted">
-              {t('chart.placeChosen', { place: `${place.name}, ${place.country}`, zone: place.timeZone })}
-            </AppText>
-          ) : null}
-          {error ? (
-            <AppText tone="danger" accessibilityLiveRegion="polite" testID="chart-error">
-              {error}
-            </AppText>
-          ) : null}
+          <BirthFormFields form={form} />
           <Button label={t('chart.calculate')} onPress={save} testID="chart-save" />
           <AppText variant="caption" tone="textMuted">
             {t('chart.privacy')}
@@ -242,13 +156,7 @@ export default function BirthChartScreen() {
             onPress={() => {
               setBirth(null);
               setEditing(true);
-              setDay('');
-              setMonth('');
-              setYear('');
-              setHour('');
-              setMinute('');
-              setQuery('');
-              setPlace(null);
+              form.reset();
             }}
             testID="chart-clear"
           />
@@ -263,10 +171,6 @@ export default function BirthChartScreen() {
 }
 
 const styles = StyleSheet.create({
-  row: { flexDirection: 'row', gap: spacing.sm },
-  field: { flex: 1 },
-  yearField: { flex: 1.5 },
-  chips: { flexDirection: 'row', flexWrap: 'wrap', gap: spacing.sm },
   center: { alignItems: 'center' },
   block: { gap: 2, paddingVertical: spacing.xs },
 });

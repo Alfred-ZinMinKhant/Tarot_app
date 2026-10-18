@@ -16,7 +16,7 @@ export default function LanguageStep() {
     <OnboardingFrame
       testID="onboarding-language-step"
       step={2}
-      total={3}
+      total={4}
       title={t('onboarding.languageTitle')}
       body={t('onboarding.languageBody')}
       primaryLabel={t('common.continue')}

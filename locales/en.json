@@ -50,7 +50,11 @@
     "signFind": "Find my sign",
     "signOpen": "More about my sign",
     "chartTitle": "Your birth chart",
-    "chartBody": "See your Sun, Moon and Rising sign."
+    "chartBody": "See your Sun, Moon and Rising sign.",
+    "chartNudgeTitle": "Create your birth chart",
+    "chartNudgeBody": "Add your birth date to see your Sun, Moon and Rising sign.",
+    "chartNudgeCreate": "Create my chart",
+    "chartNudgeDismiss": "Not now"
   },
   "library": {
     "title": "Card Library",
@@ -220,7 +224,15 @@
     "signLabel": "The weekday you were born",
     "signHint": "Used for your Burmese weekday sign on the Home screen.",
     "reminderLabel": "Daily reminder",
-    "reminderHint": "A gentle morning nudge to see your Card of the Day. You can change the time in Settings."
+    "reminderHint": "A gentle morning nudge to see your Card of the Day. You can change the time in Settings.",
+    "birthDateLabel": "Your birth date",
+    "birthDateHint": "Gives you your Burmese weekday sign now, and lets us build your birth chart next.",
+    "weekdayOnly": "I only know the weekday",
+    "dateOnly": "Use my birth date instead",
+    "dateInvalid": "That date doesn't look right. Check it, or skip this for now.",
+    "chartTitle": "Your birth chart",
+    "chartBody": "Your birth time and place give you a Rising sign and houses. If you don't know the time, you can still see your Sun and Moon. Stays on your phone.",
+    "chartSee": "See my chart"
   },
   "settings": {
     "title": "Settings",
