@@ -1,4 +1,5 @@
 import { type AudioPlayer, createAudioPlayer, setAudioModeAsync } from 'expo-audio';
+import { Platform } from 'react-native';
 
 /** Original synthesised effects (scripts/render-sounds.ts). */
 const SOURCES = {
@@ -12,12 +13,16 @@ export type SoundName = keyof typeof SOURCES;
 const players = new Map<SoundName, AudioPlayer>();
 let modeSet = false;
 
-/** Plays a short effect. Mixes with other audio and respects the silent switch on iOS. */
+/**
+ * Plays a short effect. Mixes with other audio and respects the silent switch on iOS. Android's
+ * ringer mode only governs ringtones and notifications (media follows the media volume), so there
+ * it must not mute the effects: expo-audio would otherwise refuse to play in vibrate/silent mode.
+ */
 export function playSound(name: SoundName): void {
   try {
     if (!modeSet) {
       modeSet = true;
-      void setAudioModeAsync({ playsInSilentMode: false, interruptionMode: 'mixWithOthers' }).catch(() => undefined);
+      void setAudioModeAsync({ playsInSilentMode: Platform.OS === 'android', interruptionMode: 'mixWithOthers' }).catch(() => undefined);
     }
     let player = players.get(name);
     if (!player) {
