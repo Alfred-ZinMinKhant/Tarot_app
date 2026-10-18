@@ -1,5 +1,5 @@
 import { router, useLocalSearchParams } from 'expo-router';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { StyleSheet, useWindowDimensions, View } from 'react-native';
 
@@ -25,7 +25,7 @@ import { getSpread, summarize, type Topic, TOPICS } from '@/engine';
 import { FAN_SIZE, useReadingFlow } from '@/hooks/useReadingFlow';
 import { useLanguage } from '@/hooks/useLanguage';
 import { useNumberFormat } from '@/hooks/useNumberFormat';
-import { consumeSpreadGrant } from '@/store/ads';
+import { consumeSpreadGrant, useAds } from '@/store/ads';
 import { useSpreadLocked } from '@/store/premium';
 import { useSettings } from '@/store/settings';
 import { spacing } from '@/theme/spacing';
@@ -55,8 +55,22 @@ export default function Reading() {
   const {
     phase, setPhase, topic, setTopic, question, setQuestion, count, picks, drawn, revealed,
     allRevealed, reversals, start, pick, pickForMe, reveal, revealAll, restart, finishShuffle,
-    pendingDraft, resume, discardDraft,
+    pendingDraft, resume, discardDraft, savedId,
   } = flow;
+
+  // A finished, saved reading counts toward the occasional interstitial; it only shows on the way out.
+  const spreadId = spread?.id;
+  useEffect(() => {
+    if (savedId && spreadId) useAds.getState().noteReadingFinished(spreadId);
+  }, [savedId, spreadId]);
+  const [leaving, setLeaving] = useState(false);
+  const leave = async (go: () => void) => {
+    if (leaving) return;
+    setLeaving(true);
+    await useAds.getState().showInterstitialIfDue();
+    go();
+    setLeaving(false);
+  };
 
   if (!spread) {
     return (
@@ -243,11 +257,12 @@ export default function Reading() {
                   lang,
                 )}
               />
-              <Button label={t('reading.newReading')} onPress={restart} testID="reading-new" />
+              <Button label={t('reading.newReading')} onPress={() => leave(restart)} disabled={leaving} testID="reading-new" />
               <Button
                 label={t('reading.backHome')}
                 variant="ghost"
-                onPress={() => router.replace('/home')}
+                onPress={() => leave(() => router.replace('/home'))}
+                disabled={leaving}
                 testID="reading-home"
               />
             </>

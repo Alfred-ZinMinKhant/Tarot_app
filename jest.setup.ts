@@ -28,11 +28,12 @@ jest.mock('react-native-google-mobile-ads', () => ({
   AdsConsent: {},
   AdsConsentPrivacyOptionsRequirementStatus: { REQUIRED: 'REQUIRED' },
   BannerAd: () => null,
+  InterstitialAd: {},
   BannerAdSize: {},
   MaxAdContentRating: { PG: 'PG' },
   RewardedAd: {},
   RewardedAdEventType: {},
-  TestIds: { ADAPTIVE_BANNER: 'test-banner', REWARDED: 'test-rewarded' },
+  TestIds: { ADAPTIVE_BANNER: 'test-banner', REWARDED: 'test-rewarded', INTERSTITIAL: 'test-interstitial' },
 }));
 jest.mock('expo-tracking-transparency', () => ({ requestTrackingPermissionsAsync: jest.fn() }));
 

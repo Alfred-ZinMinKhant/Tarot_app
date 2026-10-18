@@ -131,13 +131,15 @@ const config: ExpoConfig = {
       entitlement: env.REVENUECAT_ENTITLEMENT || 'premium',
     },
     // Optional ads (AdMob). Off unless ENABLE_ADS=true; a release build shows a format only when
-    // its ad unit ID is set. Premium removes banners and the rewarded option.
+    // its ad unit ID is set. Premium removes banners, interstitials and the rewarded option.
     ads: {
       enabled: env.ENABLE_ADS === 'true',
       bannerIos: env.ADMOB_BANNER_IOS || '',
       bannerAndroid: env.ADMOB_BANNER_ANDROID || '',
       rewardedIos: env.ADMOB_REWARDED_IOS || '',
       rewardedAndroid: env.ADMOB_REWARDED_ANDROID || '',
+      interstitialIos: env.ADMOB_INTERSTITIAL_IOS || '',
+      interstitialAndroid: env.ADMOB_INTERSTITIAL_ANDROID || '',
       // Comma-separated AdMob test device IDs: these devices get test ads, so you can tap them.
       testDevices: (env.ADMOB_TEST_DEVICES || '').split(',').map((d) => d.trim()).filter(Boolean),
     },

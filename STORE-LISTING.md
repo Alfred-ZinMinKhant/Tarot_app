@@ -71,7 +71,7 @@ GENTLE BY DESIGN
 
 Mingalar Tarot is for entertainment and self-reflection. Tarot cannot predict the future and is not a substitute for professional advice about health, money, legal or personal matters.
 
-Free with ads. A banner ad appears in the app, and optional short video ads unlock the Celtic Cross, the Love spread, a deeper Card of the Day reading and a second daily card. The Card of the Day, one- and three-card readings, the journal, library, lessons, weekday signs and the birth chart are free.
+Free with ads. A banner ad appears in the app, an occasional full-screen ad can appear after you finish a reading, and optional short video ads unlock the Celtic Cross, the Love spread, a deeper Card of the Day reading and a second daily card. The Card of the Day, one- and three-card readings, the journal, library, lessons, weekday signs and the birth chart are free.
 
 **What's new** (first release)
 Welcome to Mingalar Tarot! Card of the Day, five spreads, all 78 cards, a private journal, lessons, Burmese weekday signs and a birth chart — in English and Burmese.
@@ -155,7 +155,7 @@ Mingalar Tarot မှ ကြိုဆိုပါတယ်။ နေ့စဉ်
 | Category | Lifestyle (secondary: Entertainment) | Lifestyle |
 | Price | Free, with in-app purchases if RevenueCat is configured | Free (contains in-app purchases if configured) |
 | Age rating | Expected **4+** (questionnaire answers in `docs/CONTENT-RATING.md`) | IARC: expected Everyone / PEGI 3 |
-| Contains ads | Yes, only if `ENABLE_ADS=true` (AdMob banner + rewarded); otherwise No | Same: answer *Yes* only for an ads build |
+| Contains ads | Yes, only if `ENABLE_ADS=true` (AdMob banner + interstitial + rewarded); otherwise No | Same: answer *Yes* only for an ads build |
 | Support URL | your website or a page with `SUPPORT_EMAIL` | email = `SUPPORT_EMAIL` |
 | Privacy policy URL | host `store/legal/privacy-en.html` | same |
 | Copyright | `© <year> <PUBLISHER_NAME>` | — |

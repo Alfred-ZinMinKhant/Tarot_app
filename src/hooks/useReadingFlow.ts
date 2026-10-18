@@ -198,6 +198,7 @@ export function useReadingFlow(spread: Spread | undefined, initialTopic: Topic) 
     picks,
     drawn,
     revealed,
+    savedId,
     allRevealed,
     reversals,
     start,

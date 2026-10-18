@@ -7,6 +7,7 @@ import Constants from 'expo-constants';
 
 import { getJournalRepo, type ReadingRecord } from '@/db';
 import { cancelReminders } from '@/services/notifications';
+import { useAdPacing } from '@/store/adPacing';
 import { useDaily } from '@/store/daily';
 import { useJournal } from '@/store/journal';
 import { useReadingDraft } from '@/store/readingDraft';
@@ -70,4 +71,5 @@ export async function deleteAllUserData(): Promise<void> {
   useDaily.setState({ draw: null, dateKey: null });
   useReadingDraft.getState().clear();
   useSettings.getState().wipe();
+  useAdPacing.getState().reset();
 }

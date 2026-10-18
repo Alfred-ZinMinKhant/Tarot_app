@@ -79,6 +79,12 @@ Ads are optional and **off by default**. They only run in a build with `ENABLE_A
 - **Rewarded ad on the Card of the Day:** after the card is revealed, one ad unlocks a deeper
   reading (love, career, money, health text already in the card data) and another a second card
   for the day. Both live in memory and reset on a new day; Premium gets them without an ad.
+- **Interstitial:** a full-screen ad when leaving a finished reading ("Back to Home" or "New
+  reading"), never during one and never on the way in. Only one- and three-card readings count
+  (Love and Celtic Cross are already behind a rewarded ad). It is preloaded when due, so it shows
+  instantly or not at all; the app never waits on a load. The cap lives in `src/ads/pacing.ts`:
+  none in the first 2 days or before 3 finished readings, at most one per 3 readings, at least
+  5 minutes apart. Counters are device-only (`src/store/adPacing.ts`) and cleared by "delete my data".
 - **Premium removes everything.** `useShowAds()` is false for subscribers.
 - Ad content is capped at PG. A build with no ad unit IDs for a format shows none of it.
 
@@ -87,10 +93,10 @@ Code: `src/ads/` (AdMob service), `src/store/ads.ts` (state, one-off passes),
 
 ## Turning it on
 
-1. In AdMob, add the Android and iOS apps, then create one **Banner** and one **Rewarded** ad unit
+1. In AdMob, add the Android and iOS apps, then create one **Banner**, one **Rewarded** and one **Interstitial** ad unit
    per platform.
 2. Set in `.env` (and `eas env:create` for builds): `ENABLE_ADS=true`, `ADMOB_ANDROID_APP_ID`,
-   `ADMOB_IOS_APP_ID`, `ADMOB_BANNER_ANDROID/IOS`, `ADMOB_REWARDED_ANDROID/IOS`.
+   `ADMOB_IOS_APP_ID`, `ADMOB_BANNER_ANDROID/IOS`, `ADMOB_REWARDED_ANDROID/IOS`, `ADMOB_INTERSTITIAL_ANDROID/IOS`.
    Without the app IDs the build uses Google's sample IDs: the app runs but **earns nothing**.
 3. Make a development or production build (the AdMob SDK is native; it does not work in Expo Go).
    Development builds always show Google's test ads. Never tap your own live ads: that can get

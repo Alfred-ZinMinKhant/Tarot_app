@@ -1,6 +1,9 @@
 import { create } from 'zustand';
 
 import type { AdsService, RewardOutcome } from '@/ads/service';
+import { interstitialDue } from '@/ads/pacing';
+import { isPremiumSpread } from '@/premium/features';
+import { useAdPacing } from '@/store/adPacing';
 import { usePremium } from '@/store/premium';
 
 type AdsState = {
@@ -13,8 +16,15 @@ type AdsState = {
   watchRewarded: () => Promise<RewardOutcome>;
   /** Plays a rewarded ad; a finished one grants a single reading of `spreadId`. */
   watchForSpread: (spreadId: string) => Promise<RewardOutcome>;
+  /** A reading was finished and saved: count it, and start loading the interstitial when one is due. */
+  noteReadingFinished: (spreadId: string) => void;
+  /** On leaving a finished reading: shows the interstitial if one is due and loaded. Never waits for a load. */
+  showInterstitialIfDue: () => Promise<boolean>;
   openPrivacyOptions: () => Promise<void>;
 };
+
+const interstitialAllowed = (ready: boolean): boolean =>
+  ready && !!service?.hasInterstitial() && !usePremium.getState().isPremium;
 
 /** undefined = not wired yet; null = this build has no ads. */
 let service: AdsService | null | undefined;
@@ -66,6 +76,23 @@ export const useAds = create<AdsState>()((set, get) => ({
     const outcome = await get().watchRewarded();
     if (outcome === 'earned') grants.add(spreadId);
     return outcome;
+  },
+  noteReadingFinished: (spreadId) => {
+    // Premium spreads are already behind a rewarded ad (or a subscription): no second ad on top.
+    if (isPremiumSpread(spreadId) || !interstitialAllowed(get().ready)) return;
+    const pacing = useAdPacing.getState();
+    pacing.recordFinished();
+    if (interstitialDue(useAdPacing.getState(), Date.now())) service?.prepareInterstitial();
+  },
+  showInterstitialIfDue: async () => {
+    if (!interstitialAllowed(get().ready) || !interstitialDue(useAdPacing.getState(), Date.now())) return false;
+    try {
+      const shown = (await service?.showInterstitial()) ?? false;
+      if (shown) useAdPacing.getState().recordShown();
+      return shown;
+    } catch {
+      return false;
+    }
   },
   openPrivacyOptions: async () => {
     await service?.showPrivacyOptions().catch(() => undefined);
