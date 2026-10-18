@@ -82,6 +82,17 @@ const config: ExpoConfig = {
       },
     ],
     'expo-tracking-transparency',
+    // R8 code shrinking/obfuscation and resource shrinking for release builds (Play Console flags
+    // DEX optimisation below 25%). Check ads, sign-in and purchases on a test track before promoting.
+    [
+      'expo-build-properties',
+      {
+        android: {
+          enableProguardInReleaseBuilds: true,
+          enableShrinkResourcesInReleaseBuilds: true,
+        },
+      },
+    ],
     // Short sound effects only: no microphone, no background audio.
     [
       'expo-audio',
