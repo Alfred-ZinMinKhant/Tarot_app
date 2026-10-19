@@ -41,7 +41,6 @@ export async function buildExport(now = new Date()): Promise<UserDataExport> {
     profile: { name: s.name, birthSign: s.birthSign, birth: s.birth },
     settings: {
       language: s.language,
-      themeMode: s.themeMode,
       fontSize: s.fontSize,
       myanmarFont: s.myanmarFont,
       burmeseNumerals: s.burmeseNumerals,

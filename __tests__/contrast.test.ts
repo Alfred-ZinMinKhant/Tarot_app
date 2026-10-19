@@ -1,4 +1,4 @@
-import { darkColors, lightColors } from '@/theme/colors';
+import { darkColors } from '@/theme/colors';
 
 function luminance(hex: string): number {
   const n = parseInt(hex.slice(1), 16);
@@ -14,10 +14,8 @@ export function contrast(a: string, b: string): number {
   return (hi + 0.05) / (lo + 0.05);
 }
 
-describe.each([
-  ['dark', darkColors],
-  ['light', lightColors],
-])('%s theme meets WCAG AA', (_, c) => {
+describe('dark theme meets WCAG AA', () => {
+  const c = darkColors;
   it.each([
     ['text/background', c.text, c.background],
     ['text/surface', c.text, c.surface],

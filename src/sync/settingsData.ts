@@ -11,7 +11,6 @@ import type { SettingsState } from '@/store/settings';
  */
 export const SYNCED_SETTING_KEYS = [
   'language',
-  'themeMode',
   'fontSize',
   'myanmarFont',
   'burmeseNumerals',
@@ -43,7 +42,6 @@ const oneOf = <T extends string>(v: unknown, options: readonly T[]): v is T =>
 export function sanitizeSettings(data: Record<string, unknown>): Partial<Synced> {
   const out: Record<string, unknown> = {};
   if (data.language === null || isLanguage(data.language)) out.language = data.language;
-  if (oneOf(data.themeMode, ['system', 'light', 'dark'] as const)) out.themeMode = data.themeMode;
   if (oneOf(data.fontSize, ['S', 'M', 'L'] as const)) out.fontSize = data.fontSize;
   if (oneOf(data.myanmarFont, ['noto', 'padauk'] as const)) out.myanmarFont = data.myanmarFont;
   for (const k of ['burmeseNumerals', 'reversedCards', 'haptics', 'soundEnabled'] as const) {

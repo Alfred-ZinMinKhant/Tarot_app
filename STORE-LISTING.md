@@ -67,7 +67,7 @@ MADE FOR BURMESE READERS
 
 GENTLE BY DESIGN
 • Works offline; your journal never leaves your phone unless you back it up
-• Text size, light and dark themes, screen-reader labels in both languages
+• Text size, screen-reader labels in both languages
 
 Mingalar Tarot is for entertainment and self-reflection. Tarot cannot predict the future and is not a substitute for professional advice about health, money, legal or personal matters.
 

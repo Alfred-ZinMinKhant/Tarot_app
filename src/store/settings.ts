@@ -8,12 +8,9 @@ import type { SignId } from '@/data/content';
 import type { Language } from '@/i18n/languages';
 import type { FontSizeSetting, MyanmarFont } from '@/theme/typography';
 
-export type ThemeMode = 'system' | 'light' | 'dark';
-
 export type SettingsState = {
   /** null = follow the device locale. */
   language: Language | null;
-  themeMode: ThemeMode;
   fontSize: FontSizeSetting;
   myanmarFont: MyanmarFont;
   burmeseNumerals: boolean;
@@ -43,7 +40,6 @@ export type SettingsState = {
    */
   deviceSeed: string | null;
   setLanguage: (language: Language | null) => void;
-  setThemeMode: (mode: ThemeMode) => void;
   setFontSize: (size: FontSizeSetting) => void;
   setMyanmarFont: (font: MyanmarFont) => void;
   setBurmeseNumerals: (enabled: boolean) => void;
@@ -67,7 +63,6 @@ export type SettingsState = {
 
 export const DEFAULT_SETTINGS = {
   language: null,
-  themeMode: 'system',
   fontSize: 'M',
   myanmarFont: 'noto',
   burmeseNumerals: false,
@@ -91,7 +86,6 @@ export const useSettings = create<SettingsState>()(
     (set, get) => ({
       ...DEFAULT_SETTINGS,
       setLanguage: (language) => set({ language }),
-      setThemeMode: (themeMode) => set({ themeMode }),
       setFontSize: (fontSize) => set({ fontSize }),
       setMyanmarFont: (myanmarFont) => set({ myanmarFont }),
       setBurmeseNumerals: (burmeseNumerals) => set({ burmeseNumerals }),
@@ -129,7 +123,6 @@ export const useSettings = create<SettingsState>()(
       storage: createJSONStorage(() => AsyncStorage),
       partialize: (s) => ({
         language: s.language,
-        themeMode: s.themeMode,
         fontSize: s.fontSize,
         myanmarFont: s.myanmarFont,
         burmeseNumerals: s.burmeseNumerals,

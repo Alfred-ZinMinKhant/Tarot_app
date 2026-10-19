@@ -1,4 +1,4 @@
-import { DarkTheme, DefaultTheme, SplashScreen, Stack, ThemeProvider } from 'expo-router';
+import { DarkTheme, SplashScreen, Stack, ThemeProvider } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
 import { useEffect, useMemo } from 'react';
 import { I18nextProvider } from 'react-i18next';
@@ -105,9 +105,9 @@ function AppServices() {
 }
 
 function Navigation() {
-  const { scheme, colors } = useAppTheme();
+  const { colors } = useAppTheme();
   const navTheme = useMemo(() => {
-    const base = scheme === 'dark' ? DarkTheme : DefaultTheme;
+    const base = DarkTheme;
     return {
       ...base,
       colors: {
@@ -119,11 +119,11 @@ function Navigation() {
         border: colors.border,
       },
     };
-  }, [scheme, colors]);
+  }, [colors]);
 
   return (
     <ThemeProvider value={navTheme}>
-      <StatusBar style={scheme === 'dark' ? 'light' : 'dark'} />
+      <StatusBar style="light" />
       <Stack screenOptions={{ headerShown: false, contentStyle: { backgroundColor: colors.background } }}>
         <Stack.Screen name="index" />
         <Stack.Screen name="(onboarding)" />

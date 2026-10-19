@@ -2,7 +2,7 @@ import Constants from 'expo-constants';
 import { router } from 'expo-router';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Platform, StyleSheet, View } from 'react-native';
+import { Linking, Platform, Share, StyleSheet, View } from 'react-native';
 
 import {
   AppText,
@@ -17,6 +17,7 @@ import {
 } from '@/components';
 import { AdPrivacyRow } from '@/components/AdPrivacyRow';
 import { CloudSyncCard } from '@/components/CloudSyncCard';
+import { storeLinks } from '@/config/store';
 import { PremiumCard } from '@/components/PremiumCard';
 import { TextField } from '@/components/TextField';
 import { getSign } from '@/data/content';
@@ -33,7 +34,6 @@ import { logError } from '@/utils/log';
 import { useSettings } from '@/store/settings';
 import { spacing } from '@/theme/spacing';
 import type { FontSizeSetting, MyanmarFont } from '@/theme/typography';
-import type { ThemeMode } from '@/store/settings';
 import { formatNumber } from '@/utils/numbers';
 
 export default function Settings() {
@@ -50,6 +50,25 @@ export default function Settings() {
   const [exporting, setExporting] = useState(false);
   const [importing, setImporting] = useState(false);
   const [confirmDelete, setConfirmDelete] = useState(false);
+
+  const store = storeLinks();
+  const shareApp = async () => {
+    if (!store) return;
+    try {
+      await Share.share({ message: t('settings.shareAppMessage', { url: store.listing }) });
+    } catch (e) {
+      logError('shareApp', e);
+    }
+  };
+  const rateApp = async () => {
+    if (!store) return;
+    try {
+      await Linking.openURL(store.review);
+    } catch {
+      // No store app on this device (e.g. an emulator): the web listing still works.
+      Linking.openURL(store.listing).catch((e) => logError('rateApp', e));
+    }
+  };
 
   const exportData = async () => {
     setExporting(true);
@@ -143,18 +162,6 @@ export default function Settings() {
 
       <Card>
         <AppText variant="heading">{t('settings.appearance')}</AppText>
-        <SettingRow label={t('settings.theme')}>
-          <ChipGroup<ThemeMode>
-            testIDPrefix="theme"
-            value={s.themeMode}
-            onChange={s.setThemeMode}
-            options={[
-              { value: 'system', label: t('settings.themeSystem') },
-              { value: 'light', label: t('settings.themeLight') },
-              { value: 'dark', label: t('settings.themeDark') },
-            ]}
-          />
-        </SettingRow>
         <SettingRow label={t('settings.fontSize')}>
           <ChipGroup<FontSizeSetting>
             testIDPrefix="font-size"
@@ -295,6 +302,12 @@ export default function Settings() {
         <AppText variant="heading">{t('settings.about')}</AppText>
         <AppText variant="caption">{t('disclaimer.short')}</AppText>
         <Button label={t('about.title')} variant="secondary" onPress={() => router.push('/about')} testID="settings-about" />
+        {store ? (
+          <>
+            <Button label={t('settings.shareApp')} variant="secondary" onPress={shareApp} testID="settings-share-app" />
+            <Button label={t('settings.rateApp')} variant="secondary" onPress={rateApp} testID="settings-rate-app" />
+          </>
+        ) : null}
         <Button
           label={t('settings.privacy')}
           variant="ghost"

@@ -1,16 +1,14 @@
 import { createContext, type ReactNode, useContext, useMemo } from 'react';
-import { useColorScheme } from 'react-native';
 
 import { useLanguage } from '@/hooks/useLanguage';
 import type { Language } from '@/i18n/languages';
 import { useFontStatus } from '@/store/fonts';
 import { useSettings } from '@/store/settings';
 
-import { type ColorTokens, darkColors, lightColors } from './colors';
+import { type ColorTokens, darkColors } from './colors';
 import { BASE_SIZES, type FontSizeSetting, type MyanmarFont, SIZE_MULTIPLIER, type TextVariant } from './typography';
 
 export type AppTheme = {
-  scheme: 'light' | 'dark';
   colors: ColorTokens;
   language: Language;
   fontSize: FontSizeSetting;
@@ -28,24 +26,20 @@ export function resolveMyanmarFont(preferred: MyanmarFont, available: MyanmarFon
 }
 
 export function AppThemeProvider({ children }: { children: ReactNode }) {
-  const system = useColorScheme();
-  const themeMode = useSettings((s) => s.themeMode);
   const fontSize = useSettings((s) => s.fontSize);
   const preferredFont = useSettings((s) => s.myanmarFont);
   const available = useFontStatus((s) => s.available);
   const language = useLanguage();
 
   const value = useMemo<AppTheme>(() => {
-    const scheme = themeMode === 'system' ? (system === 'light' ? 'light' : 'dark') : themeMode;
     return {
-      scheme,
-      colors: scheme === 'dark' ? darkColors : lightColors,
+      colors: darkColors,
       language,
       fontSize,
       myanmarFont: resolveMyanmarFont(preferredFont, available),
       size: (variant) => Math.round(BASE_SIZES[variant] * SIZE_MULTIPLIER[fontSize]),
     };
-  }, [themeMode, system, fontSize, preferredFont, available, language]);
+  }, [fontSize, preferredFont, available, language]);
 
   return <ThemeContext.Provider value={value}>{children}</ThemeContext.Provider>;
 }

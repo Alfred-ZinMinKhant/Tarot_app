@@ -49,19 +49,3 @@ export const darkColors: ColorTokens = {
   tabBar: '#100C24',
   overlay: 'rgba(0,0,0,0.6)',
 };
-
-export const lightColors: ColorTokens = {
-  background: palette.ivory,
-  surface: palette.white,
-  surfaceAlt: palette.ivoryDeep,
-  border: '#D9CBB0',
-  text: palette.indigo,
-  textMuted: '#4E4566',
-  primary: palette.midnight,
-  onPrimary: palette.ivory,
-  accent: palette.tealDeep,
-  onAccent: palette.white,
-  danger: palette.roseDeep,
-  tabBar: palette.white,
-  overlay: 'rgba(20,16,43,0.45)',
-};

@@ -273,7 +273,6 @@ describe('sanitizeSettings', () => {
     expect(
       sanitizeSettings({
         language: 'my',
-        themeMode: 'dark',
         fontSize: 'XL',
         reminderHour: 25,
         reminderMinute: 30,
@@ -285,7 +284,6 @@ describe('sanitizeSettings', () => {
       }),
     ).toEqual({
       language: 'my',
-      themeMode: 'dark',
       reminderMinute: 30,
       birthSign: 'monday',
       lessonsRead: ['a', 'b'],

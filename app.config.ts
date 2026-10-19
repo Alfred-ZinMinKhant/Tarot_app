@@ -17,7 +17,7 @@ const config: ExpoConfig = {
   version: '1.0.0',
   orientation: 'portrait',
   icon: './assets/images/icon.png',
-  userInterfaceStyle: 'automatic',
+  userInterfaceStyle: 'dark',
   ios: {
     supportsTablet: false,
     bundleIdentifier: env.IOS_BUNDLE_IDENTIFIER || brand.iosBundleIdentifier,
@@ -143,6 +143,8 @@ const config: ExpoConfig = {
       // Comma-separated AdMob test device IDs: these devices get test ads, so you can tap them.
       testDevices: (env.ADMOB_TEST_DEVICES || '').split(',').map((d) => d.trim()).filter(Boolean),
     },
+    // Numeric App Store ID, needed for iOS "Share app" / "Rate app" (Android uses the package name).
+    store: { iosAppId: env.IOS_APP_STORE_ID || '' },
     // Optional local payment partner shown on the paywall (both must be set).
     localPayment: {
       url: env.LOCAL_PAYMENT_URL || '',
