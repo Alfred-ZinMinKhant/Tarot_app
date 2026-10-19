@@ -44,7 +44,7 @@ export function SetupForm({ topic, onTopic, question, onQuestion, onStart }: Pro
           value={question}
           onChangeText={onQuestion}
           placeholder={t('reading.questionPlaceholder')}
-          placeholderTextColor={theme.colors.textMuted}
+          placeholderTextColor={theme.colors.placeholder}
           accessibilityLabel={t('reading.questionLabel')}
           multiline
           maxLength={300}

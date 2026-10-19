@@ -30,4 +30,11 @@ describe('dark theme meets WCAG AA', () => {
   ])('%s ≥ 4.5', (_pair, fg, bg) => {
     expect(contrast(fg, bg)).toBeGreaterThanOrEqual(4.5);
   });
+
+  it.each([
+    ['placeholder/surface', c.placeholder, c.surface],
+    ['placeholder/background', c.placeholder, c.background],
+  ])('%s ≥ 3', (_pair, fg, bg) => {
+    expect(contrast(fg, bg)).toBeGreaterThanOrEqual(3);
+  });
 });

@@ -52,6 +52,7 @@
     "signOpen": "More about my sign",
     "chartTitle": "Your birth chart",
     "chartBody": "See your Sun, Moon and Rising sign.",
+    "chartSampleBody": "A sample wheel. Add your birth date to see your own Sun, Moon and Rising sign.",
     "chartNudgeTitle": "Create your birth chart",
     "chartNudgeBody": "Add your birth date to see your Sun, Moon and Rising sign.",
     "chartNudgeCreate": "Create my chart",
@@ -233,6 +234,7 @@
     "dateInvalid": "That date doesn't look right. Check it, or skip this for now.",
     "chartTitle": "Your birth chart",
     "chartBody": "Your birth time and place give you a Rising sign and houses. If you don't know the time, you can still see your Sun and Moon. Stays on your phone.",
+    "chartSampleNote": "This wheel is only a sample. Yours is calculated from the details below.",
     "chartSee": "See my chart"
   },
   "settings": {
@@ -443,6 +445,7 @@
   },
   "chart": {
     "title": "Birth chart",
+    "sample": "Sample",
     "subtitle": "Where the Sun, Moon and planets stood when you were born.",
     "formTitle": "Your birth details",
     "errorDate": "That date doesn't look right. Please check the day, month and year.",

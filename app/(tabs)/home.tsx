@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { Pressable, StyleSheet, View } from 'react-native';
 
 import { AppText, Button, Card, DailyCardPanel, Header, Icon, ReadingRow, Screen } from '@/components';
+import { ChartPreview } from '@/components/ChartPreview';
 import { SignPanel } from '@/components/SignPanel';
 import { SpreadGlyph } from '@/components/art/SpreadGlyph';
 import { isPremiumSpread } from '@/premium/features';
@@ -27,7 +28,8 @@ export default function Home() {
   const unlocked = useSpreadsUnlocked();
   const lockBadge = t(purchasesAvailable() ? 'premium.badge' : 'ads.badge');
   const name = useSettings((s) => s.name).trim();
-  const hasChart = useSettings((s) => s.birth !== null);
+  const birth = useSettings((s) => s.birth);
+  const hasChart = birth !== null;
   const nudgeDismissed = useSettings((s) => s.chartNudgeDismissed);
   const dismissNudge = useSettings((s) => s.dismissChartNudge);
   const now = new Date();
@@ -63,16 +65,20 @@ export default function Home() {
         testID="home-birth-chart"
         style={({ pressed }) => [
           styles.spread,
-          { backgroundColor: colors.surface, borderColor: colors.border, opacity: pressed ? 0.85 : 1 },
+          { backgroundColor: colors.surface, borderColor: colors.primary, opacity: pressed ? 0.85 : 1 },
         ]}
       >
+        <ChartPreview birth={birth} size={84} />
         <View style={styles.spreadText}>
           <AppText variant="label" bold>
             {t('home.chartTitle')}
           </AppText>
           <AppText variant="caption" tone="textMuted">
-            {t('home.chartBody')}
+            {hasChart ? t('home.chartBody') : t('home.chartSampleBody')}
           </AppText>
+        </View>
+        <View style={styles.chevron}>
+          <Icon name="back" size={20} color={colors.textMuted} />
         </View>
       </Pressable>
 

@@ -28,7 +28,7 @@ export function SearchField({ value, onChangeText, placeholder, accessibilityLab
         value={value}
         onChangeText={onChangeText}
         placeholder={placeholder}
-        placeholderTextColor={theme.colors.textMuted}
+        placeholderTextColor={theme.colors.placeholder}
         accessibilityLabel={accessibilityLabel}
         autoCorrect={false}
         autoCapitalize="none"

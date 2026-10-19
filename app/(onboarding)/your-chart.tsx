@@ -3,6 +3,8 @@ import { useTranslation } from 'react-i18next';
 
 import { isBirthDate } from '@/astro/birth';
 import { BirthFormFields } from '@/components/BirthFormFields';
+import { ChartPreview } from '@/components/ChartPreview';
+import { AppText } from '@/components/AppText';
 import { OnboardingFrame } from '@/components/OnboardingFrame';
 import { useBirthForm } from '@/hooks/useBirthForm';
 import { useSettings } from '@/store/settings';
@@ -37,6 +39,10 @@ export default function YourChart() {
       }}
       onSkip={() => finish(false)}
     >
+      <ChartPreview birth={null} size={180} />
+      <AppText variant="caption" tone="textMuted" center testID="onboarding-chart-sample-note">
+        {t('onboarding.chartSampleNote')}
+      </AppText>
       <BirthFormFields form={form} />
     </OnboardingFrame>
   );

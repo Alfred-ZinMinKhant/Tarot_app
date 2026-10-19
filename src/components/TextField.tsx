@@ -35,7 +35,7 @@ export function TextField({ label, hint, value, onChangeText, multiline, ...rest
         onChangeText={onChangeText}
         accessibilityLabel={label}
         accessibilityHint={hint}
-        placeholderTextColor={theme.colors.textMuted}
+        placeholderTextColor={theme.colors.placeholder}
         autoCorrect={false}
         spellCheck={false}
         multiline={multiline}

@@ -25,6 +25,8 @@ export type ColorTokens = {
   border: string;
   text: string;
   textMuted: string;
+  /** Hint text inside empty inputs: clearly dimmer than typed text, still ≥3:1 on the field. */
+  placeholder: string;
   primary: string;
   onPrimary: string;
   accent: string;
@@ -41,6 +43,7 @@ export const darkColors: ColorTokens = {
   border: '#4A3A80',
   text: palette.ivory,
   textMuted: '#C9BFD9',
+  placeholder: '#8C80B0',
   primary: palette.gold,
   onPrimary: palette.indigo,
   accent: palette.teal,

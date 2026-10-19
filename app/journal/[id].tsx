@@ -128,7 +128,7 @@ export default function JournalEntry() {
           value={notes}
           onChangeText={setNotes}
           placeholder={t('journal.notesPlaceholder')}
-          placeholderTextColor={theme.colors.textMuted}
+          placeholderTextColor={theme.colors.placeholder}
           accessibilityLabel={t('journal.notes')}
           multiline
           autoCorrect={false}
