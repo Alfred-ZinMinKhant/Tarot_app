@@ -86,6 +86,9 @@ export default function Home() {
         <AppText variant="heading" accessibilityRole="header">
           {t('home.startReading')}
         </AppText>
+        <AppText variant="caption" tone="textMuted" testID="home-start-hint">
+          {t('home.startHint')}
+        </AppText>
         {SPREADS.map((spread) => {
           const locked = !unlocked && isPremiumSpread(spread.id);
           return (

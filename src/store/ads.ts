@@ -2,7 +2,7 @@ import { create } from 'zustand';
 
 import type { AdsService, RewardOutcome } from '@/ads/service';
 import { interstitialDue } from '@/ads/pacing';
-import { isPremiumSpread } from '@/premium/features';
+import { isPremiumSpread, SHARES_PER_AD } from '@/premium/features';
 import { useAdPacing } from '@/store/adPacing';
 import { usePremium } from '@/store/premium';
 
@@ -16,6 +16,8 @@ type AdsState = {
   watchRewarded: () => Promise<RewardOutcome>;
   /** Plays a rewarded ad; a finished one grants a single reading of `spreadId`. */
   watchForSpread: (spreadId: string) => Promise<RewardOutcome>;
+  /** Plays a rewarded ad; a finished one adds SHARES_PER_AD image shares for this month. */
+  watchForShares: () => Promise<RewardOutcome>;
   /** A reading was finished and saved: count it, and start loading the interstitial when one is due. */
   noteReadingFinished: (spreadId: string) => void;
   /** On leaving a finished reading: shows the interstitial if one is due and loaded. Never waits for a load. */
@@ -78,6 +80,11 @@ export const useAds = create<AdsState>()((set, get) => ({
   watchForSpread: async (spreadId) => {
     const outcome = await get().watchRewarded();
     if (outcome === 'earned') grants.add(spreadId);
+    return outcome;
+  },
+  watchForShares: async () => {
+    const outcome = await get().watchRewarded();
+    if (outcome === 'earned') usePremium.getState().grantShares(SHARES_PER_AD);
     return outcome;
   },
   noteReadingFinished: (spreadId) => {

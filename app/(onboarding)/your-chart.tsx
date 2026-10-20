@@ -26,8 +26,8 @@ export default function YourChart() {
   return (
     <OnboardingFrame
       testID="onboarding-your-chart"
-      step={4}
-      total={4}
+      step={3}
+      total={3}
       title={t('onboarding.chartTitle')}
       body={t('onboarding.chartBody')}
       primaryLabel={t('onboarding.chartSee')}

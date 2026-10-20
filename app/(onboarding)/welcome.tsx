@@ -12,11 +12,11 @@ export default function Welcome() {
     <OnboardingFrame
       testID="onboarding-welcome"
       step={1}
-      total={4}
+      total={3}
       title={t('onboarding.welcomeTitle')}
       body={t('onboarding.welcomeBody')}
       primaryLabel={t('common.continue')}
-      onPrimary={() => router.push('/language')}
+      onPrimary={() => router.push('/about-you')}
       onSkip={() => {
         completeOnboarding();
         router.replace('/home');

@@ -14,10 +14,6 @@ name: Onboarding in Burmese, with name and weekday sign
 - tapOn:
     id: onboarding-next
 - assertVisible:
-    id: onboarding-language-step
-- tapOn:
-    id: onboarding-next
-- assertVisible:
     id: onboarding-about-you
 - tapOn:
     id: onboarding-name

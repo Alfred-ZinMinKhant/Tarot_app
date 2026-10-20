@@ -64,8 +64,8 @@ export default function AboutYou() {
   return (
     <OnboardingFrame
       testID="onboarding-about-you"
-      step={3}
-      total={4}
+      step={2}
+      total={3}
       title={t('onboarding.aboutTitle')}
       body={t('onboarding.aboutBody')}
       primaryLabel={t(hasDate && !weekdayOnly ? 'common.continue' : 'common.getStarted')}

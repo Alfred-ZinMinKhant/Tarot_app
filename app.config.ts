@@ -68,6 +68,10 @@ const config: ExpoConfig = {
       },
     ],
     'expo-image',
+    [
+      'expo-media-library',
+      { photosPermission: false, savePhotosPermission: 'Allow $(PRODUCT_NAME) to save your card and reading images to your photos.' },
+    ],
     'expo-sqlite',
     ['expo-notifications', { color: '#D4AF37' }],
     // Optional ads (AdMob). The defaults are Google's sample app IDs, which only serve test ads;

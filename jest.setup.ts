@@ -37,6 +37,12 @@ jest.mock('react-native-google-mobile-ads', () => ({
 }));
 jest.mock('expo-tracking-transparency', () => ({ requestTrackingPermissionsAsync: jest.fn() }));
 
+// expo-media-library needs native code; saving to photos is faked.
+jest.mock('expo-media-library/legacy', () => ({
+  requestPermissionsAsync: jest.fn(async () => ({ granted: true })),
+  saveToLibraryAsync: jest.fn(async () => undefined),
+}));
+
 // expo-document-picker needs the native file chooser; tests mock getDocumentAsync themselves.
 jest.mock('expo-document-picker', () => ({ getDocumentAsync: jest.fn() }));
 

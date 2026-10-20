@@ -7,6 +7,9 @@ export const PREMIUM_SPREADS: readonly string[] = ['love', 'celtic-cross'];
 /** Free plan: this many reading images can be shared per calendar month. */
 export const FREE_SHARES_PER_MONTH = 3;
 
+/** Shares added by watching one rewarded ad, once the free ones are used up. */
+export const SHARES_PER_AD = 3;
+
 export const isPremiumSpread = (spreadId: string): boolean => PREMIUM_SPREADS.includes(spreadId);
 
 /** "YYYY-MM" in local time, the period the free share allowance resets on. */

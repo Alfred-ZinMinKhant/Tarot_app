@@ -39,6 +39,7 @@
     "introTitle": "How $t(appName) works",
     "introBody": "Ask a question, draw cards, and use their meanings as gentle prompts for reflection. Your readings stay on this phone.",
     "startReading": "Start a reading",
+    "startHint": "New to tarot? Start with Card of the Day or a one-card reading. There's no required order; pick any spread.",
     "spreadCards": "Cards: {{n}}",
     "dailyTitle": "Card of the Day",
     "dailyTap": "Tap the card to reveal today's message",
@@ -71,6 +72,8 @@
     "noResultsBody": "Try another word, in English or Burmese."
   },
   "card": {
+    "share": "Share this card",
+    "promptNote": "Every card is a prompt for reflection, not a verdict. Hard cards often point to change or something worth your attention.",
     "notFoundTitle": "Card not found",
     "notFoundBody": "This card isn't in the deck.",
     "upright": "Upright",
@@ -191,6 +194,9 @@
     "dateMonths": "Last {{n}} months"
   },
   "share": {
+    "save": "Save to photos",
+    "saved": "Saved to your photos.",
+    "saveDenied": "Allow photo access in Settings to save the image.",
     "title": "Share this reading",
     "button": "Share image",
     "dialogTitle": "Share your reading",
@@ -215,8 +221,6 @@
   "onboarding": {
     "welcomeTitle": "Welcome to $t(appName)",
     "welcomeBody": "Draw a card, pause, and listen to your own inner voice. $t(appName) works offline, and everything you write stays on your phone.",
-    "languageTitle": "Choose your language",
-    "languageBody": "You can change this anytime in Settings.",
     "stepA11y": "Step {{current}} of {{total}}",
     "disclaimerTitle": "Before you begin",
     "aboutTitle": "A little about you",
@@ -488,6 +492,8 @@
     "watchToUnlock": "Watch a short ad to unlock this reading once",
     "unavailable": "No ad is available right now. Please try again later.",
     "notFinished": "Watch the whole ad to unlock the reading.",
+    "watchForShares": "Watch a short ad for {{n}} more shares",
+    "sharesUnlocked": "{{n}} more shares unlocked.",
     "privacyTitle": "Ad privacy choices",
     "privacyBody": "Review or change how ads use your data. This never affects the readings.",
     "privacyButton": "Manage ad privacy"

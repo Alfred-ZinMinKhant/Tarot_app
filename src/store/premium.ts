@@ -3,6 +3,7 @@ import { create } from 'zustand';
 import { createJSONStorage, persist } from 'zustand/middleware';
 
 import { FREE_SHARES_PER_MONTH, monthKey } from '@/premium/features';
+import { rewardedConfigured } from '@/store/ads';
 import type { PremiumPackage, PurchaseOutcome, PurchasesService } from '@/premium/service';
 import { logError } from '@/utils/log';
 
@@ -15,12 +16,15 @@ type PremiumState = {
   /** Image shares used this month on the free plan. */
   shareMonth: string;
   sharesUsed: number;
+  /** Extra shares this month earned by watching rewarded ads. */
+  bonusShares: number;
   init: () => Promise<void>;
   loadPackages: () => Promise<void>;
   purchase: (packageId: string) => Promise<PurchaseOutcome>;
   restore: () => Promise<boolean | null>;
   redeemCode: () => Promise<void>;
   recordShare: (now?: Date) => void;
+  grantShares: (n: number, now?: Date) => void;
 };
 
 /** undefined = not wired yet; null = this build has no in-app purchases (everything unlocked). */
@@ -53,6 +57,7 @@ export const usePremium = create<PremiumState>()(
       packagesError: false,
       shareMonth: monthKey(),
       sharesUsed: 0,
+      bonusShares: 0,
       init: async () => {
         if (!service) return;
         service.onChange((isPremium) => set({ isPremium }));
@@ -100,15 +105,20 @@ export const usePremium = create<PremiumState>()(
       },
       recordShare: (now = new Date()) => {
         const month = monthKey(now);
-        const used = get().shareMonth === month ? get().sharesUsed : 0;
-        set({ shareMonth: month, sharesUsed: used + 1 });
+        const same = get().shareMonth === month;
+        set({ shareMonth: month, sharesUsed: (same ? get().sharesUsed : 0) + 1, bonusShares: same ? get().bonusShares : 0 });
+      },
+      grantShares: (n, now = new Date()) => {
+        const month = monthKey(now);
+        const same = get().shareMonth === month;
+        set({ shareMonth: month, sharesUsed: same ? get().sharesUsed : 0, bonusShares: (same ? get().bonusShares : 0) + n });
       },
     }),
     {
       name: 'nat-tarot.premium',
       version: 1,
       storage: createJSONStorage(() => AsyncStorage),
-      partialize: (s) => ({ isPremium: s.isPremium, shareMonth: s.shareMonth, sharesUsed: s.sharesUsed }),
+      partialize: (s) => ({ isPremium: s.isPremium, shareMonth: s.shareMonth, sharesUsed: s.sharesUsed, bonusShares: s.bonusShares }),
     },
   ),
 );
@@ -121,10 +131,12 @@ export function useUnlocked(): boolean {
 
 /** Free image shares left this month, or null when unlimited. */
 export function useSharesLeft(now = new Date()): number | null {
-  const unlocked = useUnlocked();
+  const isPremium = usePremium((s) => s.isPremium);
   const shareMonth = usePremium((s) => s.shareMonth);
   const sharesUsed = usePremium((s) => s.sharesUsed);
-  if (unlocked) return null;
-  const used = shareMonth === monthKey(now) ? sharesUsed : 0;
-  return Math.max(0, FREE_SHARES_PER_MONTH - used);
+  const bonusShares = usePremium((s) => s.bonusShares);
+  // Open for Premium, and for a build that sells neither Premium nor rewarded ads.
+  if (isPremium || (!purchasesAvailable() && !rewardedConfigured())) return null;
+  const current = shareMonth === monthKey(now);
+  return Math.max(0, FREE_SHARES_PER_MONTH + (current ? bonusShares : 0) - (current ? sharesUsed : 0));
 }
