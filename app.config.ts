@@ -44,6 +44,10 @@ const config: ExpoConfig = {
       'android.permission.SYSTEM_ALERT_WINDOW',
       'android.permission.READ_EXTERNAL_STORAGE',
       'android.permission.WRITE_EXTERNAL_STORAGE',
+      // Saving to the gallery needs no read access (Play photo/video permissions policy).
+      'android.permission.READ_MEDIA_IMAGES',
+      'android.permission.READ_MEDIA_VIDEO',
+      'android.permission.READ_MEDIA_AUDIO',
       'android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK',
     ],
   },
