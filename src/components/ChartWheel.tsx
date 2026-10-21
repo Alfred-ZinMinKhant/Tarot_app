@@ -5,13 +5,29 @@ import type { PlanetId } from '@/astro/ephemeris';
 import { glyphText as text, PLANET_GLYPHS, SIGN_GLYPHS } from '@/astro/glyphs';
 import { useAppTheme } from '@/theme/ThemeContext';
 
-const MIN_GAP = 9; // degrees between planet glyphs
+const MIN_GAP = 13; // degrees between planet glyphs
 
 /** Spreads crowded planets apart so their glyphs don't overlap; positions only move on screen. */
 function spread(items: { id: PlanetId; lon: number }[]) {
+  if (items.length === 0) return [];
   const sorted = [...items].sort((a, b) => a.lon - b.lon);
-  const out = sorted.map((p) => ({ ...p, shown: p.lon }));
-  for (let pass = 0; pass < 6; pass++) {
+  // Start just after the widest empty arc, so a cluster straddling 0° Aries is treated as one run.
+  let start = 0;
+  let widest = -1;
+  sorted.forEach((p, i) => {
+    const next = sorted[(i + 1) % sorted.length]!;
+    const gap = (next.lon - p.lon + 360) % 360 || 360;
+    if (gap > widest) {
+      widest = gap;
+      start = (i + 1) % sorted.length;
+    }
+  });
+  const base = sorted[start]!.lon;
+  const out = sorted.map((_, i) => {
+    const p = sorted[(start + i) % sorted.length]!;
+    return { ...p, shown: base + ((p.lon - base + 360) % 360) };
+  });
+  for (let pass = 0; pass < 30; pass++) {
     for (let i = 1; i < out.length; i++) {
       const gap = out[i]!.shown - out[i - 1]!.shown;
       if (gap < MIN_GAP) {
@@ -21,7 +37,7 @@ function spread(items: { id: PlanetId; lon: number }[]) {
       }
     }
   }
-  return out;
+  return out.map((p) => ({ ...p, shown: (p.shown + 360) % 360 }));
 }
 
 type Props = { chart: Chart; size?: number; accessibilityLabel?: string };
