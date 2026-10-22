@@ -149,7 +149,7 @@ const config: ExpoConfig = {
       interstitialIos: env.ADMOB_INTERSTITIAL_IOS || '',
       interstitialAndroid: env.ADMOB_INTERSTITIAL_ANDROID || '',
       // Comma-separated AdMob test device IDs: these devices get test ads, so you can tap them.
-      testDevices: (env.ADMOB_TEST_DEVICES || '').split(',').map((d) => d.trim()).filter(Boolean),
+      testDevices: (env.ADMOB_TEST_DEVICES || '').split(',').map((d: string) => d.trim()).filter(Boolean),
     },
     // Numeric App Store ID, needed for iOS "Share app" / "Rate app" (Android uses the package name).
     store: { iosAppId: env.IOS_APP_STORE_ID || '' },
