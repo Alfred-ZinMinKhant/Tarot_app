@@ -5,6 +5,7 @@ import { interstitialDue } from '@/ads/pacing';
 import { isPremiumSpread, SHARES_PER_AD } from '@/premium/features';
 import { useAdPacing } from '@/store/adPacing';
 import { usePremium } from '@/store/premium';
+import { logError } from '@/utils/log';
 
 type AdsState = {
   /** Consent is settled and the SDK is running, so ads may be requested. */
@@ -105,7 +106,7 @@ export const useAds = create<AdsState>()((set, get) => ({
     }
   },
   openPrivacyOptions: async () => {
-    await service?.showPrivacyOptions().catch(() => undefined);
+    await service?.showPrivacyOptions().catch((e) => logError('ads.privacyOptions', e));
   },
 }));
 

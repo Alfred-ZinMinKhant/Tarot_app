@@ -10,6 +10,7 @@ import { cancelReminders } from '@/services/notifications';
 import { useAdPacing } from '@/store/adPacing';
 import { useDaily } from '@/store/daily';
 import { useJournal } from '@/store/journal';
+import { logError } from '@/utils/log';
 import { useReadingDraft } from '@/store/readingDraft';
 import { useSettings } from '@/store/settings';
 import { useSync } from '@/store/sync';
@@ -62,7 +63,8 @@ export function exportFileName(now = new Date()): string {
 
 /** Removes every reading, note, daily card, reminder and personal setting from this device. */
 export async function deleteAllUserData(): Promise<void> {
-  await cancelReminders().catch(() => undefined);
+  // A failed cancel must not stop the wipe: stale reminders are harmless, retained data is not.
+  await cancelReminders().catch((e) => logError('userData.cancelReminders', e));
   // Sign out of cloud backup first so the local wipe isn't mistaken for deletions to upload.
   // The cloud copy stays until the user deletes it (Settings → Cloud backup).
   await useSync.getState().signOut();

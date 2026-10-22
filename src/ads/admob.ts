@@ -10,6 +10,7 @@ import MobileAds, {
   RewardedAdEventType,
   TestIds,
 } from 'react-native-google-mobile-ads';
+import { logError } from '@/utils/log';
 
 import { adsConfig } from '@/config/ads';
 
@@ -35,7 +36,7 @@ export function adMobService(): AdsService | null {
         // Offline or the form failed: fall through; canRequestAds below decides.
       }
       if (Platform.OS === 'ios') {
-        await requestTrackingPermissionsAsync().catch(() => undefined);
+        await requestTrackingPermissionsAsync().catch((e) => logError('ads.tracking', e));
       }
       const info = await AdsConsent.getConsentInfo();
       if (!info.canRequestAds) return false;

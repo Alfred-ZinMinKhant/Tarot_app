@@ -6,6 +6,7 @@ import { Platform } from 'react-native';
 
 import { cancelReminders, scheduleReminders } from '@/services/notifications';
 import { useSettings } from '@/store/settings';
+import { logError } from '@/utils/log';
 
 /**
  * Keeps the queued daily reminders in sync with the settings and the active language, and opens
@@ -38,7 +39,7 @@ export function useReminders(ready: boolean) {
           },
         })
       : cancelReminders();
-    task.catch(() => undefined);
+    task.catch((e) => logError('reminders.sync', e));
   }, [ready, enabled, hour, minute, language, t, ensureSeed]);
 
   useEffect(() => {
@@ -50,7 +51,7 @@ export function useReminders(ready: boolean) {
     // A tap that launched the app, then taps while it is running.
     Notifications.getLastNotificationResponseAsync()
       .then(open)
-      .catch(() => undefined);
+      .catch((e) => logError('reminders.launchResponse', e));
     const sub = Notifications.addNotificationResponseReceivedListener(open);
     return () => sub.remove();
   }, [ready]);

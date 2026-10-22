@@ -5,6 +5,7 @@ import { FakeCloud, fakeServices } from '../test/mocks/fakeCloud';
 
 import { getJournalRepo, resetJournalRepo } from '@/db';
 import { syncTiming } from '@/hooks/useCloudSync';
+import * as notifications from '@/services/notifications';
 import { deleteAllUserData } from '@/services/userData';
 import { useDaily } from '@/store/daily';
 import { useJournal } from '@/store/journal';
@@ -168,6 +169,18 @@ describe('cloud backup', () => {
     expect(svc.auth.email).toBeNull();
     expect(svc.cloud.rows.size).toBe(1);
     expect(useJournal.getState().readings).toEqual([]);
+  });
+
+  it('Delete my data still wipes everything when cancelling reminders fails', async () => {
+    const cancel = jest.spyOn(notifications, 'cancelReminders').mockRejectedValue(new Error('no permission'));
+    const warn = jest.spyOn(console, 'warn').mockImplementation(() => undefined);
+    await save('Q');
+    await deleteAllUserData();
+    expect(cancel).toHaveBeenCalled();
+    expect(warn).toHaveBeenCalledWith('[userData.cancelReminders]', expect.any(Error));
+    expect(useJournal.getState().readings).toEqual([]);
+    cancel.mockRestore();
+    warn.mockRestore();
   });
 
   it('signs in with Google, uploads the journal, and shows the account', async () => {
