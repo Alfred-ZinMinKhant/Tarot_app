@@ -1,4 +1,4 @@
-import { act, fireEvent, renderRouter, screen } from 'expo-router/testing-library';
+import { fireEvent, renderRouter, screen } from 'expo-router/testing-library';
 
 import en from '../locales/en.json';
 import my from '../locales/my.json';

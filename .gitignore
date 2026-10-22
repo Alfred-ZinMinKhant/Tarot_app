@@ -46,3 +46,6 @@ yarn-error.*
 # Original card scans (large); only the optimised WebP files are committed
 assets/cards/source/
 supabase/.temp/
+
+# test coverage output
+coverage/

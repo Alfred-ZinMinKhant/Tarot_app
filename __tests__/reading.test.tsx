@@ -200,7 +200,7 @@ describe('reading flow', () => {
       await waitFor(() => expect(useToast.getState().current?.text).toBe(en.journal.saved));
       expect(failingSave).toHaveBeenCalledTimes(2);
     } finally {
-      useJournal.setState({ save: realSave });
+      act(() => useJournal.setState({ save: realSave }));
       jest.restoreAllMocks();
     }
   });

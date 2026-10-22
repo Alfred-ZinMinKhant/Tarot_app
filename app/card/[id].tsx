@@ -10,7 +10,6 @@ import { getCard, toRoman } from '@/data/cards';
 import { READING_AREAS, type Orientation } from '@/data/types';
 import { useLanguage } from '@/hooks/useLanguage';
 import { useNumberFormat } from '@/hooks/useNumberFormat';
-import { shareEntries } from '@/utils/readings';
 import { spacing } from '@/theme/spacing';
 
 export default function CardDetail() {
