@@ -15,6 +15,8 @@ type Props = {
   width: number;
   disabled?: boolean;
   cardLabel: (index: number) => string;
+  /** Colour wash over the card backs (reading topic accent). */
+  tint?: string;
 };
 
 const MAX_ANGLE = 28;
@@ -31,6 +33,7 @@ const FanCard = memo(function FanCard({
   disabled,
   onPick,
   label,
+  tint,
 }: {
   index: number;
   count: number;
@@ -41,6 +44,7 @@ const FanCard = memo(function FanCard({
   disabled: boolean;
   onPick: (i: number) => void;
   label: string;
+  tint?: string;
 }) {
   const reduceMotion = useReduceMotion();
   const lift = useSharedValue(picked ? 1 : 0);
@@ -71,14 +75,14 @@ const FanCard = memo(function FanCard({
         importantForAccessibility={picked ? 'no-hide-descendants' : 'auto'}
         testID={`fan-card-${index}`}
       >
-        <CardBack width={cardWidth} flat />
+        <CardBack width={cardWidth} flat tint={tint} />
       </Pressable>
     </Animated.View>
   );
 });
 
 /** Face-down cards spread in an arc; the user taps the ones that call to them. */
-export function FanDeck({ count, picked, onPick, width, disabled = false, cardLabel }: Props) {
+export function FanDeck({ count, picked, onPick, width, disabled = false, cardLabel, tint }: Props) {
   const cardWidth = Math.max(44, Math.min(80, width / 5.4));
   const cardHeight = cardWidth / CARD_ASPECT;
   const height = cardHeight + ARC_DROP + 64;
@@ -103,6 +107,7 @@ export function FanDeck({ count, picked, onPick, width, disabled = false, cardLa
           disabled={disabled}
           onPick={pickCard}
           label={cardLabel(i)}
+          tint={tint}
         />
       ))}
     </View>

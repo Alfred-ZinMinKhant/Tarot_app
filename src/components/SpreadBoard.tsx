@@ -23,13 +23,15 @@ type Props = {
   lang: Language;
   slotLabel: (index: number) => string;
   revealLabel: (index: number) => string;
+  /** Colour wash over face-down cards (reading topic accent). */
+  tint?: string;
 };
 
 const LABEL_MIN_WIDTH = 90; // narrower slots show the symbol only
 const GAP = 0.12; // gap between cards, as a fraction of card width
 
 /** Lays out a spread's positions (empty slots, face-down or face-up cards) to fit the given width. */
-export function SpreadBoard({ spread, cards, revealed, onReveal, width, lang, slotLabel, revealLabel }: Props) {
+export function SpreadBoard({ spread, cards, revealed, onReveal, width, lang, slotLabel, revealLabel, tint }: Props) {
   const { colors } = useAppTheme();
   const fmt = useNumberFormat();
   const size = layoutSize(spread);
@@ -63,6 +65,7 @@ export function SpreadBoard({ spread, cards, revealed, onReveal, width, lang, sl
                 width={cardWidth}
                 reversed={drawn.reversed}
                 revealed={!!revealed[i]}
+                tint={tint}
                 onPress={revealed[i] || !onReveal ? undefined : () => onReveal(i)}
                 accessibilityLabel={revealed[i] ? `${p[lang].name}: ${card[lang].name}` : revealLabel(i)}
                 testID={`spread-card-${i}`}

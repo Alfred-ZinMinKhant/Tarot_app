@@ -127,7 +127,45 @@
       "reversedMany": "Many cards are reversed, which can point to energy turned inward or something still unfolding. Go gently.",
       "allUpright": "Every card is upright, suggesting energy that is flowing openly.",
       "keywords": "Key themes: {{keywords}}.",
-      "advice": "A thought to carry with you: {{advice}}"
+      "advice": "A thought to carry with you: {{advice}}",
+      "intro": {
+        "love": "Looking at this through the lens of love and relationships:",
+        "career": "Looking at this through the lens of your work and path:",
+        "money": "Looking at this through the lens of money and resources:",
+        "health": "Looking at this through the lens of your wellbeing and inner life:"
+      },
+      "suit": {
+        "love": {
+          "cups": "Cups lead: feelings and connection are strongly in focus for your love life.",
+          "wands": "Wands lead: passion and desire are driving your love life, so take care it does not burn too fast.",
+          "swords": "Swords lead: honest words and clear thinking matter most in matters of the heart.",
+          "pentacles": "Pentacles lead: stability, commitment and showing love through everyday actions are in focus."
+        },
+        "career": {
+          "cups": "Cups lead: how work feels to you, and your relationships there, are in focus.",
+          "wands": "Wands lead: drive, ambition and new initiatives are in focus for your work.",
+          "swords": "Swords lead: decisions, communication and clear strategy are in focus for your work.",
+          "pentacles": "Pentacles lead: craft, steady effort and tangible results are in focus for your work."
+        },
+        "money": {
+          "cups": "Cups lead: how you feel about money, and spending driven by emotion, are in focus.",
+          "wands": "Wands lead: new ventures and income-generating energy are in focus.",
+          "swords": "Swords lead: clear thinking, planning and honest accounting are in focus for your money.",
+          "pentacles": "Pentacles lead: material security, savings and practical foundations are strongly in focus."
+        },
+        "health": {
+          "cups": "Cups lead: emotional wellbeing and inner nourishment are in focus.",
+          "wands": "Wands lead: vitality and how you spend your energy are in focus.",
+          "swords": "Swords lead: a busy mind and its effect on rest are in focus.",
+          "pentacles": "Pentacles lead: your body, routines and grounding habits are in focus."
+        }
+      },
+      "adviceTopic": {
+        "love": "For your heart, a thought to carry: {{advice}}",
+        "career": "For your work, a thought to carry: {{advice}}",
+        "money": "For your finances, a thought to carry: {{advice}}",
+        "health": "For your wellbeing, a thought to carry: {{advice}}"
+      }
     },
     "questionShown": "Your question: {{question}}",
     "newReading": "New reading",
@@ -146,7 +184,34 @@
     "pickForMe": "Choose for me",
     "shuffleTap": "Tap to spread the cards",
     "positionHeading": "{{number}}. {{position}}",
-    "share": "Share"
+    "share": "Share",
+    "answer": {
+      "title": "Your answer",
+      "intro": {
+        "yesno": "You asked a yes-or-no question, so here is where the cards lean.",
+        "when": "You asked about timing, so here is what the cards suggest.",
+        "open": "Here is how the cards speak to your question."
+      },
+      "verdict": {
+        "yes": "Leaning yes: the cards flow in your favour, and the way looks fairly open.",
+        "leaningYes": "Leaning towards yes, with some things to handle along the way.",
+        "unclear": "Unclear, or it depends: the cards are mixed, so your own choices will tip the balance.",
+        "leaningNo": "Leaning towards no, or not in its current form: there are obstacles to look at first.",
+        "no": "Leaning no for now: the cards point to resistance, so this may need a different approach or more time."
+      },
+      "timing": {
+        "wands": "Things tend to move quickly: think days to a few weeks.",
+        "swords": "A fairly quick turn, driven by decisions and conversations: think weeks.",
+        "cups": "This unfolds at the pace of feelings: think weeks to a few months.",
+        "pentacles": "This builds slowly and steadily: think months or longer.",
+        "major": "This looks like a turning point rather than a fixed date. It arrives when the lesson has landed."
+      },
+      "delayed": "Several cards are reversed, so expect some delay or inner work first.",
+      "keyCard": "The card that speaks most to your question is {{card}}{{reversed}}: {{text}}",
+      "reversedSuffix": " (reversed)",
+      "disclaimer": "The cards offer reflection, not certainty. The choice is always yours.",
+      "healthNote": "For questions about health, the cards can only offer reflection. Please speak to a health professional for real answers."
+    }
   },
   "daily": {
     "title": "Card of the Day",

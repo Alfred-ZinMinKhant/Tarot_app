@@ -20,6 +20,8 @@ type Props = {
   reversed?: boolean;
   /** Face up when true; flips with an animation when it changes. */
   revealed: boolean;
+  /** Colour wash over the card back (reading topic accent). */
+  tint?: string;
   onPress?: () => void;
   accessibilityLabel?: string;
   testID?: string;
@@ -28,7 +30,7 @@ type Props = {
 export const FLIP_MS = 520;
 
 /** A card that flips from its back to its face (3D rotate around the Y axis). */
-export const TarotCard = memo(function TarotCard({ card, width, reversed = false, revealed, onPress, accessibilityLabel, testID }: Props) {
+export const TarotCard = memo(function TarotCard({ card, width, reversed = false, revealed, tint, onPress, accessibilityLabel, testID }: Props) {
   const reduceMotion = useReduceMotion();
   const progress = useSharedValue(revealed ? 1 : 0);
   const height = width / CARD_ASPECT;
@@ -63,7 +65,7 @@ export const TarotCard = memo(function TarotCard({ card, width, reversed = false
       style={{ width, height }}
     >
       <Animated.View style={[StyleSheet.absoluteFill, styles.face, backStyle]} pointerEvents="none">
-        <CardBack width={width} flat />
+        <CardBack width={width} flat tint={tint} />
       </Animated.View>
       <Animated.View style={[StyleSheet.absoluteFill, styles.face, frontStyle]} pointerEvents="none">
         {revealed ? <CardFace card={card} width={width} reversed={reversed} /> : <View />}

@@ -12,11 +12,11 @@ import { CardBack } from './art/CardBack';
 import { CARD_ASPECT } from './art/cardBackSvg';
 import { useReduceMotion } from '@/hooks/useReduceMotion';
 
-type Props = { width: number; onPress?: () => void; accessibilityLabel?: string; testID?: string };
+type Props = { width: number; tint?: string; onPress?: () => void; accessibilityLabel?: string; testID?: string };
 
 const LAYERS = 5;
 
-function Layer({ index, cardWidth }: { index: number; cardWidth: number }) {
+function Layer({ index, cardWidth, tint }: { index: number; cardWidth: number; tint?: string }) {
   const reduceMotion = useReduceMotion();
   const t = useSharedValue(0);
   useEffect(() => {
@@ -40,13 +40,13 @@ function Layer({ index, cardWidth }: { index: number; cardWidth: number }) {
   }));
   return (
     <Animated.View style={[StyleSheet.absoluteFill, style]}>
-      <CardBack width={cardWidth} />
+      <CardBack width={cardWidth} tint={tint} />
     </Animated.View>
   );
 }
 
 /** A small stack of card backs riffling side to side while the deck is shuffled. */
-export function ShuffleStack({ width, onPress, accessibilityLabel, testID }: Props) {
+export function ShuffleStack({ width, tint, onPress, accessibilityLabel, testID }: Props) {
   const cardWidth = Math.min(140, width * 0.36);
   return (
     <Pressable
@@ -58,7 +58,7 @@ export function ShuffleStack({ width, onPress, accessibilityLabel, testID }: Pro
     >
       <View style={{ width: cardWidth, height: cardWidth / CARD_ASPECT }}>
         {Array.from({ length: LAYERS }, (_, i) => (
-          <Layer key={i} index={i} cardWidth={cardWidth} />
+          <Layer key={i} index={i} cardWidth={cardWidth} tint={tint} />
         ))}
       </View>
     </Pressable>

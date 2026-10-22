@@ -11,12 +11,14 @@ type Props = {
   width: number;
   /** Skip the drop shadow; used where many backs are on screen at once (Android draws each shadow offscreen). */
   flat?: boolean;
+  /** Colour wash over the back (the reading topic's accent). */
+  tint?: string;
   accessibilityLabel?: string;
   testID?: string;
 };
 
 /** The original indigo-and-gold card back (lotus, kanok scrolls, crescent moon). */
-export const CardBack = memo(function CardBack({ width, flat, accessibilityLabel, testID }: Props) {
+export const CardBack = memo(function CardBack({ width, flat, tint, accessibilityLabel, testID }: Props) {
   const height = width / CARD_ASPECT;
   return (
     <View
@@ -27,6 +29,7 @@ export const CardBack = memo(function CardBack({ width, flat, accessibilityLabel
       testID={testID}
     >
       <Image source={CARD_BACK_IMAGE} style={{ width, height }} resizeMode="cover" />
+      {tint ? <View pointerEvents="none" style={[StyleSheet.absoluteFill, { backgroundColor: tint, opacity: 0.22 }]} /> : null}
     </View>
   );
 });

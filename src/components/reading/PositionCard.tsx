@@ -2,33 +2,35 @@ import { useTranslation } from 'react-i18next';
 import { StyleSheet, View } from 'react-native';
 
 import { getCard } from '@/data/cards';
-import { type DrawnCard, readingText, type SpreadPosition, type Topic } from '@/engine';
+import { type DrawnCard, positionPrompt, readingText, type SpreadPosition, type Topic } from '@/engine';
 import { useLanguage } from '@/hooks/useLanguage';
 import { useNumberFormat } from '@/hooks/useNumberFormat';
 import { spacing } from '@/theme/spacing';
 import { useAppTheme } from '@/theme/ThemeContext';
+import { topicTint } from '@/theme/topicTheme';
 
 import { PositionGlyph } from '../art/PositionGlyph';
 import { AppText } from '../AppText';
 import { Card } from '../Card';
 import { Chip } from '../Chip';
 
-type Props = { index: number; position: SpreadPosition; drawn: DrawnCard; topic: Topic };
+type Props = { index: number; spreadId: string; position: SpreadPosition; drawn: DrawnCard; topic: Topic };
 
 /** One revealed card with its position heading and the reading text for the chosen topic. */
-export function PositionCard({ index, position, drawn, topic }: Props) {
+export function PositionCard({ index, spreadId, position, drawn, topic }: Props) {
   const { t } = useTranslation();
   const lang = useLanguage();
   const fmt = useNumberFormat();
   const theme = useAppTheme();
   const card = getCard(drawn.cardId)!;
+  const tint = topicTint(topic);
   return (
-    <Card testID={`reading-position-${index}`}>
+    <Card testID={`reading-position-${index}`} style={tint ? { borderColor: tint, borderWidth: 1 } : undefined}>
       <View style={styles.positionRow}>
         <PositionGlyph id={position.id} size={28} color={theme.colors.primary} />
         <AppText variant="caption" tone="textMuted" style={styles.flex}>
           {t('reading.positionHeading', { number: fmt(index + 1), position: position[lang].name })} ·{' '}
-          {position[lang].prompt}
+          {positionPrompt(spreadId, position, topic, lang)}
         </AppText>
       </View>
       <View style={styles.cardTitle}>

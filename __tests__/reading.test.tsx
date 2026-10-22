@@ -132,6 +132,50 @@ describe('reading flow', () => {
     );
   });
 
+  describe('answering the question', () => {
+    async function readWithQuestion(question: string, topic?: string) {
+      renderRouter('./app', { initialUrl: '/reading/one-card' });
+      if (topic) fireEvent.press(await screen.findByTestId(topic));
+      fireEvent.changeText(await screen.findByTestId('reading-question-input'), question);
+      fireEvent.press(screen.getByTestId('reading-start'));
+      fireEvent.press(await screen.findByTestId('reading-shuffle'));
+      fireEvent.press(await screen.findByTestId('fan-card-10'));
+      await revealStep();
+      fireEvent.press(screen.getByTestId('spread-card-0'));
+      await screen.findByTestId('reading-summary');
+    }
+
+    it('gives a yes/no leaning for a yes/no question', async () => {
+      await readWithQuestion('Should I take the job?');
+      const answer = screen.getByTestId('reading-answer');
+      expect(within(answer).getByText(en.reading.answer.title)).toBeTruthy();
+      expect(within(answer).getByText('“Should I take the job?”')).toBeTruthy();
+      expect(screen.getByTestId('reading-answer-verdict')).toBeTruthy();
+      expect(screen.queryByTestId('reading-answer-timing')).toBeNull();
+    });
+
+    it('gives a timing hint for a "when" question', async () => {
+      await readWithQuestion('When will I meet someone?');
+      expect(screen.getByTestId('reading-answer-timing')).toBeTruthy();
+      expect(screen.queryByTestId('reading-answer-verdict')).toBeNull();
+    });
+
+    it('gives no verdict for health questions and shows the health note', async () => {
+      await readWithQuestion('Should I stop my medication?', 'topic-health');
+      const answer = screen.getByTestId('reading-answer');
+      expect(screen.queryByTestId('reading-answer-verdict')).toBeNull();
+      expect(within(answer).getByText(en.reading.answer.healthNote, { normalizer })).toBeTruthy();
+    });
+
+    it('shows no answer card without a question', async () => {
+      await startAndPick('one-card', [3]);
+      await revealStep();
+      fireEvent.press(screen.getByTestId('spread-card-0'));
+      await screen.findByTestId('reading-summary');
+      expect(screen.queryByTestId('reading-answer')).toBeNull();
+    });
+  });
+
   it('handles an unknown spread', async () => {
     renderRouter('./app', { initialUrl: '/reading/nope' });
     expect(await screen.findByText(en.reading.notFound)).toBeTruthy();

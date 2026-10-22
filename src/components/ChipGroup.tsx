@@ -4,7 +4,7 @@ import { spacing } from '@/theme/spacing';
 
 import { Chip } from './Chip';
 
-export type ChipOption<T extends string> = { value: T; label: string; accessibilityLabel?: string };
+export type ChipOption<T extends string> = { value: T; label: string; accessibilityLabel?: string; accent?: string };
 
 type Props<T extends string> = {
   options: ChipOption<T>[];
@@ -31,6 +31,7 @@ export function ChipGroup<T extends string>({
       label={o.label}
       accessibilityLabel={o.accessibilityLabel}
       selected={o.value === value}
+      accent={o.accent}
       onPress={() => onChange(o.value)}
       testID={testIDPrefix ? `${testIDPrefix}-${o.value}` : undefined}
     />

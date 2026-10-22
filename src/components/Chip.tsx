@@ -8,12 +8,14 @@ import { AppText } from './AppText';
 type Props = {
   label: string;
   selected?: boolean;
+  /** Fill colour when selected, instead of the primary colour (reading topic accent). */
+  accent?: string;
   onPress?: () => void;
   accessibilityLabel?: string;
   testID?: string;
 };
 
-export function Chip({ label, selected = false, onPress, accessibilityLabel, testID }: Props) {
+export function Chip({ label, selected = false, accent, onPress, accessibilityLabel, testID }: Props) {
   const { colors } = useAppTheme();
   return (
     <Pressable
@@ -26,8 +28,8 @@ export function Chip({ label, selected = false, onPress, accessibilityLabel, tes
       style={({ pressed }) => [
         styles.chip,
         {
-          backgroundColor: selected ? colors.primary : colors.surfaceAlt,
-          borderColor: selected ? colors.primary : colors.border,
+          backgroundColor: selected ? (accent ?? colors.primary) : colors.surfaceAlt,
+          borderColor: selected ? (accent ?? colors.primary) : colors.border,
           opacity: pressed ? 0.85 : 1,
         },
       ]}

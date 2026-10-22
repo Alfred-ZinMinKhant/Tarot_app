@@ -5,6 +5,7 @@ import { type Topic, TOPICS } from '@/engine';
 import { useLanguage } from '@/hooks/useLanguage';
 import { radius, spacing } from '@/theme/spacing';
 import { useAppTheme } from '@/theme/ThemeContext';
+import { topicTint } from '@/theme/topicTheme';
 import { fontFamilyFor, scriptForLanguage } from '@/theme/typography';
 
 import { AppText } from '../AppText';
@@ -33,7 +34,7 @@ export function SetupForm({ topic, onTopic, question, onQuestion, onStart }: Pro
           testIDPrefix="topic"
           value={topic}
           onChange={onTopic}
-          options={TOPICS.map((value) => ({ value, label: t(`reading.topics.${value}`) }))}
+          options={TOPICS.map((value) => ({ value, label: t(`reading.topics.${value}`), accent: topicTint(value) }))}
         />
       </View>
       <View style={styles.section}>

@@ -8,6 +8,7 @@ import {
   BackButton,
   Button,
   Card,
+  Chip,
   EmptyState,
   FanDeck,
   Header,
@@ -18,10 +19,11 @@ import {
 } from '@/components';
 import { SpreadGlyph } from '@/components/art/SpreadGlyph';
 import { CrisisCard } from '@/components/reading/CrisisCard';
+import { AnswerCard } from '@/components/reading/AnswerCard';
 import { PositionCard } from '@/components/reading/PositionCard';
 import { ResumeCard } from '@/components/reading/ResumeCard';
 import { SetupForm } from '@/components/reading/SetupForm';
-import { getSpread, summarize, type Topic, TOPICS } from '@/engine';
+import { answerQuestion, getSpread, summarize, type Topic, TOPICS } from '@/engine';
 import { FAN_SIZE, useReadingFlow } from '@/hooks/useReadingFlow';
 import { useLanguage } from '@/hooks/useLanguage';
 import { useNumberFormat } from '@/hooks/useNumberFormat';
@@ -31,6 +33,7 @@ import { useSpreadLocked } from '@/store/spreadAccess';
 import { useSettings } from '@/store/settings';
 import { spacing } from '@/theme/spacing';
 import { useAppTheme } from '@/theme/ThemeContext';
+import { topicTint } from '@/theme/topicTheme';
 import { formatDate } from '@/utils/dates';
 import { shareEntries } from '@/utils/readings';
 
@@ -100,7 +103,9 @@ export default function Reading() {
   }
 
   const positionName = (i: number) => spread.positions[i]![lang].name;
-  const summary = allRevealed ? summarize(drawn, lang, { reversals }) : [];
+  const tint = topicTint(topic);
+  const answer = allRevealed ? answerQuestion(drawn, question, topic) : null;
+  const summary = allRevealed ? summarize(drawn, lang, { reversals, topic }) : [];
 
   return (
     <Screen testID="screen-reading" lockTouch={busy}>
@@ -122,6 +127,12 @@ export default function Reading() {
         </AppText>
       ) : null}
 
+      {phase !== 'setup' && phase !== 'crisis' && tint ? (
+        <View style={styles.topicBadge}>
+          <Chip label={t(`reading.topics.${topic}`)} selected accent={tint} />
+        </View>
+      ) : null}
+
       {pendingDraft ? <ResumeCard onContinue={resume} onDiscard={discardDraft} /> : null}
 
       {phase === 'setup' ? (
@@ -140,6 +151,7 @@ export default function Reading() {
         <View style={styles.centre}>
           <ShuffleStack
             width={contentWidth}
+            tint={tint}
             onPress={finishShuffle}
             accessibilityLabel={t('reading.shuffleTap')}
             testID="reading-shuffle"
@@ -164,6 +176,7 @@ export default function Reading() {
             {t('reading.pickTitle', { remaining: fmt(count - picks.length) })}
           </AppText>
           <FanDeck
+            tint={tint}
             count={FAN_SIZE}
             picked={picks}
             onPick={pick}
@@ -179,6 +192,7 @@ export default function Reading() {
             testID="reading-pick-for-me"
           />
           <SpreadBoard
+            tint={tint}
             spread={spread}
             cards={spread.positions.map((_, i) => drawn[i])}
             revealed={[]}
@@ -198,6 +212,7 @@ export default function Reading() {
             </AppText>
           ) : null}
           <SpreadBoard
+            tint={tint}
             spread={spread}
             cards={drawn}
             revealed={revealed}
@@ -221,6 +236,7 @@ export default function Reading() {
               <PositionCard
                 key={spread.positions[i]!.id}
                 index={i}
+                spreadId={spread.id}
                 position={spread.positions[i]!}
                 drawn={d}
                 topic={topic}
@@ -230,7 +246,8 @@ export default function Reading() {
 
           {allRevealed ? (
             <>
-              <Card testID="reading-summary">
+              {answer ? <AnswerCard answer={answer} question={question} topic={topic} /> : null}
+              <Card testID="reading-summary" style={tint ? { borderColor: tint, borderWidth: 1 } : undefined}>
                 <AppText variant="heading">{t('reading.summaryTitle')}</AppText>
                 {summary.map((line) => (
                   <AppText key={line.key}>{t(`reading.summary.${line.key}`, line.params)}</AppText>
@@ -280,4 +297,5 @@ export default function Reading() {
 const styles = StyleSheet.create({
   centre: { alignItems: 'center', gap: spacing.sm },
   layoutPreview: { alignItems: 'center' },
+  topicBadge: { alignItems: 'center' },
 });
