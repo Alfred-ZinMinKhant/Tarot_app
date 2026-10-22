@@ -1,0 +1,37 @@
+name: Supabase backup
+
+# The repo is public, so the dump (private journal data) is encrypted on the runner and uploaded to a
+# private Cloudflare R2 bucket. It is never an artifact, and nothing below may echo the dump, the
+# connection string or the passphrase: workflow logs are public too.
+on:
+  schedule:
+    - cron: '0 4 * * 0'
+  workflow_dispatch:
+
+jobs:
+  backup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install a PostgreSQL 17 client
+        run: |
+          sudo apt-get install -y postgresql-common
+          sudo /usr/share/postgresql-common/pgdg/apt.postgresql.org.sh -y
+          sudo apt-get install -y postgresql-client-17
+      - name: Dump, encrypt and upload
+        env:
+          SUPABASE_DB_URL: ${{ secrets.SUPABASE_DB_URL }}
+          BACKUP_PASSPHRASE: ${{ secrets.BACKUP_PASSPHRASE }}
+          AWS_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+          AWS_DEFAULT_REGION: auto
+          R2_ENDPOINT: https://${{ secrets.R2_ACCOUNT_ID }}.r2.cloudflarestorage.com
+          R2_BUCKET: ${{ secrets.R2_BUCKET }}
+        run: |
+          set -euo pipefail
+          file="supabase-$(date -u +%Y-%m-%d).sql.gz.gpg"
+          pg_dump "$SUPABASE_DB_URL" --no-owner --no-privileges --schema=public --schema=auth \
+            | gzip \
+            | gpg --batch --yes --pinentry-mode loopback --symmetric --cipher-algo AES256 \
+                --passphrase "$BACKUP_PASSPHRASE" -o "$file"
+          test -s "$file"
+          aws s3 cp "$file" "s3://$R2_BUCKET/$file" --endpoint-url "$R2_ENDPOINT" --only-show-errors
