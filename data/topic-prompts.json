@@ -1,0 +1,112 @@
+{
+  "one-card": {
+    "focus": {
+      "love": { "en": "The message for your heart and relationships right now.", "my": "အခု သင့်နှလုံးသားနဲ့ ဆက်ဆံရေးအတွက် သတင်းစကား။" },
+      "career": { "en": "The message for your work and path right now.", "my": "အခု သင့်အလုပ်နဲ့ လမ်းကြောင်းအတွက် သတင်းစကား။" },
+      "money": { "en": "The message for your finances and resources right now.", "my": "အခု သင့်ငွေကြေးနဲ့ အရင်းအမြစ်အတွက် သတင်းစကား။" },
+      "health": { "en": "The message for your wellbeing and inner balance right now.", "my": "အခု သင့်ကျန်းမာရေးနဲ့ အတွင်းစိတ် ဟန်ချက်အတွက် သတင်းစကား။" }
+    }
+  },
+  "three-past-present-future": {
+    "past": {
+      "love": { "en": "What has shaped your heart and this relationship.", "my": "သင့်နှလုံးသားနဲ့ ဒီဆက်ဆံရေးကို ပုံဖော်ခဲ့တဲ့ အရာ။" },
+      "career": { "en": "What has shaped your work and the path so far.", "my": "သင့်အလုပ်နဲ့ အခုထိ လမ်းကြောင်းကို ပုံဖော်ခဲ့တဲ့ အရာ။" },
+      "money": { "en": "What has shaped your money habits and situation.", "my": "သင့်ငွေကြေးအကျင့်နဲ့ အခြေအနေကို ပုံဖော်ခဲ့တဲ့ အရာ။" },
+      "health": { "en": "What has shaped your energy and wellbeing.", "my": "သင့်စွမ်းအင်နဲ့ ကျန်းမာရေးကို ပုံဖော်ခဲ့တဲ့ အရာ။" }
+    },
+    "present": {
+      "love": { "en": "Where your heart and connections stand now.", "my": "အခု သင့်နှလုံးသားနဲ့ ဆက်ဆံရေး ဘယ်လိုရှိနေလဲ။" },
+      "career": { "en": "Where your work and ambitions stand now.", "my": "အခု သင့်အလုပ်နဲ့ ရည်မှန်းချက် ဘယ်လိုရှိနေလဲ။" },
+      "money": { "en": "Where your finances stand now.", "my": "အခု သင့်ငွေကြေးအခြေအနေ ဘယ်လိုရှိနေလဲ။" },
+      "health": { "en": "Where your body, mind and spirit stand now.", "my": "အခု သင့်ခန္ဓာကိုယ်၊ စိတ်နဲ့ စိတ်ဝိညာဉ် ဘယ်လိုရှိနေလဲ။" }
+    },
+    "future": {
+      "love": { "en": "Where love may be heading if nothing changes.", "my": "ဘာမှ မပြောင်းလဲရင် ချစ်ရေးမေတ္တာ ဦးတည်သွားနိုင်တဲ့ နေရာ။" },
+      "career": { "en": "Where your career may be heading if nothing changes.", "my": "ဘာမှ မပြောင်းလဲရင် သင့်အလုပ်လမ်းကြောင်း ဦးတည်သွားနိုင်တဲ့ နေရာ။" },
+      "money": { "en": "Where your finances may be heading if nothing changes.", "my": "ဘာမှ မပြောင်းလဲရင် သင့်ငွေကြေး ဦးတည်သွားနိုင်တဲ့ နေရာ။" },
+      "health": { "en": "Where your wellbeing may be heading if nothing changes.", "my": "ဘာမှ မပြောင်းလဲရင် သင့်ကျန်းမာရေး ဦးတည်သွားနိုင်တဲ့ နေရာ။" }
+    }
+  },
+  "three-situation-challenge-advice": {
+    "situation": {
+      "love": { "en": "The heart of what is happening in your love life.", "my": "သင့်ချစ်ရေးဘဝမှာ ဖြစ်ပျက်နေတာရဲ့ အနှစ်သာရ။" },
+      "career": { "en": "The heart of what is happening in your work.", "my": "သင့်အလုပ်မှာ ဖြစ်ပျက်နေတာရဲ့ အနှစ်သာရ။" },
+      "money": { "en": "The heart of what is happening with your money.", "my": "သင့်ငွေကြေးမှာ ဖြစ်ပျက်နေတာရဲ့ အနှစ်သာရ။" },
+      "health": { "en": "The heart of what is happening in your wellbeing.", "my": "သင့်ကျန်းမာရေးမှာ ဖြစ်ပျက်နေတာရဲ့ အနှစ်သာရ။" }
+    },
+    "challenge": {
+      "love": { "en": "What asks for care or patience in matters of the heart.", "my": "နှလုံးသားကိစ္စမှာ ဂရုစိုက်မှု ဒါမှမဟုတ် စိတ်ရှည်မှု လိုနေတဲ့ အရာ။" },
+      "career": { "en": "What asks for focus or patience in your work.", "my": "သင့်အလုပ်မှာ အာရုံစိုက်မှု ဒါမှမဟုတ် စိတ်ရှည်မှု လိုနေတဲ့ အရာ။" },
+      "money": { "en": "What asks for caution or patience with money.", "my": "ငွေကြေးကိစ္စမှာ သတိထားမှု ဒါမှမဟုတ် စိတ်ရှည်မှု လိုနေတဲ့ အရာ။" },
+      "health": { "en": "What asks for rest or gentleness in your wellbeing.", "my": "သင့်ကျန်းမာရေးမှာ အနားယူမှု ဒါမှမဟုတ် နူးညံ့မှု လိုနေတဲ့ အရာ။" }
+    },
+    "advice": {
+      "love": { "en": "A helpful way to nurture your heart and connections.", "my": "သင့်နှလုံးသားနဲ့ ဆက်ဆံရေးကို ပျိုးထောင်ဖို့ အထောက်အကူဖြစ်တဲ့ နည်းလမ်း။" },
+      "career": { "en": "A helpful way to move forward in your work.", "my": "သင့်အလုပ်မှာ ရှေ့ဆက်ဖို့ အထောက်အကူဖြစ်တဲ့ နည်းလမ်း။" },
+      "money": { "en": "A helpful way to handle your finances.", "my": "သင့်ငွေကြေးကို ကိုင်တွယ်ဖို့ အထောက်အကူဖြစ်တဲ့ နည်းလမ်း။" },
+      "health": { "en": "A helpful way to care for your wellbeing.", "my": "သင့်ကျန်းမာရေးကို ဂရုစိုက်ဖို့ အထောက်အကူဖြစ်တဲ့ နည်းလမ်း။" }
+    }
+  },
+  "celtic-cross": {
+    "present": {
+      "love": { "en": "The centre of your love situation.", "my": "သင့်ချစ်ရေးအခြေအနေရဲ့ ဗဟိုချက်။" },
+      "career": { "en": "The centre of your work situation.", "my": "သင့်အလုပ်အခြေအနေရဲ့ ဗဟိုချက်။" },
+      "money": { "en": "The centre of your money situation.", "my": "သင့်ငွေကြေးအခြေအနေရဲ့ ဗဟိုချက်။" },
+      "health": { "en": "The centre of your wellbeing right now.", "my": "အခု သင့်ကျန်းမာရေးရဲ့ ဗဟိုချက်။" }
+    },
+    "crossing": {
+      "love": { "en": "The tension or obstacle in your relationships.", "my": "သင့်ဆက်ဆံရေးမှာ ပါဝင်နေတဲ့ တင်းမာမှု ဒါမှမဟုတ် အတားအဆီး။" },
+      "career": { "en": "The tension or obstacle in your work.", "my": "သင့်အလုပ်မှာ ပါဝင်နေတဲ့ တင်းမာမှု ဒါမှမဟုတ် အတားအဆီး။" },
+      "money": { "en": "The tension or obstacle in your finances.", "my": "သင့်ငွေကြေးမှာ ပါဝင်နေတဲ့ တင်းမာမှု ဒါမှမဟုတ် အတားအဆီး။" },
+      "health": { "en": "The tension or strain in your wellbeing.", "my": "သင့်ကျန်းမာရေးမှာ ပါဝင်နေတဲ့ တင်းမာမှု ဒါမှမဟုတ် ဖိအား။" }
+    },
+    "foundation": {
+      "love": { "en": "The unspoken feelings beneath your love life.", "my": "သင့်ချစ်ရေးအောက်ခြေက မပြောဖြစ်တဲ့ ခံစားချက်တွေ။" },
+      "career": { "en": "The roots beneath your career, often unspoken.", "my": "သင့်အလုပ်လမ်းကြောင်းအောက်ခြေက၊ မကြာခဏ မပြောဖြစ်တဲ့ အမြစ်တွေ။" },
+      "money": { "en": "The beliefs and habits beneath your money story.", "my": "သင့်ငွေကြေးအကြောင်းအောက်ခြေက ယုံကြည်ချက်နဲ့ အကျင့်တွေ။" },
+      "health": { "en": "What lies beneath your wellbeing, often unspoken.", "my": "သင့်ကျန်းမာရေးအောက်ခြေမှာ ရှိနေတဲ့၊ မကြာခဏ မပြောဖြစ်တဲ့ အရာ။" }
+    },
+    "recent-past": {
+      "love": { "en": "What is just moving out of your love life.", "my": "သင့်ချစ်ရေးဘဝကနေ ထွက်ခွာနေပြီဖြစ်တဲ့ အရာ။" },
+      "career": { "en": "What is just moving out of your working life.", "my": "သင့်အလုပ်ဘဝကနေ ထွက်ခွာနေပြီဖြစ်တဲ့ အရာ။" },
+      "money": { "en": "What is just moving out of your financial picture.", "my": "သင့်ငွေကြေးမြင်ကွင်းကနေ ထွက်ခွာနေပြီဖြစ်တဲ့ အရာ။" },
+      "health": { "en": "What is just easing out of your wellbeing.", "my": "သင့်ကျန်းမာရေးကနေ ပြေလျော့သွားနေပြီဖြစ်တဲ့ အရာ။" }
+    },
+    "aim": {
+      "love": { "en": "Your hopes for love and connection.", "my": "ချစ်ရေးနဲ့ ဆက်ဆံရေးအတွက် သင့်မျှော်လင့်ချက်။" },
+      "career": { "en": "Your ambitions and conscious goals at work.", "my": "အလုပ်မှာ သင့်ရည်မှန်းချက်နဲ့ သိသိကြီး ထားတဲ့ ပန်းတိုင်။" },
+      "money": { "en": "Your financial hopes and conscious goals.", "my": "သင့်ငွေကြေးမျှော်လင့်ချက်နဲ့ သိသိကြီး ထားတဲ့ ပန်းတိုင်။" },
+      "health": { "en": "Your hopes for your health and balance.", "my": "သင့်ကျန်းမာရေးနဲ့ ဟန်ချက်အတွက် မျှော်လင့်ချက်။" }
+    },
+    "near-future": {
+      "love": { "en": "What may be coming into your love life soon.", "my": "မကြာခင် သင့်ချစ်ရေးဘဝထဲ ရောက်လာနိုင်တဲ့ အရာ။" },
+      "career": { "en": "What may be coming into your work soon.", "my": "မကြာခင် သင့်အလုပ်ထဲ ရောက်လာနိုင်တဲ့ အရာ။" },
+      "money": { "en": "What may be coming into your finances soon.", "my": "မကြာခင် သင့်ငွေကြေးထဲ ရောက်လာနိုင်တဲ့ အရာ။" },
+      "health": { "en": "What may be coming into your wellbeing soon.", "my": "မကြာခင် သင့်ကျန်းမာရေးထဲ ရောက်လာနိုင်တဲ့ အရာ။" }
+    },
+    "self": {
+      "love": { "en": "How you show up in love.", "my": "ချစ်ရေးမှာ သင် ဘယ်လို ပြသနေလဲ။" },
+      "career": { "en": "How you are showing up at work.", "my": "အလုပ်မှာ သင် ဘယ်လို ပြသနေလဲ။" },
+      "money": { "en": "How you are relating to money right now.", "my": "အခု ငွေကြေးနဲ့ သင် ဘယ်လို ဆက်ဆံနေလဲ။" },
+      "health": { "en": "How you are treating your body and mind.", "my": "သင့်ခန္ဓာကိုယ်နဲ့ စိတ်ကို သင် ဘယ်လို ဆက်ဆံနေလဲ။" }
+    },
+    "surroundings": {
+      "love": { "en": "The people and influences around your heart.", "my": "သင့်နှလုံးသားပတ်လည်က လူတွေနဲ့ လွှမ်းမိုးမှုတွေ။" },
+      "career": { "en": "The colleagues and influences around your work.", "my": "သင့်အလုပ်ပတ်လည်က လုပ်ဖော်ကိုင်ဖက်တွေနဲ့ လွှမ်းမိုးမှုတွေ။" },
+      "money": { "en": "The people and influences around your finances.", "my": "သင့်ငွေကြေးပတ်လည်က လူတွေနဲ့ လွှမ်းမိုးမှုတွေ။" },
+      "health": { "en": "The people and surroundings that affect your wellbeing.", "my": "သင့်ကျန်းမာရေးကို သက်ရောက်တဲ့ လူတွေနဲ့ ပတ်ဝန်းကျင်။" }
+    },
+    "hopes-fears": {
+      "love": { "en": "What you wish for in love, and what you fear.", "my": "ချစ်ရေးမှာ သင် လိုချင်တာနဲ့ ကြောက်တာ။" },
+      "career": { "en": "What you wish for at work, and what you worry about.", "my": "အလုပ်မှာ သင် လိုချင်တာနဲ့ စိုးရိမ်နေတာ။" },
+      "money": { "en": "What you wish for financially, and what you worry about.", "my": "ငွေကြေးမှာ သင် လိုချင်တာနဲ့ စိုးရိမ်နေတာ။" },
+      "health": { "en": "What you wish for your wellbeing, and what you worry about.", "my": "သင့်ကျန်းမာရေးအတွက် လိုချင်တာနဲ့ စိုးရိမ်နေတာ။" }
+    },
+    "direction": {
+      "love": { "en": "A likely direction for love, which your choices can still change.", "my": "ချစ်ရေးအတွက် ဖြစ်နိုင်ချေရှိတဲ့ ဦးတည်ချက်၊ သင့်ရွေးချယ်မှုတွေနဲ့ ပြောင်းလဲနိုင်သေးတယ်။" },
+      "career": { "en": "A likely direction for your career, which your choices can still change.", "my": "သင့်အလုပ်လမ်းကြောင်းအတွက် ဖြစ်နိုင်ချေရှိတဲ့ ဦးတည်ချက်၊ သင့်ရွေးချယ်မှုတွေနဲ့ ပြောင်းလဲနိုင်သေးတယ်။" },
+      "money": { "en": "A likely direction for your finances, which your choices can still change.", "my": "သင့်ငွေကြေးအတွက် ဖြစ်နိုင်ချေရှိတဲ့ ဦးတည်ချက်၊ သင့်ရွေးချယ်မှုတွေနဲ့ ပြောင်းလဲနိုင်သေးတယ်။" },
+      "health": { "en": "A likely direction for your wellbeing, which your choices can still change.", "my": "သင့်ကျန်းမာရေးအတွက် ဖြစ်နိုင်ချေရှိတဲ့ ဦးတည်ချက်၊ သင့်ရွေးချယ်မှုတွေနဲ့ ပြောင်းလဲနိုင်သေးတယ်။" }
+    }
+  }
+}

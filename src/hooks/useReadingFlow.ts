@@ -143,7 +143,7 @@ export function useReadingFlow(spread: Spread | undefined, initialTopic: Topic) 
     clearDraft();
     autoPicking.current = false;
     setBusy(false);
-    setDeck(prepareDeck({ reversals }));
+    setDeck(prepareDeck({ reversals, topic }));
     setPicks([]);
     setRevealed(Array.from({ length: count }, () => false));
     setPhase('shuffling');

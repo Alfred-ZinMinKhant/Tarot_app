@@ -1,4 +1,5 @@
 import raw from '@data/spreads.json';
+import topicPromptsRaw from '@data/topic-prompts.json';
 
 import type { Language } from '@/i18n/languages';
 
@@ -34,4 +35,12 @@ export function layoutSize(spread: Spread): { width: number; height: number } {
     height = Math.max(height, p.y + 1);
   }
   return { width, height };
+}
+
+type TopicPrompts = Record<string, Record<string, Record<string, Record<Language, string>>>>;
+const TOPIC_PROMPTS = topicPromptsRaw as TopicPrompts;
+
+/** A position's prompt, reworded for the reading topic when there is a topic-specific version. */
+export function positionPrompt(spreadId: string, position: SpreadPosition, topic: string, lang: Language): string {
+  return TOPIC_PROMPTS[spreadId]?.[position.id]?.[topic]?.[lang] ?? position[lang].prompt;
 }

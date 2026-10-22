@@ -1,6 +1,9 @@
 import spreadsJson from '../data/spreads.json';
+import topicPrompts from '../data/topic-prompts.json';
 import { getCard } from '../src/data/cards';
 import {
+  answerQuestion,
+  classifyQuestion,
   dailyCard,
   DECK_IDS,
   detectCrisis,
@@ -8,6 +11,7 @@ import {
   getSpread,
   hashString,
   layoutSize,
+  positionPrompt,
   prepareDeck,
   readingText,
   secureRandom,
@@ -235,5 +239,97 @@ describe('ids', () => {
     const ids = Array.from({ length: 200 }, () => uuidV4());
     for (const id of ids) expect(id).toMatch(/^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/);
     expect(new Set(ids).size).toBe(200);
+  });
+});
+
+describe('topic-aware readings', () => {
+  const spread = [
+    { cardId: 'cups-02-two', reversed: false },
+    { cardId: 'cups-06-six', reversed: false },
+    { cardId: 'swords-04-four', reversed: false },
+  ];
+
+  it('flavours the summary for a life area and leaves general untouched', () => {
+    const love = summarize(spread, 'en', { topic: 'love' });
+    expect(love.map((l) => l.key)).toEqual([
+      'intro.love',
+      'majorsNone',
+      'suit.love.cups',
+      'allUpright',
+      'keywords',
+      'adviceTopic.love',
+    ]);
+    expect(summarize(spread, 'en', { topic: 'general' })).toEqual(summarize(spread, 'en'));
+  });
+
+  it('rewords position prompts per topic and falls back to the default', () => {
+    const three = getSpread('three-past-present-future')!;
+    const past = three.positions[0]!;
+    expect(positionPrompt(three.id, past, 'money', 'en')).toBe(topicPrompts['three-past-present-future'].past.money.en);
+    expect(positionPrompt(three.id, past, 'general', 'en')).toBe(past.en.prompt);
+    const love = getSpread('love')!;
+    expect(positionPrompt(love.id, love.positions[0]!, 'money', 'my')).toBe(love.positions[0]!.my.prompt);
+  });
+
+  it('only overrides prompts for real spread positions', () => {
+    for (const [spreadId, positions] of Object.entries(topicPrompts)) {
+      const spread = getSpread(spreadId)!;
+      expect(spread).toBeDefined();
+      for (const [positionId, topics] of Object.entries(positions)) {
+        expect(spread.positions.some((p) => p.id === positionId)).toBe(true);
+        expect(Object.keys(topics).sort()).toEqual(['career', 'health', 'love', 'money']);
+      }
+    }
+  });
+
+  it('weights the draw towards the topic suits without duplicates or bias for general', () => {
+    const deck = prepareDeck({ topic: 'money', rand: seededRandom(5) });
+    expect(deck).toHaveLength(78);
+    expect(new Set(deck.map((d) => d.cardId)).size).toBe(78);
+    const top = (topic?: string) => {
+      let pentacles = 0;
+      for (let seed = 0; seed < 300; seed++) {
+        const d = prepareDeck({ topic, rand: seededRandom(seed) }).slice(0, 10);
+        pentacles += d.filter((c) => getCard(c.cardId)!.suit === 'pentacles').length;
+      }
+      return pentacles / 300;
+    };
+    expect(top('money')).toBeGreaterThan(top('general') + 0.4);
+  });
+});
+
+describe('answering the question', () => {
+  it('classifies questions', () => {
+    expect(classifyQuestion('Should I take the job?')).toBe('yesno');
+    expect(classifyQuestion('Will he text me back')).toBe('yesno');
+    expect(classifyQuestion('When will I move?')).toBe('when');
+    expect(classifyQuestion('What do I need to know about my career')).toBe('open');
+    expect(classifyQuestion('  ')).toBe('open');
+  });
+
+  it('leans on favourable cards, and the last card counts double', () => {
+    const good = [
+      { cardId: 'major-19-sun', reversed: false },
+      { cardId: 'cups-10-ten', reversed: false },
+    ];
+    expect(answerQuestion(good, 'Will it work out?', 'general')!.verdict).toBe('yes');
+    const bad = [
+      { cardId: 'major-16-tower', reversed: false },
+      { cardId: 'swords-10-ten', reversed: false },
+    ];
+    expect(answerQuestion(bad, 'Will it work out?', 'general')!.verdict).toBe('no');
+    const mixed = [
+      { cardId: 'major-19-sun', reversed: false },
+      { cardId: 'swords-10-ten', reversed: false },
+    ];
+    expect(answerQuestion(mixed, 'Will it work out?', 'general')!.verdict).toBe('leaningNo');
+  });
+
+  it('gives timing for "when", no verdict for health, and nothing without a question', () => {
+    const wands = [{ cardId: 'wands-03-three', reversed: true }];
+    const when = answerQuestion(wands, 'When will it happen?', 'general')!;
+    expect(when).toMatchObject({ kind: 'when', timing: 'wands', delayed: true });
+    expect(answerQuestion(wands, 'Will I get better?', 'health')!.verdict).toBeUndefined();
+    expect(answerQuestion(wands, '   ', 'general')).toBeNull();
   });
 });

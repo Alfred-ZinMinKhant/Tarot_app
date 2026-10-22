@@ -1,5 +1,5 @@
 import { getCard } from '@/data/cards';
-import type { Suit, TarotCard } from '@/data/types';
+import type { ReadingArea, Suit, TarotCard } from '@/data/types';
 import type { Language } from '@/i18n/languages';
 
 import type { DrawnCard } from './draw';
@@ -25,7 +25,10 @@ export type SummaryKey =
   | 'reversedMany'
   | 'allUpright'
   | 'keywords'
-  | 'advice';
+  | 'advice'
+  | `intro.${ReadingArea}`
+  | `adviceTopic.${ReadingArea}`
+  | `suit.${ReadingArea}.${Exclude<Suit, 'major'>}`;
 
 export type SummaryLine = { key: SummaryKey; params?: Record<string, string> };
 
@@ -36,6 +39,9 @@ const SUIT_KEY: Record<Exclude<Suit, 'major'>, SummaryKey> = {
   pentacles: 'suitPentacles',
 };
 
+const isArea = (topic: Topic): topic is ReadingArea =>
+  topic === 'love' || topic === 'career' || topic === 'money' || topic === 'health';
+
 const LIST_SEPARATOR: Record<Language, string> = { en: ', ', my: '၊ ' };
 
 /**
@@ -43,11 +49,17 @@ const LIST_SEPARATOR: Record<Language, string> = { en: ', ', my: '၊ ' };
  * a dominant suit, how many reversals), followed by the key themes and one piece of advice.
  * Returns i18n keys + params so the screen can render it in either language.
  */
-export function summarize(drawn: readonly DrawnCard[], lang: Language, { reversals = true } = {}): SummaryLine[] {
+export function summarize(
+  drawn: readonly DrawnCard[],
+  lang: Language,
+  { reversals = true, topic = 'general' }: { reversals?: boolean; topic?: Topic } = {},
+): SummaryLine[] {
   const cards = drawn.map((d) => ({ ...d, card: getCard(d.cardId)! })).filter((d) => d.card);
   const lines: SummaryLine[] = [];
   const n = cards.length;
   if (!n) return lines;
+  const area = isArea(topic) ? topic : undefined;
+  if (area) lines.push({ key: `intro.${area}` });
 
   if (n >= 3) {
     const majors = cards.filter((c) => c.card.arcana === 'major').length;
@@ -58,7 +70,7 @@ export function summarize(drawn: readonly DrawnCard[], lang: Language, { reversa
     for (const c of cards) if (c.card.suit !== 'major') counts.set(c.card.suit, (counts.get(c.card.suit) ?? 0) + 1);
     const ranked = [...counts.entries()].sort((a, b) => b[1] - a[1]);
     const [top, second] = ranked;
-    if (top && top[1] >= 2 && (!second || top[1] > second[1])) lines.push({ key: SUIT_KEY[top[0]] });
+    if (top && top[1] >= 2 && (!second || top[1] > second[1])) lines.push({ key: area ? `suit.${area}.${top[0]}` : SUIT_KEY[top[0]] });
 
     if (reversals) {
       const reversed = cards.filter((c) => c.reversed).length;
@@ -69,6 +81,6 @@ export function summarize(drawn: readonly DrawnCard[], lang: Language, { reversa
 
   const keywords = cards.map((c) => c.card[lang].keywords[0]!).filter((k, i, all) => all.indexOf(k) === i);
   lines.push({ key: 'keywords', params: { keywords: keywords.join(LIST_SEPARATOR[lang]) } });
-  lines.push({ key: 'advice', params: { advice: cards[n - 1]!.card[lang].advice } });
+  lines.push({ key: area ? `adviceTopic.${area}` : 'advice', params: { advice: cards[n - 1]!.card[lang].advice } });
   return lines;
 }
