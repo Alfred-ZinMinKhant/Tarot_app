@@ -10,13 +10,14 @@ jobs:
   ping:
     runs-on: ubuntu-latest
     steps:
-      - name: Ping the REST endpoint
+      - name: Query a table
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
         run: |
           status=$(curl -s -o /dev/null -w '%{http_code}' --max-time 30 \
-            -H "apikey: $SUPABASE_ANON_KEY" "$SUPABASE_URL/rest/v1/")
+            -H "apikey: $SUPABASE_ANON_KEY" "$SUPABASE_URL/rest/v1/journal_readings?select=id&limit=1")
           echo "HTTP $status"
-          # A failure (e.g. a paused project) emails the repo owner via the failed run.
-          [ "$status" -lt 500 ] && [ "$status" -ne 000 ]
+          # Row-level security returns an empty list, so a real query is a 200. Any other status
+          # (e.g. a paused project) fails the run and emails the repo owner.
+          [ "$status" -eq 200 ]
