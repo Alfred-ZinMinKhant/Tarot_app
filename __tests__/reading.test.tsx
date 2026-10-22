@@ -24,6 +24,8 @@ function cardsIn(testID: string) {
   return CARDS.filter((c) => within(el).queryAllByText(c.en.name, { normalizer }).length > 0);
 }
 
+const getSpreadPosition = (i: number) => getSpread('three-past-present-future')!.positions[i]!.en.name;
+
 async function startAndPick(spreadId: string, pickIndices: number[] | 'auto') {
   renderRouter('./app', { initialUrl: '/home' });
   fireEvent.press(await screen.findByTestId(`home-spread-${spreadId}`));
@@ -55,6 +57,34 @@ describe('reading flow', () => {
       screen.getByText(`A thought to carry with you: ${card!.en.advice}`, { normalizer }),
     ).toBeTruthy();
     expect(screen.getByTestId('reading-disclaimer')).toHaveTextContent(en.disclaimer.short);
+  });
+
+  it('announces each card by position and state for screen readers', async () => {
+    await startAndPick('three-past-present-future', [0, 1, 2]);
+    await revealStep();
+    const first = getSpreadPosition(0);
+    const turnOver = en.reading.turnOverA11y.replace('{{position}}', first);
+    const faceDown = screen.getByLabelText(turnOver);
+    expect(faceDown.props.accessibilityRole).toBe('button');
+    fireEvent.press(faceDown);
+    await screen.findByTestId('reading-position-0');
+    const [card] = cardsIn('reading-position-0');
+    const upright = en.reading.faceA11y.replace('{{position}}', first).replace('{{card}}', card!.en.name);
+    const reversed = en.reading.faceReversedA11y.replace('{{position}}', first).replace('{{card}}', card!.en.name);
+    const face = screen.getByTestId('spread-card-0');
+    expect([upright, reversed]).toContain(face.props.accessibilityLabel);
+    expect(face.props.accessibilityRole).toBe('image');
+    // The number badge is decoration; the label already names the position.
+    expect(screen.queryByLabelText(turnOver)).toBeNull();
+  });
+
+  it('labels face-down fan cards by number and disables them once picked', async () => {
+    await startAndPick('one-card', []);
+    const open = screen.getByLabelText(en.reading.pickA11y.replace('{{number}}', '4'));
+    expect(open.props.accessibilityState).toMatchObject({ disabled: false });
+    fireEvent.press(open);
+    const taken = screen.getByTestId('fan-card-3', { includeHiddenElements: true });
+    expect(taken.props.accessibilityState).toMatchObject({ disabled: true });
   });
 
   it('ignores taps on a card that was already picked', async () => {

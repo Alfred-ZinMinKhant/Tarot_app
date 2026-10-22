@@ -100,6 +100,8 @@
     "reading.slotA11y",
     "reading.revealTitle",
     "reading.revealAll",
+    "reading.faceA11y",
+    "reading.faceReversedA11y",
     "reading.turnOverA11y",
     "reading.summaryTitle",
     "reading.summary.majorsMany",

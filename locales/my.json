@@ -115,6 +115,8 @@
     "slotA11y": "{{position}} - မရွေးရသေးပါ",
     "revealTitle": "ကတ်တစ်ချပ်ချင်းစီကို နှိပ်ပြီး လှန်ကြည့်ပါ",
     "revealAll": "ကတ်အားလုံး လှန်မယ်",
+    "faceA11y": "{{position}} - {{card}}",
+    "faceReversedA11y": "{{position}} - {{card}} (ပြောင်းပြန်)",
     "turnOverA11y": "{{position}} အတွက် ကတ်ကို လှန်ပါ",
     "summaryTitle": "ဟောစာ အနှစ်ချုပ်",
     "summary": {

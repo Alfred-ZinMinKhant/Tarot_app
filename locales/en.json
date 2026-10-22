@@ -115,6 +115,8 @@
     "slotA11y": "{{position}}: not chosen yet",
     "revealTitle": "Tap each card to turn it over",
     "revealAll": "Turn over all cards",
+    "faceA11y": "{{position}}: {{card}}",
+    "faceReversedA11y": "{{position}}: {{card}}, reversed",
     "turnOverA11y": "Turn over the card for {{position}}",
     "summaryTitle": "Reading summary",
     "summary": {

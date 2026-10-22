@@ -103,6 +103,8 @@ export default function Reading() {
   }
 
   const positionName = (i: number) => spread.positions[i]![lang].name;
+  const faceLabel = (i: number, card: string, reversed: boolean) =>
+    t(reversed ? 'reading.faceReversedA11y' : 'reading.faceA11y', { position: positionName(i), card });
   const tint = topicTint(topic);
   const answer = allRevealed ? answerQuestion(drawn, question, topic) : null;
   const summary = allRevealed ? summarize(drawn, lang, { reversals, topic }) : [];
@@ -200,6 +202,7 @@ export default function Reading() {
             lang={lang}
             slotLabel={(i) => t('reading.slotA11y', { position: positionName(i) })}
             revealLabel={(i) => t('reading.turnOverA11y', { position: positionName(i) })}
+            faceLabel={faceLabel}
           />
         </>
       ) : null}
@@ -221,6 +224,7 @@ export default function Reading() {
             lang={lang}
             slotLabel={(i) => t('reading.slotA11y', { position: positionName(i) })}
             revealLabel={(i) => t('reading.turnOverA11y', { position: positionName(i) })}
+            faceLabel={faceLabel}
           />
           {!allRevealed ? (
             <Button

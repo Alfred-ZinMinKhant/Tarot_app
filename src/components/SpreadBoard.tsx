@@ -23,6 +23,8 @@ type Props = {
   lang: Language;
   slotLabel: (index: number) => string;
   revealLabel: (index: number) => string;
+  /** Announced for a face-up card: its position, name and whether it fell reversed. */
+  faceLabel: (index: number, cardName: string, reversed: boolean) => string;
   /** Colour wash over face-down cards (reading topic accent). */
   tint?: string;
 };
@@ -31,7 +33,7 @@ const LABEL_MIN_WIDTH = 90; // narrower slots show the symbol only
 const GAP = 0.12; // gap between cards, as a fraction of card width
 
 /** Lays out a spread's positions (empty slots, face-down or face-up cards) to fit the given width. */
-export function SpreadBoard({ spread, cards, revealed, onReveal, width, lang, slotLabel, revealLabel, tint }: Props) {
+export function SpreadBoard({ spread, cards, revealed, onReveal, width, lang, slotLabel, revealLabel, faceLabel, tint }: Props) {
   const { colors } = useAppTheme();
   const fmt = useNumberFormat();
   const size = layoutSize(spread);
@@ -67,7 +69,7 @@ export function SpreadBoard({ spread, cards, revealed, onReveal, width, lang, sl
                 revealed={!!revealed[i]}
                 tint={tint}
                 onPress={revealed[i] || !onReveal ? undefined : () => onReveal(i)}
-                accessibilityLabel={revealed[i] ? `${p[lang].name}: ${card[lang].name}` : revealLabel(i)}
+                accessibilityLabel={revealed[i] ? faceLabel(i, card[lang].name, drawn.reversed) : revealLabel(i)}
                 testID={`spread-card-${i}`}
               />
             ) : (
@@ -84,7 +86,7 @@ export function SpreadBoard({ spread, cards, revealed, onReveal, width, lang, sl
                 ) : null}
               </View>
             )}
-            <View style={[styles.badge, { backgroundColor: colors.primary }]} pointerEvents="none">
+            <View style={[styles.badge, { backgroundColor: colors.primary }]} pointerEvents="none" accessibilityElementsHidden importantForAccessibility="no-hide-descendants">
               <AppText variant="caption" bold tone="onPrimary" center>
                 {fmt(i + 1)}
               </AppText>

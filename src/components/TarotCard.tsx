@@ -60,7 +60,7 @@ export const TarotCard = memo(function TarotCard({ card, width, reversed = false
       disabled={!pressable}
       accessibilityRole={pressable ? 'button' : 'image'}
       accessibilityLabel={accessibilityLabel}
-      accessibilityState={{ expanded: revealed }}
+      accessibilityState={{ disabled: !pressable }}
       testID={testID}
       style={{ width, height }}
     >

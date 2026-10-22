@@ -71,6 +71,7 @@ const FanCard = memo(function FanCard({
         disabled={disabled || picked}
         accessibilityRole="button"
         accessibilityLabel={label}
+        accessibilityState={{ disabled: disabled || picked }}
         accessibilityElementsHidden={picked}
         importantForAccessibility={picked ? 'no-hide-descendants' : 'auto'}
         testID={`fan-card-${index}`}
