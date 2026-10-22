@@ -78,7 +78,7 @@
     "test": "jest",
     "check:i18n": "tsx scripts/check-i18n.ts",
     "validate": "npm run check:i18n && npm run check:cards && npm run check:content",
-    "ci": "npm run typecheck && npm run lint && npm run validate && npm test -- --ci",
+    "ci": "npm run typecheck && npm run lint && npm run validate && npm test -- --ci --maxWorkers=2",
     "i18n:mark-pending": "tsx scripts/check-i18n.ts --mark-pending",
     "build:cards": "tsx scripts/build-cards.ts",
     "check:cards": "tsx scripts/validate-cards.ts",
