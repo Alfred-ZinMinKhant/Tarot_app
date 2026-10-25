@@ -7,7 +7,7 @@
  *   npm run check:release -- .env.production              check what EAS will build with
  */
 import { readFileSync } from 'node:fs';
-import { join } from 'node:path';
+import { join, resolve } from 'node:path';
 
 import { checkRelease, type Env } from './lib/release-check';
 
@@ -26,7 +26,7 @@ function read(path: string): Env {
 
 let fileEnv: Env = {};
 try {
-  fileEnv = read(join(root, file));
+  fileEnv = read(resolve(root, file));
 } catch {
   console.error(`Could not read ${file}.`);
   process.exit(1);
