@@ -38,6 +38,32 @@ Exporting your own data is never paywalled.
 4. **Test.** Use App Store sandbox testers and Play licence testers. Check buying, cancelling,
    restoring on a second device, and expiry (sandbox renewals are accelerated).
 
+## Product IDs and prices (Google Play + RevenueCat)
+
+The app finds products by RevenueCat **package type** (Monthly, Annual, Lifetime), not by store
+ID, so the IDs below are a convention. Keep them the same in Play and RevenueCat.
+Android package: `com.mingalartarot.app`.
+
+| Package type | Play product | Base plan / offer | US price | Notes |
+| --- | --- | --- | --- | --- |
+| Monthly | subscription `premium_monthly` | base plan `monthly` (1 month, auto-renew) | $3.99 | |
+| Annual | subscription `premium_yearly` | base plan `yearly` (1 year, auto-renew) + offer `trial7` (7-day free trial, new customers) | $19.99 | Preselected on the paywall |
+| Lifetime | in-app product `premium_lifetime` | one-time, non-consumable | $39.99 | |
+
+Prices per country (set in Play, "Edit prices"; the app shows the store's own string):
+Thailand ฿69 / ฿449 / ฿990, Myanmar $0.99 / $5.99 / $9.99, everywhere else convert from the US price.
+
+Order of work:
+1. Play Console → Monetise with Play → Products → Subscriptions → create `premium_monthly` and
+   `premium_yearly` (add the base plan, then the `trial7` offer), activate each. Then In-app products
+   → create `premium_lifetime` and activate it.
+2. RevenueCat → add the Google Play app (package name above, service-account JSON), then Product
+   catalog → Products → import the three. Entitlements → `premium` → attach all three.
+3. Offerings → create `default`, mark it **current**, add three packages using the standard types
+   Monthly, Annual, Lifetime, each pointing at its product.
+4. Copy the public Android SDK key into `REVENUECAT_ANDROID_API_KEY` (`.env` and EAS).
+5. A new product can take a few hours to appear; the app must be uploaded to a test track first.
+
 ## Local payment methods (Myanmar)
 
 Many people in Myanmar don't have a card that works with the App Store or Google Play. The
@@ -112,6 +138,16 @@ Code: `src/ads/` (AdMob service), `src/store/ads.ts` (state, one-off passes),
    it lives in the portfolio repo (`software-engineer-portfolio`, `public/app-ads.txt`) and is served
    at `https://zinminkhant.com/app-ads.txt`, not on the `tarot.` subdomain. Set the Play Console developer website to `https://zinminkhant.com`.
    One file covers every app: add a line per ad network or publisher ID as you grow.
+
+## Before a release build
+
+`npm run check:release` checks the release environment: legal contact filled in, real AdMob IDs when
+`ENABLE_ADS=true` (Google's sample IDs earn nothing), and a public RevenueCat key (`goog_`/`appl_`),
+never a secret one. To check what EAS will build with:
+`eas env:pull production --path .env.production && npm run check:release -- .env.production`.
+
+A build with ads on but **no RevenueCat key** is the "free with ads" mode: Love and Celtic Cross sit
+behind a rewarded ad, free image shares are limited with an ad option, and nobody can remove ads.
 
 ## Domain and hosting
 
