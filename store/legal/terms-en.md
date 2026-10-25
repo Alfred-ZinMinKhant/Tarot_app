@@ -28,6 +28,14 @@ The app is provided as it is, without warranties of any kind. We work to keep it
 
 Please don't misuse the app, try to break it, or copy its written content to publish elsewhere without permission.
 
+## Who we are
+
+These terms are an agreement between you and Zin Min Khant.
+
+## Contact
+
+Questions about these terms? Write to support@zinminkhant.com.
+
 ## Changes
 
 We may update these terms. The new version will appear in the app with its effective date, and continuing to use the app means you accept it.

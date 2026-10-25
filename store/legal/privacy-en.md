@@ -32,6 +32,14 @@ Settings → Export my data saves everything the app stores about you to a file 
 
 Mingalar Tarot is intended for adults and is not directed at children.
 
+## Who we are
+
+Mingalar Tarot is published by Zin Min Khant.
+
+## Contact
+
+Questions about privacy? Write to support@zinminkhant.com.
+
 ## Changes
 
 If this policy changes, the new version will appear in the app with its effective date.
