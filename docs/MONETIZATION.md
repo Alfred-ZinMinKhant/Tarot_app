@@ -108,7 +108,35 @@ Code: `src/ads/` (AdMob service), `src/store/ads.ts` (state, one-off passes),
    `docs/CONTENT-RATING.md`. The Privacy Policy already has an Ads section; run
    `npm run legal:export` and republish the hosted copy.
 6. Create `app-ads.txt` on the website listed in your store listing (AdMob gives you the line),
-   otherwise ad revenue is limited.
+   otherwise ad revenue is limited. AdMob reads it from the **root** of the developer website, so
+   it lives in the portfolio repo (`software-engineer-portfolio`, `public/app-ads.txt`) and is served
+   at `https://zinminkhant.com/app-ads.txt`, not on the `tarot.` subdomain. Set the Play Console developer website to `https://zinminkhant.com`.
+   One file covers every app: add a line per ad network or publisher ID as you grow.
+
+## Domain and hosting
+
+| What | Where |
+| --- | --- |
+| Domain | `zinminkhant.com`, registered at Cloudflare Registrar (auto-renews yearly) |
+| Personal portfolio + `app-ads.txt` | Netlify site `alfred-zinminkhant` (portfolio repo) → `zinminkhant.com` |
+| Mingalar Tarot pages (privacy, terms, delete account) | Netlify site publishing `site/` → `tarot.zinminkhant.com` |
+| Support email | `support@zinminkhant.com`, forwarded to your inbox by Cloudflare Email Routing |
+
+URLs to use in the stores (keep them stable after launch):
+- Privacy policy: `https://tarot.zinminkhant.com/privacy-en.html`
+- Terms of Use: `https://tarot.zinminkhant.com/terms-en.html`
+- Account deletion: `https://tarot.zinminkhant.com/delete-account.html`
+
+Set up once:
+1. Cloudflare → Email Routing: create `support@zinminkhant.com` → your inbox and verify the
+   destination. Send a test email before the site is deployed, since the pages promise this address.
+2. Netlify: the `mingalar-tarot` site (`site/`) gets `tarot.zinminkhant.com` and the portfolio
+   site gets `zinminkhant.com`. Follow Netlify's DNS steps (Cloudflare DNS: set the
+   records to *DNS only*, not proxied, unless Netlify says otherwise).
+3. Check `https://zinminkhant.com/app-ads.txt` shows your AdMob line as plain text.
+4. Set `SUPPORT_EMAIL=support@zinminkhant.com` and `PUBLISHER_NAME` in `.env` and in EAS
+   environment variables, then run `npm run legal:export` so the in-app and hosted legal pages
+   show the same contact.
 
 ## Notes
 

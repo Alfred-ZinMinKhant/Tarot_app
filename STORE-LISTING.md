@@ -16,20 +16,20 @@ Character limits are noted; every field below fits. Graphics are in `store/` (se
 Mingalar Tarot
 
 **Subtitle** (App Store, 30)
-Tarot in English & Burmese
+Daily tarot & birth chart
 
 **Short description** (Google Play, 80)
-Calm tarot readings, Card of the Day and a private journal, in English & Burmese
+Daily tarot, birth chart and private journal. English & Burmese. Works offline.
 
 **Promotional text** (App Store, 170)
-Draw your Card of the Day, try a three-card spread and write down what it brings to mind. Works offline, in English and Burmese.
+Draw your Card of the Day, explore your birth chart and write down what each card brings to mind. Works offline, in English and Burmese.
 
-**Keywords** (App Store, 100, comma-separated, no spaces)
-tarot,card of the day,tarot reading,journal,reflection,myanmar,burmese,spread,daily card,meditation
+**Keywords** (App Store, 100, comma-separated, no spaces; "tarot" is already in the app name)
+astrology,zodiac,birth chart,natal chart,daily card,divination,journal,reflection,burmese,myanmar
 
 **Description** (4000)
 
-Mingalar Tarot is a calm, beautiful tarot companion in English and Burmese (Myanmar Unicode).
+Mingalar Tarot is a calm, beautiful tarot companion in English and Burmese.
 
 Draw a card, pause, and listen to your own inner voice. Each card's meaning is written as a gentle prompt for reflection — never as a prediction.
 
@@ -39,7 +39,7 @@ CARD OF THE DAY
 
 READINGS
 • One-card and two different three-card spreads
-• Love spread (5 cards) and the classic Celtic Cross (10 cards): unlock each by watching a short ad
+• Love spread (5 cards) and the classic Celtic Cross (10 cards): unlock with Premium, or one reading at a time by watching a short ad
 • Ask your own question or choose a topic: general, love, career, money, health & spirit
 • Shuffle and pick cards from a fan, then turn them over one by one
 • A short summary of the themes in your reading
@@ -48,6 +48,11 @@ ALL 78 CARDS
 • The classic Rider–Waite–Smith deck (Pamela Colman Smith, 1909, public domain)
 • Upright and reversed meanings, love, career, money, health & spirit and daily advice
 • Search in English or Burmese, filter by suit
+
+YOUR BIRTH CHART
+• Enter your birth date (and time and place, if you know them) to see your Sun, Moon and Rising sign on a chart wheel
+• Calculated on your phone; your birth details stay on your phone unless you turn on cloud backup
+• See the tarot card for each planet
 
 YOUR PRIVATE JOURNAL
 • Every reading is saved automatically, with your own notes
@@ -58,20 +63,20 @@ LEARN
 • Eight short lessons: what tarot is, asking good questions, suits and elements, reversed cards, court cards and more
 
 BURMESE WEEKDAY SIGNS
-• Find your birth-day sign — including Rahu for Wednesday afternoons — with its animal, planet and a light-hearted daily mood
+• A Burmese tradition: find the animal, planet and light-hearted daily mood for the day you were born, just for fun
 
-MADE FOR BURMESE READERS
-• Proper Myanmar Unicode with Noto Sans Myanmar or Padauk
+BILINGUAL, WITH BURMESE DONE PROPERLY
+• Switch between English and Burmese instantly, any time
+• Beautiful Burmese text with a choice of fonts
 • Optional Burmese numerals and bilingual dates
-• Switch language instantly, any time
 
 GENTLE BY DESIGN
 • Works offline; your journal never leaves your phone unless you back it up
 • Text size, screen-reader labels in both languages
 
-Mingalar Tarot is for entertainment and self-reflection. Tarot cannot predict the future and is not a substitute for professional advice about health, money, legal or personal matters.
+Mingalar Tarot is for entertainment and self-reflection. Tarot cannot predict the future. Answers to yes/no and timing questions show where the cards lean, not what will happen. The app is not a substitute for professional advice about health, money, legal or personal matters.
 
-Free with ads. A banner ad appears in the app, an occasional full-screen ad can appear after you finish a reading, and optional short video ads unlock the Celtic Cross, the Love spread, a deeper Card of the Day reading and a second daily card. The Card of the Day, one- and three-card readings, the journal, library, lessons, weekday signs and the birth chart are free.
+Free to use, with ads and an optional Premium upgrade. A banner ad appears in the app, an occasional full-screen ad can appear after you finish a reading, and optional short video ads unlock the Celtic Cross, the Love spread, a deeper Card of the Day reading and a second daily card. Premium (monthly, yearly or a one-time purchase) removes all ads, unlocks the Love spread and Celtic Cross for good, gives you the deeper Card of the Day reading and second daily card without an ad, and lets you share readings as images without limit. The Card of the Day, one- and three-card readings, the journal, library, lessons, weekday signs and the birth chart are always free. Subscriptions renew automatically until you cancel them in your store account settings.
 
 **What's new** (first release)
 Welcome to Mingalar Tarot! Card of the Day, five spreads, all 78 cards, a private journal, lessons, Burmese weekday signs and a birth chart — in English and Burmese.
@@ -80,9 +85,9 @@ Welcome to Mingalar Tarot! Card of the Day, five spreads, all 78 cards, a privat
 1. Your Card of the Day, every morning
 2. Shuffle and choose your cards
 3. Classic spreads, including the Celtic Cross
-4. All 78 cards, in English and Burmese
-5. Search the full Rider–Waite–Smith deck
-6. Your Burmese weekday sign and birth chart
+4. Your birth chart: Sun, Moon and Rising
+5. A private journal for what each card brings to mind
+6. All 78 cards, in English and Burmese
 7. Short lessons to read with confidence
 
 ---
@@ -93,7 +98,7 @@ Welcome to Mingalar Tarot! Card of the Day, five spreads, all 78 cards, a privat
 Mingalar Tarot
 
 **အတိုချုပ် ဖော်ပြချက်** (80)
-Tarot ဟောစာ၊ နေ့စဉ်ကတ်နဲ့ ကိုယ်ပိုင်ဂျာနယ် — မြန်မာ၊ အင်္ဂလိပ် နှစ်ဘာသာ။
+နေ့စဉ် Tarot၊ ဇာတာနဲ့ ကိုယ်ပိုင်ဂျာနယ် — မြန်မာ၊ အင်္ဂလိပ် နှစ်ဘာသာ။
 
 **အပြည့်အစုံ ဖော်ပြချက်** (4000)
 
@@ -107,7 +112,7 @@ Mingalar Tarot ဟာ အင်္ဂလိပ်နဲ့ မြန်မာ (M
 
 ဟောစာများ
 • ကတ်တစ်ချပ်နဲ့ ကတ်သုံးချပ် ဖြန့်ပုံ နှစ်မျိုး
-• အချစ်ရေး ဖြန့်ပုံ (ကတ်ငါးချပ်) နဲ့ ဂန္ထဝင် Celtic Cross (ကတ်ဆယ်ချပ်) — ကြော်ငြာတိုတစ်ခု ကြည့်ပြီး ဖွင့်နိုင်
+• အချစ်ရေး ဖြန့်ပုံ (ကတ်ငါးချပ်) နဲ့ ဂန္ထဝင် Celtic Cross (ကတ်ဆယ်ချပ်) — Premium နဲ့ ဖွင့်နိုင်၊ ဒါမှမဟုတ် ကြော်ငြာတိုတစ်ခု ကြည့်ပြီး တစ်ကြိမ်ချင်း ဖွင့်နိုင်
 • ကိုယ်ပိုင်မေးခွန်း မေးနိုင်သလို ယေဘုယျ၊ အချစ်ရေး၊ အလုပ်အကိုင်၊ ငွေကြေး၊ ကျန်းမာရေးနဲ့ စိတ်ဓာတ် ခေါင်းစဉ်တွေ ရွေးနိုင်
 • ကတ်ရော၊ ယပ်တောင်ပုံ ဖြန့်ထားတဲ့ ကတ်တွေထဲက ရွေးပြီး တစ်ချပ်ချင်း လှန်ကြည့်ပါ
 • ဟောစာထဲက အဓိက အကြောင်းအရာတွေကို အကျဉ်းချုပ်ပေးပါတယ်
@@ -116,6 +121,11 @@ Mingalar Tarot ဟာ အင်္ဂလိပ်နဲ့ မြန်မာ (M
 • ဂန္ထဝင် Rider–Waite–Smith ကတ်ထုပ် (Pamela Colman Smith၊ ၁၉၀၉၊ အများပိုင်)
 • အတည့်နဲ့ ပြောင်းပြန် အဓိပ္ပာယ်၊ အချစ်ရေး၊ အလုပ်၊ ငွေကြေး၊ ကျန်းမာရေးနဲ့ စိတ်ဓာတ်၊ နေ့စဉ် အကြံပြုချက်
 • မြန်မာ ဒါမှမဟုတ် အင်္ဂလိပ်လို ရှာနိုင်၊ ကတ်အုပ်စုအလိုက် စစ်ထုတ်နိုင်
+
+သင့်ဇာတာ
+• သင့်မွေးသက္ကရာဇ် (သိရင် မွေးချိန်နဲ့ မွေးရာဒေသပါ) ထည့်ပြီး နေ၊ လနဲ့ လဂ်ကို ဇာတာဝိုင်းပေါ်မှာ ကြည့်နိုင်
+• ဖုန်းထဲမှာပဲ တွက်ချက်ပေးပြီး Cloud အရန်သိမ်းမဖွင့်ရင် သင့်မွေးနေ့ အချက်အလက်တွေ ဖုန်းထဲကနေ ထွက်မသွားပါ
+• ဂြိုဟ်တစ်လုံးချင်းစီအတွက် Tarot ကတ်ကို ကြည့်နိုင်
 
 ကိုယ်ပိုင် ဂျာနယ်
 • ဟောစာတိုင်းကို ကိုယ်ပိုင်မှတ်စုနဲ့အတူ အလိုအလျောက် သိမ်းပေးပါတယ်
@@ -137,14 +147,19 @@ Mingalar Tarot ဟာ အင်္ဂလိပ်နဲ့ မြန်မာ (M
 • ဂျာနယ်နဲ့ ဟောစာတွေကို အင်တာနက်မလိုဘဲ သုံးနိုင်
 • စာလုံးအရွယ်၊ အလင်း/အမှောင် အပြင်အဆင်၊ နှစ်ဘာသာလုံးနဲ့ Screen reader အညွှန်းများ
 
-Mingalar Tarot ဟာ ဖျော်ဖြေရေးနဲ့ ကိုယ့်ကိုယ်ကို ဆင်ခြင်ဖို့အတွက်သာ ဖြစ်ပါတယ်။ Tarot က အနာဂတ်ကို ကြိုဟောနိုင်တာ မဟုတ်သလို ကျန်းမာရေး၊ ငွေကြေး၊ ဥပဒေ ဒါမှမဟုတ် ကိုယ်ရေးကိစ္စတွေအတွက် ကျွမ်းကျင်သူ အကြံဉာဏ်ကို အစားထိုးတာလည်း မဟုတ်ပါ။
+Mingalar Tarot ဟာ ဖျော်ဖြေရေးနဲ့ ကိုယ့်ကိုယ်ကို ဆင်ခြင်ဖို့အတွက်သာ ဖြစ်ပါတယ်။ Tarot က အနာဂတ်ကို ကြိုဟောနိုင်တာ မဟုတ်ပါ။ ဟုတ်/မဟုတ် နဲ့ အချိန်အကြောင်း မေးခွန်းတွေရဲ့ အဖြေက ကတ်တွေ ဘယ်ဘက်ညွှတ်နေလဲဆိုတာကိုပဲ ပြတာဖြစ်ပြီး ဘာဖြစ်လာမလဲဆိုတာ မဟုတ်ပါ။ ကျန်းမာရေး၊ ငွေကြေး၊ ဥပဒေ ဒါမှမဟုတ် ကိုယ်ရေးကိစ္စတွေအတွက် ကျွမ်းကျင်သူ အကြံဉာဏ်ကို အစားထိုးတာလည်း မဟုတ်ပါ။
 
-အခမဲ့ အသုံးပြုနိုင်ပြီး ကြော်ငြာပါဝင်ပါတယ်။ ရွေးချယ်ကြည့်ရှုနိုင်တဲ့ ကြော်ငြာတိုတွေက Celtic Cross၊ အချစ်ရေး ဖြန့်ပုံ၊ နေ့စဉ်ကတ် အသေးစိတ်ဖတ်ရှုမှုနဲ့ ဒုတိယကတ်ကို ဖွင့်ပေးပါတယ်။ နေ့စဉ်ကတ်၊ ကတ်တစ်ချပ်နဲ့ သုံးချပ် ဟောစာ၊ ဂျာနယ်၊ ကတ်စာကြည့်တိုက်၊ သင်ခန်းစာနဲ့ မွေးနေ့ နိမိတ်တွေက အခမဲ့ ဖြစ်ပါတယ်။
+အခမဲ့ အသုံးပြုနိုင်ပြီး ကြော်ငြာနဲ့ ရွေးချယ်နိုင်တဲ့ Premium အဆင့်မြှင့်ခြင်း ပါဝင်ပါတယ်။ ရွေးချယ်ကြည့်ရှုနိုင်တဲ့ ကြော်ငြာတိုတွေက Celtic Cross၊ အချစ်ရေး ဖြန့်ပုံ၊ နေ့စဉ်ကတ် အသေးစိတ်ဖတ်ရှုမှုနဲ့ ဒုတိယကတ်ကို ဖွင့်ပေးပါတယ်။ Premium (လစဉ်၊ နှစ်စဉ် ဒါမှမဟုတ် တစ်ကြိမ်တည်း ဝယ်ယူမှု) က ကြော်ငြာအားလုံးကို ဖယ်ရှားပေးပြီး အချစ်ရေး ဖြန့်ပုံနဲ့ Celtic Cross ကို အမြဲဖွင့်ပေးကာ နေ့စဉ်ကတ် အသေးစိတ်ဖတ်ရှုမှုနဲ့ ဒုတိယကတ်ကို ကြော်ငြာမကြည့်ဘဲ ရစေပြီး ဟောစာတွေကို ပုံအဖြစ် အကန့်အသတ်မရှိ မျှဝေခွင့်ပေးပါတယ်။ နေ့စဉ်ကတ်၊ ကတ်တစ်ချပ်နဲ့ သုံးချပ် ဟောစာ၊ ဂျာနယ်၊ ကတ်စာကြည့်တိုက်၊ သင်ခန်းစာ၊ မွေးနေ့ နိမိတ်နဲ့ ဇာတာတွေက အမြဲ အခမဲ့ ဖြစ်ပါတယ်။ စာရင်းသွင်းမှုတွေက သင်မပယ်ဖျက်မချင်း အလိုအလျောက် သက်တမ်းတိုးပါတယ်။ ပယ်ဖျက်ဖို့ သင့် store အကောင့်ဆက်တင်ထဲ ဝင်ပါ။
 
 **အသစ်ပါဝင်မှု** (ပထမ ထုတ်ဝေမှု)
-Mingalar Tarot မှ ကြိုဆိုပါတယ်။ နေ့စဉ်ကတ်၊ ကတ်ဖြန့်ပုံ ငါးမျိုး၊ ကတ် ၇၈ ချပ်လုံး၊ ကိုယ်ပိုင်ဂျာနယ်၊ သင်ခန်းစာနဲ့ မွေးနေ့ နိမိတ် — မြန်မာ၊ အင်္ဂလိပ် နှစ်ဘာသာ။
+Mingalar Tarot မှ ကြိုဆိုပါတယ်။ နေ့စဉ်ကတ်၊ ကတ်ဖြန့်ပုံ ငါးမျိုး၊ ကတ် ၇၈ ချပ်လုံး၊ ကိုယ်ပိုင်ဂျာနယ်၊ သင်ခန်းစာ၊ မွေးနေ့ နိမိတ်နဲ့ ဇာတာ — မြန်မာ၊ အင်္ဂလိပ် နှစ်ဘာသာ။
 
 > ⚠️ Burmese listing text was written by AI — have a native speaker review it before publishing.
+> The birth chart section, the Premium paragraph (with renewal terms), the yes/no and timing
+> sentence in the disclaimer, the short description and "What's new" were redrafted to match the
+> English text. Those drafts are also AI-written. Please check especially: ဇာတာ and လဂ်
+> (birth chart, Rising sign, as already used in the app), and the wording of the Premium
+> paragraph, since store reviewers read it.
 
 ---
 
@@ -153,12 +168,53 @@ Mingalar Tarot မှ ကြိုဆိုပါတယ်။ နေ့စဉ်
 | Setting | App Store | Google Play |
 | --- | --- | --- |
 | Category | Lifestyle (secondary: Entertainment) | Lifestyle |
-| Price | Free, with in-app purchases if RevenueCat is configured | Free (contains in-app purchases if configured) |
-| Age rating | Expected **4+** (questionnaire answers in `docs/CONTENT-RATING.md`) | IARC: expected Everyone / PEGI 3 |
-| Contains ads | Yes, only if `ENABLE_ADS=true` (AdMob banner + interstitial + rewarded); otherwise No | Same: answer *Yes* only for an ads build |
-| Support URL | your website or a page with `SUPPORT_EMAIL` | email = `SUPPORT_EMAIL` |
-| Privacy policy URL | host `store/legal/privacy-en.html` | same |
+| Price | Free, with in-app purchases (Premium: monthly, yearly, lifetime) | Free (contains in-app purchases) |
+| Age rating | Expected **4+** (questionnaire answers in `docs/CONTENT-RATING.md`) | IARC: expected Everyone / PEGI 3. The Play *target audience* is separately 18+ |
+| Contains ads | Yes for the launch build (`ENABLE_ADS=true`: AdMob banner + interstitial + rewarded) | Same: answer *Yes* |
+| Support URL | `https://tarot.zinminkhant.com/` | email = `support@zinminkhant.com` |
+| Privacy policy URL | `https://tarot.zinminkhant.com/privacy-en.html` | same |
 | Copyright | `© <year> <PUBLISHER_NAME>` | — |
+
+## Google Play Console checklist
+
+Work through these in the Console. None of this changes the app build.
+
+**Payments profile (do first, it can take days to verify)**
+- Created in Thailand, with a Thai bank account. The business country can't be changed later, and the bank country must match it.
+- Google lists Thailand as supported for merchant registration, but payouts to Thai developers may arrive in USD, not THB. Confirm the payout currency in the profile.
+- Fill in tax information. Ask a Thai accountant about your own tax position.
+
+**Store listing (Grow → Store presence → Main store listing)**
+- App name, short description and full description: the English section above (`en-US`).
+- Add the Burmese translation (`my-MM`) only after native review.
+- App icon, feature graphic and phone screenshots: see Graphics below.
+- Category: Lifestyle. Contact email: `support@zinminkhant.com`. Website: `https://zinminkhant.com` (this is where AdMob looks for `app-ads.txt`). Privacy policy URL: `https://tarot.zinminkhant.com/privacy-en.html`.
+
+**App content declarations (Policy and programs → App content)**
+- Ads: *Yes*. Target audience: 18+. Data safety: see Privacy answers below (ads, Premium and cloud backup).
+- Content rating (IARC): see `docs/CONTENT-RATING.md`. Not a news, government or health app.
+- If cloud backup is enabled: account deletion URL `https://tarot.zinminkhant.com/delete-account.html` and the in-app deletion path.
+
+**In-app products (Monetize → Products)** — starting prices, to review after a month of data
+
+| Product | US / Tier 1 | Thailand | Myanmar |
+| --- | --- | --- | --- |
+| Monthly subscription | $3.99 | ฿69 | $0.99 |
+| Yearly subscription (add a 7-day free trial) | $19.99 | ฿449 | $5.99 |
+| Lifetime (one-time) | $39.99 | ฿990 | $9.99 |
+
+- Set the base price once, then review the auto-converted price for every country and override where it looks wrong. Raising a subscription price later needs existing subscribers to accept it.
+- Match the product IDs to the RevenueCat offering and attach all of them to the `premium` entitlement (`docs/MONETIZATION.md`).
+- Check whether Myanmar appears as a country you can price in. If it doesn't, Myanmar users can't buy.
+- Leave "Pay in Myanmar" off (`LOCAL_PAYMENT_URL` unset): linking out to outside payment for digital content breaks Play's payments policy outside the US, UK and EEA programs.
+
+**Countries (Release → Countries / regions)**
+- Launch in all countries you can price. Remove any country later if needed.
+
+**Before the first production release**
+- Closed test: finish the required testing period and tester count shown in the Console.
+- Test a purchase with a Play licence tester: buy, cancel, restore, and confirm ads disappear.
+- Create the AdMob consent message and `app-ads.txt` (`docs/MONETIZATION.md`).
 
 ## Privacy answers
 

@@ -68,6 +68,8 @@ the answers.
 - No certainties about death, illness, pregnancy, legal outcomes or money. The card-data
   validator (`npm run check:cards`) rejects certainty wording such as "you will die",
   "guaranteed" and "definitely will", in English and in Burmese.
+- Yes/no and "when" answers are worded as where the cards lean and a feel for pace, never as a
+  fixed outcome or date, and each answer ends with a "reflection, not certainty" line.
 - No medical or financial advice. Weekday signs avoid health and money wording entirely, and
   `npm run check:content` enforces this.
 - No Buddhist sacred imagery (no pagodas or Buddha images) and no mixing of tarot with
