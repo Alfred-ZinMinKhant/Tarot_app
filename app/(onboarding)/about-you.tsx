@@ -104,6 +104,9 @@ export default function AboutYou() {
                 <TextField label={t('sign.year')} value={year} onChangeText={(v) => { setYear(v); setDateError(false); }} keyboardType="number-pad" maxLength={4} placeholder={fmt(1995, { grouping: false })} testID="onboarding-year" />
               </View>
             </View>
+            <AppText variant="caption" tone="textMuted">
+              {t('onboarding.dateExample')}
+            </AppText>
             {isWednesday ? (
               <SettingRow
                 label={t('sign.afternoon')}
