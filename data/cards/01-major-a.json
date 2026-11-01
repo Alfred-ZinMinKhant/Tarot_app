@@ -22,7 +22,8 @@
         "upright": "For wellbeing and spirit, this card suggests freshness: a walk somewhere new, a playful hobby or a lighter daily rhythm. Let joy and curiosity refresh your energy.",
         "reversed": "Reversed, notice whether you are skipping rest or ignoring small signals from your body and mood. Gentle routines and kind attention to yourself can help you feel steady again."
       },
-      "advice": "Take one small, curious step toward something new today."
+      "advice": "Take one small, curious step toward something new today.",
+      "adviceReversed": "Before leaping today, pause and check one detail, then take a small step anyway."
     },
     "my": {
       "name": "လူအ",
@@ -45,7 +46,8 @@
         "upright": "ကျန်းမာရေးနဲ့ စိတ်ဓာတ်အတွက် လတ်ဆတ်မှုကို အကြံပြုပါတယ်။ နေရာသစ်မှာ လမ်းလျှောက်တာ၊ ပျော်စရာ ဝါသနာတစ်ခု လုပ်တာ ဒါမှမဟုတ် နေ့စဉ်ဘဝကို ပေါ့ပါးအောင် ထားတာမျိုးပါ။ ပျော်ရွှင်မှုက စွမ်းအင်ကို ပြန်ဖြည့်ပေးပါစေ။",
         "reversed": "ပြောင်းပြန်ဆိုရင် အနားယူတာကို ကျော်နေလား၊ ခန္ဓာကိုယ်နဲ့ စိတ်ခံစားမှုရဲ့ အချက်ပြလေးတွေကို လျစ်လျူရှုနေလား သတိထားကြည့်ပါ။ နူးညံ့တဲ့ နေ့စဉ်အလေ့အကျင့်တွေက ပြန်လည် တည်ငြိမ်စေနိုင်ပါတယ်။"
       },
-      "advice": "ဒီနေ့ အသစ်တစ်ခုဆီ စူးစမ်းတဲ့ ခြေလှမ်းလေးတစ်လှမ်း လှမ်းကြည့်ပါ။"
+      "advice": "ဒီနေ့ အသစ်တစ်ခုဆီ စူးစမ်းတဲ့ ခြေလှမ်းလေးတစ်လှမ်း လှမ်းကြည့်ပါ။",
+      "adviceReversed": "ဒီနေ့ မခုန်ခင် အသေးစိတ်တစ်ခုကို ခဏစစ်ကြည့်ပြီး ခြေလှမ်းသေးသေးလေးတစ်လှမ်း လှမ်းကြည့်ပါ။"
     }
   },
   {
@@ -71,7 +73,8 @@
         "upright": "For wellbeing and spirit, intention matters. Choose one healthy habit and commit to it with focus. Your mind and body respond well when you give them clear, kind direction.",
         "reversed": "Reversed, scattered routines may be draining you. Bring your attention back to basics such as sleep, water, movement and quiet moments. Small consistent steps restore your energy."
       },
-      "advice": "Pick one clear intention and use the tools you already have to act on it."
+      "advice": "Pick one clear intention and use the tools you already have to act on it.",
+      "adviceReversed": "Choose one task today and finish it, rather than scattering your energy."
     },
     "my": {
       "name": "မှော်ဆရာ",
@@ -94,7 +97,8 @@
         "upright": "ကျန်းမာရေးနဲ့ စိတ်ဓာတ်အတွက် ရည်ရွယ်ချက်က အရေးကြီးပါတယ်။ ကျန်းမာစေတဲ့ အလေ့အကျင့်တစ်ခုကို ရွေးပြီး အာရုံစိုက် လုပ်ဆောင်ပါ။ ရှင်းလင်းနူးညံ့တဲ့ လမ်းညွှန်မှုပေးတဲ့အခါ စိတ်နဲ့ ခန္ဓာကိုယ်က ကောင်းကောင်း တုံ့ပြန်ပါတယ်။",
         "reversed": "ပြောင်းပြန်ဆိုရင် ပြန့်ကျဲနေတဲ့ နေ့စဉ်လုပ်ငန်းတွေက အားကုန်စေနိုင်ပါတယ်။ အိပ်စက်ခြင်း၊ ရေသောက်ခြင်း၊ လှုပ်ရှားခြင်းနဲ့ တိတ်ဆိတ်တဲ့ အချိန်လေးတွေလို အခြေခံတွေဆီ အာရုံပြန်ပို့ပါ။"
       },
-      "advice": "ရှင်းလင်းတဲ့ ရည်ရွယ်ချက်တစ်ခု ရွေးပြီး ရှိပြီးသား ကိရိယာတွေနဲ့ လုပ်ဆောင်ကြည့်ပါ။"
+      "advice": "ရှင်းလင်းတဲ့ ရည်ရွယ်ချက်တစ်ခု ရွေးပြီး ရှိပြီးသား ကိရိယာတွေနဲ့ လုပ်ဆောင်ကြည့်ပါ။",
+      "adviceReversed": "ဒီနေ့ အလုပ်တစ်ခုကို ရွေးပြီး စွမ်းအင်ကို မပျံ့စေဘဲ အဆုံးထိ လုပ်ပါ။"
     }
   },
   {
@@ -120,7 +124,8 @@
         "upright": "For wellbeing and spirit, rest and reflection are nourishing. Meditation-like stillness, journaling or time near water may calm you. Listen to the gentle messages of your body and heart.",
         "reversed": "Reversed, constant noise may be tiring you. Reduce distractions where you can, and notice what your body has been asking for. Quiet time is not wasted; it restores balance."
       },
-      "advice": "Give yourself a few quiet minutes today and listen to your inner voice."
+      "advice": "Give yourself a few quiet minutes today and listen to your inner voice.",
+      "adviceReversed": "Switch off the noise for a few minutes today and ask what you already know."
     },
     "my": {
       "name": "ပုရောဟိတ်မကြီး",
@@ -143,7 +148,8 @@
         "upright": "ကျန်းမာရေးနဲ့ စိတ်ဓာတ်အတွက် အနားယူခြင်းနဲ့ ဆင်ခြင်ခြင်းက အားဖြည့်ပေးပါတယ်။ တိတ်ဆိတ်စွာ ထိုင်တာ၊ မှတ်စုရေးတာ ဒါမှမဟုတ် ရေနားမှာ အချိန်ဖြုန်းတာက စိတ်ကို အေးစေနိုင်ပါတယ်။ ခန္ဓာကိုယ်နဲ့ နှလုံးသားရဲ့ အသံကို နားထောင်ပါ။",
         "reversed": "ပြောင်းပြန်ဆိုရင် မပြတ်တဲ့ ဆူညံမှုက ပင်ပန်းစေနိုင်ပါတယ်။ အာရုံပြောင်းစရာတွေကို တတ်နိုင်သလောက် လျှော့ပြီး ခန္ဓာကိုယ်က ဘာတောင်းဆိုနေလဲ သတိထားပါ။ တိတ်ဆိတ်တဲ့ အချိန်က အလဟဿ မဟုတ်ပါဘူး။"
       },
-      "advice": "ဒီနေ့ ကိုယ့်ကိုယ်ကို တိတ်ဆိတ်တဲ့ မိနစ်အနည်းငယ် ပေးပြီး အတွင်းစိတ်ကို နားထောင်ပါ။"
+      "advice": "ဒီနေ့ ကိုယ့်ကိုယ်ကို တိတ်ဆိတ်တဲ့ မိနစ်အနည်းငယ် ပေးပြီး အတွင်းစိတ်ကို နားထောင်ပါ။",
+      "adviceReversed": "ဒီနေ့ ဆူညံသံတွေကို မိနစ်အနည်းငယ် ပိတ်ပြီး ကိုယ်သိပြီးသားကို မေးကြည့်ပါ။"
     }
   },
   {
@@ -169,7 +175,8 @@
         "upright": "For wellbeing and spirit, nurture your body and senses. Nourishing food, fresh air, rest and time in nature can restore you. Treat yourself with the same patience you give others.",
         "reversed": "Reversed, you may be neglecting your own needs while caring for everyone else. Make space for rest and simple comforts. Ask for support if you need it; you deserve care too."
       },
-      "advice": "Nurture something you love today, including yourself."
+      "advice": "Nurture something you love today, including yourself.",
+      "adviceReversed": "Rest without guilt today and give yourself the care you give others."
     },
     "my": {
       "name": "ဧကရီ",
@@ -192,7 +199,8 @@
         "upright": "ကျန်းမာရေးနဲ့ စိတ်ဓာတ်အတွက် ခန္ဓာကိုယ်နဲ့ အာရုံတွေကို ပြုစုပါ။ အာဟာရရှိတဲ့ အစားအစာ၊ လေကောင်းလေသန့်၊ အနားယူမှုနဲ့ သဘာဝထဲမှာ အချိန်ဖြုန်းတာက ပြန်လည်လန်းဆန်းစေနိုင်ပါတယ်။ တခြားသူကို ပေးတဲ့ စိတ်ရှည်မှုကို ကိုယ့်ကိုယ်ကိုလည်း ပေးပါ။",
         "reversed": "ပြောင်းပြန်ဆိုရင် အားလုံးကို ဂရုစိုက်ရင်း ကိုယ့်လိုအပ်ချက်ကို လျစ်လျူရှုနေတာ ဖြစ်နိုင်ပါတယ်။ အနားယူဖို့နဲ့ ရိုးရိုးလေး သက်သာဖို့ နေရာပေးပါ။ လိုအပ်ရင် အကူအညီ တောင်းပါ၊ သင်လည်း ဂရုစိုက်ခံထိုက်ပါတယ်။"
       },
-      "advice": "ဒီနေ့ ကိုယ်ချစ်တဲ့ အရာတစ်ခုကို ပြုစုပါ၊ ကိုယ့်ကိုယ်ကိုလည်း ထည့်တွက်ပါ။"
+      "advice": "ဒီနေ့ ကိုယ်ချစ်တဲ့ အရာတစ်ခုကို ပြုစုပါ၊ ကိုယ့်ကိုယ်ကိုလည်း ထည့်တွက်ပါ။",
+      "adviceReversed": "ဒီနေ့ အပြစ်မခံစားဘဲ အနားယူပြီး တခြားသူတွေကို ပေးသလို ကိုယ့်ကိုယ်ကိုလည်း ဂရုစိုက်ပါ။"
     }
   },
   {
@@ -218,7 +226,8 @@
         "upright": "For wellbeing and spirit, routine supports you. Regular sleep, movement and meals create a strong base. Healthy boundaries around work and screens can protect your energy.",
         "reversed": "Reversed, you may be pushing too hard or ignoring routine entirely. Ease strict rules that feel punishing, and gently add structure where life feels chaotic. Balance brings steadiness."
       },
-      "advice": "Create one simple structure today that makes your life feel steadier."
+      "advice": "Create one simple structure today that makes your life feel steadier.",
+      "adviceReversed": "Loosen one rule today that has become too rigid, and keep what truly helps."
     },
     "my": {
       "name": "ဧကရာဇ်",
@@ -241,7 +250,8 @@
         "upright": "ကျန်းမာရေးနဲ့ စိတ်ဓာတ်အတွက် နေ့စဉ်ပုံမှန်လုပ်ငန်းက ထောက်ကူပေးပါတယ်။ ပုံမှန်အိပ်တာ၊ လှုပ်ရှားတာ၊ စားတာက ခိုင်မာတဲ့ အခြေခံကို ဖန်တီးပါတယ်။ အလုပ်နဲ့ ဖုန်းမျက်နှာပြင်အပေါ် နယ်နိမိတ်ကောင်းတွေက စွမ်းအင်ကို ကာကွယ်ပေးပါတယ်။",
         "reversed": "ပြောင်းပြန်ဆိုရင် ကိုယ့်ကိုယ်ကို တွန်းအားပေးလွန်းနေတာ ဒါမှမဟုတ် ပုံမှန်လုပ်ငန်းကို လုံးဝ လျစ်လျူရှုနေတာ ဖြစ်နိုင်ပါတယ်။ အပြစ်ပေးသလို ခံစားရတဲ့ စည်းမျဉ်းတွေကို လျှော့ပြီး ရှုပ်ထွေးနေတဲ့ နေရာမှာ စနစ်လေး ထည့်ပါ။"
       },
-      "advice": "ဒီနေ့ ဘဝကို ပိုတည်ငြိမ်စေမယ့် ရိုးရှင်းတဲ့ စနစ်လေးတစ်ခု ဖန်တီးပါ။"
+      "advice": "ဒီနေ့ ဘဝကို ပိုတည်ငြိမ်စေမယ့် ရိုးရှင်းတဲ့ စနစ်လေးတစ်ခု ဖန်တီးပါ။",
+      "adviceReversed": "ဒီနေ့ တင်းကျပ်လွန်းလာတဲ့ စည်းကမ်းတစ်ခုကို ဖြေလျှော့ပြီး တကယ်အကူအညီဖြစ်တာကို ထားပါ။"
     }
   },
   {
@@ -267,7 +277,8 @@
         "upright": "For wellbeing and spirit, meaningful routines and community can be grounding. Learning from wise people, joining a group activity or returning to a calming practice may help.",
         "reversed": "Reversed, you might need to adapt general advice to your own needs. Listen to qualified professionals for health matters, and also notice what genuinely helps you feel well."
       },
-      "advice": "Learn something today from someone whose experience you respect."
+      "advice": "Learn something today from someone whose experience you respect.",
+      "adviceReversed": "Question one old rule today and decide whether it still fits you."
     },
     "my": {
       "name": "ပုရောဟိတ်ကြီး",
@@ -290,7 +301,8 @@
         "upright": "ကျန်းမာရေးနဲ့ စိတ်ဓာတ်အတွက် အဓိပ္ပာယ်ရှိတဲ့ နေ့စဉ်အလေ့အထတွေနဲ့ အသိုင်းအဝိုင်းက စိတ်ကို တည်ငြိမ်စေနိုင်ပါတယ်။ ပညာရှိတွေဆီက သင်ယူတာ၊ အုပ်စုလိုက် လှုပ်ရှားမှုမှာ ပါဝင်တာ ဒါမှမဟုတ် စိတ်အေးစေတဲ့ အလေ့အကျင့်ဆီ ပြန်သွားတာက ကူညီနိုင်ပါတယ်။",
         "reversed": "ပြောင်းပြန်ဆိုရင် ယေဘုယျ အကြံဉာဏ်တွေကို ကိုယ့်လိုအပ်ချက်နဲ့ ကိုက်အောင် ပြင်ဖို့ လိုနိုင်ပါတယ်။ ကျန်းမာရေးကိစ္စမှာ အရည်အချင်းရှိ ကျွမ်းကျင်သူတွေကို နားထောင်ပြီး ကိုယ့်ကို တကယ် ကောင်းစေတာကိုလည်း သတိထားပါ။"
       },
-      "advice": "ဒီနေ့ ကိုယ်လေးစားတဲ့ အတွေ့အကြုံရှိသူတစ်ယောက်ဆီက တစ်ခုခု သင်ယူပါ။"
+      "advice": "ဒီနေ့ ကိုယ်လေးစားတဲ့ အတွေ့အကြုံရှိသူတစ်ယောက်ဆီက တစ်ခုခု သင်ယူပါ။",
+      "adviceReversed": "ဒီနေ့ ရှေးဟောင်းစည်းမျဉ်းတစ်ခုကို မေးခွန်းထုတ်ပြီး ကိုယ်နဲ့ အခုထိ ကိုက်ညီသလား ဆုံးဖြတ်ပါ။"
     }
   }
 ]

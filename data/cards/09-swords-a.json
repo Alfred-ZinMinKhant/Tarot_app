@@ -22,7 +22,8 @@
         "upright": "For wellbeing and spirit, mental clarity can bring relief. Organising your schedule, decluttering or learning more about your needs can help you feel more in control and calm.",
         "reversed": "Reversed, an overactive mind may be causing stress. Practise calming activities like deep breathing or walking. Writing down worries can help you see them more clearly and gently."
       },
-      "advice": "Speak your truth clearly and kindly today."
+      "advice": "Speak your truth clearly and kindly today.",
+      "adviceReversed": "Check the facts today before you speak, then say what is true gently."
     },
     "my": {
       "name": "ဓား အေ့စ်",
@@ -45,7 +46,8 @@
         "upright": "ကျန်းမာရေးနဲ့ စိတ်ဓာတ်အတွက် စိတ်ရှင်းလင်းမှုက သက်သာမှု ယူဆောင်လာနိုင်ပါတယ်။ အချိန်ဇယားကို စီတာ၊ ပစ္စည်းတွေ ရှင်းလင်းတာ ဒါမှမဟုတ် ကိုယ့်လိုအပ်ချက်အကြောင်း ပိုလေ့လာတာက ပိုထိန်းချုပ်နိုင်ပြီး အေးချမ်းသလို ခံစားစေနိုင်ပါတယ်။",
         "reversed": "ပြောင်းပြန်ဆိုရင် အလွန်အကျွံ တွေးနေတဲ့ စိတ်က စိတ်ဖိစီးမှု ဖြစ်စေနိုင်ပါတယ်။ အသက်ကို ဖြည်းဖြည်း ရှူတာ ဒါမှမဟုတ် လမ်းလျှောက်တာလို စိတ်အေးစေတဲ့ လှုပ်ရှားမှုတွေ လေ့ကျင့်ပါ။ စိုးရိမ်မှုတွေကို ချရေးတာက ပိုရှင်းရှင်းလင်းလင်း၊ ပိုညင်ညင်သာသာ မြင်စေနိုင်ပါတယ်။"
       },
-      "advice": "ဒီနေ့ ကိုယ့်အမှန်တရားကို ရှင်းရှင်းလင်းလင်း၊ ကြင်ကြင်နာနာ ပြောပါ။"
+      "advice": "ဒီနေ့ ကိုယ့်အမှန်တရားကို ရှင်းရှင်းလင်းလင်း၊ ကြင်ကြင်နာနာ ပြောပါ။",
+      "adviceReversed": "ဒီနေ့ မပြောခင် အချက်အလက်တွေကို စစ်ပြီး မှန်တာကို ညင်သာစွာ ပြောပါ။"
     }
   },
   {
@@ -71,7 +73,8 @@
         "upright": "For wellbeing and spirit, inner conflict may be causing tension. Quiet reflection, meditation or journaling can help you reconnect with your true feelings and find calmer balance.",
         "reversed": "Reversed, stress from avoiding decisions may be affecting you. Make one small choice to ease the pressure. Talking things through with someone you trust can lighten your mind."
       },
-      "advice": "Take a gentle look at the choice you have been avoiding today."
+      "advice": "Take a gentle look at the choice you have been avoiding today.",
+      "adviceReversed": "Make one small decision today instead of waiting for certainty."
     },
     "my": {
       "name": "ဓား နှစ်လက်",
@@ -94,7 +97,8 @@
         "upright": "ကျန်းမာရေးနဲ့ စိတ်ဓာတ်အတွက် အတွင်းစိတ် ပဋိပက္ခက တင်းမာမှု ဖြစ်စေနိုင်ပါတယ်။ တိတ်ဆိတ်စွာ ဆင်ခြင်ခြင်း၊ စိတ်ငြိမ်အောင် ထိုင်ခြင်း ဒါမှမဟုတ် မှတ်စုရေးခြင်းက တကယ့်ခံစားချက်တွေနဲ့ ပြန်ဆက်သွယ်ပြီး ပိုအေးချမ်းတဲ့ မျှတမှုကို ရှာစေနိုင်ပါတယ်။",
         "reversed": "ပြောင်းပြန်ဆိုရင် ဆုံးဖြတ်ချက်တွေ ရှောင်နေတဲ့ စိတ်ဖိစီးမှုက ထိခိုက်နေနိုင်ပါတယ်။ ဖိအားလျော့ဖို့ ရွေးချယ်မှုလေးတစ်ခု လုပ်ပါ။ ယုံကြည်ရသူနဲ့ ဆွေးနွေးတာက စိတ်ကို ပေါ့ပါးစေနိုင်ပါတယ်။"
       },
-      "advice": "ဒီနေ့ ရှောင်နေခဲ့တဲ့ ရွေးချယ်မှုကို ညင်ညင်သာသာ ကြည့်ကြည့်ပါ။"
+      "advice": "ဒီနေ့ ရှောင်နေခဲ့တဲ့ ရွေးချယ်မှုကို ညင်ညင်သာသာ ကြည့်ကြည့်ပါ။",
+      "adviceReversed": "ဒီနေ့ သေချာမှုကို မစောင့်ဘဲ ဆုံးဖြတ်ချက်သေးသေးတစ်ခု ချပါ။"
     }
   },
   {
@@ -120,7 +124,8 @@
         "upright": "For wellbeing and spirit, emotional pain may affect your energy. Allow yourself to rest and grieve. Talking with a trusted friend or counsellor can provide comfort and perspective.",
         "reversed": "Reversed, emotional healing is underway. Keep caring for yourself kindly. Gentle routines, supportive company and patience can help your heart feel lighter day by day."
       },
-      "advice": "Be gentle with whatever hurts today, and let someone you trust help."
+      "advice": "Be gentle with whatever hurts today, and let someone you trust help.",
+      "adviceReversed": "Let yourself heal slowly today, and talk to someone who listens kindly."
     },
     "my": {
       "name": "ဓား သုံးလက်",
@@ -143,7 +148,8 @@
         "upright": "ကျန်းမာရေးနဲ့ စိတ်ဓာတ်အတွက် စိတ်ခံစားမှုဆိုင်ရာ နာကျင်မှုက စွမ်းအင်ကို ထိခိုက်နိုင်ပါတယ်။ အနားယူပြီး ဝမ်းနည်းခွင့် ပေးပါ။ ယုံကြည်ရတဲ့ မိတ်ဆွေ ဒါမှမဟုတ် အကြံပေးပုဂ္ဂိုလ်နဲ့ စကားပြောတာက နှစ်သိမ့်မှုနဲ့ အမြင်ကို ပေးနိုင်ပါတယ်။",
         "reversed": "ပြောင်းပြန်ဆိုရင် စိတ်ခံစားမှုဆိုင်ရာ ကုစားမှု ဖြစ်ပေါ်နေပါပြီ။ ကိုယ့်ကိုယ်ကို ကြင်ကြင်နာနာ ဆက်ဂရုစိုက်ပါ။ ညင်သာတဲ့ နေ့စဉ်လုပ်ငန်း၊ ထောက်ကူပေးတဲ့ အဖော်နဲ့ စိတ်ရှည်မှုက နှလုံးသားကို တစ်နေ့ထက်တစ်နေ့ ပေါ့ပါးစေနိုင်ပါတယ်။"
       },
-      "advice": "ဒီနေ့ နာကျင်တဲ့ အရာအပေါ် ညင်သာပြီး ယုံကြည်ရသူတစ်ယောက်ကို ကူညီခွင့်ပေးပါ။"
+      "advice": "ဒီနေ့ နာကျင်တဲ့ အရာအပေါ် ညင်သာပြီး ယုံကြည်ရသူတစ်ယောက်ကို ကူညီခွင့်ပေးပါ။",
+      "adviceReversed": "ဒီနေ့ ဖြည်းဖြည်းချင်း ပြန်လည်ကောင်းမွန်ခွင့်ပေးပြီး ကြင်နာစွာ နားထောင်တဲ့သူနဲ့ ပြောပါ။"
     }
   },
   {
@@ -169,7 +175,8 @@
         "upright": "For wellbeing and spirit, rest is the best medicine now. Prioritise sleep, quiet time and gentle activities. Meditation, stretching or a calm environment can help you recover fully.",
         "reversed": "Reversed, restlessness or poor sleep may be affecting you. Create calming bedtime routines and reduce stimulation. If exhaustion persists, consider speaking with a health professional."
       },
-      "advice": "Give yourself permission to rest today without guilt."
+      "advice": "Give yourself permission to rest today without guilt.",
+      "adviceReversed": "Rest properly today, and let your mind be quiet before you return to your tasks."
     },
     "my": {
       "name": "ဓား လေးလက်",
@@ -192,7 +199,8 @@
         "upright": "ကျန်းမာရေးနဲ့ စိတ်ဓာတ်အတွက် အနားယူမှုက အခု အကောင်းဆုံး ဆေးပါ။ အိပ်စက်ခြင်း၊ တိတ်ဆိတ်တဲ့ အချိန်နဲ့ ညင်သာတဲ့ လှုပ်ရှားမှုတွေကို ဦးစားပေးပါ။ တိတ်ဆိတ်စွာ ထိုင်ခြင်း၊ ဆန့်ခြင်း ဒါမှမဟုတ် အေးချမ်းတဲ့ ပတ်ဝန်းကျင်က အပြည့်အဝ ပြန်ကောင်းအောင် ကူညီနိုင်ပါတယ်။",
         "reversed": "ပြောင်းပြန်ဆိုရင် မငြိမ်မသက်မှု ဒါမှမဟုတ် အိပ်မပျော်မှုက ထိခိုက်နေနိုင်ပါတယ်။ စိတ်အေးစေတဲ့ အိပ်ရာဝင် အလေ့အထတွေ ဖန်တီးပြီး လှုံ့ဆော်မှုတွေကို လျှော့ပါ။ ပင်ပန်းမှု ဆက်ရှိနေရင် ကျန်းမာရေး ကျွမ်းကျင်သူနဲ့ ပြောဖို့ စဉ်းစားပါ။"
       },
-      "advice": "ဒီနေ့ အပြစ်ရှိသလို မခံစားဘဲ အနားယူခွင့်ကို ကိုယ့်ကိုယ်ကို ပေးပါ။"
+      "advice": "ဒီနေ့ အပြစ်ရှိသလို မခံစားဘဲ အနားယူခွင့်ကို ကိုယ့်ကိုယ်ကို ပေးပါ။",
+      "adviceReversed": "ဒီနေ့ သေချာအနားယူပြီး အလုပ်တွေဆီ မပြန်ခင် စိတ်ကို ငြိမ်စေပါ။"
     }
   },
   {
@@ -218,7 +226,8 @@
         "upright": "For wellbeing and spirit, conflict can be draining. Notice how tension affects your body. Calming activities and stepping away from hostile environments can help protect your energy.",
         "reversed": "Reversed, releasing resentment can lighten your mind and body. Forgiveness, for yourself and others, may bring peace. Gentle reflection and support can help you let go."
       },
-      "advice": "Ask yourself today whether being right is worth more than being at peace."
+      "advice": "Ask yourself today whether being right is worth more than being at peace.",
+      "adviceReversed": "Choose peace over a point today, and walk away from one needless argument."
     },
     "my": {
       "name": "ဓား ငါးလက်",
@@ -241,7 +250,8 @@
         "upright": "ကျန်းမာရေးနဲ့ စိတ်ဓာတ်အတွက် ပဋိပက္ခက အားကုန်စေနိုင်ပါတယ်။ တင်းမာမှုက ခန္ဓာကိုယ်ကို ဘယ်လို ထိခိုက်လဲ သတိထားပါ။ စိတ်အေးစေတဲ့ လှုပ်ရှားမှုတွေနဲ့ ရန်လိုတဲ့ ပတ်ဝန်းကျင်ကနေ ခွာတာက စွမ်းအင်ကို ကာကွယ်ပေးနိုင်ပါတယ်။",
         "reversed": "ပြောင်းပြန်ဆိုရင် နာကျည်းမှုကို လွှတ်ချတာက စိတ်နဲ့ ခန္ဓာကိုယ်ကို ပေါ့ပါးစေနိုင်ပါတယ်။ ကိုယ့်ကိုယ်ကိုရော တခြားသူကိုပါ ခွင့်လွှတ်တာက ငြိမ်းချမ်းမှု ယူဆောင်လာနိုင်ပါတယ်။ ညင်သာတဲ့ ဆင်ခြင်မှုနဲ့ အကူအညီက လွှတ်ချနိုင်အောင် ကူညီပါတယ်။"
       },
-      "advice": "ဒီနေ့ မှန်နေတာက ငြိမ်းချမ်းနေတာထက် ပိုတန်ဖိုးရှိလား ကိုယ့်ကိုယ်ကို မေးကြည့်ပါ။"
+      "advice": "ဒီနေ့ မှန်နေတာက ငြိမ်းချမ်းနေတာထက် ပိုတန်ဖိုးရှိလား ကိုယ့်ကိုယ်ကို မေးကြည့်ပါ။",
+      "adviceReversed": "ဒီနေ့ အချက်တစ်ချက်ထက် ငြိမ်းချမ်းမှုကို ရွေးပြီး မလိုအပ်တဲ့ အငြင်းပွားမှုတစ်ခုကနေ ထွက်ပါ။"
     }
   },
   {
@@ -267,7 +277,8 @@
         "upright": "For wellbeing and spirit, recovery and calmer days may be ahead. Gentle travel, nature or a change of scenery can support healing. Let yourself drift into a more peaceful rhythm.",
         "reversed": "Reversed, emotional baggage may be slowing recovery. Release what you can with kindness. Support from others and gentle routines can help you move toward calmer waters."
       },
-      "advice": "Take one small step toward calmer waters today."
+      "advice": "Take one small step toward calmer waters today.",
+      "adviceReversed": "Be patient with a slow journey today, and trust that calmer days are coming."
     },
     "my": {
       "name": "ဓား ခြောက်လက်",
@@ -290,7 +301,8 @@
         "upright": "ကျန်းမာရေးနဲ့ စိတ်ဓာတ်အတွက် ပြန်လည်ကောင်းမွန်မှုနဲ့ ပိုအေးချမ်းတဲ့ နေ့ရက်တွေ ရှေ့မှာ ရှိနိုင်ပါတယ်။ ညင်သာတဲ့ ခရီးသွားခြင်း၊ သဘာဝ ဒါမှမဟုတ် ရှုခင်းပြောင်းခြင်းက ကုစားမှုကို ထောက်ကူနိုင်ပါတယ်။ ပိုငြိမ်းချမ်းတဲ့ စည်းချက်ထဲ ကိုယ့်ကိုယ်ကို မျောပါခွင့်ပေးပါ။",
         "reversed": "ပြောင်းပြန်ဆိုရင် စိတ်ခံစားမှု ဝန်ထုပ်ဝန်ပိုးက ပြန်လည်ကောင်းမွန်မှုကို နှေးစေနိုင်ပါတယ်။ တတ်နိုင်တာကို ကြင်နာစွာ လွှတ်ချပါ။ တခြားသူတွေရဲ့ အကူအညီနဲ့ ညင်သာတဲ့ နေ့စဉ်လုပ်ငန်းတွေက ပိုတည်ငြိမ်တဲ့ ရေပြင်ဆီ ရွေ့စေနိုင်ပါတယ်။"
       },
-      "advice": "ဒီနေ့ ပိုတည်ငြိမ်တဲ့ ရေပြင်ဆီ ခြေလှမ်းလေးတစ်လှမ်း လှမ်းပါ။"
+      "advice": "ဒီနေ့ ပိုတည်ငြိမ်တဲ့ ရေပြင်ဆီ ခြေလှမ်းလေးတစ်လှမ်း လှမ်းပါ။",
+      "adviceReversed": "ဒီနေ့ နှေးတဲ့ခရီးမှာ စိတ်ရှည်ပြီး ပိုတည်ငြိမ်တဲ့ ရက်တွေ လာမယ်လို့ ယုံကြည်ပါ။"
     }
   },
   {
@@ -316,7 +328,8 @@
         "upright": "For wellbeing and spirit, notice if you are avoiding something that needs attention. Facing it gently is healthier than hiding from it. Honesty with yourself supports peace of mind.",
         "reversed": "Reversed, releasing secrets or burdens may bring relief. Talking with someone you trust can lighten your mind. Openness, offered at your own pace, often supports emotional and physical wellbeing."
       },
-      "advice": "Choose the honest path today, even if it feels less convenient."
+      "advice": "Choose the honest path today, even if it feels less convenient.",
+      "adviceReversed": "Be honest with yourself today about one thing you have been avoiding."
     },
     "my": {
       "name": "ဓား ခုနစ်လက်",
@@ -339,7 +352,8 @@
         "upright": "ကျန်းမာရေးနဲ့ စိတ်ဓာတ်အတွက် အာရုံစိုက်ဖို့ လိုတဲ့ အရာကို ရှောင်နေလား သတိထားပါ။ ပုန်းနေတာထက် ညင်သာစွာ ရင်ဆိုင်တာက ပိုကျန်းမာပါတယ်။ ကိုယ့်ကိုယ်ကို ရိုးသားတာက စိတ်အေးချမ်းမှုကို ထောက်ကူပါတယ်။",
         "reversed": "ပြောင်းပြန်ဆိုရင် လျှို့ဝှက်ချက်တွေ ဒါမှမဟုတ် ဝန်တွေကို လွှတ်ချတာက သက်သာမှု ယူဆောင်လာနိုင်ပါတယ်။ ယုံကြည်ရသူနဲ့ စကားပြောတာက စိတ်ကို ပေါ့ပါးစေနိုင်ပါတယ်။ ပွင့်လင်းမှုက စိတ်ပိုင်းရော ရုပ်ပိုင်းရော ကျန်းမာရေးကို ထောက်ကူတတ်ပါတယ်။"
       },
-      "advice": "ဒီနေ့ အဆင်ပြေမှု နည်းသလို ခံစားရရင်တောင် ရိုးသားတဲ့ လမ်းကို ရွေးပါ။"
+      "advice": "ဒီနေ့ အဆင်ပြေမှု နည်းသလို ခံစားရရင်တောင် ရိုးသားတဲ့ လမ်းကို ရွေးပါ။",
+      "adviceReversed": "ဒီနေ့ ရှောင်နေခဲ့တဲ့ အရာတစ်ခုအကြောင်း ကိုယ့်ကိုယ်ကို ရိုးသားစွာ ဝန်ခံပါ။"
     }
   }
 ]

@@ -33,6 +33,8 @@ export interface CardTextSource {
   /** Health & spirit — wellbeing and inner life, never medical claims. */
   health: PairedReading;
   advice: string;
+  /** The one-line advice when the card is drawn reversed. */
+  adviceReversed: string;
 }
 
 /** Fully resolved text for one language in `data/cards.json`. */

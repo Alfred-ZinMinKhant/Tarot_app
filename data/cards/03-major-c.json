@@ -22,7 +22,8 @@
         "upright": "For wellbeing and spirit, balance is the theme. Weigh work and rest, giving and receiving. Honest reflection on your habits can guide sensible, caring adjustments.",
         "reversed": "Reversed, life may feel out of balance. Notice where you are overextending, and make small corrections. Be fair to yourself, too; self-criticism is not the same as accountability."
       },
-      "advice": "Look at today's situation honestly, and choose what feels fair to everyone."
+      "advice": "Look at today's situation honestly, and choose what feels fair to everyone.",
+      "adviceReversed": "Check today whether you are being fair to yourself as well as to others."
     },
     "my": {
       "name": "တရားမျှတမှု",
@@ -45,7 +46,8 @@
         "upright": "ကျန်းမာရေးနဲ့ စိတ်ဓာတ်အတွက် မျှတမှုက အဓိကအကြောင်းအရာပါ။ အလုပ်နဲ့ အနားယူမှု၊ ပေးခြင်းနဲ့ ရယူခြင်းကို ချိန်ဆပါ။ ကိုယ့်အလေ့အကျင့်တွေကို ရိုးသားစွာ ဆင်ခြင်တာက သင့်တော်ပြီး ဂရုစိုက်တဲ့ ပြင်ဆင်မှုတွေကို လမ်းပြနိုင်ပါတယ်။",
         "reversed": "ပြောင်းပြန်ဆိုရင် ဘဝက မျှတမှု ပျက်နေသလို ခံစားရနိုင်ပါတယ်။ ဘယ်နေရာမှာ အလွန်အကျွံ လုပ်နေလဲ သတိထားပြီး နည်းနည်းချင်း ပြင်ပါ။ ကိုယ့်ကိုယ်ကိုလည်း မျှတပါ၊ ကိုယ့်ကိုယ်ကို ဝေဖန်တာနဲ့ တာဝန်ခံတာ မတူပါဘူး။"
       },
-      "advice": "ဒီနေ့ အခြေအနေကို ရိုးရိုးသားသား ကြည့်ပြီး အားလုံးအတွက် မျှတတဲ့ဟာကို ရွေးပါ။"
+      "advice": "ဒီနေ့ အခြေအနေကို ရိုးရိုးသားသား ကြည့်ပြီး အားလုံးအတွက် မျှတတဲ့ဟာကို ရွေးပါ။",
+      "adviceReversed": "ဒီနေ့ တခြားသူတွေကိုသာမက ကိုယ့်ကိုယ်ကိုပါ မျှမျှတတ ဆက်ဆံနေလား စစ်ကြည့်ပါ။"
     }
   },
   {
@@ -71,7 +73,8 @@
         "upright": "For wellbeing and spirit, rest and surrender are nourishing. Gentle stretching, slow breathing or simply pausing can ease tension. Let your body and mind rest without guilt.",
         "reversed": "Reversed, restlessness may be draining you. Notice what you are resisting. A gentle change of routine or a new way of looking at your situation can bring relief."
       },
-      "advice": "Pause today and look at your situation from a completely different angle."
+      "advice": "Pause today and look at your situation from a completely different angle.",
+      "adviceReversed": "Stop waiting for the perfect moment and take one small action today."
     },
     "my": {
       "name": "ဇောက်ထိုးဆွဲထားသူ",
@@ -94,7 +97,8 @@
         "upright": "ကျန်းမာရေးနဲ့ စိတ်ဓာတ်အတွက် အနားယူခြင်းနဲ့ လက်လွှတ်ခြင်းက အားဖြည့်ပေးပါတယ်။ ညင်ညင်သာသာ ဆန့်တာ၊ အသက်ကို ဖြည်းဖြည်းရှူတာ ဒါမှမဟုတ် ရိုးရိုးလေး ရပ်နားတာက တင်းမာမှုကို လျော့စေနိုင်ပါတယ်။ အပြစ်ရှိသလို မခံစားဘဲ နားပါ။",
         "reversed": "ပြောင်းပြန်ဆိုရင် မငြိမ်မသက် ဖြစ်နေတာက အားကုန်စေနိုင်ပါတယ်။ ဘာကို ခုခံနေလဲ သတိထားကြည့်ပါ။ နေ့စဉ်လုပ်ငန်းကို ညင်သာစွာ ပြောင်းတာ ဒါမှမဟုတ် အခြေအနေကို အမြင်သစ်နဲ့ ကြည့်တာက သက်သာစေနိုင်ပါတယ်။"
       },
-      "advice": "ဒီနေ့ ခဏရပ်ပြီး ကိုယ့်အခြေအနေကို လုံးဝ မတူတဲ့ ထောင့်တစ်ခုကနေ ကြည့်ပါ။"
+      "advice": "ဒီနေ့ ခဏရပ်ပြီး ကိုယ့်အခြေအနေကို လုံးဝ မတူတဲ့ ထောင့်တစ်ခုကနေ ကြည့်ပါ။",
+      "adviceReversed": "ပြီးပြည့်စုံတဲ့ အချိန်ကို မစောင့်တော့ဘဲ ဒီနေ့ လုပ်ရပ်သေးသေးလေးတစ်ခု လုပ်ပါ။"
     }
   },
   {
@@ -120,7 +124,8 @@
         "upright": "For wellbeing and spirit, this card speaks of renewal. Letting go of a draining habit or old emotional weight can feel freeing. Give yourself time and kindness during change.",
         "reversed": "Reversed, you may be resisting a change that would help you feel better. Be gentle with yourself and seek support if transitions feel heavy. Renewal can unfold one step at a time."
       },
-      "advice": "Let go of one thing today that you have already outgrown."
+      "advice": "Let go of one thing today that you have already outgrown.",
+      "adviceReversed": "Be gentle with yourself today about a change you are resisting."
     },
     "my": {
       "name": "သေခြင်း",
@@ -143,7 +148,8 @@
         "upright": "ကျန်းမာရေးနဲ့ စိတ်ဓာတ်အတွက် ဒီကတ်က ပြန်လည်သစ်လွင်ခြင်းအကြောင်း ပြောပါတယ်။ အားကုန်စေတဲ့ အကျင့် ဒါမှမဟုတ် စိတ်ဝန်ဟောင်းတစ်ခုကို လွှတ်ချတာက လွတ်မြောက်သလို ခံစားရစေနိုင်ပါတယ်။ ပြောင်းလဲချိန်မှာ ကိုယ့်ကိုယ်ကို အချိန်နဲ့ ကြင်နာမှု ပေးပါ။",
         "reversed": "ပြောင်းပြန်ဆိုရင် ပိုကောင်းအောင် ကူညီမယ့် ပြောင်းလဲမှုကို ခုခံနေတာ ဖြစ်နိုင်ပါတယ်။ ကိုယ့်ကိုယ်ကို ညင်သာပါ၊ ကူးပြောင်းမှုတွေ လေးလံနေရင် အကူအညီ ရှာပါ။ ပြန်လည်သစ်လွင်မှုက တစ်လှမ်းချင်း ဖြစ်လာနိုင်ပါတယ်။"
       },
-      "advice": "ဒီနေ့ ကိုယ်ကျော်လွန်ပြီးသား အရာတစ်ခုကို လက်လွှတ်လိုက်ပါ။"
+      "advice": "ဒီနေ့ ကိုယ်ကျော်လွန်ပြီးသား အရာတစ်ခုကို လက်လွှတ်လိုက်ပါ။",
+      "adviceReversed": "ဒီနေ့ ကိုယ်ခုခံနေတဲ့ ပြောင်းလဲမှုတစ်ခုအပေါ် ကိုယ့်ကိုယ်ကို ညင်သာစွာ ဆက်ဆံပါ။"
     }
   },
   {
@@ -169,7 +175,8 @@
         "upright": "For wellbeing and spirit, gentle balance supports healing. Moderate habits, enough water, calm breathing and rest can restore harmony. Listen to what your body is asking for.",
         "reversed": "Reversed, you may be overdoing things or swinging between extremes. Return to simple, moderate routines. Be patient; gentle consistency helps your system find its rhythm again."
       },
-      "advice": "Choose the middle path today and mix effort with calm."
+      "advice": "Choose the middle path today and mix effort with calm.",
+      "adviceReversed": "Notice where things feel out of balance today and adjust one small thing."
     },
     "my": {
       "name": "မျှတခြင်း",
@@ -192,7 +199,8 @@
         "upright": "ကျန်းမာရေးနဲ့ စိတ်ဓာတ်အတွက် ညင်သာတဲ့ မျှတမှုက ကုစားမှုကို ထောက်ကူပါတယ်။ အတိုင်းအတာရှိတဲ့ အလေ့အကျင့်၊ လုံလောက်တဲ့ ရေ၊ အေးဆေးတဲ့ အသက်ရှူမှုနဲ့ အနားယူမှုက သဟဇာတကို ပြန်ပေးနိုင်ပါတယ်။ ခန္ဓာကိုယ်က ဘာတောင်းဆိုနေလဲ နားထောင်ပါ။",
         "reversed": "ပြောင်းပြန်ဆိုရင် အလွန်အကျွံ လုပ်နေတာ ဒါမှမဟုတ် အစွန်းနှစ်ဖက်ကြား လွှဲနေတာ ဖြစ်နိုင်ပါတယ်။ ရိုးရှင်းပြီး အတိုင်းအတာရှိတဲ့ နေ့စဉ်လုပ်ငန်းဆီ ပြန်သွားပါ။ စိတ်ရှည်ပါ၊ ညင်သာတဲ့ ပုံမှန်မှုက စည်းချက်ကို ပြန်ရှာစေပါတယ်။"
       },
-      "advice": "ဒီနေ့ အလယ်လမ်းကို ရွေးပြီး ကြိုးစားမှုနဲ့ တည်ငြိမ်မှုကို ရောစပ်ပါ။"
+      "advice": "ဒီနေ့ အလယ်လမ်းကို ရွေးပြီး ကြိုးစားမှုနဲ့ တည်ငြိမ်မှုကို ရောစပ်ပါ။",
+      "adviceReversed": "ဒီနေ့ ဘယ်နေရာက မျှခြေမမျှဘူးလဲ သတိထားပြီး အသေးအဖွဲတစ်ခု ညှိကြည့်ပါ။"
     }
   },
   {
@@ -218,7 +226,8 @@
         "upright": "For wellbeing and spirit, notice habits that feel compulsive or draining. Be compassionate with yourself. If something feels hard to change alone, reaching out to a professional can help.",
         "reversed": "Reversed, you may be reclaiming healthier habits and a lighter spirit. Keep going gently. Lean on supportive people and celebrate each step toward feeling more like yourself."
       },
-      "advice": "Notice one habit that holds you back today, and simply name it with kindness."
+      "advice": "Notice one habit that holds you back today, and simply name it with kindness.",
+      "adviceReversed": "Take one small step today toward the freedom you already sense is possible."
     },
     "my": {
       "name": "မကောင်းဆိုးဝါး",
@@ -241,7 +250,8 @@
         "upright": "ကျန်းမာရေးနဲ့ စိတ်ဓာတ်အတွက် မလုပ်မနေရ ဖြစ်နေတဲ့ ဒါမှမဟုတ် အားကုန်စေတဲ့ အကျင့်တွေကို သတိထားပါ။ ကိုယ့်ကိုယ်ကို ကရုဏာထားပါ။ တစ်ယောက်တည်း ပြောင်းရခက်ရင် ကျွမ်းကျင်သူတစ်ယောက်ကို ဆက်သွယ်တာက ကူညီနိုင်ပါတယ်။",
         "reversed": "ပြောင်းပြန်ဆိုရင် ပိုကျန်းမာတဲ့ အကျင့်တွေနဲ့ ပိုပေါ့ပါးတဲ့ စိတ်ဓာတ်ကို ပြန်ရယူနေတာ ဖြစ်နိုင်ပါတယ်။ ညင်ညင်သာသာ ဆက်သွားပါ။ ထောက်ကူပေးတဲ့ လူတွေကို အားကိုးပြီး ကိုယ့်ကိုယ်ကို ပြန်ဖြစ်လာတဲ့ ခြေလှမ်းတိုင်းကို ဂုဏ်ပြုပါ။"
       },
-      "advice": "ဒီနေ့ ကိုယ့်ကို နောက်ပြန်ဆွဲနေတဲ့ အကျင့်တစ်ခုကို သတိထားပြီး ကြင်နာစွာ အမည်တပ်ကြည့်ပါ။"
+      "advice": "ဒီနေ့ ကိုယ့်ကို နောက်ပြန်ဆွဲနေတဲ့ အကျင့်တစ်ခုကို သတိထားပြီး ကြင်နာစွာ အမည်တပ်ကြည့်ပါ။",
+      "adviceReversed": "ဒီနေ့ ဖြစ်နိုင်တယ်လို့ ခံစားနေပြီးသား လွတ်လပ်မှုဆီ ခြေလှမ်းသေးသေးတစ်လှမ်း လှမ်းပါ။"
     }
   }
 ]

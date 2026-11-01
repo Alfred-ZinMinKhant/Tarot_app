@@ -143,6 +143,7 @@ function validateText(errors: string[], id: string, lang: Language, text: CardTe
   checkString(errors, at('upright'), text.upright, lang, limits.long);
   checkString(errors, at('reversed'), text.reversed, lang, limits.long);
   checkString(errors, at('advice'), text.advice, lang, limits.advice);
+  checkString(errors, at('adviceReversed'), text.adviceReversed, lang, limits.advice);
 
   if (!Array.isArray(text.keywords)) errors.push(`${at('keywords')}: missing`);
   else {
@@ -167,7 +168,7 @@ function validateText(errors: string[], id: string, lang: Language, text: CardTe
   }
 
   const allowed = new Set<keyof CardText>([
-    'name', 'suit', 'element', 'astrology', 'keywords', 'upright', 'reversed', 'advice',
+    'name', 'suit', 'element', 'astrology', 'keywords', 'upright', 'reversed', 'advice', 'adviceReversed',
     ...READING_AREAS,
   ]);
   for (const key of Object.keys(text)) {

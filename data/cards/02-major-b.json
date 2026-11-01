@@ -22,7 +22,8 @@
         "upright": "For wellbeing and spirit, harmony between your needs and your choices is nourishing. Supportive relationships and activities you love can lift your mood and steady your heart.",
         "reversed": "Reversed, inner conflict may be tiring you. Make space to reflect on what matters most. When your daily choices reflect your values, a sense of ease can return."
       },
-      "advice": "Make today's choice from your values, not only from convenience."
+      "advice": "Make today's choice from your values, not only from convenience.",
+      "adviceReversed": "Be honest with yourself about what you want before you decide today."
     },
     "my": {
       "name": "ချစ်သူများ",
@@ -45,7 +46,8 @@
         "upright": "ကျန်းမာရေးနဲ့ စိတ်ဓာတ်အတွက် ကိုယ့်လိုအပ်ချက်နဲ့ ရွေးချယ်မှုတွေကြား သဟဇာတဖြစ်တာက အားဖြည့်ပေးပါတယ်။ ထောက်ကူပေးတဲ့ ဆက်ဆံရေးတွေနဲ့ ကိုယ်နှစ်သက်တဲ့ လှုပ်ရှားမှုတွေက စိတ်ကို မြှင့်တင်ပေးနိုင်ပါတယ်။",
         "reversed": "ပြောင်းပြန်ဆိုရင် အတွင်းစိတ် ပဋိပက္ခက ပင်ပန်းစေနိုင်ပါတယ်။ ဘာက အရေးအကြီးဆုံးလဲ ဆင်ခြင်ဖို့ နေရာပေးပါ။ နေ့စဉ်ရွေးချယ်မှုတွေက ကိုယ့်တန်ဖိုးကို ထင်ဟပ်လာတဲ့အခါ စိတ်သက်သာမှု ပြန်ရောက်လာနိုင်ပါတယ်။"
       },
-      "advice": "ဒီနေ့ ရွေးချယ်မှုကို အဆင်ပြေမှုတစ်ခုတည်းနဲ့ မဟုတ်ဘဲ ကိုယ့်တန်ဖိုးတွေကနေ လုပ်ပါ။"
+      "advice": "ဒီနေ့ ရွေးချယ်မှုကို အဆင်ပြေမှုတစ်ခုတည်းနဲ့ မဟုတ်ဘဲ ကိုယ့်တန်ဖိုးတွေကနေ လုပ်ပါ။",
+      "adviceReversed": "ဒီနေ့ မဆုံးဖြတ်ခင် ကိုယ်တကယ်လိုချင်တာကို ကိုယ့်ကိုယ်ကို ရိုးသားစွာ ဝန်ခံပါ။"
     }
   },
   {
@@ -71,7 +73,8 @@
         "upright": "For wellbeing and spirit, steady commitment to healthy habits can build strength and confidence. Balance effort with rest so that your progress stays sustainable over time.",
         "reversed": "Reversed, you may be pushing too hard or feeling scattered. Listen to your limits. Gentle consistency often works better than intense bursts followed by exhaustion."
       },
-      "advice": "Choose one direction today and move toward it with calm determination."
+      "advice": "Choose one direction today and move toward it with calm determination.",
+      "adviceReversed": "Slow down today and settle on one direction before you push ahead."
     },
     "my": {
       "name": "စစ်ရထား",
@@ -94,7 +97,8 @@
         "upright": "ကျန်းမာရေးနဲ့ စိတ်ဓာတ်အတွက် ကျန်းမာတဲ့ အလေ့အကျင့်တွေကို တည်တည်ငြိမ်ငြိမ် လိုက်နာတာက ခွန်အားနဲ့ ယုံကြည်မှုကို တည်ဆောက်ပေးနိုင်ပါတယ်။ တိုးတက်မှု ရေရှည်တည်တံ့အောင် ကြိုးစားမှုနဲ့ အနားယူမှုကို မျှတပါ။",
         "reversed": "ပြောင်းပြန်ဆိုရင် ကိုယ့်ကိုယ်ကို တွန်းအားပေးလွန်းနေတာ ဒါမှမဟုတ် ပြန့်ကျဲနေတာ ဖြစ်နိုင်ပါတယ်။ ကိုယ့်အကန့်အသတ်ကို နားထောင်ပါ။ အားကုန်အောင် လုပ်ပြီး ပင်ပန်းတာထက် ညင်သာပုံမှန် လုပ်တာက ပိုအဆင်ပြေတတ်ပါတယ်။"
       },
-      "advice": "ဒီနေ့ ဦးတည်ချက်တစ်ခု ရွေးပြီး အေးဆေးခိုင်မာတဲ့ စိတ်နဲ့ ရှေ့ဆက်ပါ။"
+      "advice": "ဒီနေ့ ဦးတည်ချက်တစ်ခု ရွေးပြီး အေးဆေးခိုင်မာတဲ့ စိတ်နဲ့ ရှေ့ဆက်ပါ။",
+      "adviceReversed": "ဒီနေ့ နှေးကြည့်ပြီး ရှေ့မတိုးခင် ဦးတည်ချက်တစ်ခုကို ရွေးချယ်ပါ။"
     }
   },
   {
@@ -120,7 +124,8 @@
         "upright": "For wellbeing and spirit, inner resilience is highlighted. Gentle routines, kind self-talk and steady habits help you feel strong. Your calm presence can be very healing for others too.",
         "reversed": "Reversed, you may feel drained or harsh toward yourself. Rest and gentle care are needed. Reach out for support if you feel overwhelmed; asking for help is also a kind of strength."
       },
-      "advice": "Meet today's challenge with patience and a gentle, steady heart."
+      "advice": "Meet today's challenge with patience and a gentle, steady heart.",
+      "adviceReversed": "Be as patient with yourself today as you would be with a friend."
     },
     "my": {
       "name": "ခွန်အား",
@@ -143,7 +148,8 @@
         "upright": "ကျန်းမာရေးနဲ့ စိတ်ဓာတ်အတွက် အတွင်းစိတ် ကြံ့ခိုင်မှု ထင်ရှားပါတယ်။ ညင်သာတဲ့ နေ့စဉ်လုပ်ငန်း၊ ကိုယ့်ကိုယ်ကို ကြင်နာစွာ ပြောဆိုမှုနဲ့ တည်ငြိမ်တဲ့ အလေ့အကျင့်တွေက သန်မာသလို ခံစားစေပါတယ်။",
         "reversed": "ပြောင်းပြန်ဆိုရင် အားကုန်နေသလို ဒါမှမဟုတ် ကိုယ့်ကိုယ်ကို ကြမ်းတမ်းနေသလို ခံစားရနိုင်ပါတယ်။ အနားယူမှုနဲ့ ညင်သာတဲ့ ဂရုစိုက်မှု လိုပါတယ်။ လွန်ကဲနေရင် အကူအညီ တောင်းပါ၊ ဒါလည်း ခွန်အားတစ်မျိုးပါ။"
       },
-      "advice": "ဒီနေ့ စိန်ခေါ်မှုကို စိတ်ရှည်မှုနဲ့ ညင်သာတည်ငြိမ်တဲ့ နှလုံးသားနဲ့ ရင်ဆိုင်ပါ။"
+      "advice": "ဒီနေ့ စိန်ခေါ်မှုကို စိတ်ရှည်မှုနဲ့ ညင်သာတည်ငြိမ်တဲ့ နှလုံးသားနဲ့ ရင်ဆိုင်ပါ။",
+      "adviceReversed": "ဒီနေ့ သူငယ်ချင်းကို စိတ်ရှည်သလို ကိုယ့်ကိုယ်ကိုလည်း စိတ်ရှည်ပါ။"
     }
   },
   {
@@ -169,7 +175,8 @@
         "upright": "For wellbeing and spirit, solitude, rest and gentle reflection are nourishing. Quiet walks, early nights or time away from screens may help you reconnect with yourself.",
         "reversed": "Reversed, too much isolation may be lowering your mood. Balance alone time with supportive company. If heavy feelings linger, talking with someone you trust can really help."
       },
-      "advice": "Spend some quiet time today with your own thoughts and feelings."
+      "advice": "Spend some quiet time today with your own thoughts and feelings.",
+      "adviceReversed": "If you have been alone too long, reach out to one trusted person today."
     },
     "my": {
       "name": "ရသေ့",
@@ -192,7 +199,8 @@
         "upright": "ကျန်းမာရေးနဲ့ စိတ်ဓာတ်အတွက် တစ်ယောက်တည်းနေခြင်း၊ အနားယူခြင်းနဲ့ ညင်သာစွာ ဆင်ခြင်ခြင်းက အားဖြည့်ပေးပါတယ်။ တိတ်ဆိတ်စွာ လမ်းလျှောက်တာ၊ စောစော အိပ်တာ ဒါမှမဟုတ် ဖုန်းနဲ့ ဝေးဝေးနေတာက ကိုယ့်ကိုယ်ကို ပြန်ဆက်သွယ်စေနိုင်ပါတယ်။",
         "reversed": "ပြောင်းပြန်ဆိုရင် အထီးကျန်လွန်းတာက စိတ်ဓာတ်ကို ကျစေနိုင်ပါတယ်။ တစ်ယောက်တည်းနေချိန်ကို ထောက်ကူပေးတဲ့ အဖော်တွေနဲ့ မျှတပါ။ လေးလံတဲ့ ခံစားချက်တွေ ကြာနေရင် ယုံကြည်ရသူနဲ့ စကားပြောတာ တကယ် ကူညီနိုင်ပါတယ်။"
       },
-      "advice": "ဒီနေ့ ကိုယ့်အတွေးနဲ့ ခံစားချက်တွေနဲ့အတူ တိတ်ဆိတ်တဲ့ အချိန်လေး ဖြုန်းပါ။"
+      "advice": "ဒီနေ့ ကိုယ့်အတွေးနဲ့ ခံစားချက်တွေနဲ့အတူ တိတ်ဆိတ်တဲ့ အချိန်လေး ဖြုန်းပါ။",
+      "adviceReversed": "တစ်ယောက်တည်း ကြာနေပြီဆိုရင် ဒီနေ့ ယုံကြည်ရသူတစ်ယောက်ကို ဆက်သွယ်ကြည့်ပါ။"
     }
   },
   {
@@ -218,7 +226,8 @@
         "upright": "For wellbeing and spirit, honour your natural rhythms. Energy rises and falls; that is normal. Adjust routines to match the season you are in, and be gentle with change.",
         "reversed": "Reversed, you may be repeating habits that leave you tired. Notice the pattern kindly and try one small change. Gentle shifts can gradually lead to a better cycle."
       },
-      "advice": "Flow with today's changes and look for the opportunity inside them."
+      "advice": "Flow with today's changes and look for the opportunity inside them.",
+      "adviceReversed": "Notice what you can still choose today, even when circumstances feel stuck."
     },
     "my": {
       "name": "ကံကြမ္မာစက်ဝိုင်း",
@@ -241,7 +250,8 @@
         "upright": "ကျန်းမာရေးနဲ့ စိတ်ဓာတ်အတွက် ကိုယ့်သဘာဝ စည်းချက်ကို လေးစားပါ။ စွမ်းအင်က တက်လိုက်ကျလိုက် ဖြစ်တတ်တာ ပုံမှန်ပါပဲ။ ကိုယ်ရောက်နေတဲ့ ရာသီနဲ့ ကိုက်အောင် နေ့စဉ်လုပ်ငန်းကို ညှိပြီး ပြောင်းလဲမှုအပေါ် ညင်သာပါ။",
         "reversed": "ပြောင်းပြန်ဆိုရင် ပင်ပန်းစေတဲ့ အကျင့်တွေကို ထပ်ခါထပ်ခါ လုပ်နေတာ ဖြစ်နိုင်ပါတယ်။ အဲဒီပုံစံကို ကြင်ကြင်နာနာ သတိထားပြီး အပြောင်းအလဲလေးတစ်ခု စမ်းကြည့်ပါ။ ညင်သာတဲ့ ပြောင်းလဲမှုတွေက ပိုကောင်းတဲ့ စက်ဝန်းဆီ ပို့ဆောင်နိုင်ပါတယ်။"
       },
-      "advice": "ဒီနေ့ ပြောင်းလဲမှုတွေနဲ့အတူ စီးဆင်းပြီး အထဲက အခွင့်အလမ်းကို ရှာပါ။"
+      "advice": "ဒီနေ့ ပြောင်းလဲမှုတွေနဲ့အတူ စီးဆင်းပြီး အထဲက အခွင့်အလမ်းကို ရှာပါ။",
+      "adviceReversed": "အခြေအနေတွေ ကပ်နေသလို ခံစားရရင်တောင် ဒီနေ့ ကိုယ်ရွေးချယ်နိုင်တာကို သတိထားကြည့်ပါ။"
     }
   }
 ]

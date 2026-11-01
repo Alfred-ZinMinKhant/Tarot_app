@@ -22,7 +22,8 @@
         "upright": "For wellbeing and spirit, an inner journey or retreat may be nourishing. Quiet walks, journaling or time away can help you reconnect with what truly matters to you.",
         "reversed": "Reversed, you may feel restless or uncertain. Be patient with yourself. Gentle reflection, rest and conversations with trusted people can help you understand what you need next."
       },
-      "advice": "Let go of one thing today that no longer brings you meaning."
+      "advice": "Let go of one thing today that no longer brings you meaning.",
+      "adviceReversed": "Pause before leaving today and be sure you are walking toward something, not just away."
     },
     "my": {
       "name": "ခွက် ရှစ်လုံး",
@@ -45,7 +46,8 @@
         "upright": "ကျန်းမာရေးနဲ့ စိတ်ဓာတ်အတွက် အတွင်းစိတ်ခရီး ဒါမှမဟုတ် အနားယူခရီးက အားဖြည့်ပေးနိုင်ပါတယ်။ တိတ်ဆိတ်စွာ လမ်းလျှောက်တာ၊ မှတ်စုရေးတာ ဒါမှမဟုတ် အဝေးမှာ အချိန်ဖြုန်းတာက တကယ်အရေးကြီးတာနဲ့ ပြန်ဆက်သွယ်စေနိုင်ပါတယ်။",
         "reversed": "ပြောင်းပြန်ဆိုရင် မငြိမ်မသက် ဒါမှမဟုတ် မသေချာသလို ခံစားရနိုင်ပါတယ်။ ကိုယ့်ကိုယ်ကို စိတ်ရှည်ပါ။ ညင်သာတဲ့ ဆင်ခြင်မှု၊ အနားယူမှုနဲ့ ယုံကြည်ရသူတွေနဲ့ စကားပြောတာက နောက်ဘာလိုအပ်လဲ နားလည်စေနိုင်ပါတယ်။"
       },
-      "advice": "ဒီနေ့ အဓိပ္ပာယ် မပေးတော့တဲ့ အရာတစ်ခုကို လက်လွှတ်လိုက်ပါ။"
+      "advice": "ဒီနေ့ အဓိပ္ပာယ် မပေးတော့တဲ့ အရာတစ်ခုကို လက်လွှတ်လိုက်ပါ။",
+      "adviceReversed": "ဒီနေ့ မထွက်ခွာခင် ခဏရပ်ပြီး ရှောင်ပြေးတာမဟုတ်ဘဲ တစ်ခုခုဆီ လျှောက်နေတာ ဟုတ်မဟုတ် သေချာစစ်ပါ။"
     }
   },
   {
@@ -71,7 +73,8 @@
         "upright": "For wellbeing and spirit, contentment and gratitude can lift your mood. Enjoy nourishing food, rest and pleasant company. Small pleasures, savoured slowly, are good for the soul.",
         "reversed": "Reversed, indulgence may be affecting your wellbeing. Gently rebalance your habits. Seek joy in simple, healthy activities that leave you feeling better rather than depleted."
       },
-      "advice": "Name three things you are grateful for today, and savour one of them slowly."
+      "advice": "Name three things you are grateful for today, and savour one of them slowly.",
+      "adviceReversed": "Look for contentment in something simple today, not in having more."
     },
     "my": {
       "name": "ခွက် ကိုးလုံး",
@@ -94,7 +97,8 @@
         "upright": "ကျန်းမာရေးနဲ့ စိတ်ဓာတ်အတွက် ရောင့်ရဲမှုနဲ့ ကျေးဇူးတင်စိတ်က စိတ်ကို မြှင့်ပေးနိုင်ပါတယ်။ အာဟာရရှိတဲ့ အစားအစာ၊ အနားယူမှုနဲ့ သာယာတဲ့ အဖော်တွေကို ခံစားပါ။ ဖြည်းဖြည်း ခံစားတဲ့ ပျော်စရာလေးတွေက စိတ်ဓာတ်အတွက် ကောင်းပါတယ်။",
         "reversed": "ပြောင်းပြန်ဆိုရင် အလွန်အကျွံ ခံစားမှုက ကျန်းမာရေးကို ထိခိုက်နေနိုင်ပါတယ်။ ကိုယ့်အလေ့အကျင့်တွေကို ညင်သာစွာ ပြန်မျှတအောင် လုပ်ပါ။ ပင်ပန်းစေမယ့်အစား ပိုကောင်းသလို ခံစားစေတဲ့ ရိုးရှင်းကျန်းမာတဲ့ လှုပ်ရှားမှုတွေမှာ ပျော်ရွှင်မှုကို ရှာပါ။"
       },
-      "advice": "ဒီနေ့ ကျေးဇူးတင်စရာ သုံးခုကို အမည်တပ်ပြီး တစ်ခုကို ဖြည်းဖြည်း ခံစားပါ။"
+      "advice": "ဒီနေ့ ကျေးဇူးတင်စရာ သုံးခုကို အမည်တပ်ပြီး တစ်ခုကို ဖြည်းဖြည်း ခံစားပါ။",
+      "adviceReversed": "ဒီနေ့ ပိုရဖို့ထက် ရိုးရိုးရှင်းရှင်း အရာတစ်ခုမှာ ကျေနပ်မှု ရှာကြည့်ပါ။"
     }
   },
   {
@@ -120,7 +124,8 @@
         "upright": "For wellbeing and spirit, feeling loved and supported is deeply nourishing. Family meals, shared walks and time with close friends can lift your mood and strengthen resilience.",
         "reversed": "Reversed, tension at home may be affecting your wellbeing. Create small moments of peace for yourself, and seek supportive connections where you feel accepted and understood."
       },
-      "advice": "Spend quality time today with someone who feels like home to you."
+      "advice": "Spend quality time today with someone who feels like home to you.",
+      "adviceReversed": "Be patient with the people you love today, and be honest about your needs."
     },
     "my": {
       "name": "ခွက် ဆယ်လုံး",
@@ -143,7 +148,8 @@
         "upright": "ကျန်းမာရေးနဲ့ စိတ်ဓာတ်အတွက် ချစ်ခံရပြီး ထောက်ကူခံရသလို ခံစားရတာက နက်နက်ရှိုင်းရှိုင်း အားဖြည့်ပေးပါတယ်။ မိသားစုနဲ့ အတူစားသောက်ခြင်း၊ အတူလမ်းလျှောက်ခြင်းနဲ့ ရင်းနှီးတဲ့ မိတ်ဆွေတွေနဲ့ အချိန်က စိတ်ကို မြှင့်ပြီး ကြံ့ခိုင်မှုကို ခိုင်မာစေနိုင်ပါတယ်။",
         "reversed": "ပြောင်းပြန်ဆိုရင် အိမ်မှာ တင်းမာမှုက ကျန်းမာရေးကို ထိခိုက်နေနိုင်ပါတယ်။ ကိုယ့်အတွက် ငြိမ်းချမ်းတဲ့ အခိုက်အတန့်လေးတွေ ဖန်တီးပြီး လက်ခံခံရ၊ နားလည်ခံရတဲ့ ထောက်ကူပေးတဲ့ ဆက်နွယ်မှုတွေကို ရှာပါ။"
       },
-      "advice": "ဒီနေ့ ကိုယ့်အတွက် အိမ်လို ခံစားရစေတဲ့ သူတစ်ယောက်နဲ့ အရည်အသွေးရှိ အချိန်ဖြုန်းပါ။"
+      "advice": "ဒီနေ့ ကိုယ့်အတွက် အိမ်လို ခံစားရစေတဲ့ သူတစ်ယောက်နဲ့ အရည်အသွေးရှိ အချိန်ဖြုန်းပါ။",
+      "adviceReversed": "ဒီနေ့ ချစ်သူတွေကို စိတ်ရှည်ပြီး ကိုယ့်လိုအပ်ချက်ကို ရိုးသားစွာ ပြောပါ။"
     }
   },
   {
@@ -169,7 +175,8 @@
         "upright": "For wellbeing and spirit, creative expression and gentle play can be very healing. Art, music or journaling may help you process feelings and lift your mood naturally.",
         "reversed": "Reversed, suppressed feelings may affect your mood. Allow yourself to express emotions safely. Talking with a trusted friend or doing a creative activity can bring relief."
       },
-      "advice": "Express a feeling today through something creative, however small."
+      "advice": "Express a feeling today through something creative, however small.",
+      "adviceReversed": "Share one feeling today in plain words, even if it seems small."
     },
     "my": {
       "name": "ခွက် စာတော်ပြန်",
@@ -192,7 +199,8 @@
         "upright": "ကျန်းမာရေးနဲ့ စိတ်ဓာတ်အတွက် ဖန်တီးမှုဆိုင်ရာ ထုတ်ဖော်ခြင်းနဲ့ ညင်သာတဲ့ ကစားခြင်းက အလွန် ကုစားပေးနိုင်ပါတယ်။ အနုပညာ၊ ဂီတ ဒါမှမဟုတ် မှတ်စုရေးခြင်းက ခံစားချက်တွေကို ဖြေရှင်းပြီး စိတ်ကို သဘာဝအတိုင်း မြှင့်ပေးနိုင်ပါတယ်။",
         "reversed": "ပြောင်းပြန်ဆိုရင် ဖိနှိပ်ထားတဲ့ ခံစားချက်တွေက စိတ်အခြေအနေကို ထိခိုက်နိုင်ပါတယ်။ ခံစားချက်တွေကို လုံခြုံစွာ ထုတ်ဖော်ခွင့်ပေးပါ။ ယုံကြည်ရတဲ့ မိတ်ဆွေနဲ့ စကားပြောတာ ဒါမှမဟုတ် ဖန်တီးမှု လှုပ်ရှားမှုလုပ်တာက သက်သာမှု ပေးနိုင်ပါတယ်။"
       },
-      "advice": "ဒီနေ့ ခံစားချက်တစ်ခုကို ဘယ်လောက်သေးသေး ဖန်တီးမှုတစ်ခုခုနဲ့ ထုတ်ဖော်ပါ။"
+      "advice": "ဒီနေ့ ခံစားချက်တစ်ခုကို ဘယ်လောက်သေးသေး ဖန်တီးမှုတစ်ခုခုနဲ့ ထုတ်ဖော်ပါ။",
+      "adviceReversed": "ဒီနေ့ ခံစားချက်တစ်ခုကို သေးသေးလေးဖြစ်နေရင်တောင် ရိုးရိုးစကားလုံးနဲ့ ပြောပြပါ။"
     }
   },
   {
@@ -218,7 +226,8 @@
         "upright": "For wellbeing and spirit, gentle, beautiful activities such as music, art or time near water can soothe and inspire you. Follow what makes your heart feel calm and open.",
         "reversed": "Reversed, mood swings or emotional overwhelm may affect your wellbeing. Ground yourself with steady routines, rest and supportive people. Gentle consistency helps balance your emotions."
       },
-      "advice": "Follow your heart today, and let honesty walk beside it."
+      "advice": "Follow your heart today, and let honesty walk beside it.",
+      "adviceReversed": "Let your heart and your actions match today, and promise only what you can keep."
     },
     "my": {
       "name": "ခွက် မြင်းစီးသူရဲ",
@@ -241,7 +250,8 @@
         "upright": "ကျန်းမာရေးနဲ့ စိတ်ဓာတ်အတွက် ဂီတ၊ အနုပညာ ဒါမှမဟုတ် ရေနားမှာ အချိန်ဖြုန်းတာလို ညင်သာလှပတဲ့ လှုပ်ရှားမှုတွေက စိတ်ကို အေးစေပြီး အားတက်စေနိုင်ပါတယ်။ နှလုံးသားကို အေးချမ်းပွင့်လင်းစေတဲ့ အရာကို လိုက်ပါ။",
         "reversed": "ပြောင်းပြန်ဆိုရင် စိတ်အပြောင်းအလဲ ဒါမှမဟုတ် စိတ်ခံစားမှု လွှမ်းမိုးခံရမှုက ကျန်းမာရေးကို ထိခိုက်နိုင်ပါတယ်။ တည်ငြိမ်တဲ့ နေ့စဉ်လုပ်ငန်း၊ အနားယူမှုနဲ့ ထောက်ကူပေးတဲ့ လူတွေနဲ့ ကိုယ့်ကိုယ်ကို တည်ငြိမ်အောင် ထားပါ။ ညင်သာတဲ့ ပုံမှန်မှုက ခံစားချက်တွေကို မျှတစေပါတယ်။"
       },
-      "advice": "ဒီနေ့ နှလုံးသားကို လိုက်ပါ၊ ရိုးသားမှုကိုလည်း ဘေးမှာ လိုက်ပါစေ။"
+      "advice": "ဒီနေ့ နှလုံးသားကို လိုက်ပါ၊ ရိုးသားမှုကိုလည်း ဘေးမှာ လိုက်ပါစေ။",
+      "adviceReversed": "ဒီနေ့ နှလုံးသားနဲ့ လုပ်ရပ်ကို ကိုက်ညီစေပြီး တည်နိုင်တဲ့ ကတိကိုသာ ပေးပါ။"
     }
   },
   {
@@ -267,7 +277,8 @@
         "upright": "For wellbeing and spirit, emotional self-care is essential. Time near water, gentle music and quiet reflection can soothe you. Honour your feelings with kindness and patience.",
         "reversed": "Reversed, emotional overload may be affecting your wellbeing. Rest, protect your boundaries and seek support. Talking with someone you trust can help lighten what you are carrying."
       },
-      "advice": "Listen with compassion today, including to your own heart."
+      "advice": "Listen with compassion today, including to your own heart.",
+      "adviceReversed": "Set one gentle boundary today so that your kindness does not drain you."
     },
     "my": {
       "name": "ခွက် ဘုရင်မ",
@@ -290,7 +301,8 @@
         "upright": "ကျန်းမာရေးနဲ့ စိတ်ဓာတ်အတွက် စိတ်ခံစားမှုဆိုင်ရာ ကိုယ့်ကိုယ်ကို ဂရုစိုက်မှုက မရှိမဖြစ်ပါ။ ရေနားမှာ အချိန်ဖြုန်းတာ၊ ညင်သာတဲ့ ဂီတနဲ့ တိတ်ဆိတ်စွာ ဆင်ခြင်တာက စိတ်ကို အေးစေနိုင်ပါတယ်။ ကိုယ့်ခံစားချက်တွေကို ကြင်နာမှုနဲ့ စိတ်ရှည်မှုနဲ့ လေးစားပါ။",
         "reversed": "ပြောင်းပြန်ဆိုရင် စိတ်ခံစားမှု ဝန်ပိလွန်းတာက ကျန်းမာရေးကို ထိခိုက်နေနိုင်ပါတယ်။ အနားယူပါ၊ နယ်နိမိတ်တွေကို ကာကွယ်ပါ၊ အကူအညီ ရှာပါ။ ယုံကြည်ရသူနဲ့ စကားပြောတာက ထမ်းထားရတာကို ပေါ့ပါးစေနိုင်ပါတယ်။"
       },
-      "advice": "ဒီနေ့ ကရုဏာနဲ့ နားထောင်ပါ၊ ကိုယ့်နှလုံးသားကိုလည်း ထည့်တွက်ပါ။"
+      "advice": "ဒီနေ့ ကရုဏာနဲ့ နားထောင်ပါ၊ ကိုယ့်နှလုံးသားကိုလည်း ထည့်တွက်ပါ။",
+      "adviceReversed": "ဒီနေ့ ကိုယ့်ကြင်နာမှုက ကိုယ့်ကို မမောစေဖို့ ညင်သာတဲ့ နယ်နိမိတ်တစ်ခု သတ်မှတ်ပါ။"
     }
   },
   {
@@ -316,7 +328,8 @@
         "upright": "For wellbeing and spirit, emotional balance supports overall health. Gentle routines, calming practices and supportive conversations can help you stay steady and resilient through change.",
         "reversed": "Reversed, suppressed emotions may be affecting your body and mind. Allow yourself to feel and express. Talking with someone you trust or a professional can provide relief and clarity."
       },
-      "advice": "Respond to today's feelings with calm wisdom rather than quick reaction."
+      "advice": "Respond to today's feelings with calm wisdom rather than quick reaction.",
+      "adviceReversed": "Take a quiet moment today before reacting, and let your feelings settle."
     },
     "my": {
       "name": "ခွက် ဘုရင်",
@@ -339,7 +352,8 @@
         "upright": "ကျန်းမာရေးနဲ့ စိတ်ဓာတ်အတွက် စိတ်ခံစားမှု မျှတမှုက ကျန်းမာရေးတစ်ခုလုံးကို ထောက်ကူပါတယ်။ ညင်သာတဲ့ နေ့စဉ်လုပ်ငန်း၊ စိတ်အေးစေတဲ့ အလေ့အကျင့်တွေနဲ့ ထောက်ကူပေးတဲ့ စကားဝိုင်းတွေက ပြောင်းလဲမှုကြား တည်ငြိမ်ကြံ့ခိုင်နေစေနိုင်ပါတယ်။",
         "reversed": "ပြောင်းပြန်ဆိုရင် ဖိနှိပ်ထားတဲ့ ခံစားချက်တွေက ခန္ဓာကိုယ်နဲ့ စိတ်ကို ထိခိုက်နေနိုင်ပါတယ်။ ခံစားခွင့်နဲ့ ထုတ်ဖော်ခွင့် ပေးပါ။ ယုံကြည်ရသူ ဒါမှမဟုတ် ကျွမ်းကျင်သူနဲ့ စကားပြောတာက သက်သာမှုနဲ့ ရှင်းလင်းမှု ပေးနိုင်ပါတယ်။"
       },
-      "advice": "ဒီနေ့ ခံစားချက်တွေကို အလျင်အမြန် တုံ့ပြန်မယ့်အစား တည်ငြိမ်တဲ့ ပညာနဲ့ တုံ့ပြန်ပါ။"
+      "advice": "ဒီနေ့ ခံစားချက်တွေကို အလျင်အမြန် တုံ့ပြန်မယ့်အစား တည်ငြိမ်တဲ့ ပညာနဲ့ တုံ့ပြန်ပါ။",
+      "adviceReversed": "ဒီနေ့ တုံ့ပြန်ခင် တိတ်ဆိတ်တဲ့ အချိန်ခဏယူပြီး ခံစားချက်တွေ ငြိမ်သွားစေပါ။"
     }
   }
 ]
