@@ -27,3 +27,16 @@ jobs:
           # Row-level security returns an empty list, so a real query is a 200. Any other status
           # (e.g. a paused project) fails the run and emails the repo owner.
           [ "$status" -eq 200 ]
+
+      - name: Query the database directly
+        env:
+          SUPABASE_DB_URL: ${{ secrets.SUPABASE_DB_URL }}
+        run: |
+          # A direct Postgres query is real database activity, independent of the REST API. It reuses
+          # the secret the weekly backup already relies on.
+          for attempt in 1 2 3; do
+            psql "$SUPABASE_DB_URL" -tAc 'select count(*) from public.journal_readings' && exit 0
+            echo "Attempt $attempt failed"
+            sleep 20
+          done
+          exit 1
