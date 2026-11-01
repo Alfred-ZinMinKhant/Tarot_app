@@ -15,7 +15,9 @@ const config: ExpoConfig = {
   slug: env.EXPO_SLUG || brand.slug,
   scheme: brand.scheme,
   version: '1.0.0',
-  orientation: 'portrait',
+  // Android 16 ignores an orientation lock on tablets and foldables, so Android follows the device.
+  // iPhone stays portrait through Info.plist below.
+  orientation: 'default',
   icon: './assets/images/icon.png',
   userInterfaceStyle: 'dark',
   ios: {
@@ -24,6 +26,7 @@ const config: ExpoConfig = {
     infoPlist: {
       CFBundleAllowMixedLocalizations: true,
       CFBundleLocalizations: ['en', 'my'],
+      UISupportedInterfaceOrientations: ['UIInterfaceOrientationPortrait'],
       // Only standard HTTPS: exempt from export-compliance documentation.
       ITSAppUsesNonExemptEncryption: false,
     },

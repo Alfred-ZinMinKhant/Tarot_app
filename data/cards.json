@@ -34,6 +34,7 @@
         "reversed": "Reversed, notice whether you are skipping rest or ignoring small signals from your body and mood. Gentle routines and kind attention to yourself can help you feel steady again."
       },
       "advice": "Take one small, curious step toward something new today.",
+      "adviceReversed": "Before leaping today, pause and check one detail, then take a small step anyway.",
       "suit": "Major Arcana",
       "element": "Air",
       "astrology": "Uranus"
@@ -66,6 +67,7 @@
         "reversed": "ပြောင်းပြန်ဆိုရင် အနားယူတာကို ကျော်နေလား၊ ခန္ဓာကိုယ်နဲ့ စိတ်ခံစားမှုရဲ့ အချက်ပြလေးတွေကို လျစ်လျူရှုနေလား သတိထားကြည့်ပါ။ နူးညံ့တဲ့ နေ့စဉ်အလေ့အကျင့်တွေက ပြန်လည် တည်ငြိမ်စေနိုင်ပါတယ်။"
       },
       "advice": "ဒီနေ့ အသစ်တစ်ခုဆီ စူးစမ်းတဲ့ ခြေလှမ်းလေးတစ်လှမ်း လှမ်းကြည့်ပါ။",
+      "adviceReversed": "ဒီနေ့ မခုန်ခင် အသေးစိတ်တစ်ခုကို ခဏစစ်ကြည့်ပြီး ခြေလှမ်းသေးသေးလေးတစ်လှမ်း လှမ်းကြည့်ပါ။",
       "suit": "အဓိကအာကာနာ",
       "element": "လေ",
       "astrology": "ယူရေးနပ်စ်ဂြိုဟ်"
@@ -106,6 +108,7 @@
         "reversed": "Reversed, scattered routines may be draining you. Bring your attention back to basics such as sleep, water, movement and quiet moments. Small consistent steps restore your energy."
       },
       "advice": "Pick one clear intention and use the tools you already have to act on it.",
+      "adviceReversed": "Choose one task today and finish it, rather than scattering your energy.",
       "suit": "Major Arcana",
       "element": "Air",
       "astrology": "Mercury"
@@ -138,6 +141,7 @@
         "reversed": "ပြောင်းပြန်ဆိုရင် ပြန့်ကျဲနေတဲ့ နေ့စဉ်လုပ်ငန်းတွေက အားကုန်စေနိုင်ပါတယ်။ အိပ်စက်ခြင်း၊ ရေသောက်ခြင်း၊ လှုပ်ရှားခြင်းနဲ့ တိတ်ဆိတ်တဲ့ အချိန်လေးတွေလို အခြေခံတွေဆီ အာရုံပြန်ပို့ပါ။"
       },
       "advice": "ရှင်းလင်းတဲ့ ရည်ရွယ်ချက်တစ်ခု ရွေးပြီး ရှိပြီးသား ကိရိယာတွေနဲ့ လုပ်ဆောင်ကြည့်ပါ။",
+      "adviceReversed": "ဒီနေ့ အလုပ်တစ်ခုကို ရွေးပြီး စွမ်းအင်ကို မပျံ့စေဘဲ အဆုံးထိ လုပ်ပါ။",
       "suit": "အဓိကအာကာနာ",
       "element": "လေ",
       "astrology": "ဗုဒ္ဓဟူးဂြိုဟ်"
@@ -178,6 +182,7 @@
         "reversed": "Reversed, constant noise may be tiring you. Reduce distractions where you can, and notice what your body has been asking for. Quiet time is not wasted; it restores balance."
       },
       "advice": "Give yourself a few quiet minutes today and listen to your inner voice.",
+      "adviceReversed": "Switch off the noise for a few minutes today and ask what you already know.",
       "suit": "Major Arcana",
       "element": "Water",
       "astrology": "The Moon"
@@ -210,6 +215,7 @@
         "reversed": "ပြောင်းပြန်ဆိုရင် မပြတ်တဲ့ ဆူညံမှုက ပင်ပန်းစေနိုင်ပါတယ်။ အာရုံပြောင်းစရာတွေကို တတ်နိုင်သလောက် လျှော့ပြီး ခန္ဓာကိုယ်က ဘာတောင်းဆိုနေလဲ သတိထားပါ။ တိတ်ဆိတ်တဲ့ အချိန်က အလဟဿ မဟုတ်ပါဘူး။"
       },
       "advice": "ဒီနေ့ ကိုယ့်ကိုယ်ကို တိတ်ဆိတ်တဲ့ မိနစ်အနည်းငယ် ပေးပြီး အတွင်းစိတ်ကို နားထောင်ပါ။",
+      "adviceReversed": "ဒီနေ့ ဆူညံသံတွေကို မိနစ်အနည်းငယ် ပိတ်ပြီး ကိုယ်သိပြီးသားကို မေးကြည့်ပါ။",
       "suit": "အဓိကအာကာနာ",
       "element": "ရေ",
       "astrology": "လ"
@@ -250,6 +256,7 @@
         "reversed": "Reversed, you may be neglecting your own needs while caring for everyone else. Make space for rest and simple comforts. Ask for support if you need it; you deserve care too."
       },
       "advice": "Nurture something you love today, including yourself.",
+      "adviceReversed": "Rest without guilt today and give yourself the care you give others.",
       "suit": "Major Arcana",
       "element": "Earth",
       "astrology": "Venus"
@@ -282,6 +289,7 @@
         "reversed": "ပြောင်းပြန်ဆိုရင် အားလုံးကို ဂရုစိုက်ရင်း ကိုယ့်လိုအပ်ချက်ကို လျစ်လျူရှုနေတာ ဖြစ်နိုင်ပါတယ်။ အနားယူဖို့နဲ့ ရိုးရိုးလေး သက်သာဖို့ နေရာပေးပါ။ လိုအပ်ရင် အကူအညီ တောင်းပါ၊ သင်လည်း ဂရုစိုက်ခံထိုက်ပါတယ်။"
       },
       "advice": "ဒီနေ့ ကိုယ်ချစ်တဲ့ အရာတစ်ခုကို ပြုစုပါ၊ ကိုယ့်ကိုယ်ကိုလည်း ထည့်တွက်ပါ။",
+      "adviceReversed": "ဒီနေ့ အပြစ်မခံစားဘဲ အနားယူပြီး တခြားသူတွေကို ပေးသလို ကိုယ့်ကိုယ်ကိုလည်း ဂရုစိုက်ပါ။",
       "suit": "အဓိကအာကာနာ",
       "element": "မြေ",
       "astrology": "သောကြာဂြိုဟ်"
@@ -322,6 +330,7 @@
         "reversed": "Reversed, you may be pushing too hard or ignoring routine entirely. Ease strict rules that feel punishing, and gently add structure where life feels chaotic. Balance brings steadiness."
       },
       "advice": "Create one simple structure today that makes your life feel steadier.",
+      "adviceReversed": "Loosen one rule today that has become too rigid, and keep what truly helps.",
       "suit": "Major Arcana",
       "element": "Fire",
       "astrology": "Aries"
@@ -354,6 +363,7 @@
         "reversed": "ပြောင်းပြန်ဆိုရင် ကိုယ့်ကိုယ်ကို တွန်းအားပေးလွန်းနေတာ ဒါမှမဟုတ် ပုံမှန်လုပ်ငန်းကို လုံးဝ လျစ်လျူရှုနေတာ ဖြစ်နိုင်ပါတယ်။ အပြစ်ပေးသလို ခံစားရတဲ့ စည်းမျဉ်းတွေကို လျှော့ပြီး ရှုပ်ထွေးနေတဲ့ နေရာမှာ စနစ်လေး ထည့်ပါ။"
       },
       "advice": "ဒီနေ့ ဘဝကို ပိုတည်ငြိမ်စေမယ့် ရိုးရှင်းတဲ့ စနစ်လေးတစ်ခု ဖန်တီးပါ။",
+      "adviceReversed": "ဒီနေ့ တင်းကျပ်လွန်းလာတဲ့ စည်းကမ်းတစ်ခုကို ဖြေလျှော့ပြီး တကယ်အကူအညီဖြစ်တာကို ထားပါ။",
       "suit": "အဓိကအာကာနာ",
       "element": "မီး",
       "astrology": "မိဿရာသီ"
@@ -394,6 +404,7 @@
         "reversed": "Reversed, you might need to adapt general advice to your own needs. Listen to qualified professionals for health matters, and also notice what genuinely helps you feel well."
       },
       "advice": "Learn something today from someone whose experience you respect.",
+      "adviceReversed": "Question one old rule today and decide whether it still fits you.",
       "suit": "Major Arcana",
       "element": "Earth",
       "astrology": "Taurus"
@@ -426,6 +437,7 @@
         "reversed": "ပြောင်းပြန်ဆိုရင် ယေဘုယျ အကြံဉာဏ်တွေကို ကိုယ့်လိုအပ်ချက်နဲ့ ကိုက်အောင် ပြင်ဖို့ လိုနိုင်ပါတယ်။ ကျန်းမာရေးကိစ္စမှာ အရည်အချင်းရှိ ကျွမ်းကျင်သူတွေကို နားထောင်ပြီး ကိုယ့်ကို တကယ် ကောင်းစေတာကိုလည်း သတိထားပါ။"
       },
       "advice": "ဒီနေ့ ကိုယ်လေးစားတဲ့ အတွေ့အကြုံရှိသူတစ်ယောက်ဆီက တစ်ခုခု သင်ယူပါ။",
+      "adviceReversed": "ဒီနေ့ ရှေးဟောင်းစည်းမျဉ်းတစ်ခုကို မေးခွန်းထုတ်ပြီး ကိုယ်နဲ့ အခုထိ ကိုက်ညီသလား ဆုံးဖြတ်ပါ။",
       "suit": "အဓိကအာကာနာ",
       "element": "မြေ",
       "astrology": "ပြိဿရာသီ"
@@ -466,6 +478,7 @@
         "reversed": "Reversed, inner conflict may be tiring you. Make space to reflect on what matters most. When your daily choices reflect your values, a sense of ease can return."
       },
       "advice": "Make today's choice from your values, not only from convenience.",
+      "adviceReversed": "Be honest with yourself about what you want before you decide today.",
       "suit": "Major Arcana",
       "element": "Air",
       "astrology": "Gemini"
@@ -498,6 +511,7 @@
         "reversed": "ပြောင်းပြန်ဆိုရင် အတွင်းစိတ် ပဋိပက္ခက ပင်ပန်းစေနိုင်ပါတယ်။ ဘာက အရေးအကြီးဆုံးလဲ ဆင်ခြင်ဖို့ နေရာပေးပါ။ နေ့စဉ်ရွေးချယ်မှုတွေက ကိုယ့်တန်ဖိုးကို ထင်ဟပ်လာတဲ့အခါ စိတ်သက်သာမှု ပြန်ရောက်လာနိုင်ပါတယ်။"
       },
       "advice": "ဒီနေ့ ရွေးချယ်မှုကို အဆင်ပြေမှုတစ်ခုတည်းနဲ့ မဟုတ်ဘဲ ကိုယ့်တန်ဖိုးတွေကနေ လုပ်ပါ။",
+      "adviceReversed": "ဒီနေ့ မဆုံးဖြတ်ခင် ကိုယ်တကယ်လိုချင်တာကို ကိုယ့်ကိုယ်ကို ရိုးသားစွာ ဝန်ခံပါ။",
       "suit": "အဓိကအာကာနာ",
       "element": "လေ",
       "astrology": "မေထုန်ရာသီ"
@@ -538,6 +552,7 @@
         "reversed": "Reversed, you may be pushing too hard or feeling scattered. Listen to your limits. Gentle consistency often works better than intense bursts followed by exhaustion."
       },
       "advice": "Choose one direction today and move toward it with calm determination.",
+      "adviceReversed": "Slow down today and settle on one direction before you push ahead.",
       "suit": "Major Arcana",
       "element": "Water",
       "astrology": "Cancer"
@@ -570,6 +585,7 @@
         "reversed": "ပြောင်းပြန်ဆိုရင် ကိုယ့်ကိုယ်ကို တွန်းအားပေးလွန်းနေတာ ဒါမှမဟုတ် ပြန့်ကျဲနေတာ ဖြစ်နိုင်ပါတယ်။ ကိုယ့်အကန့်အသတ်ကို နားထောင်ပါ။ အားကုန်အောင် လုပ်ပြီး ပင်ပန်းတာထက် ညင်သာပုံမှန် လုပ်တာက ပိုအဆင်ပြေတတ်ပါတယ်။"
       },
       "advice": "ဒီနေ့ ဦးတည်ချက်တစ်ခု ရွေးပြီး အေးဆေးခိုင်မာတဲ့ စိတ်နဲ့ ရှေ့ဆက်ပါ။",
+      "adviceReversed": "ဒီနေ့ နှေးကြည့်ပြီး ရှေ့မတိုးခင် ဦးတည်ချက်တစ်ခုကို ရွေးချယ်ပါ။",
       "suit": "အဓိကအာကာနာ",
       "element": "ရေ",
       "astrology": "ကရကဋ်ရာသီ"
@@ -610,6 +626,7 @@
         "reversed": "Reversed, you may feel drained or harsh toward yourself. Rest and gentle care are needed. Reach out for support if you feel overwhelmed; asking for help is also a kind of strength."
       },
       "advice": "Meet today's challenge with patience and a gentle, steady heart.",
+      "adviceReversed": "Be as patient with yourself today as you would be with a friend.",
       "suit": "Major Arcana",
       "element": "Fire",
       "astrology": "Leo"
@@ -642,6 +659,7 @@
         "reversed": "ပြောင်းပြန်ဆိုရင် အားကုန်နေသလို ဒါမှမဟုတ် ကိုယ့်ကိုယ်ကို ကြမ်းတမ်းနေသလို ခံစားရနိုင်ပါတယ်။ အနားယူမှုနဲ့ ညင်သာတဲ့ ဂရုစိုက်မှု လိုပါတယ်။ လွန်ကဲနေရင် အကူအညီ တောင်းပါ၊ ဒါလည်း ခွန်အားတစ်မျိုးပါ။"
       },
       "advice": "ဒီနေ့ စိန်ခေါ်မှုကို စိတ်ရှည်မှုနဲ့ ညင်သာတည်ငြိမ်တဲ့ နှလုံးသားနဲ့ ရင်ဆိုင်ပါ။",
+      "adviceReversed": "ဒီနေ့ သူငယ်ချင်းကို စိတ်ရှည်သလို ကိုယ့်ကိုယ်ကိုလည်း စိတ်ရှည်ပါ။",
       "suit": "အဓိကအာကာနာ",
       "element": "မီး",
       "astrology": "သိဟ်ရာသီ"
@@ -682,6 +700,7 @@
         "reversed": "Reversed, too much isolation may be lowering your mood. Balance alone time with supportive company. If heavy feelings linger, talking with someone you trust can really help."
       },
       "advice": "Spend some quiet time today with your own thoughts and feelings.",
+      "adviceReversed": "If you have been alone too long, reach out to one trusted person today.",
       "suit": "Major Arcana",
       "element": "Earth",
       "astrology": "Virgo"
@@ -714,6 +733,7 @@
         "reversed": "ပြောင်းပြန်ဆိုရင် အထီးကျန်လွန်းတာက စိတ်ဓာတ်ကို ကျစေနိုင်ပါတယ်။ တစ်ယောက်တည်းနေချိန်ကို ထောက်ကူပေးတဲ့ အဖော်တွေနဲ့ မျှတပါ။ လေးလံတဲ့ ခံစားချက်တွေ ကြာနေရင် ယုံကြည်ရသူနဲ့ စကားပြောတာ တကယ် ကူညီနိုင်ပါတယ်။"
       },
       "advice": "ဒီနေ့ ကိုယ့်အတွေးနဲ့ ခံစားချက်တွေနဲ့အတူ တိတ်ဆိတ်တဲ့ အချိန်လေး ဖြုန်းပါ။",
+      "adviceReversed": "တစ်ယောက်တည်း ကြာနေပြီဆိုရင် ဒီနေ့ ယုံကြည်ရသူတစ်ယောက်ကို ဆက်သွယ်ကြည့်ပါ။",
       "suit": "အဓိကအာကာနာ",
       "element": "မြေ",
       "astrology": "ကန်ရာသီ"
@@ -754,6 +774,7 @@
         "reversed": "Reversed, you may be repeating habits that leave you tired. Notice the pattern kindly and try one small change. Gentle shifts can gradually lead to a better cycle."
       },
       "advice": "Flow with today's changes and look for the opportunity inside them.",
+      "adviceReversed": "Notice what you can still choose today, even when circumstances feel stuck.",
       "suit": "Major Arcana",
       "element": "Fire",
       "astrology": "Jupiter"
@@ -786,6 +807,7 @@
         "reversed": "ပြောင်းပြန်ဆိုရင် ပင်ပန်းစေတဲ့ အကျင့်တွေကို ထပ်ခါထပ်ခါ လုပ်နေတာ ဖြစ်နိုင်ပါတယ်။ အဲဒီပုံစံကို ကြင်ကြင်နာနာ သတိထားပြီး အပြောင်းအလဲလေးတစ်ခု စမ်းကြည့်ပါ။ ညင်သာတဲ့ ပြောင်းလဲမှုတွေက ပိုကောင်းတဲ့ စက်ဝန်းဆီ ပို့ဆောင်နိုင်ပါတယ်။"
       },
       "advice": "ဒီနေ့ ပြောင်းလဲမှုတွေနဲ့အတူ စီးဆင်းပြီး အထဲက အခွင့်အလမ်းကို ရှာပါ။",
+      "adviceReversed": "အခြေအနေတွေ ကပ်နေသလို ခံစားရရင်တောင် ဒီနေ့ ကိုယ်ရွေးချယ်နိုင်တာကို သတိထားကြည့်ပါ။",
       "suit": "အဓိကအာကာနာ",
       "element": "မီး",
       "astrology": "ကြာသပတေးဂြိုဟ်"
@@ -826,6 +848,7 @@
         "reversed": "Reversed, life may feel out of balance. Notice where you are overextending, and make small corrections. Be fair to yourself, too; self-criticism is not the same as accountability."
       },
       "advice": "Look at today's situation honestly, and choose what feels fair to everyone.",
+      "adviceReversed": "Check today whether you are being fair to yourself as well as to others.",
       "suit": "Major Arcana",
       "element": "Air",
       "astrology": "Libra"
@@ -858,6 +881,7 @@
         "reversed": "ပြောင်းပြန်ဆိုရင် ဘဝက မျှတမှု ပျက်နေသလို ခံစားရနိုင်ပါတယ်။ ဘယ်နေရာမှာ အလွန်အကျွံ လုပ်နေလဲ သတိထားပြီး နည်းနည်းချင်း ပြင်ပါ။ ကိုယ့်ကိုယ်ကိုလည်း မျှတပါ၊ ကိုယ့်ကိုယ်ကို ဝေဖန်တာနဲ့ တာဝန်ခံတာ မတူပါဘူး။"
       },
       "advice": "ဒီနေ့ အခြေအနေကို ရိုးရိုးသားသား ကြည့်ပြီး အားလုံးအတွက် မျှတတဲ့ဟာကို ရွေးပါ။",
+      "adviceReversed": "ဒီနေ့ တခြားသူတွေကိုသာမက ကိုယ့်ကိုယ်ကိုပါ မျှမျှတတ ဆက်ဆံနေလား စစ်ကြည့်ပါ။",
       "suit": "အဓိကအာကာနာ",
       "element": "လေ",
       "astrology": "တူရာသီ"
@@ -898,6 +922,7 @@
         "reversed": "Reversed, restlessness may be draining you. Notice what you are resisting. A gentle change of routine or a new way of looking at your situation can bring relief."
       },
       "advice": "Pause today and look at your situation from a completely different angle.",
+      "adviceReversed": "Stop waiting for the perfect moment and take one small action today.",
       "suit": "Major Arcana",
       "element": "Water",
       "astrology": "Neptune"
@@ -930,6 +955,7 @@
         "reversed": "ပြောင်းပြန်ဆိုရင် မငြိမ်မသက် ဖြစ်နေတာက အားကုန်စေနိုင်ပါတယ်။ ဘာကို ခုခံနေလဲ သတိထားကြည့်ပါ။ နေ့စဉ်လုပ်ငန်းကို ညင်သာစွာ ပြောင်းတာ ဒါမှမဟုတ် အခြေအနေကို အမြင်သစ်နဲ့ ကြည့်တာက သက်သာစေနိုင်ပါတယ်။"
       },
       "advice": "ဒီနေ့ ခဏရပ်ပြီး ကိုယ့်အခြေအနေကို လုံးဝ မတူတဲ့ ထောင့်တစ်ခုကနေ ကြည့်ပါ။",
+      "adviceReversed": "ပြီးပြည့်စုံတဲ့ အချိန်ကို မစောင့်တော့ဘဲ ဒီနေ့ လုပ်ရပ်သေးသေးလေးတစ်ခု လုပ်ပါ။",
       "suit": "အဓိကအာကာနာ",
       "element": "ရေ",
       "astrology": "နက်ပကျွန်းဂြိုဟ်"
@@ -970,6 +996,7 @@
         "reversed": "Reversed, you may be resisting a change that would help you feel better. Be gentle with yourself and seek support if transitions feel heavy. Renewal can unfold one step at a time."
       },
       "advice": "Let go of one thing today that you have already outgrown.",
+      "adviceReversed": "Be gentle with yourself today about a change you are resisting.",
       "suit": "Major Arcana",
       "element": "Water",
       "astrology": "Scorpio"
@@ -1002,6 +1029,7 @@
         "reversed": "ပြောင်းပြန်ဆိုရင် ပိုကောင်းအောင် ကူညီမယ့် ပြောင်းလဲမှုကို ခုခံနေတာ ဖြစ်နိုင်ပါတယ်။ ကိုယ့်ကိုယ်ကို ညင်သာပါ၊ ကူးပြောင်းမှုတွေ လေးလံနေရင် အကူအညီ ရှာပါ။ ပြန်လည်သစ်လွင်မှုက တစ်လှမ်းချင်း ဖြစ်လာနိုင်ပါတယ်။"
       },
       "advice": "ဒီနေ့ ကိုယ်ကျော်လွန်ပြီးသား အရာတစ်ခုကို လက်လွှတ်လိုက်ပါ။",
+      "adviceReversed": "ဒီနေ့ ကိုယ်ခုခံနေတဲ့ ပြောင်းလဲမှုတစ်ခုအပေါ် ကိုယ့်ကိုယ်ကို ညင်သာစွာ ဆက်ဆံပါ။",
       "suit": "အဓိကအာကာနာ",
       "element": "ရေ",
       "astrology": "ဗြိစ္ဆာရာသီ"
@@ -1042,6 +1070,7 @@
         "reversed": "Reversed, you may be overdoing things or swinging between extremes. Return to simple, moderate routines. Be patient; gentle consistency helps your system find its rhythm again."
       },
       "advice": "Choose the middle path today and mix effort with calm.",
+      "adviceReversed": "Notice where things feel out of balance today and adjust one small thing.",
       "suit": "Major Arcana",
       "element": "Fire",
       "astrology": "Sagittarius"
@@ -1074,6 +1103,7 @@
         "reversed": "ပြောင်းပြန်ဆိုရင် အလွန်အကျွံ လုပ်နေတာ ဒါမှမဟုတ် အစွန်းနှစ်ဖက်ကြား လွှဲနေတာ ဖြစ်နိုင်ပါတယ်။ ရိုးရှင်းပြီး အတိုင်းအတာရှိတဲ့ နေ့စဉ်လုပ်ငန်းဆီ ပြန်သွားပါ။ စိတ်ရှည်ပါ၊ ညင်သာတဲ့ ပုံမှန်မှုက စည်းချက်ကို ပြန်ရှာစေပါတယ်။"
       },
       "advice": "ဒီနေ့ အလယ်လမ်းကို ရွေးပြီး ကြိုးစားမှုနဲ့ တည်ငြိမ်မှုကို ရောစပ်ပါ။",
+      "adviceReversed": "ဒီနေ့ ဘယ်နေရာက မျှခြေမမျှဘူးလဲ သတိထားပြီး အသေးအဖွဲတစ်ခု ညှိကြည့်ပါ။",
       "suit": "အဓိကအာကာနာ",
       "element": "မီး",
       "astrology": "ဓနုရာသီ"
@@ -1114,6 +1144,7 @@
         "reversed": "Reversed, you may be reclaiming healthier habits and a lighter spirit. Keep going gently. Lean on supportive people and celebrate each step toward feeling more like yourself."
       },
       "advice": "Notice one habit that holds you back today, and simply name it with kindness.",
+      "adviceReversed": "Take one small step today toward the freedom you already sense is possible.",
       "suit": "Major Arcana",
       "element": "Earth",
       "astrology": "Capricorn"
@@ -1146,6 +1177,7 @@
         "reversed": "ပြောင်းပြန်ဆိုရင် ပိုကျန်းမာတဲ့ အကျင့်တွေနဲ့ ပိုပေါ့ပါးတဲ့ စိတ်ဓာတ်ကို ပြန်ရယူနေတာ ဖြစ်နိုင်ပါတယ်။ ညင်ညင်သာသာ ဆက်သွားပါ။ ထောက်ကူပေးတဲ့ လူတွေကို အားကိုးပြီး ကိုယ့်ကိုယ်ကို ပြန်ဖြစ်လာတဲ့ ခြေလှမ်းတိုင်းကို ဂုဏ်ပြုပါ။"
       },
       "advice": "ဒီနေ့ ကိုယ့်ကို နောက်ပြန်ဆွဲနေတဲ့ အကျင့်တစ်ခုကို သတိထားပြီး ကြင်နာစွာ အမည်တပ်ကြည့်ပါ။",
+      "adviceReversed": "ဒီနေ့ ဖြစ်နိုင်တယ်လို့ ခံစားနေပြီးသား လွတ်လပ်မှုဆီ ခြေလှမ်းသေးသေးတစ်လှမ်း လှမ်းပါ။",
       "suit": "အဓိကအာကာနာ",
       "element": "မြေ",
       "astrology": "မကာရရာသီ"
@@ -1186,6 +1218,7 @@
         "reversed": "Reversed, stress may be building quietly. Notice your limits and release pressure before it overflows. Calm routines and honest talks with trusted people can help a lot."
       },
       "advice": "If something shifts unexpectedly today, breathe and look for the truth it reveals.",
+      "adviceReversed": "Do not rush to rebuild today; let things settle and look after yourself first.",
       "suit": "Major Arcana",
       "element": "Fire",
       "astrology": "Mars"
@@ -1218,6 +1251,7 @@
         "reversed": "ပြောင်းပြန်ဆိုရင် စိတ်ဖိစီးမှုက တိတ်တိတ်လေး စုပုံနေနိုင်ပါတယ်။ ကိုယ့်အကန့်အသတ်ကို သတိထားပြီး မလျှံခင် ဖိအားကို ဖြေလျှော့ပါ။ အေးဆေးတဲ့ နေ့စဉ်လုပ်ငန်းနဲ့ ယုံကြည်ရသူနဲ့ ရိုးသားစွာ စကားပြောတာက အများကြီး ကူညီနိုင်ပါတယ်။"
       },
       "advice": "ဒီနေ့ တစ်ခုခု မမျှော်လင့်ဘဲ ပြောင်းသွားရင် အသက်ကို ဖြည်းဖြည်းရှူပြီး ပေါ်လာတဲ့ အမှန်တရားကို ကြည့်ပါ။",
+      "adviceReversed": "ဒီနေ့ ပြန်ဆောက်ဖို့ မလောပါနဲ့၊ အရာအားလုံး ငြိမ်သက်စေပြီး ကိုယ့်ကိုယ်ကို အရင်ဂရုစိုက်ပါ။",
       "suit": "အဓိကအာကာနာ",
       "element": "မီး",
       "astrology": "အင်္ဂါဂြိုဟ်"
@@ -1258,6 +1292,7 @@
         "reversed": "Reversed, your energy or spirits may feel low. Be patient and caring with yourself. If heaviness persists, reaching out to someone you trust or a professional can help you feel brighter."
       },
       "advice": "Hold on to one small hope today and let it guide your steps.",
+      "adviceReversed": "Be kind to yourself if hope feels dim today, and do one small thing that comforts you.",
       "suit": "Major Arcana",
       "element": "Air",
       "astrology": "Aquarius"
@@ -1290,6 +1325,7 @@
         "reversed": "ပြောင်းပြန်ဆိုရင် စွမ်းအင် ဒါမှမဟုတ် စိတ်ဓာတ် ကျနေသလို ခံစားရနိုင်ပါတယ်။ ကိုယ့်ကိုယ်ကို စိတ်ရှည်ပြီး ဂရုစိုက်ပါ။ လေးလံမှု ဆက်ရှိနေရင် ယုံကြည်ရသူ ဒါမှမဟုတ် ကျွမ်းကျင်သူကို ဆက်သွယ်တာက ပိုလန်းဆန်းစေနိုင်ပါတယ်။"
       },
       "advice": "ဒီနေ့ မျှော်လင့်ချက်လေးတစ်ခုကို ဆုပ်ကိုင်ထားပြီး ခြေလှမ်းတွေကို လမ်းပြခွင့်ပေးပါ။",
+      "adviceReversed": "ဒီနေ့ မျှော်လင့်ချက် မှိန်နေရင် ကိုယ့်ကိုယ်ကို ကြင်နာပြီး နှစ်သိမ့်စေတဲ့ အရာသေးသေးတစ်ခု လုပ်ပါ။",
       "suit": "အဓိကအာကာနာ",
       "element": "လေ",
       "astrology": "ကုံရာသီ"
@@ -1330,6 +1366,7 @@
         "reversed": "Reversed, anxiety may be easing as you understand things better. Keep grounding yourself with routine and rest. Talking through lingering fears with someone you trust can help."
       },
       "advice": "Move gently through uncertainty today and trust that clarity will come.",
+      "adviceReversed": "Name one fear out loud today and check it against the facts.",
       "suit": "Major Arcana",
       "element": "Water",
       "astrology": "Pisces"
@@ -1362,6 +1399,7 @@
         "reversed": "ပြောင်းပြန်ဆိုရင် အရာတွေကို ပိုနားလည်လာတာနဲ့အမျှ စိုးရိမ်ပူပန်မှု လျော့လာနိုင်ပါတယ်။ နေ့စဉ်လုပ်ငန်းနဲ့ အနားယူမှုနဲ့ ကိုယ့်ကိုယ်ကို ဆက်တည်ငြိမ်အောင် ထားပါ။ ကျန်နေတဲ့ ကြောက်စိတ်တွေကို ယုံကြည်ရသူနဲ့ ပြောပြတာက ကူညီပါတယ်။"
       },
       "advice": "ဒီနေ့ မသေချာမှုတွေကြား ညင်ညင်သာသာ ဖြတ်သန်းပြီး ရှင်းလင်းမှု ရောက်လာမယ်လို့ ယုံကြည်ပါ။",
+      "adviceReversed": "ဒီနေ့ ကြောက်စိတ်တစ်ခုကို အသံထွက်ပြောပြီး အမှန်တရားနဲ့ တိုက်ကြည့်ပါ။",
       "suit": "အဓိကအာကာနာ",
       "element": "ရေ",
       "astrology": "မိန်ရာသီ"
@@ -1402,6 +1440,7 @@
         "reversed": "Reversed, energy may be a little low. Rest, gentle sunlight and simple pleasures can help restore you. Be patient; brightness often returns gradually, day by day."
       },
       "advice": "Celebrate one good thing today, however small it may seem.",
+      "adviceReversed": "Look for one small spark of joy today, even if the day feels cloudy.",
       "suit": "Major Arcana",
       "element": "Fire",
       "astrology": "The Sun"
@@ -1434,6 +1473,7 @@
         "reversed": "ပြောင်းပြန်ဆိုရင် စွမ်းအင် နည်းနည်း နည်းနေနိုင်ပါတယ်။ အနားယူမှု၊ နူးညံ့တဲ့ နေရောင်နဲ့ ရိုးရှင်းတဲ့ ပျော်စရာတွေက ပြန်လည်ကောင်းမွန်စေနိုင်ပါတယ်။ စိတ်ရှည်ပါ၊ တောက်ပမှုက တစ်နေ့ချင်း တဖြည်းဖြည်း ပြန်ရောက်လာတတ်ပါတယ်။"
       },
       "advice": "ဒီနေ့ ကောင်းတဲ့ အရာတစ်ခုကို ဘယ်လောက်သေးသေး ဂုဏ်ပြုပါ။",
+      "adviceReversed": "နေ့က တိမ်ထူသလို ခံစားရရင်တောင် ဒီနေ့ ပျော်ရွှင်မှု မီးပွားလေးတစ်ခု ရှာကြည့်ပါ။",
       "suit": "အဓိကအာကာနာ",
       "element": "မီး",
       "astrology": "နေ"
@@ -1474,6 +1514,7 @@
         "reversed": "Reversed, harsh self-talk may be draining you. Replace criticism with encouragement. Small, kind steps toward wellbeing can help you feel renewed and more like yourself."
       },
       "advice": "Reflect kindly on your past today, and answer what truly calls you.",
+      "adviceReversed": "Forgive yourself for one past mistake today, and let it teach you gently.",
       "suit": "Major Arcana",
       "element": "Fire",
       "astrology": "Pluto"
@@ -1506,6 +1547,7 @@
         "reversed": "ပြောင်းပြန်ဆိုရင် ကိုယ့်ကိုယ်ကို ကြမ်းတမ်းစွာ ပြောဆိုတာက အားကုန်စေနိုင်ပါတယ်။ ဝေဖန်မှုကို အားပေးစကားနဲ့ အစားထိုးပါ။ ကျန်းမာရေးဆီ ကြင်နာတဲ့ ခြေလှမ်းလေးတွေက ပြန်လန်းဆန်းပြီး ကိုယ့်ကိုယ်ကို ပြန်ဖြစ်လာစေနိုင်ပါတယ်။"
       },
       "advice": "ဒီနေ့ ကိုယ့်အတိတ်ကို ကြင်နာစွာ ဆင်ခြင်ပြီး ကိုယ့်ကို တကယ်ခေါ်နေတာကို တုံ့ပြန်ပါ။",
+      "adviceReversed": "ဒီနေ့ အတိတ်အမှားတစ်ခုကို ကိုယ့်ကိုယ်ကို ခွင့်လွှတ်ပြီး ညင်ညင်သာသာ သင်ခန်းစာယူပါ။",
       "suit": "အဓိကအာကာနာ",
       "element": "မီး",
       "astrology": "ပလူတိုဂြိုဟ်"
@@ -1546,6 +1588,7 @@
         "reversed": "Reversed, you may be close to a sense of balance but not quite there yet. Gentle consistency and patience can help. Notice what still needs care and give it kind attention."
       },
       "advice": "Celebrate how far you have come today, then look gently toward what is next.",
+      "adviceReversed": "Name the one thing still unfinished today and give it a small next step.",
       "suit": "Major Arcana",
       "element": "Earth",
       "astrology": "Saturn"
@@ -1578,6 +1621,7 @@
         "reversed": "ပြောင်းပြန်ဆိုရင် မျှတမှုကို နီးကပ်နေပေမဲ့ မရောက်သေးတာ ဖြစ်နိုင်ပါတယ်။ ညင်သာတဲ့ ပုံမှန်မှုနဲ့ စိတ်ရှည်မှုက ကူညီနိုင်ပါတယ်။ ဘာကို ဂရုစိုက်ဖို့ ကျန်သေးလဲ သတိထားပြီး ကြင်နာတဲ့ အာရုံစိုက်မှု ပေးပါ။"
       },
       "advice": "ဒီနေ့ ကိုယ်ဘယ်လောက်ဝေးဝေး ရောက်လာပြီလဲ ဂုဏ်ပြုပြီး နောက်တစ်ဆင့်ကို ညင်သာစွာ မျှော်ကြည့်ပါ။",
+      "adviceReversed": "ဒီနေ့ မပြီးသေးတဲ့ အရာတစ်ခုကို အမည်တပ်ပြီး နောက်ခြေလှမ်းသေးသေးတစ်ခု ပေးပါ။",
       "suit": "အဓိကအာကာနာ",
       "element": "မြေ",
       "astrology": "စနေဂြိုဟ်"
@@ -1618,6 +1662,7 @@
         "reversed": "Reversed, energy may feel low or scattered. Rest is not failure; it rebuilds your spark. Gentle activity, good sleep and something that makes you smile can help restore vitality."
       },
       "advice": "Act on one inspiring idea today, even with the smallest first step.",
+      "adviceReversed": "Do not wait for a perfect spark today; start small and see what grows.",
       "suit": "Wands",
       "element": "Fire",
       "astrology": "Root of Fire"
@@ -1650,6 +1695,7 @@
         "reversed": "ပြောင်းပြန်ဆိုရင် စွမ်းအင် နည်းနေတာ ဒါမှမဟုတ် ပြန့်ကျဲနေတာ ဖြစ်နိုင်ပါတယ်။ အနားယူတာ ရှုံးနိမ့်တာ မဟုတ်ပါဘူး၊ မီးပွားကို ပြန်တည်ဆောက်ပေးတာပါ။ ညင်သာတဲ့ လှုပ်ရှားမှု၊ အိပ်ရေးဝမှုနဲ့ ပြုံးစေတဲ့ အရာက တက်ကြွမှုကို ပြန်ပေးနိုင်ပါတယ်။"
       },
       "advice": "ဒီနေ့ စိတ်အားတက်စေတဲ့ အကြံတစ်ခုကို အသေးဆုံး ခြေလှမ်းနဲ့ဖြစ်ဖြစ် လုပ်ဆောင်ပါ။",
+      "adviceReversed": "ဒီနေ့ ပြီးပြည့်စုံတဲ့ မီးပွားကို မစောင့်ဘဲ သေးသေးလေးကစပြီး ဘာကြီးထွားလာလဲ ကြည့်ပါ။",
       "suit": "တုတ်",
       "element": "မီး",
       "astrology": "မီးဓာတ်၏ အရင်းအမြစ်"
@@ -1690,6 +1736,7 @@
         "reversed": "Reversed, restlessness or worry about the future may be affecting your peace. Bring your attention back to the present with simple grounding habits like walking, stretching or journaling."
       },
       "advice": "Spend a few minutes today imagining where you want to be, then write one step down.",
+      "adviceReversed": "Turn one vague wish into a single clear step today, and take it.",
       "suit": "Wands",
       "element": "Fire",
       "astrology": "Mars in Aries"
@@ -1722,6 +1769,7 @@
         "reversed": "ပြောင်းပြန်ဆိုရင် အနာဂတ်အပေါ် မငြိမ်မသက်မှု ဒါမှမဟုတ် စိုးရိမ်မှုက ငြိမ်းချမ်းမှုကို ထိခိုက်နေနိုင်ပါတယ်။ လမ်းလျှောက်တာ၊ ဆန့်တာ ဒါမှမဟုတ် မှတ်စုရေးတာလို ရိုးရှင်းတဲ့ အလေ့အကျင့်တွေနဲ့ ပစ္စုပ္ပန်ဆီ အာရုံပြန်ပို့ပါ။"
       },
       "advice": "ဒီနေ့ ကိုယ်ရောက်ချင်တဲ့ နေရာကို မိနစ်အနည်းငယ် စိတ်ကူးကြည့်ပြီး ခြေလှမ်းတစ်ခု ချရေးပါ။",
+      "adviceReversed": "ဒီနေ့ မရေရာတဲ့ ဆန္ဒတစ်ခုကို ရှင်းလင်းတဲ့ ခြေလှမ်းတစ်ခုဖြစ်အောင် လုပ်ပြီး လှမ်းပါ။",
       "suit": "တုတ်",
       "element": "မီး",
       "astrology": "မိဿရာသီရှိ အင်္ဂါဂြိုဟ်"
@@ -1762,6 +1810,7 @@
         "reversed": "Reversed, progress may feel slow, which can be discouraging. Celebrate small gains and adjust expectations kindly. Steady, consistent care often brings results in its own time."
       },
       "advice": "Look ahead with patience today, trusting that your efforts are already moving.",
+      "adviceReversed": "Check in today on a plan that has stalled, and adjust it kindly.",
       "suit": "Wands",
       "element": "Fire",
       "astrology": "The Sun in Aries"
@@ -1794,6 +1843,7 @@
         "reversed": "ပြောင်းပြန်ဆိုရင် တိုးတက်မှုက နှေးသလို ခံစားရလို့ စိတ်ဓာတ်ကျစရာ ဖြစ်နိုင်ပါတယ်။ အကျိုးကျေးဇူးလေးတွေကို ဂုဏ်ပြုပြီး မျှော်လင့်ချက်တွေကို ကြင်နာစွာ ပြင်ဆင်ပါ။ တည်ငြိမ်ပုံမှန် ဂရုစိုက်မှုက သူ့အချိန်နဲ့သူ ရလဒ်ပေးတတ်ပါတယ်။"
       },
       "advice": "ဒီနေ့ ကိုယ့်ကြိုးစားမှုတွေ ရွေ့နေပြီလို့ ယုံကြည်ပြီး စိတ်ရှည်စွာ ရှေ့ကို မျှော်ကြည့်ပါ။",
+      "adviceReversed": "ဒီနေ့ ရပ်နေတဲ့ အစီအစဉ်တစ်ခုကို ပြန်ကြည့်ပြီး ညင်ညင်သာသာ ပြင်ဆင်ပါ။",
       "suit": "တုတ်",
       "element": "မီး",
       "astrology": "မိဿရာသီရှိ နေ"
@@ -1834,6 +1884,7 @@
         "reversed": "Reversed, tension at home or a lack of connection may be tiring you. Create a peaceful corner for yourself, and gently reach out to people who make you feel welcome."
       },
       "advice": "Celebrate a small success today with someone you care about.",
+      "adviceReversed": "Make time today for the people and places that help you feel at home.",
       "suit": "Wands",
       "element": "Fire",
       "astrology": "Venus in Aries"
@@ -1866,6 +1917,7 @@
         "reversed": "ပြောင်းပြန်ဆိုရင် အိမ်မှာ တင်းမာမှု ဒါမှမဟုတ် ဆက်နွယ်မှု နည်းတာက ပင်ပန်းစေနိုင်ပါတယ်။ ကိုယ့်အတွက် ငြိမ်းချမ်းတဲ့ နေရာလေးတစ်ခု ဖန်တီးပြီး ကြိုဆိုခံရသလို ခံစားစေတဲ့ လူတွေကို ညင်သာစွာ ဆက်သွယ်ပါ။"
       },
       "advice": "ဒီနေ့ ကိုယ်ဂရုစိုက်တဲ့ သူတစ်ယောက်နဲ့ အောင်မြင်မှုလေးတစ်ခုကို ဂုဏ်ပြုပါ။",
+      "adviceReversed": "ဒီနေ့ အိမ်လို ခံစားရစေတဲ့ လူတွေနဲ့ နေရာတွေအတွက် အချိန်ပေးပါ။",
       "suit": "တုတ်",
       "element": "မီး",
       "astrology": "မိဿရာသီရှိ သောကြာဂြိုဟ်"
@@ -1906,6 +1958,7 @@
         "reversed": "Reversed, you may be ready for more calm after a busy, tense period. Choose gentle activities and peaceful environments. Resolving lingering conflicts can ease your mind."
       },
       "advice": "Listen to a different point of view today with curiosity rather than defence.",
+      "adviceReversed": "Take a breath before reacting today, and choose a calmer way to be heard.",
       "suit": "Wands",
       "element": "Fire",
       "astrology": "Saturn in Leo"
@@ -1938,6 +1991,7 @@
         "reversed": "ပြောင်းပြန်ဆိုရင် အလုပ်များပြီး တင်းမာတဲ့ ကာလနောက်မှာ ပိုတည်ငြိမ်ဖို့ အသင့်ဖြစ်နေနိုင်ပါတယ်။ ညင်သာတဲ့ လှုပ်ရှားမှုတွေနဲ့ ငြိမ်းချမ်းတဲ့ ပတ်ဝန်းကျင်ကို ရွေးပါ။ ကျန်နေတဲ့ ပဋိပက္ခတွေကို ဖြေရှင်းတာက စိတ်ကို သက်သာစေနိုင်ပါတယ်။"
       },
       "advice": "ဒီနေ့ မတူတဲ့ အမြင်တစ်ခုကို ကာကွယ်ပြောဆိုမယ့်အစား စူးစမ်းစိတ်နဲ့ နားထောင်ပါ။",
+      "adviceReversed": "ဒီနေ့ တုံ့ပြန်ခင် အသက်ရှူပြီး ကိုယ့်အသံကြားစေမယ့် ပိုတည်ငြိမ်တဲ့ နည်းလမ်းကို ရွေးပါ။",
       "suit": "တုတ်",
       "element": "မီး",
       "astrology": "သိဟ်ရာသီရှိ စနေဂြိုဟ်"
@@ -1978,6 +2032,7 @@
         "reversed": "Reversed, comparison with others may be affecting your self-esteem. Focus on your own journey and celebrate small wins. Kind self-talk can lift both your mood and motivation."
       },
       "advice": "Acknowledge your own progress today, and thank someone who helped you.",
+      "adviceReversed": "Praise yourself for something today without comparing yourself to anyone.",
       "suit": "Wands",
       "element": "Fire",
       "astrology": "Jupiter in Leo"
@@ -2010,6 +2065,7 @@
         "reversed": "ပြောင်းပြန်ဆိုရင် တခြားသူတွေနဲ့ နှိုင်းယှဉ်တာက ကိုယ့်ကိုယ်ကို တန်ဖိုးထားမှုကို ထိခိုက်နေနိုင်ပါတယ်။ ကိုယ့်ခရီးကို အာရုံစိုက်ပြီး အောင်မြင်မှုလေးတွေကို ဂုဏ်ပြုပါ။ ကိုယ့်ကိုယ်ကို ကြင်နာစွာ ပြောတာက စိတ်ဓာတ်ရော စိတ်အားရော မြှင့်ပေးနိုင်ပါတယ်။"
       },
       "advice": "ဒီနေ့ ကိုယ့်တိုးတက်မှုကို အသိအမှတ်ပြုပြီး ကူညီခဲ့သူတစ်ယောက်ကို ကျေးဇူးတင်ပါ။",
+      "adviceReversed": "ဒီနေ့ ဘယ်သူနဲ့မှ မနှိုင်းယှဉ်ဘဲ တစ်ခုခုအတွက် ကိုယ့်ကိုယ်ကို ချီးကျူးပါ။",
       "suit": "တုတ်",
       "element": "မီး",
       "astrology": "သိဟ်ရာသီရှိ ကြာသပတေးဂြိုဟ်"
@@ -2050,6 +2106,7 @@
         "reversed": "Reversed, constant defensiveness or stress may be exhausting you. Allow yourself to rest. Release battles that no longer matter, and lean on supportive people for strength."
       },
       "advice": "Stand firm today for one thing that truly matters to you.",
+      "adviceReversed": "Choose your battles today and let go of the ones that drain you.",
       "suit": "Wands",
       "element": "Fire",
       "astrology": "Mars in Leo"
@@ -2082,6 +2139,7 @@
         "reversed": "ပြောင်းပြန်ဆိုရင် မပြတ်တဲ့ ကာကွယ်ရေးစိတ် ဒါမှမဟုတ် စိတ်ဖိစီးမှုက ပင်ပန်းနွမ်းနယ်စေနိုင်ပါတယ်။ အနားယူခွင့် ပေးပါ။ အရေးမပါတော့တဲ့ တိုက်ပွဲတွေကို လွှတ်ချပြီး ထောက်ကူပေးတဲ့ လူတွေကို ခွန်အားအတွက် အားကိုးပါ။"
       },
       "advice": "ဒီနေ့ ကိုယ့်အတွက် တကယ်အရေးကြီးတဲ့ အရာတစ်ခုအတွက် ခိုင်ခိုင်မာမာ ရပ်တည်ပါ။",
+      "adviceReversed": "ဒီနေ့ တိုက်ပွဲတွေကို ရွေးချယ်ပြီး စွမ်းအင်ကုန်စေတာတွေကို လက်လွှတ်လိုက်ပါ။",
       "suit": "တုတ်",
       "element": "မီး",
       "astrology": "သိဟ်ရာသီရှိ အင်္ဂါဂြိုဟ်"
@@ -2122,6 +2180,7 @@
         "reversed": "Reversed, a hectic pace may be leaving you scattered or tired. Slow down and give yourself breathing space. Calm routines can help your body and mind find a steadier, kinder rhythm."
       },
       "advice": "Respond promptly to what is moving today, but keep your aim clear.",
+      "adviceReversed": "Slow the pace today and finish one thing properly before starting another.",
       "suit": "Wands",
       "element": "Fire",
       "astrology": "Mercury in Sagittarius"
@@ -2154,6 +2213,7 @@
         "reversed": "ပြောင်းပြန်ဆိုရင် ရှုပ်ယှက်ခတ်တဲ့ အရှိန်က ပြန့်ကျဲ ဒါမှမဟုတ် ပင်ပန်းစေနိုင်ပါတယ်။ နှေးနှေးလေးနေပြီး အသက်ရှူစရာ နေရာပေးပါ။ အေးဆေးတဲ့ နေ့စဉ်လုပ်ငန်းတွေက စိတ်နဲ့ ခန္ဓာကိုယ်ကို ပိုတည်ငြိမ်ကြင်နာတဲ့ စည်းချက် ရှာစေနိုင်ပါတယ်။"
       },
       "advice": "ဒီနေ့ ရွေ့လျားနေတဲ့ အရာတွေကို မြန်မြန် တုံ့ပြန်ပါ၊ ဒါပေမဲ့ ရည်ရွယ်ချက်ကို ရှင်းရှင်းထားပါ။",
+      "adviceReversed": "ဒီနေ့ အရှိန်လျှော့ပြီး နောက်တစ်ခုမစခင် တစ်ခုကို သေသေချာချာ ပြီးအောင်လုပ်ပါ။",
       "suit": "တုတ်",
       "element": "မီး",
       "astrology": "ဓနုရာသီရှိ ဗုဒ္ဓဟူးဂြိုဟ်"
@@ -2194,6 +2254,7 @@
         "reversed": "Reversed, you may be running on empty. Prioritise rest and gentle care. If you feel drained for a long time, reaching out to someone you trust or a professional can help."
       },
       "advice": "Protect your energy today and take one more steady step forward.",
+      "adviceReversed": "Ask for help today instead of pushing on alone, and rest before you tire.",
       "suit": "Wands",
       "element": "Fire",
       "astrology": "The Moon in Sagittarius"
@@ -2226,6 +2287,7 @@
         "reversed": "ပြောင်းပြန်ဆိုရင် စွမ်းအင် ကုန်ခမ်းနေတာ ဖြစ်နိုင်ပါတယ်။ အနားယူမှုနဲ့ ညင်သာတဲ့ ဂရုစိုက်မှုကို ဦးစားပေးပါ။ အကြာကြီး အားကုန်နေသလို ခံစားရရင် ယုံကြည်ရသူ ဒါမှမဟုတ် ကျွမ်းကျင်သူကို ဆက်သွယ်တာက ကူညီနိုင်ပါတယ်။"
       },
       "advice": "ဒီနေ့ ကိုယ့်စွမ်းအင်ကို ကာကွယ်ပြီး တည်ငြိမ်တဲ့ ခြေလှမ်း နောက်တစ်လှမ်း ရှေ့တိုးပါ။",
+      "adviceReversed": "ဒီနေ့ တစ်ယောက်တည်း ဆက်မတွန်းဘဲ အကူအညီတောင်းပြီး မမောခင် အနားယူပါ။",
       "suit": "တုတ်",
       "element": "မီး",
       "astrology": "ဓနုရာသီရှိ လ"
@@ -2266,6 +2328,7 @@
         "reversed": "Reversed, you may be starting to release stress, or you may be close to burnout. Prioritise rest and support. Letting go of even one burden can make a real difference to how you feel."
       },
       "advice": "Put down one burden today that you do not need to carry alone.",
+      "adviceReversed": "Pick the one load that matters most today and set the rest down.",
       "suit": "Wands",
       "element": "Fire",
       "astrology": "Saturn in Sagittarius"
@@ -2298,6 +2361,7 @@
         "reversed": "ပြောင်းပြန်ဆိုရင် စိတ်ဖိစီးမှုကို စတင် ဖြေလျှော့နေတာ ဒါမှမဟုတ် အားကုန်ခမ်းမှုနဲ့ နီးနေတာ ဖြစ်နိုင်ပါတယ်။ အနားယူမှုနဲ့ အကူအညီကို ဦးစားပေးပါ။ ဝန်တစ်ခုကို လွှတ်ချလိုက်တာနဲ့တင် ခံစားချက်မှာ တကယ့်ကွာခြားမှု ဖြစ်စေနိုင်ပါတယ်။"
       },
       "advice": "ဒီနေ့ တစ်ယောက်တည်း ထမ်းဖို့ မလိုတဲ့ ဝန်တစ်ခုကို ချထားလိုက်ပါ။",
+      "adviceReversed": "ဒီနေ့ အရေးအကြီးဆုံး ဝန်တစ်ခုကို ရွေးပြီး ကျန်တာတွေကို ချထားပါ။",
       "suit": "တုတ်",
       "element": "မီး",
       "astrology": "ဓနုရာသီရှိ စနေဂြိုဟ်"
@@ -2338,6 +2402,7 @@
         "reversed": "Reversed, restlessness or low motivation may be present. Gentle, enjoyable movement and small goals can help. Do not judge yourself for needing time to find your rhythm."
       },
       "advice": "Explore something new today just because it makes you curious.",
+      "adviceReversed": "Turn one idea into a small trial today instead of only thinking about it.",
       "suit": "Wands",
       "element": "Fire",
       "astrology": "Earth of Fire"
@@ -2370,6 +2435,7 @@
         "reversed": "ပြောင်းပြန်ဆိုရင် မငြိမ်မသက်မှု ဒါမှမဟုတ် စိတ်အားနည်းမှု ရှိနေနိုင်ပါတယ်။ ညင်သာပျော်ရွှင်စရာ လှုပ်ရှားမှုနဲ့ ပန်းတိုင်လေးတွေက ကူညီနိုင်ပါတယ်။ ကိုယ့်စည်းချက်ကို ရှာဖို့ အချိန်လိုတာအတွက် ကိုယ့်ကိုယ်ကို မစီရင်ပါနဲ့။"
       },
       "advice": "ဒီနေ့ စူးစမ်းချင်စိတ် ဖြစ်စေလို့ သက်သက် အသစ်တစ်ခုခုကို စူးစမ်းကြည့်ပါ။",
+      "adviceReversed": "ဒီနေ့ တွေးနေရုံထက် စိတ်ကူးတစ်ခုကို စမ်းသပ်မှုသေးသေးလေးအဖြစ် လုပ်ကြည့်ပါ။",
       "suit": "တုတ်",
       "element": "မီး",
       "astrology": "မီးဓာတ်ထဲမှ မြေဓာတ်"
@@ -2410,6 +2476,7 @@
         "reversed": "Reversed, restlessness may lead to overexertion or frustration. Balance intense activity with rest. Calming practices can help you channel your energy in a healthier way."
       },
       "advice": "Follow your passion today, but take a moment to plan your route.",
+      "adviceReversed": "Slow down today and check your plan before racing ahead.",
       "suit": "Wands",
       "element": "Fire",
       "astrology": "Air of Fire"
@@ -2442,6 +2509,7 @@
         "reversed": "ပြောင်းပြန်ဆိုရင် မငြိမ်မသက်မှုက အလွန်အကျွံ လုပ်တာ ဒါမှမဟုတ် စိတ်ပျက်တာ ဖြစ်စေနိုင်ပါတယ်။ ပြင်းထန်တဲ့ လှုပ်ရှားမှုကို အနားယူမှုနဲ့ မျှတပါ။ စိတ်အေးစေတဲ့ အလေ့အကျင့်တွေက စွမ်းအင်ကို ပိုကျန်းမာတဲ့ နည်းနဲ့ လမ်းကြောင်းပေးနိုင်စေပါတယ်။"
       },
       "advice": "ဒီနေ့ ကိုယ့်စိတ်အားထက်သန်မှုကို လိုက်ပါ၊ ဒါပေမဲ့ လမ်းကြောင်းကို ခဏ စီစဉ်ပါ။",
+      "adviceReversed": "ဒီနေ့ အရှိန်လျှော့ပြီး ရှေ့ပြေးမတိုးခင် ကိုယ့်အစီအစဉ်ကို စစ်ကြည့်ပါ။",
       "suit": "တုတ်",
       "element": "မီး",
       "astrology": "မီးဓာတ်ထဲမှ လေဓာတ်"
@@ -2482,6 +2550,7 @@
         "reversed": "Reversed, you may feel drained or irritable. Rest and gentle self-care are important. Spend time on activities that bring you joy without pressure, and let your energy rebuild."
       },
       "advice": "Let your warmth and confidence shine today, and encourage someone else to shine too.",
+      "adviceReversed": "Remember today that your worth does not depend on others' approval.",
       "suit": "Wands",
       "element": "Fire",
       "astrology": "Water of Fire"
@@ -2514,6 +2583,7 @@
         "reversed": "ပြောင်းပြန်ဆိုရင် အားကုန်နေသလို ဒါမှမဟုတ် စိတ်တိုလွယ်နေသလို ခံစားရနိုင်ပါတယ်။ အနားယူမှုနဲ့ ညင်သာတဲ့ ကိုယ့်ကိုယ်ကို ဂရုစိုက်မှုက အရေးကြီးပါတယ်။ ဖိအားမရှိဘဲ ပျော်ရွှင်မှုပေးတဲ့ လှုပ်ရှားမှုတွေမှာ အချိန်ဖြုန်းပြီး စွမ်းအင်ကို ပြန်တည်ဆောက်ခွင့်ပေးပါ။"
       },
       "advice": "ဒီနေ့ ကိုယ့်ရဲ့ နွေးထွေးမှုနဲ့ ယုံကြည်မှုကို တောက်ပခွင့်ပေးပြီး တခြားသူကိုလည်း တောက်ပဖို့ အားပေးပါ။",
+      "adviceReversed": "ဒီနေ့ ကိုယ့်တန်ဖိုးက တခြားသူတွေရဲ့ အတည်ပြုမှုပေါ် မမူတည်ဘူးဆိုတာ သတိရပါ။",
       "suit": "တုတ်",
       "element": "မီး",
       "astrology": "မီးဓာတ်ထဲမှ ရေဓာတ်"
@@ -2554,6 +2624,7 @@
         "reversed": "Reversed, stress or impatience may affect your wellbeing. Take time to cool down and rest. Calm, regular routines can help you manage the pressure of leadership more gently."
       },
       "advice": "Lead with vision and kindness today, and listen as much as you guide.",
+      "adviceReversed": "Listen first today, and let your vision be shared rather than imposed.",
       "suit": "Wands",
       "element": "Fire",
       "astrology": "Fire of Fire"
@@ -2586,6 +2657,7 @@
         "reversed": "ပြောင်းပြန်ဆိုရင် စိတ်ဖိစီးမှု ဒါမှမဟုတ် စိတ်မရှည်မှုက ကျန်းမာရေးကို ထိခိုက်နိုင်ပါတယ်။ စိတ်အေးဖို့နဲ့ အနားယူဖို့ အချိန်ယူပါ။ အေးဆေးပုံမှန် နေ့စဉ်လုပ်ငန်းတွေက ခေါင်းဆောင်မှု ဖိအားကို ပိုညင်သာစွာ ကိုင်တွယ်နိုင်အောင် ကူညီပါတယ်။"
       },
       "advice": "ဒီနေ့ အမြင်နဲ့ ကြင်နာမှုနဲ့ ဦးဆောင်ပြီး လမ်းပြသလောက် နားလည်း ထောင်ပါ။",
+      "adviceReversed": "ဒီနေ့ အရင်နားထောင်ပြီး ကိုယ့်အမြင်ကို အတင်းဖိအားမပေးဘဲ မျှဝေပါ။",
       "suit": "တုတ်",
       "element": "မီး",
       "astrology": "မီးဓာတ်ထဲမှ မီးဓာတ်"
@@ -2626,6 +2698,7 @@
         "reversed": "Reversed, suppressed feelings may be weighing on you. Give yourself permission to feel. Talking with someone you trust or writing down your emotions can bring relief and clarity."
       },
       "advice": "Offer kindness to someone today, and include yourself on that list.",
+      "adviceReversed": "Give your feelings a safe outlet today, such as a walk, a note or a talk.",
       "suit": "Cups",
       "element": "Water",
       "astrology": "Root of Water"
@@ -2658,6 +2731,7 @@
         "reversed": "ပြောင်းပြန်ဆိုရင် ဖိနှိပ်ထားတဲ့ ခံစားချက်တွေက လေးလံစေနိုင်ပါတယ်။ ခံစားခွင့်ကို ကိုယ့်ကိုယ်ကို ပေးပါ။ ယုံကြည်ရသူနဲ့ စကားပြောတာ ဒါမှမဟုတ် ခံစားချက်တွေကို ချရေးတာက သက်သာမှုနဲ့ ရှင်းလင်းမှုကို ယူဆောင်လာနိုင်ပါတယ်။"
       },
       "advice": "ဒီနေ့ တစ်ယောက်ယောက်ကို ကြင်နာမှု ပေးပါ၊ ကိုယ့်ကိုယ်ကိုလည်း ထည့်တွက်ပါ။",
+      "adviceReversed": "ဒီနေ့ ခံစားချက်တွေကို လမ်းလျှောက်တာ၊ မှတ်စုရေးတာ၊ စကားပြောတာလို လုံခြုံတဲ့ နည်းလမ်းနဲ့ ထုတ်ပါ။",
       "suit": "ခွက်",
       "element": "ရေ",
       "astrology": "ရေဓာတ်၏ အရင်းအမြစ်"
@@ -2698,6 +2772,7 @@
         "reversed": "Reversed, relationship stress may affect your wellbeing. Take time to care for yourself and seek support. Restoring harmony within yourself helps you meet others with more ease."
       },
       "advice": "Reach out to someone you value today and let them know they matter.",
+      "adviceReversed": "Have one honest, gentle conversation today to clear a small misunderstanding.",
       "suit": "Cups",
       "element": "Water",
       "astrology": "Venus in Cancer"
@@ -2730,6 +2805,7 @@
         "reversed": "ပြောင်းပြန်ဆိုရင် ဆက်ဆံရေး စိတ်ဖိစီးမှုက ကျန်းမာရေးကို ထိခိုက်နိုင်ပါတယ်။ ကိုယ့်ကိုယ်ကို ဂရုစိုက်ဖို့ အချိန်ယူပြီး အကူအညီ ရှာပါ။ ကိုယ့်အတွင်းမှာ သဟဇာတ ပြန်ရလာရင် တခြားသူတွေနဲ့ ပိုလွယ်လွယ် ဆက်ဆံနိုင်ပါတယ်။"
       },
       "advice": "ဒီနေ့ ကိုယ်တန်ဖိုးထားတဲ့ သူတစ်ယောက်ကို ဆက်သွယ်ပြီး သူတို့ အရေးပါကြောင်း ပြောပြပါ။",
+      "adviceReversed": "ဒီနေ့ နားလည်မှုလွဲမှားတာသေးသေးတစ်ခုကို ရှင်းဖို့ ရိုးသားပြီး ညင်သာတဲ့ စကားပြောပါ။",
       "suit": "ခွက်",
       "element": "ရေ",
       "astrology": "ကရကဋ်ရာသီရှိ သောကြာဂြိုဟ်"
@@ -2770,6 +2846,7 @@
         "reversed": "Reversed, social overload or isolation may be affecting you. Find a comfortable balance. Moderation in celebrations and quality time with trusted people can help you feel restored."
       },
       "advice": "Share a moment of joy with a friend today.",
+      "adviceReversed": "Choose quality over quantity in company today and protect your energy.",
       "suit": "Cups",
       "element": "Water",
       "astrology": "Mercury in Cancer"
@@ -2802,6 +2879,7 @@
         "reversed": "ပြောင်းပြန်ဆိုရင် လူမှုရေး ဝန်ပိလွန်းတာ ဒါမှမဟုတ် အထီးကျန်တာက ထိခိုက်နေနိုင်ပါတယ်။ သက်တောင့်သက်သာ မျှတမှုကို ရှာပါ။ ပွဲလမ်းတွေမှာ အတိုင်းအတာရှိတာနဲ့ ယုံကြည်ရသူတွေနဲ့ အရည်အသွေးရှိ အချိန်က ပြန်လန်းဆန်းစေနိုင်ပါတယ်။"
       },
       "advice": "ဒီနေ့ မိတ်ဆွေတစ်ယောက်နဲ့ ပျော်ရွှင်မှု အခိုက်အတန့်လေး မျှဝေပါ။",
+      "adviceReversed": "ဒီနေ့ လူတွေနဲ့ ရောနှောရာမှာ အရေအတွက်ထက် အရည်အသွေးကို ရွေးပြီး စွမ်းအင်ကို ကာကွယ်ပါ။",
       "suit": "ခွက်",
       "element": "ရေ",
       "astrology": "ကရကဋ်ရာသီရှိ ဗုဒ္ဓဟူးဂြိုဟ်"
@@ -2842,6 +2920,7 @@
         "reversed": "Reversed, energy and interest may be returning. Welcome new healthy routines. If low feelings continue for a long time, consider talking with someone you trust or a professional."
       },
       "advice": "Look up from your thoughts today and notice what is being offered to you.",
+      "adviceReversed": "Try saying yes to one small invitation today and see how it feels.",
       "suit": "Cups",
       "element": "Water",
       "astrology": "The Moon in Cancer"
@@ -2874,6 +2953,7 @@
         "reversed": "ပြောင်းပြန်ဆိုရင် စွမ်းအင်နဲ့ စိတ်ဝင်စားမှု ပြန်ရောက်လာနိုင်ပါတယ်။ ကျန်းမာတဲ့ နေ့စဉ်လုပ်ငန်းသစ်တွေကို ကြိုဆိုပါ။ စိတ်ဓာတ်ကျမှု အကြာကြီး ဆက်ရှိနေရင် ယုံကြည်ရသူ ဒါမှမဟုတ် ကျွမ်းကျင်သူနဲ့ စကားပြောဖို့ စဉ်းစားပါ။"
       },
       "advice": "ဒီနေ့ ကိုယ့်အတွေးတွေကနေ မော့ကြည့်ပြီး ကမ်းပေးနေတာကို သတိထားကြည့်ပါ။",
+      "adviceReversed": "ဒီနေ့ ဖိတ်ခေါ်မှုသေးသေးတစ်ခုကို လက်ခံကြည့်ပြီး ဘယ်လိုခံစားရလဲ ကြည့်ပါ။",
       "suit": "ခွက်",
       "element": "ရေ",
       "astrology": "ကရကဋ်ရာသီရှိ လ"
@@ -2914,6 +2994,7 @@
         "reversed": "Reversed, healing is underway. Keep caring for yourself gently. Notice the things that bring comfort and hope, and let them support your recovery one day at a time."
       },
       "advice": "Allow yourself to feel what hurts today, and then notice what is still standing.",
+      "adviceReversed": "Be patient with your healing today, and turn toward one small comfort.",
       "suit": "Cups",
       "element": "Water",
       "astrology": "Mars in Scorpio"
@@ -2946,6 +3027,7 @@
         "reversed": "ပြောင်းပြန်ဆိုရင် ကုစားမှု ဖြစ်ပေါ်နေပါပြီ။ ကိုယ့်ကိုယ်ကို ညင်သာစွာ ဆက်ဂရုစိုက်ပါ။ နှစ်သိမ့်မှုနဲ့ မျှော်လင့်ချက် ပေးတဲ့ အရာတွေကို သတိထားပြီး တစ်နေ့ချင်း ပြန်လည်ကောင်းမွန်မှုကို ထောက်ကူခွင့်ပေးပါ။"
       },
       "advice": "ဒီနေ့ နာကျင်တာကို ခံစားခွင့်ပေးပြီး ရပ်တည်နေဆဲ အရာကို သတိထားကြည့်ပါ။",
+      "adviceReversed": "ဒီနေ့ ပြန်လည်ကောင်းမွန်လာမှုမှာ စိတ်ရှည်ပြီး နှစ်သိမ့်မှုသေးသေးတစ်ခုဆီ လှည့်ကြည့်ပါ။",
       "suit": "ခွက်",
       "element": "ရေ",
       "astrology": "ဗြိစ္ဆာရာသီရှိ အင်္ဂါဂြိုဟ်"
@@ -2986,6 +3068,7 @@
         "reversed": "Reversed, dwelling on the past may affect your mood. Practise being present through simple mindful activities. Gently release what no longer serves your wellbeing today."
       },
       "advice": "Do one small kind thing today that would have made your younger self smile.",
+      "adviceReversed": "Enjoy a happy memory today, then return gently to the present.",
       "suit": "Cups",
       "element": "Water",
       "astrology": "The Sun in Scorpio"
@@ -3018,6 +3101,7 @@
         "reversed": "ပြောင်းပြန်ဆိုရင် အတိတ်ကို တွေးနေတာက စိတ်အခြေအနေကို ထိခိုက်နိုင်ပါတယ်။ ရိုးရှင်းတဲ့ သတိရှိတဲ့ လှုပ်ရှားမှုတွေနဲ့ ပစ္စုပ္ပန်မှာ ရှိနေဖို့ လေ့ကျင့်ပါ။ ဒီနေ့ ကျန်းမာရေးကို အကျိုးမပြုတော့တဲ့ အရာကို ညင်သာစွာ လွှတ်ချပါ။"
       },
       "advice": "ဒီနေ့ ငယ်ငယ်က ကိုယ့်ကိုယ်ကို ပြုံးစေမယ့် ကြင်နာတဲ့ အလုပ်လေးတစ်ခု လုပ်ပါ။",
+      "adviceReversed": "ဒီနေ့ ပျော်စရာ အမှတ်တရတစ်ခုကို ခံစားပြီး ပစ္စုပ္ပန်ဆီ ညင်ညင်သာသာ ပြန်လာပါ။",
       "suit": "ခွက်",
       "element": "ရေ",
       "astrology": "ဗြိစ္ဆာရာသီရှိ နေ"
@@ -3058,6 +3142,7 @@
         "reversed": "Reversed, clearer thinking may help you choose healthier habits. Focus on simple, achievable steps rather than perfect plans. Gentle consistency, day after day, matters more than grand intentions."
       },
       "advice": "Choose one dream today and give it one practical, grounded step.",
+      "adviceReversed": "Cut your options down to one today and test it against reality.",
       "suit": "Cups",
       "element": "Water",
       "astrology": "Venus in Scorpio"
@@ -3090,6 +3175,7 @@
         "reversed": "ပြောင်းပြန်ဆိုရင် ပိုရှင်းလင်းတဲ့ တွေးခေါ်မှုက ပိုကျန်းမာတဲ့ အလေ့အကျင့်တွေ ရွေးချယ်နိုင်စေပါတယ်။ ပြီးပြည့်စုံတဲ့ အစီအစဉ်ထက် ရိုးရှင်းပြီး ရနိုင်တဲ့ ခြေလှမ်းတွေကို အာရုံစိုက်ပါ။ ကြီးကျယ်တဲ့ ရည်ရွယ်ချက်ထက် ပုံမှန်လုပ်ဆောင်မှုက ပိုအရေးကြီးပါတယ်။"
       },
       "advice": "ဒီနေ့ အိပ်မက်တစ်ခုကို ရွေးပြီး လက်တွေ့ကျတဲ့ ခိုင်မာတဲ့ ခြေလှမ်းတစ်လှမ်း ပေးပါ။",
+      "adviceReversed": "ဒီနေ့ ရွေးစရာတွေကို တစ်ခုအထိ လျှော့ပြီး လက်တွေ့နဲ့ စမ်းကြည့်ပါ။",
       "suit": "ခွက်",
       "element": "ရေ",
       "astrology": "ဗြိစ္ဆာရာသီရှိ သောကြာဂြိုဟ်"
@@ -3130,6 +3216,7 @@
         "reversed": "Reversed, you may feel restless or uncertain. Be patient with yourself. Gentle reflection, rest and conversations with trusted people can help you understand what you need next."
       },
       "advice": "Let go of one thing today that no longer brings you meaning.",
+      "adviceReversed": "Pause before leaving today and be sure you are walking toward something, not just away.",
       "suit": "Cups",
       "element": "Water",
       "astrology": "Saturn in Pisces"
@@ -3162,6 +3249,7 @@
         "reversed": "ပြောင်းပြန်ဆိုရင် မငြိမ်မသက် ဒါမှမဟုတ် မသေချာသလို ခံစားရနိုင်ပါတယ်။ ကိုယ့်ကိုယ်ကို စိတ်ရှည်ပါ။ ညင်သာတဲ့ ဆင်ခြင်မှု၊ အနားယူမှုနဲ့ ယုံကြည်ရသူတွေနဲ့ စကားပြောတာက နောက်ဘာလိုအပ်လဲ နားလည်စေနိုင်ပါတယ်။"
       },
       "advice": "ဒီနေ့ အဓိပ္ပာယ် မပေးတော့တဲ့ အရာတစ်ခုကို လက်လွှတ်လိုက်ပါ။",
+      "adviceReversed": "ဒီနေ့ မထွက်ခွာခင် ခဏရပ်ပြီး ရှောင်ပြေးတာမဟုတ်ဘဲ တစ်ခုခုဆီ လျှောက်နေတာ ဟုတ်မဟုတ် သေချာစစ်ပါ။",
       "suit": "ခွက်",
       "element": "ရေ",
       "astrology": "မိန်ရာသီရှိ စနေဂြိုဟ်"
@@ -3202,6 +3290,7 @@
         "reversed": "Reversed, indulgence may be affecting your wellbeing. Gently rebalance your habits. Seek joy in simple, healthy activities that leave you feeling better rather than depleted."
       },
       "advice": "Name three things you are grateful for today, and savour one of them slowly.",
+      "adviceReversed": "Look for contentment in something simple today, not in having more.",
       "suit": "Cups",
       "element": "Water",
       "astrology": "Jupiter in Pisces"
@@ -3234,6 +3323,7 @@
         "reversed": "ပြောင်းပြန်ဆိုရင် အလွန်အကျွံ ခံစားမှုက ကျန်းမာရေးကို ထိခိုက်နေနိုင်ပါတယ်။ ကိုယ့်အလေ့အကျင့်တွေကို ညင်သာစွာ ပြန်မျှတအောင် လုပ်ပါ။ ပင်ပန်းစေမယ့်အစား ပိုကောင်းသလို ခံစားစေတဲ့ ရိုးရှင်းကျန်းမာတဲ့ လှုပ်ရှားမှုတွေမှာ ပျော်ရွှင်မှုကို ရှာပါ။"
       },
       "advice": "ဒီနေ့ ကျေးဇူးတင်စရာ သုံးခုကို အမည်တပ်ပြီး တစ်ခုကို ဖြည်းဖြည်း ခံစားပါ။",
+      "adviceReversed": "ဒီနေ့ ပိုရဖို့ထက် ရိုးရိုးရှင်းရှင်း အရာတစ်ခုမှာ ကျေနပ်မှု ရှာကြည့်ပါ။",
       "suit": "ခွက်",
       "element": "ရေ",
       "astrology": "မိန်ရာသီရှိ ကြာသပတေးဂြိုဟ်"
@@ -3274,6 +3364,7 @@
         "reversed": "Reversed, tension at home may be affecting your wellbeing. Create small moments of peace for yourself, and seek supportive connections where you feel accepted and understood."
       },
       "advice": "Spend quality time today with someone who feels like home to you.",
+      "adviceReversed": "Be patient with the people you love today, and be honest about your needs.",
       "suit": "Cups",
       "element": "Water",
       "astrology": "Mars in Pisces"
@@ -3306,6 +3397,7 @@
         "reversed": "ပြောင်းပြန်ဆိုရင် အိမ်မှာ တင်းမာမှုက ကျန်းမာရေးကို ထိခိုက်နေနိုင်ပါတယ်။ ကိုယ့်အတွက် ငြိမ်းချမ်းတဲ့ အခိုက်အတန့်လေးတွေ ဖန်တီးပြီး လက်ခံခံရ၊ နားလည်ခံရတဲ့ ထောက်ကူပေးတဲ့ ဆက်နွယ်မှုတွေကို ရှာပါ။"
       },
       "advice": "ဒီနေ့ ကိုယ့်အတွက် အိမ်လို ခံစားရစေတဲ့ သူတစ်ယောက်နဲ့ အရည်အသွေးရှိ အချိန်ဖြုန်းပါ။",
+      "adviceReversed": "ဒီနေ့ ချစ်သူတွေကို စိတ်ရှည်ပြီး ကိုယ့်လိုအပ်ချက်ကို ရိုးသားစွာ ပြောပါ။",
       "suit": "ခွက်",
       "element": "ရေ",
       "astrology": "မိန်ရာသီရှိ အင်္ဂါဂြိုဟ်"
@@ -3346,6 +3438,7 @@
         "reversed": "Reversed, suppressed feelings may affect your mood. Allow yourself to express emotions safely. Talking with a trusted friend or doing a creative activity can bring relief."
       },
       "advice": "Express a feeling today through something creative, however small.",
+      "adviceReversed": "Share one feeling today in plain words, even if it seems small.",
       "suit": "Cups",
       "element": "Water",
       "astrology": "Earth of Water"
@@ -3378,6 +3471,7 @@
         "reversed": "ပြောင်းပြန်ဆိုရင် ဖိနှိပ်ထားတဲ့ ခံစားချက်တွေက စိတ်အခြေအနေကို ထိခိုက်နိုင်ပါတယ်။ ခံစားချက်တွေကို လုံခြုံစွာ ထုတ်ဖော်ခွင့်ပေးပါ။ ယုံကြည်ရတဲ့ မိတ်ဆွေနဲ့ စကားပြောတာ ဒါမှမဟုတ် ဖန်တီးမှု လှုပ်ရှားမှုလုပ်တာက သက်သာမှု ပေးနိုင်ပါတယ်။"
       },
       "advice": "ဒီနေ့ ခံစားချက်တစ်ခုကို ဘယ်လောက်သေးသေး ဖန်တီးမှုတစ်ခုခုနဲ့ ထုတ်ဖော်ပါ။",
+      "adviceReversed": "ဒီနေ့ ခံစားချက်တစ်ခုကို သေးသေးလေးဖြစ်နေရင်တောင် ရိုးရိုးစကားလုံးနဲ့ ပြောပြပါ။",
       "suit": "ခွက်",
       "element": "ရေ",
       "astrology": "ရေဓာတ်ထဲမှ မြေဓာတ်"
@@ -3418,6 +3512,7 @@
         "reversed": "Reversed, mood swings or emotional overwhelm may affect your wellbeing. Ground yourself with steady routines, rest and supportive people. Gentle consistency helps balance your emotions."
       },
       "advice": "Follow your heart today, and let honesty walk beside it.",
+      "adviceReversed": "Let your heart and your actions match today, and promise only what you can keep.",
       "suit": "Cups",
       "element": "Water",
       "astrology": "Air of Water"
@@ -3450,6 +3545,7 @@
         "reversed": "ပြောင်းပြန်ဆိုရင် စိတ်အပြောင်းအလဲ ဒါမှမဟုတ် စိတ်ခံစားမှု လွှမ်းမိုးခံရမှုက ကျန်းမာရေးကို ထိခိုက်နိုင်ပါတယ်။ တည်ငြိမ်တဲ့ နေ့စဉ်လုပ်ငန်း၊ အနားယူမှုနဲ့ ထောက်ကူပေးတဲ့ လူတွေနဲ့ ကိုယ့်ကိုယ်ကို တည်ငြိမ်အောင် ထားပါ။ ညင်သာတဲ့ ပုံမှန်မှုက ခံစားချက်တွေကို မျှတစေပါတယ်။"
       },
       "advice": "ဒီနေ့ နှလုံးသားကို လိုက်ပါ၊ ရိုးသားမှုကိုလည်း ဘေးမှာ လိုက်ပါစေ။",
+      "adviceReversed": "ဒီနေ့ နှလုံးသားနဲ့ လုပ်ရပ်ကို ကိုက်ညီစေပြီး တည်နိုင်တဲ့ ကတိကိုသာ ပေးပါ။",
       "suit": "ခွက်",
       "element": "ရေ",
       "astrology": "ရေဓာတ်ထဲမှ လေဓာတ်"
@@ -3490,6 +3586,7 @@
         "reversed": "Reversed, emotional overload may be affecting your wellbeing. Rest, protect your boundaries and seek support. Talking with someone you trust can help lighten what you are carrying."
       },
       "advice": "Listen with compassion today, including to your own heart.",
+      "adviceReversed": "Set one gentle boundary today so that your kindness does not drain you.",
       "suit": "Cups",
       "element": "Water",
       "astrology": "Water of Water"
@@ -3522,6 +3619,7 @@
         "reversed": "ပြောင်းပြန်ဆိုရင် စိတ်ခံစားမှု ဝန်ပိလွန်းတာက ကျန်းမာရေးကို ထိခိုက်နေနိုင်ပါတယ်။ အနားယူပါ၊ နယ်နိမိတ်တွေကို ကာကွယ်ပါ၊ အကူအညီ ရှာပါ။ ယုံကြည်ရသူနဲ့ စကားပြောတာက ထမ်းထားရတာကို ပေါ့ပါးစေနိုင်ပါတယ်။"
       },
       "advice": "ဒီနေ့ ကရုဏာနဲ့ နားထောင်ပါ၊ ကိုယ့်နှလုံးသားကိုလည်း ထည့်တွက်ပါ။",
+      "adviceReversed": "ဒီနေ့ ကိုယ့်ကြင်နာမှုက ကိုယ့်ကို မမောစေဖို့ ညင်သာတဲ့ နယ်နိမိတ်တစ်ခု သတ်မှတ်ပါ။",
       "suit": "ခွက်",
       "element": "ရေ",
       "astrology": "ရေဓာတ်ထဲမှ ရေဓာတ်"
@@ -3562,6 +3660,7 @@
         "reversed": "Reversed, suppressed emotions may be affecting your body and mind. Allow yourself to feel and express. Talking with someone you trust or a professional can provide relief and clarity."
       },
       "advice": "Respond to today's feelings with calm wisdom rather than quick reaction.",
+      "adviceReversed": "Take a quiet moment today before reacting, and let your feelings settle.",
       "suit": "Cups",
       "element": "Water",
       "astrology": "Fire of Water"
@@ -3594,6 +3693,7 @@
         "reversed": "ပြောင်းပြန်ဆိုရင် ဖိနှိပ်ထားတဲ့ ခံစားချက်တွေက ခန္ဓာကိုယ်နဲ့ စိတ်ကို ထိခိုက်နေနိုင်ပါတယ်။ ခံစားခွင့်နဲ့ ထုတ်ဖော်ခွင့် ပေးပါ။ ယုံကြည်ရသူ ဒါမှမဟုတ် ကျွမ်းကျင်သူနဲ့ စကားပြောတာက သက်သာမှုနဲ့ ရှင်းလင်းမှု ပေးနိုင်ပါတယ်။"
       },
       "advice": "ဒီနေ့ ခံစားချက်တွေကို အလျင်အမြန် တုံ့ပြန်မယ့်အစား တည်ငြိမ်တဲ့ ပညာနဲ့ တုံ့ပြန်ပါ။",
+      "adviceReversed": "ဒီနေ့ တုံ့ပြန်ခင် တိတ်ဆိတ်တဲ့ အချိန်ခဏယူပြီး ခံစားချက်တွေ ငြိမ်သွားစေပါ။",
       "suit": "ခွက်",
       "element": "ရေ",
       "astrology": "ရေဓာတ်ထဲမှ မီးဓာတ်"
@@ -3634,6 +3734,7 @@
         "reversed": "Reversed, an overactive mind may be causing stress. Practise calming activities like deep breathing or walking. Writing down worries can help you see them more clearly and gently."
       },
       "advice": "Speak your truth clearly and kindly today.",
+      "adviceReversed": "Check the facts today before you speak, then say what is true gently.",
       "suit": "Swords",
       "element": "Air",
       "astrology": "Root of Air"
@@ -3666,6 +3767,7 @@
         "reversed": "ပြောင်းပြန်ဆိုရင် အလွန်အကျွံ တွေးနေတဲ့ စိတ်က စိတ်ဖိစီးမှု ဖြစ်စေနိုင်ပါတယ်။ အသက်ကို ဖြည်းဖြည်း ရှူတာ ဒါမှမဟုတ် လမ်းလျှောက်တာလို စိတ်အေးစေတဲ့ လှုပ်ရှားမှုတွေ လေ့ကျင့်ပါ။ စိုးရိမ်မှုတွေကို ချရေးတာက ပိုရှင်းရှင်းလင်းလင်း၊ ပိုညင်ညင်သာသာ မြင်စေနိုင်ပါတယ်။"
       },
       "advice": "ဒီနေ့ ကိုယ့်အမှန်တရားကို ရှင်းရှင်းလင်းလင်း၊ ကြင်ကြင်နာနာ ပြောပါ။",
+      "adviceReversed": "ဒီနေ့ မပြောခင် အချက်အလက်တွေကို စစ်ပြီး မှန်တာကို ညင်သာစွာ ပြောပါ။",
       "suit": "ဓား",
       "element": "လေ",
       "astrology": "လေဓာတ်၏ အရင်းအမြစ်"
@@ -3706,6 +3808,7 @@
         "reversed": "Reversed, stress from avoiding decisions may be affecting you. Make one small choice to ease the pressure. Talking things through with someone you trust can lighten your mind."
       },
       "advice": "Take a gentle look at the choice you have been avoiding today.",
+      "adviceReversed": "Make one small decision today instead of waiting for certainty.",
       "suit": "Swords",
       "element": "Air",
       "astrology": "The Moon in Libra"
@@ -3738,6 +3841,7 @@
         "reversed": "ပြောင်းပြန်ဆိုရင် ဆုံးဖြတ်ချက်တွေ ရှောင်နေတဲ့ စိတ်ဖိစီးမှုက ထိခိုက်နေနိုင်ပါတယ်။ ဖိအားလျော့ဖို့ ရွေးချယ်မှုလေးတစ်ခု လုပ်ပါ။ ယုံကြည်ရသူနဲ့ ဆွေးနွေးတာက စိတ်ကို ပေါ့ပါးစေနိုင်ပါတယ်။"
       },
       "advice": "ဒီနေ့ ရှောင်နေခဲ့တဲ့ ရွေးချယ်မှုကို ညင်ညင်သာသာ ကြည့်ကြည့်ပါ။",
+      "adviceReversed": "ဒီနေ့ သေချာမှုကို မစောင့်ဘဲ ဆုံးဖြတ်ချက်သေးသေးတစ်ခု ချပါ။",
       "suit": "ဓား",
       "element": "လေ",
       "astrology": "တူရာသီရှိ လ"
@@ -3778,6 +3882,7 @@
         "reversed": "Reversed, emotional healing is underway. Keep caring for yourself kindly. Gentle routines, supportive company and patience can help your heart feel lighter day by day."
       },
       "advice": "Be gentle with whatever hurts today, and let someone you trust help.",
+      "adviceReversed": "Let yourself heal slowly today, and talk to someone who listens kindly.",
       "suit": "Swords",
       "element": "Air",
       "astrology": "Saturn in Libra"
@@ -3810,6 +3915,7 @@
         "reversed": "ပြောင်းပြန်ဆိုရင် စိတ်ခံစားမှုဆိုင်ရာ ကုစားမှု ဖြစ်ပေါ်နေပါပြီ။ ကိုယ့်ကိုယ်ကို ကြင်ကြင်နာနာ ဆက်ဂရုစိုက်ပါ။ ညင်သာတဲ့ နေ့စဉ်လုပ်ငန်း၊ ထောက်ကူပေးတဲ့ အဖော်နဲ့ စိတ်ရှည်မှုက နှလုံးသားကို တစ်နေ့ထက်တစ်နေ့ ပေါ့ပါးစေနိုင်ပါတယ်။"
       },
       "advice": "ဒီနေ့ နာကျင်တဲ့ အရာအပေါ် ညင်သာပြီး ယုံကြည်ရသူတစ်ယောက်ကို ကူညီခွင့်ပေးပါ။",
+      "adviceReversed": "ဒီနေ့ ဖြည်းဖြည်းချင်း ပြန်လည်ကောင်းမွန်ခွင့်ပေးပြီး ကြင်နာစွာ နားထောင်တဲ့သူနဲ့ ပြောပါ။",
       "suit": "ဓား",
       "element": "လေ",
       "astrology": "တူရာသီရှိ စနေဂြိုဟ်"
@@ -3850,6 +3956,7 @@
         "reversed": "Reversed, restlessness or poor sleep may be affecting you. Create calming bedtime routines and reduce stimulation. If exhaustion persists, consider speaking with a health professional."
       },
       "advice": "Give yourself permission to rest today without guilt.",
+      "adviceReversed": "Rest properly today, and let your mind be quiet before you return to your tasks.",
       "suit": "Swords",
       "element": "Air",
       "astrology": "Jupiter in Libra"
@@ -3882,6 +3989,7 @@
         "reversed": "ပြောင်းပြန်ဆိုရင် မငြိမ်မသက်မှု ဒါမှမဟုတ် အိပ်မပျော်မှုက ထိခိုက်နေနိုင်ပါတယ်။ စိတ်အေးစေတဲ့ အိပ်ရာဝင် အလေ့အထတွေ ဖန်တီးပြီး လှုံ့ဆော်မှုတွေကို လျှော့ပါ။ ပင်ပန်းမှု ဆက်ရှိနေရင် ကျန်းမာရေး ကျွမ်းကျင်သူနဲ့ ပြောဖို့ စဉ်းစားပါ။"
       },
       "advice": "ဒီနေ့ အပြစ်ရှိသလို မခံစားဘဲ အနားယူခွင့်ကို ကိုယ့်ကိုယ်ကို ပေးပါ။",
+      "adviceReversed": "ဒီနေ့ သေချာအနားယူပြီး အလုပ်တွေဆီ မပြန်ခင် စိတ်ကို ငြိမ်စေပါ။",
       "suit": "ဓား",
       "element": "လေ",
       "astrology": "တူရာသီရှိ ကြာသပတေးဂြိုဟ်"
@@ -3922,6 +4030,7 @@
         "reversed": "Reversed, releasing resentment can lighten your mind and body. Forgiveness, for yourself and others, may bring peace. Gentle reflection and support can help you let go."
       },
       "advice": "Ask yourself today whether being right is worth more than being at peace.",
+      "adviceReversed": "Choose peace over a point today, and walk away from one needless argument.",
       "suit": "Swords",
       "element": "Air",
       "astrology": "Venus in Aquarius"
@@ -3954,6 +4063,7 @@
         "reversed": "ပြောင်းပြန်ဆိုရင် နာကျည်းမှုကို လွှတ်ချတာက စိတ်နဲ့ ခန္ဓာကိုယ်ကို ပေါ့ပါးစေနိုင်ပါတယ်။ ကိုယ့်ကိုယ်ကိုရော တခြားသူကိုပါ ခွင့်လွှတ်တာက ငြိမ်းချမ်းမှု ယူဆောင်လာနိုင်ပါတယ်။ ညင်သာတဲ့ ဆင်ခြင်မှုနဲ့ အကူအညီက လွှတ်ချနိုင်အောင် ကူညီပါတယ်။"
       },
       "advice": "ဒီနေ့ မှန်နေတာက ငြိမ်းချမ်းနေတာထက် ပိုတန်ဖိုးရှိလား ကိုယ့်ကိုယ်ကို မေးကြည့်ပါ။",
+      "adviceReversed": "ဒီနေ့ အချက်တစ်ချက်ထက် ငြိမ်းချမ်းမှုကို ရွေးပြီး မလိုအပ်တဲ့ အငြင်းပွားမှုတစ်ခုကနေ ထွက်ပါ။",
       "suit": "ဓား",
       "element": "လေ",
       "astrology": "ကုံရာသီရှိ သောကြာဂြိုဟ်"
@@ -3994,6 +4104,7 @@
         "reversed": "Reversed, emotional baggage may be slowing recovery. Release what you can with kindness. Support from others and gentle routines can help you move toward calmer waters."
       },
       "advice": "Take one small step toward calmer waters today.",
+      "adviceReversed": "Be patient with a slow journey today, and trust that calmer days are coming.",
       "suit": "Swords",
       "element": "Air",
       "astrology": "Mercury in Aquarius"
@@ -4026,6 +4137,7 @@
         "reversed": "ပြောင်းပြန်ဆိုရင် စိတ်ခံစားမှု ဝန်ထုပ်ဝန်ပိုးက ပြန်လည်ကောင်းမွန်မှုကို နှေးစေနိုင်ပါတယ်။ တတ်နိုင်တာကို ကြင်နာစွာ လွှတ်ချပါ။ တခြားသူတွေရဲ့ အကူအညီနဲ့ ညင်သာတဲ့ နေ့စဉ်လုပ်ငန်းတွေက ပိုတည်ငြိမ်တဲ့ ရေပြင်ဆီ ရွေ့စေနိုင်ပါတယ်။"
       },
       "advice": "ဒီနေ့ ပိုတည်ငြိမ်တဲ့ ရေပြင်ဆီ ခြေလှမ်းလေးတစ်လှမ်း လှမ်းပါ။",
+      "adviceReversed": "ဒီနေ့ နှေးတဲ့ခရီးမှာ စိတ်ရှည်ပြီး ပိုတည်ငြိမ်တဲ့ ရက်တွေ လာမယ်လို့ ယုံကြည်ပါ။",
       "suit": "ဓား",
       "element": "လေ",
       "astrology": "ကုံရာသီရှိ ဗုဒ္ဓဟူးဂြိုဟ်"
@@ -4066,6 +4178,7 @@
         "reversed": "Reversed, releasing secrets or burdens may bring relief. Talking with someone you trust can lighten your mind. Openness, offered at your own pace, often supports emotional and physical wellbeing."
       },
       "advice": "Choose the honest path today, even if it feels less convenient.",
+      "adviceReversed": "Be honest with yourself today about one thing you have been avoiding.",
       "suit": "Swords",
       "element": "Air",
       "astrology": "The Moon in Aquarius"
@@ -4098,6 +4211,7 @@
         "reversed": "ပြောင်းပြန်ဆိုရင် လျှို့ဝှက်ချက်တွေ ဒါမှမဟုတ် ဝန်တွေကို လွှတ်ချတာက သက်သာမှု ယူဆောင်လာနိုင်ပါတယ်။ ယုံကြည်ရသူနဲ့ စကားပြောတာက စိတ်ကို ပေါ့ပါးစေနိုင်ပါတယ်။ ပွင့်လင်းမှုက စိတ်ပိုင်းရော ရုပ်ပိုင်းရော ကျန်းမာရေးကို ထောက်ကူတတ်ပါတယ်။"
       },
       "advice": "ဒီနေ့ အဆင်ပြေမှု နည်းသလို ခံစားရရင်တောင် ရိုးသားတဲ့ လမ်းကို ရွေးပါ။",
+      "adviceReversed": "ဒီနေ့ ရှောင်နေခဲ့တဲ့ အရာတစ်ခုအကြောင်း ကိုယ့်ကိုယ်ကို ရိုးသားစွာ ဝန်ခံပါ။",
       "suit": "ဓား",
       "element": "လေ",
       "astrology": "ကုံရာသီရှိ လ"
@@ -4138,6 +4252,7 @@
         "reversed": "Reversed, you may be releasing anxiety and feeling lighter. Continue supportive habits that calm your mind. If fear returns, remember the progress you have already made."
       },
       "advice": "Question one fear today and look for a small way through it.",
+      "adviceReversed": "Remember today that the door is more open than it feels, and take one step.",
       "suit": "Swords",
       "element": "Air",
       "astrology": "Jupiter in Gemini"
@@ -4170,6 +4285,7 @@
         "reversed": "ပြောင်းပြန်ဆိုရင် စိုးရိမ်ပူပန်မှုကို လွှတ်ချပြီး ပိုပေါ့ပါးလာနိုင်ပါတယ်။ စိတ်ကို အေးစေတဲ့ ထောက်ကူမှုရှိ အလေ့အကျင့်တွေကို ဆက်လုပ်ပါ။ ကြောက်စိတ် ပြန်လာရင် ရရှိပြီးသား တိုးတက်မှုကို သတိရပါ။"
       },
       "advice": "ဒီနေ့ ကြောက်စိတ်တစ်ခုကို မေးခွန်းထုတ်ပြီး ဖြတ်ကျော်ဖို့ နည်းလမ်းလေးတစ်ခု ရှာပါ။",
+      "adviceReversed": "ဒီနေ့ တံခါးက ခံစားရတာထက် ပိုပွင့်နေတယ်ဆိုတာ သတိရပြီး ခြေလှမ်းတစ်လှမ်း လှမ်းပါ။",
       "suit": "ဓား",
       "element": "လေ",
       "astrology": "မေထုန်ရာသီရှိ ကြာသပတေးဂြိုဟ်"
@@ -4210,6 +4326,7 @@
         "reversed": "Reversed, sleep and peace of mind may be improving. Keep up habits that soothe you, such as gentle evening routines, limited screens and talking through your feelings."
       },
       "advice": "Share one worry with someone you trust today; it may feel lighter once spoken.",
+      "adviceReversed": "Put your worries on paper today so they stop circling in your mind.",
       "suit": "Swords",
       "element": "Air",
       "astrology": "Mars in Gemini"
@@ -4242,6 +4359,7 @@
         "reversed": "ပြောင်းပြန်ဆိုရင် အိပ်စက်မှုနဲ့ စိတ်အေးချမ်းမှု တိုးတက်လာနိုင်ပါတယ်။ ညင်သာတဲ့ ညနေခင်း အလေ့အထ၊ ဖုန်းကြည့်ချိန် ကန့်သတ်တာနဲ့ ခံစားချက်တွေကို ပြောပြတာလို စိတ်အေးစေတဲ့ အလေ့အကျင့်တွေကို ဆက်ထိန်းပါ။"
       },
       "advice": "ဒီနေ့ စိုးရိမ်မှုတစ်ခုကို ယုံကြည်ရသူနဲ့ မျှဝေပါ၊ ပြောလိုက်ရင် ပေါ့ပါးသွားနိုင်ပါတယ်။",
+      "adviceReversed": "ဒီနေ့ စိတ်ထဲမှာ လည်နေတဲ့ စိုးရိမ်မှုတွေ ရပ်သွားအောင် စာရွက်ပေါ် ချရေးပါ။",
       "suit": "ဓား",
       "element": "လေ",
       "astrology": "မေထုန်ရာသီရှိ အင်္ဂါဂြိုဟ်"
@@ -4282,6 +4400,7 @@
         "reversed": "Reversed, energy and hope may be slowly returning. Continue gentle self-care and celebrate small improvements. Healing is a process, and you are already moving forward."
       },
       "advice": "Let today be a gentle new beginning after whatever has ended.",
+      "adviceReversed": "Let the worst be over today, and take one gentle step toward recovery.",
       "suit": "Swords",
       "element": "Air",
       "astrology": "The Sun in Gemini"
@@ -4314,6 +4433,7 @@
         "reversed": "ပြောင်းပြန်ဆိုရင် စွမ်းအင်နဲ့ မျှော်လင့်ချက် ဖြည်းဖြည်း ပြန်ရောက်လာနိုင်ပါတယ်။ ညင်သာတဲ့ ကိုယ့်ကိုယ်ကို ဂရုစိုက်မှုကို ဆက်လုပ်ပြီး တိုးတက်မှုလေးတွေကို ဂုဏ်ပြုပါ။ ကုစားမှုက ဖြစ်စဉ်တစ်ခုဖြစ်ပြီး သင် ရှေ့ကို ရွေ့နေပါပြီ။"
       },
       "advice": "ဒီနေ့ ပြီးဆုံးသွားတာ ဘာပဲဖြစ်ဖြစ် နောက်မှာ ညင်သာတဲ့ အစသစ်တစ်ခု ဖြစ်ပါစေ။",
+      "adviceReversed": "ဒီနေ့ အဆိုးဆုံးကို ကျော်လွန်ပြီးပြီလို့ သဘောထားပြီး ပြန်လည်ကောင်းမွန်ဖို့ ညင်သာတဲ့ ခြေလှမ်းတစ်လှမ်း လှမ်းပါ။",
       "suit": "ဓား",
       "element": "လေ",
       "astrology": "မေထုန်ရာသီရှိ နေ"
@@ -4354,6 +4474,7 @@
         "reversed": "Reversed, an overactive mind may affect rest. Practise calming activities and limit information overload. Gentle breathing or quiet walks can help settle restless, racing thoughts."
       },
       "advice": "Ask a curious question today, and listen carefully to the answer.",
+      "adviceReversed": "Check what you have heard today before passing it on or acting on it.",
       "suit": "Swords",
       "element": "Air",
       "astrology": "Earth of Air"
@@ -4386,6 +4507,7 @@
         "reversed": "ပြောင်းပြန်ဆိုရင် အလွန်အကျွံ လှုပ်ရှားနေတဲ့ စိတ်က အနားယူမှုကို ထိခိုက်နိုင်ပါတယ်။ စိတ်အေးစေတဲ့ လှုပ်ရှားမှုတွေ လေ့ကျင့်ပြီး အချက်အလက် ဝန်ပိလွန်းတာကို ကန့်သတ်ပါ။ ညင်သာစွာ အသက်ရှူတာ ဒါမှမဟုတ် တိတ်ဆိတ်စွာ လမ်းလျှောက်တာက မငြိမ်တဲ့ အတွေးတွေကို ငြိမ်စေနိုင်ပါတယ်။"
       },
       "advice": "ဒီနေ့ စူးစမ်းတဲ့ မေးခွန်းတစ်ခု မေးပြီး အဖြေကို ဂရုတစိုက် နားထောင်ပါ။",
+      "adviceReversed": "ဒီနေ့ ကြားထားတာကို ပြန်မပြောခင် ဒါမှမဟုတ် မလုပ်ခင် အမှန်ဟုတ်မဟုတ် စစ်ပါ။",
       "suit": "ဓား",
       "element": "လေ",
       "astrology": "လေဓာတ်ထဲမှ မြေဓာတ်"
@@ -4426,6 +4548,7 @@
         "reversed": "Reversed, rushing may lead to stress or strain. Pace yourself and allow time for recovery. Calm, steady routines can help you maintain energy without exhausting yourself."
       },
       "advice": "Move toward your goal with determination today, but stay kind along the way.",
+      "adviceReversed": "Slow down today and think before you speak, so that your words help.",
       "suit": "Swords",
       "element": "Air",
       "astrology": "Air of Air"
@@ -4458,6 +4581,7 @@
         "reversed": "ပြောင်းပြန်ဆိုရင် အလောတကြီး လုပ်တာက စိတ်ဖိစီးမှု ဒါမှမဟုတ် ပင်ပန်းမှု ဖြစ်စေနိုင်ပါတယ်။ ကိုယ့်အရှိန်ကို ထိန်းပြီး ပြန်ကောင်းဖို့ အချိန်ပေးပါ။ အေးဆေးတည်ငြိမ်တဲ့ နေ့စဉ်လုပ်ငန်းတွေက ကိုယ့်ကိုယ်ကို မပင်ပန်းစေဘဲ စွမ်းအင်ကို ထိန်းထားနိုင်စေပါတယ်။"
       },
       "advice": "ဒီနေ့ ဆုံးဖြတ်ချက်ခိုင်မာစွာ ပန်းတိုင်ဆီ ရွေ့ပါ၊ ဒါပေမဲ့ လမ်းတစ်လျှောက် ကြင်နာပါ။",
+      "adviceReversed": "ဒီနေ့ အရှိန်လျှော့ပြီး ကိုယ့်စကားက အကူအညီဖြစ်အောင် မပြောခင် စဉ်းစားပါ။",
       "suit": "ဓား",
       "element": "လေ",
       "astrology": "လေဓာတ်ထဲမှ လေဓာတ်"
@@ -4498,6 +4622,7 @@
         "reversed": "Reversed, being hard on yourself may affect your mood. Practise self-compassion. Release old resentments gently, and give yourself the understanding you would offer a friend."
       },
       "advice": "Speak honestly today, and let kindness shape how you say it.",
+      "adviceReversed": "Soften your words today without hiding the truth you need to say.",
       "suit": "Swords",
       "element": "Air",
       "astrology": "Water of Air"
@@ -4530,6 +4655,7 @@
         "reversed": "ပြောင်းပြန်ဆိုရင် ကိုယ့်ကိုယ်ကို တင်းကျပ်လွန်းတာက စိတ်အခြေအနေကို ထိခိုက်နိုင်ပါတယ်။ ကိုယ့်ကိုယ်ကို ကရုဏာထားတာကို လေ့ကျင့်ပါ။ နာကျည်းမှုဟောင်းတွေကို ညင်သာစွာ လွှတ်ချပြီး မိတ်ဆွေကို ပေးမယ့် နားလည်မှုကို ကိုယ့်ကိုယ်ကို ပေးပါ။"
       },
       "advice": "ဒီနေ့ ရိုးရိုးသားသား ပြောပါ၊ ဘယ်လိုပြောမလဲဆိုတာကို ကြင်နာမှုက ပုံဖော်ပါစေ။",
+      "adviceReversed": "ဒီနေ့ ပြောရမယ့် အမှန်တရားကို မဖုံးကွယ်ဘဲ ကိုယ့်စကားလုံးတွေကို ပျော့ပျောင်းစေပါ။",
       "suit": "ဓား",
       "element": "လေ",
       "astrology": "လေဓာတ်ထဲမှ ရေဓာတ်"
@@ -4570,6 +4696,7 @@
         "reversed": "Reversed, overthinking or ignoring emotional needs may affect wellbeing. Balance logic with gentle self-care. Allow yourself rest and emotional expression alongside your careful, rational plans."
       },
       "advice": "Make today's decision with clear thinking and a fair heart.",
+      "adviceReversed": "Listen to your heart as well as your head before you decide today.",
       "suit": "Swords",
       "element": "Air",
       "astrology": "Fire of Air"
@@ -4602,6 +4729,7 @@
         "reversed": "ပြောင်းပြန်ဆိုရင် အလွန်အကျွံ တွေးတာ ဒါမှမဟုတ် စိတ်ခံစားမှု လိုအပ်ချက်တွေကို လျစ်လျူရှုတာက ကျန်းမာရေးကို ထိခိုက်နိုင်ပါတယ်။ ယုတ္တိကို ကိုယ့်ကိုယ်ကို ဂရုစိုက်မှုနဲ့ မျှတပါ။ ဆင်ခြင်တုံတရားရှိတဲ့ အစီအစဉ်တွေနဲ့အတူ အနားယူခွင့်နဲ့ ခံစားချက် ထုတ်ဖော်ခွင့်ကို ကိုယ့်ကိုယ်ကို ပေးပါ။"
       },
       "advice": "ဒီနေ့ ဆုံးဖြတ်ချက်ကို ရှင်းလင်းတဲ့ တွေးခေါ်မှုနဲ့ မျှတတဲ့ နှလုံးသားနဲ့ ချပါ။",
+      "adviceReversed": "ဒီနေ့ မဆုံးဖြတ်ခင် ဦးနှောက်ကိုသာမက နှလုံးသားကိုပါ နားထောင်ပါ။",
       "suit": "ဓား",
       "element": "လေ",
       "astrology": "လေဓာတ်ထဲမှ မီးဓာတ်"
@@ -4642,6 +4770,7 @@
         "reversed": "Reversed, good intentions may not yet have become habits. Choose one simple routine and stick with it gently. Consistency matters more than perfection when you are building wellbeing."
       },
       "advice": "Plant one practical seed today for the future you want to grow.",
+      "adviceReversed": "Start with the practical basics today, and give a new plan some time.",
       "suit": "Pentacles",
       "element": "Earth",
       "astrology": "Root of Earth"
@@ -4674,6 +4803,7 @@
         "reversed": "ပြောင်းပြန်ဆိုရင် ကောင်းတဲ့ ရည်ရွယ်ချက်တွေက အလေ့အကျင့် မဖြစ်သေးတာ ဖြစ်နိုင်ပါတယ်။ ရိုးရှင်းတဲ့ နေ့စဉ်လုပ်ငန်းတစ်ခုကို ရွေးပြီး ညင်သာစွာ လိုက်နာပါ။ ကျန်းမာရေး တည်ဆောက်ရာမှာ ပြီးပြည့်စုံမှုထက် ပုံမှန်မှုက ပိုအရေးကြီးပါတယ်။"
       },
       "advice": "ဒီနေ့ ကြီးထွားစေချင်တဲ့ အနာဂတ်အတွက် လက်တွေ့ကျတဲ့ မျိုးစေ့တစ်စေ့ စိုက်ပါ။",
+      "adviceReversed": "ဒီနေ့ လက်တွေ့ကျတဲ့ အခြေခံကစပြီး အစီအစဉ်သစ်တစ်ခုကို အချိန်ပေးပါ။",
       "suit": "ဒင်္ဂါး",
       "element": "မြေ",
       "astrology": "မြေဓာတ်၏ အရင်းအမြစ်"
@@ -4714,6 +4844,7 @@
         "reversed": "Reversed, juggling too much may be draining you. Simplify your routine and protect rest time. Saying no to some demands can be a kind and necessary choice for your wellbeing."
       },
       "advice": "Choose your top priority today and let some smaller things wait.",
+      "adviceReversed": "Write down what you owe your time to today, and drop one extra thing.",
       "suit": "Pentacles",
       "element": "Earth",
       "astrology": "Jupiter in Capricorn"
@@ -4746,6 +4877,7 @@
         "reversed": "ပြောင်းပြန်ဆိုရင် အရမ်းများများ ကိုင်တွယ်နေရတာက အားကုန်စေနိုင်ပါတယ်။ နေ့စဉ်လုပ်ငန်းကို ရိုးရှင်းအောင် လုပ်ပြီး အနားယူချိန်ကို ကာကွယ်ပါ။ တောင်းဆိုမှု တချို့ကို ငြင်းတာက ကိုယ့်ကျန်းမာရေးအတွက် ကြင်နာပြီး လိုအပ်တဲ့ ရွေးချယ်မှု ဖြစ်နိုင်ပါတယ်။"
       },
       "advice": "ဒီနေ့ အရေးအကြီးဆုံး ဦးစားပေးကို ရွေးပြီး သေးငယ်တဲ့ ကိစ္စတချို့ကို စောင့်ခိုင်းပါ။",
+      "adviceReversed": "ဒီနေ့ ကိုယ့်အချိန်ကို ဘာတွေအတွက် ပေးရမလဲ ချရေးပြီး အပိုတစ်ခုကို ချန်ထားပါ။",
       "suit": "ဒင်္ဂါး",
       "element": "မြေ",
       "astrology": "မကာရရာသီရှိ ကြာသပတေးဂြိုဟ်"
@@ -4786,6 +4918,7 @@
         "reversed": "Reversed, a lack of support or inconsistent guidance may hold you back. Seek reliable advice and a community that encourages you. Steady practice builds both skill and confidence."
       },
       "advice": "Work with others today and appreciate the skills each person brings.",
+      "adviceReversed": "Share your plan with someone today and ask for honest, kind feedback.",
       "suit": "Pentacles",
       "element": "Earth",
       "astrology": "Mars in Capricorn"
@@ -4818,6 +4951,7 @@
         "reversed": "ပြောင်းပြန်ဆိုရင် အကူအညီ မရှိတာ ဒါမှမဟုတ် မတည်ငြိမ်တဲ့ လမ်းညွှန်မှုက နောက်ပြန်ဆွဲထားနိုင်ပါတယ်။ ယုံကြည်ရတဲ့ အကြံဉာဏ်နဲ့ အားပေးတဲ့ အသိုင်းအဝိုင်းကို ရှာပါ။ တည်ငြိမ်တဲ့ လေ့ကျင့်မှုက ကျွမ်းကျင်မှုရော ယုံကြည်မှုရော တည်ဆောက်ပေးပါတယ်။"
       },
       "advice": "ဒီနေ့ တခြားသူတွေနဲ့ အတူလုပ်ပြီး လူတစ်ယောက်ချင်းစီ ယူဆောင်လာတဲ့ ကျွမ်းကျင်မှုကို တန်ဖိုးထားပါ။",
+      "adviceReversed": "ဒီနေ့ ကိုယ့်အစီအစဉ်ကို တစ်ယောက်ယောက်ကို မျှဝေပြီး ရိုးသားကြင်နာတဲ့ အကြံပြုချက်တောင်းပါ။",
       "suit": "ဒင်္ဂါး",
       "element": "မြေ",
       "astrology": "မကာရရာသီရှိ အင်္ဂါဂြိုဟ်"
@@ -4858,6 +4992,7 @@
         "reversed": "Reversed, releasing control can bring relief. Let go of rigid routines that feel stressful, and find a flexible rhythm that supports both your body and your peace of mind."
       },
       "advice": "Loosen your grip a little today and notice what feels lighter.",
+      "adviceReversed": "Hold your resources a little more openly today, and share what you can.",
       "suit": "Pentacles",
       "element": "Earth",
       "astrology": "The Sun in Capricorn"
@@ -4890,6 +5025,7 @@
         "reversed": "ပြောင်းပြန်ဆိုရင် ထိန်းချုပ်မှုကို လွှတ်ချတာက သက်သာမှု ယူဆောင်လာနိုင်ပါတယ်။ စိတ်ဖိစီးစေတဲ့ တောင့်တင်းတဲ့ နေ့စဉ်လုပ်ငန်းတွေကို လွှတ်ချပြီး ခန္ဓာကိုယ်ရော စိတ်အေးချမ်းမှုကိုပါ ထောက်ကူတဲ့ ပြောင်းလွယ်ပြင်လွယ် စည်းချက်ကို ရှာပါ။"
       },
       "advice": "ဒီနေ့ ဆုပ်ကိုင်ထားတာကို နည်းနည်း ဖြေလျှော့ပြီး ဘာက ပေါ့ပါးလာလဲ သတိထားကြည့်ပါ။",
+      "adviceReversed": "ဒီနေ့ ကိုယ့်ပစ္စည်းဥစ္စာကို နည်းနည်းပိုပွင့်လင်းစွာ ကိုင်ပြီး မျှဝေနိုင်တာ မျှဝေပါ။",
       "suit": "ဒင်္ဂါး",
       "element": "မြေ",
       "astrology": "မကာရရာသီရှိ နေ"
@@ -4930,6 +5066,7 @@
         "reversed": "Reversed, energy and hope may be returning. Continue caring for yourself and accepting support. Gentle routines and connection with others can help your recovery continue steadily."
       },
       "advice": "Reach out for support today; you do not have to face hard times alone.",
+      "adviceReversed": "Take one small step toward help today, even if asking feels hard.",
       "suit": "Pentacles",
       "element": "Earth",
       "astrology": "Mercury in Taurus"
@@ -4962,6 +5099,7 @@
         "reversed": "ပြောင်းပြန်ဆိုရင် စွမ်းအင်နဲ့ မျှော်လင့်ချက် ပြန်ရောက်လာနိုင်ပါတယ်။ ကိုယ့်ကိုယ်ကို ဆက်ဂရုစိုက်ပြီး အကူအညီကို လက်ခံပါ။ ညင်သာတဲ့ နေ့စဉ်လုပ်ငန်းတွေနဲ့ တခြားသူတွေနဲ့ ဆက်နွယ်မှုက ပြန်လည်ကောင်းမွန်မှုကို တည်ငြိမ်စွာ ဆက်ဖြစ်စေနိုင်ပါတယ်။"
       },
       "advice": "ဒီနေ့ အကူအညီ ရှာပါ၊ ခက်ခဲတဲ့ အချိန်တွေကို တစ်ယောက်တည်း ရင်ဆိုင်ဖို့ မလိုပါဘူး။",
+      "adviceReversed": "မေးရတာ ခက်သလို ခံစားရရင်တောင် ဒီနေ့ အကူအညီဆီ ခြေလှမ်းသေးသေးတစ်လှမ်း လှမ်းပါ။",
       "suit": "ဒင်္ဂါး",
       "element": "မြေ",
       "astrology": "ပြိဿရာသီရှိ ဗုဒ္ဓဟူးဂြိုဟ်"
@@ -5002,6 +5140,7 @@
         "reversed": "Reversed, giving too much may be draining your energy. Set kind boundaries and allow others to support you. Self-care is part of keeping your generosity healthy and lasting."
       },
       "advice": "Give something kind today, and allow yourself to receive kindness too.",
+      "adviceReversed": "Keep giving and receiving fair today, and agree the terms clearly.",
       "suit": "Pentacles",
       "element": "Earth",
       "astrology": "The Moon in Taurus"
@@ -5034,6 +5173,7 @@
         "reversed": "ပြောင်းပြန်ဆိုရင် အရမ်းပေးလွန်းတာက စွမ်းအင်ကို ကုန်စေနိုင်ပါတယ်။ ကြင်နာတဲ့ နယ်နိမိတ်တွေ သတ်မှတ်ပြီး တခြားသူတွေကို ထောက်ကူခွင့်ပေးပါ။ ကိုယ့်ကိုယ်ကို ဂရုစိုက်တာက ကိုယ့်ရက်ရောမှုကို ကျန်းမာပြီး ကြာရှည်ခံအောင် ထိန်းတဲ့ အစိတ်အပိုင်းပါ။"
       },
       "advice": "ဒီနေ့ ကြင်နာတဲ့ တစ်ခုခုကို ပေးပါ၊ ကြင်နာမှုကို လက်ခံခွင့်လည်း ကိုယ့်ကိုယ်ကို ပေးပါ။",
+      "adviceReversed": "ဒီနေ့ ပေးတာနဲ့ ယူတာကို မျှတစေပြီး စည်းကမ်းချက်တွေကို ရှင်းရှင်းလင်းလင်း သဘောတူပါ။",
       "suit": "ဒင်္ဂါး",
       "element": "မြေ",
       "astrology": "ပြိဿရာသီရှိ လ"
@@ -5074,6 +5214,7 @@
         "reversed": "Reversed, slow results may feel discouraging. Reassess your routine with kindness, and adjust what is not working. Rest and patience are part of growth, not signs of failure."
       },
       "advice": "Pause today to notice how much you have already grown.",
+      "adviceReversed": "Stop judging your progress too harshly today and check what you have done.",
       "suit": "Pentacles",
       "element": "Earth",
       "astrology": "Saturn in Taurus"
@@ -5106,6 +5247,7 @@
         "reversed": "ပြောင်းပြန်ဆိုရင် နှေးကွေးတဲ့ ရလဒ်တွေက စိတ်ဓာတ်ကျစေနိုင်ပါတယ်။ နေ့စဉ်လုပ်ငန်းကို ကြင်နာစွာ ပြန်သုံးသပ်ပြီး အလုပ်မဖြစ်တာကို ပြင်ပါ။ အနားယူမှုနဲ့ စိတ်ရှည်မှုက ကြီးထွားမှုရဲ့ အစိတ်အပိုင်းတွေဖြစ်ပြီး ရှုံးနိမ့်မှု လက္ခဏာ မဟုတ်ပါဘူး။"
       },
       "advice": "ဒီနေ့ ခဏရပ်ပြီး ကိုယ် ဘယ်လောက်ကြီးထွားလာပြီလဲ သတိထားကြည့်ပါ။",
+      "adviceReversed": "ဒီနေ့ ကိုယ့်တိုးတက်မှုကို တင်းကျပ်စွာ မဝေဖန်ဘဲ လုပ်ပြီးသားကို ပြန်ကြည့်ပါ။",
       "suit": "ဒင်္ဂါး",
       "element": "မြေ",
       "astrology": "ပြိဿရာသီရှိ စနေဂြိုဟ်"
@@ -5146,6 +5288,7 @@
         "reversed": "Reversed, overworking or neglecting self-care may be draining you. Balance effort with rest. Gentle routines and breaks can help you stay productive without exhausting yourself."
       },
       "advice": "Practise one skill with care today, and enjoy the progress you make.",
+      "adviceReversed": "Take pride in one detail today, and stop when good is good enough.",
       "suit": "Pentacles",
       "element": "Earth",
       "astrology": "The Sun in Virgo"
@@ -5178,6 +5321,7 @@
         "reversed": "ပြောင်းပြန်ဆိုရင် အလုပ်လွန်ကဲတာ ဒါမှမဟုတ် ကိုယ့်ကိုယ်ကို ဂရုမစိုက်တာက အားကုန်စေနိုင်ပါတယ်။ ကြိုးစားမှုကို အနားယူမှုနဲ့ မျှတပါ။ ညင်သာတဲ့ နေ့စဉ်လုပ်ငန်းနဲ့ ခဏနားချိန်တွေက ကိုယ့်ကိုယ်ကို မပင်ပန်းစေဘဲ ထုတ်လုပ်နိုင်စွမ်း ရှိနေစေပါတယ်။"
       },
       "advice": "ဒီနေ့ ကျွမ်းကျင်မှုတစ်ခုကို ဂရုတစိုက် လေ့ကျင့်ပြီး ရလာတဲ့ တိုးတက်မှုကို ခံစားပါ။",
+      "adviceReversed": "ဒီနေ့ အသေးစိတ်တစ်ခုကို ဂုဏ်ယူပြီး ကောင်းတာ လုံလောက်ပြီဆိုရင် ရပ်ပါ။",
       "suit": "ဒင်္ဂါး",
       "element": "မြေ",
       "astrology": "ကန်ရာသီရှိ နေ"
@@ -5218,6 +5362,7 @@
         "reversed": "Reversed, neglecting self-care or working too hard may be affecting your health. Slow down and pamper yourself a little. Rest and simple pleasures are important for your balance."
       },
       "advice": "Enjoy something today that your own effort has made possible.",
+      "adviceReversed": "Enjoy what you have today instead of measuring it against others.",
       "suit": "Pentacles",
       "element": "Earth",
       "astrology": "Venus in Virgo"
@@ -5250,6 +5395,7 @@
         "reversed": "ပြောင်းပြန်ဆိုရင် ကိုယ့်ကိုယ်ကို ဂရုမစိုက်တာ ဒါမှမဟုတ် အလုပ်အရမ်းလုပ်တာက ကျန်းမာရေးကို ထိခိုက်နေနိုင်ပါတယ်။ နှေးနှေးလေးနေပြီး ကိုယ့်ကိုယ်ကို နည်းနည်း အလိုလိုက်ပါ။ အနားယူမှုနဲ့ ရိုးရှင်းတဲ့ ပျော်စရာတွေက မျှတမှုအတွက် အရေးကြီးပါတယ်။"
       },
       "advice": "ဒီနေ့ ကိုယ့်ကြိုးစားမှုကြောင့် ဖြစ်လာတဲ့ တစ်ခုခုကို ခံစားပါ။",
+      "adviceReversed": "ဒီနေ့ တခြားသူတွေနဲ့ နှိုင်းယှဉ်မယ့်အစား ကိုယ့်မှာရှိတာကို ခံစားပါ။",
       "suit": "ဒင်္ဂါး",
       "element": "မြေ",
       "astrology": "ကန်ရာသီရှိ သောကြာဂြိုဟ်"
@@ -5290,6 +5436,7 @@
         "reversed": "Reversed, family stress may affect your wellbeing. Set healthy boundaries and seek support. Create new, nourishing traditions that help you feel connected, calm and cared for."
       },
       "advice": "Do something today that your future self or family will thank you for.",
+      "adviceReversed": "Have one honest, calm talk today about shared plans or family needs.",
       "suit": "Pentacles",
       "element": "Earth",
       "astrology": "Mercury in Virgo"
@@ -5322,6 +5469,7 @@
         "reversed": "ပြောင်းပြန်ဆိုရင် မိသားစု စိတ်ဖိစီးမှုက ကျန်းမာရေးကို ထိခိုက်နိုင်ပါတယ်။ ကျန်းမာတဲ့ နယ်နိမိတ်တွေ သတ်မှတ်ပြီး အကူအညီ ရှာပါ။ ဆက်နွယ်မှုရှိ၊ အေးချမ်းပြီး ဂရုစိုက်ခံရသလို ခံစားစေမယ့် အားဖြည့်ပေးတဲ့ ဓလေ့သစ်တွေ ဖန်တီးပါ။"
       },
       "advice": "ဒီနေ့ အနာဂတ်က ကိုယ့်ကိုယ်ကို ဒါမှမဟုတ် မိသားစုက ကျေးဇူးတင်မယ့် တစ်ခုခု လုပ်ပါ။",
+      "adviceReversed": "ဒီနေ့ မျှဝေအစီအစဉ်တွေ ဒါမှမဟုတ် မိသားစုလိုအပ်ချက်အကြောင်း ရိုးသားတည်ငြိမ်စွာ ပြောပါ။",
       "suit": "ဒင်္ဂါး",
       "element": "မြေ",
       "astrology": "ကန်ရာသီရှိ ဗုဒ္ဓဟူးဂြိုဟ်"
@@ -5362,6 +5510,7 @@
         "reversed": "Reversed, good intentions may not yet have become actions. Choose one simple habit and commit to it gently. Consistency will help you feel more grounded and energised over time."
       },
       "advice": "Learn one practical thing today that helps your future self.",
+      "adviceReversed": "Break one big goal into a tiny first task today and do it.",
       "suit": "Pentacles",
       "element": "Earth",
       "astrology": "Earth of Earth"
@@ -5394,6 +5543,7 @@
         "reversed": "ပြောင်းပြန်ဆိုရင် ကောင်းတဲ့ ရည်ရွယ်ချက်တွေက လုပ်ရပ် မဖြစ်သေးတာ ဖြစ်နိုင်ပါတယ်။ ရိုးရှင်းတဲ့ အလေ့အကျင့်တစ်ခု ရွေးပြီး ညင်သာစွာ ကတိပြုပါ။ ပုံမှန်မှုက အချိန်ကြာလာတာနဲ့ ပိုခိုင်မာပြီး ပိုတက်ကြွသလို ခံစားရစေပါလိမ့်မယ်။"
       },
       "advice": "ဒီနေ့ အနာဂတ်က ကိုယ့်ကိုယ်ကို ကူညီမယ့် လက်တွေ့ကျတဲ့ အရာတစ်ခု သင်ယူပါ။",
+      "adviceReversed": "ဒီနေ့ ပန်းတိုင်ကြီးတစ်ခုကို အလုပ်သေးသေးလေးတစ်ခုအဖြစ် ခွဲပြီး လုပ်ပါ။",
       "suit": "ဒင်္ဂါး",
       "element": "မြေ",
       "astrology": "မြေဓာတ်ထဲမှ မြေဓာတ်"
@@ -5434,6 +5584,7 @@
         "reversed": "Reversed, a stale routine may be affecting your motivation. Try a new activity or adjust your schedule. A fresh approach can help you maintain healthy habits more enjoyably."
       },
       "advice": "Keep one steady promise to yourself today, however small.",
+      "adviceReversed": "Vary your routine a little today if you feel stuck, then return to it.",
       "suit": "Pentacles",
       "element": "Earth",
       "astrology": "Air of Earth"
@@ -5466,6 +5617,7 @@
         "reversed": "ပြောင်းပြန်ဆိုရင် ပျင်းရိဖွယ် နေ့စဉ်လုပ်ငန်းက စိတ်အားကို ထိခိုက်နေနိုင်ပါတယ်။ လှုပ်ရှားမှုအသစ် စမ်းကြည့်ပါ ဒါမှမဟုတ် အချိန်ဇယားကို ညှိပါ။ ချဉ်းကပ်ပုံသစ်က ကျန်းမာတဲ့ အလေ့အကျင့်တွေကို ပိုပျော်ရွှင်စွာ ထိန်းထားနိုင်စေပါတယ်။"
       },
       "advice": "ဒီနေ့ ကိုယ့်ကိုယ်ကို ပေးထားတဲ့ ကတိတစ်ခုကို ဘယ်လောက်သေးသေး တည်တည်ငြိမ်ငြိမ် တည်ပါ။",
+      "adviceReversed": "ပိတ်မိနေသလို ခံစားရရင် ဒီနေ့ ပုံမှန်လုပ်ရိုးကို နည်းနည်းပြောင်းပြီး ပြန်လာပါ။",
       "suit": "ဒင်္ဂါး",
       "element": "မြေ",
       "astrology": "မြေဓာတ်ထဲမှ လေဓာတ်"
@@ -5506,6 +5658,7 @@
         "reversed": "Reversed, you may be neglecting self-care. Prioritise rest, healthy food and comfort. Asking for help with daily tasks can give you the space you need to recharge your energy."
       },
       "advice": "Nurture yourself with one practical act of care today.",
+      "adviceReversed": "Do one small thing for yourself today before you care for anyone else.",
       "suit": "Pentacles",
       "element": "Earth",
       "astrology": "Water of Earth"
@@ -5538,6 +5691,7 @@
         "reversed": "ပြောင်းပြန်ဆိုရင် ကိုယ့်ကိုယ်ကို ဂရုမစိုက်ဘဲ ဖြစ်နေနိုင်ပါတယ်။ အနားယူမှု၊ ကျန်းမာတဲ့ အစားအစာနဲ့ သက်တောင့်သက်သာမှုကို ဦးစားပေးပါ။ နေ့စဉ်အလုပ်တွေမှာ အကူအညီ တောင်းတာက စွမ်းအင်ပြန်ဖြည့်ဖို့ လိုအပ်တဲ့ နေရာကို ပေးနိုင်ပါတယ်။"
       },
       "advice": "ဒီနေ့ လက်တွေ့ကျတဲ့ ဂရုစိုက်မှု လုပ်ရပ်တစ်ခုနဲ့ ကိုယ့်ကိုယ်ကို ပြုစုပါ။",
+      "adviceReversed": "ဒီနေ့ တခြားသူကို မဂရုစိုက်ခင် ကိုယ့်အတွက် အရာသေးသေးတစ်ခု လုပ်ပါ။",
       "suit": "ဒင်္ဂါး",
       "element": "မြေ",
       "astrology": "မြေဓာတ်ထဲမှ ရေဓာတ်"
@@ -5578,6 +5732,7 @@
         "reversed": "Reversed, overwork or overindulgence may be affecting your health. Slow down and restore balance. Wellbeing is a form of wealth, so give your body and mind the care they deserve."
       },
       "advice": "Use what you have built today to support yourself and someone else.",
+      "adviceReversed": "Review how you use your resources today, and aim for steady rather than showy.",
       "suit": "Pentacles",
       "element": "Earth",
       "astrology": "Fire of Earth"
@@ -5610,6 +5765,7 @@
         "reversed": "ပြောင်းပြန်ဆိုရင် အလုပ်လွန်ကဲတာ ဒါမှမဟုတ် အလွန်အကျွံ ခံစားတာက ကျန်းမာရေးကို ထိခိုက်နေနိုင်ပါတယ်။ နှေးနှေးလေးနေပြီး မျှတမှုကို ပြန်ယူပါ။ ကျန်းမာရေးက ချမ်းသာမှုရဲ့ ပုံစံတစ်မျိုးဖြစ်လို့ ခန္ဓာကိုယ်နဲ့ စိတ်ကို ထိုက်တန်တဲ့ ဂရုစိုက်မှု ပေးပါ။"
       },
       "advice": "ဒီနေ့ ကိုယ်တည်ဆောက်ထားတာကို ကိုယ့်ကိုယ်ကိုရော တခြားသူတစ်ယောက်ကိုပါ ထောက်ကူဖို့ သုံးပါ။",
+      "adviceReversed": "ဒီနေ့ ကိုယ့်ပစ္စည်းဥစ္စာကို ဘယ်လိုသုံးလဲ ပြန်ကြည့်ပြီး ကြွားဝါမှုထက် တည်ငြိမ်မှုကို ရည်ရွယ်ပါ။",
       "suit": "ဒင်္ဂါး",
       "element": "မြေ",
       "astrology": "မြေဓာတ်ထဲမှ မီးဓာတ်"

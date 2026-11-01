@@ -21,11 +21,11 @@ export default function SignScreen() {
   const toast = useToast((s) => s.show);
   const birthSign = useSettings((s) => s.birthSign);
   const setBirthSign = useSettings((s) => s.setBirthSign);
-  const [viewing, setViewing] = useState<SignId>(birthSign ?? 'sunday');
+  const [viewing, setViewing] = useState<SignId | null>(birthSign);
   const [choosing, setChoosing] = useState(!birthSign);
-  const sign = getSign(viewing) ?? SIGNS[0]!;
-  const text = sign[lang];
-  const isMine = sign.id === birthSign;
+  // Nothing is shown as a result until a sign is chosen or picked from the explore list.
+  const sign = viewing ? getSign(viewing) : undefined;
+  const isMine = sign?.id === birthSign;
 
   const choose = (id: SignId) => {
     setBirthSign(id);
@@ -48,41 +48,58 @@ export default function SignScreen() {
         </Card>
       ) : null}
 
-      <Card testID="sign-detail">
-        <View style={styles.hero}>
-          <SignCompass
-            sign={sign.id}
-            size={96}
-            accessibilityLabel={t('sign.compassA11y', { direction: text.direction })}
-          />
-          <View style={styles.heroText}>
-            {isMine ? <Chip label={t('sign.yours')} selected /> : null}
-            <AppText variant="title" accessibilityRole="header" testID="sign-name">
-              {text.name}
-            </AppText>
-          </View>
-        </View>
-        <Fact label={t('sign.animal')} value={text.animal} />
-        <Fact label={t('sign.planet')} value={text.planet} />
-        <Fact label={t('sign.direction')} value={text.direction} />
-        <Fact label={t('sign.traits')} value={text.traits.join(lang === 'my' ? '၊ ' : ', ')} />
-      </Card>
+      {sign ? (
+        <>
+          <Card testID="sign-detail">
+            <View style={styles.hero}>
+              <SignCompass
+                sign={sign.id}
+                size={96}
+                accessibilityLabel={t('sign.compassA11y', { direction: sign[lang].direction })}
+              />
+              <View style={styles.heroText}>
+                {isMine ? <Chip label={t('sign.yours')} selected /> : null}
+                <AppText variant="title" accessibilityRole="header" testID="sign-name">
+                  {sign[lang].name}
+                </AppText>
+              </View>
+            </View>
+            <Fact label={t('sign.animal')} value={sign[lang].animal} />
+            <Fact label={t('sign.planet')} value={sign[lang].planet} />
+            <Fact label={t('sign.direction')} value={sign[lang].direction} />
+            <Fact
+              label={t('sign.traits')}
+              value={sign[lang].traits.join(lang === 'my' ? '၊ ' : ', ')}
+            />
+          </Card>
 
-      <Card>
-        <AppText variant="heading">{t('sign.todayMood')}</AppText>
-        <AppText testID="sign-mood">{dailyMood(sign, localDateKey(new Date()), lang)}</AppText>
-      </Card>
+          <Card>
+            <AppText variant="heading">{t('sign.todayMood')}</AppText>
+            <AppText testID="sign-mood">{dailyMood(sign, localDateKey(new Date()), lang)}</AppText>
+          </Card>
 
-      <Card>
-        <AppText variant="heading">{t('sign.personality')}</AppText>
-        <AppText>{text.personality}</AppText>
-      </Card>
+          <Card>
+            <AppText variant="heading">{t('sign.personality')}</AppText>
+            <AppText>{sign[lang].personality}</AppText>
+          </Card>
 
-      {!choosing && !isMine ? (
-        <Button label={t('sign.setMine')} onPress={() => choose(sign.id)} testID="sign-set-mine" />
+          {!choosing && !isMine ? (
+            <Button
+              label={t('sign.setMine')}
+              onPress={() => choose(sign.id)}
+              testID="sign-set-mine"
+            />
+          ) : null}
+        </>
       ) : null}
+
       {!choosing && birthSign ? (
-        <Button label={t('sign.change')} variant="ghost" onPress={() => setChoosing(true)} testID="sign-change" />
+        <Button
+          label={t('sign.change')}
+          variant="ghost"
+          onPress={() => setChoosing(true)}
+          testID="sign-change"
+        />
       ) : null}
 
       <View style={styles.explore}>
@@ -102,7 +119,12 @@ export default function SignScreen() {
         </View>
       </View>
 
-      <Button label={t('home.chartTitle')} variant="secondary" onPress={() => router.push('/birth-chart')} testID="sign-open-chart" />
+      <Button
+        label={t('home.chartTitle')}
+        variant="secondary"
+        onPress={() => router.push('/birth-chart')}
+        testID="sign-open-chart"
+      />
 
       <AppText variant="caption" tone="textMuted" center>
         {t('sign.disclaimer')}

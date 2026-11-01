@@ -113,7 +113,7 @@ export default function Daily() {
           </Card>
           <Card>
             <AppText variant="heading">{t('card.advice')}</AppText>
-            <AppText>{card[lang].advice}</AppText>
+            <AppText>{draw.reversed ? card[lang].adviceReversed : card[lang].advice}</AppText>
           </Card>
           <DailyRewards cardId={card.id} reversed={draw.reversed} />
 

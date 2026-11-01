@@ -189,6 +189,13 @@ describe('interpretation', () => {
     expect(lines[4]!.params!.advice).toBe(getCard('swords-04-four')!.en.advice);
   });
 
+  it('ends with the reversed advice when the last card is reversed', () => {
+    const lines = summarize([{ cardId: 'cups-03-three', reversed: true }], 'en');
+    const card = getCard('cups-03-three')!;
+    expect(lines.at(-1)!.params!.advice).toBe(card.en.adviceReversed);
+    expect(card.en.adviceReversed).not.toBe(card.en.advice);
+  });
+
   it('notices many Major Arcana and many reversals, and joins Burmese lists with ၊', () => {
     const lines = summarize(
       [

@@ -27,7 +27,7 @@ export function OnboardingFrame({ step, total, title, body, children, primaryLab
   const { colors } = useAppTheme();
   const fmt = useNumberFormat();
   return (
-    <Screen testID={testID} contentStyle={styles.content}>
+    <Screen testID={testID} contentStyle={styles.content} edges={['top', 'left', 'right', 'bottom']}>
       <View
         style={styles.dots}
         accessible

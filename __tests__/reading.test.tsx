@@ -53,9 +53,10 @@ describe('reading flow', () => {
     const [card] = cardsIn('reading-position-0');
     expect(card).toBeDefined();
     expect(await screen.findByTestId('reading-summary')).toBeTruthy();
-    expect(
-      screen.getByText(`A thought to carry with you: ${card!.en.advice}`, { normalizer }),
-    ).toBeTruthy();
+    // The advice follows the card's orientation, which is random.
+    const reversed = within(screen.getByTestId('reading-position-0')).queryAllByText(en.card.reversed, { normalizer }).length > 0;
+    const advice = reversed ? card!.en.adviceReversed : card!.en.advice;
+    expect(screen.getByText(`A thought to carry with you: ${advice}`, { normalizer })).toBeTruthy();
     expect(screen.getByTestId('reading-disclaimer')).toHaveTextContent(en.disclaimer.short);
   });
 

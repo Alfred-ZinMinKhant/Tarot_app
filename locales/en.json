@@ -300,6 +300,7 @@
     "reminderHint": "A gentle morning nudge to see your Card of the Day. You can change the time in Settings.",
     "birthDateLabel": "Your birth date",
     "birthDateHint": "Gives you your Burmese weekday sign (a tradition, just for fun) now, and lets us build your birth chart next.",
+    "dateExample": "The faded numbers are only examples of the format.",
     "weekdayOnly": "I only know the weekday",
     "dateOnly": "Use my birth date instead",
     "dateInvalid": "That date doesn't look right. Check it, or skip this for now.",
@@ -564,5 +565,27 @@
     "privacyTitle": "Ad privacy choices",
     "privacyBody": "Review or change how ads use your data. This never affects the readings.",
     "privacyButton": "Manage ad privacy"
+  },
+  "guide": {
+    "homeTitle": "Not sure where to start?",
+    "homeBody": "Answer one quick question and we'll suggest a reading. No tarot experience needed.",
+    "homeButton": "Help me choose",
+    "title": "Help me choose",
+    "subtitle": "Answer one question and we'll suggest a reading. There is no wrong answer.",
+    "question": "What are you hoping for?",
+    "quick": "A quick nudge for today",
+    "quickHint": "One card, a minute or two.",
+    "unfold": "How things are unfolding",
+    "unfoldHint": "Past, present and future in three cards.",
+    "situation": "Help with a situation",
+    "situationHint": "What is happening, what is in the way, and what may help.",
+    "love": "Something about love",
+    "loveHint": "Five cards about a relationship.",
+    "deep": "One big question",
+    "deepHint": "The classic ten-card Celtic Cross for a deeper look.",
+    "suggest": "We suggest",
+    "start": "Start this reading",
+    "other": "Choose a different answer",
+    "tip": "Cards are prompts for reflection, not predictions. Take what feels useful and leave the rest."
   }
 }

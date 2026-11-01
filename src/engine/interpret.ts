@@ -81,6 +81,7 @@ export function summarize(
 
   const keywords = cards.map((c) => c.card[lang].keywords[0]!).filter((k, i, all) => all.indexOf(k) === i);
   lines.push({ key: 'keywords', params: { keywords: keywords.join(LIST_SEPARATOR[lang]) } });
-  lines.push({ key: area ? `adviceTopic.${area}` : 'advice', params: { advice: cards[n - 1]!.card[lang].advice } });
+  const last = cards[n - 1]!;
+  lines.push({ key: area ? `adviceTopic.${area}` : 'advice', params: { advice: reversals && last.reversed ? last.card[lang].adviceReversed : last.card[lang].advice } });
   return lines;
 }

@@ -73,7 +73,7 @@ export function DailyCardPanel() {
                 {card[lang].name}
               </AppText>
               {draw.reversed ? <Chip label={t('card.reversed')} /> : null}
-              <AppText variant="caption">{card[lang].advice}</AppText>
+              <AppText variant="caption">{draw.reversed ? card[lang].adviceReversed : card[lang].advice}</AppText>
             </>
           ) : (
             <AppText tone="textMuted">{t('home.dailyTap')}</AppText>

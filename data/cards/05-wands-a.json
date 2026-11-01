@@ -22,7 +22,8 @@
         "upright": "For wellbeing and spirit, fresh energy and motivation are available. Try a new activity, sport or creative hobby. Movement that feels fun can be especially energising now.",
         "reversed": "Reversed, energy may feel low or scattered. Rest is not failure; it rebuilds your spark. Gentle activity, good sleep and something that makes you smile can help restore vitality."
       },
-      "advice": "Act on one inspiring idea today, even with the smallest first step."
+      "advice": "Act on one inspiring idea today, even with the smallest first step.",
+      "adviceReversed": "Do not wait for a perfect spark today; start small and see what grows."
     },
     "my": {
       "name": "တုတ် အေ့စ်",
@@ -45,7 +46,8 @@
         "upright": "ကျန်းမာရေးနဲ့ စိတ်ဓာတ်အတွက် လတ်ဆတ်တဲ့ စွမ်းအင်နဲ့ စိတ်အားထက်သန်မှု ရနိုင်ပါတယ်။ လှုပ်ရှားမှုအသစ်၊ အားကစား ဒါမှမဟုတ် ဖန်တီးမှု ဝါသနာတစ်ခု စမ်းကြည့်ပါ။ ပျော်စရာကောင်းတဲ့ လှုပ်ရှားမှုက အခု အထူး အားဖြည့်ပေးနိုင်ပါတယ်။",
         "reversed": "ပြောင်းပြန်ဆိုရင် စွမ်းအင် နည်းနေတာ ဒါမှမဟုတ် ပြန့်ကျဲနေတာ ဖြစ်နိုင်ပါတယ်။ အနားယူတာ ရှုံးနိမ့်တာ မဟုတ်ပါဘူး၊ မီးပွားကို ပြန်တည်ဆောက်ပေးတာပါ။ ညင်သာတဲ့ လှုပ်ရှားမှု၊ အိပ်ရေးဝမှုနဲ့ ပြုံးစေတဲ့ အရာက တက်ကြွမှုကို ပြန်ပေးနိုင်ပါတယ်။"
       },
-      "advice": "ဒီနေ့ စိတ်အားတက်စေတဲ့ အကြံတစ်ခုကို အသေးဆုံး ခြေလှမ်းနဲ့ဖြစ်ဖြစ် လုပ်ဆောင်ပါ။"
+      "advice": "ဒီနေ့ စိတ်အားတက်စေတဲ့ အကြံတစ်ခုကို အသေးဆုံး ခြေလှမ်းနဲ့ဖြစ်ဖြစ် လုပ်ဆောင်ပါ။",
+      "adviceReversed": "ဒီနေ့ ပြီးပြည့်စုံတဲ့ မီးပွားကို မစောင့်ဘဲ သေးသေးလေးကစပြီး ဘာကြီးထွားလာလဲ ကြည့်ပါ။"
     }
   },
   {
@@ -71,7 +73,8 @@
         "upright": "For wellbeing and spirit, set a gentle long-term goal, such as a new routine or a wellness plan. Looking ahead with hope can motivate healthy, sustainable choices day by day.",
         "reversed": "Reversed, restlessness or worry about the future may be affecting your peace. Bring your attention back to the present with simple grounding habits like walking, stretching or journaling."
       },
-      "advice": "Spend a few minutes today imagining where you want to be, then write one step down."
+      "advice": "Spend a few minutes today imagining where you want to be, then write one step down.",
+      "adviceReversed": "Turn one vague wish into a single clear step today, and take it."
     },
     "my": {
       "name": "တုတ် နှစ်ချောင်း",
@@ -94,7 +97,8 @@
         "upright": "ကျန်းမာရေးနဲ့ စိတ်ဓာတ်အတွက် နေ့စဉ်လုပ်ငန်းသစ် ဒါမှမဟုတ် ကျန်းမာရေး အစီအစဉ်လို ညင်သာတဲ့ ရေရှည်ပန်းတိုင်တစ်ခု ချမှတ်ပါ။ မျှော်လင့်ချက်နဲ့ ရှေ့ကို မျှော်ကြည့်တာက ကျန်းမာပြီး ရေရှည်တည်တံ့တဲ့ ရွေးချယ်မှုတွေကို အားပေးနိုင်ပါတယ်။",
         "reversed": "ပြောင်းပြန်ဆိုရင် အနာဂတ်အပေါ် မငြိမ်မသက်မှု ဒါမှမဟုတ် စိုးရိမ်မှုက ငြိမ်းချမ်းမှုကို ထိခိုက်နေနိုင်ပါတယ်။ လမ်းလျှောက်တာ၊ ဆန့်တာ ဒါမှမဟုတ် မှတ်စုရေးတာလို ရိုးရှင်းတဲ့ အလေ့အကျင့်တွေနဲ့ ပစ္စုပ္ပန်ဆီ အာရုံပြန်ပို့ပါ။"
       },
-      "advice": "ဒီနေ့ ကိုယ်ရောက်ချင်တဲ့ နေရာကို မိနစ်အနည်းငယ် စိတ်ကူးကြည့်ပြီး ခြေလှမ်းတစ်ခု ချရေးပါ။"
+      "advice": "ဒီနေ့ ကိုယ်ရောက်ချင်တဲ့ နေရာကို မိနစ်အနည်းငယ် စိတ်ကူးကြည့်ပြီး ခြေလှမ်းတစ်ခု ချရေးပါ။",
+      "adviceReversed": "ဒီနေ့ မရေရာတဲ့ ဆန္ဒတစ်ခုကို ရှင်းလင်းတဲ့ ခြေလှမ်းတစ်ခုဖြစ်အောင် လုပ်ပြီး လှမ်းပါ။"
     }
   },
   {
@@ -120,7 +124,8 @@
         "upright": "For wellbeing and spirit, you may feel more hopeful about your progress. Keep up good routines and look ahead to new healthy goals. Fresh air and wide views may lift your mood.",
         "reversed": "Reversed, progress may feel slow, which can be discouraging. Celebrate small gains and adjust expectations kindly. Steady, consistent care often brings results in its own time."
       },
-      "advice": "Look ahead with patience today, trusting that your efforts are already moving."
+      "advice": "Look ahead with patience today, trusting that your efforts are already moving.",
+      "adviceReversed": "Check in today on a plan that has stalled, and adjust it kindly."
     },
     "my": {
       "name": "တုတ် သုံးချောင်း",
@@ -143,7 +148,8 @@
         "upright": "ကျန်းမာရေးနဲ့ စိတ်ဓာတ်အတွက် ကိုယ့်တိုးတက်မှုအပေါ် ပိုမျှော်လင့်ချက် ရှိလာနိုင်ပါတယ်။ ကောင်းတဲ့ နေ့စဉ်လုပ်ငန်းတွေကို ဆက်ထိန်းပြီး ကျန်းမာရေး ပန်းတိုင်သစ်တွေကို မျှော်ကြည့်ပါ။ လေကောင်းလေသန့်နဲ့ ကျယ်ပြန့်တဲ့ ရှုခင်းက စိတ်ကို မြှင့်ပေးနိုင်ပါတယ်။",
         "reversed": "ပြောင်းပြန်ဆိုရင် တိုးတက်မှုက နှေးသလို ခံစားရလို့ စိတ်ဓာတ်ကျစရာ ဖြစ်နိုင်ပါတယ်။ အကျိုးကျေးဇူးလေးတွေကို ဂုဏ်ပြုပြီး မျှော်လင့်ချက်တွေကို ကြင်နာစွာ ပြင်ဆင်ပါ။ တည်ငြိမ်ပုံမှန် ဂရုစိုက်မှုက သူ့အချိန်နဲ့သူ ရလဒ်ပေးတတ်ပါတယ်။"
       },
-      "advice": "ဒီနေ့ ကိုယ့်ကြိုးစားမှုတွေ ရွေ့နေပြီလို့ ယုံကြည်ပြီး စိတ်ရှည်စွာ ရှေ့ကို မျှော်ကြည့်ပါ။"
+      "advice": "ဒီနေ့ ကိုယ့်ကြိုးစားမှုတွေ ရွေ့နေပြီလို့ ယုံကြည်ပြီး စိတ်ရှည်စွာ ရှေ့ကို မျှော်ကြည့်ပါ။",
+      "adviceReversed": "ဒီနေ့ ရပ်နေတဲ့ အစီအစဉ်တစ်ခုကို ပြန်ကြည့်ပြီး ညင်ညင်သာသာ ပြင်ဆင်ပါ။"
     }
   },
   {
@@ -169,7 +175,8 @@
         "upright": "For wellbeing and spirit, feeling at home and connected supports your energy. Time with loved ones, comfortable surroundings and shared meals can lift your mood and calm your mind.",
         "reversed": "Reversed, tension at home or a lack of connection may be tiring you. Create a peaceful corner for yourself, and gently reach out to people who make you feel welcome."
       },
-      "advice": "Celebrate a small success today with someone you care about."
+      "advice": "Celebrate a small success today with someone you care about.",
+      "adviceReversed": "Make time today for the people and places that help you feel at home."
     },
     "my": {
       "name": "တုတ် လေးချောင်း",
@@ -192,7 +199,8 @@
         "upright": "ကျန်းမာရေးနဲ့ စိတ်ဓာတ်အတွက် အိမ်မှာလို ခံစားရပြီး ဆက်နွယ်မှုရှိတာက စွမ်းအင်ကို ထောက်ကူပါတယ်။ ချစ်ရသူတွေနဲ့ အချိန်၊ သက်တောင့်သက်သာ ပတ်ဝန်းကျင်နဲ့ အတူစားသောက်ခြင်းက စိတ်ကို မြှင့်ပြီး အေးချမ်းစေနိုင်ပါတယ်။",
         "reversed": "ပြောင်းပြန်ဆိုရင် အိမ်မှာ တင်းမာမှု ဒါမှမဟုတ် ဆက်နွယ်မှု နည်းတာက ပင်ပန်းစေနိုင်ပါတယ်။ ကိုယ့်အတွက် ငြိမ်းချမ်းတဲ့ နေရာလေးတစ်ခု ဖန်တီးပြီး ကြိုဆိုခံရသလို ခံစားစေတဲ့ လူတွေကို ညင်သာစွာ ဆက်သွယ်ပါ။"
       },
-      "advice": "ဒီနေ့ ကိုယ်ဂရုစိုက်တဲ့ သူတစ်ယောက်နဲ့ အောင်မြင်မှုလေးတစ်ခုကို ဂုဏ်ပြုပါ။"
+      "advice": "ဒီနေ့ ကိုယ်ဂရုစိုက်တဲ့ သူတစ်ယောက်နဲ့ အောင်မြင်မှုလေးတစ်ခုကို ဂုဏ်ပြုပါ။",
+      "adviceReversed": "ဒီနေ့ အိမ်လို ခံစားရစေတဲ့ လူတွေနဲ့ နေရာတွေအတွက် အချိန်ပေးပါ။"
     }
   },
   {
@@ -218,7 +226,8 @@
         "upright": "For wellbeing and spirit, energetic activities like team sports or vigorous exercise can release tension. Notice whether inner conflict is making you restless, and channel that energy kindly.",
         "reversed": "Reversed, you may be ready for more calm after a busy, tense period. Choose gentle activities and peaceful environments. Resolving lingering conflicts can ease your mind."
       },
-      "advice": "Listen to a different point of view today with curiosity rather than defence."
+      "advice": "Listen to a different point of view today with curiosity rather than defence.",
+      "adviceReversed": "Take a breath before reacting today, and choose a calmer way to be heard."
     },
     "my": {
       "name": "တုတ် ငါးချောင်း",
@@ -241,7 +250,8 @@
         "upright": "ကျန်းမာရေးနဲ့ စိတ်ဓာတ်အတွက် အသင်းလိုက် အားကစား ဒါမှမဟုတ် ပြင်းပြင်းထန်ထန် လေ့ကျင့်ခန်းလို တက်ကြွတဲ့ လှုပ်ရှားမှုတွေက တင်းမာမှုကို ဖြေလျှော့ပေးနိုင်ပါတယ်။ အတွင်းစိတ် ပဋိပက္ခက မငြိမ်မသက် ဖြစ်စေနေလား သတိထားပြီး အဲဒီစွမ်းအင်ကို ကြင်နာစွာ လမ်းကြောင်းပေးပါ။",
         "reversed": "ပြောင်းပြန်ဆိုရင် အလုပ်များပြီး တင်းမာတဲ့ ကာလနောက်မှာ ပိုတည်ငြိမ်ဖို့ အသင့်ဖြစ်နေနိုင်ပါတယ်။ ညင်သာတဲ့ လှုပ်ရှားမှုတွေနဲ့ ငြိမ်းချမ်းတဲ့ ပတ်ဝန်းကျင်ကို ရွေးပါ။ ကျန်နေတဲ့ ပဋိပက္ခတွေကို ဖြေရှင်းတာက စိတ်ကို သက်သာစေနိုင်ပါတယ်။"
       },
-      "advice": "ဒီနေ့ မတူတဲ့ အမြင်တစ်ခုကို ကာကွယ်ပြောဆိုမယ့်အစား စူးစမ်းစိတ်နဲ့ နားထောင်ပါ။"
+      "advice": "ဒီနေ့ မတူတဲ့ အမြင်တစ်ခုကို ကာကွယ်ပြောဆိုမယ့်အစား စူးစမ်းစိတ်နဲ့ နားထောင်ပါ။",
+      "adviceReversed": "ဒီနေ့ တုံ့ပြန်ခင် အသက်ရှူပြီး ကိုယ့်အသံကြားစေမယ့် ပိုတည်ငြိမ်တဲ့ နည်းလမ်းကို ရွေးပါ။"
     }
   },
   {
@@ -267,7 +277,8 @@
         "upright": "For wellbeing and spirit, you may feel proud of the healthy changes you have made. Acknowledge your progress and keep going. Confidence can be a wonderful source of energy.",
         "reversed": "Reversed, comparison with others may be affecting your self-esteem. Focus on your own journey and celebrate small wins. Kind self-talk can lift both your mood and motivation."
       },
-      "advice": "Acknowledge your own progress today, and thank someone who helped you."
+      "advice": "Acknowledge your own progress today, and thank someone who helped you.",
+      "adviceReversed": "Praise yourself for something today without comparing yourself to anyone."
     },
     "my": {
       "name": "တုတ် ခြောက်ချောင်း",
@@ -290,7 +301,8 @@
         "upright": "ကျန်းမာရေးနဲ့ စိတ်ဓာတ်အတွက် ကိုယ်လုပ်ခဲ့တဲ့ ကျန်းမာရေး ပြောင်းလဲမှုတွေအတွက် ဂုဏ်ယူနေနိုင်ပါတယ်။ ကိုယ့်တိုးတက်မှုကို အသိအမှတ်ပြုပြီး ဆက်လုပ်ပါ။ ယုံကြည်မှုက စွမ်းအင်ရဲ့ အံ့ဩစရာ အရင်းအမြစ် ဖြစ်နိုင်ပါတယ်။",
         "reversed": "ပြောင်းပြန်ဆိုရင် တခြားသူတွေနဲ့ နှိုင်းယှဉ်တာက ကိုယ့်ကိုယ်ကို တန်ဖိုးထားမှုကို ထိခိုက်နေနိုင်ပါတယ်။ ကိုယ့်ခရီးကို အာရုံစိုက်ပြီး အောင်မြင်မှုလေးတွေကို ဂုဏ်ပြုပါ။ ကိုယ့်ကိုယ်ကို ကြင်နာစွာ ပြောတာက စိတ်ဓာတ်ရော စိတ်အားရော မြှင့်ပေးနိုင်ပါတယ်။"
       },
-      "advice": "ဒီနေ့ ကိုယ့်တိုးတက်မှုကို အသိအမှတ်ပြုပြီး ကူညီခဲ့သူတစ်ယောက်ကို ကျေးဇူးတင်ပါ။"
+      "advice": "ဒီနေ့ ကိုယ့်တိုးတက်မှုကို အသိအမှတ်ပြုပြီး ကူညီခဲ့သူတစ်ယောက်ကို ကျေးဇူးတင်ပါ။",
+      "adviceReversed": "ဒီနေ့ ဘယ်သူနဲ့မှ မနှိုင်းယှဉ်ဘဲ တစ်ခုခုအတွက် ကိုယ့်ကိုယ်ကို ချီးကျူးပါ။"
     }
   },
   {
@@ -316,7 +328,8 @@
         "upright": "For wellbeing and spirit, protect your energy with clear boundaries. Saying no to things that drain you is a form of self-care. Stand firm in your healthy habits.",
         "reversed": "Reversed, constant defensiveness or stress may be exhausting you. Allow yourself to rest. Release battles that no longer matter, and lean on supportive people for strength."
       },
-      "advice": "Stand firm today for one thing that truly matters to you."
+      "advice": "Stand firm today for one thing that truly matters to you.",
+      "adviceReversed": "Choose your battles today and let go of the ones that drain you."
     },
     "my": {
       "name": "တုတ် ခုနစ်ချောင်း",
@@ -339,7 +352,8 @@
         "upright": "ကျန်းမာရေးနဲ့ စိတ်ဓာတ်အတွက် ရှင်းလင်းတဲ့ နယ်နိမိတ်တွေနဲ့ ကိုယ့်စွမ်းအင်ကို ကာကွယ်ပါ။ အားကုန်စေတဲ့ အရာတွေကို ငြင်းဆန်တာက ကိုယ့်ကိုယ်ကို ဂရုစိုက်ခြင်း တစ်မျိုးပါ။ ကျန်းမာတဲ့ အလေ့အကျင့်တွေမှာ ခိုင်ခိုင်မာမာ ရပ်တည်ပါ။",
         "reversed": "ပြောင်းပြန်ဆိုရင် မပြတ်တဲ့ ကာကွယ်ရေးစိတ် ဒါမှမဟုတ် စိတ်ဖိစီးမှုက ပင်ပန်းနွမ်းနယ်စေနိုင်ပါတယ်။ အနားယူခွင့် ပေးပါ။ အရေးမပါတော့တဲ့ တိုက်ပွဲတွေကို လွှတ်ချပြီး ထောက်ကူပေးတဲ့ လူတွေကို ခွန်အားအတွက် အားကိုးပါ။"
       },
-      "advice": "ဒီနေ့ ကိုယ့်အတွက် တကယ်အရေးကြီးတဲ့ အရာတစ်ခုအတွက် ခိုင်ခိုင်မာမာ ရပ်တည်ပါ။"
+      "advice": "ဒီနေ့ ကိုယ့်အတွက် တကယ်အရေးကြီးတဲ့ အရာတစ်ခုအတွက် ခိုင်ခိုင်မာမာ ရပ်တည်ပါ။",
+      "adviceReversed": "ဒီနေ့ တိုက်ပွဲတွေကို ရွေးချယ်ပြီး စွမ်းအင်ကုန်စေတာတွေကို လက်လွှတ်လိုက်ပါ။"
     }
   }
 ]

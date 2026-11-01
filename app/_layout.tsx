@@ -133,6 +133,7 @@ function Navigation() {
         <Stack.Screen name="journal/[id]" />
         <Stack.Screen name="daily" />
         <Stack.Screen name="sign" />
+        <Stack.Screen name="guide" />
         <Stack.Screen name="birth-chart" />
         <Stack.Screen name="learn/[id]" />
         <Stack.Screen name="about" />

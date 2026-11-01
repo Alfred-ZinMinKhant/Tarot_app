@@ -106,7 +106,7 @@ export default function CardDetail() {
 
       <Card>
         <AppText variant="heading">{t('card.advice')}</AppText>
-        <AppText>{text.advice}</AppText>
+        <AppText>{orientation === 'reversed' ? text.adviceReversed : text.advice}</AppText>
       </Card>
       <AppText variant="caption" tone="textMuted" center testID="card-prompt-note">
         {t('card.promptNote')}
