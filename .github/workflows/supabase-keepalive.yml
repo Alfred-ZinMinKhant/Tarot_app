@@ -1,9 +1,10 @@
 name: Supabase keep-alive
 
-# Free-tier projects pause after 7 days without activity. One REST request every 3 days counts as activity.
+# Free-tier projects pause after 7 days without activity. A daily REST query keeps a wide margin, and
+# a missed or failed run still leaves several days before a pause.
 on:
   schedule:
-    - cron: '0 3 */3 * *'
+    - cron: '17 3 * * *'
   workflow_dispatch:
 
 jobs:
@@ -15,9 +16,14 @@ jobs:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
         run: |
-          status=$(curl -s -o /dev/null -w '%{http_code}' --max-time 30 \
-            -H "apikey: $SUPABASE_ANON_KEY" "$SUPABASE_URL/rest/v1/journal_readings?select=id&limit=1")
-          echo "HTTP $status"
+          # Retry a few times so one transient error does not fail the run.
+          for attempt in 1 2 3; do
+            status=$(curl -s -o /dev/null -w '%{http_code}' --max-time 30 \
+              -H "apikey: $SUPABASE_ANON_KEY" "$SUPABASE_URL/rest/v1/journal_readings?select=id&limit=1")
+            echo "Attempt $attempt: HTTP $status"
+            [ "$status" -eq 200 ] && break
+            sleep 20
+          done
           # Row-level security returns an empty list, so a real query is a 200. Any other status
           # (e.g. a paused project) fails the run and emails the repo owner.
           [ "$status" -eq 200 ]
