@@ -82,6 +82,14 @@ export default function Home() {
         </View>
       </Pressable>
 
+      <Card testID="home-guide">
+        <AppText variant="heading" accessibilityRole="header">
+          {t('guide.homeTitle')}
+        </AppText>
+        <AppText tone="textMuted">{t('guide.homeBody')}</AppText>
+        <Button label={t('guide.homeButton')} onPress={() => router.push('/guide')} testID="home-guide-open" />
+      </Card>
+
       <View style={styles.section}>
         <AppText variant="heading" accessibilityRole="header">
           {t('home.startReading')}
