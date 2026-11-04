@@ -130,6 +130,16 @@ export default function Paywall() {
           {why}
         </AppText>
       ) : null}
+      {/* The free way in sits above the fold, so nobody has to scroll past the prices to find it. */}
+      {spread && rewardedAvailable ? (
+        <Button
+          label={t('ads.watchToUnlock')}
+          variant="secondary"
+          onPress={watchAd}
+          loading={busy === 'ad'}
+          testID="paywall-watch-ad"
+        />
+      ) : null}
 
       <Card>
         {(['benefitCeltic', 'benefitLove', 'benefitShare', 'benefitNoAds', 'benefitSupport'] as const).map((k) => (
@@ -176,15 +186,6 @@ export default function Paywall() {
           onPress={buy}
           loading={busy === 'buy'}
           testID="paywall-buy"
-        />
-      ) : null}
-      {spread && rewardedAvailable ? (
-        <Button
-          label={t('ads.watchToUnlock')}
-          variant="secondary"
-          onPress={watchAd}
-          loading={busy === 'ad'}
-          testID="paywall-watch-ad"
         />
       ) : null}
       <Button
