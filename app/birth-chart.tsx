@@ -6,6 +6,7 @@ import { Pressable } from 'react-native';
 import { cardForPlanet, cardForSign } from '@/astro/astroCards';
 import { computeChart } from '@/astro/chart';
 import { bigThreeReading, planetName, zodiacName } from '@/astro/readings';
+import { track } from '@/analytics';
 import { AppText, BackButton, Button, Card, Header, Screen } from '@/components';
 import { BirthFormFields } from '@/components/BirthFormFields';
 import { BigThreeCard, ChartHero, PlacementRow } from '@/components/BirthChartParts';
@@ -35,6 +36,7 @@ export default function BirthChartScreen() {
     const data = form.submit();
     if (!data) return;
     setBirth(data);
+    track('birth_chart_saved', { has_time: !!data.time });
     setEditing(false);
     toast(t('chart.saved'));
   };

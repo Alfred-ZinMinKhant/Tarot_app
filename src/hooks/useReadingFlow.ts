@@ -10,6 +10,7 @@ import {
   type Spread,
   type Topic,
 } from '@/engine';
+import { track } from '@/analytics';
 import { useHaptics } from '@/hooks/useHaptics';
 import { useReduceMotion } from '@/hooks/useReduceMotion';
 import { useJournal } from '@/store/journal';
@@ -108,6 +109,7 @@ export function useReadingFlow(spread: Spread | undefined, initialTopic: Topic) 
     })
       .then((record) => {
         setSavedId(record.id);
+        track('reading_completed', { spread: spread.id, topic, asked_question: question.trim() !== '' });
         toast(t('journal.saved'), {
           label: t('journal.open'),
           onPress: () => router.push({ pathname: '/journal/[id]', params: { id: record.id } }),

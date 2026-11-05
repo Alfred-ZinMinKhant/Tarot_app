@@ -20,6 +20,9 @@ jest.mock('react-native-purchases', () => ({
   PACKAGE_TYPE: { MONTHLY: 'MONTHLY', ANNUAL: 'ANNUAL', LIFETIME: 'LIFETIME' },
 }));
 
+// PostHog needs native modules; analytics are off in tests unless a fake service is injected.
+jest.mock('posthog-react-native', () => ({ __esModule: true, default: jest.fn() }));
+
 // The ad SDK and iOS tracking prompt need native code; ads are off in tests unless one is injected.
 jest.mock('react-native-google-mobile-ads', () => ({
   __esModule: true,

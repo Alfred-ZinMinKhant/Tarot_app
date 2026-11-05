@@ -1,6 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import { Platform, StyleSheet, View } from 'react-native';
 
+import { track } from '@/analytics';
 import { AppText, Button, Card, SettingRow } from '@/components';
 import { useLanguage } from '@/hooks/useLanguage';
 import { ensurePermission } from '@/services/notifications';
@@ -23,10 +24,15 @@ export function ReminderCard() {
   const step = (delta: number) => s.setReminderTime(s.reminderHour, s.reminderMinute + delta);
 
   const toggleReminder = async (on: boolean) => {
-    if (!on) return s.setReminderEnabled(false);
+    if (!on) {
+      track('reminder_toggled', { enabled: false });
+      return s.setReminderEnabled(false);
+    }
     const granted = await ensurePermission();
-    if (granted) s.setReminderEnabled(true);
-    else toast(t('settings.permissionDenied'));
+    if (granted) {
+      s.setReminderEnabled(true);
+      track('reminder_toggled', { enabled: true });
+    } else toast(t('settings.permissionDenied'));
   };
 
   return (

@@ -241,6 +241,13 @@ advertising, so the *Data Not Collected* answer above no longer applies.
 - App Store "App Privacy": *Data Used to Track You* → Identifiers (Device ID), plus Usage Data and
   Diagnostics as AdMob lists. Keep the ATT prompt (`expo-tracking-transparency`) in the build.
 - Journal, questions and birth details are never sent to the ad SDK.
+**If usage statistics are enabled (PostHog, `POSTHOG_API_KEY` set):**
+- Google Play "Data safety": *App activity → App interactions* and *App info and performance →
+  Crash logs* and *Diagnostics* — collected, **not shared**, **optional** (users can switch it off in
+  Settings → Privacy), purpose *Analytics*. *Device or other IDs*: PostHog's random install ID,
+  purpose *Analytics*. Not linked to the user's identity. Encrypted in transit.
+- App Store "App Privacy": *Usage Data → Product Interaction* and *Diagnostics → Crash Data*,
+  *Not Linked to You*, *Not Used to Track You*, purpose *Analytics* and *App Functionality*.
 Keep the in-app Privacy Policy (`data/legal.json`) in sync with what you enable.
 
 ## App Review notes (App Store)

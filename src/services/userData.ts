@@ -7,6 +7,7 @@ import Constants from 'expo-constants';
 
 import { getJournalRepo, type ReadingRecord } from '@/db';
 import { cancelReminders } from '@/services/notifications';
+import { resetAnalytics } from '@/analytics';
 import { useAdPacing } from '@/store/adPacing';
 import { useDaily } from '@/store/daily';
 import { useJournal } from '@/store/journal';
@@ -51,6 +52,7 @@ export async function buildExport(now = new Date()): Promise<UserDataExport> {
       reminderEnabled: s.reminderEnabled,
       reminderHour: s.reminderHour,
       reminderMinute: s.reminderMinute,
+      analyticsEnabled: s.analyticsEnabled,
     },
     lessonsRead: s.lessonsRead,
     readings: await repo.listReadings(),
@@ -73,4 +75,5 @@ export async function deleteAllUserData(): Promise<void> {
   useReadingDraft.getState().clear();
   useSettings.getState().wipe();
   useAdPacing.getState().reset();
+  resetAnalytics();
 }

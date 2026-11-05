@@ -41,7 +41,7 @@ npm run ci           # all of the above
 Copy `.env.example` to `.env` and fill in what you need. Everything is optional for local
 development. After changing `.env`, restart Metro with `npx expo start --clear` (or export with
 `--clear`), because cached bundles keep the old values. Optional cloud backup is described in
-`supabase/README.md`, and optional Premium in `docs/MONETIZATION.md`.
+`supabase/README.md`, optional Premium in `docs/MONETIZATION.md`, and optional usage statistics in `docs/ANALYTICS.md`.
 
 ## Building for the stores
 
