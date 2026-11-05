@@ -1,7 +1,9 @@
 import { router, useLocalSearchParams } from 'expo-router';
+import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { StyleSheet, View } from 'react-native';
 
+import { track } from '@/analytics';
 import { AppText, BackButton, Button, Card, EmptyState, Header, Screen } from '@/components';
 import { getLesson, LESSONS, nextLesson } from '@/data/content';
 import { useLanguage } from '@/hooks/useLanguage';
@@ -19,6 +21,9 @@ export default function LessonScreen() {
   const read = useSettings((s) => s.lessonsRead);
   const markLessonRead = useSettings((s) => s.markLessonRead);
   const lesson = getLesson(id);
+  useEffect(() => {
+    if (lesson) track('lesson_opened', { lesson: lesson.id });
+  }, [lesson]);
 
   if (!lesson) {
     return (

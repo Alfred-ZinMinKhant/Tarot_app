@@ -371,7 +371,10 @@
     "birthChartNone": "Not set up yet",
     "birthChartSet": "Saved on this phone",
     "birthChartOpen": "Open",
-    "birthChartCreate": "Set up"
+    "birthChartCreate": "Set up",
+    "analytics": "Share usage statistics",
+    "analyticsHint": "Anonymous counts of which features are used, and crash reports, help us improve the app. Never your readings, questions, notes, name or birth details.",
+    "privacyHeading": "Privacy"
   },
   "notifications": {
     "title": "Your card for today is ready",

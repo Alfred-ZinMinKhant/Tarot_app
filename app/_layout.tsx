@@ -1,4 +1,4 @@
-import { DarkTheme, SplashScreen, Stack, ThemeProvider } from 'expo-router';
+import { DarkTheme, SplashScreen, Stack, ThemeProvider, useSegments } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
 import { useEffect, useMemo } from 'react';
 import { I18nextProvider } from 'react-i18next';
@@ -6,6 +6,8 @@ import { Pressable, Text, View } from 'react-native';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 
+import { registerAnalyticsProps, setAnalyticsEnabled, trackScreen } from '@/analytics';
+import { posthogService } from '@/analytics/posthog';
 import { ToastHost } from '@/components';
 import { useAppFonts } from '@/hooks/useAppFonts';
 import { useCloudSync } from '@/hooks/useCloudSync';
@@ -21,6 +23,7 @@ import { ensurePurchasesService, usePremium } from '@/store/premium';
 import { ensureSyncServices } from '@/store/sync';
 import { supabaseServices } from '@/sync/supabase';
 import { useJournal } from '@/store/journal';
+import { useSettings } from '@/store/settings';
 import { palette } from '@/theme/colors';
 import { AppThemeProvider, useAppTheme } from '@/theme/ThemeContext';
 import { logError } from '@/utils/log';
@@ -101,7 +104,23 @@ function AppServices() {
   }, []);
   useReminders(true);
   useCloudSync();
+  useAnalytics();
   return null;
+}
+
+/** Usage statistics: follows the Settings switch, names each screen, tags events with language and plan. */
+function useAnalytics() {
+  const enabled = useSettings((s) => s.analyticsEnabled);
+  const language = useLanguage();
+  const premium = usePremium((s) => s.isPremium);
+  // Route pattern (e.g. "reading/[spreadId]"), never the concrete path, so no journal IDs are sent.
+  const screen = useSegments()
+    .filter((part) => !part.startsWith('('))
+    .join('/');
+
+  useEffect(() => setAnalyticsEnabled(enabled, posthogService), [enabled]);
+  useEffect(() => registerAnalyticsProps({ language, premium }), [enabled, language, premium]);
+  useEffect(() => trackScreen(screen || 'index'), [enabled, screen]);
 }
 
 function Navigation() {

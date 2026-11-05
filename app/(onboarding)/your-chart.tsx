@@ -7,6 +7,7 @@ import { ChartPreview } from '@/components/ChartPreview';
 import { AppText } from '@/components/AppText';
 import { OnboardingFrame } from '@/components/OnboardingFrame';
 import { useBirthForm } from '@/hooks/useBirthForm';
+import { track } from '@/analytics';
 import { useSettings } from '@/store/settings';
 
 /** Onboarding step 4: birth time and place, so the first chart has a Rising sign and houses. */
@@ -35,6 +36,7 @@ export default function YourChart() {
         const data = form.submit();
         if (!data) return;
         setBirth(data);
+        track('birth_chart_saved', { has_time: !!data.time });
         finish(true);
       }}
       onSkip={() => finish(false)}

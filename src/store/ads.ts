@@ -1,6 +1,7 @@
 import { create } from 'zustand';
 
 import type { AdsService, RewardOutcome } from '@/ads/service';
+import { track } from '@/analytics';
 import { interstitialDue } from '@/ads/pacing';
 import { isPremiumSpread, SHARES_PER_AD } from '@/premium/features';
 import { useAdPacing } from '@/store/adPacing';
@@ -80,12 +81,18 @@ export const useAds = create<AdsState>()((set, get) => ({
   },
   watchForSpread: async (spreadId) => {
     const outcome = await get().watchRewarded();
-    if (outcome === 'earned') grants.add(spreadId);
+    if (outcome === 'earned') {
+      grants.add(spreadId);
+      track('rewarded_ad_watched', { reward: 'spread' });
+    }
     return outcome;
   },
   watchForShares: async () => {
     const outcome = await get().watchRewarded();
-    if (outcome === 'earned') usePremium.getState().grantShares(SHARES_PER_AD);
+    if (outcome === 'earned') {
+      usePremium.getState().grantShares(SHARES_PER_AD);
+      track('rewarded_ad_watched', { reward: 'shares' });
+    }
     return outcome;
   },
   noteReadingFinished: (spreadId) => {

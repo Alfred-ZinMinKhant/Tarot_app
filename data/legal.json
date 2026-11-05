@@ -5,7 +5,7 @@
       "sections": [
         {
           "heading": "The short version",
-          "body": "{appName} is designed to work offline. Your readings, notes, name and settings are stored on your phone. We don't sell your data and we never put your readings, notes or birth details into ads. If the free version shows ads, they come from Google AdMob (see Ads below)."
+          "body": "{appName} is designed to work offline. Your readings, notes, name and settings are stored on your phone. We don't sell your data and we never put your readings, notes or birth details into ads. If the free version shows ads, they come from Google AdMob (see Ads below). Anonymous usage statistics and crash reports help us improve the app; you can switch them off in Settings."
         },
         {
           "heading": "What stays on your phone",
@@ -26,6 +26,10 @@
         {
           "heading": "Ads",
           "body": "The free version may show banner ads and optional \"watch an ad to unlock\" videos from Google AdMob. Google and its ad partners may use your device's advertising ID and approximate location to choose and measure ads. Where the law requires it, the app asks for your consent first, and you can change your choice in Settings. On iPhone, ads that use your advertising ID appear only if you allow tracking when asked. Premium removes all ads, and ads never use your journal, questions or birth details."
+        },
+        {
+          "heading": "Usage statistics and crash reports",
+          "body": "To learn which features people use and to fix crashes, the app sends anonymous usage events and error reports to PostHog, our analytics provider. They say which screens and features were used (for example \"a three-card reading was finished\" or \"the paywall was opened\"), plus your app version, language, device model, operating system and approximate country. They are linked to a random ID, not to your name, email or account, and they never include your readings, questions, notes, name or birth details. You can switch this off at any time in Settings → Privacy. Delete my data also gives the app a new random ID."
         },
         {
           "heading": "Your choices",
@@ -60,7 +64,7 @@
       "sections": [
         {
           "heading": "အတိုချုပ်",
-          "body": "{appName} ကို အင်တာနက်မလိုဘဲ သုံးနိုင်အောင် ဖန်တီးထားပါတယ်။ သင့်ရဲ့ ဟောစာတွေ၊ မှတ်စုတွေ၊ နာမည်နဲ့ ဆက်တင်တွေကို သင့်ဖုန်းထဲမှာပဲ သိမ်းပါတယ်။ ဒေတာ မရောင်းပါဘူး၊ သင့်ဟောစာ၊ မှတ်စု၊ မွေးဖွားမှုအချက်အလက်တွေကို ကြော်ငြာထဲ ဘယ်တော့မှ မထည့်ပါဘူး။ အခမဲ့ဗားရှင်းမှာ ကြော်ငြာပြရင် Google AdMob ကပါ (အောက်က ကြော်ငြာ ကဏ္ဍကို ကြည့်ပါ)။"
+          "body": "{appName} ကို အင်တာနက်မလိုဘဲ သုံးနိုင်အောင် ဖန်တီးထားပါတယ်။ သင့်ရဲ့ ဟောစာတွေ၊ မှတ်စုတွေ၊ နာမည်နဲ့ ဆက်တင်တွေကို သင့်ဖုန်းထဲမှာပဲ သိမ်းပါတယ်။ ဒေတာ မရောင်းပါဘူး၊ သင့်ဟောစာ၊ မှတ်စု၊ မွေးဖွားမှုအချက်အလက်တွေကို ကြော်ငြာထဲ ဘယ်တော့မှ မထည့်ပါဘူး။ အခမဲ့ဗားရှင်းမှာ ကြော်ငြာပြရင် Google AdMob ကပါ (အောက်က ကြော်ငြာ ကဏ္ဍကို ကြည့်ပါ)။ အမည်မသိ အသုံးပြုမှု စာရင်းအင်းနဲ့ app ပျက်မှု အစီရင်ခံစာတွေက app ကို ပိုကောင်းအောင် ကူညီပြီး ဆက်တင်မှာ ပိတ်နိုင်ပါတယ်။"
         },
         {
           "heading": "သင့်ဖုန်းထဲမှာပဲ ရှိနေမယ့် အရာများ",
@@ -81,6 +85,10 @@
         {
           "heading": "ကြော်ငြာများ",
           "body": "အခမဲ့ဗားရှင်းမှာ Google AdMob က ဘန်နာကြော်ငြာတွေနဲ့ \"ကြော်ငြာကြည့်ပြီး ဖွင့်ရန်\" ဗီဒီယိုတွေ ပြနိုင်ပါတယ်။ Google နဲ့ ၎င်းရဲ့ ကြော်ငြာမိတ်ဖက်တွေက ကြော်ငြာရွေးချယ်ဖို့နဲ့ တိုင်းတာဖို့ သင့်စက်ရဲ့ ကြော်ငြာ ID နဲ့ ခန့်မှန်းတည်နေရာကို သုံးနိုင်ပါတယ်။ ဥပဒေက လိုအပ်တဲ့နေရာမှာ အရင်ဆုံး သင့်ခွင့်ပြုချက်ကို တောင်းပြီး ဆက်တင်ထဲမှာ ပြောင်းနိုင်ပါတယ်။ iPhone မှာ ခြေရာခံခွင့် မေးတဲ့အခါ ခွင့်ပြုမှသာ သင့်ကြော်ငြာ ID သုံးတဲ့ ကြော်ငြာတွေ ပေါ်ပါမယ်။ Premium က ကြော်ငြာအားလုံးကို ဖယ်ရှားပေးပြီး ကြော်ငြာတွေက သင့်ဂျာနယ်၊ မေးခွန်းတွေ၊ မွေးဖွားမှုအချက်အလက်တွေကို ဘယ်တော့မှ မသုံးပါဘူး။"
+        },
+        {
+          "heading": "အသုံးပြုမှု စာရင်းအင်းနဲ့ app ပျက်မှု အစီရင်ခံစာ",
+          "body": "လူတွေ ဘယ်လုပ်ဆောင်ချက်တွေ သုံးလဲ သိဖို့နဲ့ app ပျက်တာတွေ ပြင်ဖို့ app က အမည်မသိ အသုံးပြုမှု မှတ်တမ်းနဲ့ အမှားအစီရင်ခံစာတွေကို ကျွန်ုပ်တို့ရဲ့ စာရင်းအင်းဝန်ဆောင်မှုပေးသူ PostHog ဆီ ပို့ပါတယ်။ ဒါတွေက ဘယ်စခရင်နဲ့ လုပ်ဆောင်ချက်တွေ သုံးခဲ့လဲ (ဥပမာ \"ကတ်သုံးချပ် ဟောစာတမ်း ပြီးသွားပြီ\" ဒါမှမဟုတ် \"Premium စာမျက်နှာ ဖွင့်ခဲ့တယ်\") နဲ့ app ဗားရှင်း၊ ဘာသာစကား၊ ဖုန်းမော်ဒယ်၊ operating system နဲ့ ခန့်မှန်းနိုင်ငံကို ပြောပြပါတယ်။ သင့်နာမည်၊ အီးမေးလ် ဒါမှမဟုတ် အကောင့်နဲ့ မဟုတ်ဘဲ ကျပန်း ID တစ်ခုနဲ့သာ ချိတ်ထားပြီး သင့်ဟောစာတမ်း၊ မေးခွန်း၊ မှတ်စု၊ နာမည် ဒါမှမဟုတ် မွေးဖွားမှု အချက်အလက်တွေ ဘယ်တော့မှ မပါပါ။ ဆက်တင် → ကိုယ်ရေးလုံခြုံမှု မှာ အချိန်မရွေး ပိတ်နိုင်ပါတယ်။ \"ဒေတာ ဖျက်ရန်\" ကလည်း app ကို ကျပန်း ID အသစ် ပေးပါတယ်။"
         },
         {
           "heading": "သင့်ရွေးချယ်ခွင့်များ",

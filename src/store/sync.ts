@@ -3,6 +3,7 @@ import { create } from 'zustand';
 import { createJSONStorage, persist } from 'zustand/middleware';
 
 import type { OAuthProvider, SyncMethods } from '@/config/sync';
+import { track } from '@/analytics';
 import { getJournalRepo } from '@/db';
 import {
   type SyncCursor,
@@ -80,6 +81,7 @@ export const useSync = create<SyncState>()(
       /** A new sign-in starts from scratch: upload everything on this phone. */
       const beginSession = async (account: string) => {
         await (await getJournalRepo()).markAllDirty();
+        track('cloud_backup_signed_in');
         set({
           status: 'idle',
           email: account,

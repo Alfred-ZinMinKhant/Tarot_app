@@ -154,6 +154,12 @@ const config: ExpoConfig = {
       // Comma-separated AdMob test device IDs: these devices get test ads, so you can tap them.
       testDevices: (env.ADMOB_TEST_DEVICES || '').split(',').map((d: string) => d.trim()).filter(Boolean),
     },
+    // Optional anonymous usage statistics and error reports (PostHog). Off unless the key is set;
+    // users can still switch it off in Settings. Host: https://us.i.posthog.com or https://eu.i.posthog.com.
+    analytics: {
+      apiKey: env.POSTHOG_API_KEY || '',
+      host: env.POSTHOG_HOST || '',
+    },
     // Numeric App Store ID, needed for iOS "Share app" / "Rate app" (Android uses the package name).
     store: { iosAppId: env.IOS_APP_STORE_ID || '' },
     // Optional local payment partner shown on the paywall (both must be set).

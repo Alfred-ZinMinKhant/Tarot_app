@@ -1,8 +1,9 @@
 import { useLocalSearchParams } from 'expo-router';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { StyleSheet, useWindowDimensions, View } from 'react-native';
 
+import { track } from '@/analytics';
 import { AppText, BackButton, Button, Card, Chip, ChipGroup, EmptyState, Screen, ShareSheet } from '@/components';
 import { CardFace } from '@/components/art';
 import { CARD_IMAGES } from '@/data/cardImages';
@@ -21,6 +22,9 @@ export default function CardDetail() {
   const [orientation, setOrientation] = useState<Orientation>('upright');
   const [sharing, setSharing] = useState(false);
   const card = id ? getCard(id) : undefined;
+  useEffect(() => {
+    if (card) track('card_opened', { card: card.id });
+  }, [card]);
 
   if (!card) {
     return (

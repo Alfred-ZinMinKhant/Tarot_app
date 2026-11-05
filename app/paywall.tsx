@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Linking, Platform, Pressable, StyleSheet, View } from 'react-native';
 
+import { track } from '@/analytics';
 import { AppText, BackButton, Button, Card, Header, Icon, Screen } from '@/components';
 import { localPaymentConfig } from '@/config/purchases';
 import { getSpread } from '@/engine';
@@ -36,6 +37,7 @@ export default function Paywall() {
   useEffect(() => {
     if (available) void usePremium.getState().loadPackages();
   }, [available]);
+  useEffect(() => track('paywall_viewed', { source: reason || 'settings' }), [reason]);
 
   const packages = [...p.packages].sort((a, b) => KIND_ORDER[a.kind] - KIND_ORDER[b.kind]);
   const chosen = packages.find((x) => x.id === selected) ?? packages[0];

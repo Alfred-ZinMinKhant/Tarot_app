@@ -1,4 +1,5 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import { track } from '@/analytics';
 import { uuidV4 } from '@/utils/id';
 import { create } from 'zustand';
 import { createJSONStorage, persist } from 'zustand/middleware';
@@ -39,6 +40,8 @@ export type SettingsState = {
    * for the whole day. Never leaves the device.
    */
   deviceSeed: string | null;
+  /** Anonymous usage statistics and error reports (PostHog). Device-only, never synced. */
+  analyticsEnabled: boolean;
   setLanguage: (language: Language | null) => void;
   setFontSize: (size: FontSizeSetting) => void;
   setMyanmarFont: (font: MyanmarFont) => void;
@@ -53,6 +56,7 @@ export type SettingsState = {
   setBirth: (birth: BirthData | null) => void;
   dismissChartNudge: () => void;
   setSoundEnabled: (enabled: boolean) => void;
+  setAnalyticsEnabled: (enabled: boolean) => void;
   markLessonRead: (id: string) => void;
   ensureDeviceSeed: () => string;
   completeOnboarding: () => void;
@@ -79,6 +83,7 @@ export const DEFAULT_SETTINGS = {
   soundEnabled: false,
   lessonsRead: [] as string[],
   deviceSeed: null as string | null,
+  analyticsEnabled: true,
 } satisfies Partial<SettingsState>;
 
 export const useSettings = create<SettingsState>()(
@@ -101,6 +106,7 @@ export const useSettings = create<SettingsState>()(
       setBirth: (birth) => set({ birth }),
       dismissChartNudge: () => set({ chartNudgeDismissed: true }),
       setSoundEnabled: (soundEnabled) => set({ soundEnabled }),
+      setAnalyticsEnabled: (analyticsEnabled) => set({ analyticsEnabled }),
       markLessonRead: (id) => {
         const read = get().lessonsRead;
         if (!read.includes(id)) set({ lessonsRead: [...read, id] });
@@ -112,10 +118,15 @@ export const useSettings = create<SettingsState>()(
         set({ deviceSeed });
         return deviceSeed;
       },
-      completeOnboarding: () => set({ hasOnboarded: true }),
+      completeOnboarding: () => {
+        const s = get();
+        track('onboarding_completed', { sign_chosen: !!s.birthSign, chart_entered: !!s.birth, reminder_on: s.reminderEnabled });
+        set({ hasOnboarded: true });
+      },
       // Keeps the device seed so the Card of the Day doesn't change after a settings reset.
-      reset: () => set({ ...DEFAULT_SETTINGS, deviceSeed: get().deviceSeed }),
-      wipe: () => set({ ...DEFAULT_SETTINGS }),
+      // Both keep the usage-statistics choice: someone who switched it off shouldn't be opted back in.
+      reset: () => set({ ...DEFAULT_SETTINGS, deviceSeed: get().deviceSeed, analyticsEnabled: get().analyticsEnabled }),
+      wipe: () => set({ ...DEFAULT_SETTINGS, analyticsEnabled: get().analyticsEnabled }),
     }),
     {
       name: 'nat-tarot.settings',
@@ -139,6 +150,7 @@ export const useSettings = create<SettingsState>()(
         soundEnabled: s.soundEnabled,
         lessonsRead: s.lessonsRead,
         deviceSeed: s.deviceSeed,
+        analyticsEnabled: s.analyticsEnabled,
       }),
     },
   ),

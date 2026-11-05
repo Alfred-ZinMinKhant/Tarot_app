@@ -4,6 +4,7 @@ import { ScrollView, StyleSheet, useWindowDimensions, type View } from 'react-na
 
 import { router } from 'expo-router';
 
+import { track } from '@/analytics';
 import { useLanguage } from '@/hooks/useLanguage';
 import { useNumberFormat } from '@/hooks/useNumberFormat';
 import { rewardedConfigured, useAds, useRewardedAvailable } from '@/store/ads';
@@ -45,7 +46,7 @@ export function ShareSheet({ visible, onClose, title, subtitle, question, entrie
   const adUnlock = sharesLeft === 0 && !purchasesAvailable() && rewardedConfigured();
 
   /** Spends one allowance share on `action`; at zero, offers the rewarded ad or the paywall instead. */
-  const guarded = async (action: () => Promise<boolean>) => {
+  const guarded = async (method: 'share' | 'save', action: () => Promise<boolean>) => {
     if (adUnlock) {
       setBusy(true);
       const outcome = await useAds.getState().watchForShares();
@@ -63,13 +64,14 @@ export function ShareSheet({ visible, onClose, title, subtitle, question, entrie
     const done = await action();
     setBusy(false);
     if (done) {
+      track('image_shared', { method });
       if (sharesLeft !== null) recordShare();
       onClose();
     }
   };
 
   const share = () =>
-    guarded(async () => {
+    guarded('share', async () => {
       const result = await shareViewAsImage(ref, t('share.dialogTitle'));
       if (result === 'unavailable') toast(t('share.unavailable'));
       else if (result === 'failed') toast(t('share.failed'));
@@ -77,7 +79,7 @@ export function ShareSheet({ visible, onClose, title, subtitle, question, entrie
     });
 
   const save = () =>
-    guarded(async () => {
+    guarded('save', async () => {
       const result = await saveViewToPhotos(ref);
       if (result === 'saved') toast(t('share.saved'));
       else if (result === 'denied') toast(t('share.saveDenied'));
