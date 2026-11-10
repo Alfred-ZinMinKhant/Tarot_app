@@ -529,7 +529,10 @@
     "settingsTitle": "Premium",
     "statusPremium": "Premium is active",
     "statusFree": "Free plan",
-    "manage": "Manage subscription"
+    "manage": "Manage subscription",
+    "portraitsHint": "Moving portraits bring each card to life. They are part of Premium.",
+    "reasonPortraits": "Moving portraits are a Premium feature.",
+    "benefitPortraits": "Moving portraits: the cards come to life"
   },
   "chart": {
     "title": "Birth chart",

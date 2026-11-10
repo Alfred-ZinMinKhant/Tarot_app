@@ -15,6 +15,7 @@ export type AnalyticsEvents = {
   onboarding_completed: { sign_chosen: boolean; chart_entered: boolean; reminder_on: boolean };
   reading_completed: { spread: string; topic: string; asked_question: boolean };
   card_opened: { card: string };
+  portrait_preview: { card: string };
   lesson_opened: { lesson: string };
   birth_chart_saved: { has_time: boolean };
   image_shared: { method: 'share' | 'save' };

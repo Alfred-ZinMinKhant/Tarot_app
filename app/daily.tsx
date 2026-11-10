@@ -18,6 +18,7 @@ import { getCard } from '@/data/cards';
 import { readingText, type DrawnCard } from '@/engine';
 import { useHaptics } from '@/hooks/useHaptics';
 import { useLanguage } from '@/hooks/useLanguage';
+import { CardHero } from '@/components/CardHero';
 import { DailyAstroNote } from '@/components/DailyAstroNote';
 import { useAds, useRewardedAvailable } from '@/store/ads';
 import { usePremium } from '@/store/premium';
@@ -75,14 +76,16 @@ export default function Daily() {
 
       <View style={styles.hero}>
         {card && draw ? (
-          <TarotCard
-            card={card}
-            width={heroWidth}
-            reversed={draw.reversed}
-            revealed={flipped}
-            accessibilityLabel={card[lang].name}
-            testID="daily-hero"
-          />
+          <CardHero cardId={card.id} width={heroWidth} reversed={draw.reversed}>
+            <TarotCard
+              card={card}
+              width={heroWidth}
+              reversed={draw.reversed}
+              revealed={flipped}
+              accessibilityLabel={card[lang].name}
+              testID="daily-hero"
+            />
+          </CardHero>
         ) : (
           <TarotCard
             card={getCard('major-00-fool')!}

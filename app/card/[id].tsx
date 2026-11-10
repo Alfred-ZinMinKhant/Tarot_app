@@ -6,6 +6,7 @@ import { StyleSheet, useWindowDimensions, View } from 'react-native';
 import { track } from '@/analytics';
 import { AppText, BackButton, Button, Card, Chip, ChipGroup, EmptyState, Screen, ShareSheet } from '@/components';
 import { CardFace } from '@/components/art';
+import { CardHero } from '@/components/CardHero';
 import { CARD_IMAGES } from '@/data/cardImages';
 import { getCard, toRoman } from '@/data/cards';
 import { READING_AREAS, type Orientation } from '@/data/types';
@@ -45,7 +46,9 @@ export default function CardDetail() {
       <BackButton fallback="/library" testID="card-back-button" />
 
       <View style={styles.hero}>
-        <CardFace card={card} width={heroWidth} large reversed={orientation === 'reversed'} />
+        <CardHero cardId={card.id} width={heroWidth} reversed={orientation === 'reversed'}>
+          <CardFace card={card} width={heroWidth} large reversed={orientation === 'reversed'} />
+        </CardHero>
         <View style={styles.titles}>
           <AppText variant="title" center accessibilityRole="header" testID="card-title">
             {text.name}

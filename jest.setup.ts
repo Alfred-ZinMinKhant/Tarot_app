@@ -47,6 +47,8 @@ jest.mock('expo-media-library/legacy', () => ({
 }));
 
 // expo-document-picker needs the native file chooser; tests mock getDocumentAsync themselves.
+// expo-video needs native code; the moving-portrait clips are not played in tests.
+jest.mock('expo-video', () => ({ VideoView: () => null, useVideoPlayer: () => ({}) }));
 jest.mock('expo-document-picker', () => ({ getDocumentAsync: jest.fn() }));
 
 // The reading and home screens render a lot of SVG; give slow or busy machines room.

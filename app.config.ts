@@ -156,6 +156,8 @@ const config: ExpoConfig = {
     },
     // Optional anonymous usage statistics and error reports (PostHog). Off unless the key is set;
     // users can still switch it off in Settings. Host: https://us.i.posthog.com or https://eu.i.posthog.com.
+    // Where the optional moving-portrait clips are hosted (<baseUrl>/<cardId>.mp4). Empty = none.
+    portraits: { baseUrl: env.PORTRAIT_BASE_URL || '' },
     analytics: {
       apiKey: env.POSTHOG_API_KEY || '',
       host: env.POSTHOG_HOST || '',

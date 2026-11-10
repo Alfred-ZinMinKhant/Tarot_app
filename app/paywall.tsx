@@ -50,7 +50,9 @@ export default function Paywall() {
     ? t('premium.reasonSpread', { spread: spread[lang].name })
     : reason === 'share'
       ? t('premium.reasonShare', { n: fmt(FREE_SHARES_PER_MONTH) })
-      : null;
+      : reason === 'portraits'
+        ? t('premium.reasonPortraits')
+        : null;
 
   const buy = async () => {
     if (!chosen) return;
@@ -144,7 +146,7 @@ export default function Paywall() {
       ) : null}
 
       <Card>
-        {(['benefitCeltic', 'benefitForecast', 'benefitLove', 'benefitShare', 'benefitNoAds', 'benefitSupport'] as const).map((k) => (
+        {(['benefitPortraits', 'benefitCeltic', 'benefitForecast', 'benefitLove', 'benefitShare', 'benefitNoAds', 'benefitSupport'] as const).map((k) => (
           <View key={k} style={styles.benefit}>
             <Icon name="check" size={20} color={colors.accent} />
             <AppText style={styles.flex}>{t(`premium.${k}`)}</AppText>
