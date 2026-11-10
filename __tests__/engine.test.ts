@@ -163,7 +163,7 @@ describe('spreads', () => {
 
   it('computes layout bounds', () => {
     expect(layoutSize(getSpread('three-past-present-future')!)).toEqual({ width: 3, height: 1 });
-    expect(layoutSize(getSpread('celtic-cross')!)).toEqual({ width: 5.4, height: 4 });
+    expect(layoutSize(getSpread('celtic-cross')!)).toEqual({ width: 4, height: 4 });
     expect(getSpread('nope')).toBeUndefined();
   });
 });

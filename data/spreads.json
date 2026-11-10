@@ -225,8 +225,8 @@
       },
       {
         "id": "week-3",
-        "x": 2,
-        "y": 0,
+        "x": 0,
+        "y": 1,
         "en": {
           "name": "Week 3",
           "prompt": "A turning point, or a lesson you will meet."
@@ -238,8 +238,8 @@
       },
       {
         "id": "week-4",
-        "x": 3,
-        "y": 0,
+        "x": 1,
+        "y": 1,
         "en": {
           "name": "Week 4",
           "prompt": "How the month will close, and what will carry on."
@@ -345,7 +345,7 @@
       {
         "id": "present",
         "x": 1.5,
-        "y": 1.5,
+        "y": 1,
         "en": {
           "name": "The present",
           "prompt": "The centre of the situation."
@@ -358,7 +358,7 @@
       {
         "id": "crossing",
         "x": 1.5,
-        "y": 1.5,
+        "y": 1,
         "rotate": 90,
         "en": {
           "name": "What crosses you",
@@ -372,7 +372,7 @@
       {
         "id": "foundation",
         "x": 1.5,
-        "y": 2.5,
+        "y": 2,
         "en": {
           "name": "The foundation",
           "prompt": "What lies beneath, often unspoken."
@@ -384,8 +384,8 @@
       },
       {
         "id": "recent-past",
-        "x": 0,
-        "y": 1.5,
+        "x": 0.1,
+        "y": 1,
         "en": {
           "name": "The recent past",
           "prompt": "What is just moving out of the picture."
@@ -398,7 +398,7 @@
       {
         "id": "aim",
         "x": 1.5,
-        "y": 0.5,
+        "y": 0,
         "en": {
           "name": "What you aim for",
           "prompt": "Your hopes and conscious goals here."
@@ -410,8 +410,8 @@
       },
       {
         "id": "near-future",
-        "x": 3,
-        "y": 1.5,
+        "x": 2.9,
+        "y": 1,
         "en": {
           "name": "The near future",
           "prompt": "What may be coming into the picture soon."
@@ -423,7 +423,7 @@
       },
       {
         "id": "self",
-        "x": 4.4,
+        "x": 0,
         "y": 3,
         "en": {
           "name": "Yourself",
@@ -436,8 +436,8 @@
       },
       {
         "id": "surroundings",
-        "x": 4.4,
-        "y": 2,
+        "x": 1,
+        "y": 3,
         "en": {
           "name": "Your surroundings",
           "prompt": "The people and influences around you."
@@ -449,8 +449,8 @@
       },
       {
         "id": "hopes-fears",
-        "x": 4.4,
-        "y": 1,
+        "x": 2,
+        "y": 3,
         "en": {
           "name": "Hopes and fears",
           "prompt": "What you wish for, and what you worry about."
@@ -462,8 +462,8 @@
       },
       {
         "id": "direction",
-        "x": 4.4,
-        "y": 0,
+        "x": 3,
+        "y": 3,
         "en": {
           "name": "Where things are heading",
           "prompt": "A likely direction, which your choices can still change."

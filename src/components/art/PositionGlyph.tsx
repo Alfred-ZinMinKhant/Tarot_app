@@ -26,6 +26,13 @@ const SYMBOL_FOR: Record<string, Symbol> = {
   surroundings: 'ring',
   'hopes-fears': 'heart',
   direction: 'arrow',
+  'early-week': 'sprout',
+  midweek: 'sun',
+  weekend: 'moon',
+  'week-1': 'sprout',
+  'week-2': 'sun',
+  'week-3': 'mountain',
+  'week-4': 'star',
 };
 
 export function hasPositionGlyph(id: string): boolean {

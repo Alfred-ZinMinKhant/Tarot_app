@@ -2,7 +2,16 @@ import { router } from 'expo-router';
 import { useTranslation } from 'react-i18next';
 import { Pressable, StyleSheet, View } from 'react-native';
 
-import { AppText, Button, Card, DailyCardPanel, Header, Icon, ReadingRow, Screen } from '@/components';
+import {
+  AppText,
+  Button,
+  Card,
+  DailyCardPanel,
+  Header,
+  Icon,
+  ReadingRow,
+  Screen,
+} from '@/components';
 import { ChartPreview } from '@/components/ChartPreview';
 import { SignPanel } from '@/components/SignPanel';
 import { SpreadGlyph } from '@/components/art/SpreadGlyph';
@@ -58,8 +67,17 @@ export default function Home() {
             {t('home.chartNudgeTitle')}
           </AppText>
           <AppText tone="textMuted">{t('home.chartNudgeBody')}</AppText>
-          <Button label={t('home.chartNudgeCreate')} onPress={() => router.push('/birth-chart')} testID="home-chart-nudge-create" />
-          <Button label={t('home.chartNudgeDismiss')} variant="ghost" onPress={dismissNudge} testID="home-chart-nudge-dismiss" />
+          <Button
+            label={t('home.chartNudgeCreate')}
+            onPress={() => router.push('/birth-chart')}
+            testID="home-chart-nudge-create"
+          />
+          <Button
+            label={t('home.chartNudgeDismiss')}
+            variant="ghost"
+            onPress={dismissNudge}
+            testID="home-chart-nudge-dismiss"
+          />
         </Card>
       ) : null}
       <Pressable
@@ -69,7 +87,11 @@ export default function Home() {
         testID="home-birth-chart"
         style={({ pressed }) => [
           styles.spread,
-          { backgroundColor: colors.surface, borderColor: colors.primary, opacity: pressed ? 0.85 : 1 },
+          {
+            backgroundColor: colors.surface,
+            borderColor: colors.primary,
+            opacity: pressed ? 0.85 : 1,
+          },
         ]}
       >
         <ChartPreview birth={birth} size={84} />
@@ -91,7 +113,11 @@ export default function Home() {
           {t('guide.homeTitle')}
         </AppText>
         <AppText tone="textMuted">{t('guide.homeBody')}</AppText>
-        <Button label={t('guide.homeButton')} onPress={() => router.push('/guide')} testID="home-guide-open" />
+        <Button
+          label={t('guide.homeButton')}
+          onPress={() => router.push('/guide')}
+          testID="home-guide-open"
+        />
       </Card>
 
       <View style={styles.section}>
@@ -132,7 +158,12 @@ export default function Home() {
               ]}
             >
               <View style={[styles.glyph, { backgroundColor: colors.surfaceAlt }]}>
-                <SpreadGlyph spread={spread} size={64} color={colors.primary} fill={colors.surface} />
+                <SpreadGlyph
+                  spread={spread}
+                  size={64}
+                  color={colors.primary}
+                  fill={colors.surface}
+                />
               </View>
               <View style={styles.spreadText}>
                 <AppText variant="label" bold>
@@ -143,23 +174,21 @@ export default function Home() {
                 </AppText>
                 <AppText variant="caption" tone="accent">
                   {t('home.spreadCards', { n: fmt(spread.cardCount) })}
+                  {locked ? (
+                    <AppText
+                      variant="caption"
+                      tone="primary"
+                      bold
+                      testID={`home-spread-lock-${spread.id}`}
+                    >
+                      {`  ✦ ${lockBadge}`}
+                    </AppText>
+                  ) : null}
                 </AppText>
               </View>
-              {locked ? (
-                <View
-                  style={[styles.premium, { borderColor: colors.primary }]}
-                  testID={`home-spread-lock-${spread.id}`}
-                >
-                  <Icon name="lock" size={14} color={colors.primary} />
-                  <AppText variant="caption" tone="primary" bold>
-                    {lockBadge}
-                  </AppText>
-                </View>
-              ) : (
-                <View style={styles.chevron}>
-                  <Icon name="back" size={20} color={colors.textMuted} />
-                </View>
-              )}
+              <View style={styles.chevron}>
+                <Icon name="back" size={20} color={colors.textMuted} />
+              </View>
             </Pressable>
           );
         })}
@@ -214,16 +243,13 @@ const styles = StyleSheet.create({
     padding: spacing.lg,
     minHeight: MIN_TAP,
   },
-  glyph: { width: 64, height: 64, borderRadius: radius.md, alignItems: 'center', justifyContent: 'center' },
+  glyph: {
+    width: 64,
+    height: 64,
+    borderRadius: radius.md,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
   spreadText: { flex: 1, gap: 2 },
   chevron: { transform: [{ rotate: '180deg' }] },
-  premium: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 4,
-    borderWidth: 1,
-    borderRadius: radius.pill,
-    paddingHorizontal: spacing.sm,
-    paddingVertical: 2,
-  },
 });

@@ -2,15 +2,16 @@ import { router } from 'expo-router';
 import { VideoView, useVideoPlayer } from 'expo-video';
 import { type ReactNode, useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { StyleSheet, View } from 'react-native';
+import { Pressable, StyleSheet, View } from 'react-native';
 
 import { track } from '@/analytics';
 import { usePortraitAccess } from '@/hooks/usePortraitAccess';
 import { hasPortrait, portraitUri } from '@/services/portraits';
 import { usePortraitPreview } from '@/store/portraitPreview';
+import { useAppTheme } from '@/theme/ThemeContext';
 
 import { AppText } from './AppText';
-import { Button } from './Button';
+import { Icon } from './Icon';
 import { LivingCard } from './LivingCard';
 import { CARD_ASPECT } from './art/cardBackSvg';
 
@@ -18,7 +19,19 @@ const PREVIEW_MS = 4000;
 
 type Props = { cardId: string; width: number; reversed?: boolean; children: ReactNode };
 
-function Clip({ uri, width, reversed, loop, onEnd }: { uri: string; width: number; reversed: boolean; loop: boolean; onEnd?: () => void }) {
+function Clip({
+  uri,
+  width,
+  reversed,
+  loop,
+  onEnd,
+}: {
+  uri: string;
+  width: number;
+  reversed: boolean;
+  loop: boolean;
+  onEnd?: () => void;
+}) {
   const height = width / CARD_ASPECT;
   const player = useVideoPlayer(uri, (p) => {
     p.loop = loop;
@@ -33,10 +46,44 @@ function Clip({ uri, width, reversed, loop, onEnd }: { uri: string; width: numbe
   return (
     <View
       pointerEvents="none"
-      style={[StyleSheet.absoluteFill, { borderRadius: width * 0.06, overflow: 'hidden', transform: reversed ? [{ rotate: '180deg' }] : [] }]}
+      style={[
+        StyleSheet.absoluteFill,
+        {
+          borderRadius: width * 0.06,
+          overflow: 'hidden',
+          transform: reversed ? [{ rotate: '180deg' }] : [],
+        },
+      ]}
     >
-      <VideoView player={player} style={{ width, height }} contentFit="cover" nativeControls={false} />
+      <VideoView
+        player={player}
+        style={{ width, height }}
+        contentFit="cover"
+        nativeControls={false}
+      />
     </View>
+  );
+}
+
+function PortraitUpsell() {
+  const { t } = useTranslation();
+  const { colors } = useAppTheme();
+  return (
+    <Pressable
+      onPress={() => router.push({ pathname: '/paywall', params: { reason: 'portraits' } })}
+      accessibilityRole="button"
+      accessibilityLabel={`${t('premium.portraitsHint')} ${t('premium.see')}`}
+      style={[styles.upsell, { borderColor: colors.border, backgroundColor: colors.surfaceAlt }]}
+      testID="portrait-upsell"
+    >
+      <Icon name="lock" size={14} color={colors.primary} />
+      <AppText variant="caption" tone="textMuted" style={styles.upsellText} numberOfLines={2}>
+        {t('premium.portraitsHint')}
+      </AppText>
+      <AppText variant="caption" tone="primary" bold testID="portrait-upsell-button">
+        {t('premium.see')}
+      </AppText>
+    </Pressable>
   );
 }
 
@@ -76,7 +123,8 @@ export function CardHero({ cardId, width, reversed = false, children }: Props) {
   }, [cardId, wantsClip]);
 
   const playing = uri !== null && !previewDone;
-  const showUpsell = available && access === 'preview' && (previewDone || (!canPreview() && uri === null));
+  const showUpsell =
+    available && access === 'preview' && (previewDone || (!canPreview() && uri === null));
   return (
     <View style={styles.wrap}>
       <LivingCard width={width}>
@@ -91,24 +139,22 @@ export function CardHero({ cardId, width, reversed = false, children }: Props) {
           />
         ) : null}
       </LivingCard>
-      {showUpsell ? (
-        <View style={styles.upsell} testID="portrait-upsell">
-          <AppText variant="caption" tone="textMuted" center>
-            {t('premium.portraitsHint')}
-          </AppText>
-          <Button
-            label={t('premium.see')}
-            variant="ghost"
-            onPress={() => router.push({ pathname: '/paywall', params: { reason: 'portraits' } })}
-            testID="portrait-upsell-button"
-          />
-        </View>
-      ) : null}
+      {showUpsell ? <PortraitUpsell /> : null}
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   wrap: { alignItems: 'center', gap: 8 },
-  upsell: { alignItems: 'center', gap: 4 },
+  upsell: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 8,
+    borderWidth: StyleSheet.hairlineWidth,
+    borderRadius: 14,
+    paddingHorizontal: 12,
+    paddingVertical: 8,
+    alignSelf: 'stretch',
+  },
+  upsellText: { flex: 1 },
 });
