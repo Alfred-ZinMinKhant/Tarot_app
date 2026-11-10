@@ -7,6 +7,7 @@ import { ChartPreview } from '@/components/ChartPreview';
 import { SignPanel } from '@/components/SignPanel';
 import { SpreadGlyph } from '@/components/art/SpreadGlyph';
 import { isPremiumSpread } from '@/premium/features';
+import { useRewardedAvailable } from '@/store/ads';
 import { purchasesAvailable } from '@/store/premium';
 import { useSpreadsUnlocked } from '@/store/spreadAccess';
 import { SPREADS } from '@/engine';
@@ -26,7 +27,10 @@ export default function Home() {
   const burmeseNumerals = useSettings((s) => s.burmeseNumerals);
   const recent = useJournal((s) => s.readings).slice(0, 3);
   const unlocked = useSpreadsUnlocked();
-  const lockBadge = t(purchasesAvailable() ? 'premium.badge' : 'ads.badge');
+  const adOffered = useRewardedAvailable();
+  const canBuy = purchasesAvailable();
+  // Say up front that an ad also opens a locked spread, so the lock doesn't read as pay-only.
+  const lockBadge = t(canBuy ? (adOffered ? 'premium.badgeOrAd' : 'premium.badge') : 'ads.badge');
   const name = useSettings((s) => s.name).trim();
   const birth = useSettings((s) => s.birth);
   const hasChart = birth !== null;
@@ -97,6 +101,11 @@ export default function Home() {
         <AppText variant="caption" tone="textMuted" testID="home-start-hint">
           {t('home.startHint')}
         </AppText>
+        {!unlocked && canBuy && adOffered ? (
+          <AppText variant="caption" tone="primary" testID="home-unlock-hint">
+            {t('home.unlockHint')}
+          </AppText>
+        ) : null}
         {SPREADS.map((spread) => {
           const locked = !unlocked && isPremiumSpread(spread.id);
           return (

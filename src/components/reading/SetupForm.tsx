@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import { StyleSheet, TextInput, View } from 'react-native';
 
-import { type Topic, TOPICS } from '@/engine';
+import { suggestTopic, type Topic, TOPICS } from '@/engine';
 import { useLanguage } from '@/hooks/useLanguage';
 import { radius, spacing } from '@/theme/spacing';
 import { useAppTheme } from '@/theme/ThemeContext';
@@ -26,6 +26,8 @@ export function SetupForm({ topic, onTopic, question, onQuestion, onStart }: Pro
   const lang = useLanguage();
   const theme = useAppTheme();
   const inputScript = scriptForLanguage(lang);
+  const suggested = suggestTopic(question);
+  const showSuggestion = suggested !== null && suggested !== topic && (topic === 'general' || topic === 'question');
   return (
     <>
       <View style={styles.section}>
@@ -68,6 +70,14 @@ export function SetupForm({ topic, onTopic, question, onQuestion, onStart }: Pro
         <AppText variant="caption" tone="textMuted">
           {t('reading.questionHint')}
         </AppText>
+        {suggested && showSuggestion ? (
+          <Button
+            label={t('reading.topicSuggest', { topic: t(`reading.topics.${suggested}`) })}
+            variant="ghost"
+            onPress={() => onTopic(suggested)}
+            testID="reading-topic-suggest"
+          />
+        ) : null}
       </View>
       <Button label={t('reading.start')} onPress={onStart} testID="reading-start" />
     </>

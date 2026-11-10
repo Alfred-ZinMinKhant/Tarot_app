@@ -2,7 +2,7 @@ import { DarkTheme, SplashScreen, Stack, ThemeProvider, useSegments } from 'expo
 import { StatusBar } from 'expo-status-bar';
 import { useEffect, useMemo } from 'react';
 import { I18nextProvider } from 'react-i18next';
-import { Pressable, Text, View } from 'react-native';
+import { AppState, Pressable, Text, View } from 'react-native';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 
@@ -101,6 +101,14 @@ function AppServices() {
       .getState()
       .init()
       .finally(() => void useAds.getState().init());
+  }, []);
+  // Phones keep the app in memory for days: when it returns to the foreground on a new calendar
+  // day, drop yesterday's card so Home and Daily show today's.
+  useEffect(() => {
+    const sub = AppState.addEventListener('change', (state) => {
+      if (state === 'active') void useDaily.getState().refreshIfNewDay().catch((e) => logError('daily.refresh', e));
+    });
+    return () => sub.remove();
   }, []);
   useReminders(true);
   useCloudSync();

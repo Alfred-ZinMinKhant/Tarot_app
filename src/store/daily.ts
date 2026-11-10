@@ -15,6 +15,8 @@ type DailyState = {
   /** Rewards for today (memory only, cleared on a new day): a second card and the deeper reading. */
   bonus: { dateKey: string; extra: DrawnCard | null; deeper: boolean } | null;
   load: (now?: Date) => Promise<void>;
+  /** Reloads when the calendar day has changed since the last load (the app stayed open past midnight). */
+  refreshIfNewDay: (now?: Date) => Promise<void>;
   reveal: (now?: Date) => Promise<DailyDraw>;
   saveToJournal: () => Promise<string>;
   /** Draws today's second card (the same one all day, never the first card). */
@@ -34,6 +36,11 @@ export const useDaily = create<DailyState>()((set, get) => ({
     const repo = await getJournalRepo();
     const draw = await repo.getDailyDraw(dateKey);
     set({ draw, loading: false });
+  },
+  refreshIfNewDay: async (now = new Date()) => {
+    const { dateKey, loading } = get();
+    if (loading || dateKey === localDateKey(now)) return;
+    await get().load(now);
   },
   reveal: async (now = new Date()) => {
     const dateKey = localDateKey(now);

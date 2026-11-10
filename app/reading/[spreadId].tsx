@@ -253,8 +253,8 @@ export default function Reading() {
               {answer ? <AnswerCard answer={answer} question={question} topic={topic} /> : null}
               <Card testID="reading-summary" style={tint ? { borderColor: tint, borderWidth: 1 } : undefined}>
                 <AppText variant="heading">{t('reading.summaryTitle')}</AppText>
-                {summary.map((line) => (
-                  <AppText key={line.key}>{t(`reading.summary.${line.key}`, line.params)}</AppText>
+                {summary.map((line, i) => (
+                  <AppText key={`${line.key}-${i}`}>{t(`reading.summary.${line.key}`, line.params)}</AppText>
                 ))}
               </Card>
               <Button

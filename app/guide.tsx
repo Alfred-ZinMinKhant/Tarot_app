@@ -12,12 +12,16 @@ import { useSpreadsUnlocked } from '@/store/spreadAccess';
 import { radius, spacing } from '@/theme/spacing';
 import { useAppTheme } from '@/theme/ThemeContext';
 
-type Answer = { id: 'quick' | 'unfold' | 'situation' | 'love' | 'deep'; spreadId: string; topic: Topic };
+type Answer = { id: 'quick' | 'unfold' | 'situation' | 'career' | 'money' | 'week' | 'month' | 'love' | 'deep'; spreadId: string; topic: Topic };
 
 const ANSWERS: readonly Answer[] = [
   { id: 'quick', spreadId: 'one-card', topic: 'general' },
   { id: 'unfold', spreadId: 'three-past-present-future', topic: 'general' },
   { id: 'situation', spreadId: 'three-situation-challenge-advice', topic: 'general' },
+  { id: 'career', spreadId: 'three-situation-challenge-advice', topic: 'career' },
+  { id: 'money', spreadId: 'three-situation-challenge-advice', topic: 'money' },
+  { id: 'week', spreadId: 'week-ahead', topic: 'general' },
+  { id: 'month', spreadId: 'month-ahead', topic: 'general' },
   { id: 'love', spreadId: 'love', topic: 'love' },
   { id: 'deep', spreadId: 'celtic-cross', topic: 'general' },
 ];

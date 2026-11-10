@@ -171,6 +171,14 @@ describe('card of the day', () => {
     await act(() => useDaily.getState().load());
     expect(useDaily.getState().draw).toMatchObject({ cardId: expected.cardId, reversed: expected.reversed });
 
+    // Left open past midnight: the next day's refresh drops yesterday's card.
+    const tomorrow = new Date(Date.now() + 36 * 3600 * 1000);
+    await act(() => useDaily.getState().refreshIfNewDay(tomorrow));
+    expect(useDaily.getState().dateKey).toBe(localDateKey(tomorrow));
+    expect(useDaily.getState().draw).toBeNull();
+    await act(() => useDaily.getState().refreshIfNewDay(new Date()));
+    expect(useDaily.getState().draw).toMatchObject({ cardId: expected.cardId });
+
     renderRouter('./app', { initialUrl: '/daily' });
     const meaning = await screen.findByTestId('daily-meaning');
     expect(normalizer(String(meaning.props.children))).toBe(expected.reversed ? card.en.reversed : card.en.upright);

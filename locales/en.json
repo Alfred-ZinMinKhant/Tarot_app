@@ -37,8 +37,9 @@
     "subtitle": "Take a quiet moment for yourself today.",
     "todayIs": "Today is {{date}}",
     "introTitle": "How $t(appName) works",
-    "introBody": "Ask a question, draw cards, and use their meanings as gentle prompts for reflection. Your readings stay on this phone.",
+    "introBody": "Ask a question, draw cards, and see what they point to. Your readings stay on this phone.",
     "startReading": "Start a reading",
+    "unlockHint": "Locked spreads open free with a short ad, or all at once with Premium.",
     "startHint": "New to tarot? Start with Card of the Day or a one-card reading. There's no required order; pick any spread.",
     "spreadCards": "Cards: {{n}}",
     "dailyTitle": "Card of the Day",
@@ -73,7 +74,7 @@
   },
   "card": {
     "share": "Share this card",
-    "promptNote": "Every card is a prompt for reflection, not a verdict. Hard cards often point to change or something worth your attention.",
+    "promptNote": "Every card shows a likely direction, not a fixed fate. Hard cards often point to change or something worth your attention.",
     "notFoundTitle": "Card not found",
     "notFoundBody": "This card isn't in the deck.",
     "upright": "Upright",
@@ -120,54 +121,55 @@
     "turnOverA11y": "Turn over the card for {{position}}",
     "summaryTitle": "Reading summary",
     "summary": {
-      "majorsMany": "Several Major Arcana cards appeared, so this may be a meaningful chapter with bigger lessons in it.",
-      "majorsNone": "No Major Arcana appeared: this looks like everyday territory, shaped mostly by your own choices.",
-      "suitWands": "Wands lead this reading: energy, drive and creative fire are in focus.",
-      "suitCups": "Cups lead this reading: feelings, relationships and intuition are in focus.",
-      "suitSwords": "Swords lead this reading: thoughts, decisions and honest words are in focus.",
-      "suitPentacles": "Pentacles lead this reading: work, money and everyday practical matters are in focus.",
-      "reversedMany": "Many cards are reversed, which can point to energy turned inward or something still unfolding. Go gently.",
-      "allUpright": "Every card is upright, suggesting energy that is flowing openly.",
-      "keywords": "Key themes: {{keywords}}.",
-      "advice": "A thought to carry with you: {{advice}}",
+      "majorsMany": "Several Major Arcana cards appeared: expect a meaningful chapter with bigger lessons in it.",
+      "majorsNone": "No Major Arcana appeared: expect everyday territory, shaped mostly by your own choices.",
+      "suitWands": "Wands lead this reading: expect energy, drive and creative fire to be at the centre.",
+      "suitCups": "Cups lead this reading: expect feelings, relationships and intuition to take centre stage.",
+      "suitSwords": "Swords lead this reading: expect thoughts, decisions and honest words to take centre stage.",
+      "suitPentacles": "Pentacles lead this reading: expect work, money and everyday practical matters to take centre stage.",
+      "reversedMany": "Many cards are reversed: expect energy to turn inward, or things to take longer than you hope. Go gently.",
+      "allUpright": "Every card is upright: expect energy to flow openly.",
+      "keywords": "Key themes ahead: {{keywords}}.",
+      "advice": "What to keep in mind as this unfolds: {{advice}}",
       "intro": {
-        "love": "Looking at this through the lens of love and relationships:",
-        "career": "Looking at this through the lens of your work and path:",
-        "money": "Looking at this through the lens of money and resources:",
-        "health": "Looking at this through the lens of your wellbeing and inner life:"
+        "love": "Here is what the cards foresee for love and relationships:",
+        "career": "Here is what the cards foresee for your work and path:",
+        "money": "Here is what the cards suggest for money and resources:",
+        "health": "Here is what the cards suggest for your wellbeing and inner life:"
       },
       "suit": {
         "love": {
-          "cups": "Cups lead: feelings and connection are strongly in focus for your love life.",
-          "wands": "Wands lead: passion and desire are driving your love life, so take care it does not burn too fast.",
-          "swords": "Swords lead: honest words and clear thinking matter most in matters of the heart.",
-          "pentacles": "Pentacles lead: stability, commitment and showing love through everyday actions are in focus."
+          "cups": "Cups lead: expect feelings and connection to take centre stage in your love life.",
+          "wands": "Wands lead: expect passion and desire to drive your love life, so take care it does not burn too fast.",
+          "swords": "Swords lead: honest words and clear thinking will matter most in matters of the heart.",
+          "pentacles": "Pentacles lead: expect stability and commitment, shown through everyday actions."
         },
         "career": {
-          "cups": "Cups lead: how work feels to you, and your relationships there, are in focus.",
-          "wands": "Wands lead: drive, ambition and new initiatives are in focus for your work.",
-          "swords": "Swords lead: decisions, communication and clear strategy are in focus for your work.",
-          "pentacles": "Pentacles lead: craft, steady effort and tangible results are in focus for your work."
+          "cups": "Cups lead: how work feels to you, and your relationships there, will take centre stage.",
+          "wands": "Wands lead: expect drive, ambition and new initiatives in your work.",
+          "swords": "Swords lead: expect decisions, communication and clear strategy to shape your work.",
+          "pentacles": "Pentacles lead: expect craft, steady effort and tangible results in your work."
         },
         "money": {
-          "cups": "Cups lead: how you feel about money, and spending driven by emotion, are in focus.",
-          "wands": "Wands lead: new ventures and income-generating energy are in focus.",
-          "swords": "Swords lead: clear thinking, planning and honest accounting are in focus for your money.",
-          "pentacles": "Pentacles lead: material security, savings and practical foundations are strongly in focus."
+          "cups": "Cups lead: feelings about money, and spending driven by emotion, are likely to be in focus.",
+          "wands": "Wands lead: new ventures and income-generating energy are likely to appear.",
+          "swords": "Swords lead: clear thinking, planning and honest accounting will matter for your money.",
+          "pentacles": "Pentacles lead: expect material security, savings and practical foundations to take centre stage."
         },
         "health": {
-          "cups": "Cups lead: emotional wellbeing and inner nourishment are in focus.",
-          "wands": "Wands lead: vitality and how you spend your energy are in focus.",
-          "swords": "Swords lead: a busy mind and its effect on rest are in focus.",
-          "pentacles": "Pentacles lead: your body, routines and grounding habits are in focus."
+          "cups": "Cups lead: emotional wellbeing and inner nourishment are likely to be in focus.",
+          "wands": "Wands lead: vitality, and how you spend your energy, are likely to be in focus.",
+          "swords": "Swords lead: a busy mind and its effect on rest are likely to be in focus.",
+          "pentacles": "Pentacles lead: your body, routines and grounding habits are likely to be in focus."
         }
       },
       "adviceTopic": {
-        "love": "For your heart, a thought to carry: {{advice}}",
-        "career": "For your work, a thought to carry: {{advice}}",
-        "money": "For your finances, a thought to carry: {{advice}}",
-        "health": "For your wellbeing, a thought to carry: {{advice}}"
-      }
+        "love": "For your heart, what to keep in mind: {{advice}}",
+        "career": "For your work, what to keep in mind: {{advice}}",
+        "money": "For your finances, what to keep in mind: {{advice}}",
+        "health": "For your wellbeing, what to keep in mind: {{advice}}"
+      },
+      "pair": "{{note}}"
     },
     "questionShown": "Your question: {{question}}",
     "newReading": "New reading",
@@ -190,30 +192,31 @@
     "answer": {
       "title": "Your answer",
       "intro": {
-        "yesno": "You asked a yes-or-no question, so here is where the cards lean.",
-        "when": "You asked about timing, so here is a feel for the pace the cards suggest. It is a sense of rhythm, not a date.",
-        "open": "Here is how the cards speak to your question."
+        "yesno": "You asked a yes-or-no question, so here is the way the cards point.",
+        "when": "You asked about timing, so here is the pace the cards foresee. It is a sense of rhythm, not an exact date.",
+        "open": "Here is what the cards foresee for your question."
       },
       "verdict": {
-        "yes": "Leaning yes: the cards flow in your favor right now, and the way looks fairly open.",
-        "leaningYes": "Leaning towards yes, with some things to handle along the way.",
-        "unclear": "Unclear, or it depends: the cards are mixed, so your own choices will tip the balance.",
-        "leaningNo": "Leaning towards no, or not in its current form: there are obstacles to look at first.",
-        "no": "Leaning no for now: the cards point to resistance, so this may need a different approach or more time."
+        "yes": "Yes: the cards flow in your favor, and the way ahead looks fairly open.",
+        "leaningYes": "Likely yes, with a few things to handle along the way.",
+        "unclear": "Too early to say: the cards are mixed, so your own choices will tip the balance.",
+        "leaningNo": "Likely no in its current form: expect obstacles you will need to deal with first.",
+        "no": "Not for now: the cards point to resistance, so expect to need a different approach or more time."
       },
       "timing": {
-        "wands": "The cards feel fast-moving, like days to a few weeks.",
-        "swords": "The cards feel quick, driven by decisions and conversations, like weeks.",
-        "cups": "The cards move at the pace of feelings, like weeks to a few months.",
-        "pentacles": "The cards feel slow and steady, like months or longer.",
-        "major": "This feels more like a turning point than a fixed date. It may come when the lesson has landed."
+        "wands": "Expect things to move fast, within days to a few weeks.",
+        "swords": "Expect quick movement, driven by decisions and conversations, within weeks.",
+        "cups": "Expect the pace of feelings: weeks to a few months.",
+        "pentacles": "Expect slow, steady progress, over months or longer.",
+        "major": "This looks like a turning point more than a fixed date. Expect it to arrive once the lesson has landed."
       },
-      "delayed": "Several cards are reversed, which can suggest some delay or inner work first.",
+      "delayed": "Several cards are reversed: expect some delay, or some inner work, first.",
       "keyCard": "The card that speaks most to your question is {{card}}{{reversed}}: {{text}}",
       "reversedSuffix": " (reversed)",
-      "disclaimer": "The cards offer reflection, not certainty. The choice is always yours.",
-      "healthNote": "For questions about health, the cards can only offer reflection. Please speak to a health professional for real answers."
-    }
+      "disclaimer": "For entertainment only: the cards describe likely paths, not certainties. The choice is always yours.",
+      "healthNote": "For questions about health, the cards cannot predict an outcome. Please speak to a health professional for real answers."
+    },
+    "topicSuggest": "This sounds like a “{{topic}}” question. Use that topic?"
   },
   "daily": {
     "title": "Card of the Day",
@@ -229,7 +232,15 @@
     "deeperBody": "See what this card says about love, career, money and health.",
     "extraTitle": "A second card",
     "extraWatch": "Watch an ad for a second card",
-    "extraBody": "Draw one more card for today."
+    "extraBody": "Draw one more card for today.",
+    "astro": {
+      "sun": "This card belongs to your Sun sign, {{sign}}, so today it speaks straight to you: expect it to touch something personal.",
+      "moon": "This card belongs to your Moon sign, {{sign}}: expect your feelings and inner life to be in focus today.",
+      "rising": "This card belongs to your rising sign, {{sign}}: expect it to shape how others meet you today.",
+      "elementSun": "Its {{element}} energy matches your Sun sign, {{sign}}. Today will feel like familiar ground, and what you already know will serve you well.",
+      "elementDominant": "{{element}} runs strongest in your birth chart, so this card’s energy will feel natural to you today."
+    },
+    "astroTitle": "Your birth chart and today’s card"
   },
   "journal": {
     "title": "Journal",
@@ -287,7 +298,7 @@
   },
   "onboarding": {
     "welcomeTitle": "Welcome to $t(appName)",
-    "welcomeBody": "Draw a card, pause, and listen to your own inner voice. $t(appName) works offline, and everything you write stays on your phone.",
+    "welcomeBody": "Draw a card, pause, and see what your day may bring. $t(appName) works offline, and everything you write stays on your phone.",
     "stepA11y": "Step {{current}} of {{total}}",
     "disclaimerTitle": "Before you begin",
     "aboutTitle": "A little about you",
@@ -324,7 +335,7 @@
     "previewText": "Today is a good day to listen to your heart.",
     "shareApp": "Share app",
     "rateApp": "Rate app",
-    "shareAppMessage": "Mingalar Tarot, a gentle tarot companion for reflection. {{url}}",
+    "shareAppMessage": "Mingalar Tarot, a gentle tarot companion for daily readings. {{url}}",
     "about": "About",
     "version": "Version {{version}}",
     "readings": "Readings",
@@ -385,8 +396,8 @@
     "channelName": "Daily reminder"
   },
   "disclaimer": {
-    "short": "For entertainment and self-reflection only. Tarot cannot predict the future.",
-    "long": "$t(appName) is made for entertainment and personal reflection. The cards do not predict the future and are not a substitute for professional advice about health, money, legal or personal matters. You are always the one who decides what is right for your life."
+    "short": "For entertainment only. Tarot shows likely paths, not certainties.",
+    "long": "$t(appName) is made for entertainment. The cards describe likely directions, not guaranteed outcomes, and are not a substitute for professional advice about health, money, legal or personal matters. You are always the one who decides what is right for your life."
   },
   "sign": {
     "title": "Weekday signs",
@@ -475,11 +486,13 @@
     "title": "$t(appName) Premium",
     "subtitle": "Unlock deeper spreads and share as often as you like, while supporting an independent bilingual app.",
     "badge": "Premium",
+    "badgeOrAd": "Premium or ad",
     "see": "See Premium",
     "lockedBody": "This spread is part of Premium. The Card of the Day, one-card and three-card readings stay free.",
     "reasonSpread": "{{spread}} is a Premium spread.",
     "reasonShare": "You've shared {{n}} free reading images this month.",
     "benefitCeltic": "Celtic Cross: the classic ten-card spread for big questions",
+    "benefitForecast": "Week Ahead and Month Ahead: a look at the days and weeks to come",
     "benefitLove": "Love spread: five cards about you, them and the connection",
     "benefitShare": "Share readings as images as often as you like",
     "benefitNoAds": "No ads while Premium is active",
@@ -576,7 +589,7 @@
     "title": "Help me choose",
     "subtitle": "Answer one question and we'll suggest a reading. There is no wrong answer.",
     "question": "What are you hoping for?",
-    "quick": "A quick nudge for today",
+    "quick": "A quick look at today",
     "quickHint": "One card, a minute or two.",
     "unfold": "How things are unfolding",
     "unfoldHint": "Past, present and future in three cards.",
@@ -589,6 +602,14 @@
     "suggest": "We suggest",
     "start": "Start this reading",
     "other": "Choose a different answer",
-    "tip": "Cards are prompts for reflection, not predictions. Take what feels useful and leave the rest."
+    "tip": "Cards point to likely paths, not fixed fates. Take what feels useful and leave the rest.",
+    "career": "Something about work",
+    "careerHint": "Three cards on a job or career question.",
+    "money": "A money worry",
+    "moneyHint": "Three cards on money and practical choices.",
+    "week": "The week ahead",
+    "weekHint": "What the next few days are likely to bring.",
+    "month": "The month ahead",
+    "monthHint": "What each week of the month is likely to bring."
   }
 }

@@ -2,7 +2,7 @@ import { pad2 } from '@/utils/dates';
 
 /** What Premium unlocks. Everything else (daily card, one- and three-card spreads, journal,
  * library, lessons, signs, data export) is free forever. */
-export const PREMIUM_SPREADS: readonly string[] = ['love', 'celtic-cross'];
+export const PREMIUM_SPREADS: readonly string[] = ['week-ahead', 'month-ahead', 'love', 'celtic-cross'];
 
 /** Free plan: this many reading images can be shared per calendar month. */
 export const FREE_SHARES_PER_MONTH = 3;

@@ -133,6 +133,125 @@
     ]
   },
   {
+    "id": "week-ahead",
+    "cardCount": 3,
+    "en": {
+      "name": "Week Ahead",
+      "description": "Three cards for the days ahead: what the start, middle and end of your week are likely to bring."
+    },
+    "my": {
+      "name": "ဒီအပတ် ကြိုကြည့်ခြင်း",
+      "description": "လာမယ့်ရက်တွေအတွက် ကတ်သုံးချပ် - အပတ်ရဲ့ အစ၊ အလယ်နဲ့ အဆုံးမှာ ဘာတွေ ကြုံရနိုင်လဲ။"
+    },
+    "positions": [
+      {
+        "id": "early-week",
+        "x": 0,
+        "y": 0,
+        "en": {
+          "name": "Early week",
+          "prompt": "What the first days will bring, and what to start with."
+        },
+        "my": {
+          "name": "အပတ်အစ",
+          "prompt": "ပထမရက်တွေမှာ ဘာတွေ ကြုံရမလဲ၊ ဘာကနေ စသင့်လဲ။"
+        }
+      },
+      {
+        "id": "midweek",
+        "x": 1,
+        "y": 0,
+        "en": {
+          "name": "Midweek",
+          "prompt": "What may test you or shift things halfway through."
+        },
+        "my": {
+          "name": "အပတ်လယ်",
+          "prompt": "အပတ်လယ်မှာ သင့်ကို စမ်းသပ် ဒါမှမဟုတ် အခြေအနေ ပြောင်းစေနိုင်တဲ့ အရာ။"
+        }
+      },
+      {
+        "id": "weekend",
+        "x": 2,
+        "y": 0,
+        "en": {
+          "name": "End of week",
+          "prompt": "How the week will settle, and what you will carry forward."
+        },
+        "my": {
+          "name": "အပတ်ကုန်",
+          "prompt": "အပတ်က ဘယ်လို အဆုံးသတ်မလဲ၊ နောက်အပတ်ကို ဘာယူသွားရမလဲ။"
+        }
+      }
+    ]
+  },
+  {
+    "id": "month-ahead",
+    "cardCount": 4,
+    "en": {
+      "name": "Month Ahead",
+      "description": "Four cards, one for each week: what the coming month is likely to bring."
+    },
+    "my": {
+      "name": "ဒီလ ကြိုကြည့်ခြင်း",
+      "description": "ကတ်လေးချပ်၊ အပတ်တစ်ပတ်စီအတွက် - လာမယ့်လမှာ ဘာတွေ ကြုံရနိုင်လဲ။"
+    },
+    "positions": [
+      {
+        "id": "week-1",
+        "x": 0,
+        "y": 0,
+        "en": {
+          "name": "Week 1",
+          "prompt": "The theme that will mark the opening week."
+        },
+        "my": {
+          "name": "ပထမအပတ်",
+          "prompt": "လအစ အပတ်ကို အမှတ်အသားပြုမယ့် အကြောင်းအရာ။"
+        }
+      },
+      {
+        "id": "week-2",
+        "x": 1,
+        "y": 0,
+        "en": {
+          "name": "Week 2",
+          "prompt": "What will build, and what will ask for your attention."
+        },
+        "my": {
+          "name": "ဒုတိယအပတ်",
+          "prompt": "တိုးတက်လာမယ့်အရာနဲ့ သင့်အာရုံစိုက်မှု လိုလာမယ့်အရာ။"
+        }
+      },
+      {
+        "id": "week-3",
+        "x": 2,
+        "y": 0,
+        "en": {
+          "name": "Week 3",
+          "prompt": "A turning point, or a lesson you will meet."
+        },
+        "my": {
+          "name": "တတိယအပတ်",
+          "prompt": "အလှည့်အပြောင်း ဒါမှမဟုတ် ကြုံရမယ့် သင်ခန်းစာ။"
+        }
+      },
+      {
+        "id": "week-4",
+        "x": 3,
+        "y": 0,
+        "en": {
+          "name": "Week 4",
+          "prompt": "How the month will close, and what will carry on."
+        },
+        "my": {
+          "name": "စတုတ္ထအပတ်",
+          "prompt": "လက ဘယ်လို ပြီးဆုံးမလဲ၊ ဘာတွေ ဆက်သွားမလဲ။"
+        }
+      }
+    ]
+  },
+  {
     "id": "love",
     "cardCount": 5,
     "en": {
