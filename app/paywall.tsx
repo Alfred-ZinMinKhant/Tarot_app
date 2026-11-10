@@ -144,7 +144,7 @@ export default function Paywall() {
       ) : null}
 
       <Card>
-        {(['benefitCeltic', 'benefitLove', 'benefitShare', 'benefitNoAds', 'benefitSupport'] as const).map((k) => (
+        {(['benefitCeltic', 'benefitForecast', 'benefitLove', 'benefitShare', 'benefitNoAds', 'benefitSupport'] as const).map((k) => (
           <View key={k} style={styles.benefit}>
             <Icon name="check" size={20} color={colors.accent} />
             <AppText style={styles.flex}>{t(`premium.${k}`)}</AppText>

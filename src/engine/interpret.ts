@@ -3,6 +3,7 @@ import type { ReadingArea, Suit, TarotCard } from '@/data/types';
 import type { Language } from '@/i18n/languages';
 
 import type { DrawnCard } from './draw';
+import { pairNotes } from './pairs';
 
 export const TOPICS = ['general', 'love', 'career', 'money', 'health', 'question'] as const;
 export type Topic = (typeof TOPICS)[number];
@@ -24,6 +25,7 @@ export type SummaryKey =
   | 'suitPentacles'
   | 'reversedMany'
   | 'allUpright'
+  | 'pair'
   | 'keywords'
   | 'advice'
   | `intro.${ReadingArea}`
@@ -79,9 +81,35 @@ export function summarize(
     }
   }
 
+  for (const note of pairNotes(drawn, lang)) lines.push({ key: 'pair', params: { note } });
+
   const keywords = cards.map((c) => c.card[lang].keywords[0]!).filter((k, i, all) => all.indexOf(k) === i);
   lines.push({ key: 'keywords', params: { keywords: keywords.join(LIST_SEPARATOR[lang]) } });
   const last = cards[n - 1]!;
   lines.push({ key: area ? `adviceTopic.${area}` : 'advice', params: { advice: reversals && last.reversed ? last.card[lang].adviceReversed : last.card[lang].advice } });
   return lines;
+}
+
+const TOPIC_WORDS: Record<ReadingArea, RegExp> = {
+  love: /\b(love|loves|loved|relationship|boyfriend|girlfriend|partner|crush|dating|date|marry|marriage|husband|wife|ex|heart|romance|romantic)\b|ချစ်|ရည်းစား|အိမ်ထောင်|ခင်ပွန်း|ဇနီး|အချစ်/i,
+  career: /\b(job|jobs|career|work|boss|interview|promotion|business|resign|quit|hire|hired|colleague|office|exam|study|school)\b|အလုပ်|လုပ်ငန်း|ရာထူး|စာမေးပွဲ|ကျောင်း/i,
+  money: /\b(money|salary|pay|debt|loan|invest|income|afford|rent|savings|cash|financial|finances|buy|sell)\b|ငွေ|လစာ|အကြွေး|ရင်းနှီး|ဝင်ငွေ/i,
+  health: /\b(health|healthy|sick|ill|illness|doctor|anxiety|anxious|stress|stressed|sleep|tired|energy|healing|recover|recovery)\b|ကျန်းမာ|ရောဂါ|ဆရာဝန်|စိတ်ဖိစီး|အိပ်/i,
+};
+
+/** Guesses which topic a typed question is about, or null when none stands out. Used for a suggestion only. */
+export function suggestTopic(question: string): ReadingArea | null {
+  const q = question.trim();
+  if (!q) return null;
+  let best: ReadingArea | null = null;
+  let bestCount = 0;
+  for (const area of Object.keys(TOPIC_WORDS) as ReadingArea[]) {
+    const global = new RegExp(TOPIC_WORDS[area].source, 'gi');
+    const count = (q.match(global) ?? []).length;
+    if (count > bestCount) {
+      best = area;
+      bestCount = count;
+    }
+  }
+  return best;
 }

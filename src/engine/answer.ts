@@ -51,8 +51,23 @@ const HARD = new Set([
   'pentacles-04-four', 'pentacles-05-five',
 ]);
 
+/**
+ * Milder or in-between cards, so no card is left unscored: court cards lean gently by temperament,
+ * and 0 is a deliberate "wait / not yet" (High Priestess, Hermit, Two of Pentacles...).
+ */
+const MILD: Record<string, number> = {
+  'major-02-high-priestess': 0, 'major-04-emperor': 0.5, 'major-05-hierophant': 0.5, 'major-09-hermit': 0, 'major-18-moon': -0.5,
+  'wands-02-two': 0.5, 'wands-08-eight': 1, 'wands-11-page': 0.5, 'wands-12-knight': 0.5, 'wands-13-queen': 1, 'wands-14-king': 0.5,
+  'cups-04-four': -0.5, 'cups-11-page': 0.5, 'cups-12-knight': 0.5, 'cups-13-queen': 0.5, 'cups-14-king': 0.5,
+  'swords-02-two': -0.5, 'swords-04-four': -0.5, 'swords-11-page': 0, 'swords-12-knight': -0.5, 'swords-13-queen': 0, 'swords-14-king': 0.5,
+  'pentacles-02-two': 0, 'pentacles-07-seven': 0, 'pentacles-08-eight': 1, 'pentacles-11-page': 0.5, 'pentacles-12-knight': 0.5, 'pentacles-13-queen': 1, 'pentacles-14-king': 1,
+};
+
+/** True when a card has a deliberate yes/no weighting (every card should). */
+export const isScored = (cardId: string): boolean => FAVOURABLE.has(cardId) || HARD.has(cardId) || cardId in MILD;
+
 function cardScore(cardId: string, reversed: boolean): number {
-  const base = FAVOURABLE.has(cardId) ? 1 : HARD.has(cardId) ? -1 : 0;
+  const base = FAVOURABLE.has(cardId) ? 1 : HARD.has(cardId) ? -1 : (MILD[cardId] ?? 0);
   if (!reversed) return base;
   return base === 0 ? -0.4 : -base * 0.6;
 }

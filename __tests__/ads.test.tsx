@@ -111,6 +111,13 @@ describe('a build with rewarded ads but no Premium for sale', () => {
     expect(ads.shown).toBe(1);
   });
 
+  it('puts the Week and Month Ahead spreads behind the same ad', async () => {
+    await open('week-ahead');
+    expect(await screen.findByTestId('screen-paywall-ad')).toBeTruthy();
+    fireEvent.press(screen.getByTestId('paywall-watch-ad'));
+    expect(await screen.findByTestId('reading-start')).toBeTruthy();
+  });
+
   it('keeps the spread closed when the ad is dismissed early', async () => {
     ads.nextReward = 'closed';
     await open('love');

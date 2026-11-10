@@ -31,7 +31,7 @@ astrology,zodiac,birth chart,natal chart,daily card,divination,journal,reflectio
 
 Mingalar Tarot is a calm, beautiful tarot companion in English and Burmese.
 
-Draw a card, pause, and listen to your own inner voice. Each card's meaning is written as a gentle prompt for reflection — never as a prediction.
+Draw a card, pause, and listen to your own inner voice. Each card points to what may lie ahead — a likely direction, never a guarantee.
 
 CARD OF THE DAY
 • One card each day, the same all day, chosen just for you
@@ -39,7 +39,7 @@ CARD OF THE DAY
 
 READINGS
 • One-card and two different three-card spreads
-• Love spread (5 cards) and the classic Celtic Cross (10 cards): unlock with Premium, or one reading at a time by watching a short ad
+• Week Ahead (3 cards), Month Ahead (4 cards), the Love spread (5 cards) and the classic Celtic Cross (10 cards): unlock with Premium, or one reading at a time by watching a short ad
 • Ask your own question or choose a topic: general, love, career, money, health & spirit
 • Shuffle and pick cards from a fan, then turn them over one by one
 • A short summary of the themes in your reading
@@ -74,9 +74,9 @@ GENTLE BY DESIGN
 • Works offline; your journal never leaves your phone unless you back it up
 • Text size, screen-reader labels in both languages
 
-Mingalar Tarot is for entertainment and self-reflection. Tarot cannot predict the future. Answers to yes/no and timing questions show where the cards lean, not what will happen. The app is not a substitute for professional advice about health, money, legal or personal matters.
+Mingalar Tarot is for entertainment. Its readings describe likely directions, not guaranteed outcomes. Answers to yes/no and timing questions show where the cards point, not what will certainly happen. The app is not a substitute for professional advice about health, money, legal or personal matters.
 
-Free to use, with ads and an optional Premium upgrade. A banner ad appears in the app, an occasional full-screen ad can appear after you finish a reading, and optional short video ads unlock the Celtic Cross, the Love spread, a deeper Card of the Day reading and a second daily card. Premium (monthly, yearly or a one-time purchase) removes all ads, unlocks the Love spread and Celtic Cross for good, gives you the deeper Card of the Day reading and second daily card without an ad, and lets you share readings as images without limit. The Card of the Day, one- and three-card readings, the journal, library, lessons, weekday signs and the birth chart are always free. Subscriptions renew automatically until you cancel them in your store account settings.
+Free to use, with ads and an optional Premium upgrade. A banner ad appears in the app, an occasional full-screen ad can appear after you finish a reading, and optional short video ads unlock the Celtic Cross, the Love spread, the Week and Month Ahead spreads, a deeper Card of the Day reading and a second daily card. Premium (monthly, yearly or a one-time purchase) removes all ads, unlocks the Love, Week Ahead, Month Ahead and Celtic Cross spreads for good, gives you the deeper Card of the Day reading and second daily card without an ad, and lets you share readings as images without limit. The Card of the Day, one- and three-card readings, the journal, library, lessons, weekday signs and the birth chart are always free. Subscriptions renew automatically until you cancel them in your store account settings.
 
 **What's new** (first release)
 Welcome to Mingalar Tarot! Card of the Day, five spreads, all 78 cards, a private journal, lessons, Burmese weekday signs and a birth chart — in English and Burmese.

@@ -18,6 +18,7 @@ import { getCard } from '@/data/cards';
 import { readingText, type DrawnCard } from '@/engine';
 import { useHaptics } from '@/hooks/useHaptics';
 import { useLanguage } from '@/hooks/useLanguage';
+import { DailyAstroNote } from '@/components/DailyAstroNote';
 import { useAds, useRewardedAvailable } from '@/store/ads';
 import { usePremium } from '@/store/premium';
 import { useSettings } from '@/store/settings';
@@ -115,6 +116,7 @@ export default function Daily() {
             <AppText variant="heading">{t('card.advice')}</AppText>
             <AppText>{draw.reversed ? card[lang].adviceReversed : card[lang].advice}</AppText>
           </Card>
+          <DailyAstroNote cardId={card.id} />
           <DailyRewards cardId={card.id} reversed={draw.reversed} />
 
           {draw.readingId ? (

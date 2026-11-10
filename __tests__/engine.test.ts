@@ -3,6 +3,7 @@ import topicPrompts from '../data/topic-prompts.json';
 import { getCard } from '../src/data/cards';
 import {
   answerQuestion,
+  isScored,
   classifyQuestion,
   dailyCard,
   DECK_IDS,
@@ -133,11 +134,13 @@ describe('daily card', () => {
 });
 
 describe('spreads', () => {
-  it('defines the five spreads from the brief', () => {
+  it('defines the seven spreads from the brief', () => {
     expect(SPREADS.map((s) => [s.id, s.cardCount])).toEqual([
       ['one-card', 1],
       ['three-past-present-future', 3],
       ['three-situation-challenge-advice', 3],
+      ['week-ahead', 3],
+      ['month-ahead', 4],
       ['love', 5],
       ['celtic-cross', 10],
     ]);
@@ -330,6 +333,12 @@ describe('answering the question', () => {
       { cardId: 'swords-10-ten', reversed: false },
     ];
     expect(answerQuestion(mixed, 'Will it work out?', 'general')!.verdict).toBe('leaningNo');
+  });
+
+  it('weights every card in the deck for yes/no questions', () => {
+    expect(DECK_IDS.filter((id) => !isScored(id))).toEqual([]);
+    const court = [{ cardId: 'cups-13-queen', reversed: false }, { cardId: 'pentacles-14-king', reversed: false }];
+    expect(answerQuestion(court, 'Will it work out?', 'general')!.verdict).toBe('yes');
   });
 
   it('gives timing for "when", no verdict for health, and nothing without a question', () => {

@@ -31,4 +31,24 @@ describe('guided reading chooser', () => {
     fireEvent.press(screen.getByTestId('guide-start'));
     expect(await screen.findByTestId('screen-reading')).toBeTruthy();
   });
+
+  it('offers work, money, week and month choices that map to a matching spread', async () => {
+    renderRouter('./app', { initialUrl: '/guide' });
+    fireEvent.press(await screen.findByTestId('guide-answer-career'));
+    expect((await screen.findByTestId('guide-spread-name')).props.children).toBe('Situation · Challenge · Advice');
+    fireEvent.press(screen.getByTestId('guide-back'));
+    fireEvent.press(await screen.findByTestId('guide-answer-week'));
+    expect((await screen.findByTestId('guide-spread-name')).props.children).toBe('Week Ahead');
+    fireEvent.press(screen.getByTestId('guide-back'));
+    fireEvent.press(await screen.findByTestId('guide-answer-month'));
+    expect((await screen.findByTestId('guide-spread-name')).props.children).toBe('Month Ahead');
+  });
+
+  it('suggests a matching topic when the typed question is about work', async () => {
+    renderRouter('./app', { initialUrl: '/reading/one-card' });
+    expect(screen.queryByTestId('reading-topic-suggest')).toBeNull();
+    fireEvent.changeText(await screen.findByTestId('reading-question-input'), 'Should I quit my job?');
+    fireEvent.press(await screen.findByTestId('reading-topic-suggest'));
+    expect(screen.queryByTestId('reading-topic-suggest')).toBeNull();
+  });
 });
