@@ -50,19 +50,20 @@ export function CardHero({ cardId, width, reversed = false, children }: Props) {
   const access = usePortraitAccess();
   const canPreview = usePortraitPreview((s) => s.canPreview);
   const markPreviewed = usePortraitPreview((s) => s.markPreviewed);
-  const [uri, setUri] = useState<string | null>(null);
-  const [previewDone, setPreviewDone] = useState(false);
+  // State is keyed by card id, so switching cards ignores the old card's clip without a reset effect.
+  const [loaded, setLoaded] = useState<{ id: string; uri: string } | null>(null);
+  const [doneId, setDoneId] = useState<string | null>(null);
+  const uri = loaded?.id === cardId ? loaded.uri : null;
+  const previewDone = doneId === cardId;
   const available = hasPortrait(cardId);
   const wantsClip = available && (access === 'full' || canPreview());
 
   useEffect(() => {
-    setUri(null);
-    setPreviewDone(false);
     if (!wantsClip) return;
     let cancelled = false;
     void portraitUri(cardId).then((u) => {
       if (cancelled || !u) return;
-      setUri(u);
+      setLoaded({ id: cardId, uri: u });
       if (access === 'preview') {
         markPreviewed();
         track('portrait_preview', { card: cardId });
@@ -86,7 +87,7 @@ export function CardHero({ cardId, width, reversed = false, children }: Props) {
             width={width}
             reversed={reversed}
             loop={access === 'full'}
-            onEnd={access === 'preview' ? () => setPreviewDone(true) : undefined}
+            onEnd={access === 'preview' ? () => setDoneId(cardId) : undefined}
           />
         ) : null}
       </LivingCard>
