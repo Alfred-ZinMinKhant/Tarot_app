@@ -5,6 +5,8 @@ export const FONT_FAMILIES = {
   notoBold: 'NotoSansMyanmar_700Bold',
   padaukRegular: 'Padauk_400Regular',
   padaukBold: 'Padauk_700Bold',
+  cormorantRegular: 'CormorantGaramond_600SemiBold',
+  cormorantBold: 'CormorantGaramond_700Bold',
 } as const;
 
 export type MyanmarFont = 'noto' | 'padauk';
@@ -42,8 +44,10 @@ export function fontFamilyFor(
   script: 'latin' | 'myanmar',
   bold: boolean,
   myanmarFont: MyanmarFont,
+  decorative = false,
 ): string | undefined {
-  if (script === 'latin') return undefined; // platform system font
+  // Headings in English use Cormorant Garamond (elegant, mystical serif); body stays on the system font.
+  if (script === 'latin') return decorative ? (bold ? FONT_FAMILIES.cormorantBold : FONT_FAMILIES.cormorantRegular) : undefined;
   if (myanmarFont === 'padauk') return bold ? FONT_FAMILIES.padaukBold : FONT_FAMILIES.padaukRegular;
   return bold ? FONT_FAMILIES.notoBold : FONT_FAMILIES.notoRegular;
 }

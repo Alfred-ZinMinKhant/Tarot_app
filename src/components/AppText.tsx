@@ -46,7 +46,9 @@ export function AppText({
   const plain = useMemo(() => collectText(children), [children]);
   const script = scriptForLanguage(theme.language) === 'myanmar' || containsMyanmar(plain) ? 'myanmar' : 'latin';
   const isBold = bold ?? (variant === 'display' || variant === 'title' || variant === 'heading');
-  const fontSize = theme.size(variant);
+  const decorative = variant === 'display' || variant === 'title' || variant === 'heading';
+  // Cormorant Garamond has a small x-height, so English headings get a slight size boost.
+  const fontSize = Math.round(theme.size(variant) * (decorative && script === 'latin' ? 1.12 : 1));
   const content = useMemo(
     () =>
       noBreak || script === 'latin'
@@ -65,9 +67,9 @@ export function AppText({
           color: theme.colors[tone],
           fontSize,
           lineHeight: Math.round(fontSize * LINE_HEIGHT[script]),
-          fontFamily: fontFamilyFor(script, isBold, theme.myanmarFont),
+          fontFamily: fontFamilyFor(script, isBold, theme.myanmarFont, decorative),
           // Custom Myanmar fonts carry their own bold face; synthetic bold on top looks smeared.
-          fontWeight: script === 'myanmar' ? 'normal' : isBold ? '700' : '400',
+          fontWeight: script === 'myanmar' || decorative ? 'normal' : isBold ? '700' : '400',
         },
         center && styles.center,
         style,

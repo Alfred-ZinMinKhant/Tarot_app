@@ -14,7 +14,7 @@ const config: ExpoConfig = {
   name: env.APP_DISPLAY_NAME || brand.appName.en,
   slug: env.EXPO_SLUG || brand.slug,
   scheme: brand.scheme,
-  version: '1.0.0',
+  version: '1.1.0',
   // Android 16 ignores an orientation lock on tablets and foldables, so Android follows the device.
   // iPhone stays portrait through Info.plist below.
   orientation: 'default',
