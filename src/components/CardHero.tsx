@@ -93,7 +93,6 @@ function PortraitUpsell() {
  * (once a day) followed by an invitation to unlock it.
  */
 export function CardHero({ cardId, width, reversed = false, children }: Props) {
-  const { t } = useTranslation();
   const access = usePortraitAccess();
   const canPreview = usePortraitPreview((s) => s.canPreview);
   const markPreviewed = usePortraitPreview((s) => s.markPreviewed);
