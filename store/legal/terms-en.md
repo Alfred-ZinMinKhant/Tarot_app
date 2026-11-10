@@ -1,5 +1,7 @@
 # Terms of Use
 
+_Effective from: 10 November 2026_
+
 ## What Mingalar Tarot is
 
 Mingalar Tarot is a tarot app for entertainment and self-reflection. Card meanings, daily cards and weekday signs are prompts for thinking, not predictions or facts about your future.

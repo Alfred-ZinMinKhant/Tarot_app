@@ -1,8 +1,10 @@
 # Privacy Policy
 
+_Effective from: 10 November 2026_
+
 ## The short version
 
-Mingalar Tarot is designed to work offline. Your readings, notes, name and settings are stored on your phone. We don't sell your data and we never put your readings, notes or birth details into ads. If the free version shows ads, they come from Google AdMob (see Ads below).
+Mingalar Tarot is designed to work offline. Your readings, notes, name and settings are stored on your phone. We don't sell your data and we never put your readings, notes or birth details into ads. If the free version shows ads, they come from Google AdMob (see Ads below). Anonymous usage statistics and crash reports help us improve the app; you can switch them off in Settings.
 
 ## What stays on your phone
 
@@ -23,6 +25,10 @@ If you buy Premium, the payment is handled by the App Store or Google Play. Our 
 ## Ads
 
 The free version may show banner ads and optional "watch an ad to unlock" videos from Google AdMob. Google and its ad partners may use your device's advertising ID and approximate location to choose and measure ads. Where the law requires it, the app asks for your consent first, and you can change your choice in Settings. On iPhone, ads that use your advertising ID appear only if you allow tracking when asked. Premium removes all ads, and ads never use your journal, questions or birth details.
+
+## Usage statistics and crash reports
+
+To learn which features people use and to fix crashes, the app sends anonymous usage events and error reports to PostHog, our analytics provider. They say which screens and features were used (for example "a three-card reading was finished" or "the paywall was opened"), plus your app version, language, device model, operating system and approximate country. They are linked to a random ID, not to your name, email or account, and they never include your readings, questions, notes, name or birth details. You can switch this off at any time in Settings → Privacy. Delete my data also gives the app a new random ID.
 
 ## Your choices
 
