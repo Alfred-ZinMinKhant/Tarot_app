@@ -2,6 +2,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import { create } from 'zustand';
 import { createJSONStorage, persist } from 'zustand/middleware';
 
+import { track } from '@/analytics';
 import { FREE_SHARES_PER_MONTH, monthKey } from '@/premium/features';
 import { rewardedConfigured } from '@/store/ads';
 import type { PremiumPackage, PurchaseOutcome, PurchasesService } from '@/premium/service';
@@ -83,6 +84,9 @@ export const usePremium = create<PremiumState>()(
         try {
           const { outcome, premium } = await service.purchase(packageId);
           if (premium) set({ isPremium: true });
+          if (outcome === 'purchased') {
+            track('purchase_completed', { package: get().packages.find((p) => p.id === packageId)?.kind ?? 'other' });
+          }
           return outcome;
         } catch (e) {
           logError('premium.purchase', e);
@@ -94,6 +98,7 @@ export const usePremium = create<PremiumState>()(
         try {
           const isPremium = await service.restore();
           set({ isPremium });
+          track('purchase_restored', { premium: isPremium });
           return isPremium;
         } catch (e) {
           logError('premium.restore', e);

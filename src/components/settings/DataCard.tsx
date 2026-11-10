@@ -2,6 +2,7 @@ import { router } from 'expo-router';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
+import { track } from '@/analytics';
 import { AppText, BottomSheet, Button, Card } from '@/components';
 import { shareJsonFile } from '@/services/exportFile';
 import { ImportError, importBackup } from '@/services/importData';
@@ -30,6 +31,7 @@ export function DataCard() {
     setExporting(false);
     if (result === 'failed') toast(t('settings.exportFailed'));
     else if (result === 'unavailable') toast(t('share.unavailable'));
+    else track('data_exported');
   };
 
   const restoreData = async () => {

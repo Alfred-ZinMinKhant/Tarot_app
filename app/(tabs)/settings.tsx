@@ -8,6 +8,7 @@ import {
   AboutCard,
   AppearanceCard,
   DataCard,
+  PrivacyCard,
   ProfileCards,
   ReadingsCard,
   ReminderCard,
@@ -25,6 +26,7 @@ export default function Settings() {
       <ReminderCard />
       <PremiumCard />
       <AdPrivacyRow />
+      <PrivacyCard />
       <CloudSyncCard />
       <DataCard />
       <AboutCard />
