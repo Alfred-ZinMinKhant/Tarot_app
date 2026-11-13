@@ -91,6 +91,7 @@
     "check:content": "tsx scripts/validate-content.ts",
     "check:release": "tsx scripts/check-release.ts",
     "render:sounds": "tsx scripts/render-sounds.ts",
+    "render:portraits": "python3 scripts/render-portraits.py",
     "render:icons": "tsx scripts/render-icons.ts",
     "store:screenshots": "tsx scripts/store-screenshots.ts",
     "legal:export": "tsx scripts/export-legal.ts"
