@@ -47,7 +47,7 @@ type SyncState = {
 let services: SyncServices | null | undefined;
 let running: Promise<boolean> | null = null;
 
-/** Wires the store to Supabase (or to fakes in tests). `null` = cloud backup unavailable. */
+/** Wires the store to the sync Worker (or to fakes in tests). `null` = cloud backup unavailable. */
 export function setSyncServices(next: SyncServices | null | undefined): void {
   services = next;
 }

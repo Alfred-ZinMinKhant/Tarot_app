@@ -125,14 +125,14 @@ const config: ExpoConfig = {
     },
     // Shown on the Privacy Policy / Terms / About pages. Sections that need a value are hidden
     // until it is set, so a build without them never shows a blank placeholder.
-    // Optional cloud backup (Phase 6). Off unless all three are set.
+    // Optional cloud backup (Phase 6). Off unless ENABLE_CLOUD_SYNC=true and SYNC_URL is set.
     sync: {
       enabled: env.ENABLE_CLOUD_SYNC === 'true',
-      url: env.SUPABASE_URL || '',
-      anonKey: env.SUPABASE_ANON_KEY || '',
-      // Comma-separated sign-in providers (google, apple) and whether the email-code form is shown.
+      // The sync Worker (see worker/).
+      url: env.SYNC_URL || '',
+      // Comma-separated sign-in providers. Only google is implemented by the Worker.
       providers: env.SYNC_PROVIDERS ?? 'google',
-      email: env.SYNC_EMAIL === 'true',
+      email: false,
     },
     // Optional in-app purchases (Phase 7, RevenueCat public SDK keys). With no key for a
     // platform, that platform has no paywall and every feature is unlocked.

@@ -21,7 +21,7 @@ import { revenueCatService } from '@/premium/revenuecat';
 import { ensureAdsService, useAds } from '@/store/ads';
 import { ensurePurchasesService, usePremium } from '@/store/premium';
 import { ensureSyncServices } from '@/store/sync';
-import { supabaseServices } from '@/sync/supabase';
+import { workerServices } from '@/sync/cloudflare';
 import { useJournal } from '@/store/journal';
 import { useSettings } from '@/store/settings';
 import { palette } from '@/theme/colors';
@@ -30,7 +30,7 @@ import { logError } from '@/utils/log';
 
 void SplashScreen.preventAutoHideAsync();
 // Cloud backup services exist only in builds configured for it (see src/config/sync.ts).
-ensureSyncServices(supabaseServices);
+ensureSyncServices(workerServices);
 // In-app purchases exist only in builds with a RevenueCat key (see src/config/purchases.ts).
 ensurePurchasesService(revenueCatService);
 // Ads exist only in builds with ENABLE_ADS=true (see src/config/ads.ts).

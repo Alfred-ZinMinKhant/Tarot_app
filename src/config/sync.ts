@@ -3,33 +3,32 @@ import Constants from 'expo-constants';
 export type OAuthProvider = 'google' | 'apple';
 export type SyncMethods = { providers: OAuthProvider[]; email: boolean };
 export type SyncConfig = {
+  /** Base URL of the sync Worker (see worker/). */
   url: string;
-  anonKey: string;
   providers: OAuthProvider[];
   email: boolean;
 };
 
 /**
  * Cloud backup is optional and off unless the build sets ENABLE_CLOUD_SYNC=true together with
- * SUPABASE_URL and SUPABASE_ANON_KEY (.env → app.config.ts → extra.sync).
+ * SYNC_URL, the sync Worker's address (.env → app.config.ts → extra.sync).
  */
 export function syncConfig(): SyncConfig | null {
   const extra = (Constants.expoConfig?.extra ?? {}) as {
     sync?: {
       enabled?: boolean;
       url?: string;
-      anonKey?: string;
       providers?: string;
       email?: boolean;
     };
   };
   const s = extra.sync;
-  if (!s?.enabled || !s.url || !s.anonKey) return null;
+  if (!s?.enabled || !s.url) return null;
   const providers = (s.providers ?? 'google')
     .split(',')
     .map((p) => p.trim().toLowerCase())
     .filter((p): p is OAuthProvider => p === 'google' || p === 'apple');
-  return { url: s.url, anonKey: s.anonKey, providers: [...new Set(providers)], email: !!s.email };
+  return { url: s.url, providers: [...new Set(providers)], email: !!s.email };
 }
 
 /**

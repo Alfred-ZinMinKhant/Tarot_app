@@ -45,7 +45,10 @@ yarn-error.*
 
 # Original card scans (large); only the optimised WebP files are committed
 assets/cards/source/
-supabase/.temp/
+worker/.wrangler/
 
 # test coverage output
 coverage/
+
+# rendered moving-portrait clips (hosted, not bundled): npm run render:portraits
+/build/

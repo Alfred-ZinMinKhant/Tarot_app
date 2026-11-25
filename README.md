@@ -41,14 +41,14 @@ npm run ci           # all of the above
 Copy `.env.example` to `.env` and fill in what you need. Everything is optional for local
 development. After changing `.env`, restart Metro with `npx expo start --clear` (or export with
 `--clear`), because cached bundles keep the old values. Optional cloud backup is described in
-`supabase/README.md`, optional Premium in `docs/MONETIZATION.md`, and optional usage statistics in `docs/ANALYTICS.md`.
+`worker/README.md`, optional Premium in `docs/MONETIZATION.md`, and optional usage statistics in `docs/ANALYTICS.md`.
 
 ## Building for the stores
 
 ```bash
 npm install -g eas-cli && eas login
 eas init                                   # links the project (writes the EAS project id)
-eas env:create --environment production    # once per secret from .env (SUPABASE_*, REVENUECAT_*, …)
+eas env:create --environment production    # once per secret from .env (SYNC_URL, REVENUECAT_*, …)
 eas build --profile development --platform android   # dev client for testing native features
 eas build --profile production --platform all        # store builds (AAB + IPA)
 eas submit --profile production --platform all       # upload to Play (internal track, draft) and App Store Connect
