@@ -44,8 +44,8 @@ src/
                          in-memory repo for the web preview (index.web.ts)
   premium/               features.ts (what's Premium), service.ts (interface), revenuecat.ts
                          (+ .web.ts no-op)
-  sync/                  engine.ts (pull → merge → push, last write wins), supabase.ts (client,
-                         backend, email-code auth)
+  sync/                  engine.ts (pull → merge → push, last write wins), cloudflare.ts (HTTP client
+                         for the sync Worker: backend + Google sign-in with PKCE)
   services/              notifications (plan + schedule reminders), share (view-shot → sharing),
                          sound (expo-audio effects), userData (export/delete), exportFile
   config/brand.json      app name (en + my) and store identifiers — single source of truth
@@ -62,7 +62,7 @@ data/                    cards.json (generated), cards/*.json (sources), cards.r
                          weekday-signs.json (8 signs incl. Rahu), legal.json, content.review.json
 assets/sounds/           flip / shuffle / chime WAVs synthesised by scripts/render-sounds.ts
 store/                   store graphics, screenshots (en + my), hostable legal pages
-supabase/                SQL migration (table, RLS, LWW trigger), delete-account Edge Function, setup
+worker/                  Cloudflare Worker + D1 for cloud backup: API, Google OAuth, SQL migration, setup
 .maestro/                end-to-end flows: onboarding, daily card, reading → journal
 scripts/                 check-i18n, build-cards, validate-cards, validate-content, optimize-images,
                          render-card-back, render-sounds, render-icons, store-screenshots,
@@ -187,8 +187,8 @@ card actions.
 
 ## Cloud backup (optional, Phase 6)
 
-Off unless the build sets `ENABLE_CLOUD_SYNC=true`, `SUPABASE_URL` and `SUPABASE_ANON_KEY`
-(`src/config/sync.ts`). In that case the root layout wires `useSync` to Supabase. Otherwise
+Off unless the build sets `ENABLE_CLOUD_SYNC=true`, and `SYNC_URL` (the Worker's address)
+(`src/config/sync.ts`). In that case the root layout wires `useSync` to the Worker (`src/sync/cloudflare.ts`). Otherwise
 `syncAvailable()` is false, the Settings card is hidden and no network code runs.
 
 - **Data:** only journal readings, tombstones included. Settings, daily draws and the device seed
@@ -197,7 +197,7 @@ Off unless the build sets `ENABLE_CLOUD_SYNC=true`, `SUPABASE_URL` and `SUPABASE
 - **Round** (`syncJournal`): pull the server's change feed (ordered by
   `(server_updated_at, id)`, re-reading a 2-minute window to cover slow commits) and merge with
   `applyRemote`, where a later `updatedAt` wins and ties keep the local copy. Then upload dirty
-  rows. The server trigger `journal_readings_lww` ignores uploads that aren't newer, so neither
+  rows. The Worker's upsert (`WHERE excluded.updated_at > updated_at`) ignores uploads that aren't newer, so neither
   side can lose a newer edit, in any order.
 - **Triggers** (`useCloudSync`): app launch, return to foreground, and 4 s after the last local
   journal change (`useJournal.localChanges`). Failures leave rows dirty for the next attempt.
@@ -246,7 +246,7 @@ asserts WCAG AA (≥ 4.5:1) for every text/background pair in both themes. Minim
 | `npm run images` | resize card scans to 300/900 px WebP and regenerate `src/data/cardImages.ts` |
 | `npm run render:card-back` | export the card-back art to `assets/images/card-back.{svg,png}` |
 | `npm test` | Jest: utils, locale parity, contrast, card data + validator, search, engine, SQLite repo (sql.js), notifications (in-memory fake), full-router integration tests (onboarding, signs, Learn, export/delete, legal) |
-| (sync) | `__tests__/sync.test.ts` two-device LWW scenarios, `cloud-sync.test.tsx` UI + store, `supabase-backend.test.ts` query building |
+| (sync) | `__tests__/sync.test.ts` two-device LWW scenarios, `cloud-sync.test.tsx` UI + store, `sync-client.test.ts` HTTP client + PKCE sign-in, `sync-worker.test.ts` the Worker on real SQLite (sql.js) |
 | (premium) | `__tests__/premium.test.tsx`: gating, purchase, cancel, restore, offline prices, share allowance, local payment |
 | `maestro test .maestro` | end-to-end flows on a device or emulator (dev/preview build) |
 | `npm run ci` | all of the above; also run by `.github/workflows/ci.yml` |

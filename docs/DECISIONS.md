@@ -167,10 +167,10 @@ Ambiguous choices made while building, with the simplest option chosen. Change a
 50. **Content review list.** Lessons, weekday-sign texts and legal texts were written by AI in both
     languages and are listed in `data/content.review.json` for a native-speaker review, like the
     card and UI strings.
-51. **Supabase for cloud backup: journal, portable settings and Card of the Day history.** It has
-    row-level security, email OTP auth and a generous free tier, and it can be swapped out behind
-    the `SyncBackend` / `SyncAuth` interfaces. Settings and draws are tiny (one row, and ~50 bytes
-    per revealed day), so they use ordinary Postgres tables, not Storage. Settings sync as one blob,
+51. **Cloud backup of the journal, portable settings and Card of the Day history** (a Cloudflare
+    Worker + D1 since decision 69; first built on Supabase), behind the `SyncBackend` /
+    `SyncAuth` interfaces. Settings and draws are tiny (one row, and ~50 bytes per revealed day),
+    so they use ordinary SQL tables, not object storage. Settings sync as one blob,
     last write wins. Draws never change once revealed: the first reveal of a day wins, only the
     journal link can be added later. Still device-only: the name and the device seed (the privacy
     text says they never leave the phone), the reminder on/off switch (needs this phone's
@@ -186,9 +186,8 @@ Ambiguous choices made while building, with the simplest option chosen. Change a
     background after a short debounce, and errors appear only in Settings, as a gentle line.
 55. **Account deletion through an Edge Function.** App Store guideline 5.1.1(v) requires in-app
     account deletion. Deleting an auth user needs the service-role key, which must never ship in
-    the app, so `supabase/functions/delete-account` does it for the signed-in user.
-56. **Pinned dependency versions at least two weeks old** (`@supabase/supabase-js` 2.116.0,
-    `react-native-url-polyfill` 3.0.0) to avoid freshly published releases.
+    the app, so the Worker's `DELETE /v1/account` does it for the signed-in user.
+56. **Pinned dependency versions at least two weeks old** (`react-native-url-polyfill` 3.0.0) to avoid freshly published releases.
 57. **No RevenueCat key means no paywall, not locked features.** A build without monetisation
     (development, or a first free release) should never show features nobody can buy. The web
     preview has no purchases either.
@@ -221,7 +220,7 @@ Ambiguous choices made while building, with the simplest option chosen. Change a
     `ITSAppUsesNonExemptEncryption` is `false`, because the app only uses standard HTTPS.
 66. **eas.json uses remote app versions with `autoIncrement`** for production, APKs for
     development and preview, and an AAB for production. Play submissions start as a draft on the
-    internal track. Secrets (`SUPABASE_*`, `REVENUECAT_*`, …) belong in EAS environment
+    internal track. Secrets (`SYNC_URL`, `REVENUECAT_*`, …) belong in EAS environment
     variables (`eas env:create`), because `.env` is gitignored and EAS doesn't upload it.
 67. **Burmese is a Google Play listing language only.** App Store Connect has no Burmese
     localization, so the App Store listing is in English and mentions Burmese support.
@@ -236,3 +235,15 @@ Ambiguous choices made while building, with the simplest option chosen. Change a
     the mean node, shown as Rahu in Burmese. Readings (`data/chart-readings.json`) are short and
     playful, in the same entertainment-only tone as item 42, and each placement links to its
     Golden Dawn tarot card via `src/astro/astroCards.ts`.
+69. **Cloud backup moved from Supabase to a Cloudflare Worker + D1.** Supabase's free tier pauses
+    idle projects and has no backups, which needed a keep-alive and a weekly encrypted dump just
+    to stay safe. D1 never pauses and has 7-day point-in-time restore, all inside Cloudflare's
+    free plan. Nobody had signed in on Supabase (all tables were empty on 2026-11-25), so there was
+    no data to migrate. Trade-offs: the Worker owns authentication, so it is deliberately small
+    and standard. Google sign-in is an OAuth code flow with PKCE between the app and the Worker
+    (no new native module); the Worker swaps Google's code for an identity and hands the app a
+    single-use code that only works with the app's verifier. Sessions are opaque random tokens
+    stored hashed in D1 (no JWTs, so nothing to forge or refresh). Every query is scoped by
+    `user_id` in the Worker, replacing row-level security. Email one-time codes and Apple
+    sign-in were dropped (email needed SMTP and was off in production; Apple is iOS only and iOS
+    has no backup yet). Builds 22 to 25 still point at Supabase and simply stop syncing.

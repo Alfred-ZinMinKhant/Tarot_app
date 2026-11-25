@@ -94,14 +94,14 @@ Status key: ✅ automated and passing · 🔶 partly automated, needs a device c
 | # | Check | Coverage | Status |
 | --- | --- | --- | --- |
 | 7b.1 | Card hidden in builds without cloud backup | J | ✅ |
-| 7b.2 | Email code arrives (check spam), code sign-in works, Burmese digits accepted | J (fake auth) | 📱 needs a real Supabase project |
+| 7b.2 | Google sign-in opens the browser, returns to the app signed in with the Google email; cancelling the page leaves the app signed out | J (fake auth), `sync-client.test.ts` | 📱 needs the deployed Worker |
 | 7b.3 | Journal appears on a second phone after signing in with the same email | J (two simulated devices) | 📱 |
 | 7b.4 | Edits on two phones while offline: the later edit wins on both | J | 📱 |
 | 7b.5 | Airplane mode: app works normally; Settings shows the gentle "couldn't back up" line; backup resumes when online | J | 📱 |
-| 7b.6 | Delete cloud account removes the account (Supabase dashboard) and keeps local readings | J (fake) | 📱 |
+| 7b.6 | Delete cloud account removes the account (the `users` row is gone from D1) and keeps local readings | J (fake) | 📱 |
 | 7b.8 | Change text size on phone A; it follows to phone B after signing in / reopening. Name, reminder switch and device seed stay per phone | J (fake) | 📱 |
 | 7b.9 | Reveal the Card of the Day on phone A; phone B (same account) shows the same card for that day | J (two simulated devices) | 📱 |
-| 7b.7 | Row-level security: one account can't read another's rows (try with two accounts) | SQL review | 📱 |
+| 7b.7 | One account can't read another's rows (try with two accounts) | `sync-worker.test.ts` | 📱 |
 
 ## 7c. Premium (only in builds with RevenueCat keys)
 

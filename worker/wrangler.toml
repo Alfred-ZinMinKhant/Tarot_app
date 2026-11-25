@@ -1,0 +1,17 @@
+# Cloud backup API for Mingalar Tarot. Deploy: `npm run worker:deploy` (see worker/README.md).
+name = "mingalar-sync"
+main = "src/index.ts"
+compatibility_date = "2026-11-01"
+
+[vars]
+# Only redirects into the app are allowed after sign-in (the app's URL scheme).
+APP_REDIRECT_PREFIX = "mingalartarot://"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "mingalar-sync"
+# Replace with the id printed by `wrangler d1 create mingalar-sync`.
+database_id = "00000000-0000-0000-0000-000000000000"
+migrations_dir = "migrations"
+
+# Secrets (never in this file): wrangler secret put GOOGLE_CLIENT_ID | GOOGLE_CLIENT_SECRET | STATE_SECRET

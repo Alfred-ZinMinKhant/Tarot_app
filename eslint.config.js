@@ -5,7 +5,7 @@ const expoConfig = require('eslint-config-expo/flat');
 module.exports = defineConfig([
   expoConfig,
   {
-    // supabase/functions runs on Deno (deployed separately), not in the app.
-    ignores: ['dist/*', '.expo/*', 'node_modules/*', 'android/*', 'ios/*', 'supabase/functions/*'],
+    // The Worker in worker/ is linted with the app; only build output is ignored.
+    ignores: ['dist/*', '.expo/*', 'node_modules/*', 'android/*', 'ios/*'],
   },
 ]);

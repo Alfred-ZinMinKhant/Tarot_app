@@ -11,7 +11,7 @@ import type {
 type StoredRow = SyncRecord & { serverAt: string };
 
 /**
- * In-memory stand-in for the Supabase table + trigger: keeps the newer `updatedAt`, stamps a
+ * In-memory stand-in for the Worker's D1 tables and upsert rules: keeps the newer `updatedAt`, stamps a
  * server time on every accepted write, and serves the change feed ordered by (serverAt, id).
  */
 export class FakeCloud {

@@ -222,7 +222,7 @@ Work through these in the Console. None of this changes the app build.
 - App Store "App Privacy": *Data Not Collected*.
 - Google Play "Data safety": no data collected or shared; data is not transferred off the device. (Notifications and the journal are on-device only.)
 
-**If cloud backup is enabled (Supabase):**
+**If cloud backup is enabled (Cloudflare Workers + D1):**
 - Email address — collected, linked to the user, used for app functionality (account), not for tracking.
 - User content (journal: questions, notes, readings) — collected, linked, app functionality.
 - Personal info — birth date, optional birth time and birth place (for the birth chart; only if the user enters them) — collected, linked, app functionality, not for tracking. Declare this under *Other personal info* (Apple) / *Personal info → Other* and *Location → Approximate location* is **not** needed: only a chosen city name and its coordinates are stored.
