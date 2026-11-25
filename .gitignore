@@ -49,3 +49,6 @@ worker/.wrangler/
 
 # test coverage output
 coverage/
+
+# rendered moving-portrait clips (hosted, not bundled): npm run render:portraits
+/build/
